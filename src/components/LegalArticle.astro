@@ -1,0 +1,140 @@
+---
+interface Props {
+	title: string;
+	eyebrow: string;
+}
+
+const { title, eyebrow } = Astro.props;
+---
+
+<main class="legal-page">
+	<section class="legal-hero" aria-labelledby="legal-title">
+		<p>{eyebrow}</p>
+		<h1 id="legal-title">{title}</h1>
+	</section>
+
+	<article class="legal-copy">
+		<slot />
+	</article>
+</main>
+
+<style>
+	.legal-page {
+		background: #101010;
+		color: var(--color-main);
+		min-height: 100vh;
+	}
+
+	.legal-hero {
+		display: grid;
+		align-content: end;
+		min-height: min(58vh, 620px);
+		padding: clamp(8rem, 16vw, 13rem) clamp(1.25rem, 7vw, 8rem) clamp(4.5rem, 8vw, 7rem);
+		border-bottom: 1px solid rgba(238, 238, 238, 0.18);
+		background:
+			linear-gradient(180deg, rgba(238, 238, 238, 0.035), rgba(238, 238, 238, 0) 42%),
+			#101010;
+	}
+
+	.legal-hero p {
+		margin: 0 0 1.2rem;
+		color: rgba(238, 238, 238, 0.64);
+		text-transform: uppercase;
+		letter-spacing: 0.32em;
+		font-size: clamp(0.62rem, 0.72vw, 0.74rem);
+		font-weight: 500;
+	}
+
+	.legal-hero h1 {
+		max-width: 920px;
+		margin: 0;
+		font-family: var(--font-body);
+		font-size: clamp(2rem, 4.4vw, 5.6rem);
+		font-weight: 300;
+		line-height: 0.98;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		text-wrap: balance;
+	}
+
+	.legal-copy {
+		width: min(940px, calc(100% - 2.5rem));
+		margin: 0 auto;
+		padding: clamp(4.5rem, 8vw, 8rem) 0 clamp(2rem, 4vw, 4rem);
+	}
+
+	.legal-copy :global(h2),
+	.legal-copy :global(h3) {
+		margin: clamp(2.75rem, 5vw, 4.5rem) 0 1.1rem;
+		font-family: var(--font-body);
+		font-weight: 400;
+		line-height: 1.2;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+	}
+
+	.legal-copy :global(h2) {
+		font-size: clamp(1.05rem, 1.55vw, 1.55rem);
+	}
+
+	.legal-copy :global(h3) {
+		font-size: clamp(0.82rem, 1vw, 1rem);
+	}
+
+	.legal-copy :global(p) {
+		margin: 0 0 1.35rem;
+		color: rgba(238, 238, 238, 0.76);
+		font-size: clamp(1rem, 1.05vw, 1.1rem);
+		font-weight: 300;
+		line-height: 1.82;
+	}
+
+	.legal-copy :global(strong) {
+		color: rgba(238, 238, 238, 0.94);
+		font-weight: 500;
+	}
+
+	.legal-copy :global(a) {
+		color: rgba(238, 238, 238, 0.94);
+		text-decoration-color: rgba(238, 238, 238, 0.34);
+		text-underline-offset: 0.28em;
+		transition:
+			color 180ms ease,
+			text-decoration-color 180ms ease;
+	}
+
+	.legal-copy :global(a:hover),
+	.legal-copy :global(a:focus-visible) {
+		color: #eeeeee;
+		text-decoration-color: #eeeeee;
+	}
+
+	.legal-copy :global(a:focus-visible) {
+		outline: 1px solid rgba(238, 238, 238, 0.62);
+		outline-offset: 0.35rem;
+	}
+
+	@supports not (text-wrap: balance) {
+		.legal-hero h1 {
+			text-wrap: normal;
+		}
+	}
+
+	@media (max-width: 760px) {
+		.legal-hero {
+			min-height: 46svh;
+			padding: 7.5rem 1.25rem 3.5rem;
+		}
+
+		.legal-hero h1 {
+			font-size: clamp(1.55rem, 7.2vw, 2rem);
+			letter-spacing: 0.04em;
+			overflow-wrap: anywhere;
+		}
+
+		.legal-copy {
+			width: calc(100% - 2.5rem);
+			padding-top: 3.5rem;
+		}
+	}
+</style>

@@ -1,11 +1,561 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import SiteChrome from '../components/SiteChrome.astro';
+import craftHands from '../assets/oldtimer/craft-hands.png';
+import exploreHochzeit from '../assets/oldtimer/explore-hochzeit.png';
+import exploreKaufen from '../assets/oldtimer/explore-kaufen.png';
+import exploreKontakt from '../assets/oldtimer/explore-kontakt.png';
+import exploreProjekte from '../assets/oldtimer/explore-projekte.png';
+import exploreUeberUns from '../assets/oldtimer/explore-ueber-uns.png';
+import heroWorkshop from '../assets/oldtimer/hero-workshop.png';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const exploreItems = [
+	{
+		number: '01',
+		title: 'Über uns',
+		text: 'Ein Atelier für seltene Automobile, in dem Erfahrung, Diskretion und handwerkliche Ruhe zusammenfinden.',
+		image: exploreUeberUns,
+	},
+	{
+		number: '02',
+		title: 'Projekte',
+		text: 'Ausgewählte Restaurierungen mit dokumentierter Substanz, technischer Tiefe und einem Blick für bleibenden Wert.',
+		image: exploreProjekte,
+	},
+	{
+		number: '03',
+		title: 'Oldtimer kaufen',
+		text: 'Begleitung beim Erwerb außergewöhnlicher Klassiker mit Prüfung von Herkunft, Historie und Erhaltungsqualität.',
+		image: exploreKaufen,
+	},
+	{
+		number: '04',
+		title: 'Hochzeitsfahrten',
+		text: 'Ausgewählte Fahrzeuge für Anlässe, die nicht laut auftreten müssen, um in Erinnerung zu bleiben.',
+		image: exploreHochzeit,
+	},
+	{
+		number: '05',
+		title: 'Kontakt',
+		text: 'Ein persönliches Gespräch über Restaurierung, Werterhalt und die nächste Etappe Ihres Fahrzeugs.',
+		image: exploreKontakt,
+	},
+	{
+		number: '06',
+		title: 'Restaurierung',
+		text: 'Karosserie, Technik und Interieur werden mit Sorgfalt behandelt, damit Originalität und Fahrbarkeit erhalten bleiben.',
+		image: craftHands,
+	},
+];
 ---
 
 <Layout>
-	<Welcome />
+	<SiteChrome>
+		<main>
+			<section class="media-panel hero" aria-labelledby="hero-title">
+				<img
+					class="media-panel__image"
+					src={heroWorkshop.src}
+					alt="Klassischer Oldtimer in einer modernen Restaurierungswerkstatt"
+					loading="eager"
+					fetchpriority="high"
+				/>
+				<div class="media-panel__shade"></div>
+				<div class="media-panel__content media-panel__content--hero">
+					<h1 id="hero-title">Wir restaurieren keine Oldtimer, wir bewahren Geschichte.</h1>
+					<button class="scroll-cue" type="button" data-scroll-target="#handwerk" aria-label="Zum Handwerk scrollen">
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+			</section>
+
+			<section class="media-panel craft" id="handwerk" aria-labelledby="craft-title">
+				<img
+					class="media-panel__image"
+					src={craftHands.src}
+					alt="Hände arbeiten präzise an einem Bauteil eines Oldtimers"
+					loading="lazy"
+				/>
+				<div class="media-panel__shade media-panel__shade--craft"></div>
+				<div class="media-panel__content media-panel__content--craft">
+					<h2 id="craft-title">Handwerk, Geduld und Präzision für Fahrzeuge mit Seele.</h2>
+					<button class="scroll-cue scroll-cue--craft" type="button" data-scroll-target="#explore" aria-label="Alles erkunden">
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+			</section>
+
+			<section class="explore" id="explore" aria-labelledby="explore-title">
+				<div class="explore__intro">
+					<p class="kicker kicker--dark">Setzen Sie Ihre Reise fort</p>
+					<h2 id="explore-title">Alles Erkunden</h2>
+				</div>
+				<div class="explore-grid">
+					{
+						exploreItems.map((item) => (
+							<a class="explore-card" href="#">
+								<span class="explore-card__image" aria-hidden="true">
+									<img src={item.image.src} alt="" loading="lazy" />
+								</span>
+								<span class="explore-card__body">
+									<span class="explore-card__meta">
+										<span>{item.number}</span>
+										<span aria-hidden="true"></span>
+									</span>
+									<strong>{item.title}</strong>
+								</span>
+							</a>
+						))
+					}
+				</div>
+			</section>
+		</main>
+
+	</SiteChrome>
 </Layout>
+
+
+<style>
+	:global(html),
+	:global(body),
+	main {
+		background: #101010;
+		background-color: #101010;
+	}
+
+	.scroll-cue {
+		color: currentColor;
+		background: transparent;
+		border: 0;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.24em;
+		font-size: 0.66rem;
+		font-weight: 500;
+	}
+
+	.scroll-cue {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.8rem;
+	}
+
+	.media-panel {
+		position: relative;
+		display: grid;
+		min-height: 100vh;
+		overflow: hidden;
+		isolation: isolate;
+	}
+
+	.media-panel::after {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		height: 18vh;
+		background: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010);
+		content: '';
+		pointer-events: none;
+	}
+
+	.media-panel__image,
+	.media-panel__shade {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.media-panel__image {
+		z-index: -2;
+		object-fit: cover;
+		filter: saturate(0.88) contrast(1.04) brightness(0.92);
+		transform: scale(1.015);
+	}
+
+	.media-panel__shade {
+		z-index: -1;
+		background:
+			linear-gradient(180deg, rgba(12, 12, 12, 0.34), rgba(12, 12, 12, 0.04) 40%, rgba(12, 12, 12, 0.58)),
+			linear-gradient(90deg, rgba(12, 12, 12, 0.42), rgba(12, 12, 12, 0.04) 56%, rgba(12, 12, 12, 0.22));
+	}
+
+	.media-panel__shade--craft {
+		background:
+			linear-gradient(180deg, rgba(12, 12, 12, 0.36), rgba(12, 12, 12, 0.06) 42%, rgba(12, 12, 12, 0.62)),
+			linear-gradient(90deg, rgba(12, 12, 12, 0.46), rgba(12, 12, 12, 0.05) 62%);
+	}
+
+	.media-panel__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: end;
+		width: min(860px, calc(100% - 2rem));
+		margin: 0 auto;
+		padding: 9rem 0 clamp(5.25rem, 12vh, 8.5rem);
+		text-align: center;
+	}
+
+	.media-panel__content--craft {
+		align-items: center;
+		justify-content: end;
+		width: min(780px, calc(100% - 2rem));
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.kicker {
+		margin: 0 0 1.15rem;
+		color: rgba(238, 238, 238, 0.78);
+		text-transform: uppercase;
+		letter-spacing: 0.32em;
+		font-size: clamp(0.62rem, 0.72vw, 0.74rem);
+		font-weight: 500;
+	}
+
+	.kicker--dark {
+		color: rgba(238, 238, 238, 0.64);
+	}
+
+	h1,
+	.media-panel h2,
+	.explore h2 {
+		margin: 0;
+		font-family: var(--font-body);
+		font-weight: 300;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		max-width: 900px;
+		font-size: clamp(1.7rem, 3.1vw, 3.75rem);
+		line-height: 1.1;
+	}
+
+	.media-panel h2 {
+		max-width: 820px;
+		font-size: clamp(1.5rem, 2.75vw, 3.25rem);
+		line-height: 1.12;
+	}
+
+	.scroll-cue {
+		cursor: pointer;
+		width: 48px;
+		height: 48px;
+		margin-top: clamp(2rem, 5vw, 4rem);
+		color: var(--color-main);
+		opacity: 0.78;
+		transition:
+			opacity 180ms ease,
+			transform 180ms ease;
+	}
+
+	.scroll-cue span {
+		width: 12px;
+		height: 12px;
+		border-right: 1px solid currentColor;
+		border-bottom: 1px solid currentColor;
+		transform: rotate(45deg) translate(-2px, -2px);
+	}
+
+	.scroll-cue:hover,
+	.scroll-cue:focus-visible {
+		color: rgba(238, 238, 238, 0.96);
+		opacity: 1;
+		transform: translateY(4px);
+	}
+
+	.scroll-cue:focus-visible,
+	.explore-card:focus-visible {
+		outline: 1px solid rgba(238, 238, 238, 0.62);
+		outline-offset: 0.35rem;
+	}
+
+	.explore {
+		background: #101010;
+		color: var(--color-main);
+		padding: clamp(7rem, 12vw, 12rem) clamp(1.25rem, 7vw, 8rem) clamp(7.5rem, 12vw, 12rem);
+	}
+
+	.explore__intro {
+		width: min(1440px, 100%);
+		margin: 0 auto clamp(4.5rem, 7vw, 7rem);
+		text-align: center;
+	}
+
+	.explore h2 {
+		font-size: clamp(1.65rem, 2.45vw, 3rem);
+		line-height: 1.12;
+	}
+
+	.explore-grid {
+		display: grid;
+		grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr) minmax(0, 0.88fr);
+		grid-template-rows: repeat(2, minmax(0, 1fr));
+		gap: clamp(1rem, 1.35vw, 1.45rem);
+		width: min(1340px, 100%);
+		aspect-ratio: 1.78;
+		margin: 0 auto;
+	}
+
+	.explore-card {
+		display: grid;
+		position: relative;
+		min-height: 0;
+		color: var(--color-main);
+		text-decoration: none;
+		border: 1px solid rgba(238, 238, 238, 0.28);
+		overflow: hidden;
+		background: #111111;
+		isolation: isolate;
+		transition:
+			border-color 220ms ease,
+			transform 220ms ease,
+			opacity 220ms ease;
+	}
+
+	.explore-card:hover,
+	.explore-card:focus-visible {
+		color: rgba(238, 238, 238, 0.96);
+		border-color: rgba(238, 238, 238, 0.52);
+		transform: translateY(-4px);
+	}
+
+	.explore-card__image {
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		background: #0c0c0c;
+	}
+
+	.explore-card__image::after {
+		position: absolute;
+		inset: 0;
+		content: '';
+		background:
+			linear-gradient(180deg, rgba(9, 9, 9, 0.52) 0%, rgba(9, 9, 9, 0.14) 42%, rgba(9, 9, 9, 0.66) 100%),
+			linear-gradient(90deg, rgba(9, 9, 9, 0.48) 0%, rgba(9, 9, 9, 0.08) 54%, rgba(9, 9, 9, 0.2) 100%);
+	}
+
+	.explore-card__image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: grayscale(1) saturate(0.16) contrast(1.12) brightness(0.62);
+		transform: scale(1.001);
+		transition:
+			filter 220ms ease,
+			transform 560ms ease;
+	}
+
+	.explore-card:hover .explore-card__image img,
+	.explore-card:focus-visible .explore-card__image img {
+		filter: grayscale(1) saturate(0.22) contrast(1.18) brightness(0.76);
+		transform: scale(1.035);
+	}
+
+	.explore-card__body {
+		display: grid;
+		align-content: start;
+		gap: clamp(0.78rem, 1.15vw, 1.15rem);
+		min-height: 100%;
+		padding: clamp(1.9rem, 2.75vw, 2.65rem);
+	}
+
+	.explore-card__meta {
+		display: grid;
+		grid-template-columns: auto;
+		align-items: center;
+		width: fit-content;
+		color: rgba(238, 238, 238, 0.72);
+		font-size: clamp(0.75rem, 0.85vw, 0.88rem);
+		font-weight: 300;
+		letter-spacing: 0.12em;
+	}
+
+	.explore-card__meta span:last-child {
+		display: none;
+	}
+
+	.explore-card__body strong {
+		max-width: 24ch;
+		text-transform: uppercase;
+		letter-spacing: 0.26em;
+		font-size: clamp(0.88rem, 1.15vw, 1.35rem);
+		font-weight: 400;
+		line-height: 1.42;
+		text-wrap: balance;
+	}
+
+	.explore-card:nth-child(1) .explore-card__body strong,
+	.explore-card:nth-child(4) .explore-card__body strong {
+		max-width: 24ch;
+	}
+
+	.explore-card:nth-child(3) .explore-card__body strong,
+	.explore-card:nth-child(6) .explore-card__body strong {
+		max-width: 24ch;
+		font-size: clamp(0.88rem, 1.15vw, 1.35rem);
+		letter-spacing: 0.26em;
+	}
+
+	.explore-card:nth-child(1) .explore-card__image img {
+		object-position: 58% 48%;
+	}
+
+	.explore-card:nth-child(2) .explore-card__image img {
+		object-position: 50% 42%;
+	}
+
+	.explore-card:nth-child(3) .explore-card__image img {
+		object-position: 62% 50%;
+	}
+
+	.explore-card:nth-child(4) .explore-card__image img {
+		object-position: 46% 54%;
+	}
+
+	.explore-card:nth-child(5) .explore-card__image img {
+		object-position: 50% 46%;
+	}
+
+	.explore-card:nth-child(6) .explore-card__image img {
+		object-position: 50% 55%;
+	}
+
+	@supports not (text-wrap: balance) {
+		.explore-card__body strong {
+			text-wrap: normal;
+		}
+	}
+
+	@media (max-width: 1180px) {
+		.explore-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			grid-template-rows: none;
+			grid-auto-rows: minmax(0, 1fr);
+			gap: clamp(1rem, 2.4vw, 1.75rem);
+			aspect-ratio: auto;
+		}
+
+		.explore-card,
+		.explore-card:nth-child(2),
+		.explore-card:nth-child(3),
+		.explore-card:nth-child(4),
+		.explore-card:nth-child(5),
+		.explore-card:nth-child(6) {
+			aspect-ratio: 1.35;
+		}
+
+		.explore-card:nth-child(1) {
+			grid-column: 1 / -1;
+			grid-row: auto;
+			aspect-ratio: 2.15;
+		}
+
+		.explore-card__body {
+			padding: clamp(1.25rem, 2.8vw, 1.8rem);
+		}
+	}
+
+	@media (max-width: 760px) {
+		.media-panel {
+			min-height: 100svh;
+		}
+
+		.media-panel__content,
+		.media-panel__content--craft {
+			width: min(100% - 2rem, 560px);
+			margin: 0 auto;
+			align-items: center;
+			justify-content: end;
+			padding: 7rem 0 4.25rem;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: clamp(1.32rem, 6vw, 1.72rem);
+			line-height: 1.16;
+			letter-spacing: 0.12em;
+		}
+
+		.media-panel h2 {
+			font-size: clamp(1.18rem, 6vw, 1.58rem);
+			line-height: 1.18;
+			letter-spacing: 0.12em;
+		}
+
+		.scroll-cue {
+			margin-top: 2rem;
+		}
+
+		.explore {
+			padding: 5.8rem 1rem 5.5rem;
+		}
+
+		.explore__intro {
+			text-align: center;
+			margin-bottom: 2.6rem;
+		}
+
+		.explore h2 {
+			font-size: 1.45rem;
+		}
+
+		.explore-grid {
+			grid-template-columns: minmax(0, 1fr);
+			gap: 0.72rem;
+			width: min(100%, 430px);
+		}
+
+		.explore-card,
+		.explore-card:nth-child(1),
+		.explore-card:nth-child(2),
+		.explore-card:nth-child(3),
+		.explore-card:nth-child(4),
+		.explore-card:nth-child(5),
+		.explore-card:nth-child(6) {
+			grid-column: auto;
+			aspect-ratio: 3.05;
+			transform: none;
+		}
+
+		.explore-card:hover,
+		.explore-card:focus-visible {
+			transform: none;
+		}
+
+		.explore-card__image::after {
+			background:
+				linear-gradient(180deg, rgba(9, 9, 9, 0.62) 0%, rgba(9, 9, 9, 0.2) 48%, rgba(9, 9, 9, 0.72) 100%),
+				linear-gradient(90deg, rgba(9, 9, 9, 0.56) 0%, rgba(9, 9, 9, 0.08) 70%);
+		}
+
+		.explore-card__body {
+			gap: 0.38rem;
+			padding: 0.82rem 0.92rem;
+		}
+
+		.explore-card__meta {
+			font-size: 0.66rem;
+		}
+
+		.explore-card__body strong {
+			max-width: 18ch;
+			font-size: clamp(0.76rem, 4vw, 0.94rem);
+			letter-spacing: 0.16em;
+			line-height: 1.24;
+		}
+
+		.explore-card:nth-child(3) .explore-card__body strong,
+		.explore-card:nth-child(6) .explore-card__body strong {
+			font-size: clamp(0.76rem, 4vw, 0.94rem);
+			letter-spacing: 0.16em;
+		}
+	}
+</style>

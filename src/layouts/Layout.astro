@@ -1,23 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<meta
+			name="description"
+			content="Die Oldtimermanufaktur restauriert klassische Automobile mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
+		/>
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Die Oldtimermanufaktur</title>
 	</head>
 	<body>
 		<slot />
+		<script>
+			document.addEventListener('contextmenu', (event) => {
+				event.preventDefault();
+			});
+
+			document.addEventListener('dragstart', (event) => {
+				if (event.target instanceof HTMLImageElement) {
+					event.preventDefault();
+				}
+			});
+		</script>
 	</body>
 </html>
 
 <style>
+	:root {
+		--color-background: #101010;
+		--color-main: #eeeeee;
+		--color-line: rgba(238, 238, 238, 0.18);
+		--font-body: 'Jost', 'Helvetica Neue', sans-serif;
+	}
+
 	html,
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		min-height: 100%;
+		background: var(--color-background);
+		color: var(--color-main);
+		font-family: var(--font-body);
+		scroll-behavior: smooth;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+
+	:global(*) {
+		box-sizing: border-box;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	:global(*::selection) {
+		background: transparent;
+		color: inherit;
+	}
+
+	:global(img),
+	:global(svg) {
+		display: block;
+		-webkit-user-drag: none;
+		user-drag: none;
+	}
+
+	button,
+	a {
+		font: inherit;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.001ms !important;
+			animation-iteration-count: 1 !important;
+			scroll-behavior: auto !important;
+			transition-duration: 0.001ms !important;
+		}
 	}
 </style>

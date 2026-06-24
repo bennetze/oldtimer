@@ -13,6 +13,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# agent/browser QA screenshots
+.codex-qa/
+
 # environment variables
 .env
 .env.production
