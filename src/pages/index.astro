@@ -2,12 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import SiteChrome from '../components/SiteChrome.astro';
 import craftHands from '../assets/oldtimer/craft-hands.png';
-import exploreHochzeit from '../assets/oldtimer/explore-hochzeit.png';
 import exploreKaufen from '../assets/oldtimer/explore-kaufen.png';
 import exploreKontakt from '../assets/oldtimer/explore-kontakt.png';
-import exploreProjekte from '../assets/oldtimer/explore-projekte.png';
 import exploreUeberUns from '../assets/oldtimer/explore-ueber-uns.png';
-import heroWorkshop from '../assets/oldtimer/hero-workshop.png';
+import heroSiteVideo from '../assets/oldtimer/hero-site.webm';
+import projekteImage from '../assets/oldtimer/L1005735.webp';
+import restaurierungImage from '../assets/oldtimer/L1005787.webp';
 
 const exploreItems = [
 	{
@@ -15,36 +15,35 @@ const exploreItems = [
 		title: 'Über uns',
 		text: 'Ein Atelier für seltene Automobile, in dem Erfahrung, Diskretion und handwerkliche Ruhe zusammenfinden.',
 		image: exploreUeberUns,
+		href: '/#explore',
 	},
 	{
 		number: '02',
 		title: 'Projekte',
 		text: 'Ausgewählte Restaurierungen mit dokumentierter Substanz, technischer Tiefe und einem Blick für bleibenden Wert.',
-		image: exploreProjekte,
+		image: projekteImage,
+		href: '/#explore',
 	},
 	{
 		number: '03',
-		title: 'Oldtimer kaufen',
-		text: 'Begleitung beim Erwerb außergewöhnlicher Klassiker mit Prüfung von Herkunft, Historie und Erhaltungsqualität.',
-		image: exploreKaufen,
+		title: 'Handwerk',
+		text: 'Karosserie, Technik und Interieur werden mit Sorgfalt behandelt, damit Originalität und Fahrbarkeit erhalten bleiben.',
+		image: restaurierungImage,
+		href: '/#explore',
 	},
 	{
 		number: '04',
-		title: 'Hochzeitsfahrten',
-		text: 'Ausgewählte Fahrzeuge für Anlässe, die nicht laut auftreten müssen, um in Erinnerung zu bleiben.',
-		image: exploreHochzeit,
+		title: 'Oldtimer kaufen',
+		text: 'Begleitung beim Erwerb außergewöhnlicher Klassiker mit Prüfung von Herkunft, Historie und Erhaltungsqualität.',
+		image: exploreKaufen,
+		href: '/#explore',
 	},
 	{
 		number: '05',
 		title: 'Kontakt',
 		text: 'Ein persönliches Gespräch über Restaurierung, Werterhalt und die nächste Etappe Ihres Fahrzeugs.',
 		image: exploreKontakt,
-	},
-	{
-		number: '06',
-		title: 'Restaurierung',
-		text: 'Karosserie, Technik und Interieur werden mit Sorgfalt behandelt, damit Originalität und Fahrbarkeit erhalten bleiben.',
-		image: craftHands,
+		href: '/#explore',
 	},
 ];
 ---
@@ -52,14 +51,29 @@ const exploreItems = [
 <Layout>
 	<SiteChrome>
 		<main>
-			<section class="media-panel hero" aria-labelledby="hero-title">
-				<img
+			<nav class="section-indicator" aria-label="Abschnitte" data-section-indicator>
+				<button class="section-indicator__dot is-active" type="button" data-section-target="#start" data-scroll-target="#start">
+					<span>Start</span>
+				</button>
+				<button class="section-indicator__dot" type="button" data-section-target="#handwerk" data-scroll-target="#handwerk">
+					<span>Handwerk</span>
+				</button>
+				<button class="section-indicator__dot" type="button" data-section-target="#explore" data-scroll-target="#explore">
+					<span>Erkunden</span>
+				</button>
+			</nav>
+
+			<section class="media-panel hero" id="start" aria-labelledby="hero-title">
+				<video
 					class="media-panel__image"
-					src={heroWorkshop.src}
-					alt="Klassischer Oldtimer in einer modernen Restaurierungswerkstatt"
-					loading="eager"
-					fetchpriority="high"
-				/>
+					src={heroSiteVideo}
+					autoplay
+					muted
+					loop
+					playsinline
+					preload="auto"
+					aria-label="Klassischer Oldtimer in einer modernen Restaurierungswerkstatt"
+				></video>
 				<div class="media-panel__shade"></div>
 				<div class="media-panel__content media-panel__content--hero">
 					<h1 id="hero-title">Wir restaurieren keine Oldtimer, wir bewahren Geschichte.</h1>
@@ -93,7 +107,7 @@ const exploreItems = [
 				<div class="explore-grid">
 					{
 						exploreItems.map((item) => (
-							<a class="explore-card" href="#">
+							<a class="explore-card" href={item.href}>
 								<span class="explore-card__image" aria-hidden="true">
 									<img src={item.image.src} alt="" loading="lazy" />
 								</span>
@@ -103,6 +117,7 @@ const exploreItems = [
 										<span aria-hidden="true"></span>
 									</span>
 									<strong>{item.title}</strong>
+									<span class="explore-card__text">{item.text}</span>
 								</span>
 							</a>
 						))
@@ -111,6 +126,30 @@ const exploreItems = [
 			</section>
 		</main>
 
+		<script is:inline>
+			const heroVideo = document.querySelector('.hero video');
+
+			const playHeroVideo = () => {
+				if (!(heroVideo instanceof HTMLVideoElement)) {
+					return;
+				}
+
+				heroVideo.muted = true;
+				heroVideo.defaultMuted = true;
+				heroVideo.playsInline = true;
+				heroVideo.play().catch(() => {
+					/* Safari may block autoplay depending on user/site policy. */
+				});
+			};
+
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', playHeroVideo, { once: true });
+			} else {
+				playHeroVideo();
+			}
+
+			window.addEventListener('pageshow', playHeroVideo);
+		</script>
 	</SiteChrome>
 </Layout>
 
@@ -177,7 +216,7 @@ const exploreItems = [
 	}
 
 	.media-panel__shade {
-		z-index: -1;
+		z-index: 0;
 		background:
 			linear-gradient(180deg, rgba(12, 12, 12, 0.34), rgba(12, 12, 12, 0.04) 40%, rgba(12, 12, 12, 0.58)),
 			linear-gradient(90deg, rgba(12, 12, 12, 0.42), rgba(12, 12, 12, 0.04) 56%, rgba(12, 12, 12, 0.22));
@@ -190,6 +229,8 @@ const exploreItems = [
 	}
 
 	.media-panel__content {
+		position: relative;
+		z-index: 1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -276,15 +317,95 @@ const exploreItems = [
 		outline-offset: 0.35rem;
 	}
 
+	.section-indicator {
+		position: fixed;
+		top: 50%;
+		left: clamp(1rem, 2vw, 2.5rem);
+		z-index: 45;
+		display: grid;
+		gap: 1.38rem;
+		transform: translateY(-50%);
+	}
+
+	.section-indicator__dot {
+		position: relative;
+		display: grid;
+		place-items: center;
+		width: 22px;
+		height: 22px;
+		padding: 0;
+		color: rgba(238, 238, 238, 0.92);
+		background: transparent;
+		border: 0;
+		cursor: pointer;
+	}
+
+	.section-indicator__dot::before,
+	.section-indicator__dot::after {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border-radius: 999px;
+		content: '';
+		transition:
+			background 180ms ease,
+			border-color 180ms ease,
+			opacity 180ms ease,
+			transform 180ms ease;
+	}
+
+	.section-indicator__dot::before {
+		width: 21px;
+		height: 21px;
+		border: 2px solid transparent;
+		opacity: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	.section-indicator__dot::after {
+		width: 7px;
+		height: 7px;
+		background: rgba(238, 238, 238, 0.54);
+		transform: translate(-50%, -50%);
+	}
+
+	.section-indicator__dot.is-active::before,
+	.section-indicator__dot:hover::before,
+	.section-indicator__dot:focus-visible::before {
+		border-color: rgba(238, 238, 238, 0.96);
+		opacity: 1;
+	}
+
+	.section-indicator__dot.is-active::after,
+	.section-indicator__dot:hover::after,
+	.section-indicator__dot:focus-visible::after {
+		background: rgba(238, 238, 238, 0.96);
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+
+	.section-indicator__dot span {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+	}
+
+	.section-indicator__dot:focus-visible {
+		outline: 0;
+	}
+
 	.explore {
 		background: #101010;
 		color: var(--color-main);
-		padding: clamp(7rem, 12vw, 12rem) clamp(1.25rem, 7vw, 8rem) clamp(7.5rem, 12vw, 12rem);
+		padding: clamp(7rem, 11vw, 11rem) clamp(1.25rem, 4vw, 4.5rem) clamp(7.5rem, 11vw, 11rem);
 	}
 
 	.explore__intro {
-		width: min(1440px, 100%);
-		margin: 0 auto clamp(4.5rem, 7vw, 7rem);
+		width: min(1500px, 100%);
+		margin: 0 auto clamp(3.5rem, 5.6vw, 5.75rem);
 		text-align: center;
 	}
 
@@ -295,24 +416,41 @@ const exploreItems = [
 
 	.explore-grid {
 		display: grid;
-		grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr) minmax(0, 0.88fr);
-		grid-template-rows: repeat(2, minmax(0, 1fr));
-		gap: clamp(1rem, 1.35vw, 1.45rem);
-		width: min(1340px, 100%);
-		aspect-ratio: 1.78;
+		grid-auto-flow: column;
+		grid-auto-columns: clamp(340px, 29vw, 430px);
+		gap: clamp(1.1rem, 1.25vw, 1.55rem);
+		width: min(1500px, 100%);
 		margin: 0 auto;
+		overflow-x: auto;
+		overflow-y: hidden;
+		padding-bottom: 1.1rem;
+		scroll-padding-inline: clamp(1.1rem, 1.25vw, 1.55rem);
+		scroll-snap-type: x proximity;
+		scrollbar-color: rgba(238, 238, 238, 0.32) rgba(238, 238, 238, 0.08);
+		scrollbar-width: thin;
+	}
+
+	.explore-grid::-webkit-scrollbar {
+		height: 2px;
+	}
+
+	.explore-grid::-webkit-scrollbar-track {
+		background: rgba(238, 238, 238, 0.08);
+	}
+
+	.explore-grid::-webkit-scrollbar-thumb {
+		background: rgba(238, 238, 238, 0.34);
 	}
 
 	.explore-card {
-		display: grid;
 		position: relative;
-		min-height: 0;
+		display: grid;
+		grid-template-rows: auto auto;
 		color: var(--color-main);
 		text-decoration: none;
-		border: 1px solid rgba(238, 238, 238, 0.28);
-		overflow: hidden;
 		background: #111111;
-		isolation: isolate;
+		border-left: 1px solid rgba(238, 238, 238, 0.36);
+		scroll-snap-align: start;
 		transition:
 			border-color 220ms ease,
 			transform 220ms ease,
@@ -322,14 +460,16 @@ const exploreItems = [
 	.explore-card:hover,
 	.explore-card:focus-visible {
 		color: rgba(238, 238, 238, 0.96);
-		border-color: rgba(238, 238, 238, 0.52);
+		border-color: rgba(238, 238, 238, 0.62);
 		transform: translateY(-4px);
 	}
 
 	.explore-card__image {
-		position: absolute;
-		inset: 0;
-		z-index: -2;
+		position: relative;
+		display: block;
+		aspect-ratio: 1.48;
+		min-height: 0;
+		overflow: hidden;
 		background: #0c0c0c;
 	}
 
@@ -338,15 +478,16 @@ const exploreItems = [
 		inset: 0;
 		content: '';
 		background:
-			linear-gradient(180deg, rgba(9, 9, 9, 0.52) 0%, rgba(9, 9, 9, 0.14) 42%, rgba(9, 9, 9, 0.66) 100%),
-			linear-gradient(90deg, rgba(9, 9, 9, 0.48) 0%, rgba(9, 9, 9, 0.08) 54%, rgba(9, 9, 9, 0.2) 100%);
+			linear-gradient(180deg, rgba(10, 10, 10, 0.08), rgba(10, 10, 10, 0.24)),
+			linear-gradient(90deg, rgba(10, 10, 10, 0.14), rgba(10, 10, 10, 0.02) 48%, rgba(10, 10, 10, 0.18));
+		pointer-events: none;
 	}
 
 	.explore-card__image img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		filter: grayscale(1) saturate(0.16) contrast(1.12) brightness(0.62);
+		filter: saturate(1.04) contrast(1.04) brightness(0.9);
 		transform: scale(1.001);
 		transition:
 			filter 220ms ease,
@@ -355,16 +496,16 @@ const exploreItems = [
 
 	.explore-card:hover .explore-card__image img,
 	.explore-card:focus-visible .explore-card__image img {
-		filter: grayscale(1) saturate(0.22) contrast(1.18) brightness(0.76);
-		transform: scale(1.035);
+		filter: saturate(1.12) contrast(1.06) brightness(0.98);
+		transform: scale(1.028);
 	}
 
 	.explore-card__body {
 		display: grid;
 		align-content: start;
-		gap: clamp(0.78rem, 1.15vw, 1.15rem);
-		min-height: 100%;
-		padding: clamp(1.9rem, 2.75vw, 2.65rem);
+		gap: clamp(0.82rem, 1.1vw, 1.15rem);
+		min-height: 206px;
+		padding: clamp(1.45rem, 1.7vw, 2rem) clamp(1.35rem, 1.8vw, 2rem) clamp(1.75rem, 2.15vw, 2.4rem);
 	}
 
 	.explore-card__meta {
@@ -372,10 +513,10 @@ const exploreItems = [
 		grid-template-columns: auto;
 		align-items: center;
 		width: fit-content;
-		color: rgba(238, 238, 238, 0.72);
-		font-size: clamp(0.75rem, 0.85vw, 0.88rem);
+		color: rgba(238, 238, 238, 0.5);
+		font-size: clamp(0.66rem, 0.72vw, 0.76rem);
 		font-weight: 300;
-		letter-spacing: 0.12em;
+		letter-spacing: 0.18em;
 	}
 
 	.explore-card__meta span:last-child {
@@ -383,25 +524,23 @@ const exploreItems = [
 	}
 
 	.explore-card__body strong {
-		max-width: 24ch;
+		max-width: 28ch;
 		text-transform: uppercase;
-		letter-spacing: 0.26em;
-		font-size: clamp(0.88rem, 1.15vw, 1.35rem);
+		letter-spacing: 0.24em;
+		font-size: clamp(0.88rem, 1.05vw, 1.18rem);
 		font-weight: 400;
-		line-height: 1.42;
+		line-height: 1.46;
 		text-wrap: balance;
 	}
 
-	.explore-card:nth-child(1) .explore-card__body strong,
-	.explore-card:nth-child(4) .explore-card__body strong {
-		max-width: 24ch;
-	}
-
-	.explore-card:nth-child(3) .explore-card__body strong,
-	.explore-card:nth-child(6) .explore-card__body strong {
-		max-width: 24ch;
-		font-size: clamp(0.88rem, 1.15vw, 1.35rem);
-		letter-spacing: 0.26em;
+	.explore-card__text {
+		display: block;
+		max-width: 42ch;
+		color: rgba(238, 238, 238, 0.62);
+		font-size: clamp(0.92rem, 1.02vw, 1.06rem);
+		font-weight: 300;
+		letter-spacing: 0.035em;
+		line-height: 1.62;
 	}
 
 	.explore-card:nth-child(1) .explore-card__image img {
@@ -413,19 +552,15 @@ const exploreItems = [
 	}
 
 	.explore-card:nth-child(3) .explore-card__image img {
-		object-position: 62% 50%;
+		object-position: 50% 18%;
 	}
 
 	.explore-card:nth-child(4) .explore-card__image img {
-		object-position: 46% 54%;
+		object-position: 62% 50%;
 	}
 
 	.explore-card:nth-child(5) .explore-card__image img {
-		object-position: 50% 46%;
-	}
-
-	.explore-card:nth-child(6) .explore-card__image img {
-		object-position: 50% 55%;
+		object-position: 46% 54%;
 	}
 
 	@supports not (text-wrap: balance) {
@@ -436,30 +571,22 @@ const exploreItems = [
 
 	@media (max-width: 1180px) {
 		.explore-grid {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-			grid-template-rows: none;
-			grid-auto-rows: minmax(0, 1fr);
+			grid-auto-columns: clamp(320px, 44vw, 410px);
 			gap: clamp(1rem, 2.4vw, 1.75rem);
-			aspect-ratio: auto;
 		}
 
-		.explore-card,
-		.explore-card:nth-child(2),
-		.explore-card:nth-child(3),
-		.explore-card:nth-child(4),
-		.explore-card:nth-child(5),
-		.explore-card:nth-child(6) {
-			aspect-ratio: 1.35;
-		}
-
-		.explore-card:nth-child(1) {
-			grid-column: 1 / -1;
-			grid-row: auto;
-			aspect-ratio: 2.15;
+		.explore-card__image {
+			aspect-ratio: 1.52;
 		}
 
 		.explore-card__body {
 			padding: clamp(1.25rem, 2.8vw, 1.8rem);
+		}
+	}
+
+	@media (max-width: 980px), (pointer: coarse) {
+		.section-indicator {
+			display: none;
 		}
 	}
 
@@ -474,24 +601,24 @@ const exploreItems = [
 			margin: 0 auto;
 			align-items: center;
 			justify-content: end;
-			padding: 7rem 0 4.25rem;
+			padding: 6rem 0 clamp(7.75rem, 18svh, 10rem);
 			text-align: center;
 		}
 
 		h1 {
-			font-size: clamp(1.32rem, 6vw, 1.72rem);
-			line-height: 1.16;
+			font-size: clamp(1.62rem, 7.4vw, 2.25rem);
+			line-height: 1.12;
 			letter-spacing: 0.12em;
 		}
 
 		.media-panel h2 {
-			font-size: clamp(1.18rem, 6vw, 1.58rem);
-			line-height: 1.18;
+			font-size: clamp(1.48rem, 7vw, 2.05rem);
+			line-height: 1.14;
 			letter-spacing: 0.12em;
 		}
 
 		.scroll-cue {
-			margin-top: 2rem;
+			margin-top: 1.65rem;
 		}
 
 		.explore {
@@ -508,21 +635,23 @@ const exploreItems = [
 		}
 
 		.explore-grid {
+			display: grid;
+			grid-auto-flow: row;
+			grid-auto-columns: unset;
 			grid-template-columns: minmax(0, 1fr);
-			gap: 0.72rem;
+			gap: 1rem;
 			width: min(100%, 430px);
+			overflow: visible;
+			padding-bottom: 0;
+			scroll-snap-type: none;
 		}
 
-		.explore-card,
-		.explore-card:nth-child(1),
-		.explore-card:nth-child(2),
-		.explore-card:nth-child(3),
-		.explore-card:nth-child(4),
-		.explore-card:nth-child(5),
-		.explore-card:nth-child(6) {
-			grid-column: auto;
-			aspect-ratio: 3.05;
+		.explore-card {
 			transform: none;
+		}
+
+		.explore-card__image {
+			aspect-ratio: 1.78;
 		}
 
 		.explore-card:hover,
@@ -532,30 +661,31 @@ const exploreItems = [
 
 		.explore-card__image::after {
 			background:
-				linear-gradient(180deg, rgba(9, 9, 9, 0.62) 0%, rgba(9, 9, 9, 0.2) 48%, rgba(9, 9, 9, 0.72) 100%),
-				linear-gradient(90deg, rgba(9, 9, 9, 0.56) 0%, rgba(9, 9, 9, 0.08) 70%);
+				linear-gradient(180deg, rgba(9, 9, 9, 0.2), rgba(9, 9, 9, 0.32)),
+				linear-gradient(90deg, rgba(9, 9, 9, 0.26), rgba(9, 9, 9, 0.08) 70%);
 		}
 
 		.explore-card__body {
-			gap: 0.38rem;
-			padding: 0.82rem 0.92rem;
+			gap: 0.58rem;
+			min-height: auto;
+			padding: 1.1rem 1rem 1.45rem;
 		}
 
 		.explore-card__meta {
-			font-size: 0.66rem;
+			font-size: 0.62rem;
 		}
 
 		.explore-card__body strong {
-			max-width: 18ch;
-			font-size: clamp(0.76rem, 4vw, 0.94rem);
+			max-width: 22ch;
+			font-size: clamp(0.96rem, 4.55vw, 1.14rem);
 			letter-spacing: 0.16em;
-			line-height: 1.24;
+			line-height: 1.32;
 		}
 
-		.explore-card:nth-child(3) .explore-card__body strong,
-		.explore-card:nth-child(6) .explore-card__body strong {
-			font-size: clamp(0.76rem, 4vw, 0.94rem);
-			letter-spacing: 0.16em;
+		.explore-card__text {
+			font-size: 1rem;
+			letter-spacing: 0.02em;
+			line-height: 1.5;
 		}
 	}
 </style>

@@ -2,10 +2,9 @@
 const menuItems = [
 	{ title: 'Über uns', href: '/#explore' },
 	{ title: 'Projekte', href: '/#explore' },
+	{ title: 'Handwerk', href: '/#explore' },
 	{ title: 'Oldtimer kaufen', href: '/#explore' },
-	{ title: 'Hochzeitsfahrten', href: '/#explore' },
 	{ title: 'Kontakt', href: '/#explore' },
-	{ title: 'Restaurierung', href: '/#explore' },
 ];
 ---
 
@@ -78,6 +77,10 @@ const menuItems = [
 	const menuPanel = document.querySelector('.menu-panel');
 	const menuClose = document.querySelector('.menu-close');
 	const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+	const sectionIndicator = document.querySelector('[data-section-indicator]');
+	const heroVideo = document.querySelector('[data-hero-video]');
+	let activeSectionScroll;
+	let resumeHeroAfterScroll = false;
 
 	if ('scrollRestoration' in window.history) {
 		window.history.scrollRestoration = 'manual';
@@ -93,11 +96,27 @@ const menuItems = [
 	window.addEventListener('pageshow', resetInitialScroll);
 
 	if (cursor && window.matchMedia('(pointer: fine)').matches) {
+		let cursorX = -40;
+		let cursorY = -40;
+		let cursorFrame;
+
+		const renderCursor = () => {
+			cursorFrame = undefined;
+			cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
+		};
+
+		const requestCursorFrame = () => {
+			if (!cursorFrame) {
+				cursorFrame = window.requestAnimationFrame(renderCursor);
+			}
+		};
+
 		document.documentElement.classList.add('has-custom-cursor');
 		window.addEventListener('pointermove', (event) => {
-			cursor.style.setProperty('--cursor-x', `${event.clientX}px`);
-			cursor.style.setProperty('--cursor-y', `${event.clientY}px`);
-		});
+			cursorX = event.clientX;
+			cursorY = event.clientY;
+			requestCursorFrame();
+		}, { passive: true });
 		document.addEventListener('pointerover', (event) => {
 			if (event.target instanceof Element && event.target.closest(interactiveSelector)) {
 				cursor.classList.add('is-active');
@@ -120,11 +139,13 @@ const menuItems = [
 		focusableMenuItems()[0]?.focus();
 	};
 
-	const closeMenu = () => {
+	const closeMenu = ({ restoreFocus = true } = {}) => {
 		menuOverlay?.setAttribute('aria-hidden', 'true');
 		menuToggle?.setAttribute('aria-expanded', 'false');
 		document.body.classList.remove('menu-is-open');
-		menuToggle?.focus();
+		if (restoreFocus) {
+			menuToggle?.focus();
+		}
 	};
 
 	const clearHash = () => {
@@ -133,13 +154,80 @@ const menuItems = [
 		}
 	};
 
+	const stopSectionScroll = () => {
+		if (activeSectionScroll) {
+			window.cancelAnimationFrame(activeSectionScroll);
+			activeSectionScroll = undefined;
+		}
+
+		if (resumeHeroAfterScroll && heroVideo instanceof HTMLVideoElement) {
+			resumeHeroAfterScroll = false;
+			heroVideo.play().catch(() => {
+				/* Ignore browser autoplay policy after interrupted scrolls. */
+			});
+		}
+	};
+
+	const easeInOutQuart = (progress) =>
+		progress < 0.5 ? 8 * progress * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 4) / 2;
+
+	const animateSectionScroll = (targetTop) => {
+		stopSectionScroll();
+
+		const startTop = window.scrollY;
+		const distance = targetTop - startTop;
+		const duration = Math.min(1180, Math.max(980, Math.abs(distance) * 0.82));
+		const startTime = window.performance.now();
+
+		if (heroVideo instanceof HTMLVideoElement && !heroVideo.paused) {
+			resumeHeroAfterScroll = true;
+			heroVideo.pause();
+		}
+
+		const step = (time) => {
+			const progress = Math.min((time - startTime) / duration, 1);
+			const easedProgress = easeInOutQuart(progress);
+
+			window.scrollTo(0, startTop + distance * easedProgress);
+
+			if (progress < 1) {
+				activeSectionScroll = window.requestAnimationFrame(step);
+				return;
+			}
+
+			activeSectionScroll = undefined;
+			if (resumeHeroAfterScroll && heroVideo instanceof HTMLVideoElement) {
+				resumeHeroAfterScroll = false;
+				heroVideo.play().catch(() => {
+					/* Ignore browser autoplay policy after completed scrolls. */
+				});
+			}
+		};
+
+		activeSectionScroll = window.requestAnimationFrame(step);
+	};
+
 	const scrollToSection = (section) => {
-		section.scrollIntoView({
-			block: 'start',
-			behavior: prefersReducedMotion.matches ? 'auto' : 'smooth',
-		});
+		stopSectionScroll();
+
+		if (prefersReducedMotion.matches) {
+			section.scrollIntoView({ block: 'start', behavior: 'auto' });
+			clearHash();
+			return;
+		}
+
+		const targetTop = section.getBoundingClientRect().top + window.scrollY;
+		animateSectionScroll(targetTop);
 		clearHash();
 	};
+
+	window.addEventListener('wheel', stopSectionScroll, { passive: true });
+	window.addEventListener('touchstart', stopSectionScroll, { passive: true });
+	window.addEventListener('keydown', (event) => {
+		if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', 'Space'].includes(event.code)) {
+			stopSectionScroll();
+		}
+	});
 
 	menuToggle?.addEventListener('click', openMenu);
 	menuClose?.addEventListener('click', closeMenu);
@@ -172,7 +260,22 @@ const menuItems = [
 	});
 
 	document.querySelectorAll('.menu-nav__link').forEach((link) => {
-		link.addEventListener('click', closeMenu);
+		link.addEventListener('click', (event) => {
+			const href = link.getAttribute('href');
+			const targetUrl = href ? new URL(href, window.location.href) : null;
+			const target = targetUrl?.hash ? document.querySelector(targetUrl.hash) : null;
+			const isSamePage =
+				targetUrl?.origin === window.location.origin && targetUrl.pathname === window.location.pathname;
+
+			if (isSamePage && target instanceof HTMLElement) {
+				event.preventDefault();
+				closeMenu({ restoreFocus: false });
+				scrollToSection(target);
+				return;
+			}
+
+			closeMenu({ restoreFocus: false });
+		});
 	});
 
 	document.querySelectorAll('[data-scroll-target]').forEach((control) => {
@@ -185,6 +288,53 @@ const menuItems = [
 			}
 		});
 	});
+
+	if (sectionIndicator && 'IntersectionObserver' in window) {
+		const indicatorControls = [...sectionIndicator.querySelectorAll('[data-section-target]')];
+		const sectionById = new Map();
+		const visibleRatios = new Map();
+
+		indicatorControls.forEach((control) => {
+			const targetSelector = control.getAttribute('data-section-target');
+			const section = targetSelector ? document.querySelector(targetSelector) : null;
+
+			if (section instanceof HTMLElement) {
+				sectionById.set(section.id, control);
+			}
+		});
+
+		const setActiveIndicator = (id) => {
+			indicatorControls.forEach((control) => {
+				control.classList.toggle('is-active', control === sectionById.get(id));
+			});
+		};
+
+		const sectionObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					visibleRatios.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0);
+				});
+
+				const activeEntry = [...visibleRatios.entries()].sort((a, b) => b[1] - a[1])[0];
+
+				if (activeEntry?.[0]) {
+					setActiveIndicator(activeEntry[0]);
+				}
+			},
+			{
+				root: null,
+				threshold: [0.12, 0.28, 0.44, 0.6, 0.78],
+			},
+		);
+
+		sectionById.forEach((_control, id) => {
+			const section = document.getElementById(id);
+
+			if (section) {
+				sectionObserver.observe(section);
+			}
+		});
+	}
 </script>
 
 <style>
@@ -205,8 +355,6 @@ const menuItems = [
 	}
 
 	.cursor {
-		--cursor-x: -40px;
-		--cursor-y: -40px;
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -216,7 +364,7 @@ const menuItems = [
 		border: 1px solid rgba(238, 238, 238, 0.84);
 		border-radius: 999px;
 		pointer-events: none;
-		transform: translate3d(var(--cursor-x), var(--cursor-y), 0) translate(-50%, -50%);
+		transform: translate3d(-40px, -40px, 0) translate(-50%, -50%);
 		will-change: transform;
 		transition:
 			width 180ms ease,
@@ -318,8 +466,8 @@ const menuItems = [
 		position: fixed;
 		inset: 0;
 		z-index: 90;
-		background: rgba(16, 16, 16, 0.62);
-		backdrop-filter: blur(18px) saturate(106%);
+		background: rgba(16, 16, 16, 0.38);
+		backdrop-filter: blur(16px) saturate(106%);
 		opacity: 0;
 		pointer-events: none;
 		transition: opacity 260ms ease;
@@ -337,8 +485,8 @@ const menuItems = [
 		width: min(58vw, 820px);
 		min-height: 100vh;
 		padding: clamp(1.25rem, 3.4vw, 4rem);
-		background: rgba(16, 16, 16, 0.86);
-		backdrop-filter: blur(24px) saturate(106%);
+		background: rgba(16, 16, 16, 0.58);
+		backdrop-filter: blur(28px) saturate(106%);
 		color: var(--color-main);
 		transform: translateX(-100%);
 		transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
@@ -384,7 +532,7 @@ const menuItems = [
 	}
 
 	.menu-nav__link {
-		color: var(--color-main);
+		color: rgba(238, 238, 238, 0.68);
 		font-family: var(--font-body);
 		font-size: clamp(0.98rem, 1.55vw, 1.55rem);
 		font-weight: 400;
@@ -408,7 +556,7 @@ const menuItems = [
 
 	.menu-nav__link:hover,
 	.menu-nav__link:focus-visible {
-		color: rgba(238, 238, 238, 0.72);
+		color: var(--color-main);
 	}
 
 	:global(body.menu-is-open) {
@@ -543,6 +691,12 @@ const menuItems = [
 			padding: 0.72rem 0.8rem;
 			font-size: 0.66rem;
 			transform: none;
+		}
+
+		.menu-nav__link {
+			font-size: clamp(1.24rem, 6vw, 1.78rem);
+			line-height: 1.16;
+			letter-spacing: 0.2em;
 		}
 
 		.footer-brand,
