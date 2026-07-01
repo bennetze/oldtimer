@@ -2,54 +2,46 @@
 import Layout from '../layouts/Layout.astro';
 import SiteChrome from '../components/SiteChrome.astro';
 import craftHands from '../assets/oldtimer/craft-hands.png';
-import exploreKaufen from '../assets/oldtimer/explore-kaufen.png';
-import exploreKontakt from '../assets/oldtimer/explore-kontakt.png';
-import exploreUeberUns from '../assets/oldtimer/explore-ueber-uns.png';
-import heroSiteVideo from '../assets/oldtimer/hero-site.webm';
-import projekteImage from '../assets/oldtimer/L1005735.webp';
-import restaurierungImage from '../assets/oldtimer/L1005787.webp';
+import heroSiteMotionAvif from '../assets/oldtimer/hero-site-motion.avif';
+import heroSiteMotionWebp from '../assets/oldtimer/hero-site-motion.webp';
+import heroSiteMp4 from '../assets/oldtimer/hero-site.mp4';
+import heroSiteWebm from '../assets/oldtimer/hero-site.webm';
+import sectionOldtimerKaufen from '../assets/oldtimer/section-oldtimer-kaufen.png';
+import sectionProjekte from '../assets/oldtimer/section-projekte.png';
+import sectionUeberUns from '../assets/oldtimer/section-ueber-uns.png';
 
-const exploreItems = [
+const sections = [
 	{
-		number: '01',
-		title: 'Über uns',
-		text: 'Ein Atelier für seltene Automobile, in dem Erfahrung, Diskretion und handwerkliche Ruhe zusammenfinden.',
-		image: exploreUeberUns,
-		href: '/#explore',
-	},
-	{
-		number: '02',
+		id: 'projekte',
 		title: 'Projekte',
-		text: 'Ausgewählte Restaurierungen mit dokumentierter Substanz, technischer Tiefe und einem Blick für bleibenden Wert.',
-		image: projekteImage,
-		href: '/#explore',
+		image: sectionProjekte,
+		alt: 'Klassische Fahrzeuge in unterschiedlichen Restaurierungsphasen in einer dunklen Werkstatt',
+		href: '/projekte',
+		previous: '#handwerk',
+		next: '#ueber-uns',
 	},
 	{
-		number: '03',
-		title: 'Handwerk',
-		text: 'Karosserie, Technik und Interieur werden mit Sorgfalt behandelt, damit Originalität und Fahrbarkeit erhalten bleiben.',
-		image: restaurierungImage,
-		href: '/#explore',
+		id: 'ueber-uns',
+		title: 'Über uns',
+		image: sectionUeberUns,
+		alt: 'Restaurierungsteam arbeitet konzentriert an einem klassischen Fahrzeug in einer Werkstatt',
+		href: '/ueber-uns',
+		previous: '#projekte',
+		next: '#oldtimer-kaufen',
 	},
 	{
-		number: '04',
+		id: 'oldtimer-kaufen',
 		title: 'Oldtimer kaufen',
-		text: 'Begleitung beim Erwerb außergewöhnlicher Klassiker mit Prüfung von Herkunft, Historie und Erhaltungsqualität.',
-		image: exploreKaufen,
-		href: '/#explore',
-	},
-	{
-		number: '05',
-		title: 'Kontakt',
-		text: 'Ein persönliches Gespräch über Restaurierung, Werterhalt und die nächste Etappe Ihres Fahrzeugs.',
-		image: exploreKontakt,
-		href: '/#explore',
+		image: sectionOldtimerKaufen,
+		alt: 'Ein klassisches Coupé in einer dunklen Werkstattpräsentation',
+		href: '/oldtimer-kaufen',
+		previous: '#ueber-uns',
 	},
 ];
 ---
 
 <Layout>
-	<SiteChrome>
+	<SiteChrome footerVariant="home">
 		<main>
 			<nav class="section-indicator" aria-label="Abschnitte" data-section-indicator>
 				<button class="section-indicator__dot is-active" type="button" data-section-target="#start" data-scroll-target="#start">
@@ -58,25 +50,45 @@ const exploreItems = [
 				<button class="section-indicator__dot" type="button" data-section-target="#handwerk" data-scroll-target="#handwerk">
 					<span>Handwerk</span>
 				</button>
-				<button class="section-indicator__dot" type="button" data-section-target="#explore" data-scroll-target="#explore">
-					<span>Erkunden</span>
-				</button>
+				{
+					sections.map((section) => (
+						<button
+							class="section-indicator__dot"
+							type="button"
+							data-section-target={`#${section.id}`}
+							data-scroll-target={`#${section.id}`}
+						>
+							<span>{section.title}</span>
+						</button>
+					))
+				}
 			</nav>
 
-			<section class="media-panel hero" id="start" aria-labelledby="hero-title">
+			<section class="media-panel hero" id="start" aria-labelledby="hero-title" data-hero>
 				<video
 					class="media-panel__image"
-					src={heroSiteVideo}
 					autoplay
 					muted
 					loop
 					playsinline
+					webkit-playsinline
 					preload="auto"
-					aria-label="Klassischer Oldtimer in einer modernen Restaurierungswerkstatt"
+					data-hero-video
+					data-hero-mp4={heroSiteMp4}
+					data-hero-webm={heroSiteWebm}
+					aria-hidden="true"
 				></video>
+				<picture
+					class="media-panel__image media-panel__image--motion-fallback"
+					aria-hidden="true"
+					data-hero-motion-fallback
+				>
+					<source type="image/avif" srcset={heroSiteMotionAvif.src} />
+					<img alt="" decoding="async" fetchpriority="high" src={heroSiteMotionWebp.src} data-hero-motion-image />
+				</picture>
 				<div class="media-panel__shade"></div>
 				<div class="media-panel__content media-panel__content--hero">
-					<h1 id="hero-title">Wir restaurieren keine Oldtimer, wir bewahren Geschichte.</h1>
+					<h1 id="hero-title">Wir restaurieren keine Oldtimer, wir bewahren Geschichten.</h1>
 					<button class="scroll-cue" type="button" data-scroll-target="#handwerk" aria-label="Zum Handwerk scrollen">
 						<span aria-hidden="true"></span>
 					</button>
@@ -91,64 +103,190 @@ const exploreItems = [
 					loading="lazy"
 				/>
 				<div class="media-panel__shade media-panel__shade--craft"></div>
+				<button class="scroll-cue scroll-cue--up section-up-cue" type="button" data-scroll-target="#start" aria-label="Zum Start scrollen">
+					<span aria-hidden="true"></span>
+				</button>
 				<div class="media-panel__content media-panel__content--craft">
-					<h2 id="craft-title">Handwerk, Geduld und Präzision für Fahrzeuge mit Seele.</h2>
-					<button class="scroll-cue scroll-cue--craft" type="button" data-scroll-target="#explore" aria-label="Alles erkunden">
-						<span aria-hidden="true"></span>
-					</button>
+					<h2 id="craft-title">Handwerk</h2>
+					<a class="section-cta" href="/restaurierung">Mehr erfahren</a>
+					<div class="scroll-cues" aria-label="Abschnitt wechseln">
+						<button class="scroll-cue" type="button" data-scroll-target="#projekte" aria-label="Zu Projekte scrollen">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
 				</div>
 			</section>
 
-			<section class="explore" id="explore" aria-labelledby="explore-title">
-				<div class="explore__intro">
-					<p class="kicker kicker--dark">Setzen Sie Ihre Reise fort</p>
-					<h2 id="explore-title">Alles Erkunden</h2>
-				</div>
-				<div class="explore-grid">
-					{
-						exploreItems.map((item) => (
-							<a class="explore-card" href={item.href}>
-								<span class="explore-card__image" aria-hidden="true">
-									<img src={item.image.src} alt="" loading="lazy" />
-								</span>
-								<span class="explore-card__body">
-									<span class="explore-card__meta">
-										<span>{item.number}</span>
-										<span aria-hidden="true"></span>
-									</span>
-									<strong>{item.title}</strong>
-									<span class="explore-card__text">{item.text}</span>
-								</span>
-							</a>
-						))
-					}
-				</div>
-			</section>
+			{
+				sections.map((section) => (
+					<section class="media-panel editorial-panel" id={section.id} aria-labelledby={`${section.id}-title`}>
+						<img class="media-panel__image" src={section.image.src} alt={section.alt} loading="lazy" />
+						<div class="media-panel__shade media-panel__shade--editorial"></div>
+						<button
+							class="scroll-cue scroll-cue--up section-up-cue"
+							type="button"
+							data-scroll-target={section.previous}
+							aria-label={`Vor ${section.title} scrollen`}
+						>
+							<span aria-hidden="true"></span>
+						</button>
+						<div class="media-panel__content media-panel__content--editorial">
+							<h2 id={`${section.id}-title`}>{section.title}</h2>
+							<a class="section-cta" href={section.href}>Mehr erfahren</a>
+							<div class="scroll-cues" aria-label="Abschnitt wechseln">
+								{
+									section.next ? (
+										<button
+											class="scroll-cue"
+											type="button"
+											data-scroll-target={section.next}
+											aria-label={`${section.title} verlassen`}
+										>
+											<span aria-hidden="true"></span>
+										</button>
+									) : (
+										<button
+											class="scroll-cue"
+											type="button"
+											data-footer-open
+											aria-label="Footer anzeigen"
+										>
+											<span aria-hidden="true"></span>
+										</button>
+									)
+								}
+							</div>
+						</div>
+					</section>
+				))
+			}
 		</main>
 
 		<script is:inline>
-			const heroVideo = document.querySelector('.hero video');
+			const hero = document.querySelector('[data-hero]');
+			const heroVideo = document.querySelector('[data-hero-video]');
+			const heroMotionFallback = document.querySelector('[data-hero-motion-fallback]');
+			const heroMotionImage = document.querySelector('[data-hero-motion-image]');
+			let heroAutoplayBlocked = false;
 
-			const playHeroVideo = () => {
-				if (!(heroVideo instanceof HTMLVideoElement)) {
+			const useHeroMotionFallback = () => {
+				if (
+					!(hero instanceof HTMLElement) ||
+					!(heroMotionFallback instanceof HTMLElement) ||
+					!(heroMotionImage instanceof HTMLImageElement)
+				) {
+					return false;
+				}
+
+				hero.classList.add('hero--use-motion-fallback');
+				hero.classList.remove('hero--video-ready');
+
+				return true;
+			};
+
+			const markHeroVideoReady = () => {
+				if (!(hero instanceof HTMLElement) || !(heroVideo instanceof HTMLVideoElement)) {
 					return;
+				}
+
+				heroAutoplayBlocked = false;
+				hero.classList.add('hero--video-ready');
+				hero.classList.remove('hero--use-motion-fallback');
+			};
+
+			const ensureHeroSources = () => {
+				if (
+					!(heroVideo instanceof HTMLVideoElement) ||
+					heroVideo.dataset.sourcesReady === 'true'
+				) {
+					return;
+				}
+
+				const sources = [
+					{ src: heroVideo.dataset.heroMp4, type: 'video/mp4' },
+					{ src: heroVideo.dataset.heroWebm, type: 'video/webm; codecs="av01.0.08M.08"' },
+				];
+
+				sources.forEach(({ src, type }) => {
+					if (!src) {
+						return;
+					}
+
+					const source = document.createElement('source');
+					source.src = src;
+					source.type = type;
+					heroVideo.append(source);
+				});
+
+				heroVideo.dataset.sourcesReady = 'true';
+				heroVideo.load();
+			};
+
+			const prepareHeroVideo = () => {
+				if (!(heroVideo instanceof HTMLVideoElement)) {
+					return false;
 				}
 
 				heroVideo.muted = true;
 				heroVideo.defaultMuted = true;
+				heroVideo.autoplay = true;
+				heroVideo.loop = true;
 				heroVideo.playsInline = true;
-				heroVideo.play().catch(() => {
-					/* Safari may block autoplay depending on user/site policy. */
-				});
+				heroVideo.volume = 0;
+				heroVideo.controls = false;
+				heroVideo.setAttribute('muted', '');
+				heroVideo.setAttribute('autoplay', '');
+				heroVideo.setAttribute('loop', '');
+				heroVideo.setAttribute('playsinline', '');
+				heroVideo.setAttribute('webkit-playsinline', '');
+				ensureHeroSources();
+
+				return true;
 			};
 
-			if (document.readyState === 'loading') {
-				document.addEventListener('DOMContentLoaded', playHeroVideo, { once: true });
-			} else {
-				playHeroVideo();
-			}
+			const playHeroVideo = ({ userGesture = false } = {}) => {
+				if (heroAutoplayBlocked && !userGesture) {
+					return;
+				}
 
-			window.addEventListener('pageshow', playHeroVideo);
+				if (!prepareHeroVideo()) {
+					return;
+				}
+
+				heroVideo
+					.play()
+					.then(markHeroVideoReady)
+					.catch(() => {
+						heroAutoplayBlocked = true;
+						useHeroMotionFallback();
+					});
+			};
+
+			if (heroVideo instanceof HTMLVideoElement) {
+				heroVideo.addEventListener('playing', markHeroVideoReady);
+				heroVideo.addEventListener('loadedmetadata', playHeroVideo, { once: true });
+				heroVideo.addEventListener('canplay', playHeroVideo, { once: true });
+				heroVideo.addEventListener('canplaythrough', playHeroVideo, { once: true });
+
+				if (document.readyState === 'loading') {
+					document.addEventListener('DOMContentLoaded', playHeroVideo, { once: true });
+				} else {
+					playHeroVideo();
+				}
+
+				window.addEventListener('pageshow', playHeroVideo);
+				document.addEventListener('visibilitychange', () => {
+					if (!document.hidden) {
+						playHeroVideo();
+					}
+				});
+				['pointerdown', 'keydown', 'touchstart'].forEach((eventName) => {
+					window.addEventListener(eventName, () => playHeroVideo({ userGesture: true }), {
+						once: true,
+						passive: true,
+					});
+				});
+			}
 		</script>
 	</SiteChrome>
 </Layout>
@@ -183,6 +321,7 @@ const exploreItems = [
 	.media-panel {
 		position: relative;
 		display: grid;
+		--panel-edge-cue-offset: clamp(5.25rem, 12vh, 8.5rem);
 		min-height: 100vh;
 		overflow: hidden;
 		isolation: isolate;
@@ -193,7 +332,7 @@ const exploreItems = [
 		left: 0;
 		right: 0;
 		bottom: 0;
-		z-index: -1;
+		z-index: 2;
 		height: 18vh;
 		background: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010);
 		content: '';
@@ -209,17 +348,51 @@ const exploreItems = [
 	}
 
 	.media-panel__image {
-		z-index: -2;
+		z-index: 0;
 		object-fit: cover;
 		filter: saturate(0.88) contrast(1.04) brightness(0.92);
 		transform: scale(1.015);
 	}
 
+	.media-panel__image--motion-fallback {
+		visibility: visible;
+		opacity: 1;
+		transition:
+			opacity 220ms ease,
+			visibility 220ms ease;
+	}
+
+	.media-panel__image--motion-fallback img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.hero video.media-panel__image {
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+		transition:
+			opacity 220ms ease,
+			visibility 220ms ease;
+	}
+
+	.hero--video-ready video.media-panel__image {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.hero--video-ready .media-panel__image--motion-fallback {
+		visibility: hidden;
+		opacity: 0;
+	}
+
 	.media-panel__shade {
-		z-index: 0;
+		z-index: 1;
 		background:
 			linear-gradient(180deg, rgba(12, 12, 12, 0.34), rgba(12, 12, 12, 0.04) 40%, rgba(12, 12, 12, 0.58)),
 			linear-gradient(90deg, rgba(12, 12, 12, 0.42), rgba(12, 12, 12, 0.04) 56%, rgba(12, 12, 12, 0.22));
+		pointer-events: none;
 	}
 
 	.media-panel__shade--craft {
@@ -228,9 +401,27 @@ const exploreItems = [
 			linear-gradient(90deg, rgba(12, 12, 12, 0.46), rgba(12, 12, 12, 0.05) 62%);
 	}
 
+	.media-panel__shade--editorial {
+		background:
+			linear-gradient(180deg, rgba(12, 12, 12, 0.28), rgba(12, 12, 12, 0.03) 38%, rgba(12, 12, 12, 0.76)),
+			linear-gradient(90deg, rgba(12, 12, 12, 0.34), rgba(12, 12, 12, 0.04) 50%, rgba(12, 12, 12, 0.28));
+	}
+
+	#projekte .media-panel__image {
+		object-position: 50% 48%;
+	}
+
+	#ueber-uns .media-panel__image {
+		object-position: 50% 44%;
+	}
+
+	#oldtimer-kaufen .media-panel__image {
+		object-position: 50% 48%;
+	}
+
 	.media-panel__content {
 		position: relative;
-		z-index: 1;
+		z-index: 3;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -239,6 +430,9 @@ const exploreItems = [
 		margin: 0 auto;
 		padding: 9rem 0 clamp(5.25rem, 12vh, 8.5rem);
 		text-align: center;
+		transition:
+			opacity 360ms ease,
+			transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
 	.media-panel__content--craft {
@@ -249,22 +443,8 @@ const exploreItems = [
 		text-align: center;
 	}
 
-	.kicker {
-		margin: 0 0 1.15rem;
-		color: rgba(238, 238, 238, 0.78);
-		text-transform: uppercase;
-		letter-spacing: 0.32em;
-		font-size: clamp(0.62rem, 0.72vw, 0.74rem);
-		font-weight: 500;
-	}
-
-	.kicker--dark {
-		color: rgba(238, 238, 238, 0.64);
-	}
-
 	h1,
-	.media-panel h2,
-	.explore h2 {
+	.media-panel h2 {
 		margin: 0;
 		font-family: var(--font-body);
 		font-weight: 300;
@@ -284,11 +464,53 @@ const exploreItems = [
 		line-height: 1.12;
 	}
 
+	.media-panel__content--editorial {
+		width: min(760px, calc(100% - 2rem));
+		padding-bottom: clamp(4.25rem, 9vh, 6.75rem);
+	}
+
+	.section-cta {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: min(84vw, 312px);
+		min-height: 64px;
+		margin-top: clamp(1.7rem, 3vw, 2.55rem);
+		padding: 0.95rem 2.8rem;
+		color: #111111;
+		background: rgba(238, 238, 238, 0.96);
+		border: 1px solid rgba(238, 238, 238, 0.98);
+		border-radius: 999px;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.24em;
+		font-size: clamp(0.72rem, 0.76vw, 0.82rem);
+		font-weight: 500;
+		line-height: 1;
+		transition:
+			background 220ms ease,
+			border-color 220ms ease,
+			color 220ms ease,
+			transform 220ms ease;
+	}
+
+	.section-cta:hover,
+	.section-cta:focus-visible {
+		color: var(--color-main);
+		background: rgba(238, 238, 238, 0.08);
+		border-color: rgba(238, 238, 238, 0.82);
+		transform: translateY(-2px);
+	}
+
+	.section-cta:focus-visible {
+		outline: 1px solid rgba(238, 238, 238, 0.72);
+		outline-offset: 0.35rem;
+	}
+
 	.scroll-cue {
 		cursor: pointer;
 		width: 48px;
 		height: 48px;
-		margin-top: clamp(2rem, 5vw, 4rem);
 		color: var(--color-main);
 		opacity: 0.78;
 		transition:
@@ -304,6 +526,29 @@ const exploreItems = [
 		transform: rotate(45deg) translate(-2px, -2px);
 	}
 
+	.scroll-cues {
+		display: inline-grid;
+		grid-template-columns: 48px;
+		gap: 0.75rem;
+		margin-top: clamp(1.5rem, 3.6vw, 3.1rem);
+	}
+
+	.media-panel__content--hero > .scroll-cue {
+		margin-top: clamp(2rem, 5vw, 4rem);
+	}
+
+	.scroll-cue--up span {
+		transform: rotate(225deg) translate(-2px, -2px);
+	}
+
+	.section-up-cue {
+		position: absolute;
+		top: var(--panel-edge-cue-offset);
+		left: 50%;
+		z-index: 4;
+		transform: translateX(-50%);
+	}
+
 	.scroll-cue:hover,
 	.scroll-cue:focus-visible {
 		color: rgba(238, 238, 238, 0.96);
@@ -311,8 +556,17 @@ const exploreItems = [
 		transform: translateY(4px);
 	}
 
-	.scroll-cue:focus-visible,
-	.explore-card:focus-visible {
+	.scroll-cue--up:hover,
+	.scroll-cue--up:focus-visible {
+		transform: translateY(-4px);
+	}
+
+	.section-up-cue:hover,
+	.section-up-cue:focus-visible {
+		transform: translateX(-50%) translateY(-4px);
+	}
+
+	.scroll-cue:focus-visible {
 		outline: 1px solid rgba(238, 238, 238, 0.62);
 		outline-offset: 0.35rem;
 	}
@@ -397,191 +651,20 @@ const exploreItems = [
 		outline: 0;
 	}
 
-	.explore {
-		background: #101010;
-		color: var(--color-main);
-		padding: clamp(7rem, 11vw, 11rem) clamp(1.25rem, 4vw, 4.5rem) clamp(7.5rem, 11vw, 11rem);
-	}
-
-	.explore__intro {
-		width: min(1500px, 100%);
-		margin: 0 auto clamp(3.5rem, 5.6vw, 5.75rem);
-		text-align: center;
-	}
-
-	.explore h2 {
-		font-size: clamp(1.65rem, 2.45vw, 3rem);
-		line-height: 1.12;
-	}
-
-	.explore-grid {
-		display: grid;
-		grid-auto-flow: column;
-		grid-auto-columns: clamp(340px, 29vw, 430px);
-		gap: clamp(1.1rem, 1.25vw, 1.55rem);
-		width: min(1500px, 100%);
-		margin: 0 auto;
-		overflow-x: auto;
-		overflow-y: hidden;
-		padding-bottom: 1.1rem;
-		scroll-padding-inline: clamp(1.1rem, 1.25vw, 1.55rem);
-		scroll-snap-type: x proximity;
-		scrollbar-color: rgba(238, 238, 238, 0.32) rgba(238, 238, 238, 0.08);
-		scrollbar-width: thin;
-	}
-
-	.explore-grid::-webkit-scrollbar {
-		height: 2px;
-	}
-
-	.explore-grid::-webkit-scrollbar-track {
-		background: rgba(238, 238, 238, 0.08);
-	}
-
-	.explore-grid::-webkit-scrollbar-thumb {
-		background: rgba(238, 238, 238, 0.34);
-	}
-
-	.explore-card {
-		position: relative;
-		display: grid;
-		grid-template-rows: auto auto;
-		color: var(--color-main);
-		text-decoration: none;
-		background: #111111;
-		border-left: 1px solid rgba(238, 238, 238, 0.36);
-		scroll-snap-align: start;
-		transition:
-			border-color 220ms ease,
-			transform 220ms ease,
-			opacity 220ms ease;
-	}
-
-	.explore-card:hover,
-	.explore-card:focus-visible {
-		color: rgba(238, 238, 238, 0.96);
-		border-color: rgba(238, 238, 238, 0.62);
-		transform: translateY(-4px);
-	}
-
-	.explore-card__image {
-		position: relative;
-		display: block;
-		aspect-ratio: 1.48;
-		min-height: 0;
-		overflow: hidden;
-		background: #0c0c0c;
-	}
-
-	.explore-card__image::after {
-		position: absolute;
-		inset: 0;
-		content: '';
-		background:
-			linear-gradient(180deg, rgba(10, 10, 10, 0.08), rgba(10, 10, 10, 0.24)),
-			linear-gradient(90deg, rgba(10, 10, 10, 0.14), rgba(10, 10, 10, 0.02) 48%, rgba(10, 10, 10, 0.18));
+	:global(body.footer-is-revealed) .section-indicator {
+		opacity: 0;
 		pointer-events: none;
 	}
 
-	.explore-card__image img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		filter: saturate(1.04) contrast(1.04) brightness(0.9);
-		transform: scale(1.001);
-		transition:
-			filter 220ms ease,
-			transform 560ms ease;
+	:global(body.footer-is-revealed) #oldtimer-kaufen .media-panel__content {
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(-18px);
 	}
 
-	.explore-card:hover .explore-card__image img,
-	.explore-card:focus-visible .explore-card__image img {
-		filter: saturate(1.12) contrast(1.06) brightness(0.98);
-		transform: scale(1.028);
-	}
-
-	.explore-card__body {
-		display: grid;
-		align-content: start;
-		gap: clamp(0.82rem, 1.1vw, 1.15rem);
-		min-height: 206px;
-		padding: clamp(1.45rem, 1.7vw, 2rem) clamp(1.35rem, 1.8vw, 2rem) clamp(1.75rem, 2.15vw, 2.4rem);
-	}
-
-	.explore-card__meta {
-		display: grid;
-		grid-template-columns: auto;
-		align-items: center;
-		width: fit-content;
-		color: rgba(238, 238, 238, 0.5);
-		font-size: clamp(0.66rem, 0.72vw, 0.76rem);
-		font-weight: 300;
-		letter-spacing: 0.18em;
-	}
-
-	.explore-card__meta span:last-child {
-		display: none;
-	}
-
-	.explore-card__body strong {
-		max-width: 28ch;
-		text-transform: uppercase;
-		letter-spacing: 0.24em;
-		font-size: clamp(0.88rem, 1.05vw, 1.18rem);
-		font-weight: 400;
-		line-height: 1.46;
-		text-wrap: balance;
-	}
-
-	.explore-card__text {
-		display: block;
-		max-width: 42ch;
-		color: rgba(238, 238, 238, 0.62);
-		font-size: clamp(0.92rem, 1.02vw, 1.06rem);
-		font-weight: 300;
-		letter-spacing: 0.035em;
-		line-height: 1.62;
-	}
-
-	.explore-card:nth-child(1) .explore-card__image img {
-		object-position: 58% 48%;
-	}
-
-	.explore-card:nth-child(2) .explore-card__image img {
-		object-position: 50% 42%;
-	}
-
-	.explore-card:nth-child(3) .explore-card__image img {
-		object-position: 50% 18%;
-	}
-
-	.explore-card:nth-child(4) .explore-card__image img {
-		object-position: 62% 50%;
-	}
-
-	.explore-card:nth-child(5) .explore-card__image img {
-		object-position: 46% 54%;
-	}
-
-	@supports not (text-wrap: balance) {
-		.explore-card__body strong {
-			text-wrap: normal;
-		}
-	}
-
-	@media (max-width: 1180px) {
-		.explore-grid {
-			grid-auto-columns: clamp(320px, 44vw, 410px);
-			gap: clamp(1rem, 2.4vw, 1.75rem);
-		}
-
-		.explore-card__image {
-			aspect-ratio: 1.52;
-		}
-
-		.explore-card__body {
-			padding: clamp(1.25rem, 2.8vw, 1.8rem);
-		}
+	:global(body.footer-is-revealed) #oldtimer-kaufen .section-up-cue {
+		opacity: 0;
+		pointer-events: none;
 	}
 
 	@media (max-width: 980px), (pointer: coarse) {
@@ -593,6 +676,7 @@ const exploreItems = [
 	@media (max-width: 760px) {
 		.media-panel {
 			min-height: 100svh;
+			--panel-edge-cue-offset: clamp(7.75rem, 18svh, 10rem);
 		}
 
 		.media-panel__content,
@@ -618,74 +702,15 @@ const exploreItems = [
 		}
 
 		.scroll-cue {
-			margin-top: 1.65rem;
+			width: 44px;
+			height: 44px;
 		}
 
-		.explore {
-			padding: 5.8rem 1rem 5.5rem;
-		}
-
-		.explore__intro {
-			text-align: center;
-			margin-bottom: 2.6rem;
-		}
-
-		.explore h2 {
-			font-size: 1.45rem;
-		}
-
-		.explore-grid {
-			display: grid;
-			grid-auto-flow: row;
-			grid-auto-columns: unset;
-			grid-template-columns: minmax(0, 1fr);
-			gap: 1rem;
-			width: min(100%, 430px);
-			overflow: visible;
-			padding-bottom: 0;
-			scroll-snap-type: none;
-		}
-
-		.explore-card {
-			transform: none;
-		}
-
-		.explore-card__image {
-			aspect-ratio: 1.78;
-		}
-
-		.explore-card:hover,
-		.explore-card:focus-visible {
-			transform: none;
-		}
-
-		.explore-card__image::after {
-			background:
-				linear-gradient(180deg, rgba(9, 9, 9, 0.2), rgba(9, 9, 9, 0.32)),
-				linear-gradient(90deg, rgba(9, 9, 9, 0.26), rgba(9, 9, 9, 0.08) 70%);
-		}
-
-		.explore-card__body {
-			gap: 0.58rem;
-			min-height: auto;
-			padding: 1.1rem 1rem 1.45rem;
-		}
-
-		.explore-card__meta {
-			font-size: 0.62rem;
-		}
-
-		.explore-card__body strong {
-			max-width: 22ch;
-			font-size: clamp(0.96rem, 4.55vw, 1.14rem);
-			letter-spacing: 0.16em;
-			line-height: 1.32;
-		}
-
-		.explore-card__text {
-			font-size: 1rem;
-			letter-spacing: 0.02em;
-			line-height: 1.5;
+		.section-cta {
+			min-width: min(84vw, 292px);
+			min-height: 58px;
+			padding-inline: 2.1rem;
+			letter-spacing: 0.2em;
 		}
 	}
 </style>

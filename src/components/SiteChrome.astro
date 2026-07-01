@@ -1,11 +1,15 @@
 ---
 const menuItems = [
-	{ title: 'Über uns', href: '/#explore' },
-	{ title: 'Projekte', href: '/#explore' },
-	{ title: 'Handwerk', href: '/#explore' },
-	{ title: 'Oldtimer kaufen', href: '/#explore' },
-	{ title: 'Kontakt', href: '/#explore' },
+	{ title: 'Über uns', href: '/#ueber-uns' },
+	{ title: 'Projekte', href: '/#projekte' },
+	{ title: 'Handwerk', href: '/#handwerk' },
+	{ title: 'Oldtimer kaufen', href: '/#oldtimer-kaufen' },
+	{ title: 'Kontakt', href: '/kontakt' },
 ];
+
+const { footerVariant = 'default' } = Astro.props;
+const isHomeFooter = footerVariant === 'home';
+const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' : 'site-footer';
 ---
 
 <div class="site-shell">
@@ -42,7 +46,14 @@ const menuItems = [
 
 	<slot />
 
-	<footer class="site-footer">
+	<footer class={footerClass} id="site-footer">
+		{
+			isHomeFooter && (
+				<button class="footer-reveal-close" type="button" data-footer-close aria-label="Footer ausblenden">
+					<span aria-hidden="true"></span>
+				</button>
+			)
+		}
 		<a class="footer-brand" href="/">DIE OLDTIMERMANUFAKTUR</a>
 		<div class="footer-links">
 			<a href="/impressum">Impressum</a>
@@ -79,8 +90,12 @@ const menuItems = [
 	const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 	const sectionIndicator = document.querySelector('[data-section-indicator]');
 	const heroVideo = document.querySelector('[data-hero-video]');
+	const homeFooter = document.querySelector('.site-footer--home');
+	const footerOpenControls = document.querySelectorAll('[data-footer-open]');
+	const footerCloseControls = document.querySelectorAll('[data-footer-close]');
 	let activeSectionScroll;
 	let resumeHeroAfterScroll = false;
+	let footerTouchStartY = 0;
 
 	if ('scrollRestoration' in window.history) {
 		window.history.scrollRestoration = 'manual';
@@ -154,6 +169,31 @@ const menuItems = [
 		}
 	};
 
+	const isFooterRevealed = () => document.body.classList.contains('footer-is-revealed');
+
+	const isAtPageBottom = () =>
+		window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+
+	const revealFooter = () => {
+		if (!(homeFooter instanceof HTMLElement)) {
+			return;
+		}
+
+		document.body.classList.add('footer-is-revealed');
+		homeFooter.setAttribute('aria-hidden', 'false');
+		homeFooter.inert = false;
+	};
+
+	const hideFooter = () => {
+		if (!(homeFooter instanceof HTMLElement)) {
+			return;
+		}
+
+		document.body.classList.remove('footer-is-revealed');
+		homeFooter.setAttribute('aria-hidden', 'true');
+		homeFooter.inert = true;
+	};
+
 	const stopSectionScroll = () => {
 		if (activeSectionScroll) {
 			window.cancelAnimationFrame(activeSectionScroll);
@@ -221,11 +261,73 @@ const menuItems = [
 		clearHash();
 	};
 
-	window.addEventListener('wheel', stopSectionScroll, { passive: true });
-	window.addEventListener('touchstart', stopSectionScroll, { passive: true });
+	if (homeFooter instanceof HTMLElement) {
+		homeFooter.setAttribute('aria-hidden', 'true');
+		homeFooter.inert = true;
+	}
+
+	window.addEventListener('wheel', (event) => {
+		stopSectionScroll();
+
+		if (!(homeFooter instanceof HTMLElement)) {
+			return;
+		}
+
+		if (isFooterRevealed() && event.deltaY < -8) {
+			event.preventDefault();
+			hideFooter();
+			return;
+		}
+
+		if (!isFooterRevealed() && event.deltaY > 8 && isAtPageBottom()) {
+			event.preventDefault();
+			revealFooter();
+		}
+	}, { passive: false });
+
+	window.addEventListener('touchstart', (event) => {
+		stopSectionScroll();
+		footerTouchStartY = event.touches[0]?.clientY ?? 0;
+	}, { passive: true });
+
+	window.addEventListener('touchmove', (event) => {
+		if (!(homeFooter instanceof HTMLElement)) {
+			return;
+		}
+
+		const currentY = event.touches[0]?.clientY ?? footerTouchStartY;
+		const deltaY = footerTouchStartY - currentY;
+
+		if (isFooterRevealed() && deltaY < -10) {
+			event.preventDefault();
+			hideFooter();
+			return;
+		}
+
+		if (!isFooterRevealed() && deltaY > 10 && isAtPageBottom()) {
+			event.preventDefault();
+			revealFooter();
+		}
+	}, { passive: false });
+
 	window.addEventListener('keydown', (event) => {
 		if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', 'Space'].includes(event.code)) {
 			stopSectionScroll();
+		}
+
+		if (!(homeFooter instanceof HTMLElement)) {
+			return;
+		}
+
+		if (isFooterRevealed() && ['ArrowUp', 'PageUp'].includes(event.code)) {
+			event.preventDefault();
+			hideFooter();
+			return;
+		}
+
+		if (!isFooterRevealed() && ['ArrowDown', 'PageDown', 'Space', 'End'].includes(event.code) && isAtPageBottom()) {
+			event.preventDefault();
+			revealFooter();
 		}
 	});
 
@@ -280,6 +382,7 @@ const menuItems = [
 
 	document.querySelectorAll('[data-scroll-target]').forEach((control) => {
 		control.addEventListener('click', () => {
+			hideFooter();
 			const targetSelector = control.getAttribute('data-scroll-target');
 			const target = targetSelector ? document.querySelector(targetSelector) : null;
 
@@ -287,6 +390,14 @@ const menuItems = [
 				scrollToSection(target);
 			}
 		});
+	});
+
+	footerOpenControls.forEach((control) => {
+		control.addEventListener('click', revealFooter);
+	});
+
+	footerCloseControls.forEach((control) => {
+		control.addEventListener('click', hideFooter);
 	});
 
 	if (sectionIndicator && 'IntersectionObserver' in window) {
@@ -430,7 +541,7 @@ const menuItems = [
 	.menu-close {
 		display: inline-flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-end;
 		gap: 0.8rem;
 	}
 
@@ -573,6 +684,106 @@ const menuItems = [
 		text-align: center;
 	}
 
+	.site-footer--home {
+		position: fixed;
+		inset: 0;
+		z-index: 44;
+		overflow: hidden;
+		min-height: 100svh;
+		justify-content: flex-end;
+		padding: clamp(5rem, 9vw, 8rem) clamp(1rem, 5.6vw, 6.5rem) clamp(2rem, 4.8vw, 4.5rem);
+		background: transparent;
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(22px);
+		transition:
+			opacity 420ms cubic-bezier(0.22, 1, 0.36, 1),
+			transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.site-footer--home::before,
+	.site-footer--home::after {
+		position: absolute;
+		inset: 0;
+		content: '';
+		pointer-events: none;
+	}
+
+	.site-footer--home::before {
+		top: auto;
+		left: 50%;
+		bottom: 0;
+		z-index: 1;
+		width: 118vw;
+		height: min(46svh, 430px);
+		border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+		background: rgba(238, 238, 238, 0.001);
+		backdrop-filter: blur(42px) saturate(114%);
+		-webkit-backdrop-filter: blur(42px) saturate(114%);
+		mask-image: radial-gradient(ellipse 72% 100% at 50% 100%, #000 0 62%, rgba(0, 0, 0, 0.74) 75%, transparent 100%);
+		-webkit-mask-image: radial-gradient(ellipse 72% 100% at 50% 100%, #000 0 62%, rgba(0, 0, 0, 0.74) 75%, transparent 100%);
+		opacity: 0.98;
+		transform: translateX(-50%) translateY(18%) scale(0.96);
+		transition: transform 640ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.site-footer--home::after {
+		z-index: 0;
+		background: linear-gradient(180deg, transparent 35%, rgba(4, 4, 4, 0.28));
+		opacity: 0;
+		transition: opacity 520ms ease;
+	}
+
+	.site-footer--home > * {
+		position: relative;
+		z-index: 2;
+	}
+
+	:global(body.footer-is-revealed) .site-footer--home {
+		opacity: 1;
+		pointer-events: auto;
+		transform: translateY(0);
+	}
+
+	:global(body.footer-is-revealed) .site-footer--home::before {
+		transform: translateX(-50%) translateY(0) scale(1);
+	}
+
+	:global(body.footer-is-revealed) .site-footer--home::after {
+		opacity: 1;
+	}
+
+	.footer-reveal-close {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		margin: 0 0 clamp(1.2rem, 3vw, 2rem);
+		padding: 0;
+		color: rgba(238, 238, 238, 0.86);
+		background: transparent;
+		border: 0;
+		cursor: pointer;
+		transition:
+			color 180ms ease,
+			transform 180ms ease;
+	}
+
+	.footer-reveal-close span {
+		width: 12px;
+		height: 12px;
+		border-right: 1px solid currentColor;
+		border-bottom: 1px solid currentColor;
+		transform: rotate(225deg) translate(-2px, -2px);
+	}
+
+	.footer-reveal-close:hover,
+	.footer-reveal-close:focus-visible {
+		color: rgba(238, 238, 238, 0.98);
+		transform: translateY(-4px);
+	}
+
 	.footer-links,
 	.social-links {
 		display: flex;
@@ -634,6 +845,7 @@ const menuItems = [
 
 	.menu-toggle:focus-visible,
 	.menu-close:focus-visible,
+	.footer-reveal-close:focus-visible,
 	.footer-links a:focus-visible,
 	.social-links a:focus-visible {
 		outline: 1px solid rgba(238, 238, 238, 0.62);

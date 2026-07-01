@@ -77,6 +77,84 @@ Avoid:
 - English public-facing labels, placeholder links, or placeholder legal/contact copy
   on production-intended pages.
 
+## Video Asset Encoding
+
+Use this workflow for fullscreen background videos and other autoplaying site videos.
+Keep generated video assets in `src/assets/oldtimer/` unless there is a strong reason
+to serve them from `public/`.
+
+Prefer the repo helper for future videos:
+`npm run encode-video -- path/to/input-video.mov output-base-name`. It generates the
+MP4, WebM, animated AVIF, and animated WebP fallback described below.
+
+For Safari-safe autoplay sources, create an MP4 with exactly one video stream:
+H.264/AVC, 8-bit `yuv420p`, no audio stream, no subtitle stream, no data/timecode
+stream, and web-optimized fast-start metadata. Do not use HEVC/H.265, ProRes,
+10-bit color, audio tracks, or camera timecode/data tracks for autoplay backgrounds.
+
+For a landscape fullscreen hero, encode the primary MP4 from a master file like this:
+
+```sh
+ffmpeg -y -i input-master.mov \
+  -map 0:v:0 -an -dn -sn \
+  -vf "fps=25,scale=1920:-2:flags=lanczos,format=yuv420p" \
+  -c:v libx264 -preset slow -crf 20 -profile:v high -level 4.0 \
+  -movflags +faststart \
+  src/assets/oldtimer/example-site.mp4
+```
+
+Adjust only the final filename for new videos. If the source already has the exact
+desired frame rate and size, keep the same output requirements but adjust or remove
+the `fps`/`scale` filters deliberately. Raise `-crf` to `22` or `23` for smaller files,
+or lower it to `18` for higher quality. Avoid very long hero loops; 6-12 seconds is a
+good target for fullscreen background motion.
+
+Create an optional AV1 WebM source when size/performance justify it:
+
+```sh
+ffmpeg -y -i input-master.mov \
+  -map 0:v:0 -an -dn -sn \
+  -vf "fps=25,scale=1920:-2:flags=lanczos,format=yuv420p" \
+  -c:v libsvtav1 -preset 8 -crf 32 -pix_fmt yuv420p \
+  src/assets/oldtimer/example-site.webm
+```
+
+For Safari or browser-policy autoplay failures, use an animated AVIF fallback rather
+than animated WebP for fullscreen hero motion. Animated WebP is visibly worse on this
+site. Generate the fallback from the final MP4:
+
+```sh
+ffmpeg -y -i src/assets/oldtimer/example-site.mp4 \
+  -an -dn -sn \
+  -vf "fps=25,scale=1920:-2:flags=lanczos,format=yuv420p" \
+  -c:v libsvtav1 -preset 7 -crf 21 -pix_fmt yuv420p -f avif \
+  src/assets/oldtimer/example-site-motion.avif
+```
+
+If the animated AVIF is too large, first try `-crf 23` or `-crf 24`. If it is still too
+large, scale to `1280:-2` for non-critical fallbacks. Keep an animated WebP only as a
+last-resort `<img>` fallback for browsers that cannot display animated AVIF.
+
+Before using any encoded MP4, validate it with `ffprobe`:
+
+```sh
+ffprobe -hide_banner -v error -show_streams -show_format src/assets/oldtimer/example-site.mp4
+ffprobe -hide_banner -v error -select_streams a -show_entries stream=index -of csv=p=0 src/assets/oldtimer/example-site.mp4
+ffprobe -hide_banner -v error -select_streams d -show_entries stream=index -of csv=p=0 src/assets/oldtimer/example-site.mp4
+```
+
+The first command must show one H.264 video stream with `pix_fmt=yuv420p`. The audio
+and data-stream checks must print nothing. Stop and re-export/re-encode if an MP4 has
+audio, data/timecode, HEVC, 10-bit pixel format, or multiple streams.
+
+When wiring a background video into Astro, follow the homepage pattern: MP4 source
+first, WebM second if present, `autoplay`, `muted`, `loop`, `playsinline`,
+`webkit-playsinline`, and `preload="auto"` on the `<video>`. Keep decorative
+background video `aria-hidden="true"`. Keep the animated AVIF fallback visible under
+the video, hide the video with `visibility: hidden` until `play()` resolves or the
+`playing` event fires, then fade the video in. This prevents Safari's native play
+overlay from appearing when Safari blocks autoplay.
+
 For subpage layout, keep the fixed blurred header and menu overlay consistent across
 the site. Navigation links should point to real routes once those pages exist instead
 of homepage `#explore` anchors. Preserve keyboard access, Escape-to-close behavior,
