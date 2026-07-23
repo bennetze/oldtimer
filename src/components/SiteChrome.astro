@@ -4,12 +4,28 @@ const menuItems = [
 	{ title: 'Projekte', href: '/#projekte' },
 	{ title: 'Handwerk', href: '/#handwerk' },
 	{ title: 'Oldtimer kaufen', href: '/#oldtimer-kaufen' },
-	{ title: 'Kontakt', href: '/kontakt' },
+	{ title: 'Kontakt', href: '/kontakt/' },
 ];
 
 const { footerVariant = 'default' } = Astro.props;
 const isHomeFooter = footerVariant === 'home';
 const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' : 'site-footer';
+const basePath = import.meta.env.BASE_URL;
+const sitePath = (path) => {
+	if (path === '/') {
+		return basePath;
+	}
+
+	if (path.startsWith('/#')) {
+		return `${basePath}${path.slice(1)}`;
+	}
+
+	if (path.startsWith('/')) {
+		return `${basePath}${path.slice(1)}`;
+	}
+
+	return path;
+};
 ---
 
 <div class="site-shell">
@@ -20,13 +36,13 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 			<span class="menu-lines" aria-hidden="true"></span>
 			<span>Menü</span>
 		</button>
-		<a class="brand" href="/" aria-label="Die Oldtimermanufaktur Startseite">
+		<a class="brand" href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
 			DIE OLDTIMERMANUFAKTUR
 		</a>
 		<span class="header-spacer" aria-hidden="true"></span>
 	</header>
 
-	<div class="menu-overlay" id="site-menu" aria-hidden="true">
+	<div class="menu-overlay" id="site-menu" aria-hidden="true" inert>
 		<div class="menu-panel" role="dialog" aria-modal="true" aria-label="Hauptmenü">
 			<div class="menu-panel__top">
 				<button class="menu-close" type="button">Schließen</button>
@@ -35,7 +51,7 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 			<nav class="menu-nav" aria-label="Hauptnavigation">
 				{
 					menuItems.map((item, index) => (
-						<a href={item.href} class="menu-nav__link" style={`--item-index: ${index}`}>
+						<a href={sitePath(item.href)} class="menu-nav__link" style={`--item-index: ${index}`}>
 							{item.title}
 						</a>
 					))
@@ -46,7 +62,12 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 
 	<slot />
 
-	<footer class={footerClass} id="site-footer">
+	<footer
+		class={footerClass}
+		id="site-footer"
+		aria-hidden={isHomeFooter ? 'true' : undefined}
+		inert={isHomeFooter ? true : undefined}
+	>
 		{
 			isHomeFooter && (
 				<button class="footer-reveal-close" type="button" data-footer-close aria-label="Footer ausblenden">
@@ -54,10 +75,10 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 				</button>
 			)
 		}
-		<a class="footer-brand" href="/">DIE OLDTIMERMANUFAKTUR</a>
+		<a class="footer-brand" href={sitePath('/')}>DIE OLDTIMERMANUFAKTUR</a>
 		<div class="footer-links">
-			<a href="/impressum">Impressum</a>
-			<a href="/datenschutz">Datenschutzerklärung</a>
+			<a href={sitePath('/impressum/')}>Impressum</a>
+			<a href={sitePath('/datenschutz/')}>Datenschutzerklärung</a>
 		</div>
 		<div class="social-links" aria-label="Social Media">
 			<a href="#" aria-label="YouTube">
@@ -83,32 +104,21 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 <script>
 	const cursor = document.querySelector('.cursor');
 	const interactiveSelector = 'a, button, [role="button"]';
+	const siteShell = document.querySelector('.site-shell');
 	const menuToggle = document.querySelector('.menu-toggle');
 	const menuOverlay = document.querySelector('.menu-overlay');
 	const menuPanel = document.querySelector('.menu-panel');
 	const menuClose = document.querySelector('.menu-close');
 	const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 	const sectionIndicator = document.querySelector('[data-section-indicator]');
-	const heroVideo = document.querySelector('[data-hero-video]');
+	const pageMain = document.querySelector('main');
 	const homeFooter = document.querySelector('.site-footer--home');
 	const footerOpenControls = document.querySelectorAll('[data-footer-open]');
 	const footerCloseControls = document.querySelectorAll('[data-footer-close]');
+	const menuBackgroundState = new Map();
 	let activeSectionScroll;
-	let resumeHeroAfterScroll = false;
 	let footerTouchStartY = 0;
-
-	if ('scrollRestoration' in window.history) {
-		window.history.scrollRestoration = 'manual';
-	}
-
-	const resetInitialScroll = () => {
-		if (!window.location.hash) {
-			window.scrollTo({ top: 0, behavior: 'auto' });
-		}
-	};
-
-	resetInitialScroll();
-	window.addEventListener('pageshow', resetInitialScroll);
+	let previousFooterFocus;
 
 	if (cursor && window.matchMedia('(pointer: fine)').matches) {
 		let cursorX = -40;
@@ -147,17 +157,51 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 	const focusableMenuItems = () =>
 		menuPanel ? [...menuPanel.querySelectorAll('a[href], button:not([disabled])')] : [];
 
+	const setMenuBackgroundInert = (shouldBeInert) => {
+		if (!(siteShell instanceof HTMLElement)) {
+			return;
+		}
+
+		[...siteShell.children].forEach((element) => {
+			if (
+				!(element instanceof HTMLElement) ||
+				element === menuOverlay ||
+				element === cursor
+			) {
+				return;
+			}
+
+			if (shouldBeInert) {
+				menuBackgroundState.set(element, element.inert);
+				element.inert = true;
+				return;
+			}
+
+			element.inert = menuBackgroundState.get(element) ?? false;
+			menuBackgroundState.delete(element);
+		});
+	};
+
 	const openMenu = () => {
+		hideFooter({ restoreFocus: false });
+		if (menuOverlay instanceof HTMLElement) {
+			menuOverlay.inert = false;
+		}
 		menuOverlay?.setAttribute('aria-hidden', 'false');
 		menuToggle?.setAttribute('aria-expanded', 'true');
+		setMenuBackgroundInert(true);
 		document.body.classList.add('menu-is-open');
 		focusableMenuItems()[0]?.focus();
 	};
 
 	const closeMenu = ({ restoreFocus = true } = {}) => {
 		menuOverlay?.setAttribute('aria-hidden', 'true');
+		if (menuOverlay instanceof HTMLElement) {
+			menuOverlay.inert = true;
+		}
 		menuToggle?.setAttribute('aria-expanded', 'false');
 		document.body.classList.remove('menu-is-open');
+		setMenuBackgroundInert(false);
 		if (restoreFocus) {
 			menuToggle?.focus();
 		}
@@ -179,32 +223,41 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 			return;
 		}
 
+		previousFooterFocus =
+			document.activeElement instanceof HTMLElement ? document.activeElement : undefined;
+		if (pageMain instanceof HTMLElement) {
+			pageMain.inert = true;
+		}
 		document.body.classList.add('footer-is-revealed');
 		homeFooter.setAttribute('aria-hidden', 'false');
 		homeFooter.inert = false;
+		window.requestAnimationFrame(() => {
+			homeFooter.querySelector('[data-footer-close]')?.focus({ preventScroll: true });
+		});
 	};
 
-	const hideFooter = () => {
+	const hideFooter = ({ restoreFocus = true } = {}) => {
 		if (!(homeFooter instanceof HTMLElement)) {
 			return;
 		}
 
+		const wasRevealed = isFooterRevealed();
 		document.body.classList.remove('footer-is-revealed');
 		homeFooter.setAttribute('aria-hidden', 'true');
 		homeFooter.inert = true;
+		if (pageMain instanceof HTMLElement) {
+			pageMain.inert = false;
+		}
+		if (wasRevealed && restoreFocus && previousFooterFocus instanceof HTMLElement) {
+			previousFooterFocus.focus({ preventScroll: true });
+		}
+		previousFooterFocus = undefined;
 	};
 
 	const stopSectionScroll = () => {
 		if (activeSectionScroll) {
 			window.cancelAnimationFrame(activeSectionScroll);
 			activeSectionScroll = undefined;
-		}
-
-		if (resumeHeroAfterScroll && heroVideo instanceof HTMLVideoElement) {
-			resumeHeroAfterScroll = false;
-			heroVideo.play().catch(() => {
-				/* Ignore browser autoplay policy after interrupted scrolls. */
-			});
 		}
 	};
 
@@ -219,11 +272,6 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 		const duration = Math.min(1180, Math.max(980, Math.abs(distance) * 0.82));
 		const startTime = window.performance.now();
 
-		if (heroVideo instanceof HTMLVideoElement && !heroVideo.paused) {
-			resumeHeroAfterScroll = true;
-			heroVideo.pause();
-		}
-
 		const step = (time) => {
 			const progress = Math.min((time - startTime) / duration, 1);
 			const easedProgress = easeInOutQuart(progress);
@@ -236,12 +284,6 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 			}
 
 			activeSectionScroll = undefined;
-			if (resumeHeroAfterScroll && heroVideo instanceof HTMLVideoElement) {
-				resumeHeroAfterScroll = false;
-				heroVideo.play().catch(() => {
-					/* Ignore browser autoplay policy after completed scrolls. */
-				});
-			}
 		};
 
 		activeSectionScroll = window.requestAnimationFrame(step);
@@ -342,6 +384,12 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 	document.addEventListener('keydown', (event) => {
 		if (event.key === 'Escape' && menuOverlay?.getAttribute('aria-hidden') === 'false') {
 			closeMenu();
+			return;
+		}
+
+		if (event.key === 'Escape' && isFooterRevealed()) {
+			hideFooter();
+			return;
 		}
 
 		if (event.key !== 'Tab' || menuOverlay?.getAttribute('aria-hidden') !== 'false') {
@@ -416,7 +464,13 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 
 		const setActiveIndicator = (id) => {
 			indicatorControls.forEach((control) => {
-				control.classList.toggle('is-active', control === sectionById.get(id));
+				const isActive = control === sectionById.get(id);
+				control.classList.toggle('is-active', isActive);
+				if (isActive) {
+					control.setAttribute('aria-current', 'true');
+				} else {
+					control.removeAttribute('aria-current');
+				}
 			});
 		};
 
@@ -612,7 +666,7 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 		align-items: center;
 		justify-content: space-between;
 		gap: 1rem;
-		margin-top: clamp(-2.2rem, -2.25vw, -1.75rem);
+		margin-top: 0;
 		color: rgba(238, 238, 238, 0.76);
 		text-transform: uppercase;
 		letter-spacing: 0.24em;
@@ -837,7 +891,7 @@ const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' :
 
 	.site-footer p {
 		margin: 0;
-		color: rgba(238, 238, 238, 0.46);
+		color: rgba(238, 238, 238, 0.64);
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
 		font-size: 0.68rem;

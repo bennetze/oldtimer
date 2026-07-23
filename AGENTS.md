@@ -5,27 +5,35 @@
 This is a small Astro site for the German classic car restoration company
 “Die Oldtimermanufaktur”. Source lives in `src/`:
 
-- `src/pages/` contains route entry points, currently the German homepage in `index.astro`.
+- `src/pages/` contains route entry points: the German homepage in `index.astro`,
+  legal pages in `impressum.astro` and `datenschutz.astro`, and the custom
+  not-found page in `404.astro`.
 - `src/layouts/` contains shared page shells such as `Layout.astro`.
-- `src/components/` contains reusable Astro components such as `Welcome.astro`.
+- `src/components/` contains reusable Astro components such as `SiteChrome.astro`
+  and `LegalArticle.astro`.
 - `src/assets/` contains source-controlled assets imported by pages and components.
 - `src/assets/oldtimer/` contains generated homepage imagery. Keep project-referenced
   generated assets in this folder or another source-controlled asset folder, not only
   under `$CODEX_HOME/generated_images/`.
 - `public/` contains static files served from the site root, including favicons.
+  Its `.htaccess` maps IONOS/Apache 404 responses to the generated `/404.html`.
 
 Root configuration includes `astro.config.mjs`, `tsconfig.json`, `package.json`, and `package-lock.json`.
+The production site is served from the root of
+`https://www.oldtimermanufaktur.de/`; do not add a deployment base path.
 
-When adding subpages, prefer German, lowercase, URL-oriented routes that match the
-homepage navigation: `src/pages/ueber-uns.astro`, `src/pages/projekte.astro`,
-`src/pages/oldtimer-kaufen.astro`, `src/pages/hochzeitsfahrten.astro`,
-`src/pages/restaurierung.astro`, and `src/pages/kontakt.astro`. Legal pages should use
-`src/pages/impressum.astro` and `src/pages/datenschutz.astro`.
+When commercial subpages are approved, prefer German, lowercase, URL-oriented routes
+that match the homepage navigation, such as `src/pages/ueber-uns.astro`,
+`src/pages/projekte.astro`, `src/pages/oldtimer-kaufen.astro`,
+`src/pages/restaurierung.astro`, and `src/pages/kontakt.astro`. Their scope and copy
+are not defined yet, so do not create them or invent production content without
+explicit requirements. There is no planned wedding-car service page.
 
 Before creating several subpages, extract repeated homepage structure from
-`src/pages/index.astro` into shared components instead of duplicating it. Likely
-components include a fixed blurred site header, full-screen menu overlay, footer,
-media hero/panel, and editorial content sections. Keep page-specific copy and data in
+`src/pages/index.astro` into shared components instead of duplicating it.
+`SiteChrome.astro` already owns the fixed blurred site header, full-screen menu
+overlay, and footer; reuse it on new pages. Likely further extractions include the
+media hero/panel and editorial content sections. Keep page-specific copy and data in
 the route file or a small local data module, and keep shared interaction code with the
 component that owns the markup.
 
@@ -150,10 +158,17 @@ audio, data/timecode, HEVC, 10-bit pixel format, or multiple streams.
 When wiring a background video into Astro, follow the homepage pattern: MP4 source
 first, WebM second if present, `autoplay`, `muted`, `loop`, `playsinline`,
 `webkit-playsinline`, and `preload="auto"` on the `<video>`. Keep decorative
-background video `aria-hidden="true"`. Keep the animated AVIF fallback visible under
-the video, hide the video with `visibility: hidden` until `play()` resolves or the
-`playing` event fires, then fade the video in. This prevents Safari's native play
-overlay from appearing when Safari blocks autoplay.
+background video `aria-hidden="true"`. Autoplaying, looping hero motion is a core
+site requirement for visitors who have not requested reduced motion.
+
+Use a lightweight still poster as the initially visible layer. Hide the video with
+`visibility: hidden` until `play()` resolves or the `playing` event fires, then fade
+the video in. Load or inject the animated AVIF/WebP fallback only after autoplay
+fails, the video errors, or playback stalls; do not eagerly download it alongside a
+successfully playing MP4. This prevents Safari's native play overlay from appearing
+when Safari blocks autoplay and avoids downloading two motion assets on the normal
+path. Preserve the homepage's accessible play/pause control and its
+`prefers-reduced-motion` behavior when changing the hero.
 
 For subpage layout, keep the fixed blurred header and menu overlay consistent across
 the site. Navigation links should point to real routes once those pages exist instead
@@ -166,6 +181,26 @@ selection across the website with `user-select: none`, prevent image dragging, a
 block the browser context menu everywhere so right-click saving is not directly
 available on current or future subpages.
 
+## Accessibility
+
+Accessibility is a project requirement. Preserve the shared skip link and give every
+page's primary `<main>` the `main-content` ID and `tabindex="-1"`. All controls and
+links must remain operable by keyboard with visible `:focus-visible` styles. Do not
+remove semantic headings, meaningful labels, informative image alternatives, or the
+hero motion control in the interest of visual minimalism.
+
+When a modal-style surface such as the full-screen menu or homepage footer is open,
+make the background inert, move focus into the surface, trap focus where appropriate,
+support Escape to close, and return focus to the control that opened it. Hidden menu
+and footer content must not remain in the accessibility tree or tab order. Keep
+`aria-expanded`, `aria-hidden`, and section `aria-current` state synchronized with the
+visible UI.
+
+Respect `prefers-reduced-motion`: the hero may start paused for those users while
+remaining manually playable, and non-essential smooth scrolling or transitions
+should be reduced. Content protection is non-negotiable, but it must not disable
+keyboard navigation, focus indication, or assistive-technology semantics.
+
 ## Testing Guidelines
 
 No dedicated test framework is configured yet. Run `npm run build` before submitting changes. For visual or behavior changes, also run `npm run dev` and verify the affected page in a browser.
@@ -173,13 +208,21 @@ No dedicated test framework is configured yet. Run `npm run build` before submit
 For homepage UI changes, verify desktop and mobile widths. Check that the fixed blurred
 header, menu overlay, scroll buttons, custom desktop cursor, generated images, and footer
 links render without overlap. The custom cursor should stay disabled on touch/mobile
-viewports.
+viewports. Confirm normal-motion visitors receive a playing, muted, looping hero; the
+play/pause control works; the animated fallback is not fetched on the successful path;
+and reduced-motion visitors can start playback manually.
 
 For subpage work, verify both the new route and the homepage after changes to shared
 navigation, layout, or footer components. Check at minimum a desktop viewport around
 1440px wide and a mobile viewport around 390px wide. Confirm that page titles,
 descriptions, nav active/current states if added, image crops, header blur, menu
 overlay, footer links, and focus states remain coherent without text overlap.
+
+For routing or deployment changes, test the generated `404.html`, its home link and
+`noindex` metadata, and confirm `dist/.htaccess` retains
+`ErrorDocument 404 /404.html`. For interaction changes, check the menu and footer with
+keyboard navigation in Safari and Firefox in addition to a Chromium-based browser;
+verify that focus is contained while open and restored after closing.
 
 If tests are added later, place them near the code they cover or in a clearly named test directory, and add an `npm test` script.
 

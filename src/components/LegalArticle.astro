@@ -7,7 +7,7 @@ interface Props {
 const { title, eyebrow } = Astro.props;
 ---
 
-<main class="legal-page">
+<main class="legal-page" id="main-content" tabindex="-1">
 	<section class="legal-hero" aria-labelledby="legal-title">
 		<p>{eyebrow}</p>
 		<h1 id="legal-title">{title}</h1>
@@ -120,17 +120,19 @@ const { title, eyebrow } = Astro.props;
 		}
 	}
 
-	@media (max-width: 760px) {
+		@media (max-width: 760px) {
 		.legal-hero {
 			min-height: 46svh;
 			padding: 7.5rem 1.25rem 3.5rem;
 		}
 
-		.legal-hero h1 {
-			font-size: clamp(1.55rem, 7.2vw, 2rem);
-			letter-spacing: 0.04em;
-			overflow-wrap: anywhere;
-		}
+			.legal-hero h1 {
+				font-size: clamp(1.4rem, 6.4vw, 1.9rem);
+				letter-spacing: 0.025em;
+				overflow-wrap: break-word;
+				word-break: normal;
+				hyphens: auto;
+			}
 
 		.legal-copy {
 			width: calc(100% - 2.5rem);

@@ -1,0 +1,196 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteChrome from '../components/SiteChrome.astro';
+import workshopDetail from '../assets/oldtimer/L1005834.webp';
+---
+
+<Layout
+	title="Seite nicht gefunden"
+	description="Die angeforderte Seite konnte nicht gefunden werden."
+	noindex
+>
+	<SiteChrome>
+		<main class="not-found" id="main-content" tabindex="-1">
+			<img
+				class="not-found__image"
+				src={workshopDetail.src}
+				alt=""
+				aria-hidden="true"
+			/>
+			<div class="not-found__shade" aria-hidden="true"></div>
+			<span class="not-found__number" aria-hidden="true">404</span>
+
+			<div class="not-found__content">
+				<p class="not-found__eyebrow">Fehler 404</p>
+				<h1>Diese Spur führt ins Leere.</h1>
+				<p class="not-found__copy">
+					Die gesuchte Seite ist nicht mehr vorhanden oder wurde verschoben.
+				</p>
+				<a class="not-found__link" href="/">
+					<span>Zur Startseite</span>
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M5 12h13M13 6l6 6-6 6"></path>
+					</svg>
+				</a>
+			</div>
+		</main>
+	</SiteChrome>
+</Layout>
+
+<style>
+	.not-found {
+		position: relative;
+		display: grid;
+		align-items: end;
+		min-height: 100svh;
+		overflow: hidden;
+		isolation: isolate;
+		background: #101010;
+	}
+
+	.not-found__image,
+	.not-found__shade {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.not-found__image {
+		z-index: -3;
+		object-fit: cover;
+		object-position: 48% 50%;
+		filter: grayscale(0.38) saturate(0.7) contrast(1.08) brightness(0.67);
+		transform: scale(1.015);
+	}
+
+	.not-found__shade {
+		z-index: -2;
+		background:
+			linear-gradient(90deg, rgba(12, 12, 12, 0.88) 0%, rgba(12, 12, 12, 0.48) 44%, rgba(12, 12, 12, 0.14) 76%),
+			linear-gradient(180deg, rgba(12, 12, 12, 0.3), rgba(12, 12, 12, 0.12) 42%, rgba(12, 12, 12, 0.88));
+	}
+
+	.not-found__number {
+		position: absolute;
+		top: 50%;
+		right: clamp(-1.5rem, 2vw, 2rem);
+		z-index: -1;
+		color: rgba(238, 238, 238, 0.07);
+		font-size: clamp(13rem, 31vw, 38rem);
+		font-weight: 300;
+		line-height: 0.72;
+		letter-spacing: -0.08em;
+		transform: translateY(-46%);
+	}
+
+	.not-found__content {
+		width: min(760px, calc(100% - 3rem));
+		margin: 0 clamp(1.5rem, 7vw, 8rem);
+		padding: clamp(10rem, 21vh, 14rem) 0 clamp(4rem, 9vh, 7rem);
+	}
+
+	.not-found__eyebrow {
+		margin: 0 0 1.4rem;
+		color: rgba(238, 238, 238, 0.72);
+		text-transform: uppercase;
+		letter-spacing: 0.32em;
+		font-size: 0.7rem;
+		font-weight: 500;
+	}
+
+	h1 {
+		max-width: 720px;
+		margin: 0;
+		font-size: clamp(2.15rem, 5.1vw, 6rem);
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		text-wrap: balance;
+	}
+
+	.not-found__copy {
+		max-width: 530px;
+		margin: 1.8rem 0 0;
+		color: rgba(238, 238, 238, 0.78);
+		font-size: clamp(1rem, 1.2vw, 1.16rem);
+		font-weight: 300;
+		line-height: 1.7;
+	}
+
+	.not-found__link {
+		display: inline-flex;
+		align-items: center;
+		gap: 1rem;
+		min-height: 48px;
+		margin-top: 2.4rem;
+		color: #eeeeee;
+		border-bottom: 1px solid rgba(238, 238, 238, 0.48);
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.22em;
+		font-size: 0.75rem;
+		font-weight: 500;
+		transition:
+			border-color 180ms ease,
+			gap 180ms ease;
+	}
+
+	.not-found__link svg {
+		width: 20px;
+		height: 20px;
+		fill: none;
+		stroke: currentColor;
+		stroke-linecap: square;
+		stroke-width: 1.2;
+	}
+
+	.not-found__link:hover,
+	.not-found__link:focus-visible {
+		gap: 1.35rem;
+		border-color: #eeeeee;
+	}
+
+	.not-found__link:focus-visible {
+		outline: 1px solid rgba(238, 238, 238, 0.72);
+		outline-offset: 0.5rem;
+	}
+
+	@media (max-width: 760px) {
+		.not-found__image {
+			object-position: 31% 50%;
+		}
+
+		.not-found__shade {
+			background:
+				linear-gradient(180deg, rgba(12, 12, 12, 0.42), rgba(12, 12, 12, 0.2) 32%, rgba(12, 12, 12, 0.92)),
+				linear-gradient(90deg, rgba(12, 12, 12, 0.62), rgba(12, 12, 12, 0.12));
+		}
+
+		.not-found__number {
+			top: 26%;
+			right: -0.25rem;
+			font-size: clamp(9rem, 48vw, 13rem);
+			transform: none;
+		}
+
+		.not-found__content {
+			width: calc(100% - 2.5rem);
+			margin: 0 1.25rem;
+			padding: 8rem 0 4.25rem;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 10.4vw, 3.1rem);
+			line-height: 1.04;
+			letter-spacing: 0.07em;
+			text-wrap: pretty;
+		}
+
+		.not-found__copy {
+			max-width: 32rem;
+			margin-top: 1.35rem;
+		}
+	}
+</style>

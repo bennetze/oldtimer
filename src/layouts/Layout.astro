@@ -1,24 +1,35 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+	noindex?: boolean;
+}
+
+const basePath = import.meta.env.BASE_URL;
+const {
+	title,
+	description = 'Die Oldtimermanufaktur restauriert klassische Automobile mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte.',
+	noindex = false,
+} = Astro.props;
+const pageTitle = title ? `${title} | Die Oldtimermanufaktur` : 'Die Oldtimermanufaktur';
+const canonicalUrl = Astro.site ? new URL(Astro.url.pathname, Astro.site) : undefined;
+---
+
 <!doctype html>
 <html lang="de">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap"
-			rel="stylesheet"
-		/>
-		<meta
-			name="description"
-			content="Die Oldtimermanufaktur restauriert klassische Automobile mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
-		/>
+		<link rel="icon" type="image/svg+xml" href={`${basePath}favicon.svg`} />
+		<link rel="icon" href={`${basePath}favicon.ico`} />
+		<meta name="description" content={description} />
+		{noindex && <meta name="robots" content="noindex,follow" />}
+		{canonicalUrl && !noindex && <link rel="canonical" href={canonicalUrl} />}
 		<meta name="generator" content={Astro.generator} />
-		<title>Die Oldtimermanufaktur</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<a class="skip-link" href="#main-content">Zum Inhalt springen</a>
 		<slot />
 		<script>
 			document.addEventListener('contextmenu', (event) => {
@@ -35,6 +46,14 @@
 </html>
 
 <style>
+	@font-face {
+		font-family: 'Jost';
+		src: url('../assets/fonts/jost-variable.ttf') format('truetype');
+		font-weight: 300 600;
+		font-style: normal;
+		font-display: swap;
+	}
+
 	:root {
 		--color-background: #101010;
 		--color-main: #eeeeee;
@@ -56,6 +75,30 @@
 
 	body {
 		overflow-x: hidden;
+	}
+
+	.skip-link {
+		position: fixed;
+		top: 0.75rem;
+		left: 0.75rem;
+		z-index: 2000;
+		padding: 0.8rem 1rem;
+		color: #101010;
+		background: #eeeeee;
+		border: 1px solid #eeeeee;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		font-size: 0.72rem;
+		font-weight: 500;
+		transform: translateY(calc(-100% - 1rem));
+		transition: transform 160ms ease;
+	}
+
+	.skip-link:focus {
+		outline: 2px solid #101010;
+		outline-offset: -4px;
+		transform: translateY(0);
 	}
 
 	:global(*) {

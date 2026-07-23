@@ -1,716 +1,1012 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SiteChrome from '../components/SiteChrome.astro';
-import craftHands from '../assets/oldtimer/craft-hands.png';
-import heroSiteMotionAvif from '../assets/oldtimer/hero-site-motion.avif';
-import heroSiteMotionWebp from '../assets/oldtimer/hero-site-motion.webp';
-import heroSiteMp4 from '../assets/oldtimer/hero-site.mp4';
-import heroSiteWebm from '../assets/oldtimer/hero-site.webm';
-import sectionOldtimerKaufen from '../assets/oldtimer/section-oldtimer-kaufen.png';
-import sectionProjekte from '../assets/oldtimer/section-projekte.png';
-import sectionUeberUns from '../assets/oldtimer/section-ueber-uns.png';
+import Layout from "../layouts/Layout.astro";
+import SiteChrome from "../components/SiteChrome.astro";
+import craftHands from "../assets/oldtimer/craft-hands.png";
+import heroSiteMotionAvif from "../assets/oldtimer/hero-site-motion.avif";
+import heroSiteMotionWebp from "../assets/oldtimer/hero-site-motion.webp";
+import heroSiteMp4 from "../assets/oldtimer/hero-site.mp4";
+import heroSitePoster from "../assets/oldtimer/hero-site-poster.jpg";
+import heroSiteWebm from "../assets/oldtimer/hero-site.webm";
+import sectionOldtimerKaufen from "../assets/oldtimer/section-oldtimer-kaufen.png";
+import sectionProjekte from "../assets/oldtimer/section-projekte.png";
+import sectionUeberUns from "../assets/oldtimer/section-ueber-uns.png";
+
+const basePath = import.meta.env.BASE_URL;
+const sitePath = (path) => {
+  if (path === "/") {
+    return basePath;
+  }
+
+  if (path.startsWith("/#")) {
+    return `${basePath}${path.slice(1)}`;
+  }
+
+  if (path.startsWith("/")) {
+    return `${basePath}${path.slice(1)}`;
+  }
+
+  return path;
+};
 
 const sections = [
-	{
-		id: 'projekte',
-		title: 'Projekte',
-		image: sectionProjekte,
-		alt: 'Klassische Fahrzeuge in unterschiedlichen Restaurierungsphasen in einer dunklen Werkstatt',
-		href: '/projekte',
-		previous: '#handwerk',
-		next: '#ueber-uns',
-	},
-	{
-		id: 'ueber-uns',
-		title: 'Über uns',
-		image: sectionUeberUns,
-		alt: 'Restaurierungsteam arbeitet konzentriert an einem klassischen Fahrzeug in einer Werkstatt',
-		href: '/ueber-uns',
-		previous: '#projekte',
-		next: '#oldtimer-kaufen',
-	},
-	{
-		id: 'oldtimer-kaufen',
-		title: 'Oldtimer kaufen',
-		image: sectionOldtimerKaufen,
-		alt: 'Ein klassisches Coupé in einer dunklen Werkstattpräsentation',
-		href: '/oldtimer-kaufen',
-		previous: '#ueber-uns',
-	},
+  {
+    id: "projekte",
+    title: "Projekte",
+    image: sectionProjekte,
+    alt: "Klassische Fahrzeuge in unterschiedlichen Restaurierungsphasen in einer dunklen Werkstatt",
+    href: "/projekte/",
+    previous: "#handwerk",
+    next: "#ueber-uns",
+  },
+  {
+    id: "ueber-uns",
+    title: "Über uns",
+    image: sectionUeberUns,
+    alt: "Restaurierungsteam arbeitet konzentriert an einem klassischen Fahrzeug in einer Werkstatt",
+    href: "/ueber-uns/",
+    previous: "#projekte",
+    next: "#oldtimer-kaufen",
+  },
+  {
+    id: "oldtimer-kaufen",
+    title: "Oldtimer kaufen",
+    image: sectionOldtimerKaufen,
+    alt: "Ein klassisches Coupé in einer dunklen Werkstattpräsentation",
+    href: "/oldtimer-kaufen/",
+    previous: "#ueber-uns",
+  },
 ];
 ---
 
 <Layout>
-	<SiteChrome footerVariant="home">
-		<main>
-			<nav class="section-indicator" aria-label="Abschnitte" data-section-indicator>
-				<button class="section-indicator__dot is-active" type="button" data-section-target="#start" data-scroll-target="#start">
-					<span>Start</span>
-				</button>
-				<button class="section-indicator__dot" type="button" data-section-target="#handwerk" data-scroll-target="#handwerk">
-					<span>Handwerk</span>
-				</button>
-				{
-					sections.map((section) => (
-						<button
-							class="section-indicator__dot"
-							type="button"
-							data-section-target={`#${section.id}`}
-							data-scroll-target={`#${section.id}`}
-						>
-							<span>{section.title}</span>
-						</button>
-					))
-				}
-			</nav>
+  <SiteChrome footerVariant="home">
+    <main id="main-content" tabindex="-1">
+      <nav
+        class="section-indicator"
+        aria-label="Abschnitte"
+        data-section-indicator
+      >
+        <button
+          class="section-indicator__dot is-active"
+          type="button"
+          data-section-target="#start"
+          data-scroll-target="#start"
+          aria-current="true"
+        >
+          <span>Start</span>
+        </button>
+        <button
+          class="section-indicator__dot"
+          type="button"
+          data-section-target="#handwerk"
+          data-scroll-target="#handwerk"
+        >
+          <span>Handwerk</span>
+        </button>
+        {
+          sections.map((section) => (
+            <button
+              class="section-indicator__dot"
+              type="button"
+              data-section-target={`#${section.id}`}
+              data-scroll-target={`#${section.id}`}
+            >
+              <span>{section.title}</span>
+            </button>
+          ))
+        }
+      </nav>
 
-			<section class="media-panel hero" id="start" aria-labelledby="hero-title" data-hero>
-				<video
-					class="media-panel__image"
-					autoplay
-					muted
-					loop
-					playsinline
-					webkit-playsinline
-					preload="auto"
-					data-hero-video
-					data-hero-mp4={heroSiteMp4}
-					data-hero-webm={heroSiteWebm}
-					aria-hidden="true"
-				></video>
-				<picture
-					class="media-panel__image media-panel__image--motion-fallback"
-					aria-hidden="true"
-					data-hero-motion-fallback
-				>
-					<source type="image/avif" srcset={heroSiteMotionAvif.src} />
-					<img alt="" decoding="async" fetchpriority="high" src={heroSiteMotionWebp.src} data-hero-motion-image />
-				</picture>
-				<div class="media-panel__shade"></div>
-				<div class="media-panel__content media-panel__content--hero">
-					<h1 id="hero-title">Wir restaurieren keine Oldtimer, wir bewahren Geschichten.</h1>
-					<button class="scroll-cue" type="button" data-scroll-target="#handwerk" aria-label="Zum Handwerk scrollen">
-						<span aria-hidden="true"></span>
-					</button>
-				</div>
-			</section>
+      <section
+        class="media-panel hero"
+        id="start"
+        aria-labelledby="hero-title"
+        data-hero
+      >
+        <video
+          class="media-panel__image"
+          autoplay
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          preload="auto"
+          poster={heroSitePoster.src}
+          disablepictureinpicture
+          data-hero-video
+          aria-hidden="true"
+        >
+          <source src={heroSiteMp4} type="video/mp4" />
+          <source
+            src={heroSiteWebm}
+            type='video/webm; codecs="av01.0.08M.08"'
+          />
+        </video>
+        <picture
+          class="media-panel__image media-panel__image--motion-fallback"
+          aria-hidden="true"
+          data-hero-motion-fallback
+        >
+          <img
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+            src={heroSitePoster.src}
+            data-hero-poster={heroSitePoster.src}
+            data-hero-motion-avif={heroSiteMotionAvif.src}
+            data-hero-motion-webp={heroSiteMotionWebp.src}
+            data-hero-motion-image
+          />
+        </picture>
+        <div class="media-panel__shade"></div>
+        <button
+          class="hero-motion-toggle"
+          type="button"
+          data-hero-motion-toggle
+          aria-label="Animation pausieren"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="media-panel__content media-panel__content--hero">
+          <h1 id="hero-title">Wir bewahren Geschichten.</h1>
+          <button
+            class="scroll-cue"
+            type="button"
+            data-scroll-target="#handwerk"
+            aria-label="Zum Handwerk scrollen"
+          >
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
 
-			<section class="media-panel craft" id="handwerk" aria-labelledby="craft-title">
-				<img
-					class="media-panel__image"
-					src={craftHands.src}
-					alt="Hände arbeiten präzise an einem Bauteil eines Oldtimers"
-					loading="lazy"
-				/>
-				<div class="media-panel__shade media-panel__shade--craft"></div>
-				<button class="scroll-cue scroll-cue--up section-up-cue" type="button" data-scroll-target="#start" aria-label="Zum Start scrollen">
-					<span aria-hidden="true"></span>
-				</button>
-				<div class="media-panel__content media-panel__content--craft">
-					<h2 id="craft-title">Handwerk</h2>
-					<a class="section-cta" href="/restaurierung">Mehr erfahren</a>
-					<div class="scroll-cues" aria-label="Abschnitt wechseln">
-						<button class="scroll-cue" type="button" data-scroll-target="#projekte" aria-label="Zu Projekte scrollen">
-							<span aria-hidden="true"></span>
-						</button>
-					</div>
-				</div>
-			</section>
+      <section
+        class="media-panel craft"
+        id="handwerk"
+        aria-labelledby="craft-title"
+      >
+        <img
+          class="media-panel__image"
+          src={craftHands.src}
+          alt="Hände arbeiten präzise an einem Bauteil eines Oldtimers"
+          loading="lazy"
+        />
+        <div class="media-panel__shade media-panel__shade--craft"></div>
+        <button
+          class="scroll-cue scroll-cue--up section-up-cue"
+          type="button"
+          data-scroll-target="#start"
+          aria-label="Zum Start scrollen"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="media-panel__content media-panel__content--craft">
+          <h2 id="craft-title">Handwerk</h2>
+          <a class="section-cta" href={sitePath("/restaurierung/")}
+            >Mehr erfahren</a
+          >
+          <div class="scroll-cues" aria-label="Abschnitt wechseln">
+            <button
+              class="scroll-cue"
+              type="button"
+              data-scroll-target="#projekte"
+              aria-label="Zu Projekte scrollen"
+            >
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-			{
-				sections.map((section) => (
-					<section class="media-panel editorial-panel" id={section.id} aria-labelledby={`${section.id}-title`}>
-						<img class="media-panel__image" src={section.image.src} alt={section.alt} loading="lazy" />
-						<div class="media-panel__shade media-panel__shade--editorial"></div>
-						<button
-							class="scroll-cue scroll-cue--up section-up-cue"
-							type="button"
-							data-scroll-target={section.previous}
-							aria-label={`Vor ${section.title} scrollen`}
-						>
-							<span aria-hidden="true"></span>
-						</button>
-						<div class="media-panel__content media-panel__content--editorial">
-							<h2 id={`${section.id}-title`}>{section.title}</h2>
-							<a class="section-cta" href={section.href}>Mehr erfahren</a>
-							<div class="scroll-cues" aria-label="Abschnitt wechseln">
-								{
-									section.next ? (
-										<button
-											class="scroll-cue"
-											type="button"
-											data-scroll-target={section.next}
-											aria-label={`${section.title} verlassen`}
-										>
-											<span aria-hidden="true"></span>
-										</button>
-									) : (
-										<button
-											class="scroll-cue"
-											type="button"
-											data-footer-open
-											aria-label="Footer anzeigen"
-										>
-											<span aria-hidden="true"></span>
-										</button>
-									)
-								}
-							</div>
-						</div>
-					</section>
-				))
-			}
-		</main>
+      {
+        sections.map((section) => (
+          <section
+            class="media-panel editorial-panel"
+            id={section.id}
+            aria-labelledby={`${section.id}-title`}
+          >
+            <img
+              class="media-panel__image"
+              src={section.image.src}
+              alt={section.alt}
+              loading="lazy"
+            />
+            <div class="media-panel__shade media-panel__shade--editorial" />
+            <button
+              class="scroll-cue scroll-cue--up section-up-cue"
+              type="button"
+              data-scroll-target={section.previous}
+              aria-label={`Vor ${section.title} scrollen`}
+            >
+              <span aria-hidden="true" />
+            </button>
+            <div class="media-panel__content media-panel__content--editorial">
+              <h2 id={`${section.id}-title`}>{section.title}</h2>
+              <a class="section-cta" href={sitePath(section.href)}>
+                Mehr erfahren
+              </a>
+              <div class="scroll-cues" aria-label="Abschnitt wechseln">
+                {section.next ? (
+                  <button
+                    class="scroll-cue"
+                    type="button"
+                    data-scroll-target={section.next}
+                    aria-label={`${section.title} verlassen`}
+                  >
+                    <span aria-hidden="true" />
+                  </button>
+                ) : (
+                  <button
+                    class="scroll-cue"
+                    type="button"
+                    data-footer-open
+                    aria-label="Footer anzeigen"
+                  >
+                    <span aria-hidden="true" />
+                  </button>
+                )}
+              </div>
+            </div>
+          </section>
+        ))
+      }
+    </main>
 
-		<script is:inline>
-			const hero = document.querySelector('[data-hero]');
-			const heroVideo = document.querySelector('[data-hero-video]');
-			const heroMotionFallback = document.querySelector('[data-hero-motion-fallback]');
-			const heroMotionImage = document.querySelector('[data-hero-motion-image]');
-			let heroAutoplayBlocked = false;
+    <script is:inline>
+      const hero = document.querySelector("[data-hero]");
+      const heroVideo = document.querySelector("[data-hero-video]");
+      const heroMotionFallback = document.querySelector(
+        "[data-hero-motion-fallback]",
+      );
+      const heroMotionImage = document.querySelector(
+        "[data-hero-motion-image]",
+      );
+      const heroMotionToggle = document.querySelector(
+        "[data-hero-motion-toggle]",
+      );
+      let heroAutoplayBlocked = false;
+      let heroInViewport = true;
+      let heroFallbackActive = false;
+      let heroFallbackTimer;
+      let heroUserPaused = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
 
-			const useHeroMotionFallback = () => {
-				if (
-					!(hero instanceof HTMLElement) ||
-					!(heroMotionFallback instanceof HTMLElement) ||
-					!(heroMotionImage instanceof HTMLImageElement)
-				) {
-					return false;
-				}
+      const setHeroToggleState = (isPaused) => {
+        if (!(heroMotionToggle instanceof HTMLButtonElement)) {
+          return;
+        }
 
-				hero.classList.add('hero--use-motion-fallback');
-				hero.classList.remove('hero--video-ready');
+        heroMotionToggle.classList.toggle("is-paused", isPaused);
+        heroMotionToggle.setAttribute(
+          "aria-label",
+          isPaused ? "Animation abspielen" : "Animation pausieren",
+        );
+      };
 
-				return true;
-			};
+      const ensureHeroMotionFallback = () => {
+        if (
+          !(heroMotionFallback instanceof HTMLPictureElement) ||
+          !(heroMotionImage instanceof HTMLImageElement) ||
+          heroMotionImage.dataset.motionReady === "true"
+        ) {
+          return;
+        }
 
-			const markHeroVideoReady = () => {
-				if (!(hero instanceof HTMLElement) || !(heroVideo instanceof HTMLVideoElement)) {
-					return;
-				}
+        const avifSource = document.createElement("source");
+        avifSource.type = "image/avif";
+        avifSource.srcset = heroMotionImage.dataset.heroMotionAvif ?? "";
+        avifSource.dataset.heroGeneratedSource = "true";
+        heroMotionFallback.prepend(avifSource);
 
-				heroAutoplayBlocked = false;
-				hero.classList.add('hero--video-ready');
-				hero.classList.remove('hero--use-motion-fallback');
-			};
+        if (heroMotionImage.dataset.heroMotionWebp) {
+          heroMotionImage.src = heroMotionImage.dataset.heroMotionWebp;
+        }
+        heroMotionImage.dataset.motionReady = "true";
+      };
 
-			const ensureHeroSources = () => {
-				if (
-					!(heroVideo instanceof HTMLVideoElement) ||
-					heroVideo.dataset.sourcesReady === 'true'
-				) {
-					return;
-				}
+      const pauseHeroMotionFallback = () => {
+        if (
+          !(heroMotionFallback instanceof HTMLPictureElement) ||
+          !(heroMotionImage instanceof HTMLImageElement)
+        ) {
+          return;
+        }
 
-				const sources = [
-					{ src: heroVideo.dataset.heroMp4, type: 'video/mp4' },
-					{ src: heroVideo.dataset.heroWebm, type: 'video/webm; codecs="av01.0.08M.08"' },
-				];
+        heroMotionFallback
+          .querySelectorAll("[data-hero-generated-source]")
+          .forEach((source) => source.remove());
+        if (heroMotionImage.dataset.heroPoster) {
+          heroMotionImage.src = heroMotionImage.dataset.heroPoster;
+        }
+        delete heroMotionImage.dataset.motionReady;
+      };
 
-				sources.forEach(({ src, type }) => {
-					if (!src) {
-						return;
-					}
+      const useHeroMotionFallback = ({ animate = true } = {}) => {
+        if (
+          !(hero instanceof HTMLElement) ||
+          !(heroMotionFallback instanceof HTMLElement) ||
+          !(heroMotionImage instanceof HTMLImageElement)
+        ) {
+          return false;
+        }
 
-					const source = document.createElement('source');
-					source.src = src;
-					source.type = type;
-					heroVideo.append(source);
-				});
+        if (animate) {
+          ensureHeroMotionFallback();
+        } else {
+          pauseHeroMotionFallback();
+        }
+        heroFallbackActive = true;
+        hero.classList.add("hero--use-motion-fallback");
+        hero.classList.remove("hero--video-ready");
 
-				heroVideo.dataset.sourcesReady = 'true';
-				heroVideo.load();
-			};
+        return true;
+      };
 
-			const prepareHeroVideo = () => {
-				if (!(heroVideo instanceof HTMLVideoElement)) {
-					return false;
-				}
+      const markHeroVideoReady = () => {
+        if (
+          !(hero instanceof HTMLElement) ||
+          !(heroVideo instanceof HTMLVideoElement)
+        ) {
+          return;
+        }
 
-				heroVideo.muted = true;
-				heroVideo.defaultMuted = true;
-				heroVideo.autoplay = true;
-				heroVideo.loop = true;
-				heroVideo.playsInline = true;
-				heroVideo.volume = 0;
-				heroVideo.controls = false;
-				heroVideo.setAttribute('muted', '');
-				heroVideo.setAttribute('autoplay', '');
-				heroVideo.setAttribute('loop', '');
-				heroVideo.setAttribute('playsinline', '');
-				heroVideo.setAttribute('webkit-playsinline', '');
-				ensureHeroSources();
+        window.clearTimeout(heroFallbackTimer);
+        heroFallbackActive = false;
+        heroAutoplayBlocked = false;
+        hero.classList.add("hero--video-ready");
+        hero.classList.remove("hero--use-motion-fallback");
+        setHeroToggleState(false);
+      };
 
-				return true;
-			};
+      const prepareHeroVideo = () => {
+        if (!(heroVideo instanceof HTMLVideoElement)) {
+          return false;
+        }
 
-			const playHeroVideo = ({ userGesture = false } = {}) => {
-				if (heroAutoplayBlocked && !userGesture) {
-					return;
-				}
+        heroVideo.muted = true;
+        heroVideo.defaultMuted = true;
+        heroVideo.autoplay = true;
+        heroVideo.loop = true;
+        heroVideo.playsInline = true;
+        heroVideo.volume = 0;
+        heroVideo.controls = false;
+        heroVideo.setAttribute("muted", "");
+        heroVideo.setAttribute("autoplay", "");
+        heroVideo.setAttribute("loop", "");
+        heroVideo.setAttribute("playsinline", "");
+        heroVideo.setAttribute("webkit-playsinline", "");
 
-				if (!prepareHeroVideo()) {
-					return;
-				}
+        return true;
+      };
 
-				heroVideo
-					.play()
-					.then(markHeroVideoReady)
-					.catch(() => {
-						heroAutoplayBlocked = true;
-						useHeroMotionFallback();
-					});
-			};
+      const playHeroVideo = ({ userGesture = false } = {}) => {
+        if (
+          heroUserPaused ||
+          document.hidden ||
+          !heroInViewport ||
+          (heroAutoplayBlocked && !userGesture)
+        ) {
+          return;
+        }
 
-			if (heroVideo instanceof HTMLVideoElement) {
-				heroVideo.addEventListener('playing', markHeroVideoReady);
-				heroVideo.addEventListener('loadedmetadata', playHeroVideo, { once: true });
-				heroVideo.addEventListener('canplay', playHeroVideo, { once: true });
-				heroVideo.addEventListener('canplaythrough', playHeroVideo, { once: true });
+        if (!prepareHeroVideo()) {
+          return;
+        }
 
-				if (document.readyState === 'loading') {
-					document.addEventListener('DOMContentLoaded', playHeroVideo, { once: true });
-				} else {
-					playHeroVideo();
-				}
+        heroVideo
+          .play()
+          .catch(() => {
+            heroAutoplayBlocked = true;
+            useHeroMotionFallback();
+            setHeroToggleState(false);
+          });
+      };
 
-				window.addEventListener('pageshow', playHeroVideo);
-				document.addEventListener('visibilitychange', () => {
-					if (!document.hidden) {
-						playHeroVideo();
-					}
-				});
-				['pointerdown', 'keydown', 'touchstart'].forEach((eventName) => {
-					window.addEventListener(eventName, () => playHeroVideo({ userGesture: true }), {
-						once: true,
-						passive: true,
-					});
-				});
-			}
-		</script>
-	</SiteChrome>
+      const pauseHeroMotion = () => {
+        heroUserPaused = true;
+        window.clearTimeout(heroFallbackTimer);
+        if (heroVideo instanceof HTMLVideoElement) {
+          heroVideo.pause();
+        }
+        if (heroFallbackActive) {
+          useHeroMotionFallback({ animate: false });
+        }
+        setHeroToggleState(true);
+      };
+
+      const resumeHeroMotion = () => {
+        heroUserPaused = false;
+        setHeroToggleState(false);
+        if (heroFallbackActive && heroAutoplayBlocked) {
+          useHeroMotionFallback();
+        }
+        playHeroVideo({ userGesture: true });
+      };
+
+      const scheduleHeroFallback = () => {
+        if (heroUserPaused || document.hidden || !heroInViewport) {
+          return;
+        }
+
+        window.clearTimeout(heroFallbackTimer);
+        heroFallbackTimer = window.setTimeout(() => {
+          if (
+            heroVideo instanceof HTMLVideoElement &&
+            (heroVideo.paused || heroVideo.readyState < HTMLMediaElement.HAVE_FUTURE_DATA)
+          ) {
+            useHeroMotionFallback();
+          }
+        }, 900);
+      };
+
+      if (heroVideo instanceof HTMLVideoElement) {
+        heroVideo.addEventListener("playing", markHeroVideoReady);
+        heroVideo.addEventListener("waiting", scheduleHeroFallback);
+        heroVideo.addEventListener("stalled", scheduleHeroFallback);
+        heroVideo.addEventListener("error", () => {
+          heroAutoplayBlocked = true;
+          useHeroMotionFallback();
+        });
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", playHeroVideo, {
+            once: true,
+          });
+        } else {
+          playHeroVideo();
+        }
+
+        window.addEventListener("pageshow", playHeroVideo);
+        document.addEventListener("visibilitychange", () => {
+          if (document.hidden) {
+            heroVideo.pause();
+          } else {
+            playHeroVideo();
+          }
+        });
+        ["pointerdown", "keydown", "touchstart"].forEach((eventName) => {
+          window.addEventListener(
+            eventName,
+            () => playHeroVideo({ userGesture: true }),
+            {
+              once: true,
+              passive: true,
+            },
+          );
+        });
+      }
+
+      if (hero instanceof HTMLElement && "IntersectionObserver" in window) {
+        const heroObserver = new IntersectionObserver(
+          ([entry]) => {
+            heroInViewport = Boolean(entry?.isIntersecting);
+            if (!heroInViewport && heroVideo instanceof HTMLVideoElement) {
+              heroVideo.pause();
+              return;
+            }
+            playHeroVideo();
+          },
+          { threshold: 0.12 },
+        );
+        heroObserver.observe(hero);
+      }
+
+      heroMotionToggle?.addEventListener("click", () => {
+        if (heroUserPaused) {
+          resumeHeroMotion();
+        } else {
+          pauseHeroMotion();
+        }
+      });
+      setHeroToggleState(heroUserPaused);
+    </script>
+  </SiteChrome>
 </Layout>
 
-
 <style>
-	:global(html),
-	:global(body),
-	main {
-		background: #101010;
-		background-color: #101010;
-	}
+  :global(html),
+  :global(body),
+  main {
+    background: #101010;
+    background-color: #101010;
+  }
 
-	.scroll-cue {
-		color: currentColor;
-		background: transparent;
-		border: 0;
-		text-decoration: none;
-		text-transform: uppercase;
-		letter-spacing: 0.24em;
-		font-size: 0.66rem;
-		font-weight: 500;
-	}
+  .scroll-cue {
+    color: currentColor;
+    background: transparent;
+    border: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: 0.66rem;
+    font-weight: 500;
+  }
 
-	.scroll-cue {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		gap: 0.8rem;
-	}
+  .scroll-cue {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
 
-	.media-panel {
-		position: relative;
-		display: grid;
-		--panel-edge-cue-offset: clamp(5.25rem, 12vh, 8.5rem);
-		min-height: 100vh;
-		overflow: hidden;
-		isolation: isolate;
-	}
+  .media-panel {
+    position: relative;
+    display: grid;
+    --panel-edge-cue-offset: clamp(5.25rem, 12vh, 8.5rem);
+    min-height: 100vh;
+    overflow: hidden;
+    isolation: isolate;
+  }
 
-	.media-panel::after {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 2;
-		height: 18vh;
-		background: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010);
-		content: '';
-		pointer-events: none;
-	}
+  .media-panel::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    height: 18vh;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010);
+    content: "";
+    pointer-events: none;
+  }
 
-	.media-panel__image,
-	.media-panel__shade {
-		position: absolute;
-		inset: 0;
-		width: 100%;
-		height: 100%;
-	}
+  .media-panel__image,
+  .media-panel__shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-	.media-panel__image {
-		z-index: 0;
-		object-fit: cover;
-		filter: saturate(0.88) contrast(1.04) brightness(0.92);
-		transform: scale(1.015);
-	}
+  .media-panel__image {
+    z-index: 0;
+    object-fit: cover;
+    filter: saturate(0.88) contrast(1.04) brightness(0.92);
+    transform: scale(1.015);
+  }
 
-	.media-panel__image--motion-fallback {
-		visibility: visible;
-		opacity: 1;
-		transition:
-			opacity 220ms ease,
-			visibility 220ms ease;
-	}
+  .media-panel__image--motion-fallback {
+    visibility: visible;
+    opacity: 1;
+    transition:
+      opacity 220ms ease,
+      visibility 220ms ease;
+  }
 
-	.media-panel__image--motion-fallback img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
+  .media-panel__image--motion-fallback img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-	.hero video.media-panel__image {
-		visibility: hidden;
-		opacity: 0;
-		pointer-events: none;
-		transition:
-			opacity 220ms ease,
-			visibility 220ms ease;
-	}
+  .hero video.media-panel__image {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      opacity 220ms ease,
+      visibility 220ms ease;
+  }
 
-	.hero--video-ready video.media-panel__image {
-		visibility: visible;
-		opacity: 1;
-	}
+  .hero--video-ready video.media-panel__image {
+    visibility: visible;
+    opacity: 1;
+  }
 
-	.hero--video-ready .media-panel__image--motion-fallback {
-		visibility: hidden;
-		opacity: 0;
-	}
+  .hero--video-ready .media-panel__image--motion-fallback {
+    visibility: hidden;
+    opacity: 0;
+  }
 
-	.media-panel__shade {
-		z-index: 1;
-		background:
-			linear-gradient(180deg, rgba(12, 12, 12, 0.34), rgba(12, 12, 12, 0.04) 40%, rgba(12, 12, 12, 0.58)),
-			linear-gradient(90deg, rgba(12, 12, 12, 0.42), rgba(12, 12, 12, 0.04) 56%, rgba(12, 12, 12, 0.22));
-		pointer-events: none;
-	}
+  .hero-motion-toggle {
+    position: absolute;
+    right: clamp(1rem, 3vw, 3rem);
+    bottom: clamp(1.25rem, 3vw, 2.75rem);
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    color: rgba(238, 238, 238, 0.9);
+    background: rgba(16, 16, 16, 0.22);
+    border: 1px solid rgba(238, 238, 238, 0.38);
+    border-radius: 999px;
+    backdrop-filter: blur(14px);
+    cursor: pointer;
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease;
+  }
 
-	.media-panel__shade--craft {
-		background:
-			linear-gradient(180deg, rgba(12, 12, 12, 0.36), rgba(12, 12, 12, 0.06) 42%, rgba(12, 12, 12, 0.62)),
-			linear-gradient(90deg, rgba(12, 12, 12, 0.46), rgba(12, 12, 12, 0.05) 62%);
-	}
+  .hero-motion-toggle span {
+    position: relative;
+    width: 11px;
+    height: 14px;
+    border-left: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+  }
 
-	.media-panel__shade--editorial {
-		background:
-			linear-gradient(180deg, rgba(12, 12, 12, 0.28), rgba(12, 12, 12, 0.03) 38%, rgba(12, 12, 12, 0.76)),
-			linear-gradient(90deg, rgba(12, 12, 12, 0.34), rgba(12, 12, 12, 0.04) 50%, rgba(12, 12, 12, 0.28));
-	}
+  .hero-motion-toggle.is-paused span {
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    border-top: 7px solid transparent;
+    border-right: 0;
+    border-bottom: 7px solid transparent;
+    border-left: 11px solid currentColor;
+  }
 
-	#projekte .media-panel__image {
-		object-position: 50% 48%;
-	}
+  .hero-motion-toggle:hover,
+  .hero-motion-toggle:focus-visible {
+    background: rgba(16, 16, 16, 0.5);
+    border-color: rgba(238, 238, 238, 0.86);
+    transform: scale(1.05);
+  }
 
-	#ueber-uns .media-panel__image {
-		object-position: 50% 44%;
-	}
+  .hero-motion-toggle:focus-visible {
+    outline: 1px solid rgba(238, 238, 238, 0.82);
+    outline-offset: 0.35rem;
+  }
 
-	#oldtimer-kaufen .media-panel__image {
-		object-position: 50% 48%;
-	}
+  .media-panel__shade {
+    z-index: 1;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(12, 12, 12, 0.34),
+        rgba(12, 12, 12, 0.04) 40%,
+        rgba(12, 12, 12, 0.58)
+      ),
+      linear-gradient(
+        90deg,
+        rgba(12, 12, 12, 0.42),
+        rgba(12, 12, 12, 0.04) 56%,
+        rgba(12, 12, 12, 0.22)
+      );
+    pointer-events: none;
+  }
 
-	.media-panel__content {
-		position: relative;
-		z-index: 3;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: end;
-		width: min(860px, calc(100% - 2rem));
-		margin: 0 auto;
-		padding: 9rem 0 clamp(5.25rem, 12vh, 8.5rem);
-		text-align: center;
-		transition:
-			opacity 360ms ease,
-			transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
-	}
+  .media-panel__shade--craft {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(12, 12, 12, 0.36),
+        rgba(12, 12, 12, 0.06) 42%,
+        rgba(12, 12, 12, 0.62)
+      ),
+      linear-gradient(90deg, rgba(12, 12, 12, 0.46), rgba(12, 12, 12, 0.05) 62%);
+  }
 
-	.media-panel__content--craft {
-		align-items: center;
-		justify-content: end;
-		width: min(780px, calc(100% - 2rem));
-		margin: 0 auto;
-		text-align: center;
-	}
+  .media-panel__shade--editorial {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(12, 12, 12, 0.28),
+        rgba(12, 12, 12, 0.03) 38%,
+        rgba(12, 12, 12, 0.76)
+      ),
+      linear-gradient(
+        90deg,
+        rgba(12, 12, 12, 0.34),
+        rgba(12, 12, 12, 0.04) 50%,
+        rgba(12, 12, 12, 0.28)
+      );
+  }
 
-	h1,
-	.media-panel h2 {
-		margin: 0;
-		font-family: var(--font-body);
-		font-weight: 300;
-		letter-spacing: 0.2em;
-		text-transform: uppercase;
-	}
+  #projekte .media-panel__image {
+    object-position: 50% 48%;
+  }
 
-	h1 {
-		max-width: 900px;
-		font-size: clamp(1.7rem, 3.1vw, 3.75rem);
-		line-height: 1.1;
-	}
+  #ueber-uns .media-panel__image {
+    object-position: 50% 44%;
+  }
 
-	.media-panel h2 {
-		max-width: 820px;
-		font-size: clamp(1.5rem, 2.75vw, 3.25rem);
-		line-height: 1.12;
-	}
+  #oldtimer-kaufen .media-panel__image {
+    object-position: 50% 48%;
+  }
 
-	.media-panel__content--editorial {
-		width: min(760px, calc(100% - 2rem));
-		padding-bottom: clamp(4.25rem, 9vh, 6.75rem);
-	}
+  .media-panel__content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: min(860px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 9rem 0 clamp(5.25rem, 12vh, 8.5rem);
+    text-align: center;
+    transition:
+      opacity 360ms ease,
+      transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
 
-	.section-cta {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		min-width: min(84vw, 312px);
-		min-height: 64px;
-		margin-top: clamp(1.7rem, 3vw, 2.55rem);
-		padding: 0.95rem 2.8rem;
-		color: #111111;
-		background: rgba(238, 238, 238, 0.96);
-		border: 1px solid rgba(238, 238, 238, 0.98);
-		border-radius: 999px;
-		text-decoration: none;
-		text-transform: uppercase;
-		letter-spacing: 0.24em;
-		font-size: clamp(0.72rem, 0.76vw, 0.82rem);
-		font-weight: 500;
-		line-height: 1;
-		transition:
-			background 220ms ease,
-			border-color 220ms ease,
-			color 220ms ease,
-			transform 220ms ease;
-	}
+  .media-panel__content--craft {
+    align-items: center;
+    justify-content: end;
+    width: min(780px, calc(100% - 2rem));
+    margin: 0 auto;
+    text-align: center;
+  }
 
-	.section-cta:hover,
-	.section-cta:focus-visible {
-		color: var(--color-main);
-		background: rgba(238, 238, 238, 0.08);
-		border-color: rgba(238, 238, 238, 0.82);
-		transform: translateY(-2px);
-	}
+  h1,
+  .media-panel h2 {
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
 
-	.section-cta:focus-visible {
-		outline: 1px solid rgba(238, 238, 238, 0.72);
-		outline-offset: 0.35rem;
-	}
+  h1 {
+    max-width: 900px;
+    font-size: clamp(1.7rem, 3.1vw, 3.75rem);
+    line-height: 1.1;
+  }
 
-	.scroll-cue {
-		cursor: pointer;
-		width: 48px;
-		height: 48px;
-		color: var(--color-main);
-		opacity: 0.78;
-		transition:
-			opacity 180ms ease,
-			transform 180ms ease;
-	}
+  .media-panel h2 {
+    max-width: 820px;
+    font-size: clamp(1.5rem, 2.75vw, 3.25rem);
+    line-height: 1.12;
+  }
 
-	.scroll-cue span {
-		width: 12px;
-		height: 12px;
-		border-right: 1px solid currentColor;
-		border-bottom: 1px solid currentColor;
-		transform: rotate(45deg) translate(-2px, -2px);
-	}
+  .media-panel__content--editorial {
+    width: min(760px, calc(100% - 2rem));
+    padding-bottom: clamp(4.25rem, 9vh, 6.75rem);
+  }
 
-	.scroll-cues {
-		display: inline-grid;
-		grid-template-columns: 48px;
-		gap: 0.75rem;
-		margin-top: clamp(1.5rem, 3.6vw, 3.1rem);
-	}
+  .section-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: min(84vw, 312px);
+    min-height: 64px;
+    margin-top: clamp(1.7rem, 3vw, 2.55rem);
+    padding: 0.95rem 2.8rem;
+    color: #111111;
+    background: rgba(238, 238, 238, 0.96);
+    border: 1px solid rgba(238, 238, 238, 0.98);
+    border-radius: 999px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: clamp(0.72rem, 0.76vw, 0.82rem);
+    font-weight: 500;
+    line-height: 1;
+    transition:
+      background 220ms ease,
+      border-color 220ms ease,
+      color 220ms ease,
+      transform 220ms ease;
+  }
 
-	.media-panel__content--hero > .scroll-cue {
-		margin-top: clamp(2rem, 5vw, 4rem);
-	}
+  .section-cta:hover,
+  .section-cta:focus-visible {
+    color: var(--color-main);
+    background: rgba(238, 238, 238, 0.08);
+    border-color: rgba(238, 238, 238, 0.82);
+    transform: translateY(-2px);
+  }
 
-	.scroll-cue--up span {
-		transform: rotate(225deg) translate(-2px, -2px);
-	}
+  .section-cta:focus-visible {
+    outline: 1px solid rgba(238, 238, 238, 0.72);
+    outline-offset: 0.35rem;
+  }
 
-	.section-up-cue {
-		position: absolute;
-		top: var(--panel-edge-cue-offset);
-		left: 50%;
-		z-index: 4;
-		transform: translateX(-50%);
-	}
+  .scroll-cue {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    color: var(--color-main);
+    opacity: 0.78;
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease;
+  }
 
-	.scroll-cue:hover,
-	.scroll-cue:focus-visible {
-		color: rgba(238, 238, 238, 0.96);
-		opacity: 1;
-		transform: translateY(4px);
-	}
+  .scroll-cue span {
+    width: 12px;
+    height: 12px;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    transform: rotate(45deg) translate(-2px, -2px);
+  }
 
-	.scroll-cue--up:hover,
-	.scroll-cue--up:focus-visible {
-		transform: translateY(-4px);
-	}
+  .scroll-cues {
+    display: inline-grid;
+    grid-template-columns: 48px;
+    gap: 0.75rem;
+    margin-top: clamp(1.5rem, 3.6vw, 3.1rem);
+  }
 
-	.section-up-cue:hover,
-	.section-up-cue:focus-visible {
-		transform: translateX(-50%) translateY(-4px);
-	}
+  .media-panel__content--hero > .scroll-cue {
+    margin-top: clamp(2rem, 5vw, 4rem);
+  }
 
-	.scroll-cue:focus-visible {
-		outline: 1px solid rgba(238, 238, 238, 0.62);
-		outline-offset: 0.35rem;
-	}
+  .scroll-cue--up span {
+    transform: rotate(225deg) translate(-2px, -2px);
+  }
 
-	.section-indicator {
-		position: fixed;
-		top: 50%;
-		left: clamp(1rem, 2vw, 2.5rem);
-		z-index: 45;
-		display: grid;
-		gap: 1.38rem;
-		transform: translateY(-50%);
-	}
+  .section-up-cue {
+    position: absolute;
+    top: var(--panel-edge-cue-offset);
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%);
+  }
 
-	.section-indicator__dot {
-		position: relative;
-		display: grid;
-		place-items: center;
-		width: 22px;
-		height: 22px;
-		padding: 0;
-		color: rgba(238, 238, 238, 0.92);
-		background: transparent;
-		border: 0;
-		cursor: pointer;
-	}
+  .scroll-cue:hover,
+  .scroll-cue:focus-visible {
+    color: rgba(238, 238, 238, 0.96);
+    opacity: 1;
+    transform: translateY(4px);
+  }
 
-	.section-indicator__dot::before,
-	.section-indicator__dot::after {
-		display: block;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		border-radius: 999px;
-		content: '';
-		transition:
-			background 180ms ease,
-			border-color 180ms ease,
-			opacity 180ms ease,
-			transform 180ms ease;
-	}
+  .scroll-cue--up:hover,
+  .scroll-cue--up:focus-visible {
+    transform: translateY(-4px);
+  }
 
-	.section-indicator__dot::before {
-		width: 21px;
-		height: 21px;
-		border: 2px solid transparent;
-		opacity: 0;
-		transform: translate(-50%, -50%);
-	}
+  .section-up-cue:hover,
+  .section-up-cue:focus-visible {
+    transform: translateX(-50%) translateY(-4px);
+  }
 
-	.section-indicator__dot::after {
-		width: 7px;
-		height: 7px;
-		background: rgba(238, 238, 238, 0.54);
-		transform: translate(-50%, -50%);
-	}
+  .scroll-cue:focus-visible {
+    outline: 1px solid rgba(238, 238, 238, 0.62);
+    outline-offset: 0.35rem;
+  }
 
-	.section-indicator__dot.is-active::before,
-	.section-indicator__dot:hover::before,
-	.section-indicator__dot:focus-visible::before {
-		border-color: rgba(238, 238, 238, 0.96);
-		opacity: 1;
-	}
+  .section-indicator {
+    position: fixed;
+    top: 50%;
+    left: clamp(1rem, 2vw, 2.5rem);
+    z-index: 45;
+    display: grid;
+    gap: 1.38rem;
+    transform: translateY(-50%);
+  }
 
-	.section-indicator__dot.is-active::after,
-	.section-indicator__dot:hover::after,
-	.section-indicator__dot:focus-visible::after {
-		background: rgba(238, 238, 238, 0.96);
-		transform: translate(-50%, -50%) scale(0.9);
-	}
+  .section-indicator__dot {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    color: rgba(238, 238, 238, 0.92);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
 
-	.section-indicator__dot span {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		overflow: hidden;
-		clip: rect(0, 0, 0, 0);
-		white-space: nowrap;
-	}
+  .section-indicator__dot::before,
+  .section-indicator__dot::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 999px;
+    content: "";
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      opacity 180ms ease,
+      transform 180ms ease;
+  }
 
-	.section-indicator__dot:focus-visible {
-		outline: 0;
-	}
+  .section-indicator__dot::before {
+    width: 21px;
+    height: 21px;
+    border: 2px solid transparent;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
 
-	:global(body.footer-is-revealed) .section-indicator {
-		opacity: 0;
-		pointer-events: none;
-	}
+  .section-indicator__dot::after {
+    width: 7px;
+    height: 7px;
+    background: rgba(238, 238, 238, 0.54);
+    transform: translate(-50%, -50%);
+  }
 
-	:global(body.footer-is-revealed) #oldtimer-kaufen .media-panel__content {
-		opacity: 0;
-		pointer-events: none;
-		transform: translateY(-18px);
-	}
+  .section-indicator__dot.is-active::before,
+  .section-indicator__dot:hover::before,
+  .section-indicator__dot:focus-visible::before {
+    border-color: rgba(238, 238, 238, 0.96);
+    opacity: 1;
+  }
 
-	:global(body.footer-is-revealed) #oldtimer-kaufen .section-up-cue {
-		opacity: 0;
-		pointer-events: none;
-	}
+  .section-indicator__dot.is-active::after,
+  .section-indicator__dot:hover::after,
+  .section-indicator__dot:focus-visible::after {
+    background: rgba(238, 238, 238, 0.96);
+    transform: translate(-50%, -50%) scale(0.9);
+  }
 
-	@media (max-width: 980px), (pointer: coarse) {
-		.section-indicator {
-			display: none;
-		}
-	}
+  .section-indicator__dot span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
 
-	@media (max-width: 760px) {
-		.media-panel {
-			min-height: 100svh;
-			--panel-edge-cue-offset: clamp(7.75rem, 18svh, 10rem);
-		}
+  .section-indicator__dot:focus-visible {
+    outline: 0;
+  }
 
-		.media-panel__content,
-		.media-panel__content--craft {
-			width: min(100% - 2rem, 560px);
-			margin: 0 auto;
-			align-items: center;
-			justify-content: end;
-			padding: 6rem 0 clamp(7.75rem, 18svh, 10rem);
-			text-align: center;
-		}
+  :global(body.footer-is-revealed) .section-indicator {
+    opacity: 0;
+    pointer-events: none;
+  }
 
-		h1 {
-			font-size: clamp(1.62rem, 7.4vw, 2.25rem);
-			line-height: 1.12;
-			letter-spacing: 0.12em;
-		}
+  :global(body.footer-is-revealed) #oldtimer-kaufen .media-panel__content {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-18px);
+  }
 
-		.media-panel h2 {
-			font-size: clamp(1.48rem, 7vw, 2.05rem);
-			line-height: 1.14;
-			letter-spacing: 0.12em;
-		}
+  :global(body.footer-is-revealed) #oldtimer-kaufen .section-up-cue {
+    opacity: 0;
+    pointer-events: none;
+  }
 
-		.scroll-cue {
-			width: 44px;
-			height: 44px;
-		}
+  @media (max-width: 980px), (pointer: coarse) {
+    .section-indicator {
+      display: none;
+    }
+  }
 
-		.section-cta {
-			min-width: min(84vw, 292px);
-			min-height: 58px;
-			padding-inline: 2.1rem;
-			letter-spacing: 0.2em;
-		}
-	}
+  @media (max-width: 760px) {
+    .media-panel {
+      min-height: 100svh;
+      --panel-edge-cue-offset: clamp(7.75rem, 18svh, 10rem);
+    }
+
+    .media-panel__content,
+    .media-panel__content--craft {
+      width: min(100% - 2rem, 560px);
+      margin: 0 auto;
+      align-items: center;
+      justify-content: end;
+      padding: 6rem 0 clamp(7.75rem, 18svh, 10rem);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(1.62rem, 7.4vw, 2.25rem);
+      line-height: 1.12;
+      letter-spacing: 0.12em;
+    }
+
+    .media-panel h2 {
+      font-size: clamp(1.48rem, 7vw, 2.05rem);
+      line-height: 1.14;
+      letter-spacing: 0.12em;
+    }
+
+    .scroll-cue {
+      width: 44px;
+      height: 44px;
+    }
+
+    .section-cta {
+      min-width: min(84vw, 292px);
+      min-height: 58px;
+      padding-inline: 2.1rem;
+      letter-spacing: 0.2em;
+    }
+
+    .hero-motion-toggle {
+      right: 1rem;
+      bottom: 1rem;
+      width: 44px;
+      height: 44px;
+    }
+  }
 </style>
