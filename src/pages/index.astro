@@ -967,7 +967,12 @@ const sections = [
   @media (max-width: 760px) {
     .media-panel {
       min-height: 100svh;
+      --mobile-header-height: 64px;
       --panel-edge-cue-offset: clamp(7.75rem, 18svh, 10rem);
+    }
+
+    .section-up-cue {
+      top: calc(var(--mobile-header-height) + var(--panel-edge-cue-offset));
     }
 
     .media-panel__content,
@@ -1010,5 +1015,14 @@ const sections = [
       width: 44px;
       height: 44px;
     }
+  }
+
+  /*
+   * Safari 26's floating toolbar sits over the page. Extend only the panel
+   * background to the large viewport while the existing svh spacing keeps
+   * controls inside the unobscured area.
+   */
+  :global(html.ios-safari-liquid-glass) .media-panel {
+    min-height: 100lvh;
   }
 </style>
