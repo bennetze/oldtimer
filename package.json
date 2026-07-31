@@ -8,11 +8,17 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:pages": "DEPLOY_TARGET=github-pages astro build",
+    "predeploy": "npm run build:pages",
+    "deploy": "gh-pages -d dist -b gh-pages --nojekyll -m \"Deploy website\"",
     "preview": "astro preview",
     "astro": "astro",
     "encode-video": "scripts/encode-site-video.sh"
   },
   "dependencies": {
     "astro": "^7.1.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

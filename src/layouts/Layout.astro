@@ -5,7 +5,9 @@ interface Props {
 	noindex?: boolean;
 }
 
-const basePath = import.meta.env.BASE_URL;
+const basePath = import.meta.env.BASE_URL.endsWith('/')
+	? import.meta.env.BASE_URL
+	: `${import.meta.env.BASE_URL}/`;
 const {
 	title,
 	description = 'Die Oldtimermanufaktur restauriert klassische Automobile mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte.',
