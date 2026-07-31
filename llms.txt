@@ -3,14 +3,14 @@
 > Die Oldtimermanufaktur GmbH in Kaltennordheim-Fischbach restauriert und bewahrt historische Automobile mit traditionellem Handwerk, technischer Sorgfalt und Liebe zum Detail.
 
 Die Website ist deutschsprachig. Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam mit Anton Schrank in die nächste Generation geführt.
-Alle indexierbaren Seiten stellen vollständige Open-Graph-Metadaten sowie verknüpfte JSON-LD-Daten zu Unternehmen, Website und Seiteninhalt bereit.
+Alle indexierbaren Seiten stellen vollständige Open-Graph-Metadaten, kanonische URLs, maschinenlesbare Aktualisierungsdaten sowie verknüpfte JSON-LD-Daten zu Unternehmen, Website und Seiteninhalt bereit.
 
 ## Hauptseiten
 
-- [Startseite](https://www.oldtimermanufaktur.de/): Überblick über Handwerk, Unternehmen, Projekte und den Kauf klassischer Fahrzeuge.
-- [Über uns](https://www.oldtimermanufaktur.de/ueber-uns/): Informationen über Mario Schrank, Anton Schrank, das Team und den Standort sowie Kontaktmöglichkeiten.
+- [Startseite](https://bennetze.github.io/oldtimer/): Überblick über Handwerk, Unternehmen, Projekte und den Kauf klassischer Fahrzeuge.
+- [Über uns](https://bennetze.github.io/oldtimer/ueber-uns/): Informationen über Mario Schrank, Anton Schrank, das Team und den Standort sowie Kontaktmöglichkeiten.
 
 ## Rechtliches
 
-- [Impressum](https://www.oldtimermanufaktur.de/impressum/): Anbieterkennzeichnung und Kontaktdaten der Die Oldtimermanufaktur GmbH.
-- [Datenschutzerklärung](https://www.oldtimermanufaktur.de/datenschutz/): Informationen zur Verarbeitung personenbezogener Daten auf dieser Website.
+- [Impressum](https://bennetze.github.io/oldtimer/impressum/): Anbieterkennzeichnung und Kontaktdaten der Die Oldtimermanufaktur GmbH.
+- [Datenschutzerklärung](https://bennetze.github.io/oldtimer/datenschutz/): Informationen zur Verarbeitung personenbezogener Daten auf dieser Website.
