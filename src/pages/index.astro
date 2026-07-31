@@ -32,21 +32,21 @@ const sitePath = (path) => {
 
 const sections = [
   {
-    id: "projekte",
-    title: "Projekte",
-    image: sectionProjekte,
-    alt: "Klassische Fahrzeuge in unterschiedlichen Restaurierungsphasen in einer dunklen Werkstatt",
-    href: "/projekte/",
-    previous: "#handwerk",
-    next: "#ueber-uns",
-  },
-  {
     id: "ueber-uns",
     title: "Über uns",
     image: sectionUeberUns,
     alt: "Restaurierungsteam arbeitet konzentriert an einem klassischen Fahrzeug in einer Werkstatt",
     href: "/ueber-uns/",
-    previous: "#projekte",
+    previous: "#handwerk",
+    next: "#projekte",
+  },
+  {
+    id: "projekte",
+    title: "Projekte",
+    image: sectionProjekte,
+    alt: "Klassische Fahrzeuge in unterschiedlichen Restaurierungsphasen in einer dunklen Werkstatt",
+    href: "/projekte/",
+    previous: "#ueber-uns",
     next: "#oldtimer-kaufen",
   },
   {
@@ -55,7 +55,7 @@ const sections = [
     image: sectionOldtimerKaufen,
     alt: "Ein klassisches Coupé in einer dunklen Werkstattpräsentation",
     href: "/oldtimer-kaufen/",
-    previous: "#ueber-uns",
+    previous: "#projekte",
   },
 ];
 ---
@@ -191,8 +191,8 @@ const sections = [
             <button
               class="scroll-cue"
               type="button"
-              data-scroll-target="#projekte"
-              aria-label="Zu Projekte scrollen"
+              data-scroll-target="#ueber-uns"
+              aria-label="Zu Über uns scrollen"
             >
               <span aria-hidden="true"></span>
             </button>

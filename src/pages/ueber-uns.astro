@@ -1,0 +1,734 @@
+---
+import { Image } from 'astro:assets';
+import SiteChrome from '../components/SiteChrome.astro';
+import Layout from '../layouts/Layout.astro';
+import antonCar from '../assets/oldtimer/about-anton-car.png';
+import antonPortrait from '../assets/oldtimer/about-anton-portrait.png';
+import contactEntrance from '../assets/oldtimer/about-contact-entrance.png';
+import contactExterior from '../assets/oldtimer/about-contact-exterior.png';
+import marioCar from '../assets/oldtimer/about-mario-car.png';
+import marioPortrait from '../assets/oldtimer/about-mario-portrait.png';
+import teamConversation from '../assets/oldtimer/about-team-conversation.png';
+import teamPortrait from '../assets/oldtimer/about-team-portrait.png';
+import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
+---
+
+<Layout
+	title="Über uns"
+	description="Mario Schrank, Anton Schrank und das Team der Oldtimermanufaktur – verbunden durch Erfahrung, Leidenschaft und Liebe zu historischen Fahrzeugen."
+>
+	<SiteChrome theme="light">
+		<main class="about-page" id="main-content" tabindex="-1">
+			<header class="about-intro">
+				<h1>Wir über uns</h1>
+			</header>
+
+			<section
+				class="story story--images-right"
+				aria-labelledby="mario-title"
+				data-parallax-group
+			>
+				<h2 id="mario-title">Mario Schrank</h2>
+				<div class="story__layout">
+					<div class="collage collage--double collage--right" aria-label="Mario Schrank">
+						<figure
+							class="image-layer image-layer--portrait"
+							data-parallax-layer
+							data-speed="0.08"
+							data-range="82"
+						>
+							<Image
+								src={marioPortrait}
+								alt="Mario Schrank in einer hellen Werkstatt neben einem klassischen Fahrzeug"
+								widths={[560, 760, 972]}
+								sizes="(max-width: 840px) 88vw, 48vw"
+								format="webp"
+								loading="eager"
+							/>
+						</figure>
+						<figure
+							class="image-layer image-layer--landscape"
+							data-parallax-layer
+							data-speed="0.13"
+							data-range="122"
+						>
+							<Image
+								src={marioCar}
+								alt=""
+								widths={[640, 960, 1280]}
+								sizes="(max-width: 840px) 76vw, 42vw"
+								format="webp"
+								loading="lazy"
+							/>
+						</figure>
+					</div>
+
+					<div class="story__copy">
+						<p>
+							Mit 17 Jahren kauft Mario Schrank von seinem Ersparten einen DKW und restauriert ihn.
+							Damit beginnt eine Leidenschaft, aus der 1987 die Oldtimermanufaktur entsteht. Heute
+							verbindet der dreifache Meister jahrzehntelange Erfahrung mit höchster handwerklicher
+							Präzision. Restaurierungen aus der Oldtimermanufaktur wurden bereits mehrfach
+							international ausgezeichnet.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="story story--images-left"
+				aria-labelledby="anton-title"
+				data-parallax-group
+			>
+				<h2 id="anton-title">Anton Schrank</h2>
+				<div class="story__layout">
+					<div class="collage collage--double collage--left" aria-label="Anton Schrank">
+						<figure
+							class="image-layer image-layer--portrait"
+							data-parallax-layer
+							data-speed="0.084"
+							data-range="86"
+						>
+							<Image
+								src={antonPortrait}
+								alt="Anton Schrank neben einem dunkelblauen klassischen Fahrzeug"
+								widths={[560, 760, 971]}
+								sizes="(max-width: 840px) 88vw, 48vw"
+								format="webp"
+								loading="lazy"
+							/>
+						</figure>
+						<figure
+							class="image-layer image-layer--landscape"
+							data-parallax-layer
+							data-speed="0.136"
+							data-range="126"
+						>
+							<Image
+								src={antonCar}
+								alt=""
+								widths={[640, 960, 1280]}
+								sizes="(max-width: 840px) 76vw, 42vw"
+								format="webp"
+								loading="lazy"
+							/>
+						</figure>
+					</div>
+
+					<div class="story__copy">
+						<p>
+							Wie der Vater, so der Sohn: Mit zwölf Jahren restauriert Anton Schrank gemeinsam mit
+							seinem Vater seinen ersten historischen Traktor.
+						</p>
+						<blockquote>
+							„Mich begeistern die Formen und Farben der alten Fahrzeuge – und das, was wir aus ihnen
+							machen.“
+						</blockquote>
+						<p>
+							Heute führt er die Oldtimermanufaktur mit derselben Leidenschaft in die nächste
+							Generation.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="story story--images-right story--team"
+				aria-labelledby="team-title"
+				data-parallax-group
+			>
+				<h2 id="team-title">Das Team</h2>
+				<div class="story__layout">
+					<div class="collage collage--triple collage--right" aria-label="Das Team">
+						<figure
+							class="image-layer image-layer--team-main"
+							data-parallax-layer
+							data-speed="0.065"
+							data-range="76"
+						>
+							<Image
+								src={teamPortrait}
+								alt="Das Team der Oldtimermanufaktur gemeinsam in einer hellen Fahrzeughalle"
+								widths={[760, 1120, 1536]}
+								sizes="(max-width: 840px) 94vw, 55vw"
+								format="webp"
+								loading="lazy"
+							/>
+						</figure>
+						<figure
+							class="image-layer image-layer--team-conversation"
+							data-parallax-layer
+							data-speed="0.12"
+							data-range="112"
+						>
+							<Image
+								src={teamConversation}
+								alt=""
+								widths={[640, 960, 1280]}
+								sizes="(max-width: 840px) 72vw, 42vw"
+								format="webp"
+								loading="lazy"
+							/>
+						</figure>
+						<figure
+							class="image-layer image-layer--team-workshop"
+							data-parallax-layer
+							data-speed="0.155"
+							data-range="138"
+						>
+							<Image
+								src={teamWorkshop}
+								alt=""
+								widths={[560, 840, 1120]}
+								sizes="(max-width: 840px) 58vw, 31vw"
+								format="webp"
+								loading="lazy"
+							/>
+						</figure>
+					</div>
+
+					<div class="story__copy">
+						<p>
+							Unser Team vereint Spezialisten verschiedener Gewerke. Gemeinsam bewahren wir
+							historische Fahrzeuge und machen aus ihnen wieder etwas Besonderes – mit Leidenschaft,
+							traditionellem Handwerk und Liebe zum Detail.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="story story--images-left story--contact"
+				aria-labelledby="contact-title"
+				data-parallax-group
+			>
+				<h2 id="contact-title">Kontakt</h2>
+				<div class="story__layout">
+					<div class="collage collage--double collage--left" aria-label="Unser Standort in Fischbach">
+						<figure
+							class="image-layer image-layer--portrait"
+							data-parallax-layer
+							data-speed="0.082"
+							data-range="84"
+						>
+							<Image
+								src={contactExterior}
+								alt="Gebäude und Werkstatthalle der Oldtimermanufaktur in der Rhön"
+								widths={[560, 760, 1024]}
+								sizes="(max-width: 840px) 88vw, 48vw"
+								format="webp"
+								loading="lazy"
+							/>
+						</figure>
+						<figure
+							class="image-layer image-layer--landscape"
+							data-parallax-layer
+							data-speed="0.138"
+							data-range="128"
+						>
+							<Image
+								src={contactEntrance}
+								alt="Eingang und Fassade der Werkstattgebäude"
+								widths={[640, 960, 1280]}
+								sizes="(max-width: 840px) 76vw, 42vw"
+								format="webp"
+								loading="lazy"
+							/>
+						</figure>
+					</div>
+
+					<div class="story__copy">
+						<address class="contact-list">
+							<a href="tel:+493696683783">
+								<span>Telefon</span>
+								<strong>03 69 66 / 83 7 83</strong>
+							</a>
+							<a href="tel:+493696683635" aria-label="Faxnummer 03 69 66 / 83 6 35">
+								<span>Fax</span>
+								<strong>03 69 66 / 83 6 35</strong>
+							</a>
+							<a href="mailto:info@oldtimermanufaktur.de">
+								<span>E-Mail</span>
+								<strong>info@oldtimermanufaktur.de</strong>
+							</a>
+							<a
+								href="https://maps.app.goo.gl/jg4eC1XRAyLDoW1BA"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<span>Adresse</span>
+								<strong>
+									i.d. Rhön DE, Kreuzweg 11a,<br />
+									36452 Kaltennordheim-Fischbach/Rhön
+								</strong>
+							</a>
+						</address>
+					</div>
+				</div>
+			</section>
+		</main>
+	</SiteChrome>
+</Layout>
+
+<script>
+	const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+	const parallaxGroups = [...document.querySelectorAll('[data-parallax-group]')];
+	const visibleGroups = new Set();
+	let parallaxFrame;
+
+	const limit = (value, minimum, maximum) => Math.min(Math.max(value, minimum), maximum);
+
+	const resetParallax = () => {
+		document.querySelectorAll('[data-parallax-layer]').forEach((layer) => {
+			if (layer instanceof HTMLElement) {
+				layer.style.setProperty('--parallax-y', '0px');
+			}
+		});
+	};
+
+	const updateParallax = () => {
+		parallaxFrame = undefined;
+
+		if (motionPreference.matches) {
+			resetParallax();
+			return;
+		}
+
+		const viewportCenter = window.innerHeight / 2;
+		const mobileFactor = window.innerWidth <= 840 ? 0.7 : 1;
+
+		visibleGroups.forEach((group) => {
+			if (!(group instanceof HTMLElement)) {
+				return;
+			}
+
+			const groupBounds = group.getBoundingClientRect();
+			const groupCenter = groupBounds.top + groupBounds.height / 2;
+			const distance = viewportCenter - groupCenter;
+
+			group.querySelectorAll('[data-parallax-layer]').forEach((layer) => {
+				if (!(layer instanceof HTMLElement)) {
+					return;
+				}
+
+				const speed = Number(layer.dataset.speed ?? 0) * mobileFactor;
+				const range = Number(layer.dataset.range ?? 0) * mobileFactor;
+				const offset = limit(distance * speed, -range, range);
+				layer.style.setProperty('--parallax-y', `${offset.toFixed(2)}px`);
+			});
+		});
+	};
+
+	const requestParallaxUpdate = () => {
+		if (!parallaxFrame) {
+			parallaxFrame = window.requestAnimationFrame(updateParallax);
+		}
+	};
+
+	if ('IntersectionObserver' in window) {
+		const parallaxObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						visibleGroups.add(entry.target);
+					} else {
+						visibleGroups.delete(entry.target);
+					}
+				});
+				requestParallaxUpdate();
+			},
+			{ rootMargin: '55% 0px', threshold: 0 },
+		);
+
+		parallaxGroups.forEach((group) => parallaxObserver.observe(group));
+	} else {
+		parallaxGroups.forEach((group) => visibleGroups.add(group));
+	}
+
+	window.addEventListener('scroll', requestParallaxUpdate, { passive: true });
+	window.addEventListener('resize', requestParallaxUpdate, { passive: true });
+	motionPreference.addEventListener('change', requestParallaxUpdate);
+	requestParallaxUpdate();
+</script>
+
+<style>
+	.about-page {
+		overflow: hidden;
+		background:
+			linear-gradient(
+				180deg,
+				#eeeeee 0%,
+				#eeeeee 11%,
+				#f7eee2 18%,
+				#f8f3ec 30%,
+				#e9dacf 39%,
+				#9299c4 47%,
+				#688dca 54%,
+				#557fb8 61%,
+				#6695d3 70%,
+				#82afe2 82%,
+				#ffffff 100%
+			);
+		color: #111111;
+	}
+
+	.about-intro {
+		display: grid;
+		place-items: center;
+		padding: clamp(9rem, 13vw, 13rem) clamp(1.25rem, 5vw, 5rem) clamp(6rem, 9vw, 9rem);
+	}
+
+	.about-intro h1,
+	.story h2 {
+		margin: 0;
+		font-family: var(--font-body);
+		text-align: center;
+		text-transform: uppercase;
+		text-wrap: balance;
+	}
+
+	.about-intro h1 {
+		font-size: clamp(2.5rem, 5.2vw, 5.25rem);
+		font-weight: 350;
+		line-height: 0.96;
+		letter-spacing: 0.1em;
+	}
+
+	.story {
+		padding: 0 clamp(1.25rem, 4vw, 4.5rem) clamp(13rem, 20vw, 21rem);
+	}
+
+	.story h2 {
+		margin-bottom: clamp(8rem, 10vw, 10.5rem);
+		font-size: clamp(1.9rem, 3.2vw, 3.4rem);
+		font-weight: 580;
+		line-height: 1;
+		letter-spacing: 0.045em;
+	}
+
+	.story__layout {
+		display: grid;
+		grid-template-columns: minmax(16rem, 0.58fr) minmax(38rem, 1.42fr);
+		align-items: center;
+		gap: clamp(3rem, 6vw, 8rem);
+		width: min(100%, 1720px);
+		margin: 0 auto;
+	}
+
+	.story--images-left .story__layout {
+		grid-template-columns: minmax(38rem, 1.42fr) minmax(16rem, 0.58fr);
+	}
+
+	.story--images-right .collage {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.story--images-right .story__copy {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.story--images-left .collage {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.story--images-left .story__copy {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.story__copy {
+		max-width: 37rem;
+	}
+
+	.story__copy p,
+	.story__copy blockquote {
+		margin: 0;
+		font-size: clamp(1rem, 1.08vw, 1.18rem);
+		font-weight: 320;
+		line-height: 1.72;
+		letter-spacing: 0.008em;
+	}
+
+	.story--contact {
+		padding-bottom: clamp(11rem, 16vw, 17rem);
+	}
+
+	.contact-list {
+		display: grid;
+		border-top: 1px solid rgba(17, 17, 17, 0.3);
+		font-style: normal;
+	}
+
+	.contact-list a {
+		display: grid;
+		grid-template-columns: minmax(5.5rem, 0.34fr) minmax(0, 1fr);
+		gap: 1.5rem;
+		padding: 1.15rem 0 1.25rem;
+		border-bottom: 1px solid rgba(17, 17, 17, 0.3);
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.contact-list a:hover span,
+	.contact-list a:hover strong {
+		transform: translateX(0.55rem);
+	}
+
+	.contact-list a:focus-visible {
+		outline: 1px solid currentColor;
+		outline-offset: 0.35rem;
+	}
+
+	.contact-list span,
+	.contact-list strong {
+		font-size: clamp(0.88rem, 0.96vw, 1.04rem);
+		line-height: 1.55;
+		transition: transform 180ms ease;
+	}
+
+	.contact-list span {
+		font-weight: 430;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+	}
+
+	.contact-list strong {
+		min-width: 0;
+		font-weight: 330;
+		overflow-wrap: anywhere;
+	}
+
+	.story__copy p + p,
+	.story__copy p + blockquote,
+	.story__copy blockquote + p {
+		margin-top: clamp(1.8rem, 3vw, 3rem);
+	}
+
+	.story__copy blockquote {
+		position: relative;
+		padding: clamp(1.4rem, 2.6vw, 2.4rem) 0 clamp(1.4rem, 2.6vw, 2.4rem) clamp(1.4rem, 2.4vw, 2.2rem);
+		border-left: 1px solid rgba(17, 17, 17, 0.34);
+		font-size: clamp(1.14rem, 1.42vw, 1.45rem);
+		font-weight: 430;
+		line-height: 1.48;
+	}
+
+	.collage {
+		position: relative;
+	}
+
+	.collage--double {
+		min-height: clamp(58rem, 108vh, 78rem);
+	}
+
+	.collage--triple {
+		min-height: clamp(60rem, 112vh, 82rem);
+	}
+
+	.image-layer {
+		position: absolute;
+		margin: 0;
+		overflow: hidden;
+		background: #d8dcdd;
+		transform: translate3d(0, var(--parallax-y, 0), 0);
+		will-change: transform;
+	}
+
+	.image-layer :global(img) {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.image-layer--portrait {
+		top: 0;
+		z-index: 1;
+		width: 78%;
+		height: 92%;
+	}
+
+	.collage--right .image-layer--portrait {
+		right: 0;
+	}
+
+	.collage--left .image-layer--portrait {
+		left: 0;
+	}
+
+	.image-layer--landscape {
+		bottom: 1%;
+		z-index: 2;
+		width: 70%;
+		height: 48%;
+	}
+
+	.collage--right .image-layer--landscape {
+		left: 0;
+	}
+
+	.collage--left .image-layer--landscape {
+		right: 0;
+	}
+
+	.image-layer--team-main {
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 90%;
+		height: 64%;
+	}
+
+	.image-layer--team-conversation {
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+		width: 66%;
+		height: 45%;
+	}
+
+	.image-layer--team-workshop {
+		right: 0;
+		bottom: 8%;
+		z-index: 3;
+		width: 46%;
+		height: 33%;
+	}
+
+	@supports not (text-wrap: balance) {
+		.about-intro h1,
+		.story h2 {
+			text-wrap: normal;
+		}
+	}
+
+	@media (max-width: 1040px) {
+		.story__layout,
+		.story--images-left .story__layout {
+			grid-template-columns: minmax(14rem, 0.62fr) minmax(29rem, 1.38fr);
+			gap: clamp(2rem, 4vw, 4rem);
+		}
+
+		.story--images-left .story__layout {
+			grid-template-columns: minmax(29rem, 1.38fr) minmax(14rem, 0.62fr);
+		}
+
+		.story__copy p,
+		.story__copy blockquote {
+			font-size: 1.04rem;
+		}
+
+		.story__copy blockquote {
+			font-size: 1.24rem;
+		}
+	}
+
+	@media (max-width: 840px) {
+		.about-intro {
+			padding: 8.5rem 1.25rem 5.5rem;
+		}
+
+		.about-intro h1 {
+			font-size: clamp(2.25rem, 9vw, 3.2rem);
+			line-height: 1;
+			letter-spacing: 0.06em;
+		}
+
+		.story {
+			padding: 0 1.25rem clamp(10rem, 35vw, 14rem);
+		}
+
+		.story h2 {
+			margin-bottom: clamp(7.5rem, 31vw, 9rem);
+			font-size: clamp(1.9rem, 8vw, 2.8rem);
+			line-height: 1;
+			letter-spacing: 0.035em;
+		}
+
+		.story__layout,
+		.story--images-left .story__layout {
+			display: flex;
+			flex-direction: column;
+			gap: clamp(3rem, 12vw, 5rem);
+		}
+
+		.collage,
+		.story__copy {
+			width: 100%;
+			max-width: none;
+		}
+
+		.collage--double {
+			min-height: clamp(50rem, 108svh, 62rem);
+		}
+
+		.collage--triple {
+			min-height: clamp(52rem, 116svh, 66rem);
+		}
+
+		.image-layer--portrait {
+			width: 90%;
+			height: 91%;
+		}
+
+		.image-layer--landscape {
+			width: 78%;
+			height: 43%;
+		}
+
+		.image-layer--team-main {
+			width: 92%;
+			height: 64%;
+		}
+
+		.image-layer--team-conversation {
+			bottom: 0;
+			width: 70%;
+			height: 41%;
+		}
+
+		.image-layer--team-workshop {
+			bottom: 10%;
+			width: 54%;
+			height: 30%;
+		}
+
+		.story__copy p {
+			font-size: clamp(1rem, 4.3vw, 1.12rem);
+			line-height: 1.68;
+		}
+
+		.story__copy blockquote {
+			font-size: clamp(1.15rem, 5vw, 1.38rem);
+		}
+
+		.story--contact {
+			padding-bottom: clamp(8rem, 29vw, 11rem);
+		}
+
+		.contact-list a {
+			grid-template-columns: 5.2rem minmax(0, 1fr);
+			gap: 1rem;
+		}
+
+		.contact-list span,
+		.contact-list strong {
+			font-size: clamp(0.87rem, 3.8vw, 1rem);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.image-layer {
+			transform: none !important;
+			will-change: auto;
+		}
+
+		.contact-list span,
+		.contact-list strong {
+			transition: none;
+			transform: none;
+		}
+	}
+</style>
