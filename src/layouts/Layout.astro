@@ -9,6 +9,8 @@ interface Props {
 	openGraphImage?: ImageMetadata;
 	openGraphImageAlt?: string;
 	openGraphType?: string;
+	structuredDataType?: string;
+	additionalJsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
@@ -21,14 +23,111 @@ const {
 	openGraphImage = defaultOpenGraphImage,
 	openGraphImageAlt = 'Ein klassisches Automobil in der Werkstatt der Oldtimermanufaktur',
 	openGraphType = 'website',
+	structuredDataType = 'WebPage',
+	additionalJsonLd = [],
 } = Astro.props;
 const pageTitle = title ? `${title} | Die Oldtimermanufaktur` : 'Die Oldtimermanufaktur';
 const siteUrl = Astro.site ?? Astro.url;
+const siteRootUrl = new URL(basePath, siteUrl);
 const pageUrl = new URL(Astro.url.pathname, siteUrl);
 const openGraphImageUrl = new URL(openGraphImage.src, siteUrl);
 const openGraphImageType = openGraphImage.format === 'jpg'
 	? 'image/jpeg'
 	: `image/${openGraphImage.format}`;
+const organizationId = `${siteRootUrl.href}#organization`;
+const websiteId = `${siteRootUrl.href}#website`;
+const webpageId = `${pageUrl.href}#webpage`;
+const primaryImageId = `${pageUrl.href}#primaryimage`;
+const breadcrumbId = `${pageUrl.href}#breadcrumb`;
+const extraJsonLdNodes = Array.isArray(additionalJsonLd)
+	? additionalJsonLd
+	: [additionalJsonLd];
+const webpageData: Record<string, unknown> = {
+	'@type': structuredDataType,
+	'@id': webpageId,
+	url: pageUrl.href,
+	name: pageTitle,
+	description,
+	inLanguage: 'de-DE',
+	isPartOf: { '@id': websiteId },
+	about: { '@id': organizationId },
+	primaryImageOfPage: { '@id': primaryImageId },
+};
+
+const jsonLdGraph: Record<string, unknown>[] = [
+	{
+		'@type': 'AutoRepair',
+		'@id': organizationId,
+		name: 'Die Oldtimermanufaktur',
+		legalName: 'DIE OLDTIMERMANUFAKTUR GmbH',
+		url: siteRootUrl.href,
+		logo: new URL(`${basePath}favicon.svg`, siteUrl).href,
+		description:
+			'Die Oldtimermanufaktur restauriert und bewahrt historische Automobile mit traditionellem Handwerk, technischer Sorgfalt und Liebe zum Detail.',
+		foundingDate: '1987',
+		founder: {
+			'@type': 'Person',
+			name: 'Mario Schrank',
+		},
+		telephone: '+49 36966 83783',
+		faxNumber: '+49 36966 83635',
+		email: 'info@oldtimermanufaktur.de',
+		vatID: 'DE814808272',
+		address: {
+			'@type': 'PostalAddress',
+			streetAddress: 'Kreuzweg 11a',
+			postalCode: '36452',
+			addressLocality: 'Kaltennordheim-Fischbach',
+			addressCountry: 'DE',
+		},
+	},
+	{
+		'@type': 'WebSite',
+		'@id': websiteId,
+		url: siteRootUrl.href,
+		name: 'Die Oldtimermanufaktur',
+		inLanguage: 'de-DE',
+		publisher: { '@id': organizationId },
+	},
+	{
+		'@type': 'ImageObject',
+		'@id': primaryImageId,
+		contentUrl: openGraphImageUrl.href,
+		url: openGraphImageUrl.href,
+		width: openGraphImage.width,
+		height: openGraphImage.height,
+		caption: openGraphImageAlt,
+	},
+	webpageData,
+];
+
+if (title) {
+	webpageData.breadcrumb = { '@id': breadcrumbId };
+	jsonLdGraph.push({
+		'@type': 'BreadcrumbList',
+		'@id': breadcrumbId,
+		itemListElement: [
+			{
+				'@type': 'ListItem',
+				position: 1,
+				name: 'Startseite',
+				item: siteRootUrl.href,
+			},
+			{
+				'@type': 'ListItem',
+				position: 2,
+				name: title,
+				item: pageUrl.href,
+			},
+		],
+	});
+}
+
+jsonLdGraph.push(...extraJsonLdNodes);
+const jsonLd = JSON.stringify({
+	'@context': 'https://schema.org',
+	'@graph': jsonLdGraph,
+}).replace(/</g, '\\u003c');
 ---
 
 <!doctype html>
@@ -53,6 +152,7 @@ const openGraphImageType = openGraphImage.format === 'jpg'
 		<meta property="og:description" content={description} />
 		<meta property="og:locale" content="de_DE" />
 		<meta property="og:site_name" content="Die Oldtimermanufaktur" />
+		{!noindex && <script type="application/ld+json" set:html={jsonLd} />}
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<script is:inline>

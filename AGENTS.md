@@ -59,6 +59,18 @@ absolute and respect the configured production or GitHub Pages base. Do not defe
 Open Graph metadata to a later change, and keep the shared defaults intact so every
 route, including error pages, emits a complete baseline set of tags.
 
+Whenever the website changes in a way that meaningfully affects structured data, add
+or update the relevant JSON-LD in the same code change. This includes changes to the
+business identity, legal or contact details, address, services, people, page purpose,
+canonical URLs, representative imagery, or other facts modeled in Schema.org. Use the
+shared `Layout.astro` JSON-LD graph and props for site-wide entities and page types,
+and connect page-specific nodes with stable absolute `@id` values. Keep the JSON-LD
+truthful, consistent with visible page content, canonical URLs, Open Graph metadata,
+and the active production or GitHub Pages base. Do not invent opening hours, ratings,
+prices, social profiles, locations, services, or other facts that are not confirmed.
+Keep noindex error pages out of the JSON-LD graph, and validate affected generated
+pages after every structured-data change.
+
 `src/pages/ueber-uns.astro` is an approved production page. For additional commercial
 subpages, prefer German, lowercase, URL-oriented routes that match the homepage
 navigation, such as `src/pages/projekte.astro`, `src/pages/oldtimer-kaufen.astro`,
