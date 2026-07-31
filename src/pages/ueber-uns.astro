@@ -34,8 +34,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
-							data-speed="0.08"
-							data-range="82"
+							data-speed="0.12"
+							data-range="132"
 						>
 							<Image
 								src={marioPortrait}
@@ -49,8 +49,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--landscape"
 							data-parallax-layer
-							data-speed="0.13"
-							data-range="122"
+							data-speed="0.21"
+							data-range="196"
 						>
 							<Image
 								src={marioCar}
@@ -86,8 +86,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
-							data-speed="0.084"
-							data-range="86"
+							data-speed="0.126"
+							data-range="138"
 						>
 							<Image
 								src={antonPortrait}
@@ -101,8 +101,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--landscape"
 							data-parallax-layer
-							data-speed="0.136"
-							data-range="126"
+							data-speed="0.218"
+							data-range="202"
 						>
 							<Image
 								src={antonCar}
@@ -143,8 +143,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--team-main"
 							data-parallax-layer
-							data-speed="0.065"
-							data-range="76"
+							data-speed="0.104"
+							data-range="122"
 						>
 							<Image
 								src={teamPortrait}
@@ -158,8 +158,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--team-conversation"
 							data-parallax-layer
-							data-speed="0.12"
-							data-range="112"
+							data-speed="0.19"
+							data-range="180"
 						>
 							<Image
 								src={teamConversation}
@@ -173,8 +173,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--team-workshop"
 							data-parallax-layer
-							data-speed="0.155"
-							data-range="138"
+							data-speed="0.245"
+							data-range="220"
 						>
 							<Image
 								src={teamWorkshop}
@@ -208,8 +208,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
-							data-speed="0.082"
-							data-range="84"
+							data-speed="0.123"
+							data-range="136"
 						>
 							<Image
 								src={contactExterior}
@@ -223,8 +223,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 						<figure
 							class="image-layer image-layer--landscape"
 							data-parallax-layer
-							data-speed="0.138"
-							data-range="128"
+							data-speed="0.22"
+							data-range="204"
 						>
 							<Image
 								src={contactEntrance}
@@ -295,7 +295,9 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 		}
 
 		const viewportCenter = window.innerHeight / 2;
-		const mobileFactor = window.innerWidth <= 840 ? 0.7 : 1;
+		const isMobileLayout = window.innerWidth <= 840;
+		const mobileFactor = isMobileLayout ? 0.58 : 1;
+		const mobileTextClearance = 64;
 
 		visibleGroups.forEach((group) => {
 			if (!(group instanceof HTMLElement)) {
@@ -306,6 +308,9 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 			const groupCenter = groupBounds.top + groupBounds.height / 2;
 			const distance = viewportCenter - groupCenter;
 
+			const headingBounds = group.querySelector('h2')?.getBoundingClientRect();
+			const copyBounds = group.querySelector('.story__copy')?.getBoundingClientRect();
+
 			group.querySelectorAll('[data-parallax-layer]').forEach((layer) => {
 				if (!(layer instanceof HTMLElement)) {
 					return;
@@ -313,7 +318,38 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 
 				const speed = Number(layer.dataset.speed ?? 0) * mobileFactor;
 				const range = Number(layer.dataset.range ?? 0) * mobileFactor;
-				const offset = limit(distance * speed, -range, range);
+				let minimumOffset = -range;
+				let maximumOffset = range;
+
+				if (isMobileLayout) {
+					const currentOffset = Number.parseFloat(
+						layer.style.getPropertyValue('--parallax-y'),
+					) || 0;
+					const layerBounds = layer.getBoundingClientRect();
+					const baseTop = layerBounds.top - currentOffset;
+					const baseBottom = layerBounds.bottom - currentOffset;
+
+					if (headingBounds) {
+						minimumOffset = Math.max(
+							minimumOffset,
+							headingBounds.bottom + mobileTextClearance - baseTop,
+						);
+					}
+
+					if (copyBounds) {
+						maximumOffset = Math.min(
+							maximumOffset,
+							copyBounds.top - mobileTextClearance - baseBottom,
+						);
+					}
+				}
+
+				const requestedOffset = distance * speed;
+				const offset = limit(
+					requestedOffset,
+					minimumOffset,
+					Math.max(minimumOffset, maximumOffset),
+				);
 				layer.style.setProperty('--parallax-y', `${offset.toFixed(2)}px`);
 			});
 		});
@@ -651,7 +687,7 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 		.story--images-left .story__layout {
 			display: flex;
 			flex-direction: column;
-			gap: clamp(3rem, 12vw, 5rem);
+			gap: clamp(10rem, 42vw, 12rem);
 		}
 
 		.collage,

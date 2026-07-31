@@ -6,25 +6,27 @@ This is a small Astro site for the German classic car restoration company
 “Die Oldtimermanufaktur”. Source lives in `src/`:
 
 - `src/pages/` contains route entry points: the German homepage in `index.astro`,
-  legal pages in `impressum.astro` and `datenschutz.astro`, and the custom
-  not-found page in `404.astro`.
+  the company profile in `ueber-uns.astro`, legal pages in `impressum.astro` and
+  `datenschutz.astro`, and the custom not-found page in `404.astro`.
 - `src/layouts/` contains shared page shells such as `Layout.astro`.
 - `src/components/` contains reusable Astro components such as `SiteChrome.astro`
   and `LegalArticle.astro`.
 - `src/assets/` contains source-controlled assets imported by pages and components.
-- `src/assets/oldtimer/` contains generated homepage imagery. Keep project-referenced
-  generated assets in this folder or another source-controlled asset folder, not only
-  under `$CODEX_HOME/generated_images/`.
+- `src/assets/oldtimer/` contains generated homepage and subpage imagery. Keep
+  project-referenced generated assets in this folder or another source-controlled
+  asset folder, not only under `$CODEX_HOME/generated_images/`.
 - `public/` contains static files served from the site root, including favicons.
   Its `.htaccess` maps IONOS/Apache 404 responses to the generated `/404.html`.
 
-Root configuration includes `astro.config.mjs`, `tsconfig.json`, `package.json`, and `package-lock.json`.
-The production site is served from the root of
-`https://www.oldtimermanufaktur.de/`; do not add a deployment base path.
+Root configuration includes `astro.config.mjs`, `tsconfig.json`, `package.json`, and
+`package-lock.json`. The default production build is served from the root of
+`https://www.oldtimermanufaktur.de/`. The GitHub Pages build uses `/oldtimer/` only
+when `DEPLOY_TARGET=github-pages`; use `import.meta.env.BASE_URL` or the existing
+`sitePath` helper for internal URLs instead of hardcoding either deployment base.
 
-When commercial subpages are approved, prefer German, lowercase, URL-oriented routes
-that match the homepage navigation, such as `src/pages/ueber-uns.astro`,
-`src/pages/projekte.astro`, `src/pages/oldtimer-kaufen.astro`,
+`src/pages/ueber-uns.astro` is an approved production page. For additional commercial
+subpages, prefer German, lowercase, URL-oriented routes that match the homepage
+navigation, such as `src/pages/projekte.astro`, `src/pages/oldtimer-kaufen.astro`,
 `src/pages/restaurierung.astro`, and `src/pages/kontakt.astro`. Their scope and copy
 are not defined yet, so do not create them or invent production content without
 explicit requirements. There is no planned wedding-car service page.
@@ -44,6 +46,8 @@ Run commands from the repository root.
 - `npm install` installs dependencies from `package-lock.json`.
 - `npm run dev` starts the Astro dev server, usually at `http://localhost:4321`.
 - `npm run build` creates a production build in `dist/` and is the main verification command.
+- `npm run build:pages` creates the GitHub Pages build with the `/oldtimer/` base path.
+- `npm run deploy` builds and publishes `dist/` to the `gh-pages` branch.
 - `npm run preview` serves the production build locally for final checks.
 - `npm run astro -- --help` shows available Astro CLI commands.
 

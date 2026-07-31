@@ -1,27 +1,37 @@
-# build output
-dist/
-
-# generated types
-.astro/
-
-# dependencies
+# Dependencies
 node_modules/
 
-# logs
+# Astro build output and generated metadata
+dist/
+.astro/
+
+# Local environment variables (templates may be committed)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs and diagnostic reports
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# agent/browser QA screenshots
+# Test and tooling output
+coverage/
+.cache/
+*.tsbuildinfo
+
+# Local agent/browser QA artifacts
 .codex-qa/
 
-# environment variables
-.env
-.env.production
-
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
+# Editor and operating-system files
 .idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
