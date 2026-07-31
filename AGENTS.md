@@ -24,6 +24,41 @@ Root configuration includes `astro.config.mjs`, `tsconfig.json`, `package.json`,
 when `DEPLOY_TARGET=github-pages`; use `import.meta.env.BASE_URL` or the existing
 `sitePath` helper for internal URLs instead of hardcoding either deployment base.
 
+`public/sitemap.xml` is the production sitemap and must stay synchronized with the
+public website. Whenever anything about the site changes, edit the sitemap in the
+same change. Add or remove canonical URLs when routes change, and update `<lastmod>`
+for every affected indexable page when its content, structured data, links, or other
+significant page output changes. For a site-wide change, update all affected entries.
+Never add redirects, duplicate/non-canonical URLs, or the noindex 404 page.
+
+`public/robots.txt` is the production crawler policy served at `/robots.txt` and
+must stay synchronized with the public website. Whenever the website changes,
+review and update it in the same change so crawler permissions, protected asset
+patterns, and the production sitemap reference remain accurate. Adjust directives
+when routes, public asset types, indexing policy, or the sitemap location changes.
+Keep the production hostname in its `Sitemap` directive, preserve access to normal
+indexable pages unless requirements explicitly change, and do not use robots.txt as
+a substitute for page-level `noindex` metadata.
+
+`public/llms.txt` is the production LLM-facing site summary served at `/llms.txt`.
+Whenever the website changes, update this file in the same change so its concise
+German summary, factual context, canonical page links, and link descriptions match
+the published site. Add newly published pages when they are useful to agents, revise
+descriptions when page content changes, and remove retired routes. Follow the
+llms.txt Markdown structure and never list placeholder, non-existent, redirected,
+duplicate, or noindex pages.
+
+Whenever anything new is implemented on the public site, add or update the relevant
+Open Graph metadata directly in the same code change. This includes every new public
+page and every implementation that changes a page's title, description, canonical
+URL, content, or representative imagery. Use the shared `Layout.astro` props so the
+rendered `<head>` includes `og:title`, `og:type`, `og:image`, `og:url`,
+`og:description`, `og:locale`, `og:site_name`, and the applicable structured image
+properties, including meaningful `og:image:alt` text. Open Graph URLs must be
+absolute and respect the configured production or GitHub Pages base. Do not defer
+Open Graph metadata to a later change, and keep the shared defaults intact so every
+route, including error pages, emits a complete baseline set of tags.
+
 `src/pages/ueber-uns.astro` is an approved production page. For additional commercial
 subpages, prefer German, lowercase, URL-oriented routes that match the homepage
 navigation, such as `src/pages/projekte.astro`, `src/pages/oldtimer-kaufen.astro`,
