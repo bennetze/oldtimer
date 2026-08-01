@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import SectionNavigation from '../components/SectionNavigation.astro';
 import SiteChrome from '../components/SiteChrome.astro';
 import Layout from '../layouts/Layout.astro';
 import antonCar from '../assets/oldtimer/about-anton-car.png';
@@ -11,6 +12,13 @@ import marioPortrait from '../assets/oldtimer/about-mario-portrait.png';
 import teamConversation from '../assets/oldtimer/about-team-conversation.png';
 import teamPortrait from '../assets/oldtimer/about-team-portrait.png';
 import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
+
+const sectionNavigationItems = [
+	{ id: 'mario-schrank', label: 'Mario Schrank' },
+	{ id: 'anton-schrank', label: 'Anton Schrank' },
+	{ id: 'das-team', label: 'Das Team' },
+	{ id: 'kontakt', label: 'Kontakt' },
+];
 ---
 
 <Layout
@@ -19,66 +27,72 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 	openGraphImage={teamPortrait}
 	openGraphImageAlt="Das Team der Oldtimermanufaktur gemeinsam in einer hellen Fahrzeughalle"
 	structuredDataType="AboutPage"
+	dateModified="2026-08-01"
 >
 	<SiteChrome theme="light">
 		<main class="about-page" id="main-content" tabindex="-1">
-			<header class="about-intro">
-				<h1>Wir über uns</h1>
-			</header>
+			<SectionNavigation items={sectionNavigationItems} theme="light" />
+
+			<div class="about-opening" id="mario-schrank">
+				<header class="about-intro">
+					<h1>Wir über uns</h1>
+				</header>
+
+				<section
+					class="story story--images-right"
+					aria-labelledby="mario-title"
+					data-parallax-group
+				>
+					<h2 id="mario-title">Mario Schrank</h2>
+					<div class="story__layout">
+						<div class="collage collage--double collage--right" aria-label="Mario Schrank">
+							<figure
+								class="image-layer image-layer--portrait"
+								data-parallax-layer
+								data-speed="0.12"
+								data-range="132"
+							>
+								<Image
+									src={marioPortrait}
+									alt="Mario Schrank in einer hellen Werkstatt neben einem klassischen Fahrzeug"
+									widths={[560, 760, 972]}
+									sizes="(max-width: 840px) 88vw, 48vw"
+									format="webp"
+									loading="eager"
+								/>
+							</figure>
+							<figure
+								class="image-layer image-layer--landscape"
+								data-parallax-layer
+								data-speed="0.21"
+								data-range="196"
+							>
+								<Image
+									src={marioCar}
+									alt=""
+									widths={[640, 960, 1280]}
+									sizes="(max-width: 840px) 76vw, 42vw"
+									format="webp"
+									loading="lazy"
+								/>
+							</figure>
+						</div>
+
+						<div class="story__copy">
+							<p>
+								Mit 17 Jahren kauft Mario Schrank von seinem Ersparten einen DKW und restauriert ihn.
+								Damit beginnt eine Leidenschaft, aus der 1987 die Oldtimermanufaktur entsteht. Heute
+								verbindet der dreifache Meister jahrzehntelange Erfahrung mit höchster handwerklicher
+								Präzision. Restaurierungen aus der Oldtimermanufaktur wurden bereits mehrfach
+								international ausgezeichnet.
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
 
 			<section
-				class="story story--images-right"
-				aria-labelledby="mario-title"
-				data-parallax-group
-			>
-				<h2 id="mario-title">Mario Schrank</h2>
-				<div class="story__layout">
-					<div class="collage collage--double collage--right" aria-label="Mario Schrank">
-						<figure
-							class="image-layer image-layer--portrait"
-							data-parallax-layer
-							data-speed="0.12"
-							data-range="132"
-						>
-							<Image
-								src={marioPortrait}
-								alt="Mario Schrank in einer hellen Werkstatt neben einem klassischen Fahrzeug"
-								widths={[560, 760, 972]}
-								sizes="(max-width: 840px) 88vw, 48vw"
-								format="webp"
-								loading="eager"
-							/>
-						</figure>
-						<figure
-							class="image-layer image-layer--landscape"
-							data-parallax-layer
-							data-speed="0.21"
-							data-range="196"
-						>
-							<Image
-								src={marioCar}
-								alt=""
-								widths={[640, 960, 1280]}
-								sizes="(max-width: 840px) 76vw, 42vw"
-								format="webp"
-								loading="lazy"
-							/>
-						</figure>
-					</div>
-
-					<div class="story__copy">
-						<p>
-							Mit 17 Jahren kauft Mario Schrank von seinem Ersparten einen DKW und restauriert ihn.
-							Damit beginnt eine Leidenschaft, aus der 1987 die Oldtimermanufaktur entsteht. Heute
-							verbindet der dreifache Meister jahrzehntelange Erfahrung mit höchster handwerklicher
-							Präzision. Restaurierungen aus der Oldtimermanufaktur wurden bereits mehrfach
-							international ausgezeichnet.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<section
+				id="anton-schrank"
 				class="story story--images-left"
 				aria-labelledby="anton-title"
 				data-parallax-group
@@ -136,6 +150,7 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 			</section>
 
 			<section
+				id="das-team"
 				class="story story--images-right story--team"
 				aria-labelledby="team-title"
 				data-parallax-group
@@ -201,6 +216,7 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 			</section>
 
 			<section
+				id="kontakt"
 				class="story story--images-left story--contact"
 				aria-labelledby="contact-title"
 				data-parallax-group
@@ -392,6 +408,8 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 
 <style>
 	.about-page {
+		--story-scroll-offset: calc(76px + clamp(1.5rem, 3vh, 2.5rem));
+
 		overflow: hidden;
 		background:
 			linear-gradient(
@@ -435,6 +453,10 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 
 	.story {
 		padding: 0 clamp(2rem, 6vw, 7.5rem) clamp(13rem, 20vw, 21rem);
+	}
+
+	.story[id] {
+		scroll-margin-top: var(--story-scroll-offset);
 	}
 
 	.story h2 {
@@ -665,6 +687,10 @@ import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 	}
 
 	@media (max-width: 840px) {
+		.about-page {
+			--story-scroll-offset: calc(64px + 1.25rem);
+		}
+
 		.about-intro {
 			padding: 8.5rem 1.25rem 5.5rem;
 		}

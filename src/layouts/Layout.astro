@@ -10,6 +10,7 @@ interface Props {
 	openGraphImageAlt?: string;
 	openGraphType?: string;
 	structuredDataType?: string;
+	dateModified?: string;
 	additionalJsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
@@ -24,6 +25,7 @@ const {
 	openGraphImageAlt = 'Ein klassisches Automobil in der Werkstatt der Oldtimermanufaktur',
 	openGraphType = 'website',
 	structuredDataType = 'WebPage',
+	dateModified = '2026-07-31',
 	additionalJsonLd = [],
 } = Astro.props;
 const pageTitle = title ? `${title} | Die Oldtimermanufaktur` : 'Die Oldtimermanufaktur';
@@ -31,6 +33,8 @@ const siteUrl = Astro.site ?? Astro.url;
 const siteRootUrl = new URL(basePath, siteUrl);
 const pageUrl = new URL(Astro.url.pathname, siteUrl);
 const openGraphImageUrl = new URL(openGraphImage.src, siteUrl);
+const sitemapUrl = new URL(`${basePath}sitemap.xml`, siteUrl);
+const llmsUrl = new URL(`${basePath}llms.txt`, siteUrl);
 const openGraphImageType = openGraphImage.format === 'jpg'
 	? 'image/jpeg'
 	: `image/${openGraphImage.format}`;
@@ -49,6 +53,7 @@ const webpageData: Record<string, unknown> = {
 	name: pageTitle,
 	description,
 	inLanguage: 'de-DE',
+	dateModified,
 	isPartOf: { '@id': websiteId },
 	about: { '@id': organizationId },
 	primaryImageOfPage: { '@id': primaryImageId },
@@ -137,9 +142,13 @@ const jsonLd = JSON.stringify({
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href={`${basePath}favicon.svg`} />
 		<link rel="icon" href={`${basePath}favicon.ico`} />
+		<link rel="sitemap" type="application/xml" title="Sitemap" href={sitemapUrl.href} />
+		<link rel="alternate" type="text/markdown" title="llms.txt" href={llmsUrl.href} />
 		<meta name="description" content={description} />
+		<meta name="date" content={dateModified} />
 		{noindex && <meta name="robots" content="noindex,follow" />}
-		{!noindex && <link rel="canonical" href={pageUrl} />}
+		{!noindex && <meta name="robots" content="index,follow,max-image-preview:large" />}
+		{!noindex && <link rel="canonical" href={pageUrl.href} />}
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:type" content={openGraphType} />
 		<meta property="og:image" content={openGraphImageUrl} />
@@ -148,7 +157,7 @@ const jsonLd = JSON.stringify({
 		<meta property="og:image:width" content={String(openGraphImage.width)} />
 		<meta property="og:image:height" content={String(openGraphImage.height)} />
 		<meta property="og:image:alt" content={openGraphImageAlt} />
-		<meta property="og:url" content={pageUrl} />
+		<meta property="og:url" content={pageUrl.href} />
 		<meta property="og:description" content={description} />
 		<meta property="og:locale" content="de_DE" />
 		<meta property="og:site_name" content="Die Oldtimermanufaktur" />

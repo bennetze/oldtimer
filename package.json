@@ -7,8 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "build:pages": "DEPLOY_TARGET=github-pages astro build",
+    "build": "astro build && node scripts/prepare-crawler-files.mjs production",
+    "build:pages": "DEPLOY_TARGET=github-pages astro build && node scripts/prepare-crawler-files.mjs github-pages",
     "predeploy": "npm run build:pages",
     "deploy": "gh-pages -d dist -b gh-pages --nojekyll -m \"Deploy website\"",
     "preview": "astro preview",

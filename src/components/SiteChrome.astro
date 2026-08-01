@@ -136,12 +136,29 @@ const sitePath = (path) => {
 	const menuClose = document.querySelector('.menu-close');
 	const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 	const sectionIndicator = document.querySelector('[data-section-indicator]');
+	const indicatorControls = sectionIndicator
+		? [...sectionIndicator.querySelectorAll('[data-section-target]')]
+		: [];
+	const sectionById = new Map();
+	const sectionEntries = indicatorControls.flatMap((control) => {
+		const targetSelector = control.getAttribute('data-section-target');
+		const section = targetSelector ? document.querySelector(targetSelector) : null;
+
+		if (!(section instanceof HTMLElement)) {
+			return [];
+		}
+
+		sectionById.set(section.id, control);
+		return [{ control, section }];
+	});
+	const sectionTargets = sectionEntries.map(({ section }) => section);
 	const pageMain = document.querySelector('main');
 	const homeFooter = document.querySelector('.site-footer--home');
 	const footerOpenControls = document.querySelectorAll('[data-footer-open]');
 	const footerCloseControls = document.querySelectorAll('[data-footer-close]');
 	const menuBackgroundState = new Map();
 	let activeSectionScroll;
+	let keyboardSectionIndex;
 	let footerTouchStartY = 0;
 	let previousFooterFocus;
 
@@ -323,10 +340,52 @@ const sitePath = (path) => {
 			return;
 		}
 
-		const targetTop = section.getBoundingClientRect().top + window.scrollY;
+		const scrollMarginTop = Number.parseFloat(window.getComputedStyle(section).scrollMarginTop) || 0;
+		const targetTop = section.getBoundingClientRect().top + window.scrollY - scrollMarginTop;
 		animateSectionScroll(targetTop);
 		clearHash();
 	};
+
+	const setActiveIndicator = (id) => {
+		indicatorControls.forEach((control) => {
+			const isActive = control === sectionById.get(id);
+			control.classList.toggle('is-active', isActive);
+			if (isActive) {
+				control.setAttribute('aria-current', 'true');
+			} else {
+				control.removeAttribute('aria-current');
+			}
+		});
+	};
+
+	const getCurrentSectionIndex = () => {
+		if (Number.isInteger(keyboardSectionIndex)) {
+			return keyboardSectionIndex;
+		}
+
+		const activeControlIndex = sectionEntries.findIndex(({ control }) =>
+			control.classList.contains('is-active'),
+		);
+		if (activeControlIndex >= 0) {
+			return activeControlIndex;
+		}
+
+		let closestIndex = 0;
+		let closestDistance = Number.POSITIVE_INFINITY;
+		sectionTargets.forEach((section, index) => {
+			const distance = Math.abs(section.getBoundingClientRect().top);
+			if (distance < closestDistance) {
+				closestIndex = index;
+				closestDistance = distance;
+			}
+		});
+
+		return closestIndex;
+	};
+
+	const isEditableKeyTarget = (target) =>
+		target instanceof Element &&
+		Boolean(target.closest('input, textarea, select, [contenteditable="true"], [role="textbox"]'));
 
 	if (homeFooter instanceof HTMLElement) {
 		homeFooter.setAttribute('aria-hidden', 'true');
@@ -335,6 +394,7 @@ const sitePath = (path) => {
 
 	window.addEventListener('wheel', (event) => {
 		stopSectionScroll();
+		keyboardSectionIndex = undefined;
 
 		if (!(homeFooter instanceof HTMLElement)) {
 			return;
@@ -354,6 +414,7 @@ const sitePath = (path) => {
 
 	window.addEventListener('touchstart', (event) => {
 		stopSectionScroll();
+		keyboardSectionIndex = undefined;
 		footerTouchStartY = event.touches[0]?.clientY ?? 0;
 	}, { passive: true });
 
@@ -378,8 +439,56 @@ const sitePath = (path) => {
 	}, { passive: false });
 
 	window.addEventListener('keydown', (event) => {
+		const shouldHandleSectionArrow =
+			['ArrowDown', 'ArrowUp'].includes(event.code) &&
+			sectionTargets.length > 0 &&
+			!event.altKey &&
+			!event.ctrlKey &&
+			!event.metaKey &&
+			!event.shiftKey &&
+			!isEditableKeyTarget(event.target) &&
+			menuOverlay?.getAttribute('aria-hidden') !== 'false';
+
+		if (shouldHandleSectionArrow && event.repeat) {
+			event.preventDefault();
+			return;
+		}
+
 		if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', 'Space'].includes(event.code)) {
 			stopSectionScroll();
+		}
+
+		if (shouldHandleSectionArrow) {
+			event.preventDefault();
+
+			if (isFooterRevealed() && event.code === 'ArrowUp') {
+				hideFooter();
+				keyboardSectionIndex = sectionTargets.length - 1;
+				return;
+			}
+
+			const direction = event.code === 'ArrowDown' ? 1 : -1;
+			const currentIndex = getCurrentSectionIndex();
+			const nextIndex = currentIndex + direction;
+			const nextSection = sectionTargets[nextIndex];
+
+			if (nextSection instanceof HTMLElement) {
+				hideFooter({ restoreFocus: false });
+				keyboardSectionIndex = nextIndex;
+				setActiveIndicator(nextSection.id);
+				scrollToSection(nextSection);
+				return;
+			}
+
+			if (
+				direction > 0 &&
+				homeFooter instanceof HTMLElement &&
+				!isFooterRevealed() &&
+				currentIndex === sectionTargets.length - 1
+			) {
+				revealFooter();
+				return;
+			}
 		}
 
 		if (!(homeFooter instanceof HTMLElement)) {
@@ -447,6 +556,11 @@ const sitePath = (path) => {
 			const target = targetSelector ? document.querySelector(targetSelector) : null;
 
 			if (target instanceof HTMLElement) {
+				const targetIndex = sectionTargets.indexOf(target);
+				keyboardSectionIndex = targetIndex >= 0 ? targetIndex : undefined;
+				if (targetIndex >= 0) {
+					setActiveIndicator(target.id);
+				}
 				scrollToSection(target);
 			}
 		});
@@ -461,36 +575,17 @@ const sitePath = (path) => {
 	});
 
 	if (sectionIndicator && 'IntersectionObserver' in window) {
-		const indicatorControls = [...sectionIndicator.querySelectorAll('[data-section-target]')];
-		const sectionById = new Map();
 		const visibleRatios = new Map();
-
-		indicatorControls.forEach((control) => {
-			const targetSelector = control.getAttribute('data-section-target');
-			const section = targetSelector ? document.querySelector(targetSelector) : null;
-
-			if (section instanceof HTMLElement) {
-				sectionById.set(section.id, control);
-			}
-		});
-
-		const setActiveIndicator = (id) => {
-			indicatorControls.forEach((control) => {
-				const isActive = control === sectionById.get(id);
-				control.classList.toggle('is-active', isActive);
-				if (isActive) {
-					control.setAttribute('aria-current', 'true');
-				} else {
-					control.removeAttribute('aria-current');
-				}
-			});
-		};
 
 		const sectionObserver = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
 					visibleRatios.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0);
 				});
+
+				if (activeSectionScroll) {
+					return;
+				}
 
 				const activeEntry = [...visibleRatios.entries()].sort((a, b) => b[1] - a[1])[0];
 
@@ -1089,20 +1184,7 @@ const sitePath = (path) => {
 		}
 
 		.footer-primary {
-			flex-direction: column;
-			width: auto;
-			gap: 0.15rem;
-			margin-top: 1.4rem;
-			font-size: 0.82rem;
-		}
-
-		.footer-primary a {
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			min-height: 44px;
-			padding: 0.2rem 0.65rem;
-			line-height: 1.2;
+			display: none;
 		}
 
 		.footer-legal {

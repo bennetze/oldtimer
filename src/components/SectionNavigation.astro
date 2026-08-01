@@ -1,0 +1,133 @@
+---
+interface SectionItem {
+	id: string;
+	label: string;
+}
+
+interface Props {
+	items: SectionItem[];
+	theme?: 'dark' | 'light';
+}
+
+const { items, theme = 'dark' } = Astro.props;
+---
+
+<nav
+	class:list={['section-indicator', `section-indicator--${theme}`]}
+	aria-label="Abschnitte"
+	data-section-indicator
+>
+	{
+		items.map((item, index) => (
+			<button
+				class:list={['section-indicator__dot', { 'is-active': index === 0 }]}
+				type="button"
+				data-section-target={`#${item.id}`}
+				data-scroll-target={`#${item.id}`}
+				aria-current={index === 0 ? 'true' : undefined}
+			>
+				<span>{item.label}</span>
+			</button>
+		))
+	}
+</nav>
+
+<style>
+	.section-indicator {
+		--section-indicator-color: 238, 238, 238;
+
+		position: fixed;
+		top: 50%;
+		left: clamp(1rem, 2vw, 2.5rem);
+		z-index: 45;
+		display: grid;
+		gap: 1.38rem;
+		transform: translateY(-50%);
+		transition: opacity 180ms ease;
+	}
+
+	.section-indicator--light {
+		--section-indicator-color: 17, 17, 17;
+	}
+
+	.section-indicator__dot {
+		position: relative;
+		display: grid;
+		place-items: center;
+		width: 22px;
+		height: 22px;
+		padding: 0;
+		color: rgba(var(--section-indicator-color), 0.92);
+		background: transparent;
+		border: 0;
+		cursor: pointer;
+	}
+
+	.section-indicator__dot::before,
+	.section-indicator__dot::after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: block;
+		border-radius: 999px;
+		content: '';
+		transition:
+			background 180ms ease,
+			border-color 180ms ease,
+			opacity 180ms ease,
+			transform 180ms ease;
+	}
+
+	.section-indicator__dot::before {
+		width: 21px;
+		height: 21px;
+		border: 2px solid transparent;
+		opacity: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	.section-indicator__dot::after {
+		width: 7px;
+		height: 7px;
+		background: rgba(var(--section-indicator-color), 0.54);
+		transform: translate(-50%, -50%);
+	}
+
+	.section-indicator__dot.is-active::before,
+	.section-indicator__dot:hover::before,
+	.section-indicator__dot:focus-visible::before {
+		border-color: rgba(var(--section-indicator-color), 0.96);
+		opacity: 1;
+	}
+
+	.section-indicator__dot.is-active::after,
+	.section-indicator__dot:hover::after,
+	.section-indicator__dot:focus-visible::after {
+		background: rgba(var(--section-indicator-color), 0.96);
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+
+	.section-indicator__dot span {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+	}
+
+	.section-indicator__dot:focus-visible {
+		outline: 0;
+	}
+
+	:global(body.footer-is-revealed) .section-indicator {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	@media (max-width: 980px), (pointer: coarse) {
+		.section-indicator {
+			display: none;
+		}
+	}
+</style>

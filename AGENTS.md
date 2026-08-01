@@ -86,6 +86,13 @@ media hero/panel and editorial content sections. Keep page-specific copy and dat
 the route file or a small local data module, and keep shared interaction code with the
 component that owns the markup.
 
+Every page built from an ordered set of primary sections must use
+`src/components/SectionNavigation.astro` with stable section IDs and labels. This
+shared component provides the custom desktop section rail, while `SiteChrome.astro`
+maps the Up and Down arrow keys to the same ordered targets. Keep the component and
+keyboard behavior together on future section-based pages rather than recreating
+either feature in page-specific code.
+
 ## Build, Test, and Development Commands
 
 Run commands from the repository root.
