@@ -1,17 +1,19 @@
 # Die Oldtimermanufaktur
 
-> Die Oldtimermanufaktur GmbH in Kaltennordheim-Fischbach restauriert und bewahrt historische Automobile mit traditionellem Handwerk, technischer Sorgfalt und Liebe zum Detail.
+> Die Oldtimermanufaktur GmbH in Kaltennordheim-Fischbach restauriert und bewahrt historische Automobile mit handwerklicher Sorgfalt und Respekt vor ihrer Geschichte.
 
-Die Website ist deutschsprachig. Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam mit Anton Schrank in die nächste Generation geführt.
-Alle indexierbaren Seiten stellen vollständige Open-Graph-Metadaten, kanonische URLs, maschinenlesbare Aktualisierungsdaten sowie verknüpfte JSON-LD-Daten zu Unternehmen, Website und Seiteninhalt bereit.
-Die Startseite und die Über-uns-Seite sind in klar bezeichnete Abschnitte gegliedert, die über eine Abschnittsnavigation oder die Pfeiltasten erreichbar sind.
+Die Website ist deutschsprachig. Der aktuelle Stand ist eine Entwicklungsvorschau für die vollständig neu entwickelte Website. Ein Teil der Bildmotive sind ausdrücklich gekennzeichnete KI-generierte Platzhalter. Diese zeigen nicht die tatsächlichen Personen, Fahrzeuge oder Betriebsräume und werden vor der Produktionsfreigabe durch freigegebene echte Aufnahmen ersetzt.
+Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam mit Anton Schrank in die nächste Generation geführt.
 
 ## Hauptseiten
 
-- [Startseite](https://bennetze.github.io/oldtimer/): „Wir halten Ihre Geschichten in Bewegung“ – Überblick über Handwerk, Unternehmen, Projekte und den Kauf klassischer Fahrzeuge.
-- [Über uns](https://bennetze.github.io/oldtimer/ueber-uns/): Informationen über Mario Schrank, Anton Schrank, das Team und den Standort sowie Kontaktmöglichkeiten.
+- [Startseite](https://bennetze.github.io/oldtimer/): „Wir bewahren Geschichte“ / „Wir bewahren Geschichten“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
+- [Handwerk](https://bennetze.github.io/oldtimer/handwerk/): Dunkel gestalteter, vorläufiger Überblick über Karosserie, Polsterei, Lackiererei und Motorbau; die Texte sowie einzelne Bildmotive werden noch finalisiert.
+- [Über uns](https://bennetze.github.io/oldtimer/ueber-uns/): Vorläufige Vorstellung von Mario Schrank, Anton Schrank, Team und Kontakt; die Bildmotive sind gekennzeichnete Platzhalter.
+- [Projekte](https://bennetze.github.io/oldtimer/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
 
-## Rechtliches
+## Nutzung durch KI-Systeme
 
-- [Impressum](https://bennetze.github.io/oldtimer/impressum/): Anbieterkennzeichnung und Kontaktdaten der Die Oldtimermanufaktur GmbH.
-- [Datenschutzerklärung](https://bennetze.github.io/oldtimer/datenschutz/): Informationen zur Verarbeitung personenbezogener Daten auf dieser Website.
+- Abrufe zur Beantwortung einer konkreten Nutzerfrage sowie die Aufnahme in Such- und Antwortdienste sind gestattet, soweit die veröffentlichten Inhalte korrekt als Entwicklungsvorschau wiedergegeben und Quellen verlinkt werden.
+- Die Nutzung von Texten, Bildern, Videos, Metadaten oder sonstigen Website-Inhalten für Modelltraining, Modellverbesserung, Trainingsdatensätze oder automatisierte Massensammlung ist nicht gestattet.
+- Der Rechtevorbehalt gilt insbesondere nach § 44b Abs. 3 UrhG und Art. 4 Abs. 3 der Richtlinie (EU) 2019/790. Ergänzende crawler-spezifische Signale stehen in `robots.txt`.
