@@ -1,0 +1,565 @@
+---
+import type { ImageMetadata } from 'astro';
+import SectionNavigation from '../components/SectionNavigation.astro';
+import SiteChrome from '../components/SiteChrome.astro';
+import Layout from './Layout.astro';
+
+interface SectionItem {
+	id: string;
+	label: string;
+}
+
+interface Props {
+	title: string;
+	heading: string;
+	description: string;
+	sections: SectionItem[];
+	theme?: 'dark' | 'light';
+	background: string;
+	openGraphImage: ImageMetadata;
+	openGraphImageAlt: string;
+	structuredDataType?: string;
+	dateModified: string;
+	additionalJsonLd?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const {
+	title,
+	heading,
+	description,
+	sections,
+	theme = 'light',
+	background,
+	openGraphImage,
+	openGraphImageAlt,
+	structuredDataType = 'WebPage',
+	dateModified,
+	additionalJsonLd = [],
+} = Astro.props;
+
+const openingId = sections[0]?.id;
+---
+
+<Layout
+	{title}
+	{description}
+	{openGraphImage}
+	{openGraphImageAlt}
+	{structuredDataType}
+	{dateModified}
+	{additionalJsonLd}
+>
+	<SiteChrome {theme}>
+		<main
+			class:list={['editorial-page', `editorial-page--${theme}`]}
+			id="main-content"
+			tabindex="-1"
+			style={`--editorial-background: ${background}`}
+		>
+			<SectionNavigation items={sections} {theme} />
+
+			<div class="editorial-opening" id={openingId}>
+				<header class="editorial-intro">
+					<h1>{heading}</h1>
+				</header>
+				<slot name="opening" />
+			</div>
+
+			<slot />
+		</main>
+	</SiteChrome>
+</Layout>
+
+<script>
+	const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+	const editorialPage = document.querySelector('.editorial-page');
+	const parallaxGroups = [...document.querySelectorAll('[data-parallax-group]')];
+	const visibleGroups = new Set();
+	let parallaxFrame;
+	let initialHashAligned = false;
+
+	const updateStoryScrollOffset = () => {
+		if (!(editorialPage instanceof HTMLElement)) {
+			return;
+		}
+
+		const fixedSurfaces = [
+			document.querySelector('[data-floating-header]'),
+			document.querySelector('.development-notice'),
+		];
+		const fixedBottom = fixedSurfaces.reduce((maximum, surface) => {
+			if (!(surface instanceof HTMLElement)) {
+				return maximum;
+			}
+
+			return Math.max(maximum, surface.getBoundingClientRect().bottom);
+		}, 0);
+
+		editorialPage.style.setProperty('--story-scroll-offset', `${Math.ceil(fixedBottom + 20)}px`);
+	};
+
+	const alignInitialHashTarget = () => {
+		if (initialHashAligned || !window.location.hash) {
+			return;
+		}
+
+		const hashTarget = document.querySelector(window.location.hash);
+		if (!(hashTarget instanceof HTMLElement) || !(editorialPage instanceof HTMLElement)) {
+			return;
+		}
+
+		initialHashAligned = true;
+		const scrollOffset = Number.parseFloat(
+			window.getComputedStyle(editorialPage).getPropertyValue('--story-scroll-offset'),
+		) || 0;
+		const targetTop = hashTarget.getBoundingClientRect().top + window.scrollY - scrollOffset;
+		window.scrollTo(0, targetTop);
+	};
+
+	const limit = (value, minimum, maximum) => Math.min(Math.max(value, minimum), maximum);
+
+	const resetParallax = () => {
+		document.querySelectorAll('[data-parallax-layer]').forEach((layer) => {
+			if (layer instanceof HTMLElement) {
+				layer.style.setProperty('--parallax-y', '0px');
+			}
+		});
+	};
+
+	const updateParallax = () => {
+		parallaxFrame = undefined;
+
+		if (motionPreference.matches) {
+			resetParallax();
+			return;
+		}
+
+		const viewportCenter = window.innerHeight / 2;
+		const isMobileLayout = window.innerWidth <= 840;
+		const mobileFactor = isMobileLayout ? 0.58 : 1;
+		const mobileTextClearance = 64;
+
+		visibleGroups.forEach((group) => {
+			if (!(group instanceof HTMLElement)) {
+				return;
+			}
+
+			const groupBounds = group.getBoundingClientRect();
+			const groupCenter = groupBounds.top + groupBounds.height / 2;
+			const distance = viewportCenter - groupCenter;
+			const headingBounds = group.querySelector('h2')?.getBoundingClientRect();
+			const copyBounds = group.querySelector('.story__copy')?.getBoundingClientRect();
+
+			group.querySelectorAll('[data-parallax-layer]').forEach((layer) => {
+				if (!(layer instanceof HTMLElement)) {
+					return;
+				}
+
+				const speed = Number(layer.dataset.speed ?? 0) * mobileFactor;
+				const range = Number(layer.dataset.range ?? 0) * mobileFactor;
+				let minimumOffset = -range;
+				let maximumOffset = range;
+
+				if (isMobileLayout) {
+					const currentOffset = Number.parseFloat(
+						layer.style.getPropertyValue('--parallax-y'),
+					) || 0;
+					const layerBounds = layer.getBoundingClientRect();
+					const baseTop = layerBounds.top - currentOffset;
+					const baseBottom = layerBounds.bottom - currentOffset;
+
+					if (headingBounds) {
+						minimumOffset = Math.max(
+							minimumOffset,
+							headingBounds.bottom + mobileTextClearance - baseTop,
+						);
+					}
+
+					if (copyBounds) {
+						maximumOffset = Math.min(
+							maximumOffset,
+							copyBounds.top - mobileTextClearance - baseBottom,
+						);
+					}
+				}
+
+				const requestedOffset = distance * speed;
+				const offset = limit(
+					requestedOffset,
+					minimumOffset,
+					Math.max(minimumOffset, maximumOffset),
+				);
+				layer.style.setProperty('--parallax-y', `${offset.toFixed(2)}px`);
+			});
+		});
+	};
+
+	const requestParallaxUpdate = () => {
+		if (!parallaxFrame) {
+			parallaxFrame = window.requestAnimationFrame(updateParallax);
+		}
+	};
+
+	if ('IntersectionObserver' in window) {
+		const parallaxObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						visibleGroups.add(entry.target);
+					} else {
+						visibleGroups.delete(entry.target);
+					}
+				});
+				requestParallaxUpdate();
+			},
+			{ rootMargin: '55% 0px', threshold: 0 },
+		);
+
+		parallaxGroups.forEach((group) => parallaxObserver.observe(group));
+	} else {
+		parallaxGroups.forEach((group) => visibleGroups.add(group));
+	}
+
+	window.addEventListener('scroll', requestParallaxUpdate, { passive: true });
+	const handlePageLoaded = () => {
+		updateStoryScrollOffset();
+		alignInitialHashTarget();
+	};
+
+	if (document.readyState === 'complete') {
+		handlePageLoaded();
+	} else {
+		window.addEventListener('load', handlePageLoaded, { once: true });
+	}
+	window.addEventListener('resize', () => {
+		updateStoryScrollOffset();
+		requestParallaxUpdate();
+	}, { passive: true });
+	motionPreference.addEventListener('change', requestParallaxUpdate);
+	window.requestAnimationFrame(updateStoryScrollOffset);
+	requestParallaxUpdate();
+</script>
+
+<style is:global>
+	.editorial-page {
+		--story-scroll-offset: calc(76px + clamp(1.5rem, 3vh, 2.5rem));
+		--editorial-color: #111111;
+		--editorial-line: rgba(17, 17, 17, 0.34);
+		--editorial-image-background: #d8dcdd;
+
+		overflow: hidden;
+		background: var(--editorial-background);
+		color: var(--editorial-color);
+	}
+
+	.editorial-page--dark {
+		--editorial-color: #eeeeee;
+		--editorial-line: rgba(238, 238, 238, 0.3);
+		--editorial-image-background: #202427;
+	}
+
+	.editorial-intro {
+		display: grid;
+		place-items: center;
+		padding: clamp(9rem, 13vw, 13rem) clamp(1.25rem, 5vw, 5rem) clamp(6rem, 9vw, 9rem);
+	}
+
+	.editorial-intro h1,
+	.editorial-page .story h2 {
+		margin: 0;
+		font-family: var(--font-body);
+		text-align: center;
+		text-transform: uppercase;
+		text-wrap: balance;
+	}
+
+	.editorial-intro h1 {
+		max-width: 18ch;
+		font-size: clamp(2.5rem, 5.2vw, 5.25rem);
+		font-weight: 350;
+		line-height: 0.96;
+		letter-spacing: 0.1em;
+	}
+
+	.editorial-page .story {
+		padding: 0 clamp(2rem, 6vw, 7.5rem) clamp(13rem, 20vw, 21rem);
+	}
+
+	.editorial-page .story[id],
+	.editorial-page .editorial-opening[id] {
+		scroll-margin-top: var(--story-scroll-offset);
+	}
+
+	.editorial-page .story h2 {
+		margin-bottom: clamp(8rem, 10vw, 10.5rem);
+		font-size: clamp(1.9rem, 3.2vw, 3.4rem);
+		font-weight: 580;
+		line-height: 1;
+		letter-spacing: 0.045em;
+	}
+
+	.editorial-page .story__layout {
+		display: grid;
+		grid-template-columns: minmax(16rem, 0.58fr) minmax(38rem, 1.42fr);
+		align-items: center;
+		gap: clamp(3rem, 6vw, 8rem);
+		width: min(100%, 1720px);
+		margin: 0 auto;
+	}
+
+	.editorial-page .story--images-left .story__layout {
+		grid-template-columns: minmax(38rem, 1.42fr) minmax(16rem, 0.58fr);
+	}
+
+	.editorial-page .story--images-right .collage {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.editorial-page .story--images-right .story__copy {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.editorial-page .story--images-left .collage {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.editorial-page .story--images-left .story__copy {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.editorial-page .story__copy {
+		max-width: 37rem;
+	}
+
+	.editorial-page .story__copy p,
+	.editorial-page .story__copy blockquote {
+		margin: 0;
+		font-size: clamp(1rem, 1.08vw, 1.18rem);
+		font-weight: 320;
+		line-height: 1.72;
+		letter-spacing: 0.008em;
+	}
+
+	.editorial-page .story__copy p + p,
+	.editorial-page .story__copy p + blockquote,
+	.editorial-page .story__copy blockquote + p {
+		margin-top: clamp(1.8rem, 3vw, 3rem);
+	}
+
+	.editorial-page .story__copy blockquote {
+		position: relative;
+		padding: clamp(1.4rem, 2.6vw, 2.4rem) 0 clamp(1.4rem, 2.6vw, 2.4rem) clamp(1.4rem, 2.4vw, 2.2rem);
+		border-left: 1px solid var(--editorial-line);
+		font-size: clamp(1.14rem, 1.42vw, 1.45rem);
+		font-weight: 430;
+		line-height: 1.48;
+	}
+
+	.editorial-page .collage {
+		position: relative;
+	}
+
+	.editorial-page .collage--double {
+		min-height: clamp(58rem, 108vh, 78rem);
+	}
+
+	.editorial-page .collage--triple {
+		min-height: clamp(60rem, 112vh, 82rem);
+	}
+
+	.editorial-page .image-layer {
+		position: absolute;
+		margin: 0;
+		overflow: hidden;
+		background: var(--editorial-image-background);
+		transform: translate3d(0, var(--parallax-y, 0), 0);
+		will-change: transform;
+	}
+
+	.editorial-page .image-layer img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.editorial-page--dark .image-layer img {
+		filter: saturate(0.72) contrast(1.04) brightness(0.9);
+	}
+
+	.editorial-page .image-layer--portrait {
+		top: 0;
+		z-index: 1;
+		width: 78%;
+		height: 92%;
+	}
+
+	.editorial-page .collage--right .image-layer--portrait {
+		right: 0;
+	}
+
+	.editorial-page .collage--left .image-layer--portrait {
+		left: 0;
+	}
+
+	.editorial-page .image-layer--landscape {
+		bottom: 1%;
+		z-index: 2;
+		width: 70%;
+		height: 48%;
+	}
+
+	.editorial-page .collage--right .image-layer--landscape {
+		left: 0;
+	}
+
+	.editorial-page .collage--left .image-layer--landscape {
+		right: 0;
+	}
+
+	.editorial-page .image-layer--team-main {
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 90%;
+		height: 64%;
+	}
+
+	.editorial-page .image-layer--team-conversation {
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+		width: 66%;
+		height: 45%;
+	}
+
+	.editorial-page .image-layer--team-workshop {
+		right: 0;
+		bottom: 8%;
+		z-index: 3;
+		width: 46%;
+		height: 33%;
+	}
+
+	@supports not (text-wrap: balance) {
+		.editorial-intro h1,
+		.editorial-page .story h2 {
+			text-wrap: normal;
+		}
+	}
+
+	@media (max-width: 1040px) {
+		.editorial-page .story__layout,
+		.editorial-page .story--images-left .story__layout {
+			grid-template-columns: minmax(14rem, 0.62fr) minmax(29rem, 1.38fr);
+			gap: clamp(2rem, 4vw, 4rem);
+		}
+
+		.editorial-page .story--images-left .story__layout {
+			grid-template-columns: minmax(29rem, 1.38fr) minmax(14rem, 0.62fr);
+		}
+
+		.editorial-page .story__copy p,
+		.editorial-page .story__copy blockquote {
+			font-size: 1.04rem;
+		}
+
+		.editorial-page .story__copy blockquote {
+			font-size: 1.24rem;
+		}
+	}
+
+	@media (max-width: 840px) {
+		.editorial-page {
+			--story-scroll-offset: calc(64px + 1.25rem);
+		}
+
+		.editorial-intro {
+			padding: 10rem 1.25rem 5.5rem;
+		}
+
+		.editorial-intro h1 {
+			font-size: clamp(2.1rem, 8.3vw, 3.2rem);
+			line-height: 1.04;
+			letter-spacing: 0.055em;
+		}
+
+		.editorial-page .story {
+			padding: 0 1.5rem clamp(10rem, 35vw, 14rem);
+		}
+
+		.editorial-page .story h2 {
+			margin-bottom: clamp(7.5rem, 31vw, 9rem);
+			font-size: clamp(1.9rem, 8vw, 2.8rem);
+			line-height: 1;
+			letter-spacing: 0.035em;
+		}
+
+		.editorial-page .story__layout,
+		.editorial-page .story--images-left .story__layout {
+			display: flex;
+			flex-direction: column;
+			gap: clamp(10rem, 42vw, 12rem);
+		}
+
+		.editorial-page .collage,
+		.editorial-page .story__copy {
+			width: 100%;
+			max-width: none;
+		}
+
+		.editorial-page .collage--double {
+			min-height: clamp(50rem, 108svh, 62rem);
+		}
+
+		.editorial-page .collage--triple {
+			min-height: clamp(52rem, 116svh, 66rem);
+		}
+
+		.editorial-page .image-layer--portrait {
+			width: 90%;
+			height: 91%;
+		}
+
+		.editorial-page .image-layer--landscape {
+			width: 78%;
+			height: 43%;
+		}
+
+		.editorial-page .image-layer--team-main {
+			width: 92%;
+			height: 64%;
+		}
+
+		.editorial-page .image-layer--team-conversation {
+			bottom: 0;
+			width: 70%;
+			height: 41%;
+		}
+
+		.editorial-page .image-layer--team-workshop {
+			bottom: 10%;
+			width: 54%;
+			height: 30%;
+		}
+
+		.editorial-page .story__copy p {
+			font-size: clamp(1rem, 4.3vw, 1.12rem);
+			line-height: 1.68;
+		}
+
+		.editorial-page .story__copy blockquote {
+			font-size: clamp(1.15rem, 5vw, 1.38rem);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.editorial-page .image-layer {
+			transform: none !important;
+			will-change: auto;
+		}
+	}
+</style>

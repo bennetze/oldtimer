@@ -1,6 +1,7 @@
 ---
 import type { ImageMetadata } from 'astro';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
+import { siteStatus } from '../config/site';
 
 interface Props {
 	title?: string;
@@ -22,13 +23,15 @@ const {
 	description = 'Die Oldtimermanufaktur restauriert klassische Automobile mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte.',
 	noindex = false,
 	openGraphImage = defaultOpenGraphImage,
-	openGraphImageAlt = 'Ein klassisches Automobil in der Werkstatt der Oldtimermanufaktur',
+	openGraphImageAlt = 'Ein historischer Roadster während einer Fahrt',
 	openGraphType = 'website',
 	structuredDataType = 'WebPage',
-	dateModified = '2026-07-31',
+	dateModified = '2026-08-02',
 	additionalJsonLd = [],
 } = Astro.props;
 const pageTitle = title ? `${title} | Die Oldtimermanufaktur` : 'Die Oldtimermanufaktur';
+const isGitHubPagesPreview = siteStatus.developmentPreview && basePath !== '/';
+const effectiveNoindex = noindex || isGitHubPagesPreview;
 const siteUrl = Astro.site ?? Astro.url;
 const siteRootUrl = new URL(basePath, siteUrl);
 const pageUrl = new URL(Astro.url.pathname, siteUrl);
@@ -77,7 +80,6 @@ const jsonLdGraph: Record<string, unknown>[] = [
 		telephone: '+49 36966 83783',
 		faxNumber: '+49 36966 83635',
 		email: 'info@oldtimermanufaktur.de',
-		vatID: 'DE814808272',
 		address: {
 			'@type': 'PostalAddress',
 			streetAddress: 'Kreuzweg 11a',
@@ -142,13 +144,14 @@ const jsonLd = JSON.stringify({
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href={`${basePath}favicon.svg`} />
 		<link rel="icon" href={`${basePath}favicon.ico`} />
+		<link rel="apple-touch-icon" href={`${basePath}apple-touch-icon.png`} />
 		<link rel="sitemap" type="application/xml" title="Sitemap" href={sitemapUrl.href} />
 		<link rel="alternate" type="text/markdown" title="llms.txt" href={llmsUrl.href} />
 		<meta name="description" content={description} />
 		<meta name="date" content={dateModified} />
-		{noindex && <meta name="robots" content="noindex,follow" />}
-		{!noindex && <meta name="robots" content="index,follow,max-image-preview:large" />}
-		{!noindex && <link rel="canonical" href={pageUrl.href} />}
+		{effectiveNoindex && <meta name="robots" content="noindex,follow,noarchive" />}
+		{!effectiveNoindex && <meta name="robots" content="index,follow,max-image-preview:large" />}
+		{!effectiveNoindex && <link rel="canonical" href={pageUrl.href} />}
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:type" content={openGraphType} />
 		<meta property="og:image" content={openGraphImageUrl} />
@@ -161,7 +164,7 @@ const jsonLd = JSON.stringify({
 		<meta property="og:description" content={description} />
 		<meta property="og:locale" content="de_DE" />
 		<meta property="og:site_name" content="Die Oldtimermanufaktur" />
-		{!noindex && <script type="application/ld+json" set:html={jsonLd} />}
+		{!effectiveNoindex && <script type="application/ld+json" set:html={jsonLd} />}
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<script is:inline>
@@ -186,11 +189,19 @@ const jsonLd = JSON.stringify({
 		<slot />
 		<script>
 			document.addEventListener('contextmenu', (event) => {
-				event.preventDefault();
+				if (
+					event.target instanceof Element &&
+					event.target.closest('img, picture, video')
+				) {
+					event.preventDefault();
+				}
 			});
 
 			document.addEventListener('dragstart', (event) => {
-				if (event.target instanceof HTMLImageElement) {
+				if (
+					event.target instanceof Element &&
+					event.target.closest('img, picture, video')
+				) {
 					event.preventDefault();
 				}
 			});
@@ -200,6 +211,7 @@ const jsonLd = JSON.stringify({
 
 <style>
 	@font-face {
+		/* Jost © 2020 The Jost Project Authors, SIL OFL 1.1; see /licenses/Jost-OFL-1.1.txt */
 		font-family: 'Jost';
 		src: url('../assets/fonts/jost-variable.ttf') format('truetype');
 		font-weight: 300 600;
@@ -256,20 +268,15 @@ const jsonLd = JSON.stringify({
 
 	:global(*) {
 		box-sizing: border-box;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-
-	:global(*::selection) {
-		background: transparent;
-		color: inherit;
 	}
 
 	:global(img),
+	:global(picture),
+	:global(video),
 	:global(svg) {
 		display: block;
+		-webkit-user-select: none;
+		user-select: none;
 		-webkit-user-drag: none;
 		user-drag: none;
 	}

@@ -1,0 +1,274 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import SiteChrome from '../components/SiteChrome.astro';
+import currentProjectsImage from '../assets/oldtimer/projects-current-color.png';
+import pastProjectsImage from '../assets/oldtimer/projects-past-color.png';
+import vehicleOffersImage from '../assets/oldtimer/projects-offers-color.png';
+
+const basePath = import.meta.env.BASE_URL.endsWith('/')
+	? import.meta.env.BASE_URL
+	: `${import.meta.env.BASE_URL}/`;
+const sitePath = (path: string) => {
+	if (path === '/') {
+		return basePath;
+	}
+
+	if (path.startsWith('/')) {
+		return `${basePath}${path.slice(1)}`;
+	}
+
+	return path;
+};
+
+const projectAreas = [
+	{
+		id: 'aktuelle-projekte',
+		title: 'Aktuelle Projekte',
+		titleLines: ['Aktuelle', 'Projekte'],
+		href: '/projekte/aktuelle-projekte/',
+		image: currentProjectsImage,
+		alt: 'KI-generierter Platzhalter: Ein klassisches Coupé wird in einer dunklen Werkstatt restauriert',
+	},
+	{
+		id: 'vergangene-projekte',
+		title: 'Vergangene Projekte',
+		titleLines: ['Vergangene', 'Projekte'],
+		href: '/projekte/vergangene-projekte/',
+		image: pastProjectsImage,
+		alt: 'KI-generierter Platzhalter: Ein fertig restauriertes klassisches Coupé in einer Werkstatt',
+	},
+	{
+		id: 'fahrzeugangebote',
+		title: 'Fahrzeugangebote',
+		titleLines: ['Fahrzeug', 'angebote'],
+		href: '/oldtimer-kaufen/',
+		image: vehicleOffersImage,
+		alt: 'KI-generierter Platzhalter: Ein fahrbereiter klassischer Roadster in einer Werkstatt',
+	},
+];
+---
+
+<Layout
+	title="Projekte"
+	description="Aktuelle und vergangene Restaurierungsprojekte der Oldtimermanufaktur sowie ausgewählte Fahrzeugangebote."
+	openGraphImage={currentProjectsImage}
+	openGraphImageAlt="Ein klassisches Coupé während einer Restaurierung in einer dunklen Werkstatt"
+	structuredDataType="CollectionPage"
+	dateModified="2026-08-06"
+>
+	<SiteChrome>
+		<main class="projects-page" id="main-content" tabindex="-1">
+			<h1 class="visually-hidden">Projekte</h1>
+			<nav class="projects-triptych" aria-label="Projektbereiche">
+				{
+					projectAreas.map((area, index) => (
+						<a
+							class="project-panel"
+							href={sitePath(area.href)}
+							aria-labelledby={`${area.id}-title`}
+						>
+							<Image
+								class="project-panel__image"
+								src={area.image}
+								alt={area.alt}
+								widths={[640, 960, 1280, 1600]}
+								sizes="(max-width: 760px) 100vw, 42vw"
+								format="webp"
+								loading="eager"
+								fetchpriority={index === 0 ? 'high' : 'auto'}
+							/>
+							<span class="project-panel__shade" aria-hidden="true" />
+							<span class="project-panel__content">
+								<h2 id={`${area.id}-title`} aria-label={area.title}>
+									{
+										area.titleLines.map((line) => (
+											<span class="project-panel__title-line" aria-hidden="true">{line}</span>
+										))
+									}
+								</h2>
+							</span>
+						</a>
+					))
+				}
+			</nav>
+		</main>
+	</SiteChrome>
+</Layout>
+
+<style>
+	.projects-page {
+		height: 100vh;
+		height: 100svh;
+		background: #111111;
+	}
+
+	.visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	.projects-triptych {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background: #111111;
+	}
+
+	.project-panel {
+		position: relative;
+		isolation: isolate;
+		display: flex;
+		align-items: flex-end;
+		flex: 1 1 0%;
+		min-width: 0;
+		overflow: hidden;
+		color: #eeeeee;
+		text-decoration: none;
+		transition: flex-grow 640ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.project-panel + .project-panel {
+		border-left: 1px solid rgba(238, 238, 238, 0.14);
+	}
+
+	.project-panel__image {
+		position: absolute;
+		inset: 0;
+		z-index: -3;
+		display: block;
+		width: 100%;
+		max-width: none;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		filter: grayscale(0) saturate(1.08) contrast(1.02) brightness(1.04);
+		transform: scale(1.01);
+		transition:
+			filter 560ms cubic-bezier(0.22, 1, 0.36, 1),
+			transform 680ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.project-panel__shade {
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		background:
+			linear-gradient(180deg, rgba(8, 8, 8, 0.28) 0%, rgba(8, 8, 8, 0.03) 42%, rgba(8, 8, 8, 0.26) 62%, rgba(8, 8, 8, 0.82) 100%),
+			linear-gradient(90deg, rgba(8, 8, 8, 0.14), transparent 48%, rgba(8, 8, 8, 0.08));
+		transition: opacity 480ms ease;
+	}
+
+	.project-panel__content {
+		position: relative;
+		z-index: 1;
+		display: block;
+		width: 100%;
+		padding: 0 clamp(1.5rem, 2.7vw, 3rem) clamp(2.5rem, 6.5vh, 5.25rem);
+		box-sizing: border-box;
+		text-align: left;
+	}
+
+	.project-panel h2 {
+		margin: 0;
+		font-size: clamp(1.8rem, 2.35vw, 3.1rem);
+		font-weight: 400;
+		letter-spacing: 0.045em;
+		line-height: 0.98;
+		text-transform: uppercase;
+		text-wrap: pretty;
+		text-shadow:
+			0 3px 24px rgba(0, 0, 0, 0.9),
+			0 1px 4px rgba(0, 0, 0, 0.94);
+	}
+
+	.project-panel__title-line {
+		display: block;
+	}
+
+	.project-panel:focus-visible {
+		z-index: 2;
+		outline: 0;
+		box-shadow: inset 0 0 0 2px rgba(238, 238, 238, 0.9);
+	}
+
+	@media (hover: hover) and (pointer: fine) and (min-width: 761px) {
+		.projects-triptych:has(.project-panel:is(:hover, :focus-visible)) .project-panel {
+			flex-grow: 0.97;
+		}
+
+		.projects-triptych:has(.project-panel:is(:hover, :focus-visible))
+			.project-panel:is(:hover, :focus-visible) {
+			flex-grow: 1.06;
+		}
+
+		.projects-triptych:has(.project-panel:is(:hover, :focus-visible))
+			.project-panel:not(:hover):not(:focus-visible)
+			.project-panel__image {
+			filter: grayscale(1) saturate(0) contrast(1.01) brightness(0.78);
+		}
+
+		.project-panel:is(:hover, :focus-visible) .project-panel__image {
+			transform: scale(1.025);
+		}
+
+		.project-panel:is(:hover, :focus-visible) .project-panel__shade {
+			opacity: 0.86;
+		}
+	}
+
+	@media (max-width: 760px) {
+		.projects-triptych {
+			flex-direction: column;
+		}
+
+		.project-panel {
+			align-items: flex-end;
+			flex: 1 1 0%;
+			min-height: 0;
+			transition: none;
+		}
+
+		.project-panel + .project-panel {
+			border-top: 1px solid rgba(238, 238, 238, 0.14);
+			border-left: 0;
+		}
+
+		.project-panel__content {
+			display: block;
+			width: 100%;
+			padding: 0 1.25rem 1.45rem;
+			box-sizing: border-box;
+			text-align: left;
+		}
+
+		.project-panel__shade {
+			background:
+				linear-gradient(180deg, rgba(8, 8, 8, 0.16) 0%, rgba(8, 8, 8, 0.02) 38%, rgba(8, 8, 8, 0.74) 100%),
+				linear-gradient(90deg, rgba(8, 8, 8, 0.2), transparent 64%);
+		}
+
+		.project-panel h2 {
+			font-size: clamp(1.4rem, 6vw, 1.75rem);
+			font-weight: 400;
+			letter-spacing: 0.045em;
+			line-height: 1;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.project-panel,
+		.project-panel__image,
+		.project-panel__shade {
+			transition: none;
+		}
+	}
+</style>

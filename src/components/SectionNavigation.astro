@@ -41,7 +41,7 @@ const { items, theme = 'dark' } = Astro.props;
 		left: clamp(1rem, 2vw, 2.5rem);
 		z-index: 45;
 		display: grid;
-		gap: 1.38rem;
+		gap: 0.28rem;
 		transform: translateY(-50%);
 		transition: opacity 180ms ease;
 	}
@@ -54,8 +54,8 @@ const { items, theme = 'dark' } = Astro.props;
 		position: relative;
 		display: grid;
 		place-items: center;
-		width: 22px;
-		height: 22px;
+		width: 44px;
+		height: 44px;
 		padding: 0;
 		color: rgba(var(--section-indicator-color), 0.92);
 		background: transparent;
@@ -118,11 +118,6 @@ const { items, theme = 'dark' } = Astro.props;
 
 	.section-indicator__dot:focus-visible {
 		outline: 0;
-	}
-
-	:global(body.footer-is-revealed) .section-indicator {
-		opacity: 0;
-		pointer-events: none;
 	}
 
 	@media (max-width: 980px), (pointer: coarse) {

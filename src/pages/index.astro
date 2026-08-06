@@ -52,7 +52,7 @@ const sections = [
   },
   {
     id: "oldtimer-kaufen",
-    title: "Oldtimer kaufen",
+    title: "Fahrzeugangebote",
     image: sectionOldtimerKaufen,
     alt: "Ein klassisches Coupé in einer dunklen Werkstattpräsentation",
     href: "/oldtimer-kaufen/",
@@ -68,10 +68,10 @@ const sectionNavigationItems = [
 ---
 
 <Layout
-  description="Die Oldtimermanufaktur hält Geschichten klassischer Automobile in Bewegung – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
-  dateModified="2026-08-01"
+  description="Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
+  dateModified="2026-08-06"
 >
-  <SiteChrome footerVariant="home">
+  <SiteChrome>
     <main id="main-content" tabindex="-1">
       <SectionNavigation items={sectionNavigationItems} />
 
@@ -127,13 +127,13 @@ const sectionNavigationItems = [
         </button>
         <div class="media-panel__content media-panel__content--hero">
           <h1 id="hero-title">
-            Wir halten Ihre <span class="hero-title__word"
+            Wir bewahren <span class="hero-title__word"
               >Geschichte<span class="hero-title__letter" data-hero-title-letter
                 ><span class="hero-title__letter-glyph" data-hero-title-letter-glyph
-                  >n</span
+                  >N</span
                 ></span
               ></span
-            > in Bewegung
+            >
           </h1>
           <button
             class="scroll-cue"
@@ -154,7 +154,7 @@ const sectionNavigationItems = [
         <img
           class="media-panel__image"
           src={craftHands.src}
-          alt="Hände arbeiten präzise an einem Bauteil eines Oldtimers"
+          alt="KI-generierter Platzhalter für eine geplante Aufnahme handwerklicher Arbeit an einem Oldtimer"
           loading="lazy"
         />
         <div class="media-panel__shade media-panel__shade--craft"></div>
@@ -168,9 +168,9 @@ const sectionNavigationItems = [
         </button>
         <div class="media-panel__content media-panel__content--craft">
           <h2 id="craft-title">Handwerk</h2>
-          <a class="section-cta" href={sitePath("/restaurierung/")}
-            >Mehr erfahren</a
-          >
+          <a class="section-cta" href={sitePath("/handwerk/")}>
+            Mehr erfahren
+          </a>
           <div class="scroll-cues" aria-label="Abschnitt wechseln">
             <button
               class="scroll-cue"
@@ -194,7 +194,7 @@ const sectionNavigationItems = [
             <img
               class="media-panel__image"
               src={section.image.src}
-              alt={section.alt}
+              alt={`KI-generierter Platzhalter: ${section.alt}`}
               loading="lazy"
             />
             <div class="media-panel__shade media-panel__shade--editorial" />
@@ -222,14 +222,13 @@ const sectionNavigationItems = [
                     <span aria-hidden="true" />
                   </button>
                 ) : (
-                  <button
+                  <a
                     class="scroll-cue"
-                    type="button"
-                    data-footer-open
-                    aria-label="Footer anzeigen"
+                    href="#site-footer"
+                    aria-label="Zum Footer scrollen"
                   >
                     <span aria-hidden="true" />
-                  </button>
+                  </a>
                 )}
               </div>
             </div>
@@ -349,7 +348,7 @@ const sectionNavigationItems = [
                   { ...hiddenLetter, offset: 1 },
                 ],
                 {
-                  duration: 10000,
+                  duration: 7500,
                   fill: "both",
                   iterations: Infinity,
                 },
@@ -1003,17 +1002,6 @@ const sectionNavigationItems = [
   .scroll-cue:focus-visible {
     outline: 1px solid rgba(238, 238, 238, 0.62);
     outline-offset: 0.35rem;
-  }
-
-  :global(body.footer-is-revealed) #oldtimer-kaufen .media-panel__content {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-18px);
-  }
-
-  :global(body.footer-is-revealed) #oldtimer-kaufen .section-up-cue {
-    opacity: 0;
-    pointer-events: none;
   }
 
   @media (max-width: 760px) {

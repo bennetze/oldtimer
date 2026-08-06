@@ -1,0 +1,268 @@
+---
+import { Image } from 'astro:assets';
+import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
+import bodyPortrait from '../assets/oldtimer/L1005486.webp';
+import bodyLandscape from '../assets/oldtimer/L1005735.webp';
+import paintPortrait from '../assets/oldtimer/L1005678.webp';
+import paintLandscape from '../assets/oldtimer/L1005705.webp';
+import upholsteryPortrait from '../assets/oldtimer/L1005816.webp';
+import upholsteryLandscape from '../assets/oldtimer/L1005861.webp';
+import enginePortrait from '../assets/oldtimer/handwerk-motorbau-portrait.webp';
+import engineLandscape from '../assets/oldtimer/handwerk-motorbau-landscape.webp';
+
+const sectionNavigationItems = [
+	{ id: 'karosserie', label: 'Karosserie' },
+	{ id: 'polsterei', label: 'Polsterei' },
+	{ id: 'lackiererei', label: 'Lackiererei' },
+	{ id: 'motorbau', label: 'Motorbau' },
+];
+
+const basePath = import.meta.env.BASE_URL.endsWith('/')
+	? import.meta.env.BASE_URL
+	: `${import.meta.env.BASE_URL}/`;
+const siteUrl = Astro.site ?? Astro.url;
+const siteRootUrl = new URL(basePath, siteUrl);
+const pageUrl = new URL(`${basePath}handwerk/`, siteUrl);
+const serviceId = `${pageUrl.href}#service`;
+const organizationId = `${siteRootUrl.href}#organization`;
+const handwerkServiceJsonLd = {
+	'@type': 'Service',
+	'@id': serviceId,
+	name: 'Handwerk – Alles aus einer Hand',
+	serviceType: 'Restaurierung historischer Automobile',
+	description:
+		'Karosserie, Polsterei, Lackiererei und Motorbau für die Restaurierung historischer Automobile.',
+	url: pageUrl.href,
+	provider: { '@id': organizationId },
+	hasOfferCatalog: {
+		'@type': 'OfferCatalog',
+		name: 'Handwerksbereiche',
+		itemListElement: sectionNavigationItems.map((section) => ({
+			'@type': 'Offer',
+			itemOffered: {
+				'@type': 'Service',
+				name: section.label,
+				url: `${pageUrl.href}#${section.id}`,
+			},
+		})),
+	},
+};
+---
+
+<EditorialPageLayout
+	title="Handwerk"
+	heading="Handwerk - Alles aus einer Hand"
+	description="Karosserie, Polsterei, Lackiererei und Motorbau: die Handwerksbereiche der Oldtimermanufaktur für historische Automobile."
+	sections={sectionNavigationItems}
+	theme="dark"
+	background="linear-gradient(180deg, #111111 0%, #111111 17%, #302b27 22%, #4b453f 28%, #57514b 34%, #524d49 41%, #47464a 48%, #363d47 55%, #263747 62%, #162d43 68%, #0c304c 74%, #083553 78%, #10283b 86%, #111111 100%)"
+	openGraphImage={bodyPortrait}
+	openGraphImageAlt="Ein Karosseriebauer arbeitet konzentriert an der Form eines historischen Fahrzeugs"
+	structuredDataType="CollectionPage"
+	dateModified="2026-08-03"
+	additionalJsonLd={handwerkServiceJsonLd}
+>
+	<section
+		slot="opening"
+		class="story story--images-right"
+		aria-labelledby="karosserie-title"
+		data-parallax-group
+	>
+		<h2 id="karosserie-title">Karosserie</h2>
+		<div class="story__layout">
+			<div class="collage collage--double collage--right" aria-label="Arbeiten in der Karosserieabteilung">
+				<figure
+					class="image-layer image-layer--portrait"
+					data-parallax-layer
+					data-speed="0.12"
+					data-range="132"
+				>
+					<Image
+						src={bodyPortrait}
+						alt="Ein Karosseriebauer bearbeitet ein Metallteil von Hand"
+						widths={[560, 760, 1024, 1280]}
+						sizes="(max-width: 840px) 88vw, 48vw"
+						format="webp"
+						loading="eager"
+					/>
+				</figure>
+				<figure
+					class="image-layer image-layer--landscape"
+					data-parallax-layer
+					data-speed="0.21"
+					data-range="196"
+				>
+					<Image
+						src={bodyLandscape}
+						alt="Historische Fahrzeuge und Karosserieteile in der Werkstatt"
+						widths={[640, 960, 1280, 1600]}
+						sizes="(max-width: 840px) 76vw, 42vw"
+						format="webp"
+						loading="lazy"
+					/>
+				</figure>
+			</div>
+
+			<div class="story__copy">
+				<p>
+					Jede Linie beginnt mit einem genauen Blick auf die vorhandene Substanz. Bleche werden
+					geformt, angepasst und so zusammengefügt, dass Proportionen, Übergänge und Spaltmaße
+					wieder ein stimmiges Ganzes ergeben.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="polsterei"
+		class="story story--images-left"
+		aria-labelledby="polsterei-title"
+		data-parallax-group
+	>
+		<h2 id="polsterei-title">Polsterei</h2>
+		<div class="story__layout">
+			<div class="collage collage--double collage--left" aria-label="Arbeiten in der Polsterei">
+				<figure
+					class="image-layer image-layer--portrait"
+					data-parallax-layer
+					data-speed="0.126"
+					data-range="138"
+				>
+					<Image
+						src={upholsteryPortrait}
+						alt="Ein Polsterer führt Leder an einer Nähmaschine"
+						widths={[560, 760, 1024, 1280]}
+						sizes="(max-width: 840px) 88vw, 48vw"
+						format="webp"
+						loading="lazy"
+					/>
+				</figure>
+				<figure
+					class="image-layer image-layer--landscape"
+					data-parallax-layer
+					data-speed="0.218"
+					data-range="202"
+				>
+					<Image
+						src={upholsteryLandscape}
+						alt="Werkzeuge, Schnittmuster und Leder auf dem Arbeitstisch einer Polsterei"
+						widths={[640, 960, 1280, 1600]}
+						sizes="(max-width: 840px) 76vw, 42vw"
+						format="webp"
+						loading="lazy"
+					/>
+				</figure>
+			</div>
+
+			<div class="story__copy">
+				<p>
+					Material, Haptik und Verarbeitung prägen den Charakter eines Innenraums. Vom Zuschnitt
+					bis zur letzten Naht entstehen Bezüge und Polster, die sich selbstverständlich in das
+					historische Fahrzeug einfügen.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="lackiererei"
+		class="story story--images-right"
+		aria-labelledby="lackiererei-title"
+		data-parallax-group
+	>
+		<h2 id="lackiererei-title">Lackiererei</h2>
+		<div class="story__layout">
+			<div class="collage collage--double collage--right" aria-label="Arbeiten in der Lackiererei">
+				<figure
+					class="image-layer image-layer--portrait"
+					data-parallax-layer
+					data-speed="0.122"
+					data-range="134"
+				>
+					<Image
+						src={paintPortrait}
+						alt="Ein Lackierer trägt Schutzkleidung beim Lackieren eines Karosserieteils"
+						widths={[560, 760, 1024, 1280]}
+						sizes="(max-width: 840px) 88vw, 48vw"
+						format="webp"
+						loading="lazy"
+					/>
+				</figure>
+				<figure
+					class="image-layer image-layer--landscape"
+					data-parallax-layer
+					data-speed="0.224"
+					data-range="206"
+				>
+					<Image
+						src={paintLandscape}
+						alt="Lackierarbeiten an einer dunklen Karosserie in der Spritzkabine"
+						widths={[640, 960, 1280, 1600]}
+						sizes="(max-width: 840px) 76vw, 42vw"
+						format="webp"
+						loading="lazy"
+					/>
+				</figure>
+			</div>
+
+			<div class="story__copy">
+				<p>
+					Ein überzeugendes Finish entsteht lange vor dem ersten Farbauftrag. Sorgfältiger
+					Schichtaufbau, ruhige Flächen und ein fein abgestimmter Farbton geben der Karosserie
+					Tiefe, ohne ihre Form zu überdecken.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="motorbau"
+		class="story story--images-left"
+		aria-labelledby="motorbau-title"
+		data-parallax-group
+	>
+		<h2 id="motorbau-title">Motorbau</h2>
+		<div class="story__layout">
+			<div class="collage collage--double collage--left" aria-label="Platzhaltermotive für den Motorbau">
+				<figure
+					class="image-layer image-layer--portrait"
+					data-parallax-layer
+					data-speed="0.124"
+					data-range="136"
+				>
+					<Image
+						src={enginePortrait}
+						alt="KI-generierter Platzhalter: Hände ziehen Bauteile an einem klassischen Motor mit einem Drehmomentschlüssel an"
+						widths={[560, 760, 1024]}
+						sizes="(max-width: 840px) 88vw, 48vw"
+						format="webp"
+						loading="lazy"
+					/>
+				</figure>
+				<figure
+					class="image-layer image-layer--landscape"
+					data-parallax-layer
+					data-speed="0.22"
+					data-range="204"
+				>
+					<Image
+						src={engineLandscape}
+						alt="KI-generierter Platzhalter: Ein überholter klassischer Reihensechszylinder auf einem Motorständer"
+						widths={[640, 960, 1280, 1536]}
+						sizes="(max-width: 840px) 76vw, 42vw"
+						format="webp"
+						loading="lazy"
+					/>
+				</figure>
+			</div>
+
+			<div class="story__copy">
+				<p>
+					Im Motorbau zählt das Zusammenspiel vieler kleiner Entscheidungen. Komponenten werden
+					geprüft, bearbeitet und präzise aufeinander abgestimmt, bis aus einzelnen Teilen wieder
+					eine verlässliche mechanische Einheit wird.
+				</p>
+			</div>
+		</div>
+	</section>
+</EditorialPageLayout>

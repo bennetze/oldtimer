@@ -1,20 +1,19 @@
 ---
+import { siteStatus } from '../config/site';
+
 interface Props {
-	footerVariant?: 'default' | 'home';
 	theme?: 'dark' | 'light';
 }
 
 const navigationItems = [
 	{ title: 'Startseite', href: '/', activePath: '/' },
-	{ title: 'Handwerk', href: '/restaurierung/', activePath: '/restaurierung' },
+	{ title: 'Handwerk', href: '/handwerk/', activePath: '/handwerk' },
 	{ title: 'Über uns', href: '/ueber-uns/', activePath: '/ueber-uns' },
 	{ title: 'Projekte', href: '/projekte/', activePath: '/projekte' },
-	{ title: 'Oldtimer kaufen', href: '/oldtimer-kaufen/', activePath: '/oldtimer-kaufen' },
+	{ title: 'Fahrzeugangebote', href: '/oldtimer-kaufen/', activePath: '/oldtimer-kaufen' },
 ];
 
-const { footerVariant = 'home', theme = 'dark' } = Astro.props;
-const isHomeFooter = footerVariant === 'home';
-const footerClass = footerVariant === 'home' ? 'site-footer site-footer--home' : 'site-footer';
+const { theme = 'dark' } = Astro.props;
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
@@ -38,6 +37,17 @@ const sitePath = (path) => {
 
 <div class:list={['site-shell', { 'site-shell--light': theme === 'light' }]}>
 	<div class="cursor" aria-hidden="true"></div>
+	{
+		siteStatus.developmentPreview && siteStatus.aiPlaceholderImagesPresent && (
+			<aside class="development-notice" role="note">
+				<strong>Entwicklungsvorschau</strong>
+				<span>
+					Ein Teil der Bildmotive sind KI-generierte Platzhalter. Sie zeigen nicht die
+					tatsächlichen Personen, Fahrzeuge oder Betriebsräume.
+				</span>
+			</aside>
+		)
+	}
 
 	<header class="site-header" data-floating-header>
 		<button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false">
@@ -75,19 +85,7 @@ const sitePath = (path) => {
 
 	<slot />
 
-	<footer
-		class={footerClass}
-		id="site-footer"
-		aria-hidden={isHomeFooter ? 'true' : undefined}
-		inert={isHomeFooter ? true : undefined}
-	>
-		{
-			isHomeFooter && (
-				<button class="footer-reveal-close" type="button" data-footer-close aria-label="Footer ausblenden">
-					<span aria-hidden="true"></span>
-				</button>
-			)
-		}
+	<footer class="site-footer" id="site-footer">
 		<a class="footer-brand" href={sitePath('/')}>DIE OLDTIMERMANUFAKTUR</a>
 		<nav class="footer-primary" aria-label="Seitennavigation">
 			{
@@ -106,21 +104,21 @@ const sitePath = (path) => {
 			<a href={sitePath('/datenschutz/')}>Datenschutzerklärung</a>
 		</nav>
 		<div class="social-links" aria-label="Social Media">
-			<a href="#" aria-label="YouTube">
+			<span aria-label="YouTube-Profil folgt" title="YouTube-Profil folgt">
 				<svg viewBox="0 0 16 16" aria-hidden="true">
 					<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.568.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558l-.009-.104-.008-.105A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.171-.007.171-.007.087-.004.17-.006A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
 				</svg>
-			</a>
-			<a href="#" aria-label="Instagram">
+			</span>
+			<span aria-label="Instagram-Profil folgt" title="Instagram-Profil folgt">
 				<svg viewBox="0 0 16 16" aria-hidden="true">
 					<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.276.373.145.64.318.92.598s.453.546.598.92c.11.281.24.705.276 1.485.039.844.047 1.096.047 3.232s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.276 1.485a2.5 2.5 0 0 1-.598.92c-.28.28-.547.453-.92.598-.282.11-.706.241-1.486.276-.843.039-1.096.047-3.232.047s-2.39-.008-3.233-.047c-.78-.035-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.598-.92c-.11-.282-.241-.706-.276-1.486-.039-.843-.046-1.096-.046-3.232s.007-2.388.046-3.232c.035-.78.166-1.204.276-1.486.145-.373.318-.64.598-.92s.547-.453.92-.598c.282-.11.705-.241 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216m0 1.442a2.666 2.666 0 1 1 0 5.332 2.666 2.666 0 0 1 0-5.332" />
 				</svg>
-			</a>
-			<a href="#" aria-label="TikTok">
+			</span>
+			<span aria-label="TikTok-Profil folgt" title="TikTok-Profil folgt">
 				<svg viewBox="0 0 16 16" aria-hidden="true">
 					<path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
 				</svg>
-			</a>
+			</span>
 		</div>
 		<p>© 2026 DIE OLDTIMERMANUFAKTUR</p>
 	</footer>
@@ -152,15 +150,10 @@ const sitePath = (path) => {
 		return [{ control, section }];
 	});
 	const sectionTargets = sectionEntries.map(({ section }) => section);
-	const pageMain = document.querySelector('main');
-	const homeFooter = document.querySelector('.site-footer--home');
-	const footerOpenControls = document.querySelectorAll('[data-footer-open]');
-	const footerCloseControls = document.querySelectorAll('[data-footer-close]');
+	const siteFooter = document.querySelector('#site-footer');
 	const menuBackgroundState = new Map();
 	let activeSectionScroll;
 	let keyboardSectionIndex;
-	let footerTouchStartY = 0;
-	let previousFooterFocus;
 
 	if (cursor && window.matchMedia('(pointer: fine)').matches) {
 		let cursorX = -40;
@@ -225,7 +218,6 @@ const sitePath = (path) => {
 	};
 
 	const openMenu = () => {
-		hideFooter({ restoreFocus: false });
 		if (menuOverlay instanceof HTMLElement) {
 			menuOverlay.inert = false;
 		}
@@ -253,47 +245,6 @@ const sitePath = (path) => {
 		if (window.location.hash) {
 			window.history.replaceState(null, '', window.location.pathname + window.location.search);
 		}
-	};
-
-	const isFooterRevealed = () => document.body.classList.contains('footer-is-revealed');
-
-	const isAtPageBottom = () =>
-		window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
-
-	const revealFooter = () => {
-		if (!(homeFooter instanceof HTMLElement)) {
-			return;
-		}
-
-		previousFooterFocus =
-			document.activeElement instanceof HTMLElement ? document.activeElement : undefined;
-		if (pageMain instanceof HTMLElement) {
-			pageMain.inert = true;
-		}
-		document.body.classList.add('footer-is-revealed');
-		homeFooter.setAttribute('aria-hidden', 'false');
-		homeFooter.inert = false;
-		window.requestAnimationFrame(() => {
-			homeFooter.querySelector('[data-footer-close]')?.focus({ preventScroll: true });
-		});
-	};
-
-	const hideFooter = ({ restoreFocus = true } = {}) => {
-		if (!(homeFooter instanceof HTMLElement)) {
-			return;
-		}
-
-		const wasRevealed = isFooterRevealed();
-		document.body.classList.remove('footer-is-revealed');
-		homeFooter.setAttribute('aria-hidden', 'true');
-		homeFooter.inert = true;
-		if (pageMain instanceof HTMLElement) {
-			pageMain.inert = false;
-		}
-		if (wasRevealed && restoreFocus && previousFooterFocus instanceof HTMLElement) {
-			previousFooterFocus.focus({ preventScroll: true });
-		}
-		previousFooterFocus = undefined;
 	};
 
 	const stopSectionScroll = () => {
@@ -383,60 +334,23 @@ const sitePath = (path) => {
 		return closestIndex;
 	};
 
-	const isEditableKeyTarget = (target) =>
+	const isSectionArrowBlockedTarget = (target) =>
 		target instanceof Element &&
-		Boolean(target.closest('input, textarea, select, [contenteditable="true"], [role="textbox"]'));
+		Boolean(
+			target.closest(
+				'a, button, input, textarea, select, summary, [contenteditable="true"], [role="textbox"], [role="button"]',
+			),
+		);
 
-	if (homeFooter instanceof HTMLElement) {
-		homeFooter.setAttribute('aria-hidden', 'true');
-		homeFooter.inert = true;
-	}
-
-	window.addEventListener('wheel', (event) => {
+	window.addEventListener('wheel', () => {
 		stopSectionScroll();
 		keyboardSectionIndex = undefined;
-
-		if (!(homeFooter instanceof HTMLElement)) {
-			return;
-		}
-
-		if (isFooterRevealed() && event.deltaY < -8) {
-			event.preventDefault();
-			hideFooter();
-			return;
-		}
-
-		if (!isFooterRevealed() && event.deltaY > 8 && isAtPageBottom()) {
-			event.preventDefault();
-			revealFooter();
-		}
-	}, { passive: false });
-
-	window.addEventListener('touchstart', (event) => {
-		stopSectionScroll();
-		keyboardSectionIndex = undefined;
-		footerTouchStartY = event.touches[0]?.clientY ?? 0;
 	}, { passive: true });
 
-	window.addEventListener('touchmove', (event) => {
-		if (!(homeFooter instanceof HTMLElement)) {
-			return;
-		}
-
-		const currentY = event.touches[0]?.clientY ?? footerTouchStartY;
-		const deltaY = footerTouchStartY - currentY;
-
-		if (isFooterRevealed() && deltaY < -10) {
-			event.preventDefault();
-			hideFooter();
-			return;
-		}
-
-		if (!isFooterRevealed() && deltaY > 10 && isAtPageBottom()) {
-			event.preventDefault();
-			revealFooter();
-		}
-	}, { passive: false });
+	window.addEventListener('touchstart', () => {
+		stopSectionScroll();
+		keyboardSectionIndex = undefined;
+	}, { passive: true });
 
 	window.addEventListener('keydown', (event) => {
 		const shouldHandleSectionArrow =
@@ -446,7 +360,7 @@ const sitePath = (path) => {
 			!event.ctrlKey &&
 			!event.metaKey &&
 			!event.shiftKey &&
-			!isEditableKeyTarget(event.target) &&
+			!isSectionArrowBlockedTarget(event.target) &&
 			menuOverlay?.getAttribute('aria-hidden') !== 'false';
 
 		if (shouldHandleSectionArrow && event.repeat) {
@@ -461,19 +375,12 @@ const sitePath = (path) => {
 		if (shouldHandleSectionArrow) {
 			event.preventDefault();
 
-			if (isFooterRevealed() && event.code === 'ArrowUp') {
-				hideFooter();
-				keyboardSectionIndex = sectionTargets.length - 1;
-				return;
-			}
-
 			const direction = event.code === 'ArrowDown' ? 1 : -1;
 			const currentIndex = getCurrentSectionIndex();
 			const nextIndex = currentIndex + direction;
 			const nextSection = sectionTargets[nextIndex];
 
 			if (nextSection instanceof HTMLElement) {
-				hideFooter({ restoreFocus: false });
 				keyboardSectionIndex = nextIndex;
 				setActiveIndicator(nextSection.id);
 				scrollToSection(nextSection);
@@ -482,28 +389,13 @@ const sitePath = (path) => {
 
 			if (
 				direction > 0 &&
-				homeFooter instanceof HTMLElement &&
-				!isFooterRevealed() &&
+				siteFooter instanceof HTMLElement &&
 				currentIndex === sectionTargets.length - 1
 			) {
-				revealFooter();
+				keyboardSectionIndex = sectionTargets.length;
+				scrollToSection(siteFooter);
 				return;
 			}
-		}
-
-		if (!(homeFooter instanceof HTMLElement)) {
-			return;
-		}
-
-		if (isFooterRevealed() && ['ArrowUp', 'PageUp'].includes(event.code)) {
-			event.preventDefault();
-			hideFooter();
-			return;
-		}
-
-		if (!isFooterRevealed() && ['ArrowDown', 'PageDown', 'Space', 'End'].includes(event.code) && isAtPageBottom()) {
-			event.preventDefault();
-			revealFooter();
 		}
 	});
 
@@ -518,11 +410,6 @@ const sitePath = (path) => {
 	document.addEventListener('keydown', (event) => {
 		if (event.key === 'Escape' && menuOverlay?.getAttribute('aria-hidden') === 'false') {
 			closeMenu();
-			return;
-		}
-
-		if (event.key === 'Escape' && isFooterRevealed()) {
-			hideFooter();
 			return;
 		}
 
@@ -543,7 +430,7 @@ const sitePath = (path) => {
 		}
 	});
 
-	document.querySelectorAll('.menu-nav__link').forEach((link) => {
+	document.querySelectorAll('.menu-nav__link[href]').forEach((link) => {
 		link.addEventListener('click', () => {
 			closeMenu({ restoreFocus: false });
 		});
@@ -551,7 +438,6 @@ const sitePath = (path) => {
 
 	document.querySelectorAll('[data-scroll-target]').forEach((control) => {
 		control.addEventListener('click', () => {
-			hideFooter();
 			const targetSelector = control.getAttribute('data-scroll-target');
 			const target = targetSelector ? document.querySelector(targetSelector) : null;
 
@@ -564,14 +450,6 @@ const sitePath = (path) => {
 				scrollToSection(target);
 			}
 		});
-	});
-
-	footerOpenControls.forEach((control) => {
-		control.addEventListener('click', revealFooter);
-	});
-
-	footerCloseControls.forEach((control) => {
-		control.addEventListener('click', hideFooter);
 	});
 
 	if (sectionIndicator && 'IntersectionObserver' in window) {
@@ -625,6 +503,41 @@ const sitePath = (path) => {
 		background: #eeeeee;
 		background-color: #eeeeee;
 		color: #111111;
+	}
+
+	.development-notice {
+		position: fixed;
+		top: 76px;
+		left: 0;
+		right: 0;
+		z-index: 48;
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		gap: 0.85rem;
+		padding: 0.52rem clamp(1rem, 3vw, 3rem);
+		color: rgba(238, 238, 238, 0.82);
+		background: rgba(16, 16, 16, 0.88);
+		border-top: 1px solid rgba(238, 238, 238, 0.1);
+		border-bottom: 1px solid rgba(238, 238, 238, 0.16);
+		-webkit-backdrop-filter: blur(24px) saturate(106%);
+		backdrop-filter: blur(24px) saturate(106%);
+		font-size: 0.68rem;
+		font-style: normal;
+		font-weight: 350;
+		letter-spacing: 0.035em;
+		line-height: 1.45;
+		text-align: center;
+		pointer-events: none;
+	}
+
+	.development-notice strong {
+		color: #eeeeee;
+		font-size: 0.62rem;
+		font-weight: 520;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+		white-space: nowrap;
 	}
 
 	:global(.has-custom-cursor),
@@ -864,142 +777,20 @@ const sitePath = (path) => {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background: rgba(10, 10, 10, 0.82);
-		-webkit-backdrop-filter: blur(34px) saturate(108%);
-		backdrop-filter: blur(34px) saturate(108%);
-		box-shadow:
-			inset 0 1px 0 rgba(238, 238, 238, 0.09),
-			0 -20px 52px rgba(0, 0, 0, 0.16);
-		color: var(--color-main);
+		border-top: 1px solid rgba(238, 238, 238, 0.12);
+		background: inherit;
+		color: inherit;
 		padding: clamp(5.5rem, 10vw, 9rem) clamp(1rem, 5.6vw, 6.5rem) 3.5rem;
 		text-align: center;
+	}
+
+	.site-shell--light .site-footer {
+		border-top-color: rgba(17, 17, 17, 0.14);
 	}
 
 	.site-footer > * {
 		position: relative;
 		z-index: 2;
-	}
-
-	.footer-brand,
-	.footer-primary,
-	.footer-legal,
-	.site-footer p {
-		text-shadow:
-			0 3px 20px rgba(0, 0, 0, 0.42),
-			0 8px 38px rgba(0, 0, 0, 0.24);
-	}
-
-	.site-footer--home {
-		position: fixed;
-		inset: 0;
-		z-index: 44;
-		overflow: hidden;
-		min-height: 100svh;
-		justify-content: flex-end;
-		padding: clamp(5rem, 9vw, 8rem) clamp(1rem, 5.6vw, 6.5rem) clamp(2rem, 4.8vw, 4.5rem);
-		background: transparent;
-		-webkit-backdrop-filter: none;
-		backdrop-filter: none;
-		box-shadow: none;
-		opacity: 1;
-		pointer-events: none;
-	}
-
-	.site-footer--home::before,
-	.site-footer--home::after {
-		position: absolute;
-		inset: 0;
-		content: '';
-		pointer-events: none;
-	}
-
-	.site-footer--home::before {
-		top: auto;
-		left: 50%;
-		bottom: 0;
-		z-index: 1;
-		width: 220vw;
-		height: 120svh;
-		background: rgba(4, 4, 4, 0.12);
-		-webkit-backdrop-filter: blur(42px) saturate(114%);
-		backdrop-filter: blur(42px) saturate(114%);
-		-webkit-mask-image: radial-gradient(ellipse 70% 62% at 50% 112%, #000 0 42%, rgba(0, 0, 0, 0.92) 56%, rgba(0, 0, 0, 0.56) 70%, rgba(0, 0, 0, 0.22) 84%, transparent 100%);
-		mask-image: radial-gradient(ellipse 70% 62% at 50% 112%, #000 0 42%, rgba(0, 0, 0, 0.92) 56%, rgba(0, 0, 0, 0.56) 70%, rgba(0, 0, 0, 0.22) 84%, transparent 100%);
-		opacity: 0;
-		transform: translateX(-50%);
-		will-change: opacity;
-		transition: opacity 380ms cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	.site-footer--home::after {
-		z-index: 0;
-		background: linear-gradient(
-			180deg,
-			rgba(0, 0, 0, 0) 30%,
-			rgba(0, 0, 0, 0.025) 42%,
-			rgba(0, 0, 0, 0.09) 56%,
-			rgba(4, 4, 4, 0.2) 72%,
-			rgba(0, 0, 0, 0.34) 100%
-		);
-		opacity: 0;
-		will-change: opacity;
-		transition: opacity 380ms cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	.site-footer--home > * {
-		opacity: 0;
-		transform: translateY(6px);
-		transition:
-			opacity 300ms ease-out,
-			transform 380ms cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	:global(body.footer-is-revealed) .site-footer--home {
-		pointer-events: auto;
-	}
-
-	:global(body.footer-is-revealed) .site-footer--home::before {
-		opacity: 0.98;
-	}
-
-	:global(body.footer-is-revealed) .site-footer--home::after,
-	:global(body.footer-is-revealed) .site-footer--home > * {
-		opacity: 1;
-	}
-
-	:global(body.footer-is-revealed) .site-footer--home > * {
-		transform: translateY(0);
-	}
-
-	.footer-reveal-close {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 48px;
-		height: 48px;
-		margin: 0 0 clamp(1.2rem, 3vw, 2rem);
-		padding: 0;
-		color: rgba(238, 238, 238, 0.86);
-		background: transparent;
-		border: 0;
-		cursor: pointer;
-		transition:
-			color 180ms ease,
-			transform 180ms ease;
-	}
-
-	.footer-reveal-close span {
-		width: 12px;
-		height: 12px;
-		border-right: 1px solid currentColor;
-		border-bottom: 1px solid currentColor;
-		transform: rotate(225deg) translate(-2px, -2px);
-	}
-
-	.footer-reveal-close:hover,
-	.footer-reveal-close:focus-visible {
-		color: rgba(238, 238, 238, 0.98);
-		transform: translateY(-4px);
 	}
 
 	.footer-primary,
@@ -1014,7 +805,7 @@ const sitePath = (path) => {
 
 	.footer-primary a,
 	.footer-legal a,
-	.social-links a {
+	.social-links span {
 		color: currentColor;
 		text-decoration: none;
 	}
@@ -1032,79 +823,75 @@ const sitePath = (path) => {
 	}
 
 	.footer-primary a {
-		color: rgba(238, 238, 238, 0.68);
-		transition: color 180ms ease;
+		opacity: 0.68;
+		transition: opacity 180ms ease;
 	}
 
 	.footer-primary a:hover,
 	.footer-primary a:focus-visible,
 	.footer-primary a[aria-current='page'] {
-		color: rgba(238, 238, 238, 0.98);
+		opacity: 0.98;
 	}
 
 	.footer-legal {
-		color: rgba(238, 238, 238, 0.72);
-		font-size: 0.64rem;
+		color: currentColor;
+		font-size: 0.75rem;
+		opacity: 0.72;
 	}
 
 	.social-links {
 		margin: clamp(1.5rem, 2.6vw, 2rem) 0 1.6rem;
 	}
 
-	.social-links a {
+	.social-links span {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		width: 34px;
 		height: 34px;
-		color: rgba(238, 238, 238, 0.54);
-		transition:
-			color 180ms ease,
-			transform 180ms ease;
-	}
-
-	.social-links a:hover,
-	.social-links a:focus-visible {
-		color: rgba(238, 238, 238, 0.92);
-		transform: translateY(-3px);
+		color: currentColor;
+		opacity: 0.32;
+		cursor: default;
 	}
 
 	.social-links svg {
 		width: 24px;
 		height: 24px;
 		fill: currentColor;
-		filter:
-			drop-shadow(0 3px 14px rgba(0, 0, 0, 0.4))
-			drop-shadow(0 8px 30px rgba(0, 0, 0, 0.22));
 	}
 
 	.site-footer p {
 		margin: 0;
-		color: rgba(238, 238, 238, 0.64);
+		color: currentColor;
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
 		font-size: 0.68rem;
+		opacity: 0.64;
 	}
 
 	.menu-toggle:focus-visible,
 	.menu-close:focus-visible,
-	.footer-reveal-close:focus-visible,
 	.footer-primary a:focus-visible,
-	.footer-legal a:focus-visible,
-	.social-links a:focus-visible {
-		outline: 1px solid rgba(238, 238, 238, 0.62);
+	.footer-legal a:focus-visible {
+		outline: 1px solid currentColor;
 		outline-offset: 0.35rem;
 	}
 
-	@media (prefers-reduced-motion: reduce) {
-		.site-footer--home::before,
-		.site-footer--home::after,
-		.site-footer--home > * {
-			transition-duration: 0.01ms;
-		}
-	}
-
 	@media (max-width: 760px) {
+		.development-notice {
+			top: 64px;
+			display: block;
+			padding: 0.55rem 1rem 0.6rem;
+			font-size: 0.62rem;
+			text-align: left;
+		}
+
+		.development-notice strong {
+			display: block;
+			margin-bottom: 0.15rem;
+			font-size: 0.56rem;
+		}
+
 		.cursor {
 			display: none;
 		}
@@ -1173,16 +960,6 @@ const sitePath = (path) => {
 			padding: 4.75rem 1.25rem 2.5rem;
 		}
 
-		.site-footer--home {
-			overflow-y: auto;
-			padding: 4.5rem 1.25rem max(1.75rem, env(safe-area-inset-bottom));
-		}
-
-		.site-footer--home::before {
-			width: 240vw;
-			height: 120svh;
-		}
-
 		.footer-primary {
 			display: none;
 		}
@@ -1190,7 +967,7 @@ const sitePath = (path) => {
 		.footer-legal {
 			gap: 0.5rem 0.9rem;
 			margin-top: 1.4rem;
-			font-size: 0.74rem;
+			font-size: 0.76rem;
 		}
 
 		.footer-legal a {
@@ -1205,7 +982,7 @@ const sitePath = (path) => {
 			margin: 1.25rem 0 1.15rem;
 		}
 
-		.social-links a {
+		.social-links span {
 			width: 44px;
 			height: 44px;
 		}

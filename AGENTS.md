@@ -18,6 +18,17 @@ This is a small Astro site for the German classic car restoration company
 - `public/` contains static files served from the site root, including favicons.
   Its `.htaccess` maps IONOS/Apache 404 responses to the generated `/404.html`.
 
+## Working Language
+
+Use English for collaboration with the user, including questions, progress updates,
+implementation explanations, reviews, technical documentation, commit messages, and
+pull request text. Do not infer the conversation language from the German website or
+its content. Switch the working language only when the user explicitly asks.
+
+Keep public-facing website copy in German unless the user explicitly requests a
+different language for a specific deliverable. German content requirements apply to
+the website output, not to the surrounding conversation or technical explanation.
+
 Root configuration includes `astro.config.mjs`, `tsconfig.json`, `package.json`, and
 `package-lock.json`. The default production build is served from the root of
 `https://www.oldtimermanufaktur.de/`. The GitHub Pages build uses `/oldtimer/` only
@@ -71,6 +82,46 @@ prices, social profiles, locations, services, or other facts that are not confir
 Keep noindex error pages out of the JSON-LD graph, and validate affected generated
 pages after every structured-data change.
 
+## Legal and Compliance Change Reminder
+
+Keep German and EU legal, privacy, cookie, consumer-protection, accessibility, and
+licensing implications in mind for every change, but handle this review in proportion
+to the actual risk. Routine copy edits, spelling fixes, layout changes, refactors, and
+changes to content that do not introduce a new factual or commercial claim normally
+need no legal commentary. Perform the check silently and do not interrupt the task
+with generic warnings, disclaimers, or a full compliance audit.
+
+Raise a concise legal or compliance note only when the requested change creates or
+materially alters a plausible obligation or risk. Typical triggers include collecting
+or transmitting personal data; cookies or other device storage; analytics; third-party
+scripts, embeds, maps, or externally hosted resources; contact, newsletter, account,
+sales, booking, payment, or download flows; prices or substantive commercial claims;
+publication of personal data or new media whose rights are unconfirmed; or a change to
+the company's identity, contact details, services, legal pages, or consent behavior.
+Do not treat every photograph, AI-assisted asset, social link, accessibility tweak, or
+ordinary text change as a mandatory legal checkpoint by itself.
+
+When a material trigger exists, explain only the concrete consequence in plain language,
+identify the facts or decisions that genuinely need confirmation, and distinguish
+between a blocking issue and a non-blocking follow-up. Check whether the imprint,
+privacy notice, consumer information, consent flow, accessibility information, rights
+documentation, or internal processing records may need an update, but mention only
+the items affected by the change. Do not assume that an existing legal basis, consent,
+licence, release, or disclosure covers a new use. Do not draft or replace production
+legal texts unless the user explicitly includes that work in scope. Recommend review
+by a qualified German lawyer or data-protection professional only when the uncertainty
+or potential impact warrants it, not as boilerplate.
+
+The current project is an explicitly labelled development preview. While
+`src/config/site.ts` reports AI placeholder images, keep the visible disclosure and
+the GitHub Pages `noindex` behavior active. Before any production release, confirm
+that every placeholder has been replaced by the approved real photography, update
+all image alternatives and representative metadata, complete the media-rights
+register, verify every factual/company claim, add the approved legal texts, turn off
+the preview flags, and repeat the legal, metadata, crawler, accessibility, cookie,
+security, and browser checks. Never disable that release gate merely to make a build
+look production-ready.
+
 `src/pages/ueber-uns.astro` is an approved production page. For additional commercial
 subpages, prefer German, lowercase, URL-oriented routes that match the homepage
 navigation, such as `src/pages/projekte.astro`, `src/pages/oldtimer-kaufen.astro`,
@@ -113,7 +164,9 @@ Follow the existing Astro style. Use `.astro` files for pages, layouts, and comp
 
 Current files use tabs for indentation in Astro markup and CSS. Keep imports at the top of the frontmatter block. Prefer relative imports for local modules and scoped CSS in the same `.astro` file unless styles need sharing.
 
-All public-facing copy for this site should be in German. The current visual direction is
+All public-facing website copy should be in German unless the user explicitly requests
+otherwise for a specific deliverable. This does not set the language used to collaborate
+with the user. The current visual direction is
 restrained luxury editorial with a very dark grey background (`#111111`), `#eeeeee` as the
 main color, and neutral grey lines/interactions. Avoid accent-heavy treatments and avoid
 gold, brown, beige, tan, sepia, and retro nostalgia palettes unless explicitly requested.
@@ -234,10 +287,12 @@ of homepage `#explore` anchors. Preserve keyboard access, Escape-to-close behavi
 focus-visible styles, and the custom cursor being enabled only for fine pointers.
 Use `100svh` handling for mobile full-height panels where appropriate.
 
-Keep content protection behavior site-wide in the shared layout: disable text/image
-selection across the website with `user-select: none`, prevent image dragging, and
-block the browser context menu everywhere so right-click saving is not directly
-available on current or future subpages.
+Keep normal text selection and the browser context menu available for text, links,
+and controls. Limit the existing deterrence to media: prevent selection/dragging of
+images, pictures, videos, and inline SVG where practical, and suppress the context
+menu only when it originates on an image, picture, or video. Do not describe these
+client-side measures as copy protection or DRM; every asset delivered to a browser
+remains technically retrievable.
 
 ## Accessibility
 
@@ -293,6 +348,11 @@ Pull requests should include a short description, the commands run for verificat
 ## Agent-Specific Instructions
 
 Keep changes scoped to the requested task. Do not edit generated dependency folders such as `node_modules/` or build output such as `dist/`. Prefer updating existing Astro components and layouts before introducing new structure.
+
+Default to English when communicating with the user. Treat German as the website's
+content language, not the working language, unless the user explicitly asks to switch.
+Keep explanations direct and natural; do not turn routine implementation updates into
+formal legal assessments.
 
 Do not copy code, imagery, logos, or protected trade dress from reference sites. It is fine
 to use reference sites for structure, interaction notes, and factual content when requested,

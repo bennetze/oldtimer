@@ -1,21 +1,24 @@
 ---
 interface Props {
-	title: string;
-	eyebrow: string;
+	title?: string;
+	eyebrow?: string;
 }
 
 const { title, eyebrow } = Astro.props;
+const hasHeading = Boolean(title || eyebrow);
 ---
 
-<main class="legal-page" id="main-content" tabindex="-1">
-	<section class="legal-hero" aria-labelledby="legal-title">
-		<p>{eyebrow}</p>
-		<h1 id="legal-title">{title}</h1>
-	</section>
+<main class:list={['legal-page', { 'legal-page--empty': !hasHeading }]} id="main-content" tabindex="-1">
+	{
+		hasHeading && (
+			<section class="legal-hero" aria-labelledby={title ? 'legal-title' : undefined}>
+				{eyebrow && <p>{eyebrow}</p>}
+				{title && <h1 id="legal-title">{title}</h1>}
+			</section>
+		)
+	}
 
-	<article class="legal-copy">
-		<slot />
-	</article>
+	{hasHeading && <article class="legal-copy"><slot /></article>}
 </main>
 
 <style>
@@ -23,6 +26,10 @@ const { title, eyebrow } = Astro.props;
 		background: #101010;
 		color: var(--color-main);
 		min-height: 100vh;
+	}
+
+	.legal-page--empty {
+		min-height: 100svh;
 	}
 
 	.legal-hero {
