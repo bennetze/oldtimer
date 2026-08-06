@@ -8,9 +8,12 @@ Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam
 ## Hauptseiten
 
 - [Startseite](https://bennetze.github.io/oldtimer/): „Wir bewahren Geschichte“ / „Wir bewahren Geschichten“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
-- [Handwerk](https://bennetze.github.io/oldtimer/handwerk/): Dunkel gestalteter, vorläufiger Überblick über Karosserie, Polsterei, Lackiererei und Motorbau; die Texte sowie einzelne Bildmotive werden noch finalisiert.
-- [Über uns](https://bennetze.github.io/oldtimer/ueber-uns/): Vorläufige Vorstellung von Mario Schrank, Anton Schrank, Team und Kontakt; die Bildmotive sind gekennzeichnete Platzhalter.
+- [Handwerk](https://bennetze.github.io/oldtimer/handwerk/): Dunkel gestalteter, vorläufiger Überblick über Karosserie, Polsterei, Lackiererei und Motorbau.
+- [Über uns](https://bennetze.github.io/oldtimer/ueber-uns/): Vorstellung von Mario Schrank, Anton Schrank, Team und Kontakt.
 - [Projekte](https://bennetze.github.io/oldtimer/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
+- [Aktuelle Projekte](https://bennetze.github.io/oldtimer/projekte/aktuelle-projekte/): Laufende Restaurierungen und aktuelle Arbeiten an historischen Fahrzeugen. 13 Fahrzeuge mit jeweils eigener Bild- und Textdokumentation.
+- [Vergangene Projekte](https://bennetze.github.io/oldtimer/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. 134 Fahrzeuge mit jeweils eigener Bild- und Textdokumentation.
+- [Fahrzeugangebote](https://bennetze.github.io/oldtimer/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot. 10 Fahrzeuge mit jeweils eigener Bild- und Textdokumentation.
 
 ## Nutzung durch KI-Systeme
 
