@@ -12,7 +12,7 @@ Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam
 - [Über uns](https://bennetze.github.io/oldtimer/ueber-uns/): Vorstellung von Mario Schrank, Anton Schrank, Team und Kontakt.
 - [Projekte](https://bennetze.github.io/oldtimer/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
 - [Aktuelle Projekte](https://bennetze.github.io/oldtimer/projekte/aktuelle-projekte/): Laufende Restaurierungen und aktuelle Arbeiten an historischen Fahrzeugen. 13 Fahrzeuge mit jeweils eigener Bild- und Textdokumentation.
-- [Vergangene Projekte](https://bennetze.github.io/oldtimer/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. 134 Fahrzeuge mit jeweils eigener Bild- und Textdokumentation.
+- [Abgeschlossene Projekte](https://bennetze.github.io/oldtimer/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. 134 Fahrzeuge mit jeweils eigener Bild- und Textdokumentation.
 - [Fahrzeugangebote](https://bennetze.github.io/oldtimer/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot. 10 Fahrzeuge mit jeweils eigener Bild- und Textdokumentation.
 
 ## Nutzung durch KI-Systeme
