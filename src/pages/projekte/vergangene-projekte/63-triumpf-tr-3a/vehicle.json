@@ -1,0 +1,19 @@
+{
+	"slug": "63-triumpf-tr-3a",
+	"category": "vergangene-projekte",
+	"title": "Triumpf TR 3A",
+	"description": "Dieser wunderschöne englische Sportroadster stammt aus Amerika und wurde durch uns komplett restauriert.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/63-triumpf-tr-3a",
+	"order": 118,
+	"dateModified": "2026-08-06",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "Triumpf TR 3A",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "Triumpf TR 3A – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>Dieser wunderschöne englische Sportroadster stammt aus Amerika und wurde durch uns komplett restauriert.</p>"
+		}
+	]
+}

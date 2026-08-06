@@ -1,0 +1,350 @@
+{
+	"slug": "188-wartburg-313-baujahr-1960",
+	"category": "aktuelle-projekte",
+	"title": "Wartburg 313 Sport, Baujahr 1960",
+	"description": "Wieder ein seltener Wartburg 313 Sport, der aktuell bei uns eine Vollrestauration erfährt.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/188-wartburg-313-baujahr-1960",
+	"order": 10,
+	"dateModified": "2026-08-06",
+	"year": "1960",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "Wartburg 313 Sport, Baujahr 1960",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "Wartburg 313 Sport, Baujahr 1960 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Wieder ein seltener Wartburg 313 Sport, der aktuell bei uns eine Vollrestauration erfährt.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wartburg 313 Sport galt im Allgemeinen als das &quot;Schönste Auto des Ostens&quot;, schon damals prämiert mit vielen - auch internationalen - Auszeichnungen und ist heute eine sehr begehrte Rarität.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>In den Jahren 1957 bis 1960 größtenteils von Hand und in nur 469 Einheiten gebaut, war der Wagen schon damals ein bildschöner, wie zeitlos gestalteter 2-sitziger Sportwagen und damit einhergehend sogar ein lukrativer Devisenbringer im Ausland - verschifft selbst in die USA oder nach Südafrika.<br /></p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 6 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-007.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dieser Wartburg 313 Sport hat zwar die Wirren der Zeit &quot;irgendwie überlebt&quot;, muss aber aufgrund seines inzwischen desolaten Zustandes einer vollumfänglichen Komplettrestauration unterzogen werden.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 8 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-009.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 9 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-010.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 10 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nun haben wir ja im Laufe der Jahre bekanntermaßen auch schon einige wunderschöne Wartburg 313 Sport aufgebaut (s. unsere Referenzen), aber der desaströse &quot;Erhaltungs&quot;-zustand dieses Exemplars sprengt sogar unsere Vorstellungen.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 11 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-012.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 12 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-013.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 13 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Wir sind entsetzt über die kläglich gescheiterten Reparatur- und Restaurationsversuche von Vorgängerfirmen, die vormals an diesem Auto Hand angelegt und es damit im Grunde genommen nur vollends verpfuscht und nahezu hingerichtet haben.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-014.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 14 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-015.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 15 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nVor allem von der Karosserie ist hier nur wenig zu retten und muss im Zuge einer fachgerechten Restauration unsererseits, nun in großen Teilen segmentartig neu aufgebaut werden.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Die Rarität eines solch begehrten Wartburg 313 Sport rechtfertigt den immensen Aufwand, den Wagen gemäß Kundenwünschen nun auch originalgetreu und authentisch zu restaurieren.<br /></p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-016.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 16 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-017.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 17 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-011.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 18 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-018.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 19 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-019.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 20 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-020.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 21 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-021.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 22 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-022.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 23 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-023.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 24 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-024.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 25 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-025.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 26 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-026.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 27 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-027.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 28 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-028.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 29 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-029.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 30 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-030.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 31 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-031.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 32 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-032.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 33 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach den aufwendigen Karosseriearbeiten erhält der Wagen in unserer Lackiererei nun wieder eine hochwertige originalgetreue Lackierung unter Berücksichtigung der individuellen Kundenwünsche.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-033.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 34 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-034.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 35 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-035.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 36 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-036.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 37 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-037.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 38 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-038.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 39 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Parallel zu den Lackierarbeiten wird bereits in unserer Technikabteilung auch die gesamte Fahrzeugtechnik und Elektrik umfassend revidiert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-039.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 40 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-040.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 41 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Leider wurde diese beim Vorbesitzer offensichtlich bis zuletzt auf absoluten Verschleiß gefahren und war kaum noch zu retten.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hier der seltene 12-Bolzen-Motor bei dem sogar die Kurbelwellenhauptlager komplett zerstört waren.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\n...der nun einbaufertig regenerierte Motor mit völlig neuem &quot;Innenleben&quot;.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-041.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 42 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-042.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 43 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\n<br />\nÜberarbeitung und Neuverchromung sämtlicher Zier- und Anbauteile.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-043.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 44 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-044.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 45 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-045.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Aufnahme 46 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Eine ganze &quot;Armada&quot; von Wartburg 313 Sport, die hier in unserer OLDTIMERMANUFAKTUR fachgerecht restauriert werden.</p>"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'vergangene-projekte/68-bmw-315-cabriolet-baujahr-1935');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for vergangene-projekte/68-bmw-315-cabriolet-baujahr-1935.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

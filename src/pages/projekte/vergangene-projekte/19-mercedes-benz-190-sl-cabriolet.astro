@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'vergangene-projekte/19-mercedes-benz-190-sl-cabriolet');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for vergangene-projekte/19-mercedes-benz-190-sl-cabriolet.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

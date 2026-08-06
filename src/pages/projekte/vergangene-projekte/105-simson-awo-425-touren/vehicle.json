@@ -1,0 +1,50 @@
+{
+	"slug": "105-simson-awo-425-touren",
+	"category": "vergangene-projekte",
+	"title": "SIMSON AWO 425 Touren, Baujahr 1954",
+	"description": "Der Ausgangszustand war zwar weitgehend komplett, aber wenig original und über die Jahrzehnte doch \"sehr verbraucht\", aber immerhin \"nummerngleich\".",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/105-simson-awo-425-touren",
+	"order": 59,
+	"dateModified": "2026-08-06",
+	"year": "1954",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "SIMSON AWO 425 Touren, Baujahr 1954",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "SIMSON AWO 425 Touren, Baujahr 1954 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br /><br /><br />Hier eine weitere bei uns TOP restaurierte &quot;Touren AWO&quot; des Baujahres 1954.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Ausgangszustand war zwar weitgehend komplett, aber wenig original und über die Jahrzehnte doch &quot;sehr verbraucht&quot;, aber immerhin &quot;nummerngleich&quot;.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Die Maschine wurde im Kundenauftrag sehr perfekt und originalgetreu restauriert und ist damit nicht nur optisch ein Leckerbissen, sondern macht auch fahrtechnisch umso größeren Spaß...</p>"
+		}
+	]
+}

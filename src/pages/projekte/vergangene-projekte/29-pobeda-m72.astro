@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'vergangene-projekte/29-pobeda-m72');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for vergangene-projekte/29-pobeda-m72.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

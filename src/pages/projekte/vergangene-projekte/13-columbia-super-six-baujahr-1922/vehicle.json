@@ -1,0 +1,92 @@
+{
+	"slug": "13-columbia-super-six-baujahr-1922",
+	"category": "vergangene-projekte",
+	"title": "COLUMBIA-SUPER-SIX, Baujahr 1922",
+	"description": "COLUMBIA-SUPER-SIX, Typ: Deluxe-Double-Phaeton, Baujahr: 1922, gebaut in Detroit / Michigan – USA.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/13-columbia-super-six-baujahr-1922",
+	"order": 81,
+	"dateModified": "2026-08-06",
+	"year": "1922",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "COLUMBIA-SUPER-SIX, Baujahr 1922",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "COLUMBIA-SUPER-SIX, Baujahr 1922 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>COLUMBIA-SUPER-SIX, Typ: Deluxe-Double-Phaeton, Baujahr: 1922, gebaut in Detroit / Michigan – USA.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "COLUMBIA-SUPER-SIX, Baujahr 1922 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nDer Wagen wurde in sehr schlechtem Zustand aus Amerika über Dänemark nach Deutschland eingeführt...</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "COLUMBIA-SUPER-SIX, Baujahr 1922 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\n...und komplett und originalgetreu durch Uns restauriert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "COLUMBIA-SUPER-SIX, Baujahr 1922 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Fehlteile wurden dabei aufwendig nachgefertigt. Der Zeitanspruch für diese sehr umfangreiche Restauration lag bei mehreren Tausend Arbeitsstunden. Es gilt als das einzig erhaltene Exemplar dieses Typs in ganz Europa und rechtfertigt somit diesen Aufwand.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Motor: 6 Zylinder seitengesteuert mit 3,7 Liter Hubraum<br />\n<br />\nBesonderheiten:</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Einzig erhaltener Wagen dieses Typ`s in ganz Europa</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Großes und großzügiges fünfsitziges offenes Fahrzeug</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Holzspeichenräder</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Faltverdeck</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "COLUMBIA-SUPER-SIX, Baujahr 1922 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nGewinner mehrerer Preise und Schöhnheitswettbewerbe bei exklusiven Oldtimerveranstaltungen u. a. beim „European Concours d´Elegance“ oder dem 10. Internationalen Oldtimer – Schlössertreffen.<br /></p>"
+		}
+	]
+}

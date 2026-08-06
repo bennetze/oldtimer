@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'vergangene-projekte/155-mercedes-300a-4-tueriges-cabriolet-d-baujahr-1953');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for vergangene-projekte/155-mercedes-300a-4-tueriges-cabriolet-d-baujahr-1953.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

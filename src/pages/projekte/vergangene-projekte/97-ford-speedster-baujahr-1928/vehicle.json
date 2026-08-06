@@ -1,0 +1,177 @@
+{
+	"slug": "97-ford-speedster-baujahr-1928",
+	"category": "vergangene-projekte",
+	"title": "FORD Speedster, Baujahr 1928",
+	"description": "Gemäß einer reinen Designzeichnung wurde dieser Sportwagen in mühevoller Handarbeit komplett neu angefertigt und die bestehende Technik mit dem original…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/97-ford-speedster-baujahr-1928",
+	"order": 36,
+	"dateModified": "2026-08-06",
+	"year": "1928",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "FORD Speedster, Baujahr 1928",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "FORD Speedster, Baujahr 1928 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\n<br />\n<br />\nHier ein absolutes UNIKAT - ein</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>&quot;FORD A - SPEEDSTER&quot; von 1928.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Gemäß einer reinen Designzeichnung wurde dieser Sportwagen in mühevoller Handarbeit komplett neu angefertigt und die bestehende Technik mit dem originalen 3,2 Liter Motor entsprechend &quot;optimiert und fahrtechnisch perfektioniert&quot;.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 4 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-005.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 6 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-007.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 7 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-008.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-009.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 9 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-010.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 10 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Auf der Basis eines Ford A Fahrgestells von 1928 wurden unter Verwendung von speziellem Aluminium sämtliche Karosserieteile von Hand getrieben...</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 11 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-012.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 12 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-013.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 13 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>...und anschließend alle Blechteile handgenietet. Durch die aus dem Flugzeugbau stammende Hand-Niettechnik von Reinaluminium existiert an der Karosserie faktisch keine Schweißnaht.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-014.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 14 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-015.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 15 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-016.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 16 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Eine handwerkstechnisch gesehene Meisterleistung, auch weil hier das &quot;schwierige&quot; Material Aluminium, weder lackiert noch gespachtelt ist, sondern eine nahezu perfekte Oberfläche nur handgeschliffen und wiederum von Hand mühevoll hochglänzend poliert wurde.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-017.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 17 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-018.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 18 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-019.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 19 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-020.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 20 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-021.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 21 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-022.jpg",
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 22 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nDas Fahrzeug bildet nach der formvollendeten Fertigstellung ein einzigartiges Unikat und ist nach entsprechenden Sondergutachten voll für den Straßenverkehr zugelassen.</p>"
+		}
+	]
+}

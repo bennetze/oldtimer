@@ -1,0 +1,51 @@
+{
+	"slug": "60-dkw-ifa-f8-glaeser-cabriolet-baujahr-1955",
+	"category": "vergangene-projekte",
+	"title": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955",
+	"description": "Bei diesem Fahrzeug handelt es sich um die äußerst seltene und begehrte “Gläser”-Sonderkarosserie, die nur in wenigen Stückzahlen vornehmlich für den Ex…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/60-dkw-ifa-f8-glaeser-cabriolet-baujahr-1955",
+	"order": 113,
+	"dateModified": "2026-08-06",
+	"year": "1955",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>Bei diesem Fahrzeug handelt es sich um die äußerst seltene und begehrte “Gläser”-Sonderkarosserie, die nur in wenigen Stückzahlen vornehmlich für den Export gebaut wurde.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wagen wurde bei uns von Grund auf restauriert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

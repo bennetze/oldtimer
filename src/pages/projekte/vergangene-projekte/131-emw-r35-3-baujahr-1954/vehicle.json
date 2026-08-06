@@ -1,0 +1,86 @@
+{
+	"slug": "131-emw-r35-3-baujahr-1954",
+	"category": "vergangene-projekte",
+	"title": "EMW R35/3, Baujahr 1954",
+	"description": "EMW R35/3 - das einzig je gebaute Motorrad unter dem Namen \"Eisenacher-Motoren-Werk\".",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/131-emw-r35-3-baujahr-1954",
+	"order": 73,
+	"dateModified": "2026-08-06",
+	"year": "1954",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "EMW R35/3, Baujahr 1954",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "EMW R35/3, Baujahr 1954 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>EMW R35/3 - das einzig je gebaute Motorrad unter dem Namen &quot;Eisenacher-Motoren-Werk&quot;.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 4 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-005.jpg",
+					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 5 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Die Maschine wurde im Kundenauftrag vollumfänglich durch uns restauriert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-006.jpg",
+					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

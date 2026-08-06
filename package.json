@@ -6,9 +6,13 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build && node scripts/prepare-crawler-files.mjs production",
-    "build:pages": "DEPLOY_TARGET=github-pages astro build && node scripts/prepare-crawler-files.mjs github-pages",
+    "dev": "npm run vehicles:gallery && astro dev",
+    "vehicles:sync": "node scripts/test-vehicle-discovery.mjs && node scripts/sync-vehicle-crawler-files.mjs",
+    "vehicles:gallery": "node scripts/generate-vehicle-gallery.mjs",
+    "test:vehicle-discovery": "node scripts/test-vehicle-discovery.mjs",
+    "vehicles:import": "node scripts/import-legacy-vehicles.mjs",
+    "build": "npm run vehicles:sync && node scripts/generate-vehicle-gallery.mjs production && astro build && node scripts/prepare-crawler-files.mjs production && node scripts/verify-vehicle-build.mjs production",
+    "build:pages": "npm run vehicles:sync && node scripts/generate-vehicle-gallery.mjs production && DEPLOY_TARGET=github-pages astro build && node scripts/generate-vehicle-gallery.mjs github-pages dist && node scripts/prepare-crawler-files.mjs github-pages && node scripts/verify-vehicle-build.mjs github-pages && node scripts/verify-pages-artifact.mjs",
     "predeploy": "npm run build:pages",
     "deploy": "gh-pages -d dist -b gh-pages --nojekyll -m \"Deploy website\"",
     "preview": "astro preview",
@@ -19,6 +23,8 @@
     "astro": "^7.1.3"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "cheerio": "^1.2.0",
+    "gh-pages": "^6.3.0",
+    "sharp": "^0.35.3"
   }
 }

@@ -1,0 +1,37 @@
+{
+	"slug": "181-bmw-502-baur-coupe-baujahr-1954",
+	"category": "vergangene-projekte",
+	"title": "BMW 502 \"Baur\"-Coupe, Baujahr 1954",
+	"description": "Hier wieder eine besondere automobile Kostbarkeit, zudem noch aus höchst prominentem Erstbesitz.\nDer BMW Typ 502 ist gemeinhin ja nahezu jedem Oldtimere…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/181-bmw-502-baur-coupe-baujahr-1954",
+	"order": 4,
+	"dateModified": "2026-08-06",
+	"year": "1954",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 502 \"Baur\"-Coupe, Baujahr 1954",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 502 \"Baur\"-Coupe, Baujahr 1954 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 502 \"Baur\"-Coupe, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hier wieder eine besondere automobile Kostbarkeit, zudem noch aus höchst prominentem Erstbesitz.<br />\nDer BMW Typ 502 ist gemeinhin ja nahezu jedem Oldtimerenthusiasten als sog. &quot;Barockengel&quot; und damit als 4-türige Limousine bekannt.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Weniger geläufig sind da schon die wenigen gebauten Cabrios und noch weniger die raren <em>Coupe</em>-Aufbauten dieses Typs.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hier aber ist eines der ganz besonderen Prachtexemplare eines 502 V8 <em>Coupes</em> mit einer einmaligen Sonderkarosserie der Firma &quot;Baur&quot; aus Stuttgart.</p>"
+		}
+	]
+}

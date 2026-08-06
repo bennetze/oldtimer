@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'aktuelle-projekte/185-bmw-503-coupe-baujahr-1959');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for aktuelle-projekte/185-bmw-503-coupe-baujahr-1959.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

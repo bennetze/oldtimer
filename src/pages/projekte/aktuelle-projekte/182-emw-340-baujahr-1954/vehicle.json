@@ -1,0 +1,101 @@
+{
+	"slug": "182-emw-340-baujahr-1954",
+	"category": "aktuelle-projekte",
+	"title": "BMW 340, Baujahr 1951",
+	"description": "Ein weiterer EMW 340, welcher sich aktuell bei uns in der Restauration befindet. Augenscheinlich zunächst halbwegs intakt, hatte die Karosserie doch tei…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/182-emw-340-baujahr-1954",
+	"order": 11,
+	"dateModified": "2026-08-06",
+	"year": "1951",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 340, Baujahr 1951",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 340, Baujahr 1951 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 1 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Ein weiterer EMW 340, welcher sich aktuell bei uns in der Restauration befindet. Augenscheinlich zunächst halbwegs intakt, hatte die Karosserie doch teilweise massive Rostschäden, die allesamt durch uns behoben werden mussten.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 6 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-007.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Während der Karosseriearbeiten bekam der Wagen gemäß Kundenwunsch von uns auch das begehrte Faltschiebedach nachgerüstet.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 8 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-009.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 9 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-010.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 10 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 11 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-012.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Aufnahme 12 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>...eine durchrestaurierte Karosserie zum weiteren kundenspezifischen Aufbau.</p>"
+		}
+	]
+}

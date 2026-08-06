@@ -1,0 +1,9 @@
+---
+import VehicleArchivePage from '../../../components/VehicleArchivePage.astro';
+import { getDiscoveredVehicles } from '../../../config/vehicles';
+
+const vehiclePages = import.meta.glob('./*.astro');
+const vehicles = await getDiscoveredVehicles('aktuelle-projekte', vehiclePages);
+---
+
+<VehicleArchivePage category="aktuelle-projekte" {vehicles} />

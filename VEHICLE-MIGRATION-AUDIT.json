@@ -1,0 +1,19 @@
+{
+	"migratedAt": "2026-08-06T13:55:49.676Z",
+	"origin": "https://www.oldtimermanufaktur.de",
+	"vehicles": 157,
+	"images": 3205,
+	"blocks": 2801,
+	"missingImages": [],
+	"recoveredImages": [
+		{
+			"sourceUrl": "https://www.oldtimermanufaktur.de/images/stories/referenzen/opel_admiral_glaeser_sportcabrio_1939/IMG_995355.jpg",
+			"recoveredUrl": "https://www.oldtimermanufaktur.de/images/stories/referenzen/opel_admiral_glaeser_sportcabrio_1939/IMG_995355.JPG"
+		}
+	],
+	"categories": {
+		"aktuelle-projekte": 13,
+		"vergangene-projekte": 134,
+		"fahrzeugangebote": 10
+	}
+}

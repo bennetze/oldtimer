@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'fahrzeugangebote/120-franklin-airman-baujahr-1931');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for fahrzeugangebote/120-franklin-airman-baujahr-1931.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

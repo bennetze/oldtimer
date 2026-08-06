@@ -1,0 +1,114 @@
+{
+	"slug": "178-bmw-340-2",
+	"category": "fahrzeugangebote",
+	"title": "BMW 340 Limousine, Baujahr 1952",
+	"description": "Hier ein sehr früher BMW Typ 340, gebaut 1952 im BMW Werk Eisenach/Thüringen, als sehr elegante und repräsentative Limousine.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/178-bmw-340-2",
+	"order": 2,
+	"dateModified": "2026-08-06",
+	"year": "1952",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 340 Limousine, Baujahr 1952",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 340 Limousine, Baujahr 1952 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hier ein sehr früher BMW Typ 340, gebaut 1952 im BMW Werk Eisenach/Thüringen, als sehr elegante und repräsentative Limousine.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Farbgebung grün/grün, Polster graugrün, Teppich grün, Faltschiebedach.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Motor: 6 Zylinder, 2 Liter Hubraum, Leistung 55PS.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-005.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-007.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-008.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-009.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-010.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-011.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-012.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-013.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-014.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-015.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-016.jpg",
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>In allen Details sehr originalgetreu, fachmännisch und authentisch restauriert. Radial-Weißwandreifen, ansprechende org. Holzlasurtechnik im Innenraum, hier mit dem begehrten Faltschiebedach (sog. Sonnenscheinlimousine...).</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>org. Papiere mit lückenloser Historie, DEKRA Vollabnahme und H-Gutachten neu</p>"
+		},
+		{
+			"type": "contact",
+			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
+		}
+	]
+}

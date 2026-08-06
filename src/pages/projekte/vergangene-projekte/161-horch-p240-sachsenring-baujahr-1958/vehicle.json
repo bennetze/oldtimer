@@ -1,0 +1,92 @@
+{
+	"slug": "161-horch-p240-sachsenring-baujahr-1958",
+	"category": "vergangene-projekte",
+	"title": "HORCH P240 Sachsenring, Baujahr 1958",
+	"description": "Hier ein weiterer HORCH P240 \"Sachsenring\", der bei uns umfangreich restauriert wurde.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/161-horch-p240-sachsenring-baujahr-1958",
+	"order": 23,
+	"dateModified": "2026-08-06",
+	"year": "1958",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "HORCH P240 Sachsenring, Baujahr 1958",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "HORCH P240 Sachsenring, Baujahr 1958 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 1 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-002.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nHier ein weiterer HORCH P240 &quot;Sachsenring&quot;, der bei uns umfangreich restauriert wurde.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>In den Jahren von 1955 bis 1958 entstanden in den ehemaligen Horch Werken in Zwickau diese formschönen und repräsentativen Luxuslimousinen in einer bescheidenen Stückzahl von rund 1400 Einheiten.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Motor: 6 Zylinder, 2,4 Liter Hubraum, 80PS Leistung</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 7 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-008.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Neben Karosserie- und Lackierarbeiten, umfangreichen technischen Instandsetzungen, Elektrik und Chrom, bekam der Wagen in unserer Sattlerei auch eine komplett neue Innenausstattung angefertigt.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p><strong><em>Historisches: Die ruhmreiche Automobilfirma HORCH, gegründet 1899 von seinem genialen Namensgeber August Horch - seit 1904 im sächsischen Zwickau ansässig - baute dort bis in die Jahre des 2. Weltkriegs, vornehmlich formschöne und technisch äußerst fortschrittliche und geniale Luxuswagen. Durch einen Rechtsstreit wurde August Horch aus seiner eigenen Firma gedrängt und verlor damit u.a. auch die Namensrechte an seinem Namen &quot;Horch&quot;, woraufhin er im Jahre 1910 ebenfalls in Zwickau seine neue Firma AUDI gründete<br />\n(lateinische Übersetzung seines Namens Horch, HORCH=hören=AUDI...). </em></strong></p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p><strong><em>Nach dem 2. Weltkrieg und der Teilung Deutschlands wurde ab 1949 die Firma AUDI in Düsseldorf</em></strong>/<strong><em>Ingolstadt neu gegründet. Am alten Stammsitz von HORCH und AUDI in Zwickau hingegen, baute man in den alten, durch den Krieg noch erhaltenen Fertigungshallen, weiter hochkarätige Fahrzeuge von &quot;Stil und Rasse&quot; - so ein damaliges Zitat. </em></strong></p>"
+		}
+	]
+}

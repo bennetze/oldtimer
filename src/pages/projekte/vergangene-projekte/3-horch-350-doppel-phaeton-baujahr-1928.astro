@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'vergangene-projekte/3-horch-350-doppel-phaeton-baujahr-1928');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for vergangene-projekte/3-horch-350-doppel-phaeton-baujahr-1928.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

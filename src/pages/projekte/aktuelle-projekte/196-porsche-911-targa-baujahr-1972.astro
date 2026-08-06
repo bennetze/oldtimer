@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'aktuelle-projekte/196-porsche-911-targa-baujahr-1972');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for aktuelle-projekte/196-porsche-911-targa-baujahr-1972.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

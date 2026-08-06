@@ -1,0 +1,171 @@
+{
+	"slug": "58-bmw-326-autenrieth-cabriolet-baujahr-1938",
+	"category": "vergangene-projekte",
+	"title": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938",
+	"description": "Auch dieses BMW 326 Cabriolet - gebaut 1938 bei den Bayerischen Motoren Werken in Eisenach - wurde bei uns einer vollumfänglichen Restauration unterzogen.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/58-bmw-326-autenrieth-cabriolet-baujahr-1938",
+	"order": 105,
+	"dateModified": "2026-08-06",
+	"year": "1938",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>Auch dieses BMW 326 Cabriolet - gebaut 1938 bei den Bayerischen Motoren Werken in Eisenach - wurde bei uns einer vollumfänglichen Restauration unterzogen.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Neben umfangreichen Karosseriearbeiten und der Anfertigung eines neuen tragenden Holzskelettes, wurde auch die gesamte Technik des Wagens umfassend revidiert (kompletter Neuaufbau von Motor, Achsen, Stossdämpfer, Kühler, Bremsen u.dgl.).</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-006.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach den Lackierarbeiten in den Originalfarbtönen Rot/Schwarz einschließlich der BMW 326 typischen aufwendigen Linierungen, bekam der Wagen in unserer Polsterei auch ein neues maßgeschneidertes Cabrioletverdeck.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nNach der Zusammenführung aller technischen Komponenten wurde von uns unter anderem auch ein neuer originalgetreuer Kabelbaum angefertigt.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-009.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-010.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-012.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-013.jpg",
+					"alt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nNach dieser, auch im Detail perfekt abgeschlossenen Restauration, ist hiermit in unserer Manufaktur ein wunderschönes BMW 326 “Autenrieth”- Cabriolet entstanden, welches jedes Oldtimerherz höher schlagen lässt.</p>"
+		}
+	]
+}

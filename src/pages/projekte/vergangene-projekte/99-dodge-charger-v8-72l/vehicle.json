@@ -1,0 +1,71 @@
+{
+	"slug": "99-dodge-charger-v8-72l",
+	"category": "vergangene-projekte",
+	"title": "DODGE Charger V8 R/T 7,2l Baujahr 1968",
+	"description": "Mit seinen 7,2 Liter Hubraum verfügt \"Mann\" über \"ausreichend\" Hubraum und eine Leistung von 380 PS. Der Wagen erinnert mit seiner für deutsche Verhältn…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/99-dodge-charger-v8-72l",
+	"order": 101,
+	"dateModified": "2026-08-06",
+	"year": "1968",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "DODGE Charger V8 R/T 7,2l Baujahr 1968",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "DODGE Charger V8 R/T 7,2l Baujahr 1968 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "DODGE Charger V8 R/T 7,2l Baujahr 1968 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br /><br /><br />DODGE Charger V8 R/T von 1968.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "DODGE Charger V8 R/T 7,2l Baujahr 1968 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "DODGE Charger V8 R/T 7,2l Baujahr 1968 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "DODGE Charger V8 R/T 7,2l Baujahr 1968 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Mit seinen 7,2 Liter Hubraum verfügt &quot;Mann&quot; über &quot;ausreichend&quot; Hubraum und eine Leistung von 380 PS. Der Wagen erinnert mit seiner für deutsche Verhältnisse recht außergewöhnlichen Form und Größe, an die große Zeit der amerikanischen Supersportwagen der 60er und 70er Jahre.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "DODGE Charger V8 R/T 7,2l Baujahr 1968 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "DODGE Charger V8 R/T 7,2l Baujahr 1968 – Aufnahme 6 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-007.jpg",
+					"alt": "DODGE Charger V8 R/T 7,2l Baujahr 1968 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Neben der umfassenden Restauration der Karosserie nebst Lackierung und Technik, bekam der Wagen bei uns eine maßgeschneiderte Auspuffanlage mit passendem &quot;Klangbild&quot;.</p>"
+		}
+	]
+}

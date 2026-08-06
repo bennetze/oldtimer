@@ -1,5 +1,16 @@
 ErrorDocument 404 /404.html
 
+# Preserve the former Joomla project URLs while the canonical site uses the
+# nested /projekte/ hierarchy. The legacy item tail is retained verbatim so
+# duplicate vehicle names remain unambiguous.
+RedirectMatch 301 ^/aktuelle-projekte/?$ /projekte/aktuelle-projekte/
+RedirectMatch 301 ^/aktuelle-projekte/item/([^/]+)/?$ /projekte/aktuelle-projekte/$1/
+RedirectMatch 301 ^/referenzen/?$ /projekte/vergangene-projekte/
+RedirectMatch 301 ^/referenzen/item/([^/]+)/?$ /projekte/vergangene-projekte/$1/
+RedirectMatch 301 ^/fahrzeugangebote/?$ /projekte/fahrzeugangebote/
+RedirectMatch 301 ^/fahrzeugangebote/item/([^/]+)/?$ /projekte/fahrzeugangebote/$1/
+RedirectMatch 301 ^/oldtimer-kaufen/?$ /projekte/fahrzeugangebote/
+
 # Portable baseline for Apache-compatible hosting. Re-test every directive with
 # the final host; providers such as GitHub Pages ignore this file entirely.
 <IfModule mod_headers.c>

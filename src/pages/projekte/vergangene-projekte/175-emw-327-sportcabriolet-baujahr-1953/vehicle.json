@@ -1,0 +1,42 @@
+{
+	"slug": "175-emw-327-sportcabriolet-baujahr-1953",
+	"category": "vergangene-projekte",
+	"title": "EMW 327 Sportcabriolet, Baujahr 1953",
+	"description": "Hier wieder eines der zeitlos schönsten Traumcabrios, ein EMW 327/2 Sportcabriolet von 1953, das bei uns sowohl technisch als auch optisch umfangreich ü…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/175-emw-327-sportcabriolet-baujahr-1953",
+	"order": 134,
+	"dateModified": "2026-08-06",
+	"year": "1953",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "EMW 327 Sportcabriolet, Baujahr 1953",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "EMW 327 Sportcabriolet, Baujahr 1953 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1953 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\nHier wieder eines der zeitlos schönsten Traumcabrios, ein EMW 327/2 Sportcabriolet von 1953, das bei uns sowohl technisch als auch optisch umfangreich überarbeitet wurde.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1953 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1953 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

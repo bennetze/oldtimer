@@ -1,0 +1,148 @@
+{
+	"slug": "127-tatra-603-baujahr-1968",
+	"category": "vergangene-projekte",
+	"title": "Tatra 603, Baujahr 1968",
+	"description": "Angefangen bei umfangreichen Schweißarbeiten, über Elektrik bis hin zu Lackierungs- und Polsterarbeiten, mußte der Wagen auch technisch grundlegend rest…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/127-tatra-603-baujahr-1968",
+	"order": 75,
+	"dateModified": "2026-08-06",
+	"year": "1968",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "Tatra 603, Baujahr 1968",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "Tatra 603, Baujahr 1968 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Tatra 603, Baujahr 1968 der allumfassend bei uns restauriert wurde.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Angefangen bei umfangreichen Schweißarbeiten, über Elektrik bis hin zu Lackierungs- und Polsterarbeiten, mußte der Wagen auch technisch grundlegend restauriert werden.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 5 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-006.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Motor V8 luftgekühlt, 105 PS, Heckantrieb</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-009.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 9 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-010.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 10 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 11 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-012.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 12 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-013.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 13 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 14 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Tatra Typ 603 war eine großzügige und repräsentative Staatslimousine mit einer sagenhaften Aerodynamik, die nur in wenigen Stückzahlen nach Deutschland, bzw. in die damalige DDR exportiert wurde.</p>"
+		}
+	]
+}

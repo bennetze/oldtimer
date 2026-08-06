@@ -7,12 +7,14 @@ interface Props {
 	title?: string;
 	description?: string;
 	noindex?: boolean;
-	openGraphImage?: ImageMetadata;
+	openGraphImage?: Pick<ImageMetadata, 'src' | 'width' | 'height' | 'format'>;
 	openGraphImageAlt?: string;
 	openGraphType?: string;
 	structuredDataType?: string;
 	dateModified?: string;
 	additionalJsonLd?: Record<string, unknown> | Record<string, unknown>[];
+	mainEntityId?: string;
+	breadcrumbs?: Array<{ name: string; path: string }>;
 }
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
@@ -28,6 +30,8 @@ const {
 	structuredDataType = 'WebPage',
 	dateModified = '2026-08-02',
 	additionalJsonLd = [],
+	mainEntityId,
+	breadcrumbs,
 } = Astro.props;
 const pageTitle = title ? `${title} | Die Oldtimermanufaktur` : 'Die Oldtimermanufaktur';
 const isGitHubPagesPreview = siteStatus.developmentPreview && basePath !== '/';
@@ -61,6 +65,10 @@ const webpageData: Record<string, unknown> = {
 	about: { '@id': organizationId },
 	primaryImageOfPage: { '@id': primaryImageId },
 };
+
+if (mainEntityId) {
+	webpageData.mainEntity = { '@id': mainEntityId };
+}
 
 const jsonLdGraph: Record<string, unknown>[] = [
 	{
@@ -108,25 +116,31 @@ const jsonLdGraph: Record<string, unknown>[] = [
 	webpageData,
 ];
 
-if (title) {
+const breadcrumbItems = breadcrumbs ?? (
+	title
+		? [
+				{ name: 'Startseite', path: '/' },
+				{ name: title, path: '' },
+			]
+		: []
+);
+
+if (breadcrumbItems.length) {
 	webpageData.breadcrumb = { '@id': breadcrumbId };
 	jsonLdGraph.push({
 		'@type': 'BreadcrumbList',
 		'@id': breadcrumbId,
-		itemListElement: [
-			{
-				'@type': 'ListItem',
-				position: 1,
-				name: 'Startseite',
-				item: siteRootUrl.href,
-			},
-			{
-				'@type': 'ListItem',
-				position: 2,
-				name: title,
-				item: pageUrl.href,
-			},
-		],
+		itemListElement: breadcrumbItems.map((item, index) => ({
+			'@type': 'ListItem',
+			position: index + 1,
+			name: item.name,
+			item:
+				item.path === '/'
+					? siteRootUrl.href
+					: item.path === ''
+						? pageUrl.href
+						: new URL(item.path.replace(/^\//, ''), siteRootUrl).href,
+		})),
 	});
 }
 

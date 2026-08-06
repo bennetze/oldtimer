@@ -1,0 +1,20 @@
+{
+	"slug": "17-mercedes-170s-cabriolet-b-baujahr-1953",
+	"category": "vergangene-projekte",
+	"title": "Mercedes 170S Cabriolet-B, Baujahr 1953",
+	"description": "Dieses Mercedes 170S Cabriolet wurde in unserer Manufaktur detailgetreu überarbeitet und nach Kundenwünschen restauriert.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/17-mercedes-170s-cabriolet-b-baujahr-1953",
+	"order": 86,
+	"dateModified": "2026-08-06",
+	"year": "1953",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "Mercedes 170S Cabriolet-B, Baujahr 1953",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "Mercedes 170S Cabriolet-B, Baujahr 1953 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>Dieses Mercedes 170S Cabriolet wurde in unserer Manufaktur detailgetreu überarbeitet und nach Kundenwünschen restauriert.</p>"
+		}
+	]
+}

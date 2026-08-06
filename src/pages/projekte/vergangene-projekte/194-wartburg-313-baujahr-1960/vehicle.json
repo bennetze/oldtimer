@@ -1,0 +1,135 @@
+{
+	"slug": "194-wartburg-313-baujahr-1960",
+	"category": "vergangene-projekte",
+	"title": "Wartburg 313, Baujahr 1960",
+	"description": "Hier wieder ein exklusiv gestalteter Wartburg 313 Sport, der von uns technisch restauriert wurde und ein neues Cabrioletverdeck erhielt.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/194-wartburg-313-baujahr-1960",
+	"order": 5,
+	"dateModified": "2026-08-06",
+	"year": "1960",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "Wartburg 313, Baujahr 1960",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "Wartburg 313, Baujahr 1960 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 1 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-002.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nHier wieder ein exklusiv gestalteter Wartburg 313 Sport, der von uns technisch restauriert wurde und ein neues Cabrioletverdeck erhielt.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 4 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-005.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 5 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-006.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 6 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-007.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 7 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-008.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-009.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 9 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-010.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 10 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-011.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 11 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-012.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 12 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-013.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 13 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-014.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 14 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-015.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 15 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-016.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 16 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>...die wohl größte Wartburg Sport Sammlung in einer Fachwerkstatt überhaupt...</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-017.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 17 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-018.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 18 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-019.jpg",
+					"alt": "Wartburg 313, Baujahr 1960 – Aufnahme 19 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

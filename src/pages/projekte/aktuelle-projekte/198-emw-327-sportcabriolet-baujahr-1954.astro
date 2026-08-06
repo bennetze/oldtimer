@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'aktuelle-projekte/198-emw-327-sportcabriolet-baujahr-1954');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for aktuelle-projekte/198-emw-327-sportcabriolet-baujahr-1954.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

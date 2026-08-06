@@ -1,0 +1,67 @@
+{
+	"slug": "94-bmw-am4-baujahr-1933",
+	"category": "vergangene-projekte",
+	"title": "BMW AM4, Baujahr 1933",
+	"description": "Dieser BMW Typ AM4 von 1933 gilt als der legitime Nachfolger des legendären DIXI - mit dem die Firma BMW, 1928 - durch die Übernahme der Eisenacher DIXI…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/94-bmw-am4-baujahr-1933",
+	"order": 74,
+	"dateModified": "2026-08-06",
+	"year": "1933",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW AM4, Baujahr 1933",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW AM4, Baujahr 1933 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW AM4, Baujahr 1933 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dieser BMW Typ AM4 von 1933 gilt als der legitime Nachfolger des legendären DIXI - mit dem die Firma BMW, 1928 - durch die Übernahme der Eisenacher DIXI-Werke - überhaupt erst zum Automobilbau kam.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>&quot;AM&quot; steht hier für &quot;Auto München&quot;, wenngleich auch dieses Auto, wie alle Vorkriegs BMW Wagen nicht in München, sondern in Eisenach gefertigt wurden.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW AM4, Baujahr 1933 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "BMW AM4, Baujahr 1933 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "BMW AM4, Baujahr 1933 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dieser mittlerweile sehr selten gewordene AM4 wurde in unserer Manufaktur - unweit seines früheren Entstehungsortes - technisch grundlegend überarbeitet und umfassend instand gesetzt.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "BMW AM4, Baujahr 1933 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "BMW AM4, Baujahr 1933 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

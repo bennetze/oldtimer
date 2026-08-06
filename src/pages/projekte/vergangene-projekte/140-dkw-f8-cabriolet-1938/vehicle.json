@@ -1,0 +1,65 @@
+{
+	"slug": "140-dkw-f8-cabriolet-1938",
+	"category": "vergangene-projekte",
+	"title": "DKW F8 Cabriolet, 1938",
+	"description": "Dieses DKW F8 Cabriolet erhielt in unserer Stellmacherei ein neues Verdeckgestell aus Eschenholz maßgerecht angefertigt und anschließend in unserer Satt…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/140-dkw-f8-cabriolet-1938",
+	"order": 131,
+	"dateModified": "2026-08-06",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "DKW F8 Cabriolet, 1938",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "DKW F8 Cabriolet, 1938 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-002.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-005.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-007.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dieses DKW F8 Cabriolet erhielt in unserer Stellmacherei ein neues Verdeckgestell aus Eschenholz maßgerecht angefertigt und anschließend in unserer Sattlerei ein neues Cabrioverdeck einschließlich Innenhimmel und Rosshaardämmung geschneidert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-009.jpg",
+					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

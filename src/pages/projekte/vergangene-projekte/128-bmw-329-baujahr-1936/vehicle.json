@@ -1,0 +1,122 @@
+{
+	"slug": "128-bmw-329-baujahr-1936",
+	"category": "vergangene-projekte",
+	"title": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936",
+	"description": "Der damals wie heute sehr seltene BMW Typ 329 gilt in der Automobilhistorie von BMW eigentlich als \"Zwitter\". Durch die vorübergehende Beibehaltung des…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/128-bmw-329-baujahr-1936",
+	"order": 31,
+	"dateModified": "2026-08-06",
+	"year": "1936",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der damals wie heute sehr seltene BMW Typ 329 gilt in der Automobilhistorie von BMW eigentlich als &quot;Zwitter&quot;. Durch die vorübergehende Beibehaltung des bewährten Rohrrahmens vom Typ BMW 319 und dessen Motorisierung (1,9 Liter Hubraum, 45PS), besitzt er aber frontseitig schon die Karosserie des nur wenige Monate später erschienenen Typs BMW 320 (bzw. des weit moderneren Typs 326 und 321). Somit kam es zu der nur sehr kurzen Bauphase mit der Typenbezeichnung BMW 329.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Vom Typ BMW 329 gab es ausschließlich &quot;Kabriolett&quot; (historisch korrekte Schreibweise) -Aufbauten. Die meisten dieser Aufbauten lieferte die Karosseriebaufirma &quot;Drauz&quot; in Heilbronn. Nur wenige Exemplare entstanden u.a. auch bei der Firma &quot;Reutter&quot; in Stuttgart.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dieser Wagen besitzt eine solche seltene &quot;Reutter&quot; -Karosserie und wurde bei uns grundlegend restauriert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 6 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-007.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach einem massiven Motorschaden wurde das gesamte Innenleben des Motors bei uns generalüberholt und größtenteils erneuert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-009.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 9 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-010.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 10 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-011.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 11 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Im Ergebnis ein traumhaft schönes und äußerst seltenes BMW 329 &quot;Reutter&quot; Sportcabriolet.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-012.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 12 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-013.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 13 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-014.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Aufnahme 14 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

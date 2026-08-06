@@ -1,0 +1,136 @@
+{
+	"slug": "64-opel-admiral-glaeser-sportcabriolet-baujahr-1939",
+	"category": "vergangene-projekte",
+	"title": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939",
+	"description": "Hier einer der sehr seltenen Vorkriegs - “Flaggschiffe” von OPEL: Ein ADMIRAL mit einer Sonderkarosserie des damals äußerst renommierten Dresdener Karos…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/64-opel-admiral-glaeser-sportcabriolet-baujahr-1939",
+	"order": 49,
+	"dateModified": "2026-08-06",
+	"year": "1939",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hier einer der sehr seltenen Vorkriegs - “Flaggschiffe” von OPEL: Ein ADMIRAL mit einer Sonderkarosserie des damals äußerst renommierten Dresdener Karosserieschneiders “GLÄSER”.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wagen wurde technischerseits in unserer Manufaktur umfassend revidiert und der Motor nach einem massiven Motorschaden überholt und fachgerecht instand gesetzt.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-006.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-009.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 9 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-010.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 10 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 11 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Obwohl diese Fahrzeuge - da nur in wenigen Stückzahlen gebaut - auf dem “Markt” eine absolute Seltenheit darstellen, konnten wir mittlerweile mehrere dieser traumhaft schönen Exoten in unserer Werkstatt begrüßen.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-012.jpg",
+					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Aufnahme 12 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

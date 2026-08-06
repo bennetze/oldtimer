@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'fahrzeugangebote/119-bmw-327-sportcabriolet-baujahr-1938');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for fahrzeugangebote/119-bmw-327-sportcabriolet-baujahr-1938.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

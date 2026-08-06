@@ -1,0 +1,25 @@
+---
+import VehicleArchivePage from '../../../../components/VehicleArchivePage.astro';
+import { getDiscoveredVehicles, vehicleSlugsFromPageGlob } from '../../../../config/vehicles';
+
+export function getStaticPaths() {
+	const vehiclePages = import.meta.glob('../*.astro');
+	const totalPages = Math.ceil(vehicleSlugsFromPageGlob(vehiclePages).length / 24);
+
+	return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, index) => {
+		const page = index + 2;
+		return { params: { page: String(page) }, props: { currentPage: page } };
+	});
+}
+
+const { currentPage } = Astro.props;
+const vehiclePages = import.meta.glob('../*.astro');
+const vehicles = await getDiscoveredVehicles('vergangene-projekte', vehiclePages);
+---
+
+<VehicleArchivePage
+	category="vergangene-projekte"
+	{vehicles}
+	{currentPage}
+	pageSize={24}
+/>

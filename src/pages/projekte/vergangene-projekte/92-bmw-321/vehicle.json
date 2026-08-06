@@ -1,0 +1,41 @@
+{
+	"slug": "92-bmw-321",
+	"category": "vergangene-projekte",
+	"title": "BMW 321 \"Awtowelo\" Baujahr 1949",
+	"description": "BMW 321 des seltenen Jahrgangs 1949 - gebaut bei der\"BMW-AWTOWELO-AG\" in Eisenach/Thüringen.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/92-bmw-321",
+	"order": 61,
+	"dateModified": "2026-08-06",
+	"year": "1949",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 321 \"Awtowelo\" Baujahr 1949",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>BMW 321 des seltenen Jahrgangs 1949 - gebaut bei der<br />&quot;BMW-AWTOWELO-AG&quot; in Eisenach/Thüringen.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Sehr selten deshalb, da nach dem für Deutschland &quot;verlorenen&quot; 2. Weltkrieg, und der damit unter sowjetischer Militärhoheit regierten &quot;Besatzungs&quot;-Zone, ab 1947 in Eisenach wieder einige BMW Typen, wie dieser 321 unter Awtowelo-Ägide gebaut wurden.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>All diese Fahrzeuge wurden als &quot;Reparationsleistungen&quot; und als Form der &quot;Wiedergutmachung&quot; - in Holzkisten verpackt und per Bahntransport - nach Russland ausgeführt.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nur sehr wenige Fahrzeuge, wie dieser hier bei uns restaurierte BMW 321, dürften die Wirren der Zeit überlebt haben. <br /><br />Nach einer abgebrochenen Restauration beim Vorbesitzer, wurde dieser BMW 321 gemäß den Kundenwünschen in unserer OLDTIMERMANUFAKTUR allumfassend restauriert.</p>"
+		}
+	]
+}

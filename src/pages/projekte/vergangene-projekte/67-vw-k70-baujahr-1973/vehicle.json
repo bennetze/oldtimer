@@ -1,0 +1,148 @@
+{
+	"slug": "67-vw-k70-baujahr-1973",
+	"category": "vergangene-projekte",
+	"title": "VW K70, Baujahr 1973",
+	"description": "Mit der Übernahme des insolventen NSU-Konzerns durch Volkswagen und den damit verbundenen Marken- und Modellrechten, erschien ab 1970 der VW Typ K70 in…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/67-vw-k70-baujahr-1973",
+	"order": 122,
+	"dateModified": "2026-08-06",
+	"year": "1973",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "VW K70, Baujahr 1973",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "VW K70, Baujahr 1973 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Mit der Übernahme des insolventen NSU-Konzerns durch Volkswagen und den damit verbundenen Marken- und Modellrechten, erschien ab 1970 der VW Typ K70 in optischer Anlehnung an den ehemaligen NSU Ro 80.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dieser mittlerweile sehr selten gewordene VW - Typ K70 erschien oberflächlich in einem recht passablen - im Detail jedoch äußerst überholungsbedürftigen Zustand.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Das Fahrzeug wurde in sogenannten “Fachwerkstätten” über viele Jahre “am Leben erhalten” und wurde danach bei Uns seitens der Karosserie umfangreichen Restaurationsmaßnahmen unterzogen.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 5 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-006.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Durch die unzureichende Ersatzteillage mußten dabei viele Blechteile originalgetreu und passgenau neu angefertigt werden.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach der endgültigen Fertigstellung der Karosserie wurde das Fahrzeug wieder in seiner Originalfarbe lackiert und danach mit allen technischen Komponenten und überholten Anbauteilen komplettiert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-009.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 9 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-010.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 10 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Da dieser Volkswagen Typ K70 nur noch in ganz wenigen Exemplaren erhalten ist, ist der im Kundenauftrag durch Uns getätigte Restaurationsaufwand gerechtfertigt. Es gibt heute vermutlich kein besseres erhaltenes Exemplar.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 11 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-012.jpg",
+					"alt": "VW K70, Baujahr 1973 – Aufnahme 12 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

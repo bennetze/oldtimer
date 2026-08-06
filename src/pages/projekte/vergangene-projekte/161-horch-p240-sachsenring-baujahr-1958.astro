@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'vergangene-projekte/161-horch-p240-sachsenring-baujahr-1958');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for vergangene-projekte/161-horch-p240-sachsenring-baujahr-1958.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

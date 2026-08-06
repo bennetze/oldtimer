@@ -1,0 +1,55 @@
+{
+	"slug": "69-bmw-319-sportcabriolet-baujahr-1934",
+	"category": "vergangene-projekte",
+	"title": "BMW 319 Sportcabriolet, Baujahr 1934",
+	"description": "BMW 319 2+2 sitziges Sportcabriolet, Baujahr 1934; gebaut bei den BMW-Werken in Eisenach/Thüringen.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/69-bmw-319-sportcabriolet-baujahr-1934",
+	"order": 120,
+	"dateModified": "2026-08-06",
+	"year": "1934",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 319 Sportcabriolet, Baujahr 1934",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 319 Sportcabriolet, Baujahr 1934 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>BMW 319 2+2 sitziges Sportcabriolet, Baujahr 1934; gebaut bei den BMW-Werken in Eisenach/Thüringen.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Bei diesem Wagen handelt es sich um ein sehr schönes Sondercabriolet, dass nur in ganz wenigen Stückzahlen auf speziellen Kundenwunsch gebaut wurde.<br />\nEs dürften – wenn überhaupt – noch weniger als eine Handvoll dieses Typs existieren. Eine absolute Rarität also.<br />\n<br />\nDas Fahrzeug wurde bei Uns einer grundlegenden Komplettrestauration unterzogen. Dabei wurde die Karosserie vom eigentlichen Rahmen getrennt und separat neu aufgebaut.<br />\n<br />\nDer gesamte statische Holzaufbau des Fahrzeuges wurde originalgetreu in kammergetrockneter, verleimter Esche/Buche nach alter handwerklicher Tradition neu nachgefertigt. Die Blechaußenhaut entstand ebenfalls in Teilen neu.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 319 Sportcabriolet, Baujahr 1934 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 319 Sportcabriolet, Baujahr 1934 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "BMW 319 Sportcabriolet, Baujahr 1934 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Auf Kundenwunsch kam ein leistungsfähigerer Motor zum Einsatz. Dieser Motor aus dem Jahre 1935 wurde ebenfalls grundhaft durch uns überholt.</p>"
+		}
+	]
+}

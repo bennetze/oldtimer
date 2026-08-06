@@ -1,0 +1,82 @@
+{
+	"slug": "53-emw-bmw-340-limousine-baujahr-1951",
+	"category": "vergangene-projekte",
+	"title": "EMW/BMW 340 Limousine, Baujahr 1951",
+	"description": "Farben bourdeaux-rot / tiefschwarz in der Ausführung mit dem sehr begehrten Faltschiebedach.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/53-emw-bmw-340-limousine-baujahr-1951",
+	"order": 111,
+	"dateModified": "2026-08-06",
+	"year": "1951",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "EMW/BMW 340 Limousine, Baujahr 1951",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "EMW/BMW 340 Limousine, Baujahr 1951 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>EMW (BMW) 340 des Baujahres 1951 als stattliche große Faltdach-Limousine.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "EMW/BMW 340 Limousine, Baujahr 1951 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "EMW/BMW 340 Limousine, Baujahr 1951 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "EMW/BMW 340 Limousine, Baujahr 1951 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "EMW/BMW 340 Limousine, Baujahr 1951 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "EMW/BMW 340 Limousine, Baujahr 1951 – Aufnahme 5 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nDer klassische BMW/EMW 2 Liter, 6 Zylinder mit 55 PS Leistung.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Farben bourdeaux-rot / tiefschwarz in der Ausführung mit dem sehr begehrten Faltschiebedach.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-006.jpg",
+					"alt": "EMW/BMW 340 Limousine, Baujahr 1951 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

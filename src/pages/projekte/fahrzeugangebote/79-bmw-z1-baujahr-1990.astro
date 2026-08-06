@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'fahrzeugangebote/79-bmw-z1-baujahr-1990');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for fahrzeugangebote/79-bmw-z1-baujahr-1990.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

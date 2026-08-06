@@ -4,6 +4,7 @@ node_modules/
 # Astro build output and generated metadata
 dist/
 .astro/
+public/vehicle-gallery/
 
 # Local environment variables (templates may be committed)
 .env

@@ -56,7 +56,8 @@ User-agent: LinkedInBot
 Allow: /
 
 # Normale und bislang unbekannte Crawler dürfen die öffentlichen Seiten lesen.
-# Dies schließt die kanonischen Seiten unter /handwerk/, /ueber-uns/ und /projekte/ ein.
+# Dies schließt die kanonischen Seiten unter /handwerk/, /ueber-uns/ sowie die
+# Projektarchive und Fahrzeugdokumentationen unter /projekte/ ein.
 # Der oben erklärte Rechtevorbehalt bleibt davon unberührt.
 User-agent: *
 Allow: /

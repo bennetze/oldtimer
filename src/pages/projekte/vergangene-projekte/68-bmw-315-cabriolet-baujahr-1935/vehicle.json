@@ -1,0 +1,33 @@
+{
+	"slug": "68-bmw-315-cabriolet-baujahr-1935",
+	"category": "vergangene-projekte",
+	"title": "BMW 315 Cabriolet, Baujahr 1935",
+	"description": "BMW 315 Vier-Fenster-Cabriolet, Baujahr 1935; gebaut bei den BMW-Werken in Eisenach/Thüringen.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/68-bmw-315-cabriolet-baujahr-1935",
+	"order": 121,
+	"dateModified": "2026-08-06",
+	"year": "1935",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 315 Cabriolet, Baujahr 1935",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 315 Cabriolet, Baujahr 1935 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>BMW 315 Vier-Fenster-Cabriolet, Baujahr 1935; gebaut bei den BMW-Werken in Eisenach/Thüringen.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 315 Cabriolet, Baujahr 1935 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Bei diesem Fahrzeug wurde der Motor mit Antriebseinheit und sämtliche mechanischen Komponenten bei uns überholt. Auf speziellen Kundenwunsch hin soll das äußere Erscheinungsbild mit dem mittlerweile mehr als 70 Jahre alten, noch ersten Lack als wertvolle Patina erhalten bleiben.</p>"
+		}
+	]
+}

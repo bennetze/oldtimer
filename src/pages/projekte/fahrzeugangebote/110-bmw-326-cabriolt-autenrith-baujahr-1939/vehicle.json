@@ -1,0 +1,79 @@
+{
+	"slug": "110-bmw-326-cabriolt-autenrith-baujahr-1939",
+	"category": "fahrzeugangebote",
+	"title": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939",
+	"description": "BMW 326 als sehr komfortables Reise-Cabriolet aus der namhaften Karosseriebau-Werkstatt \"Autenrieth\" in Darmstadt.",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/110-bmw-326-cabriolt-autenrith-baujahr-1939",
+	"order": 10,
+	"dateModified": "2026-08-06",
+	"year": "1939",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>BMW 326 als sehr komfortables Reise-Cabriolet aus der namhaften Karosseriebau-Werkstatt &quot;Autenrieth&quot; in Darmstadt.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wagen ist weitgehend komplett und original erhalten und bildet somit die ideale Grundlage für eine perfekte Restauration in unserem Haus. Die dokumentierte Ursprungsfarbe war grün/grün (2-farbig) mit grüner Echtleder-Innenausstattung.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Während der bevorstehenden Restauration können dabei natürlich Ihre persönlichen Wünsche individuell mit einfließen. Wir beraten sie gerne.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Unzählige Anschauungsbeispiele sehr gelungener Restaurationen dieser raren Vorkriegs-BMW finden Sie auch unter unserer Rubrik &quot;Referenzen&quot;.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "contact",
+			"html": "<p>Preis auf Anfrage.</p>"
+		},
+		{
+			"type": "contact",
+			"html": "<p>Für weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter:<br />\nTel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+	"slug": "65-opel-olympia-rekord-cabriolet-baujahr-1955",
+	"category": "vergangene-projekte",
+	"title": "OPEL Olympia Rekord Cabriolet, Baujahr 1955",
+	"description": "Dieser Opel Olympia Rekord wurde als Cabriolet-Aufbau in sehr geringen Stückzahlen bei dem damals sehr renommierten Karosserieschneider “Deutsch” gebaut…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/65-opel-olympia-rekord-cabriolet-baujahr-1955",
+	"order": 108,
+	"dateModified": "2026-08-06",
+	"year": "1955",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "OPEL Olympia Rekord Cabriolet, Baujahr 1955",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "OPEL Olympia Rekord Cabriolet, Baujahr 1955 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>Dieser Opel Olympia Rekord wurde als Cabriolet-Aufbau in sehr geringen Stückzahlen bei dem damals sehr renommierten Karosserieschneider “Deutsch” gebaut und nach Schweden ausgeliefert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "OPEL Olympia Rekord Cabriolet, Baujahr 1955 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Im Auftrag des schwedischen Besitzers wurde der Wagen bei uns technischerseits allumfassend instand gesetzt (Motor, Getriebe, Achsen, Bremsen, Kühler, Elektrik).</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "OPEL Olympia Rekord Cabriolet, Baujahr 1955 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "OPEL Olympia Rekord Cabriolet, Baujahr 1955 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "OPEL Olympia Rekord Cabriolet, Baujahr 1955 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Gleichzeitig wurde auch die Innenausstattung/Polsterung und das Cabrioletverdeck überarbeitet.</p>"
+		}
+	]
+}

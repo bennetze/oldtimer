@@ -1,0 +1,33 @@
+{
+	"slug": "57-bmw-326-2-tueriges-autenrieth-cabriolet-baujahr-1939",
+	"category": "vergangene-projekte",
+	"title": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939",
+	"description": "Bei diesem BMW 326 “Autenrieth” Cabriolet - gebaut bei den Bayerischen-Motoren-Werken in Eisenach / Thüringen - handelt es sich um eine allumfassende Vo…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/57-bmw-326-2-tueriges-autenrieth-cabriolet-baujahr-1939",
+	"order": 127,
+	"dateModified": "2026-08-06",
+	"year": "1939",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>Bei diesem BMW 326 “Autenrieth” Cabriolet - gebaut bei den Bayerischen-Motoren-Werken in Eisenach / Thüringen - handelt es sich um eine allumfassende Vollrestauration.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Neben den anspruchsvollen Karosseriearbeiten wurde in unserem Hause der gesamte Holzskelettaufbau erneuert. Dabei mußte u.a. auch die gesamte fehlende Verdeckkonstruktion, einschließlich der aufwendigen Scherentechnik neu gebaut werden.</p>"
+		}
+	]
+}

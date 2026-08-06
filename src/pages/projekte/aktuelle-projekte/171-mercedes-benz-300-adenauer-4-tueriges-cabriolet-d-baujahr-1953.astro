@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'aktuelle-projekte/171-mercedes-benz-300-adenauer-4-tueriges-cabriolet-d-baujahr-1953');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for aktuelle-projekte/171-mercedes-benz-300-adenauer-4-tueriges-cabriolet-d-baujahr-1953.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'aktuelle-projekte/170-bmw-507-roadster');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for aktuelle-projekte/170-bmw-507-roadster.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

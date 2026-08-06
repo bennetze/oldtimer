@@ -1,0 +1,110 @@
+{
+	"slug": "98-hinkel-kabinenroller-baujahr-1957",
+	"category": "vergangene-projekte",
+	"title": "HEINKEL Kabinenroller, Baujahr 1957",
+	"description": "Die HEINKEL Flugzeugwerke AG, gegründet 1922 in Warnemünde/Rostock, waren vor und während des 2. Weltkrieges mit Ihrem Gründer Ernst Heinkel einer der f…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/98-hinkel-kabinenroller-baujahr-1957",
+	"order": 76,
+	"dateModified": "2026-08-06",
+	"year": "1957",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "HEINKEL Kabinenroller, Baujahr 1957",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "HEINKEL Kabinenroller, Baujahr 1957 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>HEINKEL Kabinenroller von 1957 - als äußerst seltenes Vollcabriolet.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Die HEINKEL Flugzeugwerke AG, gegründet 1922 in Warnemünde/Rostock, waren vor und während des 2. Weltkrieges mit Ihrem Gründer Ernst Heinkel einer der führenden und innovativsten Flugzeughersteller und Raketenkonstrukteure überhaupt (mehr als 1200 Patente) und mit bis zu 55.000 Beschäftigten einer der größten Konzerne weltweit. Man baute dort nicht nur legendäre Flugmaschinen, sondern auch das erste düsengetriebene Flugzeug (He 176) und war neben den technischen Genies um Wernher von Braun auch maßgeblich an der Entwicklung der V1 und V2 beteiligt, die unweit in Peenemünde (Insel Usedom) getestet und abgeschossen wurden. Neben den Stammwerken in Rostock, gab es u.a. auch größere HEINKEL-Produktions- und Entwicklungsstätten in Berlin, Oranienburg, Krakau, Paris und Wien.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach dem für Deutschland verlorenen Krieg, untersagten die &quot;Siegermächte&quot;, neben BMW, Messerschmitt u.a. Flugzeugbauern, auch HEINKEL den Weiterbau von Flugzeugen. Auch waren zum Kriegsende durch die Bombardements der Engländer und Amerikaner, nahezu alle Produktionsanlagen zerstört.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>So konstruierte man ab 1956, ähnlich wie BMW die Isetta oder Messerschmitt den Kabinenroller, auch bei HEINKEL in Stuttgart und Speyer einen optisch wie technisch gelungenen Kabinenroller. Später folgten sogar Lizenzen in Irland und England. Dabei gab es nur eine Handvoll der exklusiven Cabriolets wie diesen.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-003.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-005.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-008.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />Der Wagen wurde bei uns umfassend instand gesetzt und dazu auch ein neues maßgeschneidertes Cabrio-Verdeck, nebst Scherengestell und Persenning passgenau angefertigt.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-009.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-010.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-011.jpg",
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

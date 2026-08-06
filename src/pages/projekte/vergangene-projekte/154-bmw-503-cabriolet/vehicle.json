@@ -1,0 +1,145 @@
+{
+	"slug": "154-bmw-503-cabriolet",
+	"category": "vergangene-projekte",
+	"title": "BMW 503 Cabriolet, Baujahr 1957",
+	"description": "BMW 503 Cabriolet des Baujahres 1957 (Serie 1).\n\nV8 Aluminiummotor mit 3,2 Liter Hubraum und 140PS Leistung. In vorwiegend manufakturartiger Handbauweis…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/154-bmw-503-cabriolet",
+	"order": 40,
+	"dateModified": "2026-08-06",
+	"year": "1957",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 503 Cabriolet, Baujahr 1957",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 503 Cabriolet, Baujahr 1957 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>BMW 503 Cabriolet des Baujahres 1957 (Serie 1).<br />\n<br />\nV8 Aluminiummotor mit 3,2 Liter Hubraum und 140PS Leistung. In vorwiegend manufakturartiger Handbauweise unter Verwendung von Leichtbaumaterialien wie Aluminium (Karosserie, Motor), wurden in den rund 5 Jahren Bauzeit nur 139 Wagen zum damaligen Preis von über 30.000 DM gebaut.<br />\nDamals wie heute eine automobile Kostbarkeit.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-003.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-004.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-005.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-006.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><br />\nDer Wagen wurde im Kundenauftrag durch uns teilrestauriert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-008.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-009.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-010.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-012.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 12 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-013.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 13 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-014.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 14 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-015.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 15 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-016.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 16 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-017.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 17 der Fahrzeugdokumentation"
+				},
+				{
+					"src": "./image-018.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 18 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-019.jpg",
+					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Aufnahme 19 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"slug": "43-bmw-327-sport-cabriolet-baujahr-1937",
+	"category": "vergangene-projekte",
+	"title": "BMW 327 Sport - Cabriolet, Baujahr 1937",
+	"description": "Hier wieder ein BMW 327 Sportcabriolet von 1938 bei dem wir die komplette Technik überholt haben. Dazu wurde in unserem Motorenbau und in unserer mechan…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/43-bmw-327-sport-cabriolet-baujahr-1937",
+	"order": 109,
+	"dateModified": "2026-08-06",
+	"year": "1937",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1937",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1937 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>Hier wieder ein BMW 327 Sportcabriolet von 1938 bei dem wir die komplette Technik überholt haben. Dazu wurde in unserem Motorenbau und in unserer mechanischen Abteilung auch der gesamte Motor, nebst Anbauteilen neu aufgebaut und die übrige Technik revidiert.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "BMW 327 Sport - Cabriolet, Baujahr 1937 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "BMW 327 Sport - Cabriolet, Baujahr 1937 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

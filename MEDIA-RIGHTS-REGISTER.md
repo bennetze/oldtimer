@@ -1,6 +1,6 @@
 # Medienrechte-Register
 
-**Stand:** 2. August 2026  
+**Stand:** 6. August 2026
 **Rechteinhaber laut Auftraggeber:** DIE OLDTIMERMANUFAKTUR GmbH  
 **Status:** Entwicklungsnachweis; Belege vor Produktionsfreigabe vervollständigen
 
@@ -22,6 +22,7 @@ Fundstelle festgehalten.
 | Zukünftige Aufnahmen des Fotoshootings | Noch nicht erstellt | Finale Personen-, Team-, Werkstatt-, Standort- und Projektbilder | Noch offen | Fotografenvertrag mit ausschließlichen oder ausreichend weiten Nutzungsrechten, Honorar/Rechnung, Rohdateien, Model Releases, Mitarbeitereinwilligungen, Property-/Location-Releases, Fahrzeug-/Kennzeichenfreigaben |
 | `public/favicon.svg`, `.ico`, `apple-touch-icon.png` | Im Projekt erstelltes neutrales OM-Monogramm | Browser-/Gerätesymbol der Entwicklungsvorschau | Originäre einfache Projektgrafik; später zu ersetzen | Datum/Urheber dieser Erstellung und spätere Freigabe des endgültigen Unternehmenszeichens |
 | `src/assets/fonts/jost-variable.ttf` | Jost Project Authors | Lokale Webschrift | SIL Open Font License 1.1 | Lizenzdatei wird unter `public/licenses/Jost-OFL-1.1.txt` mit ausgeliefert |
+| Fahrzeugbilder unter `src/pages/projekte/*/<fahrzeug>/` | Migration der bestehenden Website `oldtimermanufaktur.de`; Quellen je Fahrzeug in `vehicle.json` und `VEHICLE-MIGRATION-AUDIT.json` dokumentiert | Karten, Detailseiten und Open-Graph-Bilder der Projektarchive und Fahrzeugangebote | Auftraggeber bestätigt die Rechte der GmbH zur erneuten Veröffentlichung und Erstellung responsiver Ableitungen | Interne Original-/Urheberzuordnung und vorhandene Freigaben anhand der dokumentierten Quell-URLs ablegen; die im Migrationsaudit ausgewiesene, nur durch korrigierte Dateiendungs-Großschreibung abrufbare Quelle bei der internen Zuordnung berücksichtigen |
 
 ## Mindestunterlagen für das Fotoshooting
 

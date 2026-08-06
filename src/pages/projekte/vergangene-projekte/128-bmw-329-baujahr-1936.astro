@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'vergangene-projekte/128-bmw-329-baujahr-1936');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for vergangene-projekte/128-bmw-329-baujahr-1936.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

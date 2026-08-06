@@ -1,0 +1,37 @@
+{
+	"slug": "50-dkw-sb200",
+	"category": "vergangene-projekte",
+	"title": "DKW SB200",
+	"description": "Diese DKW SB200 wurde bei uns technischerseits restauriert.\n\nDazu wurde unter anderem die damals übliche Kork-Lamellen-Kupplung originalgetreu instand g…",
+	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/50-dkw-sb200",
+	"order": 107,
+	"dateModified": "2026-08-06",
+	"cardImage": "./card.jpg",
+	"cardImageAlt": "DKW SB200",
+	"leadImage": "./image-001.jpg",
+	"leadImageAlt": "DKW SB200 – Fahrzeugdokumentation",
+	"blocks": [
+		{
+			"type": "copy",
+			"html": "<p>Diese DKW SB200 wurde bei uns technischerseits restauriert.<br />\n<br />\nDazu wurde unter anderem die damals übliche Kork-Lamellen-Kupplung originalgetreu instand gesetzt und der Bing-Vergaser überarbeitet.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "DKW SB200 – Aufnahme 1 der Fahrzeugdokumentation"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-002.jpg",
+					"alt": "DKW SB200 – Aufnahme 2 der Fahrzeugdokumentation"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import VehicleDetailPage from '../../../components/VehicleDetailPage.astro';
+
+const vehicle = await getEntry('vehicles', 'fahrzeugangebote/189-emw-340-kombi-baujahr');
+
+if (!vehicle) {
+	throw new Error('Missing vehicle content for fahrzeugangebote/189-emw-340-kombi-baujahr.');
+}
+---
+
+<VehicleDetailPage {vehicle} />

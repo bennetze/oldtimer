@@ -10,14 +10,28 @@ const navigationItems = [
 	{ title: 'Handwerk', href: '/handwerk/', activePath: '/handwerk' },
 	{ title: 'Über uns', href: '/ueber-uns/', activePath: '/ueber-uns' },
 	{ title: 'Projekte', href: '/projekte/', activePath: '/projekte' },
-	{ title: 'Fahrzeugangebote', href: '/oldtimer-kaufen/', activePath: '/oldtimer-kaufen' },
+	{
+		title: 'Fahrzeugangebote',
+		href: '/projekte/fahrzeugangebote/',
+		activePath: '/projekte/fahrzeugangebote',
+	},
 ];
 
 const { theme = 'dark' } = Astro.props;
-const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
+const deploymentBase = basePath === '/' ? '' : basePath.replace(/\/$/, '');
+const currentPath = (
+	deploymentBase && Astro.url.pathname.startsWith(deploymentBase)
+		? Astro.url.pathname.slice(deploymentBase.length)
+		: Astro.url.pathname
+).replace(/\/+$/, '') || '/';
+const activeNavigationPath = currentPath.startsWith('/projekte/fahrzeugangebote')
+	? '/projekte/fahrzeugangebote'
+	: currentPath.startsWith('/projekte')
+		? '/projekte'
+		: currentPath;
 const sitePath = (path) => {
 	if (path === '/') {
 		return basePath;
@@ -73,7 +87,7 @@ const sitePath = (path) => {
 							href={sitePath(item.href)}
 							class="menu-nav__link"
 							style={`--item-index: ${index}`}
-							aria-current={item.activePath === currentPath ? 'page' : undefined}
+							aria-current={item.activePath === activeNavigationPath ? 'page' : undefined}
 						>
 							{item.title}
 						</a>
@@ -92,7 +106,7 @@ const sitePath = (path) => {
 				navigationItems.map((item) => (
 					<a
 						href={sitePath(item.href)}
-						aria-current={item.activePath === currentPath ? 'page' : undefined}
+						aria-current={item.activePath === activeNavigationPath ? 'page' : undefined}
 					>
 						{item.title}
 					</a>
