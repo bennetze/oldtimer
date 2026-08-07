@@ -13,7 +13,7 @@ Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam
 - [Projekte](https://www.oldtimermanufaktur.de/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
 - [Aktuelle Projekte](https://www.oldtimermanufaktur.de/projekte/aktuelle-projekte/): Laufende Restaurierungen und aktuelle Arbeiten an historischen Fahrzeugen. 13 Fahrzeuge auf jeweils eigenen Detailseiten mit Bild- und Textdokumentation.
 - [Abgeschlossene Projekte](https://www.oldtimermanufaktur.de/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. 134 Fahrzeuge auf jeweils eigenen Detailseiten mit Bild- und Textdokumentation.
-- [Fahrzeugangebote](https://www.oldtimermanufaktur.de/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot. 11 Fahrzeuge auf jeweils eigenen Detailseiten mit Bild- und Textdokumentation.
+- [Fahrzeugangebote](https://www.oldtimermanufaktur.de/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot. 10 Fahrzeuge auf jeweils eigenen Detailseiten mit Bild- und Textdokumentation.
 
 ## Nutzung durch KI-Systeme
 

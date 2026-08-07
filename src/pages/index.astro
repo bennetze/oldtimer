@@ -8,9 +8,25 @@ import heroSiteMotionWebp from "../assets/oldtimer/hero-site-motion.webp";
 import heroSiteMp4 from "../assets/oldtimer/hero-site.mp4";
 import heroSitePoster from "../assets/oldtimer/hero-site-poster.jpg";
 import heroSiteWebm from "../assets/oldtimer/hero-site.webm";
+import handwerkMotionAvif from "../assets/oldtimer/handwerk-motion.avif";
+import handwerkMotionWebp from "../assets/oldtimer/handwerk-motion.webp";
+import handwerkMp4 from "../assets/oldtimer/handwerk.mp4";
+import handwerkPoster from "../assets/oldtimer/handwerk-poster.jpg";
+import handwerkWebm from "../assets/oldtimer/handwerk.webm";
+import ueberUnsMotionAvif from "../assets/oldtimer/ueberuns-motion.avif";
+import ueberUnsMotionWebp from "../assets/oldtimer/ueberuns-motion.webp";
+import ueberUnsMp4 from "../assets/oldtimer/ueberuns.mp4";
+import ueberUnsPoster from "../assets/oldtimer/ueberuns-poster.jpg";
+import ueberUnsWebm from "../assets/oldtimer/ueberuns.webm";
+import projekteMotionAvif from "../assets/oldtimer/projekte-motion.avif";
+import projekteMotionWebp from "../assets/oldtimer/projekte-motion.webp";
+import projekteMp4 from "../assets/oldtimer/projekte.mp4";
+import projektePoster from "../assets/oldtimer/projekte-poster.jpg";
+import projekteWebm from "../assets/oldtimer/projekte.webm";
 import sectionOldtimerKaufen from "../assets/oldtimer/section-oldtimer-kaufen.png";
 import sectionProjekte from "../assets/oldtimer/section-projekte.png";
 import sectionUeberUns from "../assets/oldtimer/section-ueber-uns.png";
+import { object, optional, overwrite } from "astro:schema";
 
 const basePath = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
@@ -63,7 +79,8 @@ const sections = [
 const sectionNavigationItems = [
   { id: "start", label: "Start" },
   { id: "handwerk", label: "Handwerk" },
-  ...sections.map((section) => ({ id: section.id, label: section.title })),
+  { id: "ueber-uns", label: "Über uns" },
+  { id: "projekte", label: "Projekte" },
 ];
 ---
 
@@ -80,7 +97,9 @@ const sectionNavigationItems = [
         id="start"
         aria-labelledby="hero-title"
         data-hero
+        data-motion-panel
       >
+        >
         <video
           class="media-panel__image"
           autoplay
@@ -91,7 +110,7 @@ const sectionNavigationItems = [
           preload="auto"
           poster={heroSitePoster.src}
           disablepictureinpicture
-          data-hero-video
+          data-motion-video
           aria-hidden="true"
         >
           <source src={heroSiteMp4} type="video/mp4" />
@@ -103,24 +122,24 @@ const sectionNavigationItems = [
         <picture
           class="media-panel__image media-panel__image--motion-fallback"
           aria-hidden="true"
-          data-hero-motion-fallback
+          data-motion-fallback
         >
           <img
             alt=""
             decoding="async"
             fetchpriority="high"
             src={heroSitePoster.src}
-            data-hero-poster={heroSitePoster.src}
-            data-hero-motion-avif={heroSiteMotionAvif.src}
-            data-hero-motion-webp={heroSiteMotionWebp.src}
-            data-hero-motion-image
+            data-motion-poster={heroSitePoster.src}
+            data-motion-avif={heroSiteMotionAvif.src}
+            data-motion-webp={heroSiteMotionWebp.src}
+            data-motion-image
           />
         </picture>
         <div class="media-panel__shade"></div>
         <button
           class="hero-motion-toggle"
           type="button"
-          data-hero-motion-toggle
+          data-motion-toggle
           aria-label="Animation pausieren"
         >
           <span aria-hidden="true"></span>
@@ -129,8 +148,9 @@ const sectionNavigationItems = [
           <h1 id="hero-title">
             Wir bewahren <span class="hero-title__word"
               >Geschichte<span class="hero-title__letter" data-hero-title-letter
-                ><span class="hero-title__letter-glyph" data-hero-title-letter-glyph
-                  >N</span
+                ><span
+                  class="hero-title__letter-glyph"
+                  data-hero-title-letter-glyph>N</span
                 ></span
               ></span
             >
@@ -150,13 +170,43 @@ const sectionNavigationItems = [
         class="media-panel craft"
         id="handwerk"
         aria-labelledby="craft-title"
+        data-motion-panel
       >
-        <img
+        <video
           class="media-panel__image"
-          src={craftHands.src}
-          alt="KI-generierter Platzhalter für eine geplante Aufnahme handwerklicher Arbeit an einem Oldtimer"
-          loading="lazy"
-        />
+          autoplay
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          preload="auto"
+          poster={handwerkPoster.src}
+          disablepictureinpicture
+          data-motion-video
+          aria-hidden="true"
+        >
+          <source src={handwerkMp4} type="video/mp4" />
+          <source
+            src={handwerkWebm}
+            type='video/webm; codecs="av01.0.08M.08"'
+          />
+        </video>
+        <picture
+          class="media-panel__image media-panel__image--motion-fallback"
+          aria-hidden="true"
+          data-motion-fallback
+        >
+          <img
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+            src={handwerkPoster.src}
+            data-motion-poster={handwerkPoster.src}
+            data-motion-avif={handwerkMotionAvif.src}
+            data-motion-webp={handwerkMotionWebp.src}
+            data-motion-image
+          />
+        </picture>
         <div class="media-panel__shade media-panel__shade--craft"></div>
         <button
           class="scroll-cue scroll-cue--up section-up-cue"
@@ -184,57 +234,135 @@ const sectionNavigationItems = [
         </div>
       </section>
 
-      {
-        sections.map((section) => (
-          <section
-            class="media-panel editorial-panel"
-            id={section.id}
-            aria-labelledby={`${section.id}-title`}
-          >
-            <img
-              class="media-panel__image"
-              src={section.image.src}
-              alt={`KI-generierter Platzhalter: ${section.alt}`}
-              loading="lazy"
-            />
-            <div class="media-panel__shade media-panel__shade--editorial" />
+      <section
+        class="media-panel editorial-panel"
+        id="ueber-uns"
+        data-motion-panel
+      >
+        <video
+          class="media-panel__image"
+          autoplay
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          preload="auto"
+          poster={ueberUnsPoster.src}
+          disablepictureinpicture
+          data-motion-video
+          aria-hidden="true"
+        >
+          <source src={ueberUnsMp4} type="video/mp4" />
+          <source src={ueberUnsWebm} type="video/webm" />
+        </video>
+
+        <picture
+          class="media-panel__image media-panel__image--motion-fallback"
+          aria-hidden="true"
+          data-motion-fallback
+        >
+          <img
+            alt=""
+            decoding="async"
+            src={ueberUnsPoster.src}
+            data-motion-poster={ueberUnsPoster.src}
+            data-motion-avif={ueberUnsMotionAvif.src}
+            data-motion-webp={ueberUnsMotionWebp.src}
+            data-motion-image
+          />
+        </picture>
+
+        <div class="media-panel__shade media-panel__shade--craft"></div>
+        <button
+          class="scroll-cue scroll-cue--up section-up-cue"
+          type="button"
+          data-scroll-target="#start"
+          aria-label="Zum Start scrollen"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="media-panel__content media-panel__content--craft">
+          <h2 id="craft-title">Über uns</h2>
+          <a class="section-cta" href={sitePath("/ueber-uns/")}>
+            Mehr erfahren
+          </a>
+          <div class="scroll-cues" aria-label="Abschnitt wechseln">
             <button
-              class="scroll-cue scroll-cue--up section-up-cue"
+              class="scroll-cue"
               type="button"
-              data-scroll-target={section.previous}
-              aria-label={`Vor ${section.title} scrollen`}
+              data-scroll-target="#projekte"
+              aria-label="Zu Projekten scrollen"
             >
-              <span aria-hidden="true" />
+              <span aria-hidden="true"></span>
             </button>
-            <div class="media-panel__content media-panel__content--editorial">
-              <h2 id={`${section.id}-title`}>{section.title}</h2>
-              <a class="section-cta" href={sitePath(section.href)}>
-                Mehr erfahren
-              </a>
-              <div class="scroll-cues" aria-label="Abschnitt wechseln">
-                {section.next ? (
-                  <button
-                    class="scroll-cue"
-                    type="button"
-                    data-scroll-target={section.next}
-                    aria-label={`${section.title} verlassen`}
-                  >
-                    <span aria-hidden="true" />
-                  </button>
-                ) : (
-                  <a
-                    class="scroll-cue"
-                    href="#site-footer"
-                    aria-label="Zum Footer scrollen"
-                  >
-                    <span aria-hidden="true" />
-                  </a>
-                )}
-              </div>
-            </div>
-          </section>
-        ))
-      }
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="media-panel editorial-panel"
+        id="projekte"
+        data-motion-panel
+      >
+        <video
+          class="media-panel__image"
+          autoplay
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          preload="auto"
+          poster={projektePoster.src}
+          disablepictureinpicture
+          data-motion-video
+          aria-hidden="true"
+        >
+          <source src={projekteMp4} type="video/mp4" />
+          <source src={projekteWebm} type="video/webm" />
+        </video>
+
+        <picture
+          class="media-panel__image media-panel__image--motion-fallback"
+          aria-hidden="true"
+          data-motion-fallback
+        >
+          <img
+            alt=""
+            decoding="async"
+            src={projektePoster.src}
+            data-motion-poster={projektePoster.src}
+            data-motion-avif={projekteMotionAvif.src}
+            data-motion-webp={projekteWebm.src}
+            data-motion-image
+          />
+        </picture>
+
+        <div class="media-panel__shade media-panel__shade--craft"></div>
+        <button
+          class="scroll-cue scroll-cue--up section-up-cue"
+          type="button"
+          data-scroll-target="#start"
+          aria-label="Zum Start scrollen"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="media-panel__content media-panel__content--craft">
+          <h2 id="craft-title">Projekte</h2>
+          <a class="section-cta" href={sitePath("/projekte/")}>
+            Mehr erfahren
+          </a>
+          <div class="scroll-cues" aria-label="Abschnitt wechseln">
+            <button
+              class="scroll-cue"
+              type="button"
+              data-scroll-target="#site-footer"
+              aria-label="Zum Footer scrollen"
+            >
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script is:inline>
@@ -255,14 +383,10 @@ const sectionNavigationItems = [
       const heroTitleLetterGlyph = document.querySelector(
         "[data-hero-title-letter-glyph]",
       );
-      let heroAutoplayBlocked = false;
-      let heroInViewport = true;
-      let heroFallbackActive = false;
-      let heroFallbackTimer;
       let heroTitleCycleAnimation;
       let heroTitleCycleStarted = false;
       let heroTitleResizeFrame;
-      let heroUserPaused = window.matchMedia(
+      const prefersReducedMotion = window.matchMedia(
         "(prefers-reduced-motion: reduce)",
       ).matches;
 
@@ -305,7 +429,10 @@ const sectionNavigationItems = [
             verticalAlign: "baseline",
           });
 
-          if (heroUserPaused || typeof heroTitleLetter.animate !== "function") {
+          if (
+            prefersReducedMotion ||
+            typeof heroTitleLetter.animate !== "function"
+          ) {
             Object.assign(heroTitleLetter.style, {
               filter: "blur(0)",
               opacity: "1",
@@ -360,7 +487,7 @@ const sectionNavigationItems = [
         });
       };
 
-      if (heroTitleLetter instanceof HTMLElement && !heroUserPaused) {
+      if (heroTitleLetter instanceof HTMLElement && !prefersReducedMotion) {
         heroTitleLetter.classList.remove("is-cycling", "is-revealing");
         Object.assign(heroTitleLetter.style, {
           clipPath: "none",
@@ -395,234 +522,264 @@ const sectionNavigationItems = [
         { passive: true },
       );
 
-      const setHeroToggleState = (isPaused) => {
-        if (!(heroMotionToggle instanceof HTMLButtonElement)) {
+      const setMotionToggleState = (toggle, isPaused) => {
+        if (!(toggle instanceof HTMLButtonElement)) {
           return;
         }
 
-        heroMotionToggle.classList.toggle("is-paused", isPaused);
-        heroMotionToggle.setAttribute(
+        toggle.classList.toggle("is-paused", isPaused);
+        toggle.setAttribute(
           "aria-label",
           isPaused ? "Animation abspielen" : "Animation pausieren",
         );
       };
 
-      const ensureHeroMotionFallback = () => {
-        if (
-          !(heroMotionFallback instanceof HTMLPictureElement) ||
-          !(heroMotionImage instanceof HTMLImageElement) ||
-          heroMotionImage.dataset.motionReady === "true"
-        ) {
+      const initMotionPanel = (panel) => {
+        if (!(panel instanceof HTMLElement)) {
           return;
         }
 
-        const avifSource = document.createElement("source");
-        avifSource.type = "image/avif";
-        avifSource.srcset = heroMotionImage.dataset.heroMotionAvif ?? "";
-        avifSource.dataset.heroGeneratedSource = "true";
-        heroMotionFallback.prepend(avifSource);
+        const video = panel.querySelector("[data-motion-video]");
+        const motionFallback = panel.querySelector("[data-motion-fallback]");
+        const motionImage = panel.querySelector("[data-motion-image]");
+        const motionToggle = panel.querySelector("[data-motion-toggle]");
 
-        if (heroMotionImage.dataset.heroMotionWebp) {
-          heroMotionImage.src = heroMotionImage.dataset.heroMotionWebp;
-        }
-        heroMotionImage.dataset.motionReady = "true";
-      };
-
-      const pauseHeroMotionFallback = () => {
-        if (
-          !(heroMotionFallback instanceof HTMLPictureElement) ||
-          !(heroMotionImage instanceof HTMLImageElement)
-        ) {
+        if (!(video instanceof HTMLVideoElement)) {
           return;
         }
 
-        heroMotionFallback
-          .querySelectorAll("[data-hero-generated-source]")
-          .forEach((source) => source.remove());
-        if (heroMotionImage.dataset.heroPoster) {
-          heroMotionImage.src = heroMotionImage.dataset.heroPoster;
-        }
-        delete heroMotionImage.dataset.motionReady;
-      };
+        let autoplayBlocked = false;
+        let inViewport = false;
+        let fallbackActive = false;
+        let fallbackTimer;
+        let userPaused = prefersReducedMotion;
 
-      const useHeroMotionFallback = ({ animate = true } = {}) => {
-        if (
-          !(hero instanceof HTMLElement) ||
-          !(heroMotionFallback instanceof HTMLElement) ||
-          !(heroMotionImage instanceof HTMLImageElement)
-        ) {
-          return false;
-        }
-
-        if (animate) {
-          ensureHeroMotionFallback();
-        } else {
-          pauseHeroMotionFallback();
-        }
-        heroFallbackActive = true;
-        hero.classList.add("hero--use-motion-fallback");
-        hero.classList.remove("hero--video-ready");
-
-        return true;
-      };
-
-      const markHeroVideoReady = () => {
-        if (
-          !(hero instanceof HTMLElement) ||
-          !(heroVideo instanceof HTMLVideoElement)
-        ) {
-          return;
-        }
-
-        window.clearTimeout(heroFallbackTimer);
-        heroFallbackActive = false;
-        heroAutoplayBlocked = false;
-        hero.classList.add("hero--video-ready");
-        hero.classList.remove("hero--use-motion-fallback");
-        setHeroToggleState(false);
-      };
-
-      const prepareHeroVideo = () => {
-        if (!(heroVideo instanceof HTMLVideoElement)) {
-          return false;
-        }
-
-        heroVideo.muted = true;
-        heroVideo.defaultMuted = true;
-        heroVideo.autoplay = true;
-        heroVideo.loop = true;
-        heroVideo.playsInline = true;
-        heroVideo.volume = 0;
-        heroVideo.controls = false;
-        heroVideo.setAttribute("muted", "");
-        heroVideo.setAttribute("autoplay", "");
-        heroVideo.setAttribute("loop", "");
-        heroVideo.setAttribute("playsinline", "");
-        heroVideo.setAttribute("webkit-playsinline", "");
-
-        return true;
-      };
-
-      const playHeroVideo = ({ userGesture = false } = {}) => {
-        if (
-          heroUserPaused ||
-          document.hidden ||
-          !heroInViewport ||
-          (heroAutoplayBlocked && !userGesture)
-        ) {
-          return;
-        }
-
-        if (!prepareHeroVideo()) {
-          return;
-        }
-
-        heroVideo
-          .play()
-          .catch(() => {
-            heroAutoplayBlocked = true;
-            useHeroMotionFallback();
-            setHeroToggleState(false);
-          });
-      };
-
-      const pauseHeroMotion = () => {
-        heroUserPaused = true;
-        window.clearTimeout(heroFallbackTimer);
-        if (heroVideo instanceof HTMLVideoElement) {
-          heroVideo.pause();
-        }
-        if (heroFallbackActive) {
-          useHeroMotionFallback({ animate: false });
-        }
-        setHeroToggleState(true);
-      };
-
-      const resumeHeroMotion = () => {
-        heroUserPaused = false;
-        setHeroToggleState(false);
-        if (heroFallbackActive && heroAutoplayBlocked) {
-          useHeroMotionFallback();
-        }
-        playHeroVideo({ userGesture: true });
-      };
-
-      const scheduleHeroFallback = () => {
-        if (heroUserPaused || document.hidden || !heroInViewport) {
-          return;
-        }
-
-        window.clearTimeout(heroFallbackTimer);
-        heroFallbackTimer = window.setTimeout(() => {
+        const ensureMotionFallback = () => {
           if (
-            heroVideo instanceof HTMLVideoElement &&
-            (heroVideo.paused || heroVideo.readyState < HTMLMediaElement.HAVE_FUTURE_DATA)
+            !(motionFallback instanceof HTMLPictureElement) ||
+            !(motionImage instanceof HTMLImageElement) ||
+            motionImage.dataset.motionReady === "true"
           ) {
-            useHeroMotionFallback();
+            return;
           }
-        }, 900);
-      };
 
-      if (heroVideo instanceof HTMLVideoElement) {
-        heroVideo.addEventListener("playing", markHeroVideoReady);
-        heroVideo.addEventListener("waiting", scheduleHeroFallback);
-        heroVideo.addEventListener("stalled", scheduleHeroFallback);
-        heroVideo.addEventListener("error", () => {
-          heroAutoplayBlocked = true;
-          useHeroMotionFallback();
+          const avifSrc = motionImage.dataset.motionAvif;
+
+          if (avifSrc) {
+            const avifSource = document.createElement("source");
+            avifSource.type = "image/avif";
+            avifSource.srcset = avifSrc;
+            avifSource.dataset.motionGeneratedSource = "true";
+            motionFallback.prepend(avifSource);
+          }
+
+          const webpSrc = motionImage.dataset.motionWebp;
+
+          if (webpSrc) {
+            motionImage.src = webpSrc;
+          }
+
+          motionImage.dataset.motionReady = "true";
+        };
+
+        const pauseMotionFallback = () => {
+          if (
+            !(motionFallback instanceof HTMLPictureElement) ||
+            !(motionImage instanceof HTMLImageElement)
+          ) {
+            return;
+          }
+
+          motionFallback
+            .querySelectorAll("[data-motion-generated-source]")
+            .forEach((source) => source.remove());
+
+          const posterSrc = motionImage.dataset.motionPoster;
+
+          if (posterSrc) {
+            motionImage.src = posterSrc;
+          }
+
+          delete motionImage.dataset.motionReady;
+        };
+
+        const useMotionFallback = ({ animate = true } = {}) => {
+          if (
+            !(motionFallback instanceof HTMLElement) ||
+            !(motionImage instanceof HTMLImageElement)
+          ) {
+            return false;
+          }
+
+          if (animate) {
+            ensureMotionFallback();
+          } else {
+            pauseMotionFallback();
+          }
+
+          fallbackActive = true;
+
+          panel.classList.add("is-motion-fallback");
+          panel.classList.remove("is-video-ready");
+
+          return true;
+        };
+
+        const markVideoReady = () => {
+          window.clearTimeout(fallbackTimer);
+
+          fallbackActive = false;
+          autoplayBlocked = false;
+
+          panel.classList.add("is-video-ready");
+          panel.classList.remove("is-motion-fallback");
+
+          setMotionToggleState(motionToggle, false);
+        };
+
+        const prepareVideo = () => {
+          video.muted = true;
+          video.defaultMuted = true;
+          video.autoplay = true;
+          video.loop = true;
+          video.playsInline = true;
+          video.volume = 0;
+          video.controls = false;
+
+          video.setAttribute("muted", "");
+          video.setAttribute("autoplay", "");
+          video.setAttribute("loop", "");
+          video.setAttribute("playsinline", "");
+          video.setAttribute("webkit-playsinline", "");
+        };
+
+        const playVideo = ({ userGesture = false } = {}) => {
+          if (
+            userPaused ||
+            document.hidden ||
+            !inViewport ||
+            (autoplayBlocked && !userGesture)
+          ) {
+            return;
+          }
+
+          prepareVideo();
+
+          video.play().catch(() => {
+            autoplayBlocked = true;
+            useMotionFallback();
+            setMotionToggleState(motionToggle, false);
+          });
+        };
+
+        const pauseMotion = () => {
+          userPaused = true;
+
+          window.clearTimeout(fallbackTimer);
+          video.pause();
+
+          if (fallbackActive) {
+            useMotionFallback({ animate: false });
+          }
+
+          setMotionToggleState(motionToggle, true);
+        };
+
+        const resumeMotion = () => {
+          userPaused = false;
+
+          setMotionToggleState(motionToggle, false);
+
+          if (fallbackActive && autoplayBlocked) {
+            useMotionFallback();
+          }
+
+          playVideo({ userGesture: true });
+        };
+
+        const scheduleFallback = () => {
+          if (userPaused || document.hidden || !inViewport) {
+            return;
+          }
+
+          window.clearTimeout(fallbackTimer);
+
+          fallbackTimer = window.setTimeout(() => {
+            if (
+              video.paused ||
+              video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA
+            ) {
+              useMotionFallback();
+            }
+          }, 900);
+        };
+
+        video.addEventListener("playing", markVideoReady);
+        video.addEventListener("waiting", scheduleFallback);
+        video.addEventListener("stalled", scheduleFallback);
+
+        video.addEventListener("error", () => {
+          autoplayBlocked = true;
+          useMotionFallback();
         });
 
-        if (document.readyState === "loading") {
-          document.addEventListener("DOMContentLoaded", playHeroVideo, {
-            once: true,
-          });
+        motionToggle?.addEventListener("click", () => {
+          if (userPaused) {
+            resumeMotion();
+          } else {
+            pauseMotion();
+          }
+        });
+
+        setMotionToggleState(motionToggle, userPaused);
+
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            ([entry]) => {
+              inViewport = Boolean(entry?.isIntersecting);
+
+              if (!inViewport) {
+                video.pause();
+                return;
+              }
+
+              playVideo();
+            },
+            {
+              threshold: 0.12,
+            },
+          );
+
+          observer.observe(panel);
         } else {
-          playHeroVideo();
+          inViewport = true;
+          playVideo();
         }
 
-        window.addEventListener("pageshow", playHeroVideo);
         document.addEventListener("visibilitychange", () => {
           if (document.hidden) {
-            heroVideo.pause();
-          } else {
-            playHeroVideo();
+            video.pause();
+            return;
           }
+
+          playVideo();
         });
+
+        window.addEventListener("pageshow", playVideo);
+
         ["pointerdown", "keydown", "touchstart"].forEach((eventName) => {
           window.addEventListener(
             eventName,
-            () => playHeroVideo({ userGesture: true }),
+            () => playVideo({ userGesture: true }),
             {
               once: true,
               passive: true,
             },
           );
         });
-      }
+      };
 
-      if (hero instanceof HTMLElement && "IntersectionObserver" in window) {
-        const heroObserver = new IntersectionObserver(
-          ([entry]) => {
-            heroInViewport = Boolean(entry?.isIntersecting);
-            if (!heroInViewport && heroVideo instanceof HTMLVideoElement) {
-              heroVideo.pause();
-              return;
-            }
-            playHeroVideo();
-          },
-          { threshold: 0.12 },
-        );
-        heroObserver.observe(hero);
-      }
-
-      heroMotionToggle?.addEventListener("click", () => {
-        if (heroUserPaused) {
-          resumeHeroMotion();
-        } else {
-          pauseHeroMotion();
-        }
-      });
-      setHeroToggleState(heroUserPaused);
+      document.querySelectorAll("[data-motion-panel]").forEach(initMotionPanel);
     </script>
   </SiteChrome>
 </Layout>
@@ -703,7 +860,7 @@ const sectionNavigationItems = [
     object-fit: cover;
   }
 
-  .hero video.media-panel__image {
+  [data-motion-panel] video.media-panel__image {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -712,12 +869,12 @@ const sectionNavigationItems = [
       visibility 220ms ease;
   }
 
-  .hero--video-ready video.media-panel__image {
+  [data-motion-panel].is-video-ready video.media-panel__image {
     visibility: visible;
     opacity: 1;
   }
 
-  .hero--video-ready .media-panel__image--motion-fallback {
+  [data-motion-panel].is-video-ready .media-panel__image--motion-fallback {
     visibility: hidden;
     opacity: 0;
   }
