@@ -321,15 +321,16 @@ const vehicleJsonLd = {
 	.story-copy {
 		width: min(100%, 49rem);
 		margin: 0 auto clamp(4rem, 7vw, 7rem);
+		font-size: clamp(1.25rem, 1.75vw, 1.7rem);
+		font-weight: 370;
+		line-height: 1.65;
+		text-align: center;
 	}
 
 	.story-copy :global(p),
 	.story-copy :global(blockquote) {
 		margin: 0;
-		font-size: clamp(1.12rem, 1.55vw, 1.52rem);
-		font-weight: 370;
-		line-height: 1.65;
-		text-align: center;
+		font: inherit;
 	}
 
 	.story-copy :global(h2),
@@ -422,13 +423,14 @@ const vehicleJsonLd = {
 		padding: clamp(2rem, 4vw, 4rem);
 		border-top: 1px solid rgba(17, 17, 17, 0.32);
 		border-bottom: 1px solid rgba(17, 17, 17, 0.32);
+		font-size: clamp(1.12rem, 1.5vw, 1.45rem);
+		line-height: 1.65;
+		text-align: center;
 	}
 
 	.story-contact :global(p) {
 		margin: 0;
-		font-size: clamp(1rem, 1.35vw, 1.3rem);
-		line-height: 1.65;
-		text-align: center;
+		font: inherit;
 	}
 
 	.story-contact__actions {

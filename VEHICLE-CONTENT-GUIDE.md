@@ -22,6 +22,11 @@ werden; lediglich die Kennung in `getEntry()` wird angepasst. `vehicle.json` ent
 die Sortierung und alle Inhaltsblöcke. Sämtliche referenzierten Bilder müssen direkt
 im gleich benannten Ordner liegen.
 
+`order` ist eine innerhalb der Kategorie einmalige ganze Zahl. Kleinere Werte werden
+im Archiv früher angezeigt. Bestehende Fahrzeuge verwenden positive fortlaufende
+Werte; neue Fahrzeuge können für eine automatische Position am Anfang negative und
+für eine automatische Position am Ende große positive Werte verwenden.
+
 Für andere Archive gilt dieselbe Struktur unter `vergangene-projekte` oder
 `fahrzeugangebote`. Ein Fahrzeug wird entfernt, indem seine `.astro`-Datei und sein
 gleich benannter Ordner gemeinsam entfernt werden.

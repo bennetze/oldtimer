@@ -15,7 +15,7 @@ const vehicles = defineCollection({
 			title: z.string().min(1),
 			description: z.string().min(1),
 			sourceUrl: z.string().url(),
-			order: z.number().int().positive(),
+			order: z.number().int(),
 			dateModified: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
 			year: z.string().regex(/^\d{4}$/).optional(),
 			cardImage: z.string().regex(/^\.\/[A-Za-z0-9._-]+$/),

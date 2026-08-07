@@ -6,6 +6,7 @@ const root = process.cwd();
 const pagesRoot = join(root, 'src/pages/projekte');
 const productionOrigin = 'https://www.oldtimermanufaktur.de';
 const today = new Date().toISOString().slice(0, 10);
+const vehicleTemplateLastModified = '2026-08-07';
 
 const categories = [
 	{
@@ -59,7 +60,10 @@ for (let page = 2; page <= pastPages; page += 1) {
 
 const sitemapItems = [
 	...staticPages,
-	...vehicles.map((vehicle) => [vehicle.route, vehicle.dateModified || today]),
+	...vehicles.map((vehicle) => [
+		vehicle.route,
+		[vehicle.dateModified, vehicleTemplateLastModified].filter(Boolean).sort().at(-1) || today,
+	]),
 ].map(
 	([path, lastmod]) =>
 		`\t<url>\n\t\t<loc>${escapeXml(`${productionOrigin}${path}`)}</loc>\n\t\t<lastmod>${escapeXml(lastmod)}</lastmod>\n\t</url>`,
@@ -68,7 +72,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://w
 
 const categoryLines = categories.map((category, index) => {
 	const count = groups[index].length;
-	return `- [${category.label}](${productionOrigin}/projekte/${category.key}/): ${category.description} ${count} Fahrzeug${count === 1 ? '' : 'e'} mit jeweils eigener Bild- und Textdokumentation.`;
+	return `- [${category.label}](${productionOrigin}/projekte/${category.key}/): ${category.description} ${count} Fahrzeug${count === 1 ? '' : 'e'} auf jeweils eigenen Detailseiten mit Bild- und Textdokumentation.`;
 });
 const llms = `# Die Oldtimermanufaktur
 
