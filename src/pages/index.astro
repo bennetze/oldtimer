@@ -31,6 +31,7 @@ import { object, optional, overwrite } from "astro:schema";
 const basePath = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
+const includeWebpMotionFallback = import.meta.env.BASE_URL === "/";
 const sitePath = (path) => {
   if (path === "/") {
     return basePath;
@@ -130,7 +131,7 @@ const sectionNavigationItems = [
             src={heroSitePoster.src}
             data-motion-poster={heroSitePoster.src}
             data-motion-avif={heroSiteMotionAvif.src}
-            data-motion-webp={heroSiteMotionWebp.src}
+            data-motion-webp={includeWebpMotionFallback ? heroSiteMotionWebp.src : undefined}
             data-motion-image
           />
         </picture>
@@ -202,7 +203,7 @@ const sectionNavigationItems = [
             src={handwerkPoster.src}
             data-motion-poster={handwerkPoster.src}
             data-motion-avif={handwerkMotionAvif.src}
-            data-motion-webp={handwerkMotionWebp.src}
+            data-motion-webp={includeWebpMotionFallback ? handwerkMotionWebp.src : undefined}
             data-motion-image
           />
         </picture>
@@ -266,7 +267,7 @@ const sectionNavigationItems = [
             src={ueberUnsPoster.src}
             data-motion-poster={ueberUnsPoster.src}
             data-motion-avif={ueberUnsMotionAvif.src}
-            data-motion-webp={ueberUnsMotionWebp.src}
+            data-motion-webp={includeWebpMotionFallback ? ueberUnsMotionWebp.src : undefined}
             data-motion-image
           />
         </picture>
@@ -331,7 +332,7 @@ const sectionNavigationItems = [
             src={projektePoster.src}
             data-motion-poster={projektePoster.src}
             data-motion-avif={projekteMotionAvif.src}
-            data-motion-webp={projekteMotionWebp.src}
+            data-motion-webp={includeWebpMotionFallback ? projekteMotionWebp.src : undefined}
             data-motion-image
           />
         </picture>
