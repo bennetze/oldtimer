@@ -12,7 +12,7 @@
     "test:vehicle-discovery": "node scripts/test-vehicle-discovery.mjs",
     "vehicles:import": "node scripts/import-legacy-vehicles.mjs",
     "build": "npm run vehicles:sync && node scripts/generate-vehicle-gallery.mjs production && astro build && node scripts/prepare-crawler-files.mjs production && node scripts/verify-vehicle-build.mjs production",
-    "build:pages": "npm run vehicles:sync && node scripts/generate-vehicle-gallery.mjs production && DEPLOY_TARGET=github-pages astro build && node scripts/generate-vehicle-gallery.mjs github-pages dist && node scripts/prepare-crawler-files.mjs github-pages && node scripts/verify-vehicle-build.mjs github-pages && node scripts/verify-pages-artifact.mjs",
+    "build:pages": "npm run vehicles:sync && node scripts/generate-vehicle-gallery.mjs production && DEPLOY_TARGET=github-pages astro build && node scripts/prune-pages-motion-fallbacks.mjs && node scripts/generate-vehicle-gallery.mjs github-pages dist && node scripts/prepare-crawler-files.mjs github-pages && node scripts/verify-vehicle-build.mjs github-pages && node scripts/verify-pages-artifact.mjs",
     "predeploy": "npm run build:pages",
     "deploy": "gh-pages -d dist -b gh-pages --nojekyll -m \"Deploy website\"",
     "preview": "astro preview",
