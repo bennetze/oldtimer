@@ -2,18 +2,25 @@
 
 > Die Oldtimermanufaktur GmbH in Kaltennordheim-Fischbach restauriert und bewahrt historische Automobile mit handwerklicher Sorgfalt und Respekt vor ihrer Geschichte.
 
-Die Website ist deutschsprachig. Der aktuelle Stand ist eine Entwicklungsvorschau für die vollständig neu entwickelte Website. Ein Teil der Bildmotive sind ausdrücklich gekennzeichnete KI-generierte Platzhalter. Diese zeigen nicht die tatsächlichen Personen, Fahrzeuge oder Betriebsräume und werden vor der Produktionsfreigabe durch freigegebene echte Aufnahmen ersetzt.
+Die Marketing- und Projektarchivseiten sind auf Deutsch und Englisch verfügbar. Fahrzeugdokumentationen sowie Impressum und Datenschutzerklärung bleiben deutschsprachig. Der aktuelle Stand ist eine Entwicklungsvorschau für die vollständig neu entwickelte Website. Ein Teil der Bildmotive sind ausdrücklich gekennzeichnete KI-generierte Platzhalter. Diese zeigen nicht die tatsächlichen Personen, Fahrzeuge oder Betriebsräume und werden vor der Produktionsfreigabe durch freigegebene echte Aufnahmen ersetzt.
 Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam mit Anton Schrank in die nächste Generation geführt.
 
 ## Hauptseiten
 
-- [Startseite](https://www.oldtimermanufaktur.de/): „Wir bewahren Geschichte“ / „Wir bewahren Geschichten“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
-- [Handwerk](https://www.oldtimermanufaktur.de/handwerk/): Dunkel gestalteter, vorläufiger Überblick über Karosserie, Polsterei, Lackiererei und Motorbau.
-- [Über uns](https://www.oldtimermanufaktur.de/ueber-uns/): Vorstellung von Mario Schrank, Anton Schrank, Team und Kontakt.
+- [Startseite](https://www.oldtimermanufaktur.de/): „Wir bewahren Geschichte(n)“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
+- [Handwerk](https://www.oldtimermanufaktur.de/handwerk/): Karosserie, Polsterei, Lackiererei und Motorbau – alles aus einer Hand.
+- [Über uns](https://www.oldtimermanufaktur.de/ueber-uns/): Mario Schrank, Anton Schrank, Meisterqualifikationen, Team, Kontakt und Standortkarte.
 - [Projekte](https://www.oldtimermanufaktur.de/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
 - [Aktuelle Projekte](https://www.oldtimermanufaktur.de/projekte/aktuelle-projekte/): Laufende Restaurierungen und aktuelle Arbeiten an historischen Fahrzeugen. 13 Fahrzeuge auf jeweils eigenen Detailseiten mit Bild- und Textdokumentation.
 - [Abgeschlossene Projekte](https://www.oldtimermanufaktur.de/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. 134 Fahrzeuge auf jeweils eigenen Detailseiten mit Bild- und Textdokumentation.
 - [Fahrzeugangebote](https://www.oldtimermanufaktur.de/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot. 10 Fahrzeuge auf jeweils eigenen Detailseiten mit Bild- und Textdokumentation.
+
+## English pages
+
+- [Home](https://www.oldtimermanufaktur.de/en/): “We preserve history — and stories” with an overview of craft, company, projects and vehicles for sale.
+- [Craft](https://www.oldtimermanufaktur.de/en/handwerk/): Bodywork, upholstery, paintwork and engine building from a single source.
+- [About us](https://www.oldtimermanufaktur.de/en/ueber-uns/): Mario Schrank, Anton Schrank, qualifications, team, contact details and location map.
+- [Projects](https://www.oldtimermanufaktur.de/en/projekte/): English entry point and archives; individual vehicle documentation is linked in German.
 
 ## Nutzung durch KI-Systeme
 

@@ -1,6 +1,14 @@
 ---
 import type { ImageMetadata } from 'astro';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
+import {
+	isTranslatedRoute,
+	languageStorageKey,
+	localeData,
+	localizedRoute,
+	normalizeRoute,
+	type Locale,
+} from '../config/i18n';
 import { siteStatus } from '../config/site';
 
 interface Props {
@@ -15,6 +23,8 @@ interface Props {
 	additionalJsonLd?: Record<string, unknown> | Record<string, unknown>[];
 	mainEntityId?: string;
 	breadcrumbs?: Array<{ name: string; path: string }>;
+	locale?: Locale;
+	enableLanguageRedirect?: boolean;
 }
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
@@ -32,13 +42,48 @@ const {
 	additionalJsonLd = [],
 	mainEntityId,
 	breadcrumbs,
+	locale = 'de',
+	enableLanguageRedirect = true,
 } = Astro.props;
+const language = localeData[locale];
 const pageTitle = title ? `${title} | Die Oldtimermanufaktur` : 'Die Oldtimermanufaktur';
 const isGitHubPagesPreview = siteStatus.developmentPreview && basePath !== '/';
 const effectiveNoindex = noindex || isGitHubPagesPreview;
 const siteUrl = Astro.site ?? Astro.url;
 const siteRootUrl = new URL(basePath, siteUrl);
 const pageUrl = new URL(Astro.url.pathname, siteUrl);
+const deploymentBase = basePath === '/' ? '' : basePath.replace(/\/$/, '');
+const routePath = normalizeRoute(
+	deploymentBase && Astro.url.pathname.startsWith(deploymentBase)
+		? Astro.url.pathname.slice(deploymentBase.length)
+		: Astro.url.pathname,
+);
+const translatedRoute = isTranslatedRoute(routePath);
+const withBasePath = (path: string) =>
+	path === '/' ? basePath : `${basePath}${path.replace(/^\//, '')}`;
+const germanAlternateUrl = translatedRoute
+	? new URL(withBasePath(localizedRoute(routePath, 'de')), siteUrl)
+	: undefined;
+const englishAlternateUrl = translatedRoute
+	? new URL(withBasePath(localizedRoute(routePath, 'en')), siteUrl)
+	: undefined;
+const languageRedirectTarget = locale === 'de' ? englishAlternateUrl : germanAlternateUrl;
+const languageBootstrap = `(() => {
+	const currentLocale = ${JSON.stringify(locale)};
+	const redirectEnabled = ${JSON.stringify(enableLanguageRedirect && translatedRoute)};
+	const alternateUrl = ${JSON.stringify(languageRedirectTarget?.pathname ?? '')};
+	let preferredLocale;
+	try {
+		const storedLocale = window.localStorage.getItem(${JSON.stringify(languageStorageKey)});
+		if (storedLocale === 'de' || storedLocale === 'en') preferredLocale = storedLocale;
+	} catch {}
+	if (!preferredLocale) {
+		preferredLocale = (navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en';
+	}
+	if (redirectEnabled && preferredLocale !== currentLocale && alternateUrl) {
+		window.location.replace(alternateUrl);
+	}
+})();`;
 const openGraphImageUrl = new URL(openGraphImage.src, siteUrl);
 const sitemapUrl = new URL(`${basePath}sitemap.xml`, siteUrl);
 const llmsUrl = new URL(`${basePath}llms.txt`, siteUrl);
@@ -59,7 +104,7 @@ const webpageData: Record<string, unknown> = {
 	url: pageUrl.href,
 	name: pageTitle,
 	description,
-	inLanguage: 'de-DE',
+	inLanguage: language.htmlLang,
 	dateModified,
 	isPartOf: { '@id': websiteId },
 	about: { '@id': organizationId },
@@ -78,8 +123,9 @@ const jsonLdGraph: Record<string, unknown>[] = [
 		legalName: 'DIE OLDTIMERMANUFAKTUR GmbH',
 		url: siteRootUrl.href,
 		logo: new URL(`${basePath}favicon.svg`, siteUrl).href,
-		description:
-			'Die Oldtimermanufaktur restauriert und bewahrt historische Automobile mit traditionellem Handwerk, technischer Sorgfalt und Liebe zum Detail.',
+		description: locale === 'de'
+			? 'Die Oldtimermanufaktur restauriert und bewahrt historische Automobile mit traditionellem Handwerk, technischer Sorgfalt und Liebe zum Detail.'
+			: 'The Oldtimermanufaktur restores and preserves historic automobiles through traditional craftsmanship, technical care and attention to detail.',
 		foundingDate: '1987',
 		founder: {
 			'@type': 'Person',
@@ -101,7 +147,7 @@ const jsonLdGraph: Record<string, unknown>[] = [
 		'@id': websiteId,
 		url: siteRootUrl.href,
 		name: 'Die Oldtimermanufaktur',
-		inLanguage: 'de-DE',
+		inLanguage: language.htmlLang,
 		publisher: { '@id': organizationId },
 	},
 	{
@@ -119,7 +165,7 @@ const jsonLdGraph: Record<string, unknown>[] = [
 const breadcrumbItems = breadcrumbs ?? (
 	title
 		? [
-				{ name: 'Startseite', path: '/' },
+				{ name: locale === 'de' ? 'Startseite' : 'Home', path: locale === 'de' ? '/' : '/en/' },
 				{ name: title, path: '' },
 			]
 		: []
@@ -152,7 +198,7 @@ const jsonLd = JSON.stringify({
 ---
 
 <!doctype html>
-<html lang="de" prefix="og: https://ogp.me/ns#">
+<html lang={language.htmlLang} prefix="og: https://ogp.me/ns#">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -166,6 +212,9 @@ const jsonLd = JSON.stringify({
 		{effectiveNoindex && <meta name="robots" content="noindex,follow,noarchive" />}
 		{!effectiveNoindex && <meta name="robots" content="index,follow,max-image-preview:large" />}
 		{!effectiveNoindex && <link rel="canonical" href={pageUrl.href} />}
+		{!effectiveNoindex && germanAlternateUrl && <link rel="alternate" hreflang="de-DE" href={germanAlternateUrl.href} />}
+		{!effectiveNoindex && englishAlternateUrl && <link rel="alternate" hreflang="en" href={englishAlternateUrl.href} />}
+		{!effectiveNoindex && germanAlternateUrl && <link rel="alternate" hreflang="x-default" href={germanAlternateUrl.href} />}
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:type" content={openGraphType} />
 		<meta property="og:image" content={openGraphImageUrl} />
@@ -176,11 +225,14 @@ const jsonLd = JSON.stringify({
 		<meta property="og:image:alt" content={openGraphImageAlt} />
 		<meta property="og:url" content={pageUrl.href} />
 		<meta property="og:description" content={description} />
-		<meta property="og:locale" content="de_DE" />
+		<meta property="og:locale" content={language.openGraphLocale} />
+		{translatedRoute && locale === 'de' && <meta property="og:locale:alternate" content="en_GB" />}
+		{translatedRoute && locale === 'en' && <meta property="og:locale:alternate" content="de_DE" />}
 		<meta property="og:site_name" content="Die Oldtimermanufaktur" />
 		{!effectiveNoindex && <script type="application/ld+json" set:html={jsonLd} />}
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<script is:inline set:html={languageBootstrap} />
 		<script is:inline>
 			(() => {
 				const userAgent = navigator.userAgent;
@@ -199,7 +251,9 @@ const jsonLd = JSON.stringify({
 		</script>
 	</head>
 	<body>
-		<a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+		<a class="skip-link" href="#main-content">
+			{locale === 'de' ? 'Zum Inhalt springen' : 'Skip to content'}
+		</a>
 		<slot />
 		<script>
 			document.addEventListener('contextmenu', (event) => {
@@ -225,11 +279,19 @@ const jsonLd = JSON.stringify({
 
 <style>
 	@font-face {
-		/* Jost © 2020 The Jost Project Authors, SIL OFL 1.1; see /licenses/Jost-OFL-1.1.txt */
-		font-family: 'Jost';
-		src: url('../assets/fonts/jost-variable.ttf') format('truetype');
-		font-weight: 300 600;
+		/* Cormorant Garamond, SIL OFL 1.1; see /licenses/Cormorant-Garamond-OFL-1.1.txt */
+		font-family: 'Cormorant Garamond';
+		src: url('../assets/fonts/cormorant-garamond-variable.ttf') format('truetype');
+		font-weight: 300 700;
 		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Cormorant Garamond';
+		src: url('../assets/fonts/cormorant-garamond-variable-italic.ttf') format('truetype');
+		font-weight: 300 700;
+		font-style: italic;
 		font-display: swap;
 	}
 
@@ -237,7 +299,10 @@ const jsonLd = JSON.stringify({
 		--color-background: #101010;
 		--color-main: #eeeeee;
 		--color-line: rgba(238, 238, 238, 0.18);
-		--font-body: 'Jost', 'Helvetica Neue', sans-serif;
+		--font-body: 'Cormorant Garamond', Georgia, serif;
+		--text-utility: clamp(0.72rem, 0.7rem + 0.12vw, 0.8rem);
+		--text-small: clamp(0.84rem, 0.81rem + 0.14vw, 0.94rem);
+		--text-body: clamp(1rem, 0.97rem + 0.16vw, 1.12rem);
 	}
 
 	html,
@@ -248,11 +313,17 @@ const jsonLd = JSON.stringify({
 		background: var(--color-background);
 		color: var(--color-main);
 		font-family: var(--font-body);
+		font-weight: 400;
 		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing: antialiased;
 	}
 
+	html {
+		font-size: 100%;
+	}
+
 	body {
+		font-size: var(--text-body);
 		overflow-x: hidden;
 	}
 
@@ -268,7 +339,7 @@ const jsonLd = JSON.stringify({
 		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
-		font-size: 0.72rem;
+		font-size: 0.78rem;
 		font-weight: 500;
 		transform: translateY(calc(-100% - 1rem));
 		transition: transform 160ms ease;

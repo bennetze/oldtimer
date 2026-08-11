@@ -2,6 +2,7 @@
 import type { ImageMetadata } from 'astro';
 import SectionNavigation from '../components/SectionNavigation.astro';
 import SiteChrome from '../components/SiteChrome.astro';
+import type { Locale } from '../config/i18n';
 import Layout from './Layout.astro';
 
 interface SectionItem {
@@ -21,6 +22,7 @@ interface Props {
 	structuredDataType?: string;
 	dateModified: string;
 	additionalJsonLd?: Record<string, unknown> | Record<string, unknown>[];
+	locale?: Locale;
 }
 
 const {
@@ -35,6 +37,7 @@ const {
 	structuredDataType = 'WebPage',
 	dateModified,
 	additionalJsonLd = [],
+	locale = 'de',
 } = Astro.props;
 
 const openingId = sections[0]?.id;
@@ -48,19 +51,21 @@ const openingId = sections[0]?.id;
 	{structuredDataType}
 	{dateModified}
 	{additionalJsonLd}
+	{locale}
 >
-	<SiteChrome {theme}>
+	<SiteChrome {theme} {locale}>
 		<main
 			class:list={['editorial-page', `editorial-page--${theme}`]}
 			id="main-content"
 			tabindex="-1"
 			style={`--editorial-background: ${background}`}
 		>
-			<SectionNavigation items={sections} {theme} />
+			<SectionNavigation items={sections} {theme} {locale} />
 
 			<div class="editorial-opening" id={openingId}>
 				<header class="editorial-intro">
 					<h1>{heading}</h1>
+					<slot name="intro" />
 				</header>
 				<slot name="opening" />
 			</div>
@@ -242,7 +247,7 @@ const openingId = sections[0]?.id;
 
 <style is:global>
 	.editorial-page {
-		--story-scroll-offset: calc(76px + clamp(1.5rem, 3vh, 2.5rem));
+			--story-scroll-offset: calc(88px + clamp(1.5rem, 3vh, 2.5rem));
 		--editorial-color: #111111;
 		--editorial-line: rgba(17, 17, 17, 0.34);
 		--editorial-image-background: #d8dcdd;
@@ -275,8 +280,8 @@ const openingId = sections[0]?.id;
 
 	.editorial-intro h1 {
 		max-width: 18ch;
-		font-size: clamp(2.5rem, 5.2vw, 5.25rem);
-		font-weight: 350;
+			font-size: clamp(2.75rem, 5.5vw, 5.65rem);
+		font-weight: 420;
 		line-height: 0.96;
 		letter-spacing: 0.1em;
 	}
@@ -292,7 +297,7 @@ const openingId = sections[0]?.id;
 
 	.editorial-page .story h2 {
 		margin-bottom: clamp(8rem, 10vw, 10.5rem);
-		font-size: clamp(1.9rem, 3.2vw, 3.4rem);
+			font-size: clamp(2.1rem, 3.45vw, 3.7rem);
 		font-weight: 580;
 		line-height: 1;
 		letter-spacing: 0.045em;
@@ -338,8 +343,8 @@ const openingId = sections[0]?.id;
 	.editorial-page .story__copy p,
 	.editorial-page .story__copy blockquote {
 		margin: 0;
-		font-size: clamp(1rem, 1.08vw, 1.18rem);
-		font-weight: 320;
+		font-size: clamp(1.04rem, 1.12vw, 1.2rem);
+		font-weight: 400;
 		line-height: 1.72;
 		letter-spacing: 0.008em;
 	}
@@ -354,7 +359,7 @@ const openingId = sections[0]?.id;
 		position: relative;
 		padding: clamp(1.4rem, 2.6vw, 2.4rem) 0 clamp(1.4rem, 2.6vw, 2.4rem) clamp(1.4rem, 2.4vw, 2.2rem);
 		border-left: 1px solid var(--editorial-line);
-		font-size: clamp(1.14rem, 1.42vw, 1.45rem);
+			font-size: clamp(1.25rem, 1.55vw, 1.58rem);
 		font-weight: 430;
 		line-height: 1.48;
 	}
@@ -474,7 +479,7 @@ const openingId = sections[0]?.id;
 
 	@media (max-width: 840px) {
 		.editorial-page {
-			--story-scroll-offset: calc(64px + 1.25rem);
+				--story-scroll-offset: calc(72px + 1.25rem);
 		}
 
 		.editorial-intro {

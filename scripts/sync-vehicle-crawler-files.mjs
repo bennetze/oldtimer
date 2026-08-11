@@ -6,7 +6,7 @@ const root = process.cwd();
 const pagesRoot = join(root, 'src/pages/projekte');
 const productionOrigin = 'https://www.oldtimermanufaktur.de';
 const today = new Date().toISOString().slice(0, 10);
-const vehicleTemplateLastModified = '2026-08-07';
+const vehicleTemplateLastModified = '2026-08-10';
 
 const categories = [
 	{
@@ -58,6 +58,18 @@ for (let page = 2; page <= pastPages; page += 1) {
 	staticPages.push([`/projekte/vergangene-projekte/seite/${page}/`, today]);
 }
 
+const germanStaticPaths = staticPages.map(([path]) => path);
+for (const [path, lastmod] of [...staticPages]) {
+	staticPages.push([path === '/' ? '/en/' : `/en${path}`, lastmod]);
+}
+
+const languageAlternates = (path) => {
+	const germanPath = path === '/en/' ? '/' : path.replace(/^\/en(?=\/)/, '');
+	if (!germanStaticPaths.includes(germanPath)) return '';
+	const englishPath = germanPath === '/' ? '/en/' : `/en${germanPath}`;
+	return `\n\t\t<xhtml:link rel="alternate" hreflang="de-DE" href="${escapeXml(`${productionOrigin}${germanPath}`)}" />\n\t\t<xhtml:link rel="alternate" hreflang="en" href="${escapeXml(`${productionOrigin}${englishPath}`)}" />\n\t\t<xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(`${productionOrigin}${germanPath}`)}" />`;
+};
+
 const sitemapItems = [
 	...staticPages,
 	...vehicles.map((vehicle) => [
@@ -66,9 +78,9 @@ const sitemapItems = [
 	]),
 ].map(
 	([path, lastmod]) =>
-		`\t<url>\n\t\t<loc>${escapeXml(`${productionOrigin}${path}`)}</loc>\n\t\t<lastmod>${escapeXml(lastmod)}</lastmod>\n\t</url>`,
+		`\t<url>\n\t\t<loc>${escapeXml(`${productionOrigin}${path}`)}</loc>${languageAlternates(path)}\n\t\t<lastmod>${escapeXml(lastmod)}</lastmod>\n\t</url>`,
 );
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapItems.join('\n')}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemapItems.join('\n')}\n</urlset>\n`;
 
 const categoryLines = categories.map((category, index) => {
 	const count = groups[index].length;
@@ -78,16 +90,23 @@ const llms = `# Die Oldtimermanufaktur
 
 > Die Oldtimermanufaktur GmbH in Kaltennordheim-Fischbach restauriert und bewahrt historische Automobile mit handwerklicher Sorgfalt und Respekt vor ihrer Geschichte.
 
-Die Website ist deutschsprachig. Der aktuelle Stand ist eine Entwicklungsvorschau für die vollständig neu entwickelte Website. Ein Teil der Bildmotive sind ausdrücklich gekennzeichnete KI-generierte Platzhalter. Diese zeigen nicht die tatsächlichen Personen, Fahrzeuge oder Betriebsräume und werden vor der Produktionsfreigabe durch freigegebene echte Aufnahmen ersetzt.
+Die Marketing- und Projektarchivseiten sind auf Deutsch und Englisch verfügbar. Fahrzeugdokumentationen sowie Impressum und Datenschutzerklärung bleiben deutschsprachig. Der aktuelle Stand ist eine Entwicklungsvorschau für die vollständig neu entwickelte Website. Ein Teil der Bildmotive sind ausdrücklich gekennzeichnete KI-generierte Platzhalter. Diese zeigen nicht die tatsächlichen Personen, Fahrzeuge oder Betriebsräume und werden vor der Produktionsfreigabe durch freigegebene echte Aufnahmen ersetzt.
 Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam mit Anton Schrank in die nächste Generation geführt.
 
 ## Hauptseiten
 
-- [Startseite](${productionOrigin}/): „Wir bewahren Geschichte“ / „Wir bewahren Geschichten“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
-- [Handwerk](${productionOrigin}/handwerk/): Dunkel gestalteter, vorläufiger Überblick über Karosserie, Polsterei, Lackiererei und Motorbau.
-- [Über uns](${productionOrigin}/ueber-uns/): Vorstellung von Mario Schrank, Anton Schrank, Team und Kontakt.
+- [Startseite](${productionOrigin}/): „Wir bewahren Geschichte(n)“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
+- [Handwerk](${productionOrigin}/handwerk/): Karosserie, Polsterei, Lackiererei und Motorbau – alles aus einer Hand.
+- [Über uns](${productionOrigin}/ueber-uns/): Mario Schrank, Anton Schrank, Meisterqualifikationen, Team, Kontakt und Standortkarte.
 - [Projekte](${productionOrigin}/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
 ${categoryLines.join('\n')}
+
+## English pages
+
+- [Home](${productionOrigin}/en/): “We preserve history — and stories” with an overview of craft, company, projects and vehicles for sale.
+- [Craft](${productionOrigin}/en/handwerk/): Bodywork, upholstery, paintwork and engine building from a single source.
+- [About us](${productionOrigin}/en/ueber-uns/): Mario Schrank, Anton Schrank, qualifications, team, contact details and location map.
+- [Projects](${productionOrigin}/en/projekte/): English entry point and archives; individual vehicle documentation is linked in German.
 
 ## Nutzung durch KI-Systeme
 

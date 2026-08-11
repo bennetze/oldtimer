@@ -2,6 +2,8 @@
 /Users/betannet/.zshenv:.:3: no such file or directory: /Users/betannet/.cargo/env
 ---
 import { Image } from 'astro:assets';
+import GermanyLocationMap from '../components/GermanyLocationMap.astro';
+import type { Locale } from '../config/i18n';
 import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
 import antonCar from '../assets/oldtimer/about-anton-car.png';
 import antonPortrait from '../assets/oldtimer/about-anton-portrait.png';
@@ -14,25 +16,106 @@ import teamPortrait from '../assets/oldtimer/about-team-portrait.png';
 import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 import heroSitePoster from '../assets/oldtimer/hero-site-poster.jpg';
 
-const sectionNavigationItems = [
-	{ id: 'mario-schrank', label: 'Mario Schrank' },
-	{ id: 'anton-schrank', label: 'Anton Schrank' },
-	{ id: 'das-team', label: 'Das Team' },
-	{ id: 'kontakt', label: 'Kontakt' },
+interface Props {
+	locale?: Locale;
+}
+
+const { locale = 'de' } = Astro.props;
+const copy = {
+	de: {
+		title: 'Über uns',
+		heading: 'Wir über uns',
+		description: 'Mario Schrank, Anton Schrank und das Team der Oldtimermanufaktur – verbunden durch Erfahrung, Leidenschaft und Liebe zu historischen Fahrzeugen.',
+		sections: [
+			{ id: 'mario-schrank', label: 'Mario Schrank' },
+			{ id: 'anton-schrank', label: 'Anton Schrank' },
+			{ id: 'das-team', label: 'Das Team' },
+			{ id: 'kontakt', label: 'Kontakt' },
+		],
+		marioCopy: 'Mit 17 Jahren kauft Mario Schrank von seinem Ersparten einen DKW und restauriert ihn. Damit beginnt eine Leidenschaft, aus der 1987 die Oldtimermanufaktur entsteht. Heute verbindet der dreifache Meister jahrzehntelange Erfahrung mit höchster handwerklicher Präzision. Restaurierungen aus der Oldtimermanufaktur wurden bereits mehrfach international ausgezeichnet.',
+		antonLead: 'Wie der Vater, so der Sohn: Mit zwölf Jahren restauriert Anton Schrank gemeinsam mit seinem Vater seinen ersten historischen Traktor.',
+		antonQuote: '„Mich begeistern die Formen und Farben der alten Fahrzeuge – und das, was wir aus ihnen machen.“',
+		antonEnd: 'Heute führt er die Oldtimermanufaktur mit derselben Leidenschaft in die nächste Generation.',
+		teamCopy: 'Bei der Arbeit an historischen Fahrzeugen greifen unterschiedliche handwerkliche Aufgaben ineinander. Maßstab sind ein sorgfältiger Umgang mit der vorhandenen Substanz, nachvollziehbare Entscheidungen und die Abstimmung der einzelnen Arbeitsschritte.',
+		credentials: 'Meisterqualifikationen',
+		team: 'Das Team',
+		contact: 'Kontakt',
+		phone: 'Telefon',
+		fax: 'Fax',
+		email: 'E-Mail',
+		address: 'Adresse',
+		faxLabel: 'Faxnummer 03 69 66 / 83 6 35',
+		marioVisual: 'Visuelle Platzhalter für Mario Schrank',
+		antonVisual: 'Visuelle Platzhalter für Anton Schrank',
+		teamVisual: 'Visuelle Platzhalter für das Team',
+		contactVisual: 'Visuelle Platzhalter für den Standort in Fischbach',
+	},
+	en: {
+		title: 'About us',
+		heading: 'About us',
+		description: 'Mario Schrank, Anton Schrank and the Oldtimermanufaktur team combine experience, passion and a deep appreciation for historic vehicles.',
+		sections: [
+			{ id: 'mario-schrank', label: 'Mario Schrank' },
+			{ id: 'anton-schrank', label: 'Anton Schrank' },
+			{ id: 'das-team', label: 'The team' },
+			{ id: 'kontakt', label: 'Contact' },
+		],
+		marioCopy: 'At the age of 17, Mario Schrank bought a DKW with his savings and restored it. That project ignited a passion which led to the founding of the Oldtimermanufaktur in 1987. Today, the triple master craftsman combines decades of experience with the highest standards of precision. Restorations from the Oldtimermanufaktur have received multiple international awards.',
+		antonLead: 'Like father, like son: at the age of twelve, Anton Schrank restored his first historic tractor together with his father.',
+		antonQuote: '“I am fascinated by the forms and colours of old vehicles — and by what we can create from them.”',
+		antonEnd: 'Today, he is carrying the Oldtimermanufaktur forward into the next generation with the same passion.',
+		teamCopy: 'Restoring historic vehicles brings many different crafts together. Every project is guided by careful treatment of the existing fabric, transparent decisions and close coordination between each stage of the work.',
+		credentials: 'Master craft qualifications',
+		team: 'The team',
+		contact: 'Contact',
+		phone: 'Telephone',
+		fax: 'Fax',
+		email: 'Email',
+		address: 'Address',
+		faxLabel: 'Fax number +49 36966 83635',
+		marioVisual: 'Visual placeholders for Mario Schrank',
+		antonVisual: 'Visual placeholders for Anton Schrank',
+		teamVisual: 'Visual placeholders for the team',
+		contactVisual: 'Visual placeholders for the Fischbach location',
+	},
+}[locale];
+
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+const personJsonLd = [
+	{
+		'@type': 'Person',
+		'@id': `${pageUrl}#mario-schrank`,
+		name: 'Mario Schrank',
+		hasCredential: ['KFZ-Mechaniker-Meister', 'KFZ-Elektriker-Meister', 'Karosseriebau-Meister'].map((name) => ({
+			'@type': 'EducationalOccupationalCredential',
+			name,
+		})),
+	},
+	{
+		'@type': 'Person',
+		'@id': `${pageUrl}#anton-schrank`,
+		name: 'Anton Schrank',
+		hasCredential: {
+			'@type': 'EducationalOccupationalCredential',
+			name: 'KFZ-Techniker-Meister',
+		},
+	},
 ];
 ---
 
 <EditorialPageLayout
-	title="Über uns"
-	heading="Wir über uns"
-	description="Mario Schrank, Anton Schrank und das Team der Oldtimermanufaktur – verbunden durch Erfahrung, Leidenschaft und Liebe zu historischen Fahrzeugen."
-	sections={sectionNavigationItems}
+	title={copy.title}
+	heading={copy.heading}
+	description={copy.description}
+	sections={copy.sections}
 	theme="light"
 	background="linear-gradient(180deg, #eeeeee 0%, #eeeeee 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #9299c4 47%, #688dca 54%, #557fb8 61%, #6695d3 70%, #82afe2 82%, #ffffff 100%)"
 	openGraphImage={heroSitePoster}
-	openGraphImageAlt="Ein historischer Roadster während einer Fahrt"
+	openGraphImageAlt={locale === 'de' ? 'Ein historischer Roadster während einer Fahrt' : 'A historic roadster on the move'}
 	structuredDataType="AboutPage"
-	dateModified="2026-08-03"
+	dateModified="2026-08-10"
+	additionalJsonLd={personJsonLd}
+	{locale}
 >
 	<section
 		slot="opening"
@@ -42,7 +125,7 @@ const sectionNavigationItems = [
 				>
 					<h2 id="mario-title">Mario Schrank</h2>
 					<div class="story__layout">
-						<div class="collage collage--double collage--right" aria-label="Visuelle Platzhalter für Mario Schrank">
+						<div class="collage collage--double collage--right" aria-label={copy.marioVisual}>
 							<figure
 								class="image-layer image-layer--portrait"
 								data-parallax-layer
@@ -51,7 +134,7 @@ const sectionNavigationItems = [
 							>
 								<Image
 									src={marioPortrait}
-									alt="KI-generierter Platzhalter für ein geplantes Porträt von Mario Schrank"
+									alt={locale === 'de' ? 'KI-generierter Platzhalter für ein geplantes Porträt von Mario Schrank' : 'AI-generated placeholder for a planned portrait of Mario Schrank'}
 									widths={[560, 760, 972]}
 									sizes="(max-width: 840px) 88vw, 48vw"
 									format="webp"
@@ -76,13 +159,15 @@ const sectionNavigationItems = [
 						</div>
 
 						<div class="story__copy">
-							<p>
-								Mit 17 Jahren kauft Mario Schrank von seinem Ersparten einen DKW und restauriert ihn.
-								Damit beginnt eine Leidenschaft, aus der 1987 die Oldtimermanufaktur entsteht. Heute
-								verbindet der dreifache Meister jahrzehntelange Erfahrung mit höchster handwerklicher
-								Präzision. Restaurierungen aus der Oldtimermanufaktur wurden bereits mehrfach
-								international ausgezeichnet.
-							</p>
+							<p>{copy.marioCopy}</p>
+							<div class="credentials" aria-label={copy.credentials}>
+								<p>{copy.credentials}</p>
+								<ul>
+									<li>KFZ-Mechaniker-Meister</li>
+									<li>KFZ-Elektriker-Meister</li>
+									<li>Karosseriebau-Meister</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 	</section>
@@ -95,7 +180,7 @@ const sectionNavigationItems = [
 			>
 				<h2 id="anton-title">Anton Schrank</h2>
 				<div class="story__layout">
-					<div class="collage collage--double collage--left" aria-label="Visuelle Platzhalter für Anton Schrank">
+					<div class="collage collage--double collage--left" aria-label={copy.antonVisual}>
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
@@ -104,7 +189,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={antonPortrait}
-								alt="KI-generierter Platzhalter für ein geplantes Porträt von Anton Schrank"
+								alt={locale === 'de' ? 'KI-generierter Platzhalter für ein geplantes Porträt von Anton Schrank' : 'AI-generated placeholder for a planned portrait of Anton Schrank'}
 								widths={[560, 760, 971]}
 								sizes="(max-width: 840px) 88vw, 48vw"
 								format="webp"
@@ -129,18 +214,13 @@ const sectionNavigationItems = [
 					</div>
 
 					<div class="story__copy">
-						<p>
-							Wie der Vater, so der Sohn: Mit zwölf Jahren restauriert Anton Schrank gemeinsam mit
-							seinem Vater seinen ersten historischen Traktor.
-						</p>
-						<blockquote>
-							„Mich begeistern die Formen und Farben der alten Fahrzeuge – und das, was wir aus ihnen
-							machen.“
-						</blockquote>
-						<p>
-							Heute führt er die Oldtimermanufaktur mit derselben Leidenschaft in die nächste
-							Generation.
-						</p>
+						<p>{copy.antonLead}</p>
+						<blockquote>{copy.antonQuote}</blockquote>
+						<p>{copy.antonEnd}</p>
+						<div class="credentials" aria-label={copy.credentials}>
+							<p>{copy.credentials}</p>
+							<ul><li>KFZ-Techniker-Meister</li></ul>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -151,9 +231,9 @@ const sectionNavigationItems = [
 				aria-labelledby="team-title"
 				data-parallax-group
 			>
-				<h2 id="team-title">Das Team</h2>
+				<h2 id="team-title">{copy.team}</h2>
 				<div class="story__layout">
-					<div class="collage collage--triple collage--right" aria-label="Visuelle Platzhalter für das Team">
+					<div class="collage collage--triple collage--right" aria-label={copy.teamVisual}>
 						<figure
 							class="image-layer image-layer--team-main"
 							data-parallax-layer
@@ -162,7 +242,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={teamPortrait}
-								alt="KI-generierter Platzhalter für eine geplante Teamaufnahme"
+								alt={locale === 'de' ? 'KI-generierter Platzhalter für eine geplante Teamaufnahme' : 'AI-generated placeholder for a planned team photograph'}
 								widths={[760, 1120, 1536]}
 								sizes="(max-width: 840px) 94vw, 55vw"
 								format="webp"
@@ -202,11 +282,7 @@ const sectionNavigationItems = [
 					</div>
 
 					<div class="story__copy">
-						<p>
-							Bei der Arbeit an historischen Fahrzeugen greifen unterschiedliche handwerkliche
-							Aufgaben ineinander. Maßstab sind ein sorgfältiger Umgang mit der vorhandenen Substanz,
-							nachvollziehbare Entscheidungen und die Abstimmung der einzelnen Arbeitsschritte.
-						</p>
+						<p>{copy.teamCopy}</p>
 					</div>
 				</div>
 			</section>
@@ -217,9 +293,9 @@ const sectionNavigationItems = [
 				aria-labelledby="contact-title"
 				data-parallax-group
 			>
-				<h2 id="contact-title">Kontakt</h2>
+				<h2 id="contact-title">{copy.contact}</h2>
 				<div class="story__layout">
-					<div class="collage collage--double collage--left" aria-label="Visuelle Platzhalter für den Standort in Fischbach">
+					<div class="collage collage--double collage--left" aria-label={copy.contactVisual}>
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
@@ -228,7 +304,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={contactExterior}
-								alt="KI-generierter Platzhalter für eine geplante Außenaufnahme des Standorts"
+								alt={locale === 'de' ? 'KI-generierter Platzhalter für eine geplante Außenaufnahme des Standorts' : 'AI-generated placeholder for a planned exterior photograph of the location'}
 								widths={[560, 760, 1024]}
 								sizes="(max-width: 840px) 88vw, 48vw"
 								format="webp"
@@ -243,7 +319,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={contactEntrance}
-								alt="KI-generierter Platzhalter für eine geplante Aufnahme des Werkstatteingangs"
+								alt={locale === 'de' ? 'KI-generierter Platzhalter für eine geplante Aufnahme des Werkstatteingangs' : 'AI-generated placeholder for a planned photograph of the workshop entrance'}
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 76vw, 42vw"
 								format="webp"
@@ -253,30 +329,27 @@ const sectionNavigationItems = [
 					</div>
 
 					<div class="story__copy">
+						<GermanyLocationMap {locale} />
 						<address class="contact-list">
 							<a href="tel:+493696683783">
-								<span>Telefon</span>
+								<span>{copy.phone}</span>
 								<strong>03 69 66 / 83 7 83</strong>
 							</a>
-							<a href="tel:+493696683635" aria-label="Faxnummer 03 69 66 / 83 6 35">
-								<span>Fax</span>
+							<a href="tel:+493696683635" aria-label={copy.faxLabel}>
+								<span>{copy.fax}</span>
 								<strong>03 69 66 / 83 6 35</strong>
 							</a>
 							<a href="mailto:info@oldtimermanufaktur.de">
-								<span>E-Mail</span>
+								<span>{copy.email}</span>
 								<strong>info@oldtimermanufaktur.de</strong>
 							</a>
-							<a
-								href="https://maps.app.goo.gl/jg4eC1XRAyLDoW1BA"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<span>Adresse · Google Maps ↗</span>
+							<div class="contact-list__row">
+								<span>{copy.address}</span>
 								<strong>
 									i.d. Rhön DE, Kreuzweg 11a,<br />
 									36452 Kaltennordheim-Fischbach/Rhön
 								</strong>
-							</a>
+							</div>
 						</address>
 					</div>
 				</div>
@@ -285,6 +358,35 @@ const sectionNavigationItems = [
 
 
 <style>
+	.credentials {
+		margin-top: clamp(2.25rem, 4vw, 3.5rem);
+		padding-top: 1.1rem;
+		border-top: 1px solid rgba(17, 17, 17, 0.3);
+	}
+
+	.editorial-page .story__copy .credentials > p {
+		margin: 0 0 0.9rem;
+		font-size: var(--text-utility);
+		font-weight: 600;
+		letter-spacing: 0.14em;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	.credentials ul {
+		display: grid;
+		gap: 0.42rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.credentials li {
+		font-size: clamp(1.08rem, 1.16vw, 1.28rem);
+		font-weight: 550;
+		line-height: 1.35;
+	}
+
 	.story--contact {
 		padding-bottom: clamp(11rem, 16vw, 17rem);
 	}
@@ -295,7 +397,8 @@ const sectionNavigationItems = [
 		font-style: normal;
 	}
 
-	.contact-list a {
+	.contact-list a,
+	.contact-list__row {
 		display: grid;
 		grid-template-columns: minmax(5.5rem, 0.34fr) minmax(0, 1fr);
 		gap: 1.5rem;
@@ -317,7 +420,7 @@ const sectionNavigationItems = [
 
 	.contact-list span,
 	.contact-list strong {
-		font-size: clamp(0.88rem, 0.96vw, 1.04rem);
+		font-size: clamp(1rem, 1.08vw, 1.18rem);
 		line-height: 1.55;
 		transition: transform 180ms ease;
 	}
@@ -330,7 +433,7 @@ const sectionNavigationItems = [
 
 	.contact-list strong {
 		min-width: 0;
-		font-weight: 330;
+		font-weight: 400;
 		overflow-wrap: anywhere;
 	}
 
@@ -339,14 +442,15 @@ const sectionNavigationItems = [
 			padding-bottom: clamp(8rem, 29vw, 11rem);
 		}
 
-		.contact-list a {
+		.contact-list a,
+		.contact-list__row {
 			grid-template-columns: 5.2rem minmax(0, 1fr);
 			gap: 1rem;
 		}
 
 		.contact-list span,
 		.contact-list strong {
-			font-size: clamp(0.87rem, 3.8vw, 1rem);
+			font-size: clamp(1rem, 4.1vw, 1.12rem);
 		}
 	}
 

@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import SiteChrome from '../components/SiteChrome.astro';
 import heroSitePoster from '../assets/oldtimer/hero-site-poster.jpg';
+import { languageStorageKey } from '../config/i18n';
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
@@ -15,7 +16,20 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 	openGraphImageAlt="Ein historischer Roadster während einer Fahrt"
 	noindex
 >
-	<SiteChrome>
+	<script is:inline define:vars={{ languageStorageKey }}>
+		(() => {
+			let locale;
+			try {
+				const stored = window.localStorage.getItem(languageStorageKey);
+				if (stored === 'de' || stored === 'en') locale = stored;
+			} catch {}
+			locale ??= (navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en';
+			document.documentElement.lang = locale;
+			document.documentElement.dataset.pageLocale = locale;
+			if (locale === 'en') document.title = 'Page not found | DIE OLDTIMERMANUFAKTUR';
+		})();
+	</script>
+	<SiteChrome clientDetectLocale languagePath="/">
 		<main class="not-found" id="main-content" tabindex="-1">
 			<img
 				class="not-found__image"
@@ -26,7 +40,7 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 			<div class="not-found__shade" aria-hidden="true"></div>
 			<span class="not-found__number" aria-hidden="true">404</span>
 
-			<div class="not-found__content">
+			<div class="not-found__content" data-not-found-locale="de">
 				<p class="not-found__eyebrow">Fehler 404</p>
 				<h1>Diese Spur führt ins Leere.</h1>
 				<p class="not-found__copy">
@@ -34,6 +48,20 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 				</p>
 				<a class="not-found__link" href={basePath}>
 					<span>Zur Startseite</span>
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M5 12h13M13 6l6 6-6 6"></path>
+					</svg>
+				</a>
+			</div>
+
+			<div class="not-found__content" data-not-found-locale="en">
+				<p class="not-found__eyebrow">Error 404</p>
+				<h1>This road leads nowhere.</h1>
+				<p class="not-found__copy">
+					The page you were looking for is no longer available or has moved.
+				</p>
+				<a class="not-found__link" href={`${basePath}en/`}>
+					<span>Back to the homepage</span>
 					<svg viewBox="0 0 24 24" aria-hidden="true">
 						<path d="M5 12h13M13 6l6 6-6 6"></path>
 					</svg>
@@ -94,6 +122,18 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 		width: min(760px, calc(100% - 3rem));
 		margin: 0 clamp(1.5rem, 7vw, 8rem);
 		padding: clamp(10rem, 21vh, 14rem) 0 clamp(4rem, 9vh, 7rem);
+	}
+
+	.not-found__content[data-not-found-locale='en'] {
+		display: none;
+	}
+
+	:global(html[data-page-locale='en']) .not-found__content[data-not-found-locale='de'] {
+		display: none;
+	}
+
+	:global(html[data-page-locale='en']) .not-found__content[data-not-found-locale='en'] {
+		display: block;
 	}
 
 	.not-found__eyebrow {

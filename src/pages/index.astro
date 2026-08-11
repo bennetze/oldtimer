@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import SiteChrome from "../components/SiteChrome.astro";
 import SectionNavigation from "../components/SectionNavigation.astro";
-import craftHands from "../assets/oldtimer/craft-hands.png";
+import { localizedRoute, type Locale } from "../config/i18n";
 import heroSiteMotionAvif from "../assets/oldtimer/hero-site-motion.avif";
 import heroSiteMotionWebp from "../assets/oldtimer/hero-site-motion.webp";
 import heroSiteMp4 from "../assets/oldtimer/hero-site.mp4";
@@ -23,75 +23,79 @@ import projekteMotionWebp from "../assets/oldtimer/projekte-motion.webp";
 import projekteMp4 from "../assets/oldtimer/projekte.mp4";
 import projektePoster from "../assets/oldtimer/projekte-poster.jpg";
 import projekteWebm from "../assets/oldtimer/projekte.webm";
-import sectionOldtimerKaufen from "../assets/oldtimer/section-oldtimer-kaufen.png";
-import sectionProjekte from "../assets/oldtimer/section-projekte.png";
-import sectionUeberUns from "../assets/oldtimer/section-ueber-uns.png";
-import { object, optional, overwrite } from "astro:schema";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = "de" } = Astro.props;
+const copy = {
+  de: {
+    description: "Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte.",
+    hero: "Wir bewahren Geschichte(n)",
+    motionPause: "Animation pausieren",
+    motionPlay: "Animation abspielen",
+    scrollCraft: "Zum Handwerk scrollen",
+    scrollStart: "Zum Start scrollen",
+    scrollAbout: "Zu Über uns scrollen",
+    scrollProjects: "Zu Projekten scrollen",
+    scrollFooter: "Zum Footer scrollen",
+    sectionChange: "Abschnitt wechseln",
+    learnMore: "Mehr erfahren",
+    craft: "Handwerk",
+    about: "Über uns",
+    projects: "Projekte",
+    navigation: [
+      { id: "start", label: "Start" },
+      { id: "handwerk", label: "Handwerk" },
+      { id: "ueber-uns", label: "Über uns" },
+      { id: "projekte", label: "Projekte" },
+    ],
+  },
+  en: {
+    description: "The Oldtimermanufaktur preserves the history of classic automobiles through skilled craftsmanship, technical care and respect for each vehicle's story.",
+    hero: "We preserve history — and stories",
+    motionPause: "Pause motion",
+    motionPlay: "Play motion",
+    scrollCraft: "Scroll to craft",
+    scrollStart: "Scroll to the start",
+    scrollAbout: "Scroll to About us",
+    scrollProjects: "Scroll to projects",
+    scrollFooter: "Scroll to the footer",
+    sectionChange: "Change section",
+    learnMore: "Discover more",
+    craft: "Craft",
+    about: "About us",
+    projects: "Projects",
+    navigation: [
+      { id: "start", label: "Start" },
+      { id: "handwerk", label: "Craft" },
+      { id: "ueber-uns", label: "About us" },
+      { id: "projekte", label: "Projects" },
+    ],
+  },
+}[locale];
 
 const basePath = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
 const includeWebpMotionFallback = import.meta.env.BASE_URL === "/";
 const sitePath = (path) => {
-  if (path === "/") {
-    return basePath;
-  }
-
-  if (path.startsWith("/#")) {
-    return `${basePath}${path.slice(1)}`;
-  }
-
-  if (path.startsWith("/")) {
-    return `${basePath}${path.slice(1)}`;
-  }
-
-  return path;
+  const localizedPath = localizedRoute(path, locale);
+  return localizedPath === "/"
+    ? basePath
+    : `${basePath}${localizedPath.replace(/^\//, "")}`;
 };
-
-const sections = [
-  {
-    id: "ueber-uns",
-    title: "Über uns",
-    image: sectionUeberUns,
-    alt: "Restaurierungsteam arbeitet konzentriert an einem klassischen Fahrzeug in einer Werkstatt",
-    href: "/ueber-uns/",
-    previous: "#handwerk",
-    next: "#projekte",
-  },
-  {
-    id: "projekte",
-    title: "Projekte",
-    image: sectionProjekte,
-    alt: "Klassische Fahrzeuge in unterschiedlichen Restaurierungsphasen in einer dunklen Werkstatt",
-    href: "/projekte/",
-    previous: "#ueber-uns",
-    next: "#oldtimer-kaufen",
-  },
-  {
-    id: "oldtimer-kaufen",
-    title: "Fahrzeugangebote",
-    image: sectionOldtimerKaufen,
-    alt: "Ein klassisches Coupé in einer dunklen Werkstattpräsentation",
-    href: "/projekte/fahrzeugangebote/",
-    previous: "#projekte",
-  },
-];
-
-const sectionNavigationItems = [
-  { id: "start", label: "Start" },
-  { id: "handwerk", label: "Handwerk" },
-  { id: "ueber-uns", label: "Über uns" },
-  { id: "projekte", label: "Projekte" },
-];
 ---
 
 <Layout
-  description="Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
-  dateModified="2026-08-06"
+  description={copy.description}
+  dateModified="2026-08-10"
+  {locale}
 >
-  <SiteChrome>
+  <SiteChrome {locale}>
     <main id="main-content" tabindex="-1">
-      <SectionNavigation items={sectionNavigationItems} />
+      <SectionNavigation items={copy.navigation} {locale} />
 
       <section
         class="media-panel hero"
@@ -140,26 +144,17 @@ const sectionNavigationItems = [
           class="hero-motion-toggle"
           type="button"
           data-motion-toggle
-          aria-label="Animation pausieren"
+          aria-label={copy.motionPause}
         >
           <span aria-hidden="true"></span>
         </button>
         <div class="media-panel__content media-panel__content--hero">
-          <h1 id="hero-title">
-            Wir bewahren <span class="hero-title__word"
-              >Geschichte<span class="hero-title__letter" data-hero-title-letter
-                ><span
-                  class="hero-title__letter-glyph"
-                  data-hero-title-letter-glyph>N</span
-                ></span
-              ></span
-            >
-          </h1>
+          <h1 id="hero-title">{copy.hero}</h1>
           <button
             class="scroll-cue"
             type="button"
             data-scroll-target="#handwerk"
-            aria-label="Zum Handwerk scrollen"
+            aria-label={copy.scrollCraft}
           >
             <span aria-hidden="true"></span>
           </button>
@@ -212,21 +207,21 @@ const sectionNavigationItems = [
           class="scroll-cue scroll-cue--up section-up-cue"
           type="button"
           data-scroll-target="#start"
-          aria-label="Zum Start scrollen"
+          aria-label={copy.scrollStart}
         >
           <span aria-hidden="true"></span>
         </button>
         <div class="media-panel__content media-panel__content--craft">
-          <h2 id="craft-title">Handwerk</h2>
+          <h2 id="craft-title">{copy.craft}</h2>
           <a class="section-cta" href={sitePath("/handwerk/")}>
-            Mehr erfahren
+            {copy.learnMore}
           </a>
-          <div class="scroll-cues" aria-label="Abschnitt wechseln">
+          <div class="scroll-cues" aria-label={copy.sectionChange}>
             <button
               class="scroll-cue"
               type="button"
               data-scroll-target="#ueber-uns"
-              aria-label="Zu Über uns scrollen"
+              aria-label={copy.scrollAbout}
             >
               <span aria-hidden="true"></span>
             </button>
@@ -237,6 +232,7 @@ const sectionNavigationItems = [
       <section
         class="media-panel editorial-panel"
         id="ueber-uns"
+        aria-labelledby="about-title"
         data-motion-panel
       >
         <video
@@ -277,21 +273,21 @@ const sectionNavigationItems = [
           class="scroll-cue scroll-cue--up section-up-cue"
           type="button"
           data-scroll-target="#start"
-          aria-label="Zum Start scrollen"
+          aria-label={copy.scrollStart}
         >
           <span aria-hidden="true"></span>
         </button>
         <div class="media-panel__content media-panel__content--craft">
-          <h2 id="craft-title">Über uns</h2>
+          <h2 id="about-title">{copy.about}</h2>
           <a class="section-cta" href={sitePath("/ueber-uns/")}>
-            Mehr erfahren
+            {copy.learnMore}
           </a>
-          <div class="scroll-cues" aria-label="Abschnitt wechseln">
+          <div class="scroll-cues" aria-label={copy.sectionChange}>
             <button
               class="scroll-cue"
               type="button"
               data-scroll-target="#projekte"
-              aria-label="Zu Projekten scrollen"
+              aria-label={copy.scrollProjects}
             >
               <span aria-hidden="true"></span>
             </button>
@@ -302,6 +298,7 @@ const sectionNavigationItems = [
       <section
         class="media-panel editorial-panel"
         id="projekte"
+        aria-labelledby="projects-title"
         data-motion-panel
       >
         <video
@@ -342,21 +339,21 @@ const sectionNavigationItems = [
           class="scroll-cue scroll-cue--up section-up-cue"
           type="button"
           data-scroll-target="#start"
-          aria-label="Zum Start scrollen"
+          aria-label={copy.scrollStart}
         >
           <span aria-hidden="true"></span>
         </button>
         <div class="media-panel__content media-panel__content--craft">
-          <h2 id="craft-title">Projekte</h2>
+          <h2 id="projects-title">{copy.projects}</h2>
           <a class="section-cta" href={sitePath("/projekte/")}>
-            Mehr erfahren
+            {copy.learnMore}
           </a>
-          <div class="scroll-cues" aria-label="Abschnitt wechseln">
+          <div class="scroll-cues" aria-label={copy.sectionChange}>
             <button
               class="scroll-cue"
               type="button"
               data-scroll-target="#site-footer"
-              aria-label="Zum Footer scrollen"
+              aria-label={copy.scrollFooter}
             >
               <span aria-hidden="true"></span>
             </button>
@@ -365,162 +362,10 @@ const sectionNavigationItems = [
       </section>
     </main>
 
-    <script is:inline>
-      const hero = document.querySelector("[data-hero]");
-      const heroVideo = document.querySelector("[data-hero-video]");
-      const heroMotionFallback = document.querySelector(
-        "[data-hero-motion-fallback]",
-      );
-      const heroMotionImage = document.querySelector(
-        "[data-hero-motion-image]",
-      );
-      const heroMotionToggle = document.querySelector(
-        "[data-hero-motion-toggle]",
-      );
-      const heroTitleLetter = document.querySelector(
-        "[data-hero-title-letter]",
-      );
-      const heroTitleLetterGlyph = document.querySelector(
-        "[data-hero-title-letter-glyph]",
-      );
-      let heroTitleCycleAnimation;
-      let heroTitleCycleStarted = false;
-      let heroTitleResizeFrame;
+    <script is:inline define:vars={{ motionPlayLabel: copy.motionPlay, motionPauseLabel: copy.motionPause }}>
       const prefersReducedMotion = window.matchMedia(
         "(prefers-reduced-motion: reduce)",
       ).matches;
-
-      const measureHeroTitleLetter = () => {
-        if (
-          !(heroTitleLetter instanceof HTMLElement) ||
-          !(heroTitleLetterGlyph instanceof HTMLElement)
-        ) {
-          return;
-        }
-
-        const letterWidth = heroTitleLetterGlyph.getBoundingClientRect().width;
-        if (letterWidth > 0) {
-          heroTitleLetter.style.setProperty(
-            "--hero-title-letter-width",
-            `${letterWidth}px`,
-          );
-        }
-
-        return letterWidth;
-      };
-
-      const startHeroTitleCycle = () => {
-        if (!(heroTitleLetter instanceof HTMLElement)) {
-          return;
-        }
-
-        Promise.resolve(document.fonts?.ready).then(() => {
-          const letterWidth = measureHeroTitleLetter();
-          if (!letterWidth) {
-            return;
-          }
-
-          heroTitleCycleAnimation?.cancel();
-          heroTitleLetter.classList.remove("is-cycling", "is-revealing");
-          Object.assign(heroTitleLetter.style, {
-            clipPath: "none",
-            display: "inline-block",
-            overflow: "visible",
-            verticalAlign: "baseline",
-          });
-
-          if (
-            prefersReducedMotion ||
-            typeof heroTitleLetter.animate !== "function"
-          ) {
-            Object.assign(heroTitleLetter.style, {
-              filter: "blur(0)",
-              opacity: "1",
-              transform: "none",
-              width: `${letterWidth}px`,
-            });
-            return;
-          }
-
-          const hiddenLetter = {
-            filter: "blur(0.1em)",
-            opacity: 0,
-            transform: "translateX(-0.14em)",
-            width: "0px",
-          };
-          const visibleLetter = {
-            filter: "blur(0)",
-            opacity: 1,
-            transform: "translateX(0)",
-            width: `${letterWidth}px`,
-          };
-
-          window.requestAnimationFrame(() => {
-            window.requestAnimationFrame(() => {
-              heroTitleCycleAnimation = heroTitleLetter.animate(
-                [
-                  { ...hiddenLetter, offset: 0 },
-                  {
-                    ...hiddenLetter,
-                    easing: "cubic-bezier(0.65, 0, 0.35, 1)",
-                    offset: 1 / 10,
-                  },
-                  { ...visibleLetter, offset: 2 / 10 },
-                  {
-                    ...visibleLetter,
-                    easing: "cubic-bezier(0.65, 0, 0.35, 1)",
-                    offset: 8 / 10,
-                  },
-                  { ...hiddenLetter, offset: 9 / 10 },
-                  { ...hiddenLetter, offset: 1 },
-                ],
-                {
-                  duration: 7500,
-                  fill: "both",
-                  iterations: Infinity,
-                },
-              );
-            });
-          });
-
-          heroTitleCycleStarted = true;
-        });
-      };
-
-      if (heroTitleLetter instanceof HTMLElement && !prefersReducedMotion) {
-        heroTitleLetter.classList.remove("is-cycling", "is-revealing");
-        Object.assign(heroTitleLetter.style, {
-          clipPath: "none",
-          display: "inline-block",
-          filter: "blur(0.1em)",
-          opacity: "0",
-          overflow: "visible",
-          transform: "translateX(-0.14em)",
-          verticalAlign: "baseline",
-          width: "0px",
-        });
-      }
-
-      if (document.readyState === "complete") {
-        startHeroTitleCycle();
-      } else {
-        window.addEventListener("load", startHeroTitleCycle, { once: true });
-      }
-
-      window.addEventListener(
-        "resize",
-        () => {
-          window.cancelAnimationFrame(heroTitleResizeFrame);
-          heroTitleResizeFrame = window.requestAnimationFrame(() => {
-            if (heroTitleCycleStarted) {
-              startHeroTitleCycle();
-            } else {
-              measureHeroTitleLetter();
-            }
-          });
-        },
-        { passive: true },
-      );
 
       const setMotionToggleState = (toggle, isPaused) => {
         if (!(toggle instanceof HTMLButtonElement)) {
@@ -530,7 +375,7 @@ const sectionNavigationItems = [
         toggle.classList.toggle("is-paused", isPaused);
         toggle.setAttribute(
           "aria-label",
-          isPaused ? "Animation abspielen" : "Animation pausieren",
+          isPaused ? motionPlayLabel : motionPauseLabel,
         );
       };
 
@@ -799,7 +644,7 @@ const sectionNavigationItems = [
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.24em;
-    font-size: 0.66rem;
+    font-size: var(--text-utility);
     font-weight: 500;
   }
 
@@ -1012,45 +857,25 @@ const sectionNavigationItems = [
     text-align: center;
   }
 
-  h1,
-  .media-panel h2 {
+	h1,
+	.media-panel h2 {
     margin: 0;
     font-family: var(--font-body);
-    font-weight: 300;
-    letter-spacing: 0.2em;
+		font-weight: 400;
+    letter-spacing: 0.13em;
     text-transform: uppercase;
   }
 
   h1 {
-    max-width: 900px;
-    font-size: clamp(1.7rem, 3.1vw, 3.75rem);
+    max-width: none;
+    font-size: clamp(2.05rem, 3.25vw, 4rem);
     line-height: 1.1;
-  }
-
-  .hero-title__word {
     white-space: nowrap;
-  }
-
-  .hero-title__letter {
-    --hero-title-letter-width: 0.8em;
-
-    display: inline-block;
-    width: 0;
-    overflow: visible;
-    filter: blur(0.1em);
-    opacity: 0;
-    transform: translateX(-0.14em);
-    vertical-align: baseline;
-    will-change: width, opacity, filter, transform;
-  }
-
-  .hero-title__letter-glyph {
-    display: inline-block;
   }
 
   .media-panel h2 {
     max-width: 820px;
-    font-size: clamp(1.5rem, 2.75vw, 3.25rem);
+    font-size: clamp(1.8rem, 3vw, 3.55rem);
     line-height: 1.12;
   }
 
@@ -1063,18 +888,20 @@ const sectionNavigationItems = [
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: min(84vw, 312px);
-    min-height: 64px;
+    min-width: min(70vw, 210px);
+    min-height: 48px;
     margin-top: clamp(1.7rem, 3vw, 2.55rem);
-    padding: 0.95rem 2.8rem;
-    color: #111111;
-    background: rgba(238, 238, 238, 0.96);
-    border: 1px solid rgba(238, 238, 238, 0.98);
+    padding: 0.72rem 1.65rem;
+    color: rgba(238, 238, 238, 0.94);
+    background: rgba(16, 16, 16, 0.22);
+    border: 1px solid rgba(238, 238, 238, 0.42);
     border-radius: 999px;
+    -webkit-backdrop-filter: blur(16px) saturate(108%);
+    backdrop-filter: blur(16px) saturate(108%);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.24em;
-    font-size: clamp(0.72rem, 0.76vw, 0.82rem);
+    font-size: var(--text-utility);
     font-weight: 500;
     line-height: 1;
     transition:
@@ -1087,8 +914,8 @@ const sectionNavigationItems = [
   .section-cta:hover,
   .section-cta:focus-visible {
     color: var(--color-main);
-    background: rgba(238, 238, 238, 0.08);
-    border-color: rgba(238, 238, 238, 0.82);
+    background: rgba(16, 16, 16, 0.42);
+    border-color: rgba(238, 238, 238, 0.78);
     transform: translateY(-2px);
   }
 
@@ -1164,7 +991,7 @@ const sectionNavigationItems = [
   @media (max-width: 760px) {
     .media-panel {
       min-height: 100svh;
-      --mobile-header-height: 64px;
+      --mobile-header-height: 72px;
       --panel-edge-cue-offset: clamp(7.75rem, 18svh, 10rem);
     }
 
@@ -1183,13 +1010,14 @@ const sectionNavigationItems = [
     }
 
     h1 {
-      font-size: clamp(1.62rem, 7.4vw, 2.25rem);
+      font-size: clamp(1.9rem, 7.8vw, 2.55rem);
       line-height: 1.12;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.08em;
+      white-space: normal;
     }
 
     .media-panel h2 {
-      font-size: clamp(1.48rem, 7vw, 2.05rem);
+      font-size: clamp(1.72rem, 7.4vw, 2.35rem);
       line-height: 1.14;
       letter-spacing: 0.12em;
     }
@@ -1200,10 +1028,10 @@ const sectionNavigationItems = [
     }
 
     .section-cta {
-      min-width: min(84vw, 292px);
-      min-height: 58px;
-      padding-inline: 2.1rem;
-      letter-spacing: 0.2em;
+      min-width: min(70vw, 210px);
+      min-height: 44px;
+      padding-inline: 1.45rem;
+      letter-spacing: 0.16em;
     }
 
     .hero-motion-toggle {
@@ -1211,16 +1039,6 @@ const sectionNavigationItems = [
       bottom: 1rem;
       width: 44px;
       height: 44px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .hero-title__letter {
-      animation: none;
-      width: var(--hero-title-letter-width);
-      filter: none;
-      opacity: 1;
-      transform: none;
     }
   }
 

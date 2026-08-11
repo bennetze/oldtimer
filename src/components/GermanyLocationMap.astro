@@ -1,0 +1,94 @@
+---
+interface Props {
+	locale?: 'de' | 'en';
+}
+
+const { locale = 'de' } = Astro.props;
+const mapsUrl = 'https://maps.app.goo.gl/jg4eC1XRAyLDoW1BA';
+const label = locale === 'de'
+	? 'Standort der Oldtimermanufaktur in Fischbach/Rhön auf Google Maps öffnen'
+	: 'Open the Oldtimermanufaktur location in Fischbach/Rhön on Google Maps';
+---
+
+<a class="location-map" href={mapsUrl} target="_blank" rel="noreferrer" aria-label={label}>
+	<svg viewBox="0 0 400 520" role="img" aria-labelledby="germany-map-title germany-map-description">
+		<title id="germany-map-title">{locale === 'de' ? 'Standort in Deutschland' : 'Location in Germany'}</title>
+		<desc id="germany-map-description">
+			{locale === 'de'
+				? 'Eine ausgefüllte Deutschlandkarte mit einer Markierung bei Fischbach in der Thüringischen Rhön.'
+				: 'A filled map of Germany with a marker at Fischbach in the Thuringian Rhön.'}
+		</desc>
+		<!-- Simplified from Natural Earth 1:10m Admin 0 Countries, public domain. -->
+		<path
+			class="location-map__country"
+			d="M317.9 389.3L317.4 397.9L314.4 402.9L305.3 400L303.6 410.9L280.3 425.5L289.1 440.3L285.7 447.1L290.1 447.7L291.9 450.7L289.5 461.4L281.7 456.5L281.1 450.3L271.9 452.4L269.3 448.9L262.9 449.6L263 446.7L260.7 448.1L260.6 453.7L241.3 454.6L238.9 458.8L234 459.2L233 462.6L227.9 465.4L226.4 463.5L218.9 465.6L214.7 457.8L205.1 456.1L201.6 457.7L199.7 455.3L199.7 465.3L190.3 472.2L192 466.6L187.6 467.3L182.9 457.3L178.9 457.6L177.1 454.6L171.2 458.3L156.2 450.1L145.7 450.9L142.8 447.3L140 448.7L139.8 445.2L135.3 442.9L128.6 448.9L130.9 451.8L136.1 450.9L134.5 454.6L123.1 452.8L116.4 456.2L108.7 454.2L103.9 457.1L101.3 455.9L103.1 454.2L100.5 454.8L97.9 448L101.7 433.4L100.5 424.6L106.2 412.9L108.3 397.7L118.1 387L121.9 378.6L112.6 374.4L102.2 374.2L94.4 367L89.6 370.5L82.8 368.5L81.5 370.4L80.4 366.3L77.1 364.9L74.2 364.7L73.8 368.2L70.5 367.7L63 352.8L57.2 351.1L62.7 332.2L55.7 330L48.5 318.2L50.3 309L58.2 303.4L56.9 294.2L51.1 292.2L53.8 286.8L45.6 281.6L44.2 277.5L47.4 270.6L45.3 266.9L40.8 267.4L40.2 264.4L50.3 257L47.1 253.7L52.4 243.9L51.9 237.2L48.6 229.7L43 224.9L42.6 220.7L50.6 218.7L49.6 215.7L57.2 219.9L71.1 215.1L73.4 211.1L68.9 206.6L81 197.2L81.7 189.7L79.1 185L70.1 184.4L68.6 179.9L71.1 178.9L70.9 174.8L80.7 175.3L86.8 154.6L86.8 140.9L88.9 136.8L92.8 137.7L80.9 133.7L81.8 126.1L85 124.7L83.1 122L87.9 117.6L116 115.3L120.8 123.9L117.6 128.5L122.1 131.8L125.9 128.2L123 125.4L124.4 120.5L134.2 124.4L132.5 134.7L134.7 124.2L131.9 115.7L135.4 106.3L138.4 105.1L145 108.4L157.2 106.2L170.2 121.7L178.9 124.4L170.2 120.6L163.6 108.4L146.9 102.5L144 97.1L149.7 97.4L150.5 93.6L148.2 90.8L145 92.1L143.3 89.1L148.6 81.5L138.6 84.1L135.9 80.3L139.2 79.2L137.6 76.5L145.9 75.9L150.2 71L139 58.3L138 49.4L146.5 49.3L156.6 51.9L158.4 54.6L170.1 51L178.6 57.1L182.9 55.8L185.4 60.2L182.3 61.7L186.1 62.1L185.7 68L179.2 72.7L189.7 71.8L191.9 73.5L189.7 81.1L195.9 74.5L210.3 81.9L224.4 77.7L222 79.2L222 88.9L211 96.3L215.7 101.1L225.7 98.1L228.1 102.1L231.3 101.2L235.6 104.3L237.8 97.1L243.7 90.5L257.6 88.3L258.5 93.6L258.3 88.9L266.5 82.2L273.2 72L286.7 75L269.8 77.6L267.4 84.1L270.5 84.9L268.9 84.1L271.2 80.7L278.3 76.3L278.4 78.4L284.4 79.2L290.6 75L293.4 83.5L299.5 86.1L305.7 93.6L314.3 89.4L317.6 93.3L315.5 97.1L321.1 102.8L317.9 107.2L325.6 112.6L333.6 112.9L331.8 115.3L339.7 140.6L336.3 151.8L329.4 156.8L328.7 162.8L346.8 178L343.4 188.8L344.7 193.8L349.2 196.9L348.3 203.3L350.9 205.7L344.8 220.9L349.9 228.9L349.1 236L357.7 241.3L360 252.3L356.1 265.8L350.1 275.9L345.7 274L346.3 269.8L343.5 270.3L344.4 266.8L341.2 263.4L334.4 263.4L332.6 266.4L337.7 269.8L336.4 272.1L322.9 276.4L318.6 280.8L308.9 281.7L305.1 287.8L302.3 286L295 293.3L289.8 293.6L287.8 298.5L283.1 296.3L272.3 299.3L265 312L262.9 306.7L257.2 303.4L263.2 318.4L270.3 322L272.8 326.2L267.9 335.2L277 352.5L281.7 357.9L289.4 360L295.7 369.8L299.9 371.2L305.4 379.4L310.7 379.3L317.9 389.3Z"
+		/>
+		<g class="location-map__pin" transform="translate(189.7 284.6)">
+			<path d="M0 3C-3.8-2.4-15-14.4-15-26a15 15 0 1 1 30 0C15-14.4 3.8-2.4 0 3Z" />
+			<circle cx="0" cy="-26" r="5.2" />
+		</g>
+	</svg>
+	<span>{locale === 'de' ? 'Route auf Google Maps öffnen ↗' : 'Open route in Google Maps ↗'}</span>
+</a>
+
+<style>
+	.location-map {
+		display: grid;
+		gap: 0.9rem;
+		width: min(100%, 19rem);
+		margin: 0 0 clamp(2rem, 4vw, 3.5rem);
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.location-map svg {
+		width: 100%;
+		height: auto;
+		overflow: visible;
+	}
+
+	.location-map__country {
+		fill: rgba(17, 17, 17, 0.3);
+		transition: fill 220ms ease;
+	}
+
+	.location-map__pin path {
+		fill: #111111;
+	}
+
+	.location-map__pin circle {
+		fill: #eeeeee;
+	}
+
+	.location-map > span {
+		padding-top: 0.8rem;
+		border-top: 1px solid rgba(17, 17, 17, 0.3);
+		font-size: var(--text-utility);
+		font-weight: 500;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	.location-map:hover .location-map__country,
+	.location-map:focus-visible .location-map__country {
+		fill: rgba(17, 17, 17, 0.42);
+	}
+
+	.location-map:focus-visible {
+		outline: 1px solid currentColor;
+		outline-offset: 0.5rem;
+	}
+
+	@media (max-width: 840px) {
+		.location-map {
+			width: min(72vw, 18rem);
+			margin-inline: auto;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.location-map__country {
+			transition: none;
+		}
+	}
+</style>
