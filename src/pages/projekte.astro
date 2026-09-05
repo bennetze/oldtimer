@@ -5,23 +5,23 @@ import SiteChrome from '../components/SiteChrome.astro';
 import currentProjectsImage from '../assets/oldtimer/projects-current-color.png';
 import pastProjectsImage from '../assets/oldtimer/projects-past-color.png';
 import vehicleOffersImage from '../assets/oldtimer/projects-offers-color.png';
-import { localizedRoute, type Locale } from '../config/i18n';
-
-interface Props {
-	locale?: Locale;
-}
-
-const { locale = 'de' } = Astro.props;
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
 const sitePath = (path: string) => {
-	const localizedPath = localizedRoute(path, locale);
-	return localizedPath === '/' ? basePath : `${basePath}${localizedPath.replace(/^\//, '')}`;
+	if (path === '/') {
+		return basePath;
+	}
+
+	if (path.startsWith('/')) {
+		return `${basePath}${path.slice(1)}`;
+	}
+
+	return path;
 };
 
-const projectAreas = locale === 'de' ? [
+const projectAreas = [
 	{
 		id: 'aktuelle-projekte',
 		title: 'Aktuelle Projekte',
@@ -46,47 +46,21 @@ const projectAreas = locale === 'de' ? [
 		image: vehicleOffersImage,
 		alt: 'KI-generierter Platzhalter: Ein fahrbereiter klassischer Roadster in einer Werkstatt',
 	},
-] : [
-	{
-		id: 'aktuelle-projekte',
-		title: 'Current projects',
-		titleLines: ['Current', 'projects'],
-		href: '/projekte/aktuelle-projekte/',
-		image: currentProjectsImage,
-		alt: 'AI-generated placeholder: a classic coupé undergoing restoration in a dark workshop',
-	},
-	{
-		id: 'vergangene-projekte',
-		title: 'Completed projects',
-		titleLines: ['Completed', 'projects'],
-		href: '/projekte/vergangene-projekte/',
-		image: pastProjectsImage,
-		alt: 'AI-generated placeholder: a fully restored classic coupé in a workshop',
-	},
-	{
-		id: 'fahrzeugangebote',
-		title: 'Vehicles for sale',
-		titleLines: ['Vehicles', 'for sale'],
-		href: '/projekte/fahrzeugangebote/',
-		image: vehicleOffersImage,
-		alt: 'AI-generated placeholder: a road-ready classic roadster in a workshop',
-	},
 ];
 ---
 
 <Layout
-	title={locale === 'de' ? 'Projekte' : 'Projects'}
-	description={locale === 'de' ? 'Aktuelle und vergangene Restaurierungsprojekte der Oldtimermanufaktur sowie ausgewählte Fahrzeugangebote.' : 'Current and completed Oldtimermanufaktur restoration projects, together with selected historic vehicles for sale.'}
+	title="Projekte"
+	description="Aktuelle und vergangene Restaurierungsprojekte der Oldtimermanufaktur sowie ausgewählte Fahrzeugangebote."
 	openGraphImage={currentProjectsImage}
-	openGraphImageAlt={locale === 'de' ? 'Ein klassisches Coupé während einer Restaurierung in einer dunklen Werkstatt' : 'A classic coupé undergoing restoration in a dark workshop'}
+	openGraphImageAlt="Ein klassisches Coupé während einer Restaurierung in einer dunklen Werkstatt"
 	structuredDataType="CollectionPage"
-	dateModified="2026-08-10"
-	{locale}
+	dateModified="2026-08-06"
 >
-	<SiteChrome {locale}>
+	<SiteChrome>
 		<main class="projects-page" id="main-content" tabindex="-1">
-			<h1 class="visually-hidden">{locale === 'de' ? 'Projekte' : 'Projects'}</h1>
-			<nav class="projects-triptych" aria-label={locale === 'de' ? 'Projektbereiche' : 'Project categories'}>
+			<h1 class="visually-hidden">Projekte</h1>
+			<nav class="projects-triptych" aria-label="Projektbereiche">
 				{
 					projectAreas.map((area, index) => (
 						<a
@@ -205,7 +179,7 @@ const projectAreas = locale === 'de' ? [
 
 	.project-panel h2 {
 		margin: 0;
-		font-size: clamp(2.05rem, 2.6vw, 3.45rem);
+		font-size: clamp(1.8rem, 2.35vw, 3.1rem);
 		font-weight: 400;
 		letter-spacing: 0.045em;
 		line-height: 0.98;
@@ -283,7 +257,7 @@ const projectAreas = locale === 'de' ? [
 		}
 
 		.project-panel h2 {
-			font-size: clamp(1.62rem, 6.5vw, 2rem);
+			font-size: clamp(1.4rem, 6vw, 1.75rem);
 			font-weight: 400;
 			letter-spacing: 0.045em;
 			line-height: 1;

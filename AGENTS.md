@@ -6,11 +6,16 @@ This is a small Astro site for the German classic car restoration company
 “Die Oldtimermanufaktur”. Source lives in `src/`:
 
 - `src/pages/` contains route entry points: the German homepage in `index.astro`,
-  the company profile in `ueber-uns.astro`, legal pages in `impressum.astro` and
+  the company profile in `ueber-uns.astro`, `handwerk.astro`, `projekte.astro`,
+  the three project archives and their vehicle detail pages, legal pages in `impressum.astro` and
   `datenschutz.astro`, and the custom not-found page in `404.astro`.
-- `src/layouts/` contains shared page shells such as `Layout.astro`.
+- Each vehicle under `src/pages/projekte/<category>/` has a matching `.astro` page
+  and a folder containing `vehicle.json` and source images. Preserve this pairing;
+  discovery validates it. There are currently 157 vehicle records.
+- `src/layouts/` contains `Layout.astro` and `EditorialPageLayout.astro`.
 - `src/components/` contains reusable Astro components such as `SiteChrome.astro`
-  and `LegalArticle.astro`.
+  and `LegalArticle.astro`, plus `VehicleArchivePage.astro`, `VehicleDetailPage.astro`
+  and `VehicleCard.astro`.
 - `src/assets/` contains source-controlled assets imported by pages and components.
 - `src/assets/oldtimer/` contains generated homepage and subpage imagery. Keep
   project-referenced generated assets in this folder or another source-controlled
@@ -35,16 +40,19 @@ Root configuration includes `astro.config.mjs`, `tsconfig.json`, `package.json`,
 when `DEPLOY_TARGET=github-pages`; use `import.meta.env.BASE_URL` or the existing
 `sitePath` helper for internal URLs instead of hardcoding either deployment base.
 
-`public/sitemap.xml` is the production sitemap and must stay synchronized with the
-public website. Whenever anything about the site changes, edit the sitemap in the
-same change. Add or remove canonical URLs when routes change, and update `<lastmod>`
-for every affected indexable page when its content, structured data, links, or other
-significant page output changes. For a site-wide change, update all affected entries.
-Never add redirects, duplicate/non-canonical URLs, or the noindex 404 page.
+`public/sitemap.xml` is the version-controlled production sitemap. After relevant
+route or output changes, run `npm run vehicles:sync` explicitly and review its diff.
+Ordinary builds validate crawler consistency without rewriting tracked source files;
+a stale sitemap fails with instructions to synchronize it. Add only canonical,
+indexable routes, never redirects, duplicates or the noindex 404/legal pages.
+Use the reviewed dates in `src/config/modificationDates.js` and existing vehicle
+content dates for sitemap and page metadata. Advance the shared date for site-wide
+changes or the applicable template/page date for narrower changes. Never use the
+build clock as a content modification date.
 
 `public/robots.txt` is the production crawler policy served at `/robots.txt` and
 must stay synchronized with the public website. Whenever the website changes,
-review and update it in the same change so crawler permissions, protected asset
+review it in the same change and update it when its policy or scope needs to change so crawler permissions, protected asset
 patterns, and the production sitemap reference remain accurate. Adjust directives
 when routes, public asset types, indexing policy, or the sitemap location changes.
 Keep the production hostname in its `Sitemap` directive, preserve access to normal
@@ -52,7 +60,9 @@ indexable pages unless requirements explicitly change, and do not use robots.txt
 a substitute for page-level `noindex` metadata.
 
 `public/llms.txt` is the production LLM-facing site summary served at `/llms.txt`.
-Whenever the website changes, update this file in the same change so its concise
+Maintain this file manually as the authoritative German summary; builds validate
+its canonical page links without replacing approved wording. Avoid volatile vehicle
+counts. Whenever the website changes, update this file in the same change so its concise
 German summary, factual context, canonical page links, and link descriptions match
 the published site. Add newly published pages when they are useful to agents, revise
 descriptions when page content changes, and remove retired routes. Follow the
@@ -122,12 +132,16 @@ the preview flags, and repeat the legal, metadata, crawler, accessibility, cooki
 security, and browser checks. Never disable that release gate merely to make a build
 look production-ready.
 
-`src/pages/ueber-uns.astro` is an approved production page. For additional commercial
-subpages, prefer German, lowercase, URL-oriented routes that match the homepage
-navigation, such as `src/pages/projekte.astro`, `src/pages/oldtimer-kaufen.astro`,
-`src/pages/restaurierung.astro`, and `src/pages/kontakt.astro`. Their scope and copy
-are not defined yet, so do not create them or invent production content without
-explicit requirements. There is no planned wedding-car service page.
+The company profile, Handwerk, Projekte, the three vehicle archives, their pagination
+and vehicle detail pages already exist. Reuse their shared components and preserve
+existing URLs. Additional commercial pages such as `/restaurierung/` or `/kontakt/`
+require explicit scope and approved copy; do not invent them. There is no planned
+wedding-car service page.
+
+Vehicle enquiries remain by telephone or email. Do not add checkout, booking, or
+published fixed prices without a new explicit request. Keep the applicability of
+price-disclosure duties recorded for legal review; this product preference does not
+establish a legal exemption.
 
 Before creating several subpages, extract repeated homepage structure from
 `src/pages/index.astro` into shared components instead of duplicating it.
@@ -150,6 +164,9 @@ Run commands from the repository root.
 
 - `npm install` installs dependencies from `package-lock.json`.
 - `npm run dev` starts the Astro dev server, usually at `http://localhost:4321`.
+- `npm run vehicles:sync` explicitly updates the sitemap only; llms.txt remains manual.
+- `npm run crawlers:check` validates the sitemap, LLM links and robots sitemap reference without writing source.
+- `npm test` runs focused Node regressions and the vehicle-discovery fixture.
 - `npm run build` creates a production build in `dist/` and is the main verification command.
 - `npm run build:pages` creates the GitHub Pages build with the `/oldtimer/` base path.
 - `npm run deploy` builds and publishes `dist/` to the `gh-pages` branch.
@@ -172,6 +189,11 @@ main color, and neutral grey lines/interactions. Avoid accent-heavy treatments a
 gold, brown, beige, tan, sepia, and retro nostalgia palettes unless explicitly requested.
 Use free commercial fonts only. The current homepage uses `Jost` for all typography,
 including display, body, and UI text.
+
+Existing light vehicle pages and current page-specific backgrounds are intentional
+exceptions to the dark/grayscale defaults below. Preserve them during maintenance
+unless the user explicitly requests a redesign; do not normalize existing pages to
+the default palette.
 
 The current design uses immersive, image-led sections, sparse uppercase typography,
 generous spacing, thin borders, and quiet grayscale image treatment. Subpages should
@@ -267,10 +289,12 @@ and data-stream checks must print nothing. Stop and re-export/re-encode if an MP
 audio, data/timecode, HEVC, 10-bit pixel format, or multiple streams.
 
 When wiring a background video into Astro, follow the homepage pattern: MP4 source
-first, WebM second if present, `autoplay`, `muted`, `loop`, `playsinline`,
+first, WebM second if present, `muted`, `loop`, `playsinline`,
 `webkit-playsinline`, and `preload="auto"` on the `<video>`. Keep decorative
 background video `aria-hidden="true"`. Autoplaying, looping hero motion is a core
-site requirement for visitors who have not requested reduced motion.
+site requirement for visitors who have not requested reduced motion. Enable
+`autoplay` through the motion controller after checking preferences and visibility;
+do not let declarative autoplay start playback before that check.
 
 Use a lightweight still poster as the initially visible layer. Hide the video with
 `visibility: hidden` until `play()` resolves or the `playing` event fires, then fade
@@ -278,8 +302,10 @@ the video in. Load or inject the animated AVIF/WebP fallback only after autoplay
 fails, the video errors, or playback stalls; do not eagerly download it alongside a
 successfully playing MP4. This prevents Safari's native play overlay from appearing
 when Safari blocks autoplay and avoids downloading two motion assets on the normal
-path. Preserve the homepage's accessible play/pause control and its
-`prefers-reduced-motion` behavior when changing the hero.
+path. Every automatically looping media section must provide an accessible
+play/pause control. Pause must cover associated heading animation and animated
+fallbacks; reduced-motion changes must take effect during the visit. Preserve
+manual playback for reduced-motion visitors.
 
 For subpage layout, keep the fixed blurred header and menu overlay consistent across
 the site. Navigation links should point to real routes once those pages exist instead
@@ -316,7 +342,15 @@ keyboard navigation, focus indication, or assistive-technology semantics.
 
 ## Testing Guidelines
 
-No dedicated test framework is configured yet. Run `npm run build` before submitting changes. For visual or behavior changes, also run `npm run dev` and verify the affected page in a browser.
+Use `npm test` for the Node test runner and vehicle-discovery fixture. Both build
+commands also verify vehicle output and generated pages, including CSP hashes,
+unique IDs, links, metadata dates, image dimensions and motion controls. For shared
+changes, run `npm test`, `npm run build` and `npm run build:pages`; confirm that builds
+do not modify tracked source. For visual or behavior changes, also use `npm run dev`
+and verify the affected pages. Test CSP using built/preview output, since Astro's
+CSP is inactive in dev mode. Include empty archives, malformed fragments, browser
+Back/search restoration, short-screen menu access, cursor breakpoint/dialog behavior,
+and paused/reduced-motion fallback races in the relevant regressions.
 
 For homepage UI changes, verify desktop and mobile widths. Check that the fixed blurred
 header, menu overlay, scroll buttons, custom desktop cursor, generated images, and footer
@@ -337,7 +371,8 @@ For routing or deployment changes, test the generated `404.html`, its home link 
 keyboard navigation in Safari and Firefox in addition to a Chromium-based browser;
 verify that focus is contained while open and restored after closing.
 
-If tests are added later, place them near the code they cover or in a clearly named test directory, and add an `npm test` script.
+Keep Node regression tests in `tests/` and build verification scripts in `scripts/`.
+Do not claim browser or hosting verification that was unavailable.
 
 ## Commit & Pull Request Guidelines
 

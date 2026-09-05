@@ -7,15 +7,14 @@ interface SectionItem {
 interface Props {
 	items: SectionItem[];
 	theme?: 'dark' | 'light';
-	locale?: 'de' | 'en';
 }
 
-const { items, theme = 'dark', locale = 'de' } = Astro.props;
+const { items, theme = 'dark' } = Astro.props;
 ---
 
 <nav
 	class:list={['section-indicator', `section-indicator--${theme}`]}
-	aria-label={locale === 'de' ? 'Abschnitte' : 'Sections'}
+	aria-label="Abschnitte"
 	data-section-indicator
 >
 	{

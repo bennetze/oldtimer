@@ -1,5 +1,4 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
-import type { Locale } from './i18n';
 
 export type VehicleEntry = CollectionEntry<'vehicles'>;
 export type VehicleCategoryKey = VehicleEntry['data']['category'];
@@ -30,27 +29,6 @@ export const vehicleCategories = [
 export const categoryByKey = Object.fromEntries(
 	vehicleCategories.map((category) => [category.key, category]),
 ) as Record<VehicleCategoryKey, (typeof vehicleCategories)[number]>;
-
-const englishVehicleCategories = {
-	'aktuelle-projekte': {
-		label: 'Current projects',
-		heading: 'Current projects',
-		description: 'A look at ongoing restorations and current work on historic vehicles.',
-	},
-	'vergangene-projekte': {
-		label: 'Completed projects',
-		heading: 'Completed projects',
-		description: 'Completed restorations and selected references from the history of our workshop.',
-	},
-	'fahrzeugangebote': {
-		label: 'Vehicles for sale',
-		heading: 'Vehicles for sale',
-		description: 'Selected historic vehicles currently offered by the Oldtimermanufaktur.',
-	},
-} as const;
-
-export const vehicleCategory = (key: VehicleCategoryKey, locale: Locale = 'de') =>
-	locale === 'de' ? categoryByKey[key] : { key, ...englishVehicleCategories[key] };
 
 export const vehicleRoute = (vehicle: VehicleEntry) =>
 	`/projekte/${vehicle.data.category}/${vehicle.data.slug}/`;

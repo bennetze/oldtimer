@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import type { Locale } from '../config/i18n';
 import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
 import bodyPortrait from '../assets/oldtimer/L1005486.webp';
 import bodyLandscape from '../assets/oldtimer/L1005735.webp';
@@ -11,66 +10,34 @@ import upholsteryLandscape from '../assets/oldtimer/L1005861.webp';
 import enginePortrait from '../assets/oldtimer/handwerk-motorbau-portrait.webp';
 import engineLandscape from '../assets/oldtimer/handwerk-motorbau-landscape.webp';
 
-interface Props {
-	locale?: Locale;
-}
-
-const { locale = 'de' } = Astro.props;
-const copy = {
-	de: {
-		title: 'Handwerk',
-		heading: 'Handwerk',
-		manifesto: 'Alles aus einer Hand',
-		description: 'Karosserie, Polsterei, Lackiererei und Motorbau: die Handwerksbereiche der Oldtimermanufaktur für historische Automobile.',
-		sections: [
-			{ id: 'karosserie', label: 'Karosserie' },
-			{ id: 'polsterei', label: 'Polsterei' },
-			{ id: 'lackiererei', label: 'Lackiererei' },
-			{ id: 'motorbau', label: 'Motorbau' },
-		],
-		body: 'Jede Linie beginnt mit einem genauen Blick auf die vorhandene Substanz. Bleche werden geformt, angepasst und so zusammengefügt, dass Proportionen, Übergänge und Spaltmaße wieder ein stimmiges Ganzes ergeben.',
-		upholstery: 'Material, Haptik und Verarbeitung prägen den Charakter eines Innenraums. Vom Zuschnitt bis zur letzten Naht entstehen Bezüge und Polster, die sich selbstverständlich in das historische Fahrzeug einfügen.',
-		paint: 'Ein überzeugendes Finish entsteht lange vor dem ersten Farbauftrag. Sorgfältiger Schichtaufbau, ruhige Flächen und ein fein abgestimmter Farbton geben der Karosserie Tiefe, ohne ihre Form zu überdecken.',
-		engine: 'Im Motorbau zählt das Zusammenspiel vieler kleiner Entscheidungen. Komponenten werden geprüft, bearbeitet und präzise aufeinander abgestimmt, bis aus einzelnen Teilen wieder eine verlässliche mechanische Einheit wird.',
-	},
-	en: {
-		title: 'Craft',
-		heading: 'Craft',
-		manifesto: 'Everything from a single source',
-		description: 'Bodywork, upholstery, paintwork and engine building: the Oldtimermanufaktur crafts behind the restoration of historic automobiles.',
-		sections: [
-			{ id: 'karosserie', label: 'Bodywork' },
-			{ id: 'polsterei', label: 'Upholstery' },
-			{ id: 'lackiererei', label: 'Paintwork' },
-			{ id: 'motorbau', label: 'Engine building' },
-		],
-		body: 'Every line begins with a close assessment of the existing fabric. Metal panels are shaped, fitted and joined until the proportions, transitions and panel gaps once again form a coherent whole.',
-		upholstery: 'Materials, texture and workmanship define the character of an interior. From the first cut to the final seam, covers and upholstery are made to feel entirely at home in the historic vehicle.',
-		paint: 'A convincing finish begins long before the first coat of colour. Careful preparation, calm surfaces and a precisely matched shade give the body depth without overpowering its form.',
-		engine: 'Engine building depends on the interaction of many small decisions. Components are inspected, machined and precisely matched until the individual parts once again become a dependable mechanical unit.',
-	},
-}[locale];
+const sectionNavigationItems = [
+	{ id: 'karosserie', label: 'Karosserie' },
+	{ id: 'polsterei', label: 'Polsterei' },
+	{ id: 'lackiererei', label: 'Lackiererei' },
+	{ id: 'motorbau', label: 'Motorbau' },
+];
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
 const siteUrl = Astro.site ?? Astro.url;
 const siteRootUrl = new URL(basePath, siteUrl);
-const pageUrl = new URL(Astro.url.pathname, siteUrl);
+const pageUrl = new URL(`${basePath}handwerk/`, siteUrl);
 const serviceId = `${pageUrl.href}#service`;
 const organizationId = `${siteRootUrl.href}#organization`;
 const handwerkServiceJsonLd = {
 	'@type': 'Service',
 	'@id': serviceId,
-	name: `${copy.heading} – ${copy.manifesto}`,
-	serviceType: locale === 'de' ? 'Restaurierung historischer Automobile' : 'Historic automobile restoration',
-	description: copy.description,
+	name: 'Handwerk – Alles aus einer Hand',
+	serviceType: 'Restaurierung historischer Automobile',
+	description:
+		'Karosserie, Polsterei, Lackiererei und Motorbau für die Restaurierung historischer Automobile.',
 	url: pageUrl.href,
 	provider: { '@id': organizationId },
 	hasOfferCatalog: {
 		'@type': 'OfferCatalog',
-		name: locale === 'de' ? 'Handwerksbereiche' : 'Craft disciplines',
-		itemListElement: copy.sections.map((section) => ({
+		name: 'Handwerksbereiche',
+		itemListElement: sectionNavigationItems.map((section) => ({
 			'@type': 'Offer',
 			itemOffered: {
 				'@type': 'Service',
@@ -83,34 +50,27 @@ const handwerkServiceJsonLd = {
 ---
 
 <EditorialPageLayout
-	title={copy.title}
-	heading={copy.heading}
-	description={copy.description}
-	sections={copy.sections}
+	title="Handwerk"
+	heading="Handwerk - Alles aus einer Hand"
+	description="Karosserie, Polsterei, Lackiererei und Motorbau: die Handwerksbereiche der Oldtimermanufaktur für historische Automobile."
+	sections={sectionNavigationItems}
 	theme="dark"
 	background="linear-gradient(180deg, #111111 0%, #111111 17%, #302b27 22%, #4b453f 28%, #57514b 34%, #524d49 41%, #47464a 48%, #363d47 55%, #263747 62%, #162d43 68%, #0c304c 74%, #083553 78%, #10283b 86%, #111111 100%)"
 	openGraphImage={bodyPortrait}
-	openGraphImageAlt={locale === 'de' ? 'Ein Karosseriebauer arbeitet konzentriert an der Form eines historischen Fahrzeugs' : 'A bodywork specialist shapes a historic vehicle by hand'}
+	openGraphImageAlt="Ein Karosseriebauer arbeitet konzentriert an der Form eines historischen Fahrzeugs"
 	structuredDataType="CollectionPage"
-	dateModified="2026-08-10"
+	dateModified="2026-08-03"
 	additionalJsonLd={handwerkServiceJsonLd}
-	{locale}
 >
-	<div slot="intro" class="craft-manifesto">
-		<p>{copy.manifesto}</p>
-		<ul aria-label={locale === 'de' ? 'Handwerksbereiche' : 'Craft disciplines'}>
-			{copy.sections.map((section) => <li>{section.label}</li>)}
-		</ul>
-	</div>
 	<section
 		slot="opening"
 		class="story story--images-right"
 		aria-labelledby="karosserie-title"
 		data-parallax-group
 	>
-		<h2 id="karosserie-title">{copy.sections[0].label}</h2>
+		<h2 id="karosserie-title">Karosserie</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--right" aria-label={locale === 'de' ? 'Arbeiten in der Karosserieabteilung' : 'Work in the bodywork department'}>
+			<div class="collage collage--double collage--right" aria-label="Arbeiten in der Karosserieabteilung">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
@@ -119,7 +79,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={bodyPortrait}
-						alt={locale === 'de' ? 'Ein Karosseriebauer bearbeitet ein Metallteil von Hand' : 'A bodywork specialist shapes a metal component by hand'}
+						alt="Ein Karosseriebauer bearbeitet ein Metallteil von Hand"
 						widths={[560, 760, 1024, 1280]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
@@ -134,7 +94,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={bodyLandscape}
-						alt={locale === 'de' ? 'Historische Fahrzeuge und Karosserieteile in der Werkstatt' : 'Historic vehicles and body panels in the workshop'}
+						alt="Historische Fahrzeuge und Karosserieteile in der Werkstatt"
 						widths={[640, 960, 1280, 1600]}
 						sizes="(max-width: 840px) 76vw, 42vw"
 						format="webp"
@@ -144,7 +104,11 @@ const handwerkServiceJsonLd = {
 			</div>
 
 			<div class="story__copy">
-				<p>{copy.body}</p>
+				<p>
+					Jede Linie beginnt mit einem genauen Blick auf die vorhandene Substanz. Bleche werden
+					geformt, angepasst und so zusammengefügt, dass Proportionen, Übergänge und Spaltmaße
+					wieder ein stimmiges Ganzes ergeben.
+				</p>
 			</div>
 		</div>
 	</section>
@@ -155,9 +119,9 @@ const handwerkServiceJsonLd = {
 		aria-labelledby="polsterei-title"
 		data-parallax-group
 	>
-		<h2 id="polsterei-title">{copy.sections[1].label}</h2>
+		<h2 id="polsterei-title">Polsterei</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--left" aria-label={locale === 'de' ? 'Arbeiten in der Polsterei' : 'Work in the upholstery department'}>
+			<div class="collage collage--double collage--left" aria-label="Arbeiten in der Polsterei">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
@@ -166,7 +130,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={upholsteryPortrait}
-						alt={locale === 'de' ? 'Ein Polsterer führt Leder an einer Nähmaschine' : 'An upholsterer guides leather through a sewing machine'}
+						alt="Ein Polsterer führt Leder an einer Nähmaschine"
 						widths={[560, 760, 1024, 1280]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
@@ -181,7 +145,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={upholsteryLandscape}
-						alt={locale === 'de' ? 'Werkzeuge, Schnittmuster und Leder auf dem Arbeitstisch einer Polsterei' : 'Tools, patterns and leather on an upholstery workbench'}
+						alt="Werkzeuge, Schnittmuster und Leder auf dem Arbeitstisch einer Polsterei"
 						widths={[640, 960, 1280, 1600]}
 						sizes="(max-width: 840px) 76vw, 42vw"
 						format="webp"
@@ -191,7 +155,11 @@ const handwerkServiceJsonLd = {
 			</div>
 
 			<div class="story__copy">
-				<p>{copy.upholstery}</p>
+				<p>
+					Material, Haptik und Verarbeitung prägen den Charakter eines Innenraums. Vom Zuschnitt
+					bis zur letzten Naht entstehen Bezüge und Polster, die sich selbstverständlich in das
+					historische Fahrzeug einfügen.
+				</p>
 			</div>
 		</div>
 	</section>
@@ -202,9 +170,9 @@ const handwerkServiceJsonLd = {
 		aria-labelledby="lackiererei-title"
 		data-parallax-group
 	>
-		<h2 id="lackiererei-title">{copy.sections[2].label}</h2>
+		<h2 id="lackiererei-title">Lackiererei</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--right" aria-label={locale === 'de' ? 'Arbeiten in der Lackiererei' : 'Work in the paint department'}>
+			<div class="collage collage--double collage--right" aria-label="Arbeiten in der Lackiererei">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
@@ -213,7 +181,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={paintPortrait}
-						alt={locale === 'de' ? 'Ein Lackierer trägt Schutzkleidung beim Lackieren eines Karosserieteils' : 'A painter in protective clothing paints a body panel'}
+						alt="Ein Lackierer trägt Schutzkleidung beim Lackieren eines Karosserieteils"
 						widths={[560, 760, 1024, 1280]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
@@ -228,7 +196,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={paintLandscape}
-						alt={locale === 'de' ? 'Lackierarbeiten an einer dunklen Karosserie in der Spritzkabine' : 'Paintwork on a dark body in the spray booth'}
+						alt="Lackierarbeiten an einer dunklen Karosserie in der Spritzkabine"
 						widths={[640, 960, 1280, 1600]}
 						sizes="(max-width: 840px) 76vw, 42vw"
 						format="webp"
@@ -238,7 +206,11 @@ const handwerkServiceJsonLd = {
 			</div>
 
 			<div class="story__copy">
-				<p>{copy.paint}</p>
+				<p>
+					Ein überzeugendes Finish entsteht lange vor dem ersten Farbauftrag. Sorgfältiger
+					Schichtaufbau, ruhige Flächen und ein fein abgestimmter Farbton geben der Karosserie
+					Tiefe, ohne ihre Form zu überdecken.
+				</p>
 			</div>
 		</div>
 	</section>
@@ -249,9 +221,9 @@ const handwerkServiceJsonLd = {
 		aria-labelledby="motorbau-title"
 		data-parallax-group
 	>
-		<h2 id="motorbau-title">{copy.sections[3].label}</h2>
+		<h2 id="motorbau-title">Motorbau</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--left" aria-label={locale === 'de' ? 'Platzhaltermotive für den Motorbau' : 'Placeholder imagery for engine building'}>
+			<div class="collage collage--double collage--left" aria-label="Platzhaltermotive für den Motorbau">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
@@ -260,7 +232,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={enginePortrait}
-						alt={locale === 'de' ? 'KI-generierter Platzhalter: Hände ziehen Bauteile an einem klassischen Motor mit einem Drehmomentschlüssel an' : 'AI-generated placeholder: hands tighten components on a classic engine with a torque wrench'}
+						alt="KI-generierter Platzhalter: Hände ziehen Bauteile an einem klassischen Motor mit einem Drehmomentschlüssel an"
 						widths={[560, 760, 1024]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
@@ -275,7 +247,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={engineLandscape}
-						alt={locale === 'de' ? 'KI-generierter Platzhalter: Ein überholter klassischer Reihensechszylinder auf einem Motorständer' : 'AI-generated placeholder: a rebuilt classic straight-six engine on a stand'}
+						alt="KI-generierter Platzhalter: Ein überholter klassischer Reihensechszylinder auf einem Motorständer"
 						widths={[640, 960, 1280, 1536]}
 						sizes="(max-width: 840px) 76vw, 42vw"
 						format="webp"
@@ -285,74 +257,12 @@ const handwerkServiceJsonLd = {
 			</div>
 
 			<div class="story__copy">
-				<p>{copy.engine}</p>
+				<p>
+					Im Motorbau zählt das Zusammenspiel vieler kleiner Entscheidungen. Komponenten werden
+					geprüft, bearbeitet und präzise aufeinander abgestimmt, bis aus einzelnen Teilen wieder
+					eine verlässliche mechanische Einheit wird.
+				</p>
 			</div>
 		</div>
 	</section>
 </EditorialPageLayout>
-
-<style is:global>
-	.craft-manifesto {
-		display: grid;
-		gap: clamp(1.25rem, 2.4vw, 2rem);
-		justify-items: center;
-		width: min(100%, 74rem);
-		margin-top: clamp(2.5rem, 4vw, 4rem);
-		text-align: center;
-	}
-
-	.editorial-intro .craft-manifesto > p {
-		margin: 0;
-		font-size: clamp(2rem, 4.1vw, 4.75rem);
-		font-weight: 520;
-		letter-spacing: 0.07em;
-		line-height: 0.98;
-		text-transform: uppercase;
-		text-wrap: balance;
-	}
-
-	.craft-manifesto ul {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 0.6rem 1.4rem;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-
-	.craft-manifesto li {
-		position: relative;
-		font-size: var(--text-utility);
-		font-weight: 500;
-		letter-spacing: 0.16em;
-		text-transform: uppercase;
-	}
-
-	.craft-manifesto li + li::before {
-		position: absolute;
-		top: 50%;
-		left: -0.82rem;
-		width: 3px;
-		height: 3px;
-		border-radius: 50%;
-		background: currentColor;
-		content: '';
-		opacity: 0.5;
-	}
-
-	@media (max-width: 600px) {
-		.editorial-intro .craft-manifesto > p {
-			font-size: clamp(1.8rem, 9vw, 2.8rem);
-		}
-
-		.craft-manifesto ul {
-			gap: 0.55rem 1rem;
-		}
-
-		.craft-manifesto li + li::before {
-			left: -0.58rem;
-		}
-	}
-</style>

@@ -76,9 +76,6 @@ const archiveCounts = new Map([
 	['/projekte/vergangene-projekte/', { total: groups[1].length, visible: Math.min(pageSize, groups[1].length) }],
 	['/projekte/fahrzeugangebote/', { total: groups[2].length, visible: groups[2].length }],
 ]);
-for (const [route, counts] of [...archiveCounts]) {
-	archiveCounts.set(`/en${route}`, counts);
-}
 for (const [route, expectedCards] of archiveCounts) {
 	const html = await readRoute(route);
 	assert.equal(occurrences(html, /<article class="vehicle-card"/g), expectedCards.total, `${route}: searchable card inventory.`);
@@ -88,7 +85,12 @@ for (const [route, expectedCards] of archiveCounts) {
 		`${route}: default-visible card count.`,
 	);
 	assert.match(html, /<form class="archive-search" role="search"/);
-	assert.ok(html.includes(galleryAssetBase), `${route}: incorrect gallery asset base for ${target}.`);
+	if (expectedCards.total > 0) {
+		assert.ok(html.includes(galleryAssetBase), `${route}: incorrect gallery asset base for ${target}.`);
+	} else {
+		assert.match(html, /Zurzeit sind in diesem Bereich keine Fahrzeuge veröffentlicht\./);
+		assert.match(html, /<form[^>]+data-vehicle-search[^>]*hidden/);
+	}
 	if (!githubPages) {
 		assert.match(html, /"@type":"CollectionPage"/);
 		assert.match(html, /"@type":"ItemList"/);
@@ -97,17 +99,14 @@ for (const [route, expectedCards] of archiveCounts) {
 
 const pastPages = Math.ceil(groups[1].length / pageSize);
 for (let page = 2; page <= pastPages; page += 1) {
-	for (const localePrefix of ['', '/en']) {
-		const route = `${localePrefix}/projekte/vergangene-projekte/seite/${page}/`;
-		const html = await readRoute(route);
-		const expectedCards = Math.min(pageSize, groups[1].length - (page - 1) * pageSize);
-		assert.equal(occurrences(html, /<article class="vehicle-card"/g), groups[1].length, `${route}: searchable card inventory.`);
-		assert.equal(
-			occurrences(html, /<article class="vehicle-card"[^>]+data-default-visible="true"/g),
-			expectedCards,
-			`${route}: default-visible card count.`,
-		);
-	}
+	const html = await readRoute(`/projekte/vergangene-projekte/seite/${page}/`);
+	const expectedCards = Math.min(pageSize, groups[1].length - (page - 1) * pageSize);
+	assert.equal(occurrences(html, /<article class="vehicle-card"/g), groups[1].length, `Past page ${page}: searchable card inventory.`);
+	assert.equal(
+		occurrences(html, /<article class="vehicle-card"[^>]+data-default-visible="true"/g),
+		expectedCards,
+		`Past page ${page}: default-visible card count.`,
+	);
 }
 await assert.rejects(access(routeFile(`/projekte/vergangene-projekte/seite/${pastPages + 1}/`)));
 
@@ -137,13 +136,6 @@ const expectedRoutes = [
 	...categories.map(({ key }) => `/projekte/${key}/`),
 	...Array.from({ length: Math.max(pastPages - 1, 0) }, (_, index) =>
 		`/projekte/vergangene-projekte/seite/${index + 2}/`),
-	'/en/',
-	'/en/ueber-uns/',
-	'/en/handwerk/',
-	'/en/projekte/',
-	...categories.map(({ key }) => `/en/projekte/${key}/`),
-	...Array.from({ length: Math.max(pastPages - 1, 0) }, (_, index) =>
-		`/en/projekte/vergangene-projekte/seite/${index + 2}/`),
 	...vehicles.map(({ route }) => route),
 ];
 const sitemap = await readFile(join(distRoot, 'sitemap.xml'), 'utf8');
@@ -160,23 +152,10 @@ assert.ok(robots.includes(`Sitemap: ${deployedOrigin}/sitemap.xml`));
 const notFound = await readFile(join(distRoot, '404.html'), 'utf8');
 assert.match(notFound, /name="robots" content="noindex,follow,noarchive"/);
 const representativeArchive = await readRoute('/projekte/aktuelle-projekte/');
-const englishArchive = await readRoute('/en/projekte/aktuelle-projekte/');
-assert.match(englishArchive, /Individual vehicle documentation is available in German/);
-assert.doesNotMatch(englishArchive, /href="[^\"]*\/en\/projekte\/aktuelle-projekte\/[^\"]+" aria-label=/);
-assert.match(englishArchive, /lang="en-GB"/);
-assert.doesNotMatch(englishArchive, /fonts\.googleapis\.com|maps\.googleapis\.com/);
-await assert.rejects(access(routeFile('/en/impressum/')));
-await assert.rejects(access(routeFile('/en/datenschutz/')));
-for (const vehicle of vehicles) {
-	await assert.rejects(access(routeFile(`/en${vehicle.route}`)));
-}
 if (githubPages) {
 	assert.match(representativeArchive, /name="robots" content="noindex,follow,noarchive"/);
-	assert.doesNotMatch(englishArchive, /hreflang=/);
 } else {
 	assert.doesNotMatch(representativeArchive, /name="robots" content="noindex/);
-	assert.match(englishArchive, /hreflang="de-DE"/);
-	assert.match(englishArchive, /hreflang="en"/);
 }
 
 console.log(

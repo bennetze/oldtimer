@@ -11,13 +11,15 @@
     "vehicles:gallery": "node scripts/generate-vehicle-gallery.mjs",
     "test:vehicle-discovery": "node scripts/test-vehicle-discovery.mjs",
     "vehicles:import": "node scripts/import-legacy-vehicles.mjs",
-    "build": "npm run vehicles:sync && node scripts/generate-vehicle-gallery.mjs production && astro build && node scripts/prepare-crawler-files.mjs production && node scripts/verify-vehicle-build.mjs production",
-    "build:pages": "npm run vehicles:sync && node scripts/generate-vehicle-gallery.mjs production && DEPLOY_TARGET=github-pages astro build && node scripts/prune-pages-motion-fallbacks.mjs && node scripts/generate-vehicle-gallery.mjs github-pages dist && node scripts/prepare-crawler-files.mjs github-pages && node scripts/verify-vehicle-build.mjs github-pages && node scripts/verify-pages-artifact.mjs",
+    "build": "npm run crawlers:check && node scripts/generate-vehicle-gallery.mjs production && astro build && node scripts/prepare-crawler-files.mjs production && node scripts/verify-vehicle-build.mjs production && node scripts/verify-site-build.mjs production",
+    "build:pages": "npm run crawlers:check && node scripts/generate-vehicle-gallery.mjs production && DEPLOY_TARGET=github-pages astro build && node scripts/prune-pages-motion-fallbacks.mjs && node scripts/generate-vehicle-gallery.mjs github-pages dist && node scripts/prepare-crawler-files.mjs github-pages && node scripts/verify-vehicle-build.mjs github-pages && node scripts/verify-pages-artifact.mjs && node scripts/verify-site-build.mjs github-pages",
     "predeploy": "npm run build:pages",
     "deploy": "gh-pages -d dist -b gh-pages --nojekyll -m \"Deploy website\"",
     "preview": "astro preview",
     "astro": "astro",
-    "encode-video": "scripts/encode-site-video.sh"
+    "encode-video": "scripts/encode-site-video.sh",
+    "crawlers:check": "node scripts/sync-vehicle-crawler-files.mjs --check",
+    "test": "node --test tests/*.test.mjs && npm run test:vehicle-discovery"
   },
   "dependencies": {
     "astro": "^7.1.3"

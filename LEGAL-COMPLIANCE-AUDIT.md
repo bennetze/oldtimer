@@ -1,377 +1,158 @@
-# Rechts- und Compliance-Prüfprotokoll
-
-**Projekt:** Die Oldtimermanufaktur – Astro-Website  
-**Prüfstand:** 2. August 2026  
-**Status:** Technische Korrekturen abgeschlossen; nicht zur Produktionsveröffentlichung freigegeben  
-**Rechtsraum:** Deutschland und unmittelbar einschlägiges EU-Recht
-
-## Zweck, Umfang und Grenzen
-
-Dieses Protokoll hält die technische und inhaltliche Vorprüfung der Website fest.
-Es ist keine Rechtsberatung und ersetzt insbesondere bei ungeklärten Tatsachen
-keine Prüfung durch eine deutsche Rechtsanwältin oder einen deutschen Rechtsanwalt
-beziehungsweise eine Datenschutzfachperson.
-
-Auf ausdrücklichen Wunsch wurden keine Rechtstexte entworfen, ergänzt oder
-inhaltlich geprüft. Der Ordner `drafts/rechtstexte/` war vollständig außerhalb des
-Prüfumfangs. Leere Seiten für Impressum und Datenschutzerklärung werden deshalb
-nicht mit vorläufigen Texten gefüllt. Das Fehlen dieser Texte bleibt jedoch ein
-Veröffentlichungs-Hindernis.
-
-Geprüft wurden insbesondere:
-
-- Quellcode, sichtbare Inhalte, Navigation, Metadaten und strukturierte Daten;
-- Bilder, Videos, Schriften und vorhandene Lizenzinformationen;
-- Cookies, Browser-Speicher, externe Einbindungen und Kontaktwege;
-- die für GitHub Pages erzeugte Entwicklungsvorschau sowie die für den späteren
-  Produktionshost erzeugte statische Ausgabe.
-- Datenschutz, Anbieterkennzeichnung, Verbraucherrecht, Werbeaussagen,
-  Bild-/Persönlichkeitsrechte, KI-Transparenz, Barrierefreiheit, IT-Sicherheit,
-  Urheber-/Lizenzrecht und interne Nachweispflichten.
-
-## Ergebnis in einem Satz
-
-Die lokal möglichen Schutz- und Transparenzkorrekturen sind umgesetzt. Die neue
-Astro-Website darf trotzdem noch nicht als Produktionsfassung veröffentlicht werden:
-Pflichttexte, bestätigte Unternehmensdaten, die tatsächliche Hostingkonstellation
-und belastbare Einzelbelege für die Mediennutzung fehlen; außerdem müssen sämtliche
-KI-Platzhalter vor der finalen Veröffentlichung durch echte Aufnahmen ersetzt werden.
-Die bisherige Website ist nicht Gegenstand dieses Umbaus und wurde nicht verändert.
-
-## Veröffentlichungs-Hindernisse
-
-### 1. Impressum und Datenschutzerklärung fehlen
-
-Die lokalen Routen `/impressum/` und `/datenschutz/` enthalten bewusst keine
-Rechtstexte. `noindex` verhindert nur eine gewünschte Suchmaschinenaufnahme und
-ersetzt weder die Anbieterkennzeichnung nach § 5 DDG noch die Informationen bei der
-Erhebung personenbezogener Daten nach Art. 13 DSGVO. E-Mail- und Telefonkontakt,
-Server-Logfiles und gegebenenfalls das vom Host gesetzte Session-Cookie sind bereits
-datenschutzrelevante Verarbeitungsvorgänge.
-
-**Maßnahme:** Bis zur gesonderten Rechtstext-Runde keine neue öffentliche Fassung
-freigeben. Dann die Texte aus verifizierten Unternehmens-, Hosting-, E-Mail-,
-Beschäftigten- und Vertragsdaten erstellen oder anwaltlich prüfen lassen.
-
-### 2. GitHub Pages ist ausschließlich Entwicklungsvorschau
-
-GitHub Pages wird nach Auskunft des Projektverantwortlichen nur während der
-Entwicklung genutzt. Der GitHub-Pages-Build versieht nun jede Route mit
-`noindex,follow,noarchive`, entfernt kanonische Produktionslinks und JSON-LD und
-kennzeichnet die Darstellung sichtbar als Entwicklungsvorschau. Das Repository soll
-vor der finalen Veröffentlichung privat werden und GitHub Pages soll entfallen.
-
-**Restmaßnahme:** GitHub Pages vor dem Produktionsstart tatsächlich abschalten, das
-Repository privat stellen und prüfen, ob Suchmaschinen noch alte Vorschau-URLs
-kennen. Keine Produktionsumschaltung vor abgeschlossener Rechtstext-, Medien- und
-Tatsachenprüfung.
-
-### 3. KI-Bildplatzhalter dürfen nicht in die Produktionsfassung
-
-Nach Auskunft des Projektverantwortlichen sind alle Bildmotive außer dem Hero-Video
-und daraus abgeleiteten Standbildern KI-generierte Gestaltungshilfen. Sie werden in
-der Vorschau nun auf jeder Seite klar als Platzhalter bezeichnet; informative
-Alternativtexte verschweigen die KI-Herkunft nicht. Die Konfiguration hält den
-Vorschaustatus zentral fest.
-
-**Restmaßnahme:** Wie zugesagt sämtliche KI-Bilder vor Produktion durch die echten
-Aufnahmen ersetzen. Für jede finale Datei Herkunft, Rechtekette, kommerzielle
-Nutzungsrechte, abgebildete Personen und erforderliche Freigaben im
-`MEDIA-RIGHTS-REGISTER.md` belegen. Die Vorschaukennzeichnung erst danach entfernen.
-
-### 4. Unternehmens- und Werbeaussagen sind noch nicht belegt
-
-Die aktuelle Fassung enthält auf ausdrücklichen Wunsch wieder folgende noch zu
-belegende Aussagen:
-
-- Gründung beziehungsweise Entstehung im Jahr 1987;
-- Gründerstellung von Mario Schrank;
-- „dreifacher Meister“;
-- internationale Auszeichnungen;
-- gemeinsame beziehungsweise generationsübergreifende Leitung durch Mario und
-  Anton Schrank;
-- Register-, Umsatzsteuer-, Adress- und Kontaktdaten sowie die handwerksrechtliche
-  Einordnung.
-
-Unrichtige oder nicht belegbare geschäftliche Aussagen können nach § 5 UWG
-irreführend sein. Metadaten und strukturierte Daten sind dabei ebenfalls
-öffentliche Aussagen, nicht bloß interne Technik.
-
-Die zwischenzeitliche Entfernung beziehungsweise Neutralisierung der Gründungs-,
-Titel-, Auszeichnungs- und Leitungsangaben wurde auf ausdrücklichen Wunsch wieder
-rückgängig gemacht. Diese Rücknahme bestätigt nicht automatisch deren Richtigkeit.
-
-**Restmaßnahme:** Handelsregisterauszug, Handwerksrollen-/Kammerdaten,
-Meisterbriefe/Fachrichtungen, Auszeichnungen und eine freigegebene Beschreibung der
-tatsächlichen Leitung vorlegen. Kontakt-, Adress- und Rechtsformangaben vor
-Produktion ebenfalls gegen Originalunterlagen prüfen.
-
-### 5. Hero-Video: Rechte sind bestätigt, Nachweise noch abzulegen
-
-Der Projektverantwortliche bestätigt, dass die Rechte an sämtlichen Bildern und
-Videos bei der DIE OLDTIMERMANUFAKTUR GmbH liegen. Das Hero-Video zeigt mindestens
-eine erkennbare Person beziehungsweise einen Fahrer, ein lesbares Kennzeichen und
-ein konkret identifizierbares Fahrzeug. Technisch enthält die MP4-Datei korrekt nur
-einen H.264-Videostream ohne Audio oder Zeitcode-/Datenstream.
-
-**Restmaßnahme:** Die Bestätigung durch zugrunde liegende Verträge, Einwilligungen,
-Originaldateien und Freigaben für Person, Kennzeichen, Fahrzeug und Web-/Social-
-Preview-Nutzung belegbar machen und im Medienregister verweisen.
-
-## Datenschutz und digitale Dienste
-
-### Festgestellter technischer Zustand der neuen Astro-Fassung
-
-- Keine Analyse-, Werbe- oder Tracking-Skripte gefunden.
-- Keine `localStorage`-, `sessionStorage`-, Service-Worker-, Geolocation-,
-  WebSocket- oder vergleichbare Browser-Speichernutzung gefunden.
-- Keine Formulare, Newsletter-Anmeldung, eingebettete Karte, Social-Feed, YouTube-
-  oder sonstige Drittanbieter-iFrames gefunden.
-- Jost-Schriften, Bilder und Videos werden lokal ausgeliefert.
-- Google Maps ist nur als externer Link eingebunden; bis zum Klick fließt dadurch
-  aus der neuen Seite kein Kartenabruf an Google.
-
-Damit benötigt allein der derzeitige Astro-Quellcode voraussichtlich keinen
-Cookie-Consent-Banner. Das gilt nur, wenn der wirkliche Produktionsserver keine
-nicht unbedingt erforderlichen Cookies oder ähnliche Endgerätezugriffe hinzufügt.
-Nach jedem echten Deployment muss dies im Browser und auf HTTP-Ebene erneut geprüft
-werden.
-
-### Offene Datenschutzpflichten
-
-- Vertrag zur Auftragsverarbeitung mit dem noch auszuwählenden Hostinganbieter,
-  eingesetzte Unterauftragnehmer, Serverstandorte und Logfile-Aufbewahrungsdauer;
-- Anbieter und technische Verarbeitung des E-Mail-Postfachs;
-- Rechtsgrundlagen, Zwecke, Empfänger, Speicherfristen und Betroffenenrechte für
-  Serverlogs sowie E-Mail-/Telefonanfragen;
-- Verzeichnis von Verarbeitungstätigkeiten nach Art. 30 DSGVO;
-- angemessene technische und organisatorische Maßnahmen nach Art. 32 DSGVO;
-- Zahl der Personen, die regelmäßig automatisiert personenbezogene Daten
-  verarbeiten, und damit eine mögliche Benennungspflicht nach § 38 BDSG;
-- Prozess für Auskunft, Berichtigung, Löschung, Einschränkung,
-  Datenübertragbarkeit, Widerspruch und Datenschutzverletzungen.
-
-Der finale Hostinganbieter ist noch unbekannt. Dessen tatsächliche Header, Logfiles,
-Cookies, Auftragsverarbeitung, Unterauftragnehmer und Datenstandorte müssen nach dem
-ersten Staging-Deployment neu erhoben werden; die spätere Datenschutzerklärung muss
-genau diesen Betrieb beschreiben.
-
-### IT-Sicherheit mit Datenschutzbezug
-
-Die lokale Apache-Konfiguration enthält nun eine vorsichtige CSP sowie HSTS (nur bei
-HTTPS), `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options` und eine
-`Permissions-Policy`. Keiner dieser Header ist isoliert gesetzlich vorgeschrieben;
-zusammen sind sie aber Teil einer risikoadäquaten technischen Härtung.
-Hostingumgebungen ohne Apache-Unterstützung ignorieren `.htaccess`, weshalb die
-Regeln nach Auswahl des finalen Hosts in dessen Konfiguration übertragen und gegen
-die echte Antwort geprüft werden müssen.
-
-Die drei hohen Sicherheitsbefunde in `postcss`, `sharp`/`libvips` und `svgo` wurden
-durch kompatible Aktualisierungen beseitigt. Der anschließende Abhängigkeitscheck
-meldet keine bekannten Schwachstellen.
-
-## Verbraucherrecht und Handwerksbetrieb
-
-### Vertragsabschluss und Fernabsatz
-
-Die Seite enthält keine Shop-, Buchungs-, Preis-, Angebots- oder Checkout-Funktion
-und soll nach Auskunft des Projektverantwortlichen ausschließlich der Information
-und Kontaktanbahnung dienen. Weitere Schritte werden per Telefon, E-Mail, Fax oder
-persönlich geklärt. Solange über die Website selbst kein vollständiger
-Vertragsabschluss angeboten wird, sind keine Checkout-/Bestellpflichten zu bauen.
-Ob ein konkreter späterer Vertrag im Fernabsatz zustande kommt, hängt dennoch vom
-tatsächlichen Kommunikations- und Abschlussprozess ab und ist bei Änderungen neu zu
-prüfen.
-
-### Verbraucherstreitbeilegung
-
-§ 36 VSBG kann Informationen zur Bereitschaft oder Verpflichtung zur Teilnahme an
-Verbraucherstreitbeilegung verlangen. Die Ausnahme für kleine Unternehmen hängt von
-der Zahl der Beschäftigten am 31. Dezember des Vorjahres ab. § 37 VSBG gilt nach
-einer nicht beigelegten konkreten Streitigkeit unabhängig davon. Eine etwaige
-Teilnahmeverpflichtung oder freiwillige Bereitschaft ist noch zu klären.
-
-Die frühere EU-Online-Streitbeilegungsplattform wurde zum 20. Juli 2025 eingestellt.
-Ein alter OS-/ODR-Link darf deshalb nicht neu in Rechtstexte aufgenommen werden.
-
-### Reglementiertes Handwerk
-
-Karosserie- und Fahrzeugbauer sowie Kraftfahrzeugtechniker sind zulassungspflichtige
-Handwerke der Anlage A zur Handwerksordnung. Je nach tatsächlicher Betriebsleistung
-können weitere Gewerke berührt sein. Für Anbieterkennzeichnung und Rechtstexte
-müssen deshalb Handwerksrolle, zuständige Kammer, tatsächliche Meistertitel und
-Fachrichtungen verifiziert werden; Titel dürfen nicht verkürzt oder verallgemeinert
-werden.
-
-### Barrierefreiheitsstärkungsgesetz
-
-Eine rein informative Unternehmenswebsite fällt nicht automatisch als solche unter
-das BFSG. Bietet sie Verbrauchern aber einen vollständigen Online-Vertragsabschluss,
-Shop oder Buchungsprozess, kann eine Dienstleistung im elektronischen
-Geschäftsverkehr vorliegen. Für Dienstleistungen von Kleinstunternehmen besteht eine
-Ausnahme, deren Voraussetzungen (weniger als zehn Beschäftigte und höchstens zwei
-Millionen Euro Jahresumsatz oder Bilanzsumme) tatsächlich belegt werden müssen.
-
-Unabhängig von der noch offenen BFSG-Anwendbarkeit wurden folgende vorhandene
-Zugänglichkeitsprobleme korrigiert:
-
-- Text ist wieder normal auswählbar und das Kontextmenü wird nur auf Medien
-  unterdrückt;
-- Pfeiltasten werden bei fokussierten interaktiven Elementen nicht abgefangen;
-- Abschnittsziele messen am Desktop 44 × 44 CSS-Pixel;
-- der externe Kartenlink ist sichtbar als Google-Maps-Link mit neuem Fenster
-  gekennzeichnet.
-
-Das verbleibende Blockieren von Rechtsklick und Ziehen auf Bildern/Videos ist nur ein
-Bedienhindernis, kein Kopier- oder DRM-Schutz: Jede ausgelieferte Mediendatei kann
-technisch weiterhin abgerufen werden. Darauf darf sich der Rechteinhaber nicht als
-rechtliche oder technische Absicherung verlassen.
-
-## KI-Verordnung
-
-### Transparenz für synthetische Inhalte
-
-Art. 50 Abs. 4 der EU-KI-Verordnung verlangt seit dem 2. August 2026 von beruflichen
-Betreibern eine Offenlegung, wenn ein eingesetztes KI-System Bild-, Audio- oder
-Videoinhalte erzeugt oder manipuliert, die einen Deepfake darstellen. Ein Deepfake
-ist KI-Inhalt, der bestehenden Personen, Objekten, Orten, Einrichtungen oder
-Ereignissen ähnelt und fälschlich authentisch oder wahrheitsgemäß erscheinen würde.
-Die Information muss spätestens bei der ersten Exposition klar, unterscheidbar und
-barrierefrei erfolgen.
-
-Nach der aktuellen Kommissionsauskunft müssen Inhalte, die bereits vor dem
-2. August 2026 erzeugt **und** öffentlich bereitgestellt wurden, nicht rückwirkend
-gekennzeichnet werden. Dieser enge Altbestandsfall löst weder Bildnis-, Lizenz- noch
-Irreführungsprobleme. Eine neue Veröffentlichung, geänderte Fassung oder Nutzung für
-eine neue Darstellung sollte ohne fachliche Bestätigung nicht auf diese Ausnahme
-gestützt werden. Der sicherste Weg bleibt der Ersatz täuschend echter synthetischer
-Personen-/Betriebsbilder durch echte, lizenzierte Aufnahmen.
-
-Die Unterzeichnung des EU-Verhaltenskodex ist freiwillig. Ohne Unterzeichnung muss
-ein betroffener Betreiber die Gleichwertigkeit seiner eigenen Offenlegungs- und
-Dokumentationsmaßnahmen belegen können.
-
-Für die Entwicklungsvorschau ist jetzt ein dauerhaft sichtbarer Hinweis eingebaut,
-der die KI-generierten Bildmotive als Platzhalter bezeichnet und klarstellt, dass
-sie nicht die tatsächlichen Personen, Fahrzeuge oder Betriebsräume zeigen. Das ist
-eine Risikoreduktion für die Vorschau, aber kein Ersatz für den zugesagten Austausch
-durch echte Fotos vor Produktion.
-
-### KI-Kompetenz
-
-Falls Mitarbeitende oder beauftragte Personen KI-Systeme für Texte, Bilder,
-Kundenkommunikation oder andere betriebliche Zwecke einsetzen, verlangt Art. 4 der
-KI-Verordnung risikogerechte Maßnahmen zur KI-Kompetenz. Ein Zertifikat oder eine
-bestimmte Organisationsform ist nicht vorgeschrieben; ein kurzes Inventar der
-eingesetzten Systeme, Zuständigkeiten, Regeln, Risiken und dokumentierte Einweisung
-sind für einen kleinen Betrieb ein angemessener Ausgangspunkt. Ob und wie der Betrieb
-selbst KI einsetzt, ist noch offen.
-
-## Urheberrecht, Lizenzen und Marken
-
-- Die lokale Schrift Jost nennt in ihren Metadaten die SIL Open Font License 1.1.
-  Die offizielle Lizenzdatei liegt nun unter `public/licenses/Jost-OFL-1.1.txt`.
-- Der Projektverantwortliche bestätigt die DIE OLDTIMERMANUFAKTUR GmbH als
-  Rechteinhaberin aller Bilder und Videos. Das neue `MEDIA-RIGHTS-REGISTER.md`
-  beschreibt, wie diese Aussage pro Datei mit Originalen, Verträgen,
-  Einwilligungen, Rechnungen und Freigaben belegt werden muss. Die Abwesenheit von
-  EXIF-/XMP-Daten wäre allein kein Nachweis.
-- Namen, Logos, Fahrzeugembleme und sonstige Marken dürfen nur im sachlich
-  erforderlichen und rechtlich gedeckten Umfang verwendet werden. Eine
-  Register-/Markenprüfung wurde mangels bestätigter Zeichen und Inhaberschaft nicht
-  abgeschlossen.
-- Die Astro-Standardfavicons wurden durch ein neutrales, lokal erstelltes
-  OM-Monogramm in SVG-, ICO- und Apple-Touch-Icon-Form ersetzt. Es bleibt ein
-  vorläufiges Zeichen und ist bei Vorliegen des echten Favicons auszutauschen.
-- `robots.txt` trennt bekannte Trainingscrawler von Such-/nutzerveranlassten
-  Crawlern und erklärt zusätzlich einen maschinenlesbaren Vorbehalt für Text- und
-  Data-Mining. `llms.txt` beschreibt dieselbe Nutzungsentscheidung. Beide Dateien
-  sind nur gegenüber beachtenden Bots wirksam beziehungsweise informativ und können
-  unerlaubtes Kopieren oder Training technisch nicht garantieren. Insbesondere
-  blockiert `Google-Extended` zugleich bestimmte Gemini-Grounding-Funktionen; diese
-  Folge wurde zugunsten des Trainingsverbots in Kauf genommen.
-
-## Navigation, Links und öffentliche Aussagen
-
-- Noch nicht existierende kommerzielle Routen werden nicht mehr verlinkt. Ihre
-  bestehenden Navigationskonzepte bleiben als nicht interaktive Hinweise „In
-  Vorbereitung“ sichtbar, bis Inhalt und Gestaltung bestätigt sind.
-- YouTube-, Instagram- und TikTok-Icons bleiben sichtbar, sind aber bis zur Anlage
-  offizieller Profile nicht interaktiv und enthalten keine `#`-Platzhalterlinks.
-- `sitemap.xml`, `robots.txt`, `llms.txt`, kanonische URLs, Open Graph und JSON-LD
-  müssen bei jeder Freigabe dieselbe tatsächliche Seitenlage und dieselben
-  bestätigten Tatsachen wiedergeben.
-- `noindex`-Rechtseiten sollen nicht in die Sitemap aufgenommen werden, müssen aber
-  für Nutzer unmittelbar und dauerhaft erreichbar sein.
-
-## Noch benötigte Antworten und Unterlagen
-
-Folgende Punkte bleiben vor einer Produktionsfreigabe offen:
-
-1. Nachweise für Gründungsjahr, Gründer, Leitung, konkrete Meistertitel,
-   Fachrichtungen und genannte Auszeichnungen.
-2. Aktueller Registerauszug, Vertretungsberechtigte, Handwerksrolle/Kammer,
-   Umsatzsteuer-ID und freigegebene Kontakt-/Adressdaten.
-3. Beschäftigtenzahl am 31. Dezember 2025; Zahl der regelmäßig mit automatisierter
-   personenbezogener Datenverarbeitung befassten Personen; Jahresumsatz oder
-   Bilanzsumme ober-/unterhalb zwei Millionen Euro.
-4. Verpflichtung oder Bereitschaft zur Verbraucherstreitbeilegung.
-5. Finaler Hostinganbieter, Auftragsverarbeitungsvertrag, Logfile-Konfiguration und
-   -frist, E-Mail-Anbieter und gegebenenfalls Datenschutzbeauftragte/r.
-6. Ob Mitarbeitende oder Dienstleister KI für den Betrieb einsetzen und welche
-    Systeme/Zwecke betroffen sind.
-7. Pro-Datei-Nachweise für die bestätigten Medienrechte und die Freigaben des neuen
-   Fotoshootings.
-
-Bei unbekannten Punkten ist die sichere technische Voreinstellung: nicht
-veröffentlichen, unbelegte Aussage entfernen, ungeklärtes Medium nicht verwenden,
-Platzhalterlink entfernen und keine zusätzliche Datenverarbeitung aktivieren.
-
-## Durchgeführter Reparatur- und Wiederholungscheck
-
-Durchgeführt wurden:
-
-1. Werbe-/Unternehmensbehauptungen geprüft; die zwischenzeitliche Neutralisierung
-   der Gründungs-, Titel-, Auszeichnungs- und Leitungsangaben später auf Wunsch
-   rückgängig gemacht und die erforderlichen Nachweise als Produktionspunkt belassen;
-2. GitHub-Pages-Vorschau auf seitenweites `noindex` ohne Produktions-Canonical und
-   JSON-LD umgestellt;
-3. KI-Platzhalter sichtbar und in informativen Alternativtexten gekennzeichnet;
-4. tote Zukunfts- und Social-Links deaktiviert;
-5. Textauswahl, Tastaturverhalten, Fokusführung und 44-Pixel-Bedienziele korrigiert;
-6. Schriftlizenz, neutrales Monogramm und Medienrechte-Register ergänzt;
-7. Crawlerregeln, `llms.txt`, Sitemap, Open Graph und strukturierte Daten
-   synchronisiert;
-8. bekannte Abhängigkeitsschwachstellen beseitigt und Basis-Sicherheitsheader
-   ergänzt;
-9. Produktions- und GitHub-Pages-Build erfolgreich ausgeführt;
-10. Desktop (1440 × 1000) und Mobil (390 × 844) im Browser geprüft, einschließlich
-    Menü/Fokus, Vorschauhinweis, Links, 404, Rechteseiten, Text-/Medienschutz,
-    Videoattribute, Überlauf, Metadaten und Konsolenfehler;
-11. einen dabei gefundenen mobilen Überlappungsfehler behoben und erneut ohne
-    Überlappung geprüft.
-
-Nach Auswahl des echten Hosts verbleibt zwingend eine externe Staging-Prüfung von
-TLS, Redirects, Cookies, Serverlogs und real ausgelieferten Sicherheitsheadern.
-
-## Primärquellen
-
-- [§ 5 Digitale-Dienste-Gesetz](https://www.gesetze-im-internet.de/ddg/__5.html)
-- [§ 25 Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz](https://www.gesetze-im-internet.de/ttdsg/__25.html)
-- [Datenschutz-Grundverordnung](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679)
-- [§ 38 Bundesdatenschutzgesetz](https://www.gesetze-im-internet.de/bdsg_2018/__38.html)
-- [§§ 36 und 37 Verbraucherstreitbeilegungsgesetz](https://www.gesetze-im-internet.de/vsbg/)
-- [EU-Verordnung zur Einstellung der Online-Streitbeilegungsplattform](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R3228)
-- [Barrierefreiheitsstärkungsgesetz](https://www.gesetze-im-internet.de/bfsg/)
-- [Handwerksordnung, Anlage A](https://www.gesetze-im-internet.de/hwo/anlage_a.html)
-- [§ 5 Gesetz gegen den unlauteren Wettbewerb](https://www.gesetze-im-internet.de/uwg_2004/__5.html)
-- [§ 22 Kunsturhebergesetz](https://www.gesetze-im-internet.de/kunsturhg/__22.html)
-- [§ 44b Urheberrechtsgesetz – Text und Data Mining](https://www.gesetze-im-internet.de/urhg/__44b.html)
-- [EU-Richtlinie 2019/790, insbesondere Art. 4](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019L0790)
-- [EU-KI-Verordnung](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689)
-- [EU-Kommissionsleitlinien zu Art. 50 der KI-Verordnung](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems)
-- [EU-Kommissionsauskunft zu Altbestand und freiwilligem Transparenzkodex](https://digital-strategy.ec.europa.eu/en/faqs/signing-code-practice-transparency-ai-generated-content)
-- [EU-Kommissionsauskunft zur KI-Kompetenz](https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers)
-- [SIL Open Font License FAQ](https://openfontlicense.org/ofl-faq/)
-- [OpenAI-Crawlerdokumentation](https://developers.openai.com/api/docs/bots)
-- [Google-Crawlerdokumentation zu Google-Extended](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers)
+# Website security and compliance audit
+
+**Reviewed:** 5 September 2026
+
+**Scope:** Current Astro working tree, including 157 vehicle records and 172 generated pages.
+
+**Release status:** Technical maintenance does not grant production/legal clearance.
+
+This replaces the earlier audit's current-status claims. The site has expanded since
+that review: it includes vehicle offers, real workshop photography, archive search
+and additional background videos. Older blanket statements about no offers, all
+non-hero imagery being synthetic, and completed security checks are no longer current.
+
+The user explicitly excluded the contents of Impressum and Datenschutzerklärung.
+Those texts were neither reviewed nor rewritten. Existing release prerequisites for
+approved legal texts, factual claims and final media remain in force.
+
+## Approved repairs
+
+- Patched only the vulnerable transitive resolutions: js-yaml 4.3.0 → 4.3.2 and
+  nanoid 3.3.16 → 3.3.18. The identified denial-of-service advisories concern build
+  dependencies; no remotely accessible Node endpoint was identified in this static
+  site. See the [js-yaml advisory](https://github.com/advisories/GHSA-5p4m-2wfm-xmqj)
+  and [nanoid advisory](https://github.com/advisories/GHSA-2v37-7h3g-55p8).
+- Added allowlist validation and validated serialization before rendering vehicle
+  HTML, including manually edited records. Existing valid formatting and contact
+  links are preserved; active content fails the build with record/block context.
+  No active injected payload was found in the existing records.
+- Added per-page Astro CSP script hashes, prohibited inline event handlers, and
+  retained the style attributes used by the current design. Apache's baseline and
+  frame-ancestor protection remain host-dependent; the per-page meta policy also
+  works on static hosts that ignore `.htaccess`. Meta CSP cannot replace HTTP-only
+  protections such as `frame-ancestors` or HSTS.
+- Corrected custom-cursor activation at narrow widths and inside native image
+  dialogs; made the existing menu scrollable and its skip-link background inert.
+- Added pause controls to all four homepage video sections; pause covers the hero
+  heading animation and animated fallbacks. Preference changes, offscreen/hidden
+  states and late playback failures must not override pause. These repairs address
+  [WCAG 2.2.2](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html).
+- Corrected duplicate homepage heading IDs and safe editorial fragment lookup.
+- Added empty-archive fallback metadata/content and history/search restoration.
+  The history-return risk was identified in code but did not reproduce in the audit
+  browser; it is recorded as defensive robustness work.
+- Replaced build-time crawler source overwrites with explicit sitemap synchronization
+  and read-only build checks. The German LLM summary remains manually maintained.
+  Sitemap and page dates now use reviewed content/template dates. Vehicle preview
+  dimensions come from served WebP files; current dimensions already matched, so
+  this is a safeguard for future resized/rotated uploads.
+
+## Indexing and preview decisions
+
+At the user's explicit request, production-root pages remain indexable. GitHub Pages
+remains a noindex development preview without canonical links or JSON-LD. Complete
+Open Graph metadata remains available on both targets. Existing noindex legal/error
+routes remain excluded from the sitemap. Indexability is not a legal release approval.
+
+Keep the existing visible AI-placeholder disclosure and preview flags until the
+previously agreed replacement and release checks have been completed. Confirm which
+assets are synthetic; do not label newly supplied real workshop photography as AI.
+For applicable synthetic content, assess disclosure at first exposure, including
+accessible alternatives and representative images. Article 50 does not impose a
+blanket identical labelling rule on every AI-assisted asset. See the Commission's
+[transparency guidance](https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations).
+
+## Outstanding legal and factual questions
+
+### Vehicle offers and price disclosure
+
+There are ten vehicle offers; seven records contain “Preis auf Anfrage”. The user
+explicitly requires telephone/email enquiries and does not want published fixed
+prices, checkout or booking. Those decisions and the existing listing text are
+preserved; no price fields were added.
+
+This flow does not establish an exemption from price disclosure. Whether a particular
+presentation is an offer requiring a total price must be assessed under
+[§ 3 PAngV](https://www.gesetze-im-internet.de/pangv_2022/__3.html), considering the
+actual seller, consumer audience and sales arrangement. A subsequent contract can
+also require distance-selling assessment depending on the real process, even without
+a website checkout. Obtain focused German legal review before releasing these offers
+as cleared. Do not invent prices, assume 19% VAT or present the issue as resolved.
+
+### Company and vehicle claims
+
+Preserve the user-requested copy while obtaining evidence for founding history,
+qualifications, awards, management, advertised services and contact details. For
+vehicle records, confirm current availability, condition, originality, provenance,
+awards and time-sensitive statements such as new inspection/TÜV. One offer describes
+sale on a customer's behalf; establish the actual seller and the business's role.
+Migration from the old site is not proof that these statements remain current.
+
+Unverified does not mean false. Inaccurate claims about availability, characteristics
+or qualifications can raise issues under
+[§ 5 UWG](https://www.gesetze-im-internet.de/uwg_2004/__5.html). Keep visible copy,
+metadata and structured data consistent after any subsequently approved correction.
+
+### Accessibility law
+
+Do not rely on the earlier audit's assumption that BFSG can apply only when a complete
+checkout exists. Assess the consumer-facing service in view of concluding a contract,
+including the enquiry flow, against the
+[Bundesfachstelle's guidance](https://www.bundesfachstelle-barrierefreiheit.de/DE/Barrierefreiheitsstaerkungsgesetz/FAQ-elektronischer-Geschaeftsverkehr/faq-elektronischer-Geschaeftsverkehr_node).
+The service exemption for microenterprises requires the actual company criteria to
+be established: fewer than ten persons and annual turnover or balance-sheet total
+not exceeding EUR 2 million. Applicability and any required accessibility information
+remain open. Technical accessibility improvements proceed regardless of exemption.
+
+### Media evidence
+
+Preserve the previously recorded confirmation that image/video rights lie with the
+GmbH and that migrated vehicle images may be reused. Update the media register for
+real workshop assets and additional video families, with private references to actual
+licences and applicable releases. Ownership confirmation alone does not identify the
+scope of each person's consent or every reuse right. Do not publish private evidence,
+customer documents or releases in this repository or the site output.
+
+### Hosting, privacy and security
+
+The production host is not selected. Source inspection found locally served fonts,
+images and videos; no analytics, advertising scripts, tracking storage, service
+workers or third-party embeds. Archive search is local and does not submit its query
+to a server. Google Maps is an outgoing link, not an embedded map. Jost's OFL licence
+continues to be shipped locally.
+
+No consent banner is introduced merely because the site has a search field or
+contact links. Check the actual host's cookies and other terminal access against
+[§ 25 TDDDG](https://www.gesetze-im-internet.de/ttdsg/__25.html) before release.
+Hosting logs and telephone/email enquiries can still involve personal data under the
+[GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng).
+
+Once hosting is chosen, verify HTTPS and redirect behavior, real response headers,
+404 handling, injected scripts/cookies, processor arrangements, locations and
+subprocessors, logging purposes/access/retention, and mail-provider arrangements.
+Transfer relevant HTTP rules if the host ignores `.htaccess`. No live production
+server configuration was changed or certified during this maintenance pass.
+
+## Verification record
+
+- `npm test`: nine focused regressions passed, plus the vehicle-discovery fixture.
+  The motion tests exercise reduced-motion changes, manual playback, late playback
+  callbacks, stalled playback and animated-fallback cleanup using a simulated DOM.
+- `npm run build` and `npm run build:pages`: both passed for all 172 pages, including
+  CSP hashes, duplicate IDs, local links, image dimensions, metadata dates, motion
+  controls and crawler consistency. The Pages artifact passed its size limits.
+  Build source-hash comparison found no build-generated changes to tracked source.
+- An isolated copy with all three vehicle categories empty built successfully:
+  ten pages, seven sitemap URLs, fallback images and German empty-state messages.
+- `npm audit`: zero known vulnerabilities reported after the two dependency patches.
+- Local built-output browser checks and the Astro dev-server smoke check passed.
+  Checked desktop/mobile widths (1440px/390px), the 800px cursor breakpoint,
+  short-screen menu scrolling, modal focus containment/restoration, gallery cursor,
+  pause controls, archive search/clear/history and malformed fragment navigation.
+  Successful video playback did not insert animated fallback sources; inspected
+  pages reported no browser warnings or errors.
+
+Safari and Firefox were unavailable. Reduced-motion and playback-failure races were
+tested with the automated simulation, not certified across those browsers. The final
+host remains undecided; response headers, host-injected resources and operational
+privacy arrangements still require verification there.

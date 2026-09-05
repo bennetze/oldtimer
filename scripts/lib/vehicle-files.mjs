@@ -1,3 +1,4 @@
+import { validateVehicleBlocks } from '../../src/config/vehicleHtml.js';
 import { access, readdir, readFile } from 'node:fs/promises';
 import { basename, extname, join } from 'node:path';
 
@@ -65,6 +66,7 @@ export async function discoverVehicleCategory(pagesRoot, category) {
 			}
 		}
 
+		validateVehicleBlocks(record.blocks ?? [], `${category.key}/${slug}`);
 		vehicles.push({ ...record, route: `/projekte/${category.key}/${slug}/` });
 	}
 

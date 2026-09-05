@@ -1,50 +1,52 @@
 ---
-import {
-	chromeCopy,
-	languageStorageKey,
-	languageTarget,
-	localizedRoute,
-	navigationItems,
-	removeEnglishPrefix,
-	type Locale,
-} from '../config/i18n';
 import { siteStatus } from '../config/site';
 
 interface Props {
 	theme?: 'dark' | 'light';
-	locale?: Locale;
-	clientDetectLocale?: boolean;
-	languagePath?: string;
 }
 
-const { theme = 'dark', locale = 'de', clientDetectLocale = false, languagePath } = Astro.props;
-const copy = chromeCopy[locale];
-const localizedNavigationItems = navigationItems[locale];
+const navigationItems = [
+	{ title: 'Startseite', href: '/', activePath: '/' },
+	{ title: 'Handwerk', href: '/handwerk/', activePath: '/handwerk' },
+	{ title: 'Über uns', href: '/ueber-uns/', activePath: '/ueber-uns' },
+	{ title: 'Projekte', href: '/projekte/', activePath: '/projekte' },
+	{
+		title: 'Fahrzeugangebote',
+		href: '/projekte/fahrzeugangebote/',
+		activePath: '/projekte/fahrzeugangebote',
+	},
+];
+
+const { theme = 'dark' } = Astro.props;
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
 const deploymentBase = basePath === '/' ? '' : basePath.replace(/\/$/, '');
-const deployedCurrentPath = (
+const currentPath = (
 	deploymentBase && Astro.url.pathname.startsWith(deploymentBase)
 		? Astro.url.pathname.slice(deploymentBase.length)
 		: Astro.url.pathname
 ).replace(/\/+$/, '') || '/';
-const currentPath = removeEnglishPrefix(deployedCurrentPath).replace(/\/+$/, '') || '/';
 const activeNavigationPath = currentPath.startsWith('/projekte/fahrzeugangebote')
 	? '/projekte/fahrzeugangebote'
 	: currentPath.startsWith('/projekte')
 		? '/projekte'
 		: currentPath;
 const sitePath = (path) => {
-	const localizedPath = localizedRoute(path, locale);
-	return localizedPath === '/' ? basePath : `${basePath}${localizedPath.replace(/^\//, '')}`;
+	if (path === '/') {
+		return basePath;
+	}
+
+	if (path.startsWith('/#')) {
+		return `${basePath}${path.slice(1)}`;
+	}
+
+	if (path.startsWith('/')) {
+		return `${basePath}${path.slice(1)}`;
+	}
+
+	return path;
 };
-const rootPath = (path) => path === '/' ? basePath : `${basePath}${path.replace(/^\//, '')}`;
-const languageHref = (targetLocale: Locale) =>
-	rootPath(languageTarget(languagePath ?? deployedCurrentPath, targetLocale));
-const hrefForLocale = (path: string, targetLocale: Locale) =>
-	rootPath(localizedRoute(path, targetLocale));
-const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered trademark';
 ---
 
 <div class:list={['site-shell', { 'site-shell--light': theme === 'light' }]}>
@@ -52,38 +54,37 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	{
 		siteStatus.developmentPreview && siteStatus.aiPlaceholderImagesPresent && (
 			<aside class="development-notice" role="note">
-				<strong data-client-copy-de={chromeCopy.de.developmentTitle} data-client-copy-en={chromeCopy.en.developmentTitle}>{copy.developmentTitle}</strong>
-				<span data-client-copy-de={chromeCopy.de.developmentText} data-client-copy-en={chromeCopy.en.developmentText}>{copy.developmentText}</span>
+				<strong>Entwicklungsvorschau</strong>
+				<span>
+					Ein Teil der Bildmotive sind KI-generierte Platzhalter. Sie zeigen nicht die
+					tatsächlichen Personen, Fahrzeuge oder Betriebsräume.
+				</span>
 			</aside>
 		)
 	}
 
 	<header class="site-header" data-floating-header>
-		<button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false" data-client-aria-de={chromeCopy.de.menu} data-client-aria-en={chromeCopy.en.menu}>
+		<button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false">
 			<span class="menu-lines" aria-hidden="true"></span>
-			<span data-client-copy-de={chromeCopy.de.menu} data-client-copy-en={chromeCopy.en.menu}>{copy.menu}</span>
+			<span>Menü</span>
 		</button>
-		<a class="brand" href={sitePath('/')} aria-label={copy.homeLabel} data-client-href-de={hrefForLocale('/', 'de')} data-client-href-en={hrefForLocale('/', 'en')} data-client-aria-de={chromeCopy.de.homeLabel} data-client-aria-en={chromeCopy.en.homeLabel}>
-			<span>DIE OLDTIMERMANUFAKTUR</span><sup aria-label={registeredMarkLabel}>®</sup>
+		<a class="brand" href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
+			DIE OLDTIMERMANUFAKTUR
 		</a>
 		<span class="header-spacer" aria-hidden="true"></span>
 	</header>
 
 	<div class="menu-overlay" id="site-menu" aria-hidden="true" inert>
-		<div class="menu-panel" role="dialog" aria-modal="true" aria-label={copy.menuDialog} data-client-aria-de={chromeCopy.de.menuDialog} data-client-aria-en={chromeCopy.en.menuDialog}>
+		<div class="menu-panel" role="dialog" aria-modal="true" aria-label="Hauptmenü">
 			<div class="menu-panel__top">
-				<button class="menu-close" type="button" data-client-copy-de={chromeCopy.de.close} data-client-copy-en={chromeCopy.en.close}>{copy.close}</button>
+				<button class="menu-close" type="button">Schließen</button>
 				<span>DIE OLDTIMERMANUFAKTUR</span>
 			</div>
-			<nav class="menu-nav" aria-label={copy.mainNavigation} data-client-aria-de={chromeCopy.de.mainNavigation} data-client-aria-en={chromeCopy.en.mainNavigation}>
+			<nav class="menu-nav" aria-label="Hauptnavigation">
 				{
-					localizedNavigationItems.map((item, index) => (
+					navigationItems.map((item, index) => (
 						<a
 							href={sitePath(item.href)}
-							data-client-href-de={hrefForLocale(navigationItems.de[index].href, 'de')}
-							data-client-href-en={hrefForLocale(navigationItems.en[index].href, 'en')}
-							data-client-copy-de={navigationItems.de[index].title}
-							data-client-copy-en={navigationItems.en[index].title}
 							class="menu-nav__link"
 							style={`--item-index: ${index}`}
 							aria-current={item.activePath === activeNavigationPath ? 'page' : undefined}
@@ -99,16 +100,12 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	<slot />
 
 	<footer class="site-footer" id="site-footer">
-		<a class="footer-brand" href={sitePath('/')} data-client-href-de={hrefForLocale('/', 'de')} data-client-href-en={hrefForLocale('/', 'en')}>DIE OLDTIMERMANUFAKTUR</a>
-		<nav class="footer-primary" aria-label={copy.pageNavigation} data-client-aria-de={chromeCopy.de.pageNavigation} data-client-aria-en={chromeCopy.en.pageNavigation}>
+		<a class="footer-brand" href={sitePath('/')}>DIE OLDTIMERMANUFAKTUR</a>
+		<nav class="footer-primary" aria-label="Seitennavigation">
 			{
-				localizedNavigationItems.map((item, index) => (
+				navigationItems.map((item) => (
 					<a
 						href={sitePath(item.href)}
-						data-client-href-de={hrefForLocale(navigationItems.de[index].href, 'de')}
-						data-client-href-en={hrefForLocale(navigationItems.en[index].href, 'en')}
-						data-client-copy-de={navigationItems.de[index].title}
-						data-client-copy-en={navigationItems.en[index].title}
 						aria-current={item.activePath === activeNavigationPath ? 'page' : undefined}
 					>
 						{item.title}
@@ -116,35 +113,22 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 				))
 			}
 		</nav>
-		<nav class="footer-legal" aria-label={copy.legalNavigation} data-client-aria-de={chromeCopy.de.legalNavigation} data-client-aria-en={chromeCopy.en.legalNavigation}>
-			<a href={rootPath('/impressum/')} data-client-copy-de={chromeCopy.de.legalNotice} data-client-copy-en={chromeCopy.en.legalNotice}>{copy.legalNotice}</a>
-			<a href={rootPath('/datenschutz/')} data-client-copy-de={chromeCopy.de.privacy} data-client-copy-en={chromeCopy.en.privacy}>{copy.privacy}</a>
+		<nav class="footer-legal" aria-label="Rechtliches">
+			<a href={sitePath('/impressum/')}>Impressum</a>
+			<a href={sitePath('/datenschutz/')}>Datenschutzerklärung</a>
 		</nav>
-		<nav class="language-switch" aria-label={copy.languageNavigation} data-client-aria-de={chromeCopy.de.languageNavigation} data-client-aria-en={chromeCopy.en.languageNavigation}>
-			<a
-				href={languageHref('de')}
-				data-language-choice="de"
-				aria-current={locale === 'de' ? 'true' : undefined}
-			>DE</a>
-			<span aria-hidden="true">/</span>
-			<a
-				href={languageHref('en')}
-				data-language-choice="en"
-				aria-current={locale === 'en' ? 'true' : undefined}
-			>EN</a>
-		</nav>
-		<div class="social-links" aria-label={copy.socialMedia}>
-			<span aria-label={copy.youtubePending} title={copy.youtubePending}>
+		<div class="social-links" aria-label="Social Media">
+			<span aria-label="YouTube-Profil folgt" title="YouTube-Profil folgt">
 				<svg viewBox="0 0 16 16" aria-hidden="true">
 					<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.568.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558l-.009-.104-.008-.105A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.171-.007.171-.007.087-.004.17-.006A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
 				</svg>
 			</span>
-			<span aria-label={copy.instagramPending} title={copy.instagramPending}>
+			<span aria-label="Instagram-Profil folgt" title="Instagram-Profil folgt">
 				<svg viewBox="0 0 16 16" aria-hidden="true">
 					<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.276.373.145.64.318.92.598s.453.546.598.92c.11.281.24.705.276 1.485.039.844.047 1.096.047 3.232s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.276 1.485a2.5 2.5 0 0 1-.598.92c-.28.28-.547.453-.92.598-.282.11-.706.241-1.486.276-.843.039-1.096.047-3.232.047s-2.39-.008-3.233-.047c-.78-.035-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.598-.92c-.11-.282-.241-.706-.276-1.486-.039-.843-.046-1.096-.046-3.232s.007-2.388.046-3.232c.035-.78.166-1.204.276-1.486.145-.373.318-.64.598-.92s.547-.453.92-.598c.282-.11.705-.241 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216m0 1.442a2.666 2.666 0 1 1 0 5.332 2.666 2.666 0 0 1 0-5.332" />
 				</svg>
 			</span>
-			<span aria-label={copy.tiktokPending} title={copy.tiktokPending}>
+			<span aria-label="TikTok-Profil folgt" title="TikTok-Profil folgt">
 				<svg viewBox="0 0 16 16" aria-hidden="true">
 					<path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
 				</svg>
@@ -153,43 +137,6 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		<p>© 2026 DIE OLDTIMERMANUFAKTUR</p>
 	</footer>
 </div>
-
-<script is:inline define:vars={{ clientDetectLocale }}>
-	if (clientDetectLocale) {
-		const clientLocale = document.documentElement.lang.toLowerCase().startsWith('de') ? 'de' : 'en';
-		document.querySelectorAll('[data-client-copy-de]').forEach((element) => {
-			element.textContent = element.getAttribute(`data-client-copy-${clientLocale}`) ?? element.textContent;
-		});
-		document.querySelectorAll('[data-client-href-de]').forEach((element) => {
-			const href = element.getAttribute(`data-client-href-${clientLocale}`);
-			if (href) element.setAttribute('href', href);
-		});
-		document.querySelectorAll('[data-client-aria-de]').forEach((element) => {
-			const label = element.getAttribute(`data-client-aria-${clientLocale}`);
-			if (label) element.setAttribute('aria-label', label);
-		});
-		document.querySelectorAll('[data-language-choice]').forEach((element) => {
-			if (element.getAttribute('data-language-choice') === clientLocale) {
-				element.setAttribute('aria-current', 'true');
-			} else {
-				element.removeAttribute('aria-current');
-			}
-		});
-	}
-</script>
-
-<script is:inline define:vars={{ languageStorageKey }}>
-	document.querySelectorAll('[data-language-choice]').forEach((link) => {
-		link.addEventListener('click', () => {
-			const locale = link.getAttribute('data-language-choice');
-			if (locale !== 'de' && locale !== 'en') return;
-
-			try {
-				window.localStorage.setItem(languageStorageKey, locale);
-			} catch {}
-		});
-	});
-</script>
 
 <script>
 	const cursor = document.querySelector('.cursor');
@@ -222,7 +169,14 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	let activeSectionScroll;
 	let keyboardSectionIndex;
 
-	if (cursor && window.matchMedia('(pointer: fine)').matches) {
+	if (cursor instanceof HTMLElement) {
+		const cursorPreference = window.matchMedia('(min-width: 761px) and (pointer: fine)');
+		const updateCursor = () => {
+			document.documentElement.classList.toggle('has-custom-cursor', cursorPreference.matches);
+			cursor.classList.remove('is-active');
+		};
+		cursorPreference.addEventListener('change', updateCursor);
+		updateCursor();
 		let cursorX = -40;
 		let cursorY = -40;
 		let cursorFrame;
@@ -238,8 +192,8 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 			}
 		};
 
-		document.documentElement.classList.add('has-custom-cursor');
 		window.addEventListener('pointermove', (event) => {
+			if (!cursorPreference.matches) return;
 			cursorX = event.clientX;
 			cursorY = event.clientY;
 			requestCursorFrame();
@@ -264,7 +218,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 			return;
 		}
 
-		[...siteShell.children].forEach((element) => {
+		[...siteShell.children, document.querySelector('.skip-link')].forEach((element) => {
 			if (
 				!(element instanceof HTMLElement) ||
 				element === menuOverlay ||
@@ -274,7 +228,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 			}
 
 			if (shouldBeInert) {
-				menuBackgroundState.set(element, element.inert);
+				if (!menuBackgroundState.has(element)) menuBackgroundState.set(element, element.inert);
 				element.inert = true;
 				return;
 			}
@@ -574,7 +528,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 
 	.development-notice {
 		position: fixed;
-		top: 88px;
+		top: 76px;
 		left: 0;
 		right: 0;
 		z-index: 48;
@@ -589,7 +543,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		border-bottom: 1px solid rgba(238, 238, 238, 0.16);
 		-webkit-backdrop-filter: blur(24px) saturate(106%);
 		backdrop-filter: blur(24px) saturate(106%);
-		font-size: 0.72rem;
+		font-size: 0.68rem;
 		font-style: normal;
 		font-weight: 350;
 		letter-spacing: 0.035em;
@@ -600,7 +554,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 
 	.development-notice strong {
 		color: #eeeeee;
-		font-size: 0.7rem;
+		font-size: 0.62rem;
 		font-weight: 520;
 		letter-spacing: 0.18em;
 		text-transform: uppercase;
@@ -610,6 +564,16 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	:global(.has-custom-cursor),
 	:global(.has-custom-cursor *) {
 		cursor: none !important;
+	}
+
+	/* Native dialogs are in the top layer, above the decorative cursor. */
+	:global(.has-custom-cursor dialog),
+	:global(.has-custom-cursor dialog *) {
+		cursor: auto !important;
+	}
+
+	:global(html:not(.has-custom-cursor)) .cursor {
+		display: none;
 	}
 
 	.cursor {
@@ -656,7 +620,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
 		align-items: center;
-		min-height: 88px;
+		min-height: 76px;
 		padding: 0 clamp(1rem, 3vw, 3rem);
 		color: var(--color-main);
 		background: rgba(16, 16, 16, 0.34);
@@ -672,7 +636,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	.brand,
 	.footer-brand {
 		color: currentColor;
-		font-weight: 550;
+		font-weight: 500;
 		letter-spacing: 0.34em;
 		text-decoration: none;
 		text-align: center;
@@ -680,25 +644,11 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	}
 
 	.brand {
-		display: inline-flex;
-		align-items: flex-start;
-		gap: 0.18em;
-		font-size: clamp(1.35rem, 1.75vw, 1.8rem);
-		letter-spacing: 0.28em;
-		line-height: 1;
-	}
-
-	.brand sup {
-		position: relative;
-		top: -0.18em;
-		font-size: 0.58em;
-		letter-spacing: 0;
-		line-height: 1;
+		font-size: clamp(0.72rem, 0.9vw, 0.9rem);
 	}
 
 	.footer-brand {
-		font-size: clamp(0.7rem, 0.72vw, 0.78rem);
-		font-weight: 500;
+		font-size: clamp(0.64rem, 0.78vw, 0.78rem);
 	}
 
 	.menu-toggle,
@@ -706,11 +656,10 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		color: currentColor;
 		background: transparent;
 		border: 0;
-		font-family: var(--font-body);
 		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: 0.24em;
-		font-size: clamp(0.86rem, 0.82rem + 0.12vw, 0.94rem);
+		font-size: 0.66rem;
 		font-weight: 500;
 	}
 
@@ -753,6 +702,8 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	.menu-overlay {
 		position: fixed;
 		inset: 0;
+		overflow-y: auto;
+		overscroll-behavior: contain;
 		z-index: 90;
 		background: rgba(16, 16, 16, 0.38);
 		backdrop-filter: blur(16px) saturate(106%);
@@ -793,7 +744,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		color: rgba(238, 238, 238, 0.76);
 		text-transform: uppercase;
 		letter-spacing: 0.24em;
-		font-size: var(--text-utility);
+		font-size: 0.68rem;
 	}
 
 	.menu-close {
@@ -822,7 +773,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	.menu-nav__link {
 		color: rgba(238, 238, 238, 0.68);
 		font-family: var(--font-body);
-		font-size: clamp(1.3rem, 1.85vw, 1.9rem);
+		font-size: clamp(0.98rem, 1.55vw, 1.55rem);
 		font-weight: 400;
 		line-height: 1.2;
 		letter-spacing: 0.28em;
@@ -877,7 +828,6 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 
 	.footer-primary,
 	.footer-legal,
-	.language-switch,
 	.social-links {
 		display: flex;
 		align-items: center;
@@ -894,8 +844,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	}
 
 	.footer-primary,
-	.footer-legal,
-	.language-switch {
+	.footer-legal {
 		text-transform: uppercase;
 		letter-spacing: 0.24em;
 		font-weight: 400;
@@ -903,7 +852,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 	}
 
 	.footer-primary {
-		font-size: clamp(0.72rem, 0.7rem + 0.1vw, 0.78rem);
+		font-size: 0.7rem;
 	}
 
 	.footer-primary a {
@@ -919,26 +868,8 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 
 	.footer-legal {
 		color: currentColor;
-		font-size: clamp(0.7rem, 0.68rem + 0.1vw, 0.76rem);
+		font-size: 0.75rem;
 		opacity: 0.72;
-	}
-
-	.language-switch {
-		gap: 0.72rem;
-		font-size: clamp(0.78rem, 0.76rem + 0.1vw, 0.86rem);
-	}
-
-	.language-switch a {
-		color: currentColor;
-		opacity: 0.48;
-		text-decoration: none;
-		transition: opacity 180ms ease;
-	}
-
-	.language-switch a:hover,
-	.language-switch a:focus-visible,
-	.language-switch a[aria-current='true'] {
-		opacity: 1;
 	}
 
 	.social-links {
@@ -967,32 +898,31 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		color: currentColor;
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
-		font-size: clamp(0.7rem, 0.68rem + 0.1vw, 0.76rem);
+		font-size: 0.68rem;
 		opacity: 0.64;
 	}
 
 	.menu-toggle:focus-visible,
 	.menu-close:focus-visible,
 	.footer-primary a:focus-visible,
-	.footer-legal a:focus-visible,
-	.language-switch a:focus-visible {
+	.footer-legal a:focus-visible {
 		outline: 1px solid currentColor;
 		outline-offset: 0.35rem;
 	}
 
 	@media (max-width: 760px) {
 		.development-notice {
-			top: 72px;
+			top: 64px;
 			display: block;
 			padding: 0.55rem 1rem 0.6rem;
-			font-size: 0.7rem;
+			font-size: 0.62rem;
 			text-align: left;
 		}
 
 		.development-notice strong {
 			display: block;
 			margin-bottom: 0.15rem;
-			font-size: 0.7rem;
+			font-size: 0.56rem;
 		}
 
 		.cursor {
@@ -1000,9 +930,8 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		}
 
 		.site-header {
-			min-height: 72px;
+			min-height: 64px;
 			grid-template-columns: auto 1fr auto;
-			column-gap: 0.35rem;
 			padding: 0 1rem;
 			background: rgba(16, 16, 16, 0.42);
 		}
@@ -1016,11 +945,10 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		}
 
 		.brand {
-			max-width: calc(100vw - 6.5rem);
-			font-size: 0.86rem;
-			letter-spacing: 0.08em;
-			line-height: 1;
-			white-space: nowrap;
+			font-size: 0.62rem;
+			letter-spacing: 0.16em;
+			white-space: normal;
+			line-height: 1.25;
 		}
 
 		.header-spacer {
@@ -1046,7 +974,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 
 		.menu-close {
 			padding: 0.72rem 0.8rem;
-			font-size: 0.72rem;
+			font-size: 0.66rem;
 			transform: none;
 		}
 
@@ -1072,11 +1000,7 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		.footer-legal {
 			gap: 0.5rem 0.9rem;
 			margin-top: 1.4rem;
-			font-size: 0.68rem;
-		}
-
-		.language-switch {
-			margin-top: 1.4rem;
+			font-size: 0.76rem;
 		}
 
 		.footer-legal a {
@@ -1104,11 +1028,11 @@ const registeredMarkLabel = locale === 'de' ? 'eingetragene Marke' : 'registered
 		}
 
 		.footer-brand {
-			font-size: 0.68rem;
+			font-size: 0.7rem;
 		}
 
 		.site-footer p {
-			font-size: 0.66rem;
+			font-size: 0.72rem;
 		}
 	}
 </style>

@@ -2,13 +2,14 @@
 import { join } from 'node:path';
 import sharp from 'sharp';
 import Layout from '../layouts/Layout.astro';
+import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
+import { pageModified } from '../config/modificationDates.js';
 import SiteChrome from './SiteChrome.astro';
 import VehicleCard from './VehicleCard.astro';
-import { localizedRoute, type Locale } from '../config/i18n';
 import {
+	categoryByKey,
 	vehicleImageRoute,
 	vehicleCategories,
-	vehicleCategory,
 	vehicleRoute,
 	type VehicleCategoryKey,
 	type VehicleEntry,
@@ -19,38 +20,10 @@ interface Props {
 	vehicles: VehicleEntry[];
 	currentPage?: number;
 	pageSize?: number;
-	locale?: Locale;
 }
 
-const { category, vehicles, currentPage = 1, pageSize = vehicles.length || 1, locale = 'de' } = Astro.props;
-const categoryData = vehicleCategory(category, locale);
-const ui = locale === 'de' ? {
-	page: 'Seite',
-	searchLabel: 'Fahrzeugsuche',
-	searchPlaceholder: 'Fahrzeugname eingeben',
-	clear: 'Löschen',
-	empty: 'Kein Fahrzeug für diese Suche gefunden.',
-	categories: 'Projektbereiche',
-	previous: 'Zurück',
-	next: 'Weiter',
-	pagination: 'Seitennavigation',
-	vehicleLanguageNote: '',
-	home: 'Startseite',
-	projects: 'Projekte',
-} : {
-	page: 'Page',
-	searchLabel: 'Vehicle search',
-	searchPlaceholder: 'Enter a vehicle name',
-	clear: 'Clear',
-	empty: 'No vehicle matches this search.',
-	categories: 'Project categories',
-	previous: 'Previous',
-	next: 'Next',
-	pagination: 'Page navigation',
-	vehicleLanguageNote: 'Individual vehicle documentation is available in German.',
-	home: 'Home',
-	projects: 'Projects',
-};
+const { category, vehicles, currentPage = 1, pageSize = vehicles.length || 1 } = Astro.props;
+const categoryData = categoryByKey[category];
 const totalPages = Math.ceil(vehicles.length / pageSize);
 const safePage = Math.min(Math.max(currentPage, 1), Math.max(totalPages, 1));
 const firstIndex = (safePage - 1) * pageSize;
@@ -58,12 +31,11 @@ const visibleVehicles = vehicles.slice(firstIndex, firstIndex + pageSize);
 const lastIndex = firstIndex + visibleVehicles.length;
 const searchId = `vehicle-search-${category}`;
 const gridId = `vehicle-grid-${category}`;
-const pageTitle = safePage > 1 ? `${categoryData.heading} – ${ui.page} ${safePage}` : categoryData.heading;
+const pageTitle = safePage > 1 ? `${categoryData.heading} – Seite ${safePage}` : categoryData.heading;
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
-const rootSitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
-const sitePath = (path: string) => rootSitePath(localizedRoute(path, locale));
+const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 const pagePath = (page: number) =>
 	page === 1
 		? `/projekte/${category}/`
@@ -71,21 +43,16 @@ const pagePath = (page: number) =>
 const siteUrl = Astro.site ?? Astro.url;
 const absolute = (path: string) => new URL(sitePath(path), siteUrl).href;
 const openGraphVehicle = visibleVehicles[0] ?? vehicles[0];
-const openGraphMetadata = await sharp(
-	join(
-		process.cwd(),
-		'src/pages/projekte',
-		openGraphVehicle.data.category,
-		openGraphVehicle.data.slug,
-		openGraphVehicle.data.cardImage.replace(/^\.\//, ''),
-	),
-).metadata();
-const openGraphImage = {
-	src: rootSitePath(vehicleImageRoute(openGraphVehicle, openGraphVehicle.data.cardImage)),
-	width: openGraphMetadata.width ?? 1200,
-	height: openGraphMetadata.height ?? 900,
+const openGraphMetadata = openGraphVehicle
+	? await sharp(join(process.cwd(), 'public', vehicleImageRoute(openGraphVehicle, openGraphVehicle.data.cardImage))).metadata()
+	: undefined;
+const openGraphImage = openGraphVehicle ? {
+	src: sitePath(vehicleImageRoute(openGraphVehicle, openGraphVehicle.data.cardImage)),
+	width: openGraphMetadata.width,
+	height: openGraphMetadata.height,
 	format: 'webp' as const,
-};
+} : defaultOpenGraphImage;
+const openGraphImageAlt = openGraphVehicle?.data.cardImageAlt ?? 'Ein historischer Roadster während einer Fahrt';
 const collectionId = `${absolute(pagePath(safePage))}#itemlist`;
 const itemList = {
 	'@type': 'ItemList',
@@ -97,7 +64,7 @@ const itemList = {
 		'@type': 'ListItem',
 		position: firstIndex + index + 1,
 		name: vehicle.data.title,
-		url: new URL(rootSitePath(vehicleRoute(vehicle)), siteUrl).href,
+		url: absolute(vehicleRoute(vehicle)),
 	})),
 };
 ---
@@ -106,45 +73,40 @@ const itemList = {
 	title={pageTitle}
 	description={categoryData.description}
 	openGraphImage={openGraphImage}
-	openGraphImageAlt={visibleVehicles[0]?.data.cardImageAlt ?? vehicles[0].data.cardImageAlt}
+	{openGraphImageAlt}
 	structuredDataType="CollectionPage"
-	dateModified="2026-08-10"
+	dateModified={pageModified(pagePath(safePage), vehicles.map((vehicle) => vehicle.data.dateModified))}
 	additionalJsonLd={itemList}
 	mainEntityId={collectionId}
 	breadcrumbs={[
-		{ name: ui.home, path: localizedRoute('/', locale) },
-		{ name: ui.projects, path: localizedRoute('/projekte/', locale) },
-		{ name: categoryData.label, path: localizedRoute(`/projekte/${category}/`, locale) },
+		{ name: 'Startseite', path: '/' },
+		{ name: 'Projekte', path: '/projekte/' },
+		{ name: categoryData.label, path: `/projekte/${category}/` },
 	]}
-	{locale}
 >
-	<SiteChrome theme="light" {locale}>
+	<SiteChrome theme="light">
 		<main class="vehicle-archive" id="main-content" tabindex="-1">
 			<header class="archive-intro">
 				<h1>{categoryData.heading}</h1>
-				{ui.vehicleLanguageNote && <p>{ui.vehicleLanguageNote}</p>}
 			</header>
 
-			<nav class="category-switcher" aria-label={ui.categories}>
+			<nav class="category-switcher" aria-label="Projektbereiche">
 				{
-					vehicleCategories.map((item) => {
-						const itemCopy = vehicleCategory(item.key, locale);
-						return (
+					vehicleCategories.map((item) => (
 						<a
 							href={sitePath(`/projekte/${item.key}/`)}
 							aria-current={item.key === category ? 'page' : undefined}
 							data-category-link
 						>
-							<span>{itemCopy.label}</span>
+							<span>{item.label}</span>
 							{item.key === category && <i aria-hidden="true" />}
 						</a>
-						);
-					})
+					))
 				}
 			</nav>
 
-			<form class="archive-search" role="search" data-vehicle-search>
-				<label for={searchId}>{ui.searchLabel}</label>
+			<form class="archive-search" role="search" data-vehicle-search hidden={!vehicles.length}>
+				<label for={searchId}>Fahrzeugsuche</label>
 				<div class="archive-search__field">
 					<svg aria-hidden="true" viewBox="0 0 24 24">
 						<circle cx="10.5" cy="10.5" r="6.75" />
@@ -153,22 +115,24 @@ const itemList = {
 					<input
 						id={searchId}
 						type="search"
-						placeholder={ui.searchPlaceholder}
-						aria-label={locale === 'de' ? `${categoryData.label} durchsuchen` : `Search ${categoryData.label}`}
+						placeholder="Fahrzeugname eingeben"
+						aria-label={`${categoryData.label} durchsuchen`}
 						aria-controls={gridId}
 						autocomplete="off"
 						spellcheck="false"
 						data-vehicle-search-input
 					/>
-					<button type="button" data-vehicle-search-clear hidden>{ui.clear}</button>
+					<button type="button" data-vehicle-search-clear hidden>Löschen</button>
 				</div>
 				<p class="archive-search__empty" data-vehicle-search-empty hidden>
-					{ui.empty}
+					Kein Fahrzeug für diese Suche gefunden.
 				</p>
 				<span class="visually-hidden" aria-live="polite" data-vehicle-search-status></span>
 			</form>
 
-			<section id={gridId} class="vehicle-grid" aria-label={`${categoryData.label}, ${ui.page} ${safePage}`}>
+			{!vehicles.length && <p class="archive-empty">Zurzeit sind in diesem Bereich keine Fahrzeuge veröffentlicht.</p>}
+
+			<section id={gridId} class="vehicle-grid" aria-label={`${categoryData.label}, Seite ${safePage}`}>
 				{
 					vehicles.map((vehicle, index) => {
 						const defaultVisible = index >= firstIndex && index < lastIndex;
@@ -180,10 +144,10 @@ const itemList = {
 
 			{
 				totalPages > 1 && (
-					<nav class="pagination" aria-label={ui.pagination}>
+					<nav class="pagination" aria-label="Seitennavigation">
 						{safePage > 1 && (
 							<a class="pagination__direction" href={sitePath(pagePath(safePage - 1))} rel="prev">
-								<span aria-hidden="true">←</span> {ui.previous}
+								<span aria-hidden="true">←</span> Zurück
 							</a>
 						)}
 						<div class="pagination__pages">
@@ -191,7 +155,7 @@ const itemList = {
 								<a
 									href={sitePath(pagePath(page))}
 									aria-current={page === safePage ? 'page' : undefined}
-									aria-label={`${ui.page} ${page}`}
+									aria-label={`Seite ${page}`}
 								>
 									{String(page).padStart(2, '0')}
 								</a>
@@ -199,7 +163,7 @@ const itemList = {
 						</div>
 						{safePage < totalPages && (
 							<a class="pagination__direction" href={sitePath(pagePath(safePage + 1))} rel="next">
-								{ui.next} <span aria-hidden="true">→</span>
+								Weiter <span aria-hidden="true">→</span>
 							</a>
 						)}
 					</nav>
@@ -291,14 +255,20 @@ const itemList = {
 		if (pagination instanceof HTMLElement) pagination.hidden = isSearching;
 		if (emptySearch instanceof HTMLElement) emptySearch.hidden = !isSearching || matchCount > 0;
 		if (searchStatus instanceof HTMLElement) {
-			const isEnglish = document.documentElement.lang.startsWith('en');
 			searchStatus.textContent = isSearching
 				? matchCount === 1
-					? isEnglish ? 'One vehicle found.' : 'Ein Fahrzeug gefunden.'
-					: isEnglish ? `${matchCount} vehicles found.` : `${matchCount} Fahrzeuge gefunden.`
+					? 'Ein Fahrzeug gefunden.'
+					: `${matchCount} Fahrzeuge gefunden.`
 				: '';
 		}
 	};
+
+	const restoreArchive = () => {
+		archive?.classList.remove('archive-is-leaving');
+		updateVehicleSearch();
+	};
+	window.addEventListener('pageshow', restoreArchive);
+	restoreArchive();
 
 	searchForm?.addEventListener('submit', (event) => event.preventDefault());
 	searchInput?.addEventListener('input', updateVehicleSearch);
@@ -362,19 +332,11 @@ const itemList = {
 	.archive-intro h1 {
 		margin: 0;
 		font-size: clamp(2.65rem, 4.75vw, 5rem);
-		font-weight: 420;
+		font-weight: 360;
 		letter-spacing: 0.075em;
 		line-height: 0.98;
 		text-transform: uppercase;
 		animation: heading-enter 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
-	}
-
-	.archive-intro p {
-		max-width: 44rem;
-		margin: 1.4rem 0 0;
-		font-size: clamp(1.05rem, 1.25vw, 1.22rem);
-		font-weight: 400;
-		line-height: 1.55;
 	}
 
 	.category-switcher {
@@ -391,7 +353,7 @@ const itemList = {
 		position: relative;
 		padding: 1.25rem clamp(0.75rem, 2vw, 1.5rem);
 		color: inherit;
-		font-size: clamp(0.76rem, 0.86vw, 0.88rem);
+		font-size: clamp(0.68rem, 0.78vw, 0.78rem);
 		font-weight: 460;
 		letter-spacing: 0.145em;
 		text-align: center;
@@ -444,7 +406,7 @@ const itemList = {
 
 	.archive-search > label {
 		padding-bottom: 0.9rem;
-		font-size: 0.76rem;
+		font-size: 0.68rem;
 		font-weight: 520;
 		letter-spacing: 0.15em;
 		text-transform: uppercase;
@@ -482,7 +444,7 @@ const itemList = {
 		background: transparent;
 		color: inherit;
 		font: inherit;
-		font-size: clamp(1rem, 1.2vw, 1.14rem);
+		font-size: clamp(0.92rem, 1.15vw, 1.05rem);
 		letter-spacing: 0.035em;
 	}
 
@@ -504,7 +466,7 @@ const itemList = {
 		background: transparent;
 		color: inherit;
 		font: inherit;
-		font-size: 0.7rem;
+		font-size: 0.62rem;
 		font-weight: 520;
 		letter-spacing: 0.13em;
 		text-transform: uppercase;
@@ -520,7 +482,7 @@ const itemList = {
 	.archive-search__empty {
 		grid-column: 2;
 		margin: 0.9rem 0 0;
-		font-size: 0.88rem;
+		font-size: 0.76rem;
 		letter-spacing: 0.08em;
 	}
 
@@ -605,7 +567,7 @@ const itemList = {
 
 	.pagination a {
 		color: inherit;
-		font-size: 0.82rem;
+		font-size: 0.74rem;
 		font-weight: 500;
 		letter-spacing: 0.12em;
 		text-decoration: none;
@@ -675,7 +637,7 @@ const itemList = {
 			min-width: 0;
 			min-height: 4.25rem;
 			padding: 0.8rem 0.35rem;
-			font-size: 0.7rem;
+			font-size: 0.58rem;
 			letter-spacing: 0.1em;
 			line-height: 1.4;
 		}

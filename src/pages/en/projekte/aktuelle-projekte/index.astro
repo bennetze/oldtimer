@@ -1,8 +1,0 @@
----
-import VehicleArchivePage from '../../../../components/VehicleArchivePage.astro';
-import { getCategoryVehicles } from '../../../../config/vehicles';
-
-const vehicles = await getCategoryVehicles('aktuelle-projekte');
----
-
-<VehicleArchivePage category="aktuelle-projekte" {vehicles} locale="en" />

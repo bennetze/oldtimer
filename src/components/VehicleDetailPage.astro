@@ -2,6 +2,7 @@
 import { join } from 'node:path';
 import sharp from 'sharp';
 import Layout from '../layouts/Layout.astro';
+import { validateVehicleBlocks } from '../config/vehicleHtml.js';
 import {
 	GITHUB_PAGES_GALLERY_IMAGE_LIMIT,
 	limitVehicleGalleryBlocks,
@@ -31,25 +32,18 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
 const githubPagesPreview = basePath !== '/';
+const validatedBlocks = validateVehicleBlocks(vehicle.data.blocks, `${vehicle.data.category}/${vehicle.data.slug}`);
 const contentBlocks = (
 	githubPagesPreview
-		? limitVehicleGalleryBlocks(vehicle.data.blocks, GITHUB_PAGES_GALLERY_IMAGE_LIMIT)
-		: vehicle.data.blocks
+		? limitVehicleGalleryBlocks(validatedBlocks, GITHUB_PAGES_GALLERY_IMAGE_LIMIT)
+		: validatedBlocks
 ) as typeof vehicle.data.blocks;
 const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 const galleryImagePath = (source: string) => sitePath(vehicleImageRoute(vehicle, source));
 const siteUrl = Astro.site ?? Astro.url;
 const pageUrl = new URL(Astro.url.pathname, siteUrl).href;
 const vehicleId = `${pageUrl}#vehicle`;
-const leadImageMetadata = await sharp(
-	join(
-		process.cwd(),
-		'src/pages/projekte',
-		vehicle.data.category,
-		vehicle.data.slug,
-		vehicle.data.leadImage.replace(/^\.\//, ''),
-	),
-).metadata();
+const leadImageMetadata = await sharp(join(process.cwd(), 'public', vehicleImageRoute(vehicle, vehicle.data.leadImage))).metadata();
 const leadImage = {
 	src: galleryImagePath(vehicle.data.leadImage),
 	width: leadImageMetadata.width ?? 1200,
@@ -268,7 +262,7 @@ const vehicleJsonLd = {
 
 	.vehicle-masthead p {
 		margin: 0 0 1.5rem;
-		font-size: 0.78rem;
+		font-size: 0.72rem;
 		font-weight: 500;
 		letter-spacing: 0.18em;
 		text-transform: uppercase;
@@ -296,7 +290,7 @@ const vehicleJsonLd = {
 		max-width: 19ch;
 		margin: 0;
 		font-size: clamp(2.45rem, 4.7vw, 5rem);
-		font-weight: 420;
+		font-weight: 340;
 		letter-spacing: 0.065em;
 		line-height: 0.98;
 		text-transform: uppercase;
@@ -322,7 +316,7 @@ const vehicleJsonLd = {
 		width: min(100%, 49rem);
 		margin: 0 auto clamp(4rem, 7vw, 7rem);
 		font-size: clamp(1.25rem, 1.75vw, 1.7rem);
-		font-weight: 420;
+		font-weight: 370;
 		line-height: 1.65;
 		text-align: center;
 	}
@@ -443,7 +437,7 @@ const vehicleJsonLd = {
 	.story-contact__actions a {
 		padding: 0.85rem 1.15rem;
 		border: 1px solid #111111;
-		font-size: 0.78rem;
+		font-size: 0.72rem;
 		font-weight: 500;
 		letter-spacing: 0.12em;
 		text-decoration: none;
@@ -469,7 +463,7 @@ const vehicleJsonLd = {
 		align-items: center;
 		gap: 0.65rem;
 		margin-bottom: 0.55rem;
-		font-size: 0.74rem;
+		font-size: 0.66rem;
 		font-weight: 500;
 		letter-spacing: 0.13em;
 		text-transform: uppercase;
@@ -496,7 +490,7 @@ const vehicleJsonLd = {
 	}
 
 	.vehicle-adjacent__archive {
-		font-size: 0.78rem;
+		font-size: 0.72rem;
 		font-weight: 500;
 		letter-spacing: 0.12em;
 		text-align: center;
