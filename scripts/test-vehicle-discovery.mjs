@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { discoverVehicleCategory } from './lib/vehicle-files.mjs';
 
-const category = { key: 'fixture-projects' };
+const category = { key: 'aktuelle-projekte' };
 const fixtureRoot = await mkdtemp(join(tmpdir(), 'oldtimer-vehicle-discovery-'));
 const categoryRoot = join(fixtureRoot, category.key);
 
@@ -23,6 +23,9 @@ async function addPair(slug, order) {
 			description: 'A complete automatic-discovery fixture vehicle.',
 			sourceUrl: 'https://example.com/fixture',
 			order,
+			dateModified: '2026-09-12',
+			cardImageAlt: 'Fixture card',
+			leadImageAlt: 'Fixture lead',
 			cardImage: './card.jpg',
 			leadImage: './lead.jpg',
 			blocks: [],

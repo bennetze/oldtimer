@@ -3,7 +3,7 @@ import { load } from 'cheerio';
 import assert from 'node:assert/strict';
 import { validateVehicleHtml } from '../src/config/vehicleHtml.js';
 import { fragmentId } from '../src/config/fragments.js';
-import { pageModified, modificationDates } from '../src/config/modificationDates.js';
+import { pageModified } from '../src/config/modificationDates.js';
 import { sitemapEntries, renderSitemap, checkCrawlerFiles, productionOrigin } from '../scripts/lib/crawlers.mjs';
 
 test('vehicle HTML retains German copy, formatting and safe contact links', () => {
@@ -35,15 +35,16 @@ const files = {
 };
 
 test('empty categories keep canonical archive routes with stable reviewed dates', () => {
-	assert.equal(entries.length, 7);
-	assert.ok(entries.every(([, date]) => date === modificationDates.shared));
+	assert.equal(entries.length, 14);
+	assert.deepEqual(entries.slice(7).map(([path]) => path), entries.slice(0, 7).map(([path]) => `/en${path}`));
+	assert.ok(entries.every(([path, date]) => date === pageModified(path)));
 	assert.equal(pageModified('/projekte/test/car/', ['2026-10-01']), '2026-10-01');
 	assert.equal(renderSitemap(sitemapEntries(groups)), files.sitemap);
 });
 
 test('crawler validation preserves approved manual wording and rejects drift', () => {
 	checkCrawlerFiles(files, entries);
-	assert.throws(() => checkCrawlerFiles({ ...files, sitemap: files.sitemap.replace('2026-09-05', '2026-09-04') }, entries), /npm run vehicles:sync/);
+	assert.throws(() => checkCrawlerFiles({ ...files, sitemap: files.sitemap.replace(/<lastmod>[^<]+<\/lastmod>/, '<lastmod>2000-01-01</lastmod>') }, entries), /npm run vehicles:sync/);
 	for (const path of ['/404.html', '/impressum/', '/absent/', '/oldtimer-kaufen/']) {
 		assert.throws(() => checkCrawlerFiles({ ...files, llms: files.llms + `[Bad](${productionOrigin}${path})` }, entries), /non-canonical/);
 	}

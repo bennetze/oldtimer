@@ -33,6 +33,7 @@ function setup(reduced = false) {
 	const toggle = new Element(); const panel = new Element();
 	panel.querySelector = (selector) => ({ '[data-motion-video]': video, '[data-motion-image]': image, '[data-motion-fallback]': picture, '[data-motion-toggle]': toggle })[selector];
 	const document = new Element();
+	document.documentElement = { lang: 'de' };
 	document.hidden = false; document.readyState = 'complete';
 	document.querySelector = () => null; document.querySelectorAll = () => [panel]; document.createElement = () => new Element();
 	const timers = new Map(); let timerId = 0;

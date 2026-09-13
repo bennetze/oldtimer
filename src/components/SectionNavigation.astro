@@ -7,13 +7,14 @@ interface SectionItem {
 interface Props {
 	items: SectionItem[];
 	theme?: 'dark' | 'light';
+	visible?: boolean;
 }
 
-const { items, theme = 'dark' } = Astro.props;
+const { items, theme = 'dark', visible = true } = Astro.props;
 ---
 
 <nav
-	class:list={['section-indicator', `section-indicator--${theme}`]}
+	class:list={['section-indicator', `section-indicator--${theme}`, { 'section-indicator--hidden': !visible }]}
 	aria-label="Abschnitte"
 	data-section-indicator
 >
@@ -48,6 +49,10 @@ const { items, theme = 'dark' } = Astro.props;
 
 	.section-indicator--light {
 		--section-indicator-color: 17, 17, 17;
+	}
+
+	.section-indicator--hidden {
+		display: none;
 	}
 
 	.section-indicator__dot {

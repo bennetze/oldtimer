@@ -14,6 +14,28 @@ import teamPortrait from '../assets/oldtimer/about-team-portrait.png';
 import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
 import heroSitePoster from '../assets/oldtimer/hero-site-poster.jpg';
 
+const qualifications = {
+	mario: ['KFZ-Mechaniker-Meister', 'KFZ-Elektriker-Meister', 'Karosseriebau-Meister'],
+	anton: ['KFZ-Techniker-Meister'],
+};
+const siteRoot = new URL(import.meta.env.BASE_URL, Astro.site ?? Astro.url);
+const aboutUrl = new URL('ueber-uns/', siteRoot);
+const people = [
+	{ name: 'Mario Schrank', id: 'mario-schrank', titles: qualifications.mario },
+	{ name: 'Anton Schrank', id: 'anton-schrank', titles: qualifications.anton },
+].map(({ name, id, titles }) => ({
+	'@type': 'Person',
+	'@id': `${aboutUrl.href}#${id}`,
+	name,
+	worksFor: { '@id': `${siteRoot.href}#organization` },
+	subjectOf: { '@id': `${aboutUrl.href}#webpage` },
+	hasCredential: titles.map((title) => ({
+		'@type': 'EducationalOccupationalCredential',
+		name: title,
+		credentialCategory: 'Meistertitel',
+	})),
+}));
+
 const sectionNavigationItems = [
 	{ id: 'mario-schrank', label: 'Mario Schrank' },
 	{ id: 'anton-schrank', label: 'Anton Schrank' },
@@ -25,14 +47,16 @@ const sectionNavigationItems = [
 <EditorialPageLayout
 	title="Über uns"
 	heading="Wir über uns"
-	description="Mario Schrank, Anton Schrank und das Team der Oldtimermanufaktur – verbunden durch Erfahrung, Leidenschaft und Liebe zu historischen Fahrzeugen."
+	description="Mario Schrank, dreifacher Meister, und Anton Schrank, KFZ-Techniker-Meister: Lernen Sie die Menschen und das Handwerk der Oldtimermanufaktur kennen."
 	sections={sectionNavigationItems}
 	theme="light"
 	background="linear-gradient(180deg, #eeeeee 0%, #eeeeee 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #9299c4 47%, #688dca 54%, #557fb8 61%, #6695d3 70%, #82afe2 82%, #ffffff 100%)"
 	openGraphImage={heroSitePoster}
 	openGraphImageAlt="Ein historischer Roadster während einer Fahrt"
 	structuredDataType="AboutPage"
-	dateModified="2026-08-03"
+	dateModified="2026-09-12"
+	additionalJsonLd={people}
+	sectionNavigationVisible={false}
 >
 	<section
 		slot="opening"
@@ -40,7 +64,12 @@ const sectionNavigationItems = [
 					aria-labelledby="mario-title"
 					data-parallax-group
 				>
-					<h2 id="mario-title">Mario Schrank</h2>
+					<header class="profile-heading">
+						<h2 id="mario-title">Mario Schrank</h2>
+						<p class="profile-credentials" aria-label="Meisterqualifikationen">
+							{qualifications.mario.map((title) => <span>{title}</span>)}
+						</p>
+					</header>
 					<div class="story__layout">
 						<div class="collage collage--double collage--right" aria-label="Visuelle Platzhalter für Mario Schrank">
 							<figure
@@ -93,7 +122,12 @@ const sectionNavigationItems = [
 				aria-labelledby="anton-title"
 				data-parallax-group
 			>
-				<h2 id="anton-title">Anton Schrank</h2>
+				<header class="profile-heading">
+					<h2 id="anton-title">Anton Schrank</h2>
+					<p class="profile-credentials" aria-label="Meisterqualifikationen">
+						{qualifications.anton.map((title) => <span>{title}</span>)}
+					</p>
+				</header>
 				<div class="story__layout">
 					<div class="collage collage--double collage--left" aria-label="Visuelle Platzhalter für Anton Schrank">
 						<figure
@@ -285,6 +319,47 @@ const sectionNavigationItems = [
 
 
 <style>
+	.profile-heading {
+		margin-bottom: clamp(8rem, 10vw, 10.5rem);
+		text-align: center;
+	}
+
+	:global(.editorial-page .story .profile-heading h2) {
+		margin-bottom: clamp(1rem, 1.6vw, 1.5rem);
+	}
+
+	.profile-credentials {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.45rem clamp(1rem, 2vw, 2.2rem);
+		max-width: 68rem;
+		margin: 0 auto;
+		font-size: clamp(0.88rem, 1.05vw, 1.08rem);
+		font-weight: 470;
+		line-height: 1.5;
+		letter-spacing: 0.105em;
+		text-transform: uppercase;
+	}
+
+
+	@media (max-width: 840px) {
+		.profile-heading {
+			margin-bottom: clamp(7.5rem, 31vw, 9rem);
+		}
+
+		:global(.editorial-page .story .profile-heading h2) {
+			margin-bottom: 1.15rem;
+		}
+
+		.profile-credentials {
+			flex-direction: column;
+			gap: 0.3rem;
+			font-size: clamp(0.82rem, 3.6vw, 0.94rem);
+			letter-spacing: 0.085em;
+		}
+	}
+
 	.story--contact {
 		padding-bottom: clamp(11rem, 16vw, 17rem);
 	}

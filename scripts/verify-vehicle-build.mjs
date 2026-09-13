@@ -138,6 +138,7 @@ const expectedRoutes = [
 		`/projekte/vergangene-projekte/seite/${index + 2}/`),
 	...vehicles.map(({ route }) => route),
 ];
+expectedRoutes.push(...expectedRoutes.map((route) => `/en${route}`));
 const sitemap = await readFile(join(distRoot, 'sitemap.xml'), 'utf8');
 const sitemapLocations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 assert.deepEqual(

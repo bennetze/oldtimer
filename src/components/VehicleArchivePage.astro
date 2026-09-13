@@ -174,6 +174,7 @@ const itemList = {
 </Layout>
 
 <script>
+	import { restoreArchiveQuery, saveArchiveQuery } from '../scripts/archiveHistory.js';
 	const archive = document.querySelector('.vehicle-archive');
 	const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 	const searchForm = archive?.querySelector('[data-vehicle-search]');
@@ -257,24 +258,29 @@ const itemList = {
 		if (searchStatus instanceof HTMLElement) {
 			searchStatus.textContent = isSearching
 				? matchCount === 1
-					? 'Ein Fahrzeug gefunden.'
-					: `${matchCount} Fahrzeuge gefunden.`
+					? (document.documentElement.lang === 'en' ? 'One vehicle found.' : 'Ein Fahrzeug gefunden.')
+					: (document.documentElement.lang === 'en' ? `${matchCount} vehicles found.` : `${matchCount} Fahrzeuge gefunden.`)
 				: '';
 		}
 	};
 
 	const restoreArchive = () => {
 		archive?.classList.remove('archive-is-leaving');
+		if (searchInput instanceof HTMLInputElement) searchInput.value = restoreArchiveQuery(window.history, window.location.pathname, searchInput.value);
 		updateVehicleSearch();
 	};
 	window.addEventListener('pageshow', restoreArchive);
 	restoreArchive();
 
 	searchForm?.addEventListener('submit', (event) => event.preventDefault());
-	searchInput?.addEventListener('input', updateVehicleSearch);
+	searchInput?.addEventListener('input', () => {
+		if (searchInput instanceof HTMLInputElement) saveArchiveQuery(window.history, window.location.pathname, searchInput.value);
+		updateVehicleSearch();
+	});
 	clearSearch?.addEventListener('click', () => {
 		if (!(searchInput instanceof HTMLInputElement)) return;
 		searchInput.value = '';
+		saveArchiveQuery(window.history, window.location.pathname, '');
 		updateVehicleSearch();
 		searchInput.focus();
 	});

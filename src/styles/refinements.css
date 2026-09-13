@@ -1,0 +1,17 @@
+/* Shared readability and interaction refinements; preserve page palettes. */
+:where(h1, h2, h3) { overflow-wrap: anywhere; }
+:where(main p, main li, figcaption) { overflow-wrap: break-word; }
+:where(button, input, select, textarea) { font: inherit; }
+:where(button, summary, input, select) { min-height: 2.75rem; }
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 4px;
+}
+:where(.story-copy, .legal-copy) a { text-underline-offset: 0.2em; }
+:where(dialog) { max-width: calc(100vw - 1rem); max-height: calc(100svh - 1rem); }
+@media (max-width: 680px) {
+	:where(input, select, textarea) { font-size: max(1rem, 16px); }
+}
+@media (prefers-reduced-motion: reduce) {
+	:where(html) { scroll-behavior: auto; }
+}

@@ -1,4 +1,4 @@
-# Geprüft am 2026-09-05: bestehende Crawler-Berechtigungen bleiben erhalten.
+# Geprüft am 2026-09-11: bestehende Crawler-Berechtigungen bleiben erhalten.
 # Rechtevorbehalt für Text und Data Mining nach § 44b Abs. 3 UrhG und
 # Art. 4 Abs. 3 Richtlinie (EU) 2019/790: Eine Nutzung der Inhalte für
 # Modelltraining, Modellverbesserung oder Trainingsdatensätze ist nicht gestattet.
@@ -58,7 +58,8 @@ Allow: /
 
 # Normale und bislang unbekannte Crawler dürfen die öffentlichen Seiten lesen.
 # Dies schließt die kanonischen Seiten unter /handwerk/, /ueber-uns/ sowie die
-# Projektarchive und Fahrzeugdetailseiten unter /projekte/ ein.
+# Projektarchive und Fahrzeugdetailseiten unter /projekte/ sowie deren englische
+# Fassungen unter /en/ ein.
 # Der oben erklärte Rechtevorbehalt bleibt davon unberührt.
 User-agent: *
 Allow: /

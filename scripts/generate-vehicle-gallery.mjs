@@ -117,7 +117,7 @@ async function processImage(task) {
 		if (error?.code !== 'ENOENT') throw error;
 	}
 
-	if (!outputStat || outputStat.dev !== cacheStat.dev || outputStat.ino !== cacheStat.ino) {
+	if (!outputStat || outputStat.size !== cacheStat.size || outputStat.mtimeMs < cacheStat.mtimeMs) {
 		await copyFile(task.cache, task.output);
 	}
 	bytes += cacheStat.size;

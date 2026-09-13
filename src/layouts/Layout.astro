@@ -1,5 +1,7 @@
 ---
+import '../styles/refinements.css';
 import { createHash } from 'node:crypto';
+import languageScript from '../scripts/language.js?raw';
 import safariScript from '../scripts/safari.js?raw';
 import { pageModified } from '../config/modificationDates.js';
 import type { ImageMetadata } from 'astro';
@@ -106,7 +108,7 @@ const jsonLdGraph: Record<string, unknown>[] = [
 		'@id': websiteId,
 		url: siteRootUrl.href,
 		name: 'Die Oldtimermanufaktur',
-		inLanguage: 'de-DE',
+		inLanguage: ['de-DE', 'en-GB'],
 		publisher: { '@id': organizationId },
 	},
 	{
@@ -154,13 +156,13 @@ const jsonLd = JSON.stringify({
 	'@context': 'https://schema.org',
 	'@graph': jsonLdGraph,
 }).replace(/</g, '\\u003c');
-for (const script of [safariScript, ...(!effectiveNoindex ? [jsonLd] : [])]) {
+for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jsonLd] : [])]) {
 	Astro.csp?.insertScriptHash(`sha256-${createHash('sha256').update(script).digest('base64')}`);
 }
 ---
 
 <!doctype html>
-<html lang="de" prefix="og: https://ogp.me/ns#">
+<html lang="de" data-site-base={basePath} prefix="og: https://ogp.me/ns#">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -189,6 +191,7 @@ for (const script of [safariScript, ...(!effectiveNoindex ? [jsonLd] : [])]) {
 		{!effectiveNoindex && <script type="application/ld+json" set:html={jsonLd} />}
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<script is:inline set:html={languageScript} />
 		<script is:inline set:html={safariScript} />
 	</head>
 	<body>

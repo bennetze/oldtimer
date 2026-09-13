@@ -290,7 +290,9 @@ audio, data/timecode, HEVC, 10-bit pixel format, or multiple streams.
 
 When wiring a background video into Astro, follow the homepage pattern: MP4 source
 first, WebM second if present, `muted`, `loop`, `playsinline`,
-`webkit-playsinline`, and `preload="auto"` on the `<video>`. Keep decorative
+`webkit-playsinline`, and `preload="auto"` only for the first visible hero. Use
+`preload="none"` for below-the-fold videos; visibility and the motion controller
+start playback when needed. Keep decorative
 background video `aria-hidden="true"`. Autoplaying, looping hero motion is a core
 site requirement for visitors who have not requested reduced motion. Enable
 `autoplay` through the motion controller after checking preferences and visibility;
@@ -392,3 +394,39 @@ formal legal assessments.
 Do not copy code, imagery, logos, or protected trade dress from reference sites. It is fine
 to use reference sites for structure, interaction notes, and factual content when requested,
 but final visuals and assets should be original and project-local.
+
+## Checked offline vehicle editing
+
+The single-file offline editor lives in `../oldtimer-fahrzeuge/index.html`. Its
+inline contract must stay compatible with `src/config/vehicleRecord.js` and the
+independent website HTML validator. Keep folder round-trip and malicious-input
+fixtures in `tests/vehicle-contract.test.mjs`, `tests/vehicle-import.test.mjs` and
+`tests/vehicle-browser-cases.js`. Run the browser harness with
+`node scripts/test-vehicle-browser.mjs`; also test the unmodified file through
+`file://` when the browser environment permits it. Record unavailable checks honestly.
+
+Extract exports outside this repository, then run `npm run vehicles:review -- check
+/absolute/extracted/category`. Existing vehicles require the exact `--from
+category/slug`; never infer replacement from a title. Review the file hashes and
+before/after text, then apply only with the matching `--approve` token and explicit
+replacement authorization. A new check is required after source or destination
+changes. Do not run concurrent repository edits while applying an import.
+
+The importer validates all records/images, regenerates the trusted Astro wrapper,
+stages changes, retains `.cache/vehicle-import-backup-*`, and rolls back caught
+failures. An abrupt process termination retains `.cache/vehicle-import.lock` for
+manual recovery; follow VEHICLE-CONTENT-GUIDE.md before removing that lock. Category
+moves preserve slugs and update `src/config/vehicle-redirects.json`; the build emits
+Apache redirects and noindex HTML redirects for both deployment bases. Redirects
+must never enter vehicle discovery or the sitemap. Never deploy implicitly.
+
+A publicly accessible preview needs its own provider-information and privacy
+assessment now; preview labels and noindex do not establish a legal exemption.
+Keep the release safeguards and audit-only legal scope until approved texts and
+business/hosting facts are supplied. Follow the user's current approval scope;
+this implementation does not authorize replacing any real vehicle.
+
+Archive search uses `src/scripts/archiveHistory.js` to retain the filter in its
+browser history entry. Preserve unrelated history state during fragment cleanup.
+Do not put the local query into request URLs or tracking storage. Test a detail-page
+visit followed by Back with browser form restoration unavailable.

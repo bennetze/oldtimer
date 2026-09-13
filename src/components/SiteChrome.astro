@@ -1,6 +1,5 @@
 ---
-import { siteStatus } from '../config/site';
-
+import { languagePath } from '../i18n/language.js';
 interface Props {
 	theme?: 'dark' | 'light';
 }
@@ -26,7 +25,7 @@ const currentPath = (
 	deploymentBase && Astro.url.pathname.startsWith(deploymentBase)
 		? Astro.url.pathname.slice(deploymentBase.length)
 		: Astro.url.pathname
-).replace(/\/+$/, '') || '/';
+).replace(/^\/en(?=\/|$)/, '').replace(/\/+$/, '') || '/';
 const activeNavigationPath = currentPath.startsWith('/projekte/fahrzeugangebote')
 	? '/projekte/fahrzeugangebote'
 	: currentPath.startsWith('/projekte')
@@ -51,17 +50,6 @@ const sitePath = (path) => {
 
 <div class:list={['site-shell', { 'site-shell--light': theme === 'light' }]}>
 	<div class="cursor" aria-hidden="true"></div>
-	{
-		siteStatus.developmentPreview && siteStatus.aiPlaceholderImagesPresent && (
-			<aside class="development-notice" role="note">
-				<strong>Entwicklungsvorschau</strong>
-				<span>
-					Ein Teil der Bildmotive sind KI-generierte Platzhalter. Sie zeigen nicht die
-					tatsächlichen Personen, Fahrzeuge oder Betriebsräume.
-				</span>
-			</aside>
-		)
-	}
 
 	<header class="site-header" data-floating-header>
 		<button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false">
@@ -71,7 +59,10 @@ const sitePath = (path) => {
 		<a class="brand" href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
 			DIE OLDTIMERMANUFAKTUR
 		</a>
-		<span class="header-spacer" aria-hidden="true"></span>
+		<nav class="language-switch" aria-label="Sprache wählen">
+			<a href={`${languagePath(Astro.url.pathname, 'de', basePath)}?lang=de`} data-language="de" lang="de" hreflang="de" aria-label="Deutsch">DE</a>
+			<a href={`${languagePath(Astro.url.pathname, 'en', basePath)}?lang=en`} data-language="en" lang="en" hreflang="en" aria-label="English">EN</a>
+		</nav>
 	</header>
 
 	<div class="menu-overlay" id="site-menu" aria-hidden="true" inert>
@@ -264,7 +255,7 @@ const sitePath = (path) => {
 
 	const clearHash = () => {
 		if (window.location.hash) {
-			window.history.replaceState(null, '', window.location.pathname + window.location.search);
+			window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
 		}
 	};
 
@@ -509,6 +500,33 @@ const sitePath = (path) => {
 </script>
 
 <style>
+	.language-switch {
+		display: flex;
+		justify-content: flex-end;
+		gap: 0.6rem;
+		font-size: 0.72rem;
+		letter-spacing: 0.06em;
+	}
+
+	.language-switch a {
+		color: inherit;
+		padding: 0.65rem 0.15rem;
+		text-decoration: none;
+		opacity: 0.6;
+	}
+
+	.language-switch a[aria-current="true"],
+	.language-switch a:hover {
+		opacity: 1;
+		text-decoration: underline;
+		text-underline-offset: 0.3rem;
+	}
+
+	.language-switch a:focus-visible {
+		outline: 1px solid currentColor;
+		outline-offset: 0.2rem;
+	}
+
 	:global(html),
 	:global(body),
 	.site-shell {
@@ -524,41 +542,6 @@ const sitePath = (path) => {
 		background: #eeeeee;
 		background-color: #eeeeee;
 		color: #111111;
-	}
-
-	.development-notice {
-		position: fixed;
-		top: 76px;
-		left: 0;
-		right: 0;
-		z-index: 48;
-		display: flex;
-		align-items: baseline;
-		justify-content: center;
-		gap: 0.85rem;
-		padding: 0.52rem clamp(1rem, 3vw, 3rem);
-		color: rgba(238, 238, 238, 0.82);
-		background: rgba(16, 16, 16, 0.88);
-		border-top: 1px solid rgba(238, 238, 238, 0.1);
-		border-bottom: 1px solid rgba(238, 238, 238, 0.16);
-		-webkit-backdrop-filter: blur(24px) saturate(106%);
-		backdrop-filter: blur(24px) saturate(106%);
-		font-size: 0.68rem;
-		font-style: normal;
-		font-weight: 350;
-		letter-spacing: 0.035em;
-		line-height: 1.45;
-		text-align: center;
-		pointer-events: none;
-	}
-
-	.development-notice strong {
-		color: #eeeeee;
-		font-size: 0.62rem;
-		font-weight: 520;
-		letter-spacing: 0.18em;
-		text-transform: uppercase;
-		white-space: nowrap;
 	}
 
 	:global(.has-custom-cursor),
@@ -911,20 +894,6 @@ const sitePath = (path) => {
 	}
 
 	@media (max-width: 760px) {
-		.development-notice {
-			top: 64px;
-			display: block;
-			padding: 0.55rem 1rem 0.6rem;
-			font-size: 0.62rem;
-			text-align: left;
-		}
-
-		.development-notice strong {
-			display: block;
-			margin-bottom: 0.15rem;
-			font-size: 0.56rem;
-		}
-
 		.cursor {
 			display: none;
 		}

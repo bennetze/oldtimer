@@ -25,6 +25,7 @@ export function validateVehicleHtml(html, context = 'Vehicle HTML') {
 			}
 		}
 	});
+	if (!$.root().text().trim()) fail('empty editorial content');
 	// Render the validated serialization, never the unchecked original string.
 	return $.html();
 }

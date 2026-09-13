@@ -2,18 +2,22 @@
 
 > Die Oldtimermanufaktur GmbH in Kaltennordheim-Fischbach restauriert und bewahrt historische Automobile mit handwerklicher Sorgfalt und Respekt vor ihrer Geschichte.
 
-Die Website ist deutschsprachig. Der aktuelle Stand ist eine Entwicklungsvorschau für die vollständig neu entwickelte Website. Ein Teil der Bildmotive sind ausdrücklich gekennzeichnete KI-generierte Platzhalter. Diese zeigen nicht die tatsächlichen Personen, Fahrzeuge oder Betriebsräume und werden vor der Produktionsfreigabe durch freigegebene echte Aufnahmen ersetzt.
+Die Website ist auf Deutsch und Englisch verfügbar. Die englischen Seiten liegen unter `/en/`; beim ersten Aufruf ohne Sprachauswahl wird anhand der bevorzugten Browsersprache Deutsch oder Englisch angezeigt. Die manuelle Sprachauswahl erfolgt über die URL, ohne Cookies oder lokalen Browserspeicher. Der aktuelle Stand ist eine Entwicklungsvorschau für die vollständig neu entwickelte Website. Ein Teil der Bildmotive sind KI-generierte Platzhalter. Diese zeigen nicht die tatsächlichen Personen, Fahrzeuge oder Betriebsräume und werden vor der Produktionsfreigabe durch freigegebene echte Aufnahmen ersetzt.
 Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam mit Anton Schrank in die nächste Generation geführt.
 
 ## Hauptseiten
 
-- [Startseite](https://www.oldtimermanufaktur.de/): „Wir bewahren Geschichte“ / „Wir bewahren Geschichten“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
-- [Handwerk](https://www.oldtimermanufaktur.de/handwerk/): Dunkel gestalteter, vorläufiger Überblick über Karosserie, Polsterei, Lackiererei und Motorbau.
-- [Über uns](https://www.oldtimermanufaktur.de/ueber-uns/): Vorstellung von Mario Schrank, Anton Schrank, Team und Kontakt.
+- [Startseite](https://www.oldtimermanufaktur.de/): „Wir bewahren Geschichte(n)“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
+- [Handwerk](https://www.oldtimermanufaktur.de/handwerk/): Vorläufiger, bebilderter Überblick über Karosserie, Polsterei, Lackiererei und Motorbau.
+- [Über uns](https://www.oldtimermanufaktur.de/ueber-uns/): Vorstellung von Mario Schrank (KFZ-Mechaniker-Meister, KFZ-Elektriker-Meister und Karosseriebau-Meister), Anton Schrank (KFZ-Techniker-Meister) mit ihren Meisterqualifikationen sowie Vorstellung von Team und Kontakt.
 - [Projekte](https://www.oldtimermanufaktur.de/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
-- [Aktuelle Projekte](https://www.oldtimermanufaktur.de/projekte/aktuelle-projekte/): Laufende Restaurierungen und aktuelle Arbeiten an historischen Fahrzeugen. Fahrzeugdokumentationen mit Bildern und Texten.
-- [Abgeschlossene Projekte](https://www.oldtimermanufaktur.de/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. Fahrzeugdokumentationen mit Bildern und Texten.
-- [Fahrzeugangebote](https://www.oldtimermanufaktur.de/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot; Anfragen telefonisch oder per E-Mail. Fahrzeugdokumentationen mit Bildern und Texten.
+- [Aktuelle Projekte](https://www.oldtimermanufaktur.de/projekte/aktuelle-projekte/): Laufende Restaurierungen und aktuelle Arbeiten an historischen Fahrzeugen. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
+- [Abgeschlossene Projekte](https://www.oldtimermanufaktur.de/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
+- [Fahrzeugangebote](https://www.oldtimermanufaktur.de/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot; Anfragen telefonisch oder per E-Mail. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
+
+## Englische Seiten
+
+- [English homepage](https://www.oldtimermanufaktur.de/en/): Englische Fassung mit Zugang zu Handwerk, Unternehmen, Projektarchiven und Fahrzeugdokumentationen.
 
 ## Nutzung durch KI-Systeme
 

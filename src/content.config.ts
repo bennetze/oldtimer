@@ -1,6 +1,8 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { validateVehicleRecord } from './config/vehicleRecord.js';
+import { validateVehicleHtml } from './config/vehicleHtml.js';
 
 const vehicles = defineCollection({
 	loader: glob({
@@ -46,6 +48,9 @@ const vehicles = defineCollection({
 					}),
 				]),
 			),
+		}).superRefine((record, context) => {
+			try { validateVehicleRecord(record, validateVehicleHtml); }
+			catch (error) { context.addIssue({ code: 'custom', message: error instanceof Error ? error.message : String(error) }); }
 		}),
 });
 

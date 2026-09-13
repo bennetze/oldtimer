@@ -1,10 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import englishRoutes from './src/i18n/routes.mjs';
 
 const isGitHubPages = process.env.DEPLOY_TARGET === 'github-pages';
 
 // https://astro.build/config
 export default defineConfig({
+	integrations: [englishRoutes()],
 	site: isGitHubPages
 		? 'https://bennetze.github.io'
 		: 'https://www.oldtimermanufaktur.de',

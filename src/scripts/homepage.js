@@ -1,154 +1,4 @@
-const heroTitleLetter = document.querySelector(
-  "[data-hero-title-letter]",
-);
-const heroTitleLetterGlyph = document.querySelector(
-  "[data-hero-title-letter-glyph]",
-);
-let heroTitleCycleAnimation;
-let heroTitleCycleStarted = false;
-let heroTitleResizeFrame;
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
-let heroShouldAnimate = false;
-
-const measureHeroTitleLetter = () => {
-  if (
-    !(heroTitleLetter instanceof HTMLElement) ||
-    !(heroTitleLetterGlyph instanceof HTMLElement)
-  ) {
-    return;
-  }
-
-  const letterWidth = heroTitleLetterGlyph.getBoundingClientRect().width;
-  if (letterWidth > 0) {
-    heroTitleLetter.style.setProperty(
-      "--hero-title-letter-width",
-      `${letterWidth}px`,
-    );
-  }
-
-  return letterWidth;
-};
-
-const startHeroTitleCycle = () => {
-  if (!(heroTitleLetter instanceof HTMLElement)) {
-    return;
-  }
-
-  Promise.resolve(document.fonts?.ready).then(() => {
-    const letterWidth = measureHeroTitleLetter();
-    if (!letterWidth) {
-      return;
-    }
-
-    heroTitleCycleAnimation?.cancel();
-    heroTitleLetter.classList.remove("is-cycling", "is-revealing");
-    Object.assign(heroTitleLetter.style, {
-      clipPath: "none",
-      display: "inline-block",
-      overflow: "visible",
-      verticalAlign: "baseline",
-    });
-
-    if (
-      motionPreference.matches ||
-      typeof heroTitleLetter.animate !== "function"
-    ) {
-      Object.assign(heroTitleLetter.style, {
-        filter: "blur(0)",
-        opacity: "1",
-        transform: "none",
-        width: `${letterWidth}px`,
-      });
-      return;
-    }
-
-    const hiddenLetter = {
-      filter: "blur(0.1em)",
-      opacity: 0,
-      transform: "translateX(-0.14em)",
-      width: "0px",
-    };
-    const visibleLetter = {
-      filter: "blur(0)",
-      opacity: 1,
-      transform: "translateX(0)",
-      width: `${letterWidth}px`,
-    };
-
-    window.requestAnimationFrame(() => {
-      window.requestAnimationFrame(() => {
-        heroTitleCycleAnimation = heroTitleLetter.animate(
-          [
-            { ...hiddenLetter, offset: 0 },
-            {
-              ...hiddenLetter,
-              easing: "cubic-bezier(0.65, 0, 0.35, 1)",
-              offset: 1 / 10,
-            },
-            { ...visibleLetter, offset: 2 / 10 },
-            {
-              ...visibleLetter,
-              easing: "cubic-bezier(0.65, 0, 0.35, 1)",
-              offset: 8 / 10,
-            },
-            { ...hiddenLetter, offset: 9 / 10 },
-            { ...hiddenLetter, offset: 1 },
-          ],
-          {
-            duration: 7500,
-            fill: "both",
-            iterations: Infinity,
-          },
-        );
-        if (!heroShouldAnimate) heroTitleCycleAnimation.pause();
-      });
-    });
-
-    heroTitleCycleStarted = true;
-  });
-};
-
-if (heroTitleLetter instanceof HTMLElement && !motionPreference.matches) {
-  heroTitleLetter.classList.remove("is-cycling", "is-revealing");
-  Object.assign(heroTitleLetter.style, {
-    clipPath: "none",
-    display: "inline-block",
-    filter: "blur(0.1em)",
-    opacity: "0",
-    overflow: "visible",
-    transform: "translateX(-0.14em)",
-    verticalAlign: "baseline",
-    width: "0px",
-  });
-}
-
-if (document.readyState === "complete") {
-  startHeroTitleCycle();
-} else {
-  window.addEventListener("load", startHeroTitleCycle, { once: true });
-}
-
-window.addEventListener(
-  "resize",
-  () => {
-    window.cancelAnimationFrame(heroTitleResizeFrame);
-    heroTitleResizeFrame = window.requestAnimationFrame(() => {
-      if (heroTitleCycleStarted) {
-        startHeroTitleCycle();
-      } else {
-        measureHeroTitleLetter();
-      }
-    });
-  },
-  { passive: true },
-);
-
-const setHeroAnimationRunning = (running) => {
-	heroShouldAnimate = running;
-	if (running) heroTitleCycleAnimation?.play();
-	else heroTitleCycleAnimation?.pause();
-};
-motionPreference.addEventListener('change', startHeroTitleCycle);
 
 function initMotionPanel(panel) {
 	const video = panel.querySelector('[data-motion-video]');
@@ -165,12 +15,12 @@ function initMotionPanel(panel) {
 	let timer;
 	let attempt = 0;
 	let playPending = false;
-	const isHero = panel.hasAttribute('data-hero');
 	const canAnimate = () => !userPaused && inViewport && !document.hidden;
 	const updateToggle = () => {
 		toggle?.classList.toggle('is-paused', userPaused);
-		toggle?.setAttribute('aria-label', userPaused ? 'Animation abspielen' : 'Animation pausieren');
-		if (isHero) setHeroAnimationRunning(canAnimate());
+		toggle?.setAttribute('aria-label', document.documentElement.lang === 'en'
+			? (userPaused ? 'Play animation' : 'Pause animation')
+			: (userPaused ? 'Animation abspielen' : 'Animation pausieren'));
 	};
 	const showPoster = () => {
 		picture.querySelectorAll('[data-motion-generated-source]').forEach((source) => source.remove());

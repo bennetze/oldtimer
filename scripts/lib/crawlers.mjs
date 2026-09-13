@@ -19,7 +19,7 @@ export function sitemapEntries(groups) {
 	});
 	for (const vehicle of groups.flat()) entries.push([vehicle.route, pageModified(vehicle.route, [vehicle.dateModified])]);
 	if (new Set(entries.map(([path]) => path)).size !== entries.length) throw new Error('Duplicate sitemap route.');
-	return entries;
+	return [...entries, ...entries.map(([path, date]) => [`/en${path}`, date])];
 }
 
 export function renderSitemap(entries) {

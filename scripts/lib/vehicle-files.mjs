@@ -1,5 +1,6 @@
 import { validateVehicleBlocks } from '../../src/config/vehicleHtml.js';
-import { access, readdir, readFile } from 'node:fs/promises';
+import { validateVehicleRecord } from '../../src/config/vehicleRecord.js';
+import { access, lstat, readdir, readFile } from 'node:fs/promises';
 import { basename, extname, join } from 'node:path';
 
 const exists = async (path) => {
@@ -23,7 +24,9 @@ function getReferencedImages(record) {
 
 export async function discoverVehicleCategory(pagesRoot, category) {
 	const directory = join(pagesRoot, category.key);
+	if ((await lstat(directory)).isSymbolicLink()) throw new Error(`${category.key}: symlink directory refused.`);
 	const entries = await readdir(directory, { withFileTypes: true });
+	if (entries.some((entry) => entry.isSymbolicLink())) throw new Error(`${category.key}: symlink entry refused.`);
 	const pageSlugs = entries
 		.filter((entry) => entry.isFile() && extname(entry.name) === '.astro' && entry.name !== 'index.astro')
 		.map((entry) => basename(entry.name, '.astro'))
@@ -49,7 +52,8 @@ export async function discoverVehicleCategory(pagesRoot, category) {
 			throw new Error(`${category.key}/${slug}: missing vehicle.json.`);
 		}
 
-		const record = JSON.parse(await readFile(dataPath, 'utf8'));
+		if (!(await lstat(dataPath)).isFile() || (await lstat(dataPath)).isSymbolicLink()) throw new Error(`${slug}: unsafe vehicle.json.`);
+		const record = validateVehicleRecord(JSON.parse(await readFile(dataPath, 'utf8')));
 		if (record.slug !== slug || record.category !== category.key) {
 			throw new Error(`${category.key}/${slug}: slug or category does not match its filesystem location.`);
 		}
@@ -61,7 +65,7 @@ export async function discoverVehicleCategory(pagesRoot, category) {
 			if (!image.startsWith('./') || image.includes('..')) {
 				throw new Error(`${category.key}/${slug}: image path must remain inside its vehicle folder: ${image}`);
 			}
-			if (!(await exists(join(vehicleDirectory, image)))) {
+			if (!(await exists(join(vehicleDirectory, image))) || !(await lstat(join(vehicleDirectory, image))).isFile() || (await lstat(join(vehicleDirectory, image))).isSymbolicLink()) {
 				throw new Error(`${category.key}/${slug}: missing referenced image ${image}.`);
 			}
 		}
