@@ -47,7 +47,9 @@
   "Bei der Arbeit an historischen Fahrzeugen greifen unterschiedliche handwerkliche Aufgaben ineinander. Maßstab sind ein sorgfältiger Umgang mit der vorhandenen Substanz, nachvollziehbare Entscheidungen und die Abstimmung der einzelnen Arbeitsschritte.": "Restoring historic vehicles brings different crafts together. Care for the surviving original material, well-founded decisions and carefully coordinated work guide every stage.",
   "Telefon": "Telephone",
   "E-Mail": "Email",
-  "Adresse · Google Maps ↗": "Address · Google Maps ↗",
+  "Adresse": "Address",
+  "In Google Maps öffnen ↗": "Open in Google Maps ↗",
+  "Adresse in Google Maps öffnen: i.d. Rhön DE, Kreuzweg 11a, 36452 Kaltennordheim-Fischbach/Rhön": "Open address in Google Maps: Kreuzweg 11a, 36452 Kaltennordheim-Fischbach, Rhön, Germany",
   "i.d. Rhön DE, Kreuzweg 11a,": "Kreuzweg 11a, Rhön, Germany,",
   "Visuelle Platzhalter für Mario Schrank": "Placeholder images for Mario Schrank",
   "KI-generierter Platzhalter für ein geplantes Porträt von Mario Schrank": "AI-generated placeholder for a planned portrait of Mario Schrank",
@@ -1441,8 +1443,8 @@
   "Hier eines der kult- und kunstvollen \"Leckerbissen\" der Automobilgeschichte überhaupt. Ein BMW 507 Roadster, der bei uns eine umfangreiche Vollrestaurat…": "One of automotive history’s most iconic creations: a BMW 507 Roadster that received a comprehensive restoration in every detail at our workshop.",
   "E-Mail schreiben": "Write an email",
   "Die angeforderte Seite konnte nicht gefunden werden.": "The requested page could not be found.",
-  "Wir bewahren": "We preserve",
-  "Geschichte": "History",
+  "Wir bewahren": "WE PRESERVE",
+  "Geschichte": "HISTORY AND STORIES.",
   "Ein Karosseriebauer arbeitet konzentriert an der Form eines historischen Fahrzeugs": "A craftsman carefully shapes the body of a historic vehicle",
   "Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte.": "Die Oldtimermanufaktur preserves the history of classic cars with skilled craftsmanship, technical care and respect for their heritage.",
   "DODGE Charger V8 R/T 7,2l Baujahr 1968": "DODGE Charger V8 R/T 7,2l year 1968",
@@ -1569,5 +1571,8 @@
   "Wartburg 313 Sport, Baujahr 1960": "Wartburg 313 Sport, year 1960",
   "Mercedes 280 SL \"Pagode\" Baujahr 1970": "Mercedes 280 SL \"Pagoda\" year 1970",
   "Mercedes-Benz 300 \"ADENAUER\", Baujahr 1953": "Mercedes-Benz 300 \"ADENAUER\", year 1953",
-  "BMW 507 Roadster, Baujahr 1957": "BMW 507 Roadster, year 1957"
+  "BMW 507 Roadster, Baujahr 1957": "BMW 507 Roadster, year 1957",
+  "Fischbach": "Fischbach",
+  "Deutschlandkarte mit Standortmarkierung bei Fischbach in der Rhön": "Map of Germany marking Fischbach in the Rhön region",
+  "Mario Schrank, dreifacher Meister, und Anton Schrank, KFZ-Techniker-Meister: Lernen Sie die Menschen, das Handwerk und unseren Standort in Fischbach/Rhön kennen.": "Mario Schrank, a master craftsman in three trades, and Anton Schrank, a master automotive technician: discover our people, craftsmanship and location in Fischbach/Rhön."
 }

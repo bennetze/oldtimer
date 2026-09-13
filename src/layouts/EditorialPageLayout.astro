@@ -164,7 +164,7 @@ const openingId = sections[0]?.id;
 				let minimumOffset = -range;
 				let maximumOffset = range;
 
-				if (isMobileLayout) {
+				if (isMobileLayout && layer.classList.contains('image-layer')) {
 					const currentOffset = Number.parseFloat(
 						layer.style.getPropertyValue('--parallax-y'),
 					) || 0;
@@ -246,7 +246,7 @@ const openingId = sections[0]?.id;
 
 <style is:global>
 	.editorial-page {
-		--story-scroll-offset: calc(76px + clamp(1.5rem, 3vh, 2.5rem));
+		--story-scroll-offset: calc(var(--site-header-height, 132px) + clamp(1.5rem, 3vh, 2.5rem));
 		--editorial-color: #111111;
 		--editorial-line: rgba(17, 17, 17, 0.34);
 		--editorial-image-background: #d8dcdd;
@@ -478,7 +478,7 @@ const openingId = sections[0]?.id;
 
 	@media (max-width: 840px) {
 		.editorial-page {
-			--story-scroll-offset: calc(64px + 1.25rem);
+			--story-scroll-offset: calc(var(--site-header-height, 104px) + 1.25rem);
 		}
 
 		.editorial-intro {

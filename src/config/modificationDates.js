@@ -7,7 +7,7 @@ export const modificationDates = {
 	pages: {
 		'/': '2026-09-13',
 		'/handwerk/': '2026-09-12',
-		'/ueber-uns/': '2026-09-12',
+		'/ueber-uns/': '2026-09-13',
 		'/projekte/': '2026-08-06',
 	},
 };

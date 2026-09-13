@@ -12,6 +12,8 @@ import marioPortrait from '../assets/oldtimer/about-mario-portrait.png';
 import teamConversation from '../assets/oldtimer/about-team-conversation.png';
 import teamPortrait from '../assets/oldtimer/about-team-portrait.png';
 import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
+import germanyMap from '../assets/graphics/germany-silhouette.svg';
+import locationPin from '../assets/graphics/geo-alt-fill.svg';
 import heroSitePoster from '../assets/oldtimer/hero-site-poster.jpg';
 
 const qualifications = {
@@ -47,14 +49,14 @@ const sectionNavigationItems = [
 <EditorialPageLayout
 	title="Über uns"
 	heading="Wir über uns"
-	description="Mario Schrank, dreifacher Meister, und Anton Schrank, KFZ-Techniker-Meister: Lernen Sie die Menschen und das Handwerk der Oldtimermanufaktur kennen."
+	description="Mario Schrank, dreifacher Meister, und Anton Schrank, KFZ-Techniker-Meister: Lernen Sie die Menschen, das Handwerk und unseren Standort in Fischbach/Rhön kennen."
 	sections={sectionNavigationItems}
 	theme="light"
 	background="linear-gradient(180deg, #eeeeee 0%, #eeeeee 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #9299c4 47%, #688dca 54%, #557fb8 61%, #6695d3 70%, #82afe2 82%, #ffffff 100%)"
 	openGraphImage={heroSitePoster}
 	openGraphImageAlt="Ein historischer Roadster während einer Fahrt"
 	structuredDataType="AboutPage"
-	dateModified="2026-09-12"
+	dateModified="2026-09-13"
 	additionalJsonLd={people}
 	sectionNavigationVisible={false}
 >
@@ -64,7 +66,12 @@ const sectionNavigationItems = [
 					aria-labelledby="mario-title"
 					data-parallax-group
 				>
-					<header class="profile-heading">
+					<header
+						class="profile-heading"
+						data-parallax-layer
+						data-speed="0.045"
+						data-range="42"
+					>
 						<h2 id="mario-title">Mario Schrank</h2>
 						<p class="profile-credentials" aria-label="Meisterqualifikationen">
 							{qualifications.mario.map((title) => <span>{title}</span>)}
@@ -122,7 +129,12 @@ const sectionNavigationItems = [
 				aria-labelledby="anton-title"
 				data-parallax-group
 			>
-				<header class="profile-heading">
+				<header
+					class="profile-heading"
+					data-parallax-layer
+					data-speed="0.045"
+					data-range="42"
+				>
 					<h2 id="anton-title">Anton Schrank</h2>
 					<p class="profile-credentials" aria-label="Meisterqualifikationen">
 						{qualifications.anton.map((title) => <span>{title}</span>)}
@@ -289,29 +301,48 @@ const sectionNavigationItems = [
 					<div class="story__copy">
 						<address class="contact-list">
 							<a href="tel:+493696683783">
-								<span>Telefon</span>
+								<span class="contact-label">Telefon</span>
 								<strong>03 69 66 / 83 7 83</strong>
 							</a>
 							<a href="tel:+493696683635" aria-label="Faxnummer 03 69 66 / 83 6 35">
-								<span>Fax</span>
+								<span class="contact-label">Fax</span>
 								<strong>03 69 66 / 83 6 35</strong>
 							</a>
 							<a href="mailto:info@oldtimermanufaktur.de">
-								<span>E-Mail</span>
+								<span class="contact-label">E-Mail</span>
 								<strong>info@oldtimermanufaktur.de</strong>
 							</a>
 							<a
+								class="maps-link"
 								href="https://maps.app.goo.gl/jg4eC1XRAyLDoW1BA"
 								target="_blank"
 								rel="noreferrer"
+								aria-label="Adresse in Google Maps öffnen: i.d. Rhön DE, Kreuzweg 11a, 36452 Kaltennordheim-Fischbach/Rhön"
 							>
-								<span>Adresse · Google Maps ↗</span>
-								<strong>
-									i.d. Rhön DE, Kreuzweg 11a,<br />
-									36452 Kaltennordheim-Fischbach/Rhön
+								<span class="contact-label">Adresse</span>
+								<strong class="maps-link__value">
+									<span class="maps-link__address">
+										i.d. Rhön DE, Kreuzweg 11a,<br />
+										36452 Kaltennordheim-Fischbach/Rhön
+									</span>
+									<span class="maps-link__action" aria-hidden="true">In Google Maps öffnen ↗</span>
 								</strong>
 							</a>
 						</address>
+						<figure
+							class="location-map"
+							aria-label="Deutschlandkarte mit Standortmarkierung bei Fischbach in der Rhön"
+							data-parallax-layer
+							data-speed="0.055"
+							data-range="28"
+						>
+							<img class="location-map__silhouette" src={germanyMap.src} width="522" height="729" alt="" loading="lazy" />
+							<!-- Approximate Fischbach/Rhön position (50.65 N, 10.14 E); pin tip anchors to the map. -->
+							<div class="location-map__marker">
+								<img src={locationPin.src} width="24" height="24" alt="" loading="lazy" />
+								<span>Fischbach</span>
+							</div>
+						</figure>
 					</div>
 				</div>
 			</section>
@@ -322,10 +353,12 @@ const sectionNavigationItems = [
 	.profile-heading {
 		margin-bottom: clamp(8rem, 10vw, 10.5rem);
 		text-align: center;
+		transform: translate3d(0, var(--parallax-y, 0), 0);
+		will-change: transform;
 	}
 
 	:global(.editorial-page .story .profile-heading h2) {
-		margin-bottom: clamp(1rem, 1.6vw, 1.5rem);
+		margin-bottom: clamp(2.25rem, 3vw, 3.5rem);
 	}
 
 	.profile-credentials {
@@ -349,7 +382,7 @@ const sectionNavigationItems = [
 		}
 
 		:global(.editorial-page .story .profile-heading h2) {
-			margin-bottom: 1.15rem;
+			margin-bottom: 1.75rem;
 		}
 
 		.profile-credentials {
@@ -360,8 +393,61 @@ const sectionNavigationItems = [
 		}
 	}
 
+	@media (prefers-reduced-motion: reduce) {
+		.profile-heading {
+			transform: none;
+			will-change: auto;
+		}
+	}
+
 	.story--contact {
 		padding-bottom: clamp(11rem, 16vw, 17rem);
+	}
+
+	.location-map {
+		position: relative;
+		width: min(82%, 18rem);
+		margin: 4.5rem auto 1.75rem;
+		transform: translate3d(0, var(--parallax-y, 0), 0);
+		will-change: transform;
+	}
+
+	.location-map__silhouette {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.location-map__marker {
+		position: absolute;
+		left: 46%;
+		top: 57%;
+		color: #111111;
+	}
+
+	.location-map__marker img {
+		position: absolute;
+		left: -12px;
+		bottom: 0;
+		width: 24px;
+		height: 24px;
+	}
+
+	.location-map__marker span {
+		position: absolute;
+		left: 1rem;
+		bottom: 0.2rem;
+		font-size: clamp(0.8rem, 0.95vw, 0.95rem);
+		font-weight: 500;
+		letter-spacing: 0.06em;
+		white-space: nowrap;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.location-map {
+			transform: none;
+			will-change: auto;
+		}
 	}
 
 	.contact-list {
@@ -380,8 +466,13 @@ const sectionNavigationItems = [
 		text-decoration: none;
 	}
 
-	.contact-list a:hover span,
+	.contact-list a:hover > .contact-label,
 	.contact-list a:hover strong {
+		transform: translateX(0.55rem);
+	}
+
+	.contact-list a:focus-visible > .contact-label,
+	.contact-list a:focus-visible strong {
 		transform: translateX(0.55rem);
 	}
 
@@ -390,14 +481,14 @@ const sectionNavigationItems = [
 		outline-offset: 0.35rem;
 	}
 
-	.contact-list span,
+	.contact-label,
 	.contact-list strong {
 		font-size: clamp(0.88rem, 0.96vw, 1.04rem);
 		line-height: 1.55;
 		transition: transform 180ms ease;
 	}
 
-	.contact-list span {
+	.contact-label {
 		font-weight: 430;
 		letter-spacing: 0.09em;
 		text-transform: uppercase;
@@ -407,6 +498,34 @@ const sectionNavigationItems = [
 		min-width: 0;
 		font-weight: 330;
 		overflow-wrap: anywhere;
+	}
+
+	.maps-link__value {
+		display: grid;
+		align-items: center;
+	}
+
+	.maps-link__address,
+	.maps-link__action {
+		grid-area: 1 / 1;
+		transition:
+			opacity 180ms ease,
+			transform 180ms ease;
+	}
+
+	.maps-link__action {
+		opacity: 0;
+		transform: translateY(0.45rem);
+	}
+
+	.maps-link:is(:hover, :focus-visible) .maps-link__address {
+		opacity: 0;
+		transform: translateY(-0.45rem);
+	}
+
+	.maps-link:is(:hover, :focus-visible) .maps-link__action {
+		opacity: 1;
+		transform: translateY(0);
 	}
 
 	@media (max-width: 840px) {
@@ -419,16 +538,22 @@ const sectionNavigationItems = [
 			gap: 1rem;
 		}
 
-		.contact-list span,
+		.contact-label,
 		.contact-list strong {
 			font-size: clamp(0.87rem, 3.8vw, 1rem);
 		}
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		.contact-list span,
-		.contact-list strong {
+		.contact-label,
+		.contact-list strong,
+		.maps-link__address,
+		.maps-link__action {
 			transition: none;
+		}
+
+		.contact-label,
+		.contact-list strong {
 			transform: none;
 		}
 	}

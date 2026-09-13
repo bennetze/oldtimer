@@ -9,7 +9,7 @@ Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam
 
 - [Startseite](https://www.oldtimermanufaktur.de/): „Wir bewahren Geschichte(n)“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
 - [Handwerk](https://www.oldtimermanufaktur.de/handwerk/): Vorläufiger, bebilderter Überblick über Karosserie, Polsterei, Lackiererei und Motorbau.
-- [Über uns](https://www.oldtimermanufaktur.de/ueber-uns/): Vorstellung von Mario Schrank (KFZ-Mechaniker-Meister, KFZ-Elektriker-Meister und Karosseriebau-Meister), Anton Schrank (KFZ-Techniker-Meister) mit ihren Meisterqualifikationen sowie Vorstellung von Team und Kontakt.
+- [Über uns](https://www.oldtimermanufaktur.de/ueber-uns/): Vorstellung von Mario Schrank (KFZ-Mechaniker-Meister, KFZ-Elektriker-Meister und Karosseriebau-Meister), Anton Schrank (KFZ-Techniker-Meister) mit ihren Meisterqualifikationen sowie Vorstellung von Team und Kontakt mit einer Deutschlandkarte und Standortmarkierung für Fischbach/Rhön.
 - [Projekte](https://www.oldtimermanufaktur.de/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
 - [Aktuelle Projekte](https://www.oldtimermanufaktur.de/projekte/aktuelle-projekte/): Laufende Restaurierungen und aktuelle Arbeiten an historischen Fahrzeugen. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
 - [Abgeschlossene Projekte](https://www.oldtimermanufaktur.de/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
@@ -17,7 +17,7 @@ Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam
 
 ## Englische Seiten
 
-- [English homepage](https://www.oldtimermanufaktur.de/en/): Englische Fassung mit Zugang zu Handwerk, Unternehmen, Projektarchiven und Fahrzeugdokumentationen.
+- [English homepage](https://www.oldtimermanufaktur.de/en/): Englische Fassung mit der Hero-Zeile „WE PRESERVE HISTORY AND STORIES.“ sowie Zugang zu Handwerk, Unternehmen, Projektarchiven und Fahrzeugdokumentationen.
 
 ## Nutzung durch KI-Systeme
 

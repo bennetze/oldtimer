@@ -61,3 +61,10 @@ ausgefüllte Tabellenzeile und keine auffindbare Belegreferenz besitzt. Für jed
 ersetzte Platzhalterbild müssen außerdem Alternativtext, Open-Graph-Metadaten,
 strukturierte Daten, `llms.txt` und der sichtbare Entwicklungshinweis erneut geprüft
 werden.
+
+## Contact map assets — reviewed 2026-09-13
+
+- `src/assets/graphics/germany-silhouette.svg`: derived from [Germany-Outline.svg](https://commons.wikimedia.org/wiki/File:Germany-Outline.svg), by chris / Chrkl, 2010-06-30. The author releases the work into the public domain worldwide, with an unrestricted any-purpose permission where that dedication is not possible. Commercial use is permitted. Source: https://upload.wikimedia.org/wikipedia/commons/f/f2/Germany-Outline.svg. Removed editor metadata and cancelling transforms; retained the single silhouette path, added a responsive viewBox and changed the fill. No internal boundaries or labels. Original metadata also credits Patricia FIDI / openclipart.org, Public Domain.
+- `src/assets/graphics/geo-alt-fill.svg`: user-supplied file moved from the repository root, unchanged. Matches [Bootstrap Icons geo-alt-fill](https://icons.getbootstrap.com/icons/geo-alt-fill/). MIT licence retained in `public/licenses/Bootstrap-Icons-MIT.txt` from https://raw.githubusercontent.com/twbs/icons/main/LICENSE.
+- Marker placement is approximate, based on Fischbach/Rhön at 50.65° N, 10.14° E: https://www.wikidata.org/wiki/Q688059. The visible label and postal address use Fischbach. Both assets are served locally.
+- Reviewed `public/robots.txt`: no route, indexing, photographic-asset policy or sitemap-location change is needed for these SVG graphics.
