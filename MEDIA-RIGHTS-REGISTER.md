@@ -32,7 +32,7 @@ Texture asset added on 2026-09-13: `src/assets/oldtimer/leather-texture.webp`
 is an AI-assisted repeating derivative of the user-supplied `L1007006.jpg`.
 The image editing tool softened the central leather grain into a neutral tile;
 the result was resized to 1200 × 1200 and encoded as WebP for decorative use
-on the gradient subpages. The source photograph remains unchanged. This records
+on the gradient subpages and individual vehicle pages. The source photograph remains unchanged. This records
 the requested preview use, not a new confirmation of production media rights;
 associate the source with its internal rights evidence before release.
 

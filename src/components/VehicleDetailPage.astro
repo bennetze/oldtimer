@@ -16,6 +16,7 @@ import {
 	type VehicleEntry,
 } from '../config/vehicles';
 import SiteChrome from './SiteChrome.astro';
+import BackgroundTexture from './BackgroundTexture.astro';
 
 interface Props {
 	vehicle: VehicleEntry;
@@ -82,7 +83,8 @@ const vehicleJsonLd = {
 	]}
 >
 	<SiteChrome theme="light">
-		<main class="vehicle-detail" id="main-content" tabindex="-1">
+		<main class="vehicle-detail textured-background" id="main-content" tabindex="-1">
+			<BackgroundTexture />
 			<header class="vehicle-masthead">
 				<p>
 					<a href={sitePath(`/projekte/${vehicle.data.category}/`)}>{category.label}</a>

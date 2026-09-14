@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { access, readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { load } from 'cheerio';
 import {
 	GITHUB_PAGES_GALLERY_IMAGE_LIMIT,
 	limitVehicleGalleryBlocks,
@@ -40,6 +41,15 @@ const occurrences = (source, pattern) => source.match(pattern)?.length ?? 0;
 
 for (const vehicle of vehicles) {
 	const html = await readRoute(vehicle.route);
+	// Discover all records so future generator imports inherit the shared presentation.
+	for (const languagePrefix of ['', '/en']) {
+		const localizedHtml = languagePrefix ? await readRoute(`${languagePrefix}${vehicle.route}`) : html;
+		const $ = load(localizedHtml);
+		const texture = $('main.vehicle-detail.textured-background > .background-texture');
+		assert.equal(texture.length, 1, `${languagePrefix}${vehicle.route}: missing shared vehicle texture.`);
+		assert.equal(texture.attr('aria-hidden'), 'true', `${languagePrefix}${vehicle.route}: texture must be decorative.`);
+		assert.ok(texture.attr('style')?.includes(assetBase), `${languagePrefix}${vehicle.route}: incorrect texture asset base.`);
+	}
 	const galleryImages = limitVehicleGalleryBlocks(vehicle.blocks ?? [], galleryImageLimit)
 		.filter((block) => block.type === 'gallery')
 		.flatMap((block) => block.images ?? []);

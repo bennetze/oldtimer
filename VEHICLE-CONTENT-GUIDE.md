@@ -72,6 +72,11 @@ SHA-256 hashes and before/after text (including metadata and crawler files). The
 `from` and `to` fields identify moves. The supplied Astro wrapper is discarded and a
 trusted wrapper is generated locally.
 
+Vehicle presentation comes from `src/components/VehicleDetailPage.astro`, including
+the shared leather background texture (875px repeat, 25% opacity). Existing vehicles
+and new generator imports inherit it in both languages; do not add texture assets,
+styling, or new fields to individual vehicle exports.
+
 After approving that exact review, apply using its token:
 
 ```sh

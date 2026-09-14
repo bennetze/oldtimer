@@ -3,7 +3,7 @@
 export const modificationDates = {
 	shared: '2026-09-13',
 	archive: '2026-09-14',
-	vehicle: '2026-09-13',
+	vehicle: '2026-09-14',
 	pages: {
 		'/': '2026-09-13',
 		'/handwerk/': '2026-09-14',
