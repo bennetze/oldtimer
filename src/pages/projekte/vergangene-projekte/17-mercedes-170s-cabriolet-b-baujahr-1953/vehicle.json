@@ -14,7 +14,12 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Dieses Mercedes 170S Cabriolet wurde in unserer Manufaktur detailgetreu überarbeitet und nach Kundenwünschen restauriert.</p>"
+			"html": "<p>Dieses Mercedes 170S Cabriolet wurde in unserer Manufaktur detailgetreu überarbeitet und nach Kundenwünschen restauriert.</p>",
+			"htmlEn": "<p>We carefully refurbished and restored this Mercedes 170 S Cabriolet to the client’s wishes.</p>"
 		}
-	]
+	],
+	"titleEn": "Mercedes 170S Cabriolet-B, year 1953",
+	"descriptionEn": "We carefully refurbished and restored this Mercedes 170 S Cabriolet to the client’s wishes.",
+	"cardImageAltEn": "Mercedes 170S Cabriolet-B, year 1953",
+	"leadImageAltEn": "Mercedes 170S Cabriolet-B, year 1953 – vehicle record"
 }

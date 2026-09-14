@@ -17,49 +17,58 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier eine englische Sportwagenikone der ruhmreichen 30er Jahre:<br />\nEin ALVIS Speed mit 4,3 Litern Hubraum, hier als so genannter &quot;Special-Roadster&quot;, der in unserer Manufaktur einen völlig neuen Special-Karosserieaufbau in Aluminium erhielt.</p>"
+			"html": "<p>Hier eine englische Sportwagenikone der ruhmreichen 30er Jahre:<br />\nEin ALVIS Speed mit 4,3 Litern Hubraum, hier als so genannter &quot;Special-Roadster&quot;, der in unserer Manufaktur einen völlig neuen Special-Karosserieaufbau in Aluminium erhielt.</p>",
+			"htmlEn": "<p>A British sports-car icon from the celebrated 1930s:<br>\nan Alvis Speed 4.3-litre Special Roadster, for which we created entirely new special aluminium coachwork.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dazu wurde auch der Hilfsrahmen geändert, in unserer Stellmacherei ein völlig neues tragendes Holzskelett als Spantenaufbau angefertigt und die gesamte Karosserie mit Aluminiumblech komplett neu eingekleidet. Einhergehend wurden auch viele Anbau- und Zierteile, eine von außen zugängliche Heckklappe sowie rundum frei schwingende Kotflügel neu angefertigt und angepasst.</p>"
+			"html": "<p>Dazu wurde auch der Hilfsrahmen geändert, in unserer Stellmacherei ein völlig neues tragendes Holzskelett als Spantenaufbau angefertigt und die gesamte Karosserie mit Aluminiumblech komplett neu eingekleidet. Einhergehend wurden auch viele Anbau- und Zierteile, eine von außen zugängliche Heckklappe sowie rundum frei schwingende Kotflügel neu angefertigt und angepasst.</p>",
+			"htmlEn": "<p>We modified the subframe, made a completely new load-bearing timber framework and clothed the entire body in aluminium. We also fabricated and fitted numerous attachments and trim pieces, an externally accessible boot lid and separate flowing wings all round.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -68,32 +77,38 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach einer kompletten Neulackierung in unserer Lackierabteilung bekam der Wagen abschließend auch ein neues Cabrioletverdeck, samt Erneuerung der Verdeckkonstruktion und in unserer Sattlerei eine neue Innenausstattung geschneidert.</p>"
+			"html": "<p>Nach einer kompletten Neulackierung in unserer Lackierabteilung bekam der Wagen abschließend auch ein neues Cabrioletverdeck, samt Erneuerung der Verdeckkonstruktion und in unserer Sattlerei eine neue Innenausstattung geschneidert.</p>",
+			"htmlEn": "<p>Following a full respray, the car received a new convertible hood with a renewed frame and a newly tailored interior from our upholstery shop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -102,26 +117,34 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n...Was für ein Auto? - mit absolut stimmigen Proportionen und Details die einen typischen reinrassigen Sportwagen ausmachen.</p>"
+			"html": "<p><br />\n<br />\n...Was für ein Auto? - mit absolut stimmigen Proportionen und Details die einen typischen reinrassigen Sportwagen ausmachen.</p>",
+			"htmlEn": "<p><br>\n<br>\n…what a car, with perfectly balanced proportions and the details of a true thoroughbred sports car.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "Alvis Speed 4,3 Litre Special, Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – photograph 15 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "Alvis Speed 4,3 Litre Special, year 1938",
+	"descriptionEn": "A British sports-car icon from the celebrated 1930s: an Alvis Speed 4.3-litre Special Roadster, for which we created entirely new special aluminium coachwork.",
+	"cardImageAltEn": "Alvis Speed 4,3 Litre Special, year 1938",
+	"leadImageAltEn": "Alvis Speed 4,3 Litre Special, year 1938 – vehicle record"
 }

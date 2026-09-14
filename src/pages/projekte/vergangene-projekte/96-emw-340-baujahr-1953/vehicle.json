@@ -17,32 +17,38 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEMW 340, Baujahr 1953, gebaut bei den Eisenacher - Motoren - Werken.</p>"
+			"html": "<p><br />\n<br />\nEMW 340, Baujahr 1953, gebaut bei den Eisenacher - Motoren - Werken.</p>",
+			"htmlEn": "<p><br>\n<br>\nA 1953 EMW 340, built at Eisenacher Motorenwerke.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Aufgrund eines schweren Motorschadens wurde dieser in unserer Motorenabteilung grundlegend neu aufgebaut.<br /></p>"
+			"html": "<p>Aufgrund eines schweren Motorschadens wurde dieser in unserer Motorenabteilung grundlegend neu aufgebaut.<br /></p>",
+			"htmlEn": "<p>Severe engine damage required a fundamental rebuild in our engine department.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -51,15 +57,18 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -68,22 +77,29 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 8 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch die Achsen, Bremsen und die Innenausstattung wurden dabei umfangreich überarbeitet.</p>"
+			"html": "<p>Auch die Achsen, Bremsen und die Innenausstattung wurden dabei umfangreich überarbeitet.</p>",
+			"htmlEn": "<p>We also extensively refurbished the axles, brakes and interior.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW 340, Baujahr 1953 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "EMW 340, Baujahr 1953 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "EMW 340, year 1953 – photograph 9 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "EMW 340, year 1953",
+	"descriptionEn": "Severe engine damage required a fundamental rebuild in our engine department.",
+	"cardImageAltEn": "EMW 340, year 1953",
+	"leadImageAltEn": "EMW 340, year 1953 – vehicle record"
 }

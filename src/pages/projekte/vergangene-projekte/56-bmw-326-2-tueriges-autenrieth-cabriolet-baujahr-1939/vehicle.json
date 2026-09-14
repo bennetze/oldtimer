@@ -14,7 +14,12 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Bei diesem Wagen wurde das gesamte Fahrgestell - Achsen, Stoßdämpfer, Federn, Ausgleichsgetriebe, Bremsen, Lager etc. umfangreich revidiert.</p>"
+			"html": "<p>Bei diesem Wagen wurde das gesamte Fahrgestell - Achsen, Stoßdämpfer, Federn, Ausgleichsgetriebe, Bremsen, Lager etc. umfangreich revidiert.</p>",
+			"htmlEn": "<p>We extensively overhauled the chassis systems: axles, dampers, springs, differential, brakes and bearings.</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939",
+	"descriptionEn": "We extensively overhauled the chassis systems: axles, dampers, springs, differential, brakes and bearings.",
+	"cardImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939",
+	"leadImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939 – vehicle record"
 }

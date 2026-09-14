@@ -430,3 +430,18 @@ Archive search uses `src/scripts/archiveHistory.js` to retain the filter in its
 browser history entry. Preserve unrelated history state during fragment cleanup.
 Do not put the local query into request URLs or tracking storage. Test a detail-page
 visit followed by Back with browser form restoration unavailable.
+
+## Bilingual vehicle contract
+
+Vehicle records must contain complete German and English text. Preserve the original
+German fields and require `titleEn`, `descriptionEn`, `cardImageAltEn`, `leadImageAltEn`,
+copy/contact `htmlEn`, and each gallery occurrence's `altEn`. Captions are optional
+only as a pair (`caption`, `captionEn`). Keep files, slugs, routes, block order and
+images shared. Never substitute dictionary translation for authored English.
+
+Use `vehicleLocale.js` in vehicle rendering and preserve the authored-content boundary
+in DOM, layout metadata and JSON-LD. Shared website text still uses the dictionary.
+The editor alone has an explicit legacy-import mode; checked website imports remain
+strict. Keep both validators, browser fixtures and bilingual build verification aligned.
+Run `node scripts/migrate-vehicle-languages.mjs --check` to inspect migration readiness;
+`--write` is an explicit migration and never overwrites existing English wording.

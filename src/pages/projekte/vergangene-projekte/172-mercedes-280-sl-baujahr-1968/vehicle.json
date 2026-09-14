@@ -17,49 +17,58 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDieser Mercedes 280SL &quot;Pagode&quot; erhielt in unserer Manufaktur eine umfassende Vollrestauration in allen Details. Karosserie, Technik, Chrom, Elektrik, Lackierung, Polsterung in Echtleder, Verdeck, Zierhölzer u.dgl.</p>"
+			"html": "<p><br />\nDieser Mercedes 280SL &quot;Pagode&quot; erhielt in unserer Manufaktur eine umfassende Vollrestauration in allen Details. Karosserie, Technik, Chrom, Elektrik, Lackierung, Polsterung in Echtleder, Verdeck, Zierhölzer u.dgl.</p>",
+			"htmlEn": "<p><br>\nThis Mercedes 280 SL Pagoda received a full restoration in every detail: bodywork, mechanics, chrome, electrics, paint, genuine leather upholstery, hood and wood trim.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>...umfassende Karosseriearbeiten.<br /></p>"
+			"html": "<p>...umfassende Karosseriearbeiten.<br /></p>",
+			"htmlEn": "<p>…extensive body repairs.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -68,104 +77,123 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDie Karosserie bekam in unserer Lackierabteilung eine Neulackierung in Originalfarbe.</p>"
+			"html": "<p><br />\nDie Karosserie bekam in unserer Lackierabteilung eine Neulackierung in Originalfarbe.</p>",
+			"htmlEn": "<p><br>\nOur paint shop refinished the body in its original colour.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n...neu verchromte Zier- und Anbauteile.</p>"
+			"html": "<p><br />\n<br />\n...neu verchromte Zier- und Anbauteile.</p>",
+			"htmlEn": "<p><br>\n<br>\n…newly chrome-plated trim and fittings.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Einbau von Motor und restaurierter Technik</p>"
+			"html": "<p>Einbau von Motor und restaurierter Technik</p>",
+			"htmlEn": "<p>Installing the engine and restored mechanical systems.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 16 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDas Ergebnis: ...eine Perle einer Mercedes-Benz 280SL Pagode.</p>"
+			"html": "<p><br />\nDas Ergebnis: ...eine Perle einer Mercedes-Benz 280SL Pagode.</p>",
+			"htmlEn": "<p><br>\nThe result: a jewel of a Mercedes-Benz 280 SL Pagoda.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 18 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>...auch wurde in unserer Sattlerei die cognacfarbene Echtleder Innenausstattung erneuert, einen neues Cabrioletverdeck geschneidert und neue Teppiche angefertigt.</p>"
+			"html": "<p>...auch wurde in unserer Sattlerei die cognacfarbene Echtleder Innenausstattung erneuert, einen neues Cabrioletverdeck geschneidert und neue Teppiche angefertigt.</p>",
+			"htmlEn": "<p>…our upholstery shop also renewed the cognac genuine leather interior, tailored a new convertible hood and made new carpets.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 21 in the vehicle record"
 				}
 			]
 		},
@@ -174,9 +202,14 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – photograph 22 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "Mercedes 280 SL \"Pagoda\" year 1968",
+	"descriptionEn": "This Mercedes 280 SL Pagoda received a full restoration in every detail: bodywork, mechanics, chrome, electrics, paint, genuine leather upholstery, hood and wood trim.",
+	"cardImageAltEn": "Mercedes 280 SL \"Pagoda\" year 1968",
+	"leadImageAltEn": "Mercedes 280 SL \"Pagoda\" year 1968 – vehicle record"
 }

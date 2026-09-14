@@ -14,14 +14,16 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Diese EMW 340 Limousine, gebaut bei den Eisenacher - Motoren - Werken wurde entsprechend den Kundenwünschen bei uns einer umfassenden Komplettrestauration unterzogen.</p>"
+			"html": "<p>Diese EMW 340 Limousine, gebaut bei den Eisenacher - Motoren - Werken wurde entsprechend den Kundenwünschen bei uns einer umfassenden Komplettrestauration unterzogen.</p>",
+			"htmlEn": "<p>We comprehensively restored this EMW 340 saloon, built at Eisenacher Motorenwerke, to the client’s wishes.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 1 in the vehicle record"
 				}
 			]
 		},
@@ -30,7 +32,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -39,7 +42,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -48,20 +52,23 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Aufgrund des recht verbrauchten Gesamtzustandes wurde hierbei auch die - an sich fest mit dem Fahrgestell verschweisste Karosserie - vom Rahmen getrennt um beides separat neu aufzubauen.</p>"
+			"html": "<p>Aufgrund des recht verbrauchten Gesamtzustandes wurde hierbei auch die - an sich fest mit dem Fahrgestell verschweisste Karosserie - vom Rahmen getrennt um beides separat neu aufzubauen.</p>",
+			"htmlEn": "<p>Its worn condition required us to separate the body, normally welded to the chassis, so both could be rebuilt independently.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -70,20 +77,23 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 6 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Entsprechend dem Kundenwunsch wurde das Fahrzeugdach von uns auch auf die Ausführung mit dem begehrten Faltschiebedach umgebaut.</p>"
+			"html": "<p>Entsprechend dem Kundenwunsch wurde das Fahrzeugdach von uns auch auf die Ausführung mit dem begehrten Faltschiebedach umgebaut.</p>",
+			"htmlEn": "<p>At the client’s request, we converted the roof to the sought-after folding sliding version.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -92,20 +102,23 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 8 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch die gesamte Technik, samt Motor, Getriebe, Achsen, Stossdämpfer u.dgl. wurde in unserer mechanischen Werkstatt umfangreich revidiert.</p>"
+			"html": "<p>Auch die gesamte Technik, samt Motor, Getriebe, Achsen, Stossdämpfer u.dgl. wurde in unserer mechanischen Werkstatt umfangreich revidiert.</p>",
+			"htmlEn": "<p>Our mechanical workshop extensively overhauled the engine, gearbox, axles, dampers and all other systems.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -114,7 +127,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -123,7 +137,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -132,33 +147,38 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 12 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach der aufwendigen und nach Kundenwunsch gestalteten Zweifarben-Lackierung wurde das Fahrzeug in unserer technischen Abteilung wieder komplettiert...</p>"
+			"html": "<p>Nach der aufwendigen und nach Kundenwunsch gestalteten Zweifarben-Lackierung wurde das Fahrzeug in unserer technischen Abteilung wieder komplettiert...</p>",
+			"htmlEn": "<p>After elaborate two-tone paintwork to the client’s wishes, our technical department reassembled the car…</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>...und in unserer Autosattlerei die gesamte Inneneinrichtung originalgetreu ausgestattet, sowie das Faltschiebedach neu gebaut.</p>"
+			"html": "<p>...und in unserer Autosattlerei die gesamte Inneneinrichtung originalgetreu ausgestattet, sowie das Faltschiebedach neu gebaut.</p>",
+			"htmlEn": "<p>…while our upholstery shop faithfully recreated the interior and rebuilt the folding sliding roof.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 14 in the vehicle record"
 				}
 			]
 		},
@@ -167,7 +187,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -176,7 +197,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 16 in the vehicle record"
 				}
 			]
 		},
@@ -185,7 +207,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -194,7 +217,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 18 in the vehicle record"
 				}
 			]
 		},
@@ -203,20 +227,23 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 19 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Danach wurde der Wagen mit seiner gesamten überholten Technik fertig gestellt und umfangreichen Probe- und Testläufen unterzogen.</p>"
+			"html": "<p>Danach wurde der Wagen mit seiner gesamten überholten Technik fertig gestellt und umfangreichen Probe- und Testläufen unterzogen.</p>",
+			"htmlEn": "<p>We completed the car with all refurbished mechanical systems, then carried out extensive testing and trial runs.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -225,7 +252,8 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 21 in the vehicle record"
 				}
 			]
 		},
@@ -234,7 +262,8 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 22 in the vehicle record"
 				}
 			]
 		},
@@ -243,20 +272,23 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 23 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach dieser überaus perfekten Restauration, zeigt sich dieser Wagen heute sicher als einer der “Besten” restaurierten EMW 340 - wenn nicht der Beste überhaupt...</p>"
+			"html": "<p>Nach dieser überaus perfekten Restauration, zeigt sich dieser Wagen heute sicher als einer der “Besten” restaurierten EMW 340 - wenn nicht der Beste überhaupt...</p>",
+			"htmlEn": "<p>Following this outstanding restoration, it is surely among the finest restored EMW 340s.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 24 in the vehicle record"
 				}
 			]
 		},
@@ -265,7 +297,8 @@
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 25 in the vehicle record"
 				}
 			]
 		},
@@ -274,7 +307,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 26 in the vehicle record"
 				}
 			]
 		},
@@ -283,7 +317,8 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 27 in the vehicle record"
 				}
 			]
 		},
@@ -292,7 +327,8 @@
 			"images": [
 				{
 					"src": "./image-027.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 28 in the vehicle record"
 				}
 			]
 		},
@@ -301,7 +337,8 @@
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 29 in the vehicle record"
 				}
 			]
 		},
@@ -310,7 +347,8 @@
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 30 in the vehicle record"
 				}
 			]
 		},
@@ -319,7 +357,8 @@
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 31 in the vehicle record"
 				}
 			]
 		},
@@ -328,20 +367,23 @@
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 32 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Wir freuen uns zusammen mit dem stolzen Besitzerehepaar dieses kostbare und rare Stück Eisenacher Automobilbaugeschichte bestmöglich für die Nachwelt erhalten zu können.</p>"
+			"html": "<p>Wir freuen uns zusammen mit dem stolzen Besitzerehepaar dieses kostbare und rare Stück Eisenacher Automobilbaugeschichte bestmöglich für die Nachwelt erhalten zu können.</p>",
+			"htmlEn": "<p>Together with its proud owners, we are delighted to preserve this rare and precious piece of Eisenach automotive history for future generations.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 33 in the vehicle record"
 				}
 			]
 		},
@@ -350,7 +392,8 @@
 			"images": [
 				{
 					"src": "./image-032.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 34 in the vehicle record"
 				}
 			]
 		},
@@ -359,7 +402,8 @@
 			"images": [
 				{
 					"src": "./image-033.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 35 in the vehicle record"
 				}
 			]
 		},
@@ -368,7 +412,8 @@
 			"images": [
 				{
 					"src": "./image-034.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 36 in the vehicle record"
 				}
 			]
 		},
@@ -377,7 +422,8 @@
 			"images": [
 				{
 					"src": "./image-035.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 37 in the vehicle record"
 				}
 			]
 		},
@@ -386,7 +432,8 @@
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 38 in the vehicle record"
 				}
 			]
 		},
@@ -395,13 +442,19 @@
 			"images": [
 				{
 					"src": "./image-037.jpg",
-					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "EMW 340 Limousine, Baujahr 1952 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "EMW 340 Saloon, year 1952 – photograph 39 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Perfekt !</p>"
+			"html": "<p>Perfekt !</p>",
+			"htmlEn": "<p>Superb!</p>"
 		}
-	]
+	],
+	"titleEn": "EMW 340 Saloon, year 1952",
+	"descriptionEn": "We comprehensively restored this EMW 340 saloon, built at Eisenacher Motorenwerke, to the client’s wishes.",
+	"cardImageAltEn": "EMW 340 Saloon, year 1952",
+	"leadImageAltEn": "EMW 340 Saloon, year 1952 – vehicle record"
 }

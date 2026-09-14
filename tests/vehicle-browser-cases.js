@@ -2,16 +2,22 @@ const frame = document.getElementById('editor');
 frame.addEventListener('load', async () => {
   const w = frame.contentWindow, d = frame.contentDocument, t = w.vehicleTest;
   const results = [], assert = (condition, message) => { if (!condition) throw new Error(message); };
-  const eq = (a, b, label) => assert(JSON.stringify(a) === JSON.stringify(b), `${label}: ${JSON.stringify(a)} != ${JSON.stringify(b)}`);
+  const stable = value => Array.isArray(value) ? value.map(stable) : value && typeof value === 'object' ? Object.fromEntries(Object.keys(value).sort().map(key => [key, stable(value[key])])) : value;
+  const eq = (a, b, label) => assert(JSON.stringify(stable(a)) === JSON.stringify(stable(b)), `${label}: ${JSON.stringify(a)} != ${JSON.stringify(b)}`);
   const test = async (name, run) => { try { await run(); results.push({ name, pass: true }); } catch (error) { results.push({ name, pass: false, error: error.message }); } document.getElementById('results').textContent = JSON.stringify(results, null, 2); };
   const image = (name) => new w.File([Uint8Array.from(atob(fixtureImage), (c) => c.charCodeAt(0))], name, { type: 'image/jpeg', lastModified: 1 });
   const input = (id, value) => { d.getElementById(id).value = value; d.getElementById(id).dispatchEvent(new w.Event('input', { bubbles: true })); };
   const click = (selector) => d.querySelector(selector).click();
-  const record = { slug:'test-car', category:'aktuelle-projekte', title:'Testfahrzeug 1957', description:'Test für den lokalen Import.', sourceUrl:'https://www.oldtimermanufaktur.de/aktuelle-projekte/item/test-car', order:-42, dateModified:'2026-09-01', year:'1957', cardImage:'./card.jpg', cardImageAlt:'Kartenansicht', leadImage:'./image-002.jpg', leadImageAlt:'Titelansicht', blocks:[{type:'copy',html:'<p><strong>Originaltext</strong> mit Umlauten: äöü.</p>'},{type:'gallery',images:[{src:'./image-002.jpg',alt:'Zuerst',caption:'Bild zwei'},{src:'./image-001.jpg',alt:'Danach'},{src:'./image-002.jpg',alt:'Wiederholung',caption:'Anderer Kontext'}]},{type:'contact',html:'<p>Bitte kontaktieren Sie uns.</p>'}] };
+  const record = { slug:'test-car', category:'aktuelle-projekte', title:'Testfahrzeug 1957', titleEn: 'Testfahrzeug 1957', description:'Test für den lokalen Import.', descriptionEn: 'Test für den lokalen Import.', sourceUrl:'https://www.oldtimermanufaktur.de/aktuelle-projekte/item/test-car', order:-42, dateModified:'2026-09-01', year:'1957', cardImage:'./card.jpg', cardImageAlt:'Kartenansicht', cardImageAltEn: 'Kartenansicht', leadImage:'./image-002.jpg', leadImageAlt:'Titelansicht', leadImageAltEn: 'Titelansicht', blocks:[{type:'copy',html:'<p><strong>Originaltext</strong> mit Umlauten: äöü.</p>', htmlEn: '<p><strong>Originaltext</strong> mit Umlauten: äöü.</p>'},{type:'gallery',images:[{src:'./image-002.jpg',alt:'Zuerst', altEn: 'Zuerst',caption:'Bild zwei', captionEn: 'Bild zwei'},{src:'./image-001.jpg',alt:'Danach', altEn: 'Danach'},{src:'./image-002.jpg',alt:'Wiederholung', altEn: 'Wiederholung',caption:'Anderer Kontext', captionEn: 'Anderer Kontext'}]},{type:'contact',html:'<p>Bitte kontaktieren Sie uns.</p>', htmlEn: '<p>Bitte kontaktieren Sie uns.</p>'}] };
   const filesFor = (data = record) => [new w.File([JSON.stringify(data)], 'vehicle.json', {type:'application/json'}), image('card.jpg'), image('image-001.jpg'), image('image-002.jpg')];
   w.confirm = () => true; // Only test fixture replacement prompts.
+  await test('An English-only draft is protected before importing another vehicle', async () => {
+    input('title-en', 'Unfinished English draft');w.confirm=()=>false;
+    try {await t.importVehicle(filesFor());eq(t.fields.titleEn.value,'Unfinished English draft','draft protection');}
+    finally {w.confirm=()=>true;input('title-en','');}
+  });
   await test('German slug, local date, canonical URL and default alt text', () => {
-    input('title','Prüfung ÄÖÜ ß 1957'); input('description','Lokaler Test');
+    input('title','Prüfung ÄÖÜ ß 1957'); input('description','Lokaler Test'); input('title-en', 'Test car 1957'); input('description-en', 'Local test');
     eq(t.fields.slug.value,'pruefung-aeoeue-ss-1957','slug');
     eq(t.fields.dateModified.value,t.localDate(),'date');
     assert(t.fields.sourceUrl.value.endsWith('/aktuelle-projekte/pruefung-aeoeue-ss-1957/'),'URL');
@@ -78,6 +84,89 @@ frame.addEventListener('load', async () => {
     }
     let rejected=false;try { t.checkZipEntries([{name:'../bad',data:'x'}]); } catch {rejected=true;} assert(rejected,'path check');
     rejected=false;try { t.checkZipEntries([{name:'aktuelle-projekte/test-car/card.jpg',data:{size:600*1024**2}}]); } catch {rejected=true;} assert(rejected,'size check');
+  });
+  await test('English fields and rich text edit independently and survive reorder', async () => {
+    await t.importVehicle(filesFor());
+    input('title-en', 'Distinct English title'); input('description-en', 'Distinct English description');
+    eq(t.fields.title.value, record.title, 'German title');
+    const block = t.state.blocks[0];
+    const en = d.querySelector(`[data-editor="${block.id}"][data-language="en"]`);
+    en.innerHTML = '<p>Independent <em>English</em> text.</p>'; en.dispatchEvent(new w.Event('input', {bubbles:true}));
+    eq(block.html, record.blocks[0].html, 'German rich text');
+    click(`[data-block-move="down"][data-id="${block.id}"]`);
+    eq(t.state.blocks.find(item=>item.id===block.id).htmlEn, '<p>Independent <em>English</em> text.</p>', 'English after reorder');
+    t.validateRecord(t.createRecord());
+  });
+  await test('Repeated gallery occurrence translations remain independent', async () => {
+    await t.importVehicle(filesFor());
+    const block = t.state.blocks[1];
+    const inputEn = d.querySelector(`[data-entry-block="${block.id}"][data-entry-alt="2"][data-language="en"]`);
+    inputEn.value = 'Different English context'; inputEn.dispatchEvent(new w.Event('input', {bubbles:true}));
+    const value = t.createRecord();
+    eq(value.blocks[1].images[0].altEn, record.blocks[1].images[0].altEn, 'first occurrence');
+    eq(value.blocks[1].images[2].altEn, 'Different English context', 'last occurrence');
+    eq(value.blocks[1].images[2].alt, record.blocks[1].images[2].alt, 'German occurrence');
+  });
+  await test('Missing English and unpaired captions block export and identify the field', async () => {
+    await t.importVehicle(filesFor()); input('title-en', '');
+    assert(t.validate().errors.some(error=>error.includes('English')), 'missing English title accepted');
+    await t.generate(); eq(d.activeElement.id, 'title-en', 'invalid field focus');
+    input('title-en', record.titleEn);
+    const caption = d.querySelector('[data-entry-caption="0"][data-language="en"]');
+    caption.value=''; caption.dispatchEvent(new w.Event('input',{bubbles:true}));
+    assert(t.validate().errors.some(error=>error.includes('both captions')), 'unpaired caption accepted');
+  });
+  await test('Legacy imports require explicit selection and cannot export until translated', async () => {
+    await t.importVehicle(filesFor());
+    const old = JSON.parse(JSON.stringify(record));
+    for (const key of Object.keys(old)) if (key.endsWith('En')) delete old[key];
+    for (const block of old.blocks) { delete block.htmlEn; for (const item of block.images || []) {delete item.altEn; delete item.captionEn;} }
+    await t.importVehicle(filesFor(old)); eq(t.createRecord(),record,'legacy import without opt-in');
+    d.querySelector('#legacy-import').checked=true;
+    await t.importVehicle(filesFor(old)); eq(t.fields.titleEn.value,'','legacy English stays empty');
+    eq(t.fields.title.value,record.title,'legacy German preserved');
+    assert(t.validate().errors.some(error=>error.includes('English')), 'incomplete legacy export accepted');
+    d.querySelector('#legacy-import').checked=false;
+    await t.importVehicle(filesFor());
+  });
+  await test('Unsafe English HTML is rejected without replacing current work', async () => {
+    const bad=JSON.parse(JSON.stringify(record));bad.blocks[0].htmlEn='<p onclick="evil()">Unsafe</p>';
+    await t.importVehicle(filesFor(bad));eq(t.createRecord(),record,'unsafe English import');
+  });
+  await test('Each rich-text toolbar restores only its own language selection', async () => {
+    await t.importVehicle(filesFor());
+    const block=t.state.blocks[0];
+    const de=d.querySelector(`[data-editor="${block.id}"][data-language="de"]`);
+    const en=d.querySelector(`[data-editor="${block.id}"][data-language="en"]`);
+    en.innerHTML='<p>English selection</p>';en.dispatchEvent(new w.Event('input',{bubbles:true}));
+    const select=editor=>{editor.focus();const range=d.createRange();range.selectNodeContents(editor);w.getSelection().removeAllRanges();w.getSelection().addRange(range);d.dispatchEvent(new w.Event('selectionchange'));};
+    select(en);select(de);
+    en.closest('.language-editor').querySelector('[data-command="bold"]').click();
+    assert(/<(strong|b)>/.test(en.innerHTML),'English bold selection not restored');
+    eq(block.html,record.blocks[0].html,'German unchanged by English toolbar');
+    t.validateRecord(t.createRecord());
+  });
+  await test('A real download exports an immutable bilingual snapshot', async () => {
+    await t.importVehicle(filesFor());
+    let clicked=false,blob;
+    const originalClick=w.HTMLAnchorElement.prototype.click, originalUrl=w.URL.createObjectURL;
+    w.HTMLAnchorElement.prototype.click=function(){clicked=true; originalClick.call(this);};
+    w.URL.createObjectURL=function(value){if(value.type==='application/zip')blob=value;return originalUrl.call(this,value);};
+    try {
+      const generating=t.generate();t.fields.titleEn.value='Changed after export started';
+      await generating;assert(clicked,'download was not triggered');assert(blob,'ZIP blob was not produced');
+      const bytes=new Uint8Array(await blob.arrayBuffer()), view=new DataView(bytes.buffer), decoder=new TextDecoder();
+      let position=0,exported;
+      while(view.getUint32(position,true)===0x04034b50){
+        const size=view.getUint32(position+18,true),nameLength=view.getUint16(position+26,true),extra=view.getUint16(position+28,true);
+        const name=decoder.decode(bytes.slice(position+30,position+30+nameLength));const data=position+30+nameLength+extra;
+        if(name.endsWith('/vehicle.json'))exported=JSON.parse(decoder.decode(bytes.slice(data,data+size)));
+        position=data+size;
+      }
+      eq(exported,record,'immutable exported record');
+      const response=await fetch('/zip',{method:'POST',body:blob});assert(response.ok,'ZIP artifact save failed');
+    } finally {w.HTMLAnchorElement.prototype.click=originalClick;w.URL.createObjectURL=originalUrl;t.fields.titleEn.value=record.titleEn;}
+    assert(d.querySelector('#status').textContent.includes('ZIP created'),d.querySelector('#status').textContent);
   });
   await test('Desktop and 390px layout do not overflow', async () => {
     for (const width of [1440,390]) { frame.style.width=`${width}px`; await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))); assert(d.documentElement.scrollWidth<=width,`overflow at ${width}: ${d.documentElement.scrollWidth}`); }

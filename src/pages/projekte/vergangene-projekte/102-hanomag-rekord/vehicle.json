@@ -17,40 +17,48 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 1 in the vehicle record"
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>HANOMAG Rekord Limousine, gebaut 1937 in der Hannoverschen Maschinenbau AG.</p>"
+			"html": "<p>HANOMAG Rekord Limousine, gebaut 1937 in der Hannoverschen Maschinenbau AG.</p>",
+			"htmlEn": "<p>A Hanomag Rekord saloon, built in 1937 by Hannoversche Maschinenbau AG.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -59,30 +67,39 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen wurde in unserer technischen Abteilung umfangreich revidiert und instand gesetzt und bekam in unserer Sattlerei ein neues Faltschiebedach passgenau angefertigt.</p>"
+			"html": "<p>Der Wagen wurde in unserer technischen Abteilung umfangreich revidiert und instand gesetzt und bekam in unserer Sattlerei ein neues Faltschiebedach passgenau angefertigt.</p>",
+			"htmlEn": "<p>Our mechanical department extensively overhauled and repaired the car, while our upholstery shop made a precisely fitted new folding sliding roof.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "HANOMAG Rekord, Baujahr 1937 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "HANOMAG Rekord, year 1937 – photograph 11 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "HANOMAG Rekord, year 1937",
+	"descriptionEn": "Our mechanical department extensively overhauled and repaired the car, while our upholstery shop made a precisely fitted new folding sliding roof.",
+	"cardImageAltEn": "HANOMAG Rekord, year 1937",
+	"leadImageAltEn": "HANOMAG Rekord, year 1937 – vehicle record"
 }

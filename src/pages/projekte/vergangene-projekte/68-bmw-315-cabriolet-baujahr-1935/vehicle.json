@@ -14,20 +14,27 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>BMW 315 Vier-Fenster-Cabriolet, Baujahr 1935; gebaut bei den BMW-Werken in Eisenach/Thüringen.</p>"
+			"html": "<p>BMW 315 Vier-Fenster-Cabriolet, Baujahr 1935; gebaut bei den BMW-Werken in Eisenach/Thüringen.</p>",
+			"htmlEn": "<p>A 1935 BMW 315 four-window Cabriolet, built in Eisenach, Thuringia.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 315 Cabriolet, Baujahr 1935 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 315 Cabriolet, Baujahr 1935 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 315 Cabriolet, year 1935 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Bei diesem Fahrzeug wurde der Motor mit Antriebseinheit und sämtliche mechanischen Komponenten bei uns überholt. Auf speziellen Kundenwunsch hin soll das äußere Erscheinungsbild mit dem mittlerweile mehr als 70 Jahre alten, noch ersten Lack als wertvolle Patina erhalten bleiben.</p>"
+			"html": "<p>Bei diesem Fahrzeug wurde der Motor mit Antriebseinheit und sämtliche mechanischen Komponenten bei uns überholt. Auf speziellen Kundenwunsch hin soll das äußere Erscheinungsbild mit dem mittlerweile mehr als 70 Jahre alten, noch ersten Lack als wertvolle Patina erhalten bleiben.</p>",
+			"htmlEn": "<p>We overhauled its engine, drivetrain and all mechanical components. At the client’s specific request, its exterior, including the more than seventy-year-old original paint, was retained as valuable patina.</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 315 Cabriolet, year 1935",
+	"descriptionEn": "A 1935 BMW 315 four-window Cabriolet, built in Eisenach, Thuringia.",
+	"cardImageAltEn": "BMW 315 Cabriolet, year 1935",
+	"leadImageAltEn": "BMW 315 Cabriolet, year 1935 – vehicle record"
 }

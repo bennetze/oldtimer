@@ -17,46 +17,59 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Riley RMA 1,5; year 1950 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein sehr schöner englischer Riley, der nach den Kundenwünschen komplett restauriert wurde.</p>"
+			"html": "<p>Hier ein sehr schöner englischer Riley, der nach den Kundenwünschen komplett restauriert wurde.</p>",
+			"htmlEn": "<p>A beautiful British Riley, completely restored to the client’s wishes.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Riley RMA 1,5; year 1950 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Riley RMA 1,5; year 1950 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Riley RMA 1,5; year 1950 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Riley RMA 1,5; year 1950 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Riley RMA 1,5; year 1950 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Riley RMA 1,5; year 1950 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Riley RMA 1,5; Baujahr 1950 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Riley RMA 1,5; year 1950 – photograph 8 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "Riley RMA 1,5; year 1950",
+	"descriptionEn": "A beautiful British Riley, completely restored to the client’s wishes.",
+	"cardImageAltEn": "Riley RMA 1,5; year 1950",
+	"leadImageAltEn": "Riley RMA 1,5; year 1950 – vehicle record"
 }

@@ -8,7 +8,7 @@ import { languagePath } from '../src/i18n/language.js';
 const tool = await readFile(new URL('../../oldtimer-fahrzeuge/index.html', import.meta.url), 'utf8');
 const contract = tool.slice(tool.indexOf('        function validVehicleDate('), tool.indexOf('        const categories ='));
 const browser = vm.runInNewContext(`${contract}; ({ validateVehicleRecord, validVehicleDate });`, { URL });
-const record = { slug:'test-car', category:'aktuelle-projekte', title:'Fahrzeug', description:'Beschreibung', sourceUrl:'https://example.com', order:-12, dateModified:'2024-02-29', cardImage:'./card.jpg', cardImageAlt:'Karte', leadImage:'./card.jpg', leadImageAlt:'Titel', blocks:[] };
+const record = { slug:'test-car', category:'aktuelle-projekte', title:'Fahrzeug', titleEn: 'Fahrzeug', description:'Beschreibung', descriptionEn: 'Beschreibung', sourceUrl:'https://example.com', order:-12, dateModified:'2024-02-29', cardImage:'./card.jpg', cardImageAlt:'Karte', cardImageAltEn: 'Karte', leadImage:'./card.jpg', leadImageAlt:'Titel', leadImageAltEn: 'Titel', blocks:[] };
 
 test('embedded offline record contract agrees with website on valid and invalid fixtures', () => {
 	const fixtures = [record, {...record,order:0}, {...record,order:Number.MAX_SAFE_INTEGER+1}, {...record,dateModified:'2026-02-29'}, {...record,slug:'index'}, {...record,cardImage:'./../outside.jpg'}, {...record,cardImage:'./card.svg'}, {...record,leadImage:'./card.png'}, {...record,category:'other'}, {...record,extra:true}, {...record,blocks:[{type:'gallery',images:[]}]}, {...record,blocks:[{type:'gallery',images:[{src:'./card.jpg',alt:'Karte',caption:5}]}]}];

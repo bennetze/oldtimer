@@ -17,98 +17,124 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein sehr früher BMW Typ 340, gebaut 1952 im BMW Werk Eisenach/Thüringen, als sehr elegante und repräsentative Limousine.</p>"
+			"html": "<p>Hier ein sehr früher BMW Typ 340, gebaut 1952 im BMW Werk Eisenach/Thüringen, als sehr elegante und repräsentative Limousine.</p>",
+			"htmlEn": "<p>An early BMW 340, built in 1952 at BMW’s Eisenach plant in Thuringia, with elegant, distinguished saloon bodywork.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Farbgebung grün/grün, Polster graugrün, Teppich grün, Faltschiebedach.</p>"
+			"html": "<p>Farbgebung grün/grün, Polster graugrün, Teppich grün, Faltschiebedach.</p>",
+			"htmlEn": "<p>Two-tone green paintwork, grey-green upholstery, green carpet and a folding sliding roof.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Motor: 6 Zylinder, 2 Liter Hubraum, Leistung 55PS.</p>"
+			"html": "<p>Motor: 6 Zylinder, 2 Liter Hubraum, Leistung 55PS.</p>",
+			"htmlEn": "<p>Engine: six cylinders, 2 litres, 55 PS.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 340 Limousine, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 340 Saloon, year 1952 – photograph 16 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>In allen Details sehr originalgetreu, fachmännisch und authentisch restauriert. Radial-Weißwandreifen, ansprechende org. Holzlasurtechnik im Innenraum, hier mit dem begehrten Faltschiebedach (sog. Sonnenscheinlimousine...).</p>"
+			"html": "<p>In allen Details sehr originalgetreu, fachmännisch und authentisch restauriert. Radial-Weißwandreifen, ansprechende org. Holzlasurtechnik im Innenraum, hier mit dem begehrten Faltschiebedach (sog. Sonnenscheinlimousine...).</p>",
+			"htmlEn": "<p>Professionally and authentically restored in every detail. Radial whitewall tyres, attractive original-style woodgrain finishes inside and the sought-after folding sliding roof — the so-called “sunshine saloon”.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>org. Papiere mit lückenloser Historie, DEKRA Vollabnahme und H-Gutachten neu</p>"
+			"html": "<p>org. Papiere mit lückenloser Historie, DEKRA Vollabnahme und H-Gutachten neu</p>",
+			"htmlEn": "<p>Original papers with a complete history, new DEKRA full inspection and German historic-vehicle assessment.</p>"
 		},
 		{
 			"type": "contact",
-			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
+			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>",
+			"htmlEn": "<p>Price on request.<br>\nFor further information, photographs and other vehicle details,<br>\nplease contact us on: Tel. +49 36966 83783<br>\nEmail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
 		}
-	]
+	],
+	"titleEn": "BMW 340 Saloon, year 1952",
+	"descriptionEn": "An early BMW 340, built in 1952 at BMW’s Eisenach plant in Thuringia, with elegant, distinguished saloon bodywork.",
+	"cardImageAltEn": "BMW 340 Saloon, year 1952",
+	"leadImageAltEn": "BMW 340 Saloon, year 1952 – vehicle record"
 }

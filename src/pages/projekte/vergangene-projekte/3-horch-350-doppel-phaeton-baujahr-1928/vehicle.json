@@ -17,36 +17,43 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><em><strong>The Winner is:</strong></em></p>"
+			"html": "<p><em><strong>The Winner is:</strong></em></p>",
+			"htmlEn": "<p><em><strong>The winner is:</strong></em></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>HORCH 8, Typ 350<br />\nvon 1928 und Sieger beim<br />\n&quot;European Concours de Elegance&quot;.</strong></p>"
+			"html": "<p><strong>HORCH 8, Typ 350<br />\nvon 1928 und Sieger beim<br />\n&quot;European Concours de Elegance&quot;.</strong></p>",
+			"htmlEn": "<p><strong>Horch 8, Type 350,<br>\nfrom 1928, winner at the<br>\n“European Concours de Elegance”.</strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong></strong><br />\nHier wieder eines der seltensten und exklusivsten Fahrzeuge der Vorkriegsära überhaupt:<br />\nEin Zwickauer HORCH 8, Typ 350 als 7-sitziger offener &quot;Flanier- und Paradewagen&quot; der Firma Hornig in Meerane.<br />\nDieses Fahrzeug ist ein absolutes Unikat, gilt es doch als das einzig “überlebende” Exemplar des Typs HORCH 350 mit diesem großzügigen und geradezu luxuriösen, 7-sitzigen offenen Tourenwagen-Aufbau.</p>"
+			"html": "<p><strong></strong><br />\nHier wieder eines der seltensten und exklusivsten Fahrzeuge der Vorkriegsära überhaupt:<br />\nEin Zwickauer HORCH 8, Typ 350 als 7-sitziger offener &quot;Flanier- und Paradewagen&quot; der Firma Hornig in Meerane.<br />\nDieses Fahrzeug ist ein absolutes Unikat, gilt es doch als das einzig “überlebende” Exemplar des Typs HORCH 350 mit diesem großzügigen und geradezu luxuriösen, 7-sitzigen offenen Tourenwagen-Aufbau.</p>",
+			"htmlEn": "<p><strong></strong><br>\nOne of the rarest and most exclusive pre-war cars:<br>\na Zwickau-built Horch 8 Type 350 with seven-seat open touring and parade coachwork by Hornig of Meerane.<br>\nA unique vehicle, considered the only surviving Horch 350 with this spacious, luxurious seven-seat open touring body.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen wurde in allen Details und sehr originalgetreu bei uns restauriert.</p>"
+			"html": "<p>Der Wagen wurde in allen Details und sehr originalgetreu bei uns restauriert.</p>",
+			"htmlEn": "<p>We restored it faithfully in every detail.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -55,20 +62,23 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nachdem das Original Fahrgestell in unserer Technikabteilung aufwendig revidiert und sämtliche technischen Komponenten wie Achsen, Antriebe, Lenkung u.dgl. aufgearbeitet waren, konnten wir in unserer Stellmacherei nach gründlicher Recherche und Vorplanung mit der Herstellung der hölzernen Grundstruktur der Karosserie beginnen.<br />\n<br /></p>"
+			"html": "<p>Nachdem das Original Fahrgestell in unserer Technikabteilung aufwendig revidiert und sämtliche technischen Komponenten wie Achsen, Antriebe, Lenkung u.dgl. aufgearbeitet waren, konnten wir in unserer Stellmacherei nach gründlicher Recherche und Vorplanung mit der Herstellung der hölzernen Grundstruktur der Karosserie beginnen.<br />\n<br /></p>",
+			"htmlEn": "<p>After extensively refurbishing the original chassis, axles, drivetrain and steering, we researched and planned the construction of the wooden body structure in our coachbuilding shop.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -77,7 +87,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -86,88 +97,103 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 7 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Leider war von der ursprünglichen Karosserie im Grunde genommen nicht mehr viel zu retten. Daher wurde zunächst die recht großvolumige Grundkarosserie mit der &quot;Fahrgastzelle&quot; und allen tragenden Verbindungen aus bestem Eschenholz neu gebaut, bevor auch Einbauten wie Türen, Sitzschlitten, Zusatz-Klappsitze, usw. passgerecht angefertigt werden konnten.</p>"
+			"html": "<p>Leider war von der ursprünglichen Karosserie im Grunde genommen nicht mehr viel zu retten. Daher wurde zunächst die recht großvolumige Grundkarosserie mit der &quot;Fahrgastzelle&quot; und allen tragenden Verbindungen aus bestem Eschenholz neu gebaut, bevor auch Einbauten wie Türen, Sitzschlitten, Zusatz-Klappsitze, usw. passgerecht angefertigt werden konnten.</p>",
+			"htmlEn": "<p>Little of the original body could be saved. We first rebuilt the large passenger compartment and all structural connections in fine ash, then accurately made doors, seat runners, additional folding seats and other fittings.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHiernach konnten wir in unserem Karosseriebau sämtliche Blechteile originalgetreu neu herstellen und den Holzaufbau &quot;einkleiden&quot;.</p>"
+			"html": "<p><br />\nHiernach konnten wir in unserem Karosseriebau sämtliche Blechteile originalgetreu neu herstellen und den Holzaufbau &quot;einkleiden&quot;.</p>",
+			"htmlEn": "<p><br>\nOur body shop then faithfully fabricated all the metal panels to clothe the timber structure.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 12 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDazu mussten auch viele wichtige Zier- und Anbauteile, wie die massiven Türscharniere und Scheibenrahmen aus Bronze, sowie ganze Türschlösser, Griffe, Zierleisten, Scheinwerfer, usw. größtenteils aus Messing ebenfalls neu gefertigt werden.</p>"
+			"html": "<p><br />\nDazu mussten auch viele wichtige Zier- und Anbauteile, wie die massiven Türscharniere und Scheibenrahmen aus Bronze, sowie ganze Türschlösser, Griffe, Zierleisten, Scheinwerfer, usw. größtenteils aus Messing ebenfalls neu gefertigt werden.</p>",
+			"htmlEn": "<p><br>\nWe also recreated many important fittings: substantial bronze door hinges and windscreen frames, complete locks, handles, trim, headlights and other parts, largely in brass.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAuch das konstruktiv aufwendige und großvolumige Scheren-Verdeckgestell konnten wir rekonstruieren.<br />\n<br /></p>"
+			"html": "<p><br />\n<br />\nAuch das konstruktiv aufwendige und großvolumige Scheren-Verdeckgestell konnten wir rekonstruieren.<br />\n<br /></p>",
+			"htmlEn": "<p><br>\n<br>\nWe reconstructed the large, mechanically complex folding hood frame too.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 15 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier der originale aber leider völlig zerlegte HORCH 8 Zylinder Motor mit zahlreichen Fehlteilen.</p>"
+			"html": "<p>Hier der originale aber leider völlig zerlegte HORCH 8 Zylinder Motor mit zahlreichen Fehlteilen.</p>",
+			"htmlEn": "<p>The original Horch eight-cylinder engine, unfortunately completely dismantled with many missing parts.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 16 in the vehicle record"
 				}
 			]
 		},
@@ -176,237 +202,283 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 18 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>8 Zylinder Aluminium-Motor in Reihe,<br />\n4 Liter Hubraum, 80 PS,<br />\n2 obenliegende Nockenwellen mit Königswellenantrieb - eine Konstruktion äußerster Finesse - wohlgemerkt Baujahr 1928!<br />\n<br />\nDamals wie heute ein absolutes Spitzenprodukt deutscher Automobilbaukunst und - kaum einer weiß es - diese besondere Motorenkonstruktion entstand unter der Feder von Paul Daimler (damals Chefkonstrukteur für HORCH) und damit keinem Geringeren als dem Sohn von Gottlieb Daimler - und damit im Grunde genommen dem damals größten Konkurrenten von Mercedes-Benz<br />\n- welch verrückte Konstellation...</p>"
+			"html": "<p>8 Zylinder Aluminium-Motor in Reihe,<br />\n4 Liter Hubraum, 80 PS,<br />\n2 obenliegende Nockenwellen mit Königswellenantrieb - eine Konstruktion äußerster Finesse - wohlgemerkt Baujahr 1928!<br />\n<br />\nDamals wie heute ein absolutes Spitzenprodukt deutscher Automobilbaukunst und - kaum einer weiß es - diese besondere Motorenkonstruktion entstand unter der Feder von Paul Daimler (damals Chefkonstrukteur für HORCH) und damit keinem Geringeren als dem Sohn von Gottlieb Daimler - und damit im Grunde genommen dem damals größten Konkurrenten von Mercedes-Benz<br />\n- welch verrückte Konstellation...</p>",
+			"htmlEn": "<p>Aluminium straight-eight engine,<br>\n4 litres, 80 PS,<br>\ntwin overhead camshafts with vertical-shaft drive — exceptionally sophisticated engineering for 1928.<br>\n<br>\nA remarkable example of German automotive engineering, then as now. This distinctive engine was designed by Paul Daimler, Horch’s chief designer and son of Gottlieb Daimler, while working for one of Mercedes-Benz’s major competitors.<br>\nAn extraordinary connection…</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 21 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier der Aluminium-Motorblock beim passgenauen Herstellen (Spindeln) der Kurbelwellen-Lagergasse.</p>"
+			"html": "<p>Hier der Aluminium-Motorblock beim passgenauen Herstellen (Spindeln) der Kurbelwellen-Lagergasse.</p>",
+			"htmlEn": "<p>Precision line-boring of the crankshaft bearing tunnel in the aluminium block.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 25 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nFeinste Vorbereitungsarbeiten u.a. mit neu angefertigten Kurbelwellen-, Nockenwellen- und Pleuellagern, nebst eigens angefertigter Spezialkolben...</p>"
+			"html": "<p><br />\n<br />\n<br />\nFeinste Vorbereitungsarbeiten u.a. mit neu angefertigten Kurbelwellen-, Nockenwellen- und Pleuellagern, nebst eigens angefertigter Spezialkolben...</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\nMeticulous preparation, including newly made crankshaft, camshaft and connecting-rod bearings and specially manufactured pistons.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 27 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Spindeln der neuen Lagergassen für die beiden Nockenwellen im Zylinderkopf.</p>"
+			"html": "<p>Spindeln der neuen Lagergassen für die beiden Nockenwellen im Zylinderkopf.</p>",
+			"htmlEn": "<p>Line-boring the new bearing tunnels for both camshafts in the cylinder head.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die beiden mächtigen obenliegenden Nockenwellen mit Spezialverzahnung, das ganze garniert mit<br />\n&quot;Königswellen&quot;-Antrieb.</p>"
+			"html": "<p>Die beiden mächtigen obenliegenden Nockenwellen mit Spezialverzahnung, das ganze garniert mit<br />\n&quot;Königswellen&quot;-Antrieb.</p>",
+			"htmlEn": "<p>The two large overhead camshafts with special gearing, complete with<br>\nvertical-shaft drive.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Motorenbaukunst... - wohlgemerkt anno 1928!</p>"
+			"html": "<p>Motorenbaukunst... - wohlgemerkt anno 1928!</p>",
+			"htmlEn": "<p>Engine-building artistry from 1928.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 28 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nNach den aufwendigen und auch aus heutiger Sicht hochkomplexen Montagearbeiten sämtlicher Motorkomponenten, konnte der Motor erstmals nach Jahrzehnten wieder auf seinen ersten Prüfstandslauf vorbereitet werden.<br />\nDas Ergebnis: Ein seidenweich ruhiger Lauf. Umwerfend...! Einzigartig...! <br />\nEhrfurcht - vor der knapp einhundert Jahre alten Technik mit hoher Laufkultur!<br />\nSelbst für unsere erfahrenen Techniker und Restauratoren.</p>"
+			"html": "<p><br />\n<br />\nNach den aufwendigen und auch aus heutiger Sicht hochkomplexen Montagearbeiten sämtlicher Motorkomponenten, konnte der Motor erstmals nach Jahrzehnten wieder auf seinen ersten Prüfstandslauf vorbereitet werden.<br />\nDas Ergebnis: Ein seidenweich ruhiger Lauf. Umwerfend...! Einzigartig...! <br />\nEhrfurcht - vor der knapp einhundert Jahre alten Technik mit hoher Laufkultur!<br />\nSelbst für unsere erfahrenen Techniker und Restauratoren.</p>",
+			"htmlEn": "<p><br>\n<br>\nAfter painstaking assembly, complex even by modern standards, the engine was prepared for its first test-bench run in decades.<br>\nThe result: silky-smooth running. Remarkable and unique. <br>\nAlmost century-old engineering with such refinement inspires respect,<br>\neven among our experienced technicians and restorers.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 29 in the vehicle record"
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 32 in the vehicle record"
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 33 in the vehicle record"
 				},
 				{
 					"src": "./image-034.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 34 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch das massive Getriebe mit allen Lagern und der 9 Scheiben-Kupplung mit angeflanschtem &quot;Servo&quot;-Unterdruck-Bremsgerät &quot;DeWandre&quot; wurden aufwendig überholt.<br />\n<br /></p>"
+			"html": "<p>Auch das massive Getriebe mit allen Lagern und der 9 Scheiben-Kupplung mit angeflanschtem &quot;Servo&quot;-Unterdruck-Bremsgerät &quot;DeWandre&quot; wurden aufwendig überholt.<br />\n<br /></p>",
+			"htmlEn": "<p>We also extensively overhauled the substantial gearbox, all bearings, nine-plate clutch and attached Dewandre vacuum brake servo.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-035.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 35 in the vehicle record"
 				},
 				{
 					"src": "./image-036.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 36 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nHier ein Teil der unzähligen neu angefertigten bzw. aufgearbeiteten Zier- und Anbauteile.</p>"
+			"html": "<p><br />\n<br />\n<br />\nHier ein Teil der unzähligen neu angefertigten bzw. aufgearbeiteten Zier- und Anbauteile.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\nSome of the countless newly made or refurbished trim pieces and fittings.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-037.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 37 in the vehicle record"
 				},
 				{
 					"src": "./image-038.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 38 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nDas &quot;gekrönte&quot; HORCH Emblem und der &quot;geflügelte&quot; HORCH Pfeil - quasi die &quot;Krone&quot; der Automobilbau-&quot;Kunst&quot;.</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\nDas &quot;gekrönte&quot; HORCH Emblem und der &quot;geflügelte&quot; HORCH Pfeil - quasi die &quot;Krone&quot; der Automobilbau-&quot;Kunst&quot;.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nThe crowned Horch badge and winged arrow — symbols of excellence in automotive design.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-039.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 39 in the vehicle record"
 				},
 				{
 					"src": "./image-040.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 40 in the vehicle record"
 				},
 				{
 					"src": "./image-041.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 41 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nWas für ein Auto...!!!</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nWas für ein Auto...!!!</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\nWhat a car!</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Schon aus dieser Perspektive und selbst in diesem &quot;Rohbau&quot; Zustand, lässt sich die schiere Größe und Exklusivität dieses HORCH Luxusautomobils erkennen.</p>"
+			"html": "<p>Schon aus dieser Perspektive und selbst in diesem &quot;Rohbau&quot; Zustand, lässt sich die schiere Größe und Exklusivität dieses HORCH Luxusautomobils erkennen.</p>",
+			"htmlEn": "<p>Even from this angle and in unfinished form, the scale and exclusivity of this Horch luxury car are evident.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die Zwickauer Firma HORCH war damals mit dieser Modellreihe in der automobilen Luxusklasse der großen 8 Zylinder führend und beherrschte diesen Markt wie kein anderer deutscher Hersteller. Immerhin wurden vom HORCH 8 Typ 350 knapp 3000 Exemplare in den unterschiedlichsten Karosserieausführungen gebaut.</p>"
+			"html": "<p>Die Zwickauer Firma HORCH war damals mit dieser Modellreihe in der automobilen Luxusklasse der großen 8 Zylinder führend und beherrschte diesen Markt wie kein anderer deutscher Hersteller. Immerhin wurden vom HORCH 8 Typ 350 knapp 3000 Exemplare in den unterschiedlichsten Karosserieausführungen gebaut.</p>",
+			"htmlEn": "<p>With this model range, Horch led Germany’s large eight-cylinder luxury segment. Almost 3,000 Horch 8 Type 350s were built in various body styles.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-042.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 42 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAuch das Problem der originalgetreuen 4-Farben-Premium-Lackierung einschl. Zierlinierungen konnte von unseren Lackprofis bestens gelöst werden.</p>"
+			"html": "<p><br />\n<br />\nAuch das Problem der originalgetreuen 4-Farben-Premium-Lackierung einschl. Zierlinierungen konnte von unseren Lackprofis bestens gelöst werden.</p>",
+			"htmlEn": "<p><br>\n<br>\nOur paint specialists also mastered the authentic four-colour finish and coachlines.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-043.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 43 in the vehicle record"
 				},
 				{
 					"src": "./image-044.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 44 in the vehicle record"
 				},
 				{
 					"src": "./image-045.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 45 in the vehicle record"
 				},
 				{
 					"src": "./image-046.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 46 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 46 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 46 in the vehicle record"
 				},
 				{
 					"src": "./image-047.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 47 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 47 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 47 in the vehicle record"
 				},
 				{
 					"src": "./image-048.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 48 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 48 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 48 in the vehicle record"
 				}
 			]
 		},
@@ -415,20 +487,23 @@
 			"images": [
 				{
 					"src": "./image-049.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 49 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 49 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 49 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier der mit großem Aufwand und technischem Können fertig restaurierte 8 Zylinder Motor mit 4 Litern Hubraum und 80 PS Leistung.<br />\n<br /></p>"
+			"html": "<p>Hier der mit großem Aufwand und technischem Können fertig restaurierte 8 Zylinder Motor mit 4 Litern Hubraum und 80 PS Leistung.<br />\n<br /></p>",
+			"htmlEn": "<p>The completed eight-cylinder engine, restored with immense effort and expertise: 4 litres, 80 PS.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-050.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 50 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 50 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 50 in the vehicle record"
 				}
 			]
 		},
@@ -437,7 +512,8 @@
 			"images": [
 				{
 					"src": "./image-051.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 51 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 51 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 51 in the vehicle record"
 				}
 			]
 		},
@@ -446,20 +522,23 @@
 			"images": [
 				{
 					"src": "./image-052.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 52 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 52 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 52 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Das stylistisch gekrönte HORCH Emblem und der geflügelte Pfeil symbolisierten schon damals den Anspruch nach einem Automobil der Königsklasse.<br />\n<br />\n<br /></p>"
+			"html": "<p>Das stylistisch gekrönte HORCH Emblem und der geflügelte Pfeil symbolisierten schon damals den Anspruch nach einem Automobil der Königsklasse.<br />\n<br />\n<br /></p>",
+			"htmlEn": "<p>The crowned Horch badge and winged arrow already expressed the marque’s ambition to build cars of the highest class.<br>\n<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-053.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 53 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 53 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 53 in the vehicle record"
 				}
 			]
 		},
@@ -468,103 +547,129 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 54 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 54 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 54 in the vehicle record"
 				},
 				{
 					"src": "./image-054.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 55 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 55 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 55 in the vehicle record"
 				},
 				{
 					"src": "./image-055.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 56 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 56 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 56 in the vehicle record"
 				},
 				{
 					"src": "./image-056.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 57 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 57 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 57 in the vehicle record"
 				},
 				{
 					"src": "./image-057.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 58 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 58 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 58 in the vehicle record"
 				},
 				{
 					"src": "./image-058.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 59 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 59 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 59 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach den aufwendigen Lackier-, Galvanik- und Sattlerarbeiten wurde der Wagen von uns auch in allen Technik- und Elektrikdetails fertiggestellt.</p>"
+			"html": "<p>Nach den aufwendigen Lackier-, Galvanik- und Sattlerarbeiten wurde der Wagen von uns auch in allen Technik- und Elektrikdetails fertiggestellt.</p>",
+			"htmlEn": "<p>Following extensive paint, electroplating and upholstery work, we completed every mechanical and electrical detail.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-059.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 60 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 60 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 60 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Und nun das historisch Besondere:</p>"
+			"html": "<p>Und nun das historisch Besondere:</p>",
+			"htmlEn": "<p>Now for a particular historical detail:</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein Originalfoto mit genau diesem Fahrzeug, anno 1928.</p>"
+			"html": "<p>Ein Originalfoto mit genau diesem Fahrzeug, anno 1928.</p>",
+			"htmlEn": "<p>an original photograph of this very vehicle in 1928.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Bei dem links stehenden Herrn mit Melone handelt es sich um keinen Geringeren als um den damals ranghöchsten Politiker und Reichspräsidenten der Weimarer Republik, Paul von Hindenburg.</p>"
+			"html": "<p>Bei dem links stehenden Herrn mit Melone handelt es sich um keinen Geringeren als um den damals ranghöchsten Politiker und Reichspräsidenten der Weimarer Republik, Paul von Hindenburg.</p>",
+			"htmlEn": "<p>The man wearing a bowler hat on the left is Paul von Hindenburg, then President of the Weimar Republic.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach jahrelangen, gründlichen Recherchen soll es sich bei dem hier durch uns bestens restaurierten Fahrzeug - und mit dieser speziellen Karosserieausführung - um das Originalfahrzeug um den damaligen Reichspräsidenten Paul von Hindenburg handeln - ein gefertigtes Einzelstück als sog. &quot;Flanier- und Paradewagen&quot; der Firma Hornig aus Meerane.</p>"
+			"html": "<p>Nach jahrelangen, gründlichen Recherchen soll es sich bei dem hier durch uns bestens restaurierten Fahrzeug - und mit dieser speziellen Karosserieausführung - um das Originalfahrzeug um den damaligen Reichspräsidenten Paul von Hindenburg handeln - ein gefertigtes Einzelstück als sog. &quot;Flanier- und Paradewagen&quot; der Firma Hornig aus Meerane.</p>",
+			"htmlEn": "<p>Years of detailed research suggest this restored car, with its special body, was associated with President Paul von Hindenburg: a one-off touring and parade car by Hornig of Meerane.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein aufwendiger und originalgetreuer Neuaufbau und eine bestens gelungene und nachfolgend hoch prämierte Vollrestauration aus unserer OLDTIMERMANUFAKTUR konnte im Anschluss erstmals einer breiten Öffentlichkeit vorgestellt werden.</p>"
+			"html": "<p>Ein aufwendiger und originalgetreuer Neuaufbau und eine bestens gelungene und nachfolgend hoch prämierte Vollrestauration aus unserer OLDTIMERMANUFAKTUR konnte im Anschluss erstmals einer breiten Öffentlichkeit vorgestellt werden.</p>",
+			"htmlEn": "<p>Following an extensive, faithful rebuild, this successful and subsequently award-winning restoration from Die Oldtimermanufaktur could be presented to a wider public.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Anlässlich des &quot;European Concours de Elegance&quot; zur sog. &quot;ClassicGala&quot; im Barockschloss von Schwetzingen (Baden Württemberg) wurden wir eingeladen den Wagen dort unter den bestrestaurierten Fahrzeugen zu präsentieren.</p>"
+			"html": "<p>Anlässlich des &quot;European Concours de Elegance&quot; zur sog. &quot;ClassicGala&quot; im Barockschloss von Schwetzingen (Baden Württemberg) wurden wir eingeladen den Wagen dort unter den bestrestaurierten Fahrzeugen zu präsentieren.</p>",
+			"htmlEn": "<p>We were invited to show it among outstanding restorations at the European Concours d’Elegance during ClassicGala at Schwetzingen’s Baroque palace in Baden-Württemberg.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-060.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 61 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 61 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 61 in the vehicle record"
 				},
 				{
 					"src": "./image-061.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 62 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 62 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 62 in the vehicle record"
 				},
 				{
 					"src": "./image-062.jpg",
-					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 63 der Fahrzeugdokumentation"
+					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Aufnahme 63 der Fahrzeugdokumentation",
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – photograph 63 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Das Ergebnis: Gleich 3 Preise und Pokale für dieses besondere Fahrzeug und diese von uns durchgeführte erstklassige Vollrestauration.</p>"
+			"html": "<p>Das Ergebnis: Gleich 3 Preise und Pokale für dieses besondere Fahrzeug und diese von uns durchgeführte erstklassige Vollrestauration.</p>",
+			"htmlEn": "<p>The result: three awards and trophies for this special car and our first-class restoration.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>1. Platz</strong> &quot;Best of Show&quot; für den bestrestaurierten Wagen</p>"
+			"html": "<p><strong>1. Platz</strong> &quot;Best of Show&quot; für den bestrestaurierten Wagen</p>",
+			"htmlEn": "<p><strong>first prize,</strong> “Best of Show” for the best-restored car.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>1. Platz</strong> &quot;Best of ClassicGala&quot; / &quot;Star of Classics&quot; als Gesamtsieger</p>"
+			"html": "<p><strong>1. Platz</strong> &quot;Best of ClassicGala&quot; / &quot;Star of Classics&quot; als Gesamtsieger</p>",
+			"htmlEn": "<p><strong>first prize,</strong> “Best of ClassicGala” / “Star of Classics” as overall winner.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>2. Platz</strong> &quot;Hans Hedtke-Preis&quot;</p>"
+			"html": "<p><strong>2. Platz</strong> &quot;Hans Hedtke-Preis&quot;</p>",
+			"htmlEn": "<p><strong>Second place.</strong> “Hans Hedtke Prize”.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Es erfüllt unser gesamtes Team mit großem Stolz, dass auch eine mehr als 30-köpfige internationale Fachjury die Qualität unserer Arbeiten und das herausragende Ergebnis gebührend würdigt - auch um ein solch wichtiges und einmaliges Zeitzeugnis der deutschen Autobilbaugeschichte für die Nachwelt erhalten zu können.</p>"
+			"html": "<p>Es erfüllt unser gesamtes Team mit großem Stolz, dass auch eine mehr als 30-köpfige internationale Fachjury die Qualität unserer Arbeiten und das herausragende Ergebnis gebührend würdigt - auch um ein solch wichtiges und einmaliges Zeitzeugnis der deutschen Autobilbaugeschichte für die Nachwelt erhalten zu können.</p>",
+			"htmlEn": "<p>Our entire team is proud that an international jury of more than thirty experts recognised the quality and outstanding result of our work, helping preserve this unique witness to German automotive history.</p>"
 		}
-	]
+	],
+	"titleEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car”",
+	"descriptionEn": "One of the rarest and most exclusive pre-war cars: a Zwickau-built Horch 8 Type 350 with seven-seat open touring and parade coachwork by Hornig of Meerane. A unique vehicle,…",
+	"cardImageAltEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car”",
+	"leadImageAltEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – vehicle record"
 }

@@ -14,18 +14,21 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Dieses äußerst seltene 4-türige BMW 326 Reise-Cabriolet mit einer Sonderkarosserie von “Autenrieth” wurde bei uns einer umfangreichen Komplettrestauration unterzogen.</p>"
+			"html": "<p>Dieses äußerst seltene 4-türige BMW 326 Reise-Cabriolet mit einer Sonderkarosserie von “Autenrieth” wurde bei uns einer umfangreichen Komplettrestauration unterzogen.</p>",
+			"htmlEn": "<p>This exceptionally rare four-door BMW 326 touring cabriolet with special Autenrieth coachwork received an extensive full restoration.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die Ausgangsbasis schien in einem recht verbrauchten aber dennoch kompletten Erhaltungszustand und bildete somit die ideale Substanz für eine Vollrestauration in unserer Manufaktur.</p>"
+			"html": "<p>Die Ausgangsbasis schien in einem recht verbrauchten aber dennoch kompletten Erhaltungszustand und bildete somit die ideale Substanz für eine Vollrestauration in unserer Manufaktur.</p>",
+			"htmlEn": "<p>Its worn but apparently complete starting condition provided a good basis for restoration at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 1 in the vehicle record"
 				}
 			]
 		},
@@ -34,7 +37,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -43,20 +47,23 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dabei wurde neben den umfangreichen Blecharbeiten auch der gesamte Holzskelettaufbau einschließlich aller Verdeckspriegel erneuert.</p>"
+			"html": "<p>Dabei wurde neben den umfangreichen Blecharbeiten auch der gesamte Holzskelettaufbau einschließlich aller Verdeckspriegel erneuert.</p>",
+			"htmlEn": "<p>Alongside extensive metalwork, we renewed the entire timber framework and all hood bows.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -65,24 +72,28 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer gesamte Zierrat der prägnanten Frontmaske wurde ebenso aufwendig wie detailgetreu nachgefertigt.</p>"
+			"html": "<p><br />\nDer gesamte Zierrat der prägnanten Frontmaske wurde ebenso aufwendig wie detailgetreu nachgefertigt.</p>",
+			"htmlEn": "<p><br>\nAll the distinctive front trim was painstakingly reproduced in detail.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier die perfekt abgeschlossenen Karosseriearbeiten einschließlich aller Anbau- und Zierteile.</p>"
+			"html": "<p>Hier die perfekt abgeschlossenen Karosseriearbeiten einschließlich aller Anbau- und Zierteile.</p>",
+			"htmlEn": "<p>Completed bodywork, including all fittings and trim.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -91,7 +102,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -100,7 +112,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -109,20 +122,23 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>In unserer mechanischen Werkstatt wurden sämtliche zugehörigen technischen Komponenten wie Motor, Getriebe, Achsen, Stossdämpfer und dgl. umfangreich revidiert.</p>"
+			"html": "<p>In unserer mechanischen Werkstatt wurden sämtliche zugehörigen technischen Komponenten wie Motor, Getriebe, Achsen, Stossdämpfer und dgl. umfangreich revidiert.</p>",
+			"htmlEn": "<p>Our mechanical workshop extensively overhauled the engine, gearbox, axles, dampers and related components.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -131,7 +147,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -140,20 +157,23 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 12 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch die gesamte Innenausstattung, einschließlich dem aufwendigen Cabrioletverdeck wurde in unserer Autosattlerei sehr originalgetreu neu gebaut.</p>"
+			"html": "<p>Auch die gesamte Innenausstattung, einschließlich dem aufwendigen Cabrioletverdeck wurde in unserer Autosattlerei sehr originalgetreu neu gebaut.</p>",
+			"htmlEn": "<p>Our upholstery shop faithfully recreated the complete interior and elaborate convertible hood.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -162,20 +182,23 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier das perfekt restaurierte und historisch äußerst wertvolle und absolut authentische Endergebnis - Eine AUGENWEIDE...</p>"
+			"html": "<p>Hier das perfekt restaurierte und historisch äußerst wertvolle und absolut authentische Endergebnis - Eine AUGENWEIDE...</p>",
+			"htmlEn": "<p>The beautifully restored, historically valuable and authentic result — a feast for the eyes.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -184,7 +207,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 16 in the vehicle record"
 				}
 			]
 		},
@@ -193,7 +217,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -202,7 +227,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 18 in the vehicle record"
 				}
 			]
 		},
@@ -211,7 +237,8 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 19 in the vehicle record"
 				}
 			]
 		},
@@ -220,7 +247,8 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -229,7 +257,8 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 21 in the vehicle record"
 				}
 			]
 		},
@@ -238,13 +267,19 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – photograph 22 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Von diesem sehr kostbaren Stück Automobilbaugeschichte, wurden in der hier gezeigten 4-türigen Cabriolet-Ausführung - und auf besonderen Kundenwunsch - nur sehr wenige Exemplare, beim damals renommierten Karosserieschneider “Autenrieth” in Darmstadt, gebaut.</p>"
+			"html": "<p>Von diesem sehr kostbaren Stück Automobilbaugeschichte, wurden in der hier gezeigten 4-türigen Cabriolet-Ausführung - und auf besonderen Kundenwunsch - nur sehr wenige Exemplare, beim damals renommierten Karosserieschneider “Autenrieth” in Darmstadt, gebaut.</p>",
+			"htmlEn": "<p>Only a few examples of this precious automotive design were built with four-door cabriolet coachwork to special order by the renowned Autenrieth firm in Darmstadt.</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939",
+	"descriptionEn": "This exceptionally rare four-door BMW 326 touring cabriolet with special Autenrieth coachwork received an extensive full restoration.",
+	"cardImageAltEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939",
+	"leadImageAltEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – vehicle record"
 }

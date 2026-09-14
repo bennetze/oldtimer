@@ -14,14 +14,16 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Hier wieder ein EMW 327-2 Sportcabriolet, Baujahr 1952;<br />\n<br />\ngebaut bei den Eisenacher- Motoren-Werken in Thüringen, der nach einer umfangreichen und sehr originalgetreuen Komplettrestauration hier in unserer Manufaktur wieder zu einem neuen Leben erwachen durfte.</p>"
+			"html": "<p>Hier wieder ein EMW 327-2 Sportcabriolet, Baujahr 1952;<br />\n<br />\ngebaut bei den Eisenacher- Motoren-Werken in Thüringen, der nach einer umfangreichen und sehr originalgetreuen Komplettrestauration hier in unserer Manufaktur wieder zu einem neuen Leben erwachen durfte.</p>",
+			"htmlEn": "<p>Another 1952 EMW 327-2 Sport Cabriolet,<br>\n<br>\nbuilt at Eisenacher Motorenwerke in Thuringia, brought back to life through an extensive, faithful full restoration at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 1 in the vehicle record"
 				}
 			]
 		},
@@ -30,7 +32,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -39,20 +42,23 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dabei wurde neben umfangreichen Karosseriearbeiten unter anderem auch das gesamte tragende Holzskelett erneuert.</p>"
+			"html": "<p>Dabei wurde neben umfangreichen Karosseriearbeiten unter anderem auch das gesamte tragende Holzskelett erneuert.</p>",
+			"htmlEn": "<p>Alongside extensive bodywork, we renewed the complete load-bearing timber framework.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -61,7 +67,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -70,7 +77,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -79,20 +87,23 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 7 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Während der umfangreichen Karosseriearbeiten, wurden in unserer mechanischen Werkstatt bereits sämtliche technischen Komponenten wie Motor, Achsen, Getriebe, Instrumente u.dgl. revidiert.</p>"
+			"html": "<p>Während der umfangreichen Karosseriearbeiten, wurden in unserer mechanischen Werkstatt bereits sämtliche technischen Komponenten wie Motor, Achsen, Getriebe, Instrumente u.dgl. revidiert.</p>",
+			"htmlEn": "<p>While bodywork continued, our mechanical workshop overhauled the engine, axles, gearbox, instruments and other components.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -101,7 +112,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -110,33 +122,38 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 10 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch die Sitze erhielten einen neuen Holzrahmen und wurden für einen optimalen Sitzkomfort mit maßgeschneiderten Federkernen versehen.</p>"
+			"html": "<p><br />\nAuch die Sitze erhielten einen neuen Holzrahmen und wurden für einen optimalen Sitzkomfort mit maßgeschneiderten Federkernen versehen.</p>",
+			"htmlEn": "<p><br>\nThe seats received new timber frames and tailored spring units for optimal comfort.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach der aufwendigen Lackierung in den beiden zeitgenössischen Farben einschliesslich der originalgetreuen Linierungen, wurde das Fahrzeug in unserer Fertigmacherei wieder komplettiert und in allen Details fertig gestellt.</p>"
+			"html": "<p><br />\nNach der aufwendigen Lackierung in den beiden zeitgenössischen Farben einschliesslich der originalgetreuen Linierungen, wurde das Fahrzeug in unserer Fertigmacherei wieder komplettiert und in allen Details fertig gestellt.</p>",
+			"htmlEn": "<p><br>\nFollowing elaborate period two-tone paintwork and authentic coachlines, our finishing department assembled and completed the car in every detail.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -145,7 +162,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -154,33 +172,38 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dabei wurde in unserer hauseigenen Autosattlerei auch die gesamte Inneneinrichtung inklusive des Cabrioletverdecks neu angefertigt.</p>"
+			"html": "<p>Dabei wurde in unserer hauseigenen Autosattlerei auch die gesamte Inneneinrichtung inklusive des Cabrioletverdecks neu angefertigt.</p>",
+			"htmlEn": "<p>Our in-house upholstery shop also recreated the entire interior and convertible hood.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 15 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Das Ergebnis stellt einmal mehr - ein von Grund auf restauriertes Top-Exemplar eines sehr seltenen und äusserst originalgetreuen EMW 327 Sportcabriolets dar.</p>"
+			"html": "<p>Das Ergebnis stellt einmal mehr - ein von Grund auf restauriertes Top-Exemplar eines sehr seltenen und äusserst originalgetreuen EMW 327 Sportcabriolets dar.</p>",
+			"htmlEn": "<p>The result is another exceptional example of the rare EMW 327 Sport Cabriolet, faithfully restored from the ground up.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 16 in the vehicle record"
 				}
 			]
 		},
@@ -189,7 +212,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -198,7 +222,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 18 in the vehicle record"
 				}
 			]
 		},
@@ -207,7 +232,8 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 19 in the vehicle record"
 				}
 			]
 		},
@@ -216,7 +242,8 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -225,7 +252,8 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 21 in the vehicle record"
 				}
 			]
 		},
@@ -234,7 +262,8 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 22 in the vehicle record"
 				}
 			]
 		},
@@ -243,7 +272,8 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 23 in the vehicle record"
 				}
 			]
 		},
@@ -252,13 +282,19 @@
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – photograph 24 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Bilder, ohne Worte...</p>"
+			"html": "<p>Bilder, ohne Worte...</p>",
+			"htmlEn": "<p>Pictures without words…</p>"
 		}
-	]
+	],
+	"titleEn": "EMW 327-2 Sport Cabriolet, year 1952",
+	"descriptionEn": "Another 1952 EMW 327-2 Sport Cabriolet, built at Eisenacher Motorenwerke in Thuringia, brought back to life through an extensive, faithful full restoration at our workshop.",
+	"cardImageAltEn": "EMW 327-2 Sport Cabriolet, year 1952",
+	"leadImageAltEn": "EMW 327-2 Sport Cabriolet, year 1952 – vehicle record"
 }

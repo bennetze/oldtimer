@@ -9,6 +9,9 @@ import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
 import { siteStatus } from '../config/site';
 
 interface Props {
+	authoredTitle?: boolean;
+	authoredDescription?: boolean;
+	authoredImageAlt?: boolean;
 	title?: string;
 	description?: string;
 	noindex?: boolean;
@@ -19,13 +22,14 @@ interface Props {
 	dateModified?: string;
 	additionalJsonLd?: Record<string, unknown> | Record<string, unknown>[];
 	mainEntityId?: string;
-	breadcrumbs?: Array<{ name: string; path: string }>;
+	breadcrumbs?: Array<{ name: string; path: string; authored?: boolean }>;
 }
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
 const {
+	authoredTitle = false, authoredDescription = false, authoredImageAlt = false,
 	title,
 	description = 'Die Oldtimermanufaktur restauriert klassische Automobile mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte.',
 	noindex = false,
@@ -62,6 +66,7 @@ const extraJsonLdNodes = Array.isArray(additionalJsonLd)
 	: [additionalJsonLd];
 const webpageData: Record<string, unknown> = {
 	'@type': structuredDataType,
+	__authored: [...(authoredTitle ? ['name'] : []), ...(authoredDescription ? ['description'] : [])],
 	'@id': webpageId,
 	url: pageUrl.href,
 	name: pageTitle,
@@ -119,6 +124,7 @@ const jsonLdGraph: Record<string, unknown>[] = [
 		width: openGraphImage.width,
 		height: openGraphImage.height,
 		caption: openGraphImageAlt,
+		__authored: authoredImageAlt ? ['caption'] : [],
 	},
 	webpageData,
 ];
@@ -141,6 +147,7 @@ if (breadcrumbItems.length) {
 			'@type': 'ListItem',
 			position: index + 1,
 			name: item.name,
+			__authored: item.authored ? ['name'] : [],
 			item:
 				item.path === '/'
 					? siteRootUrl.href
@@ -171,26 +178,26 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 		<link rel="apple-touch-icon" href={`${basePath}apple-touch-icon.png`} />
 		<link rel="sitemap" type="application/xml" title="Sitemap" href={sitemapUrl.href} />
 		<link rel="alternate" type="text/markdown" title="llms.txt" href={llmsUrl.href} />
-		<meta name="description" content={description} />
+		<meta name="description" data-authored={authoredDescription || undefined} content={description} />
 		<meta name="date" content={dateModified} />
 		{effectiveNoindex && <meta name="robots" content="noindex,follow,noarchive" />}
 		{!effectiveNoindex && <meta name="robots" content="index,follow,max-image-preview:large" />}
 		{!effectiveNoindex && <link rel="canonical" href={pageUrl.href} />}
-		<meta property="og:title" content={pageTitle} />
+		<meta property="og:title" data-authored={authoredTitle || undefined} content={pageTitle} />
 		<meta property="og:type" content={openGraphType} />
 		<meta property="og:image" content={openGraphImageUrl} />
 		<meta property="og:image:secure_url" content={openGraphImageUrl} />
 		<meta property="og:image:type" content={openGraphImageType} />
 		<meta property="og:image:width" content={String(openGraphImage.width)} />
 		<meta property="og:image:height" content={String(openGraphImage.height)} />
-		<meta property="og:image:alt" content={openGraphImageAlt} />
+		<meta property="og:image:alt" data-authored={authoredImageAlt || undefined} content={openGraphImageAlt} />
 		<meta property="og:url" content={pageUrl.href} />
-		<meta property="og:description" content={description} />
+		<meta property="og:description" data-authored={authoredDescription || undefined} content={description} />
 		<meta property="og:locale" content="de_DE" />
 		<meta property="og:site_name" content="Die Oldtimermanufaktur" />
 		{!effectiveNoindex && <script type="application/ld+json" set:html={jsonLd} />}
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+		<title data-authored={authoredTitle || undefined}>{pageTitle}</title>
 		<script is:inline set:html={languageScript} />
 		<script is:inline set:html={safariScript} />
 	</head>

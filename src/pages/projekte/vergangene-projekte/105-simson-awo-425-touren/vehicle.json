@@ -17,34 +17,44 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "SIMSON AWO 425 Touren, year 1954 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br /><br /><br />Hier eine weitere bei uns TOP restaurierte &quot;Touren AWO&quot; des Baujahres 1954.</p>"
+			"html": "<p><br /><br /><br />Hier eine weitere bei uns TOP restaurierte &quot;Touren AWO&quot; des Baujahres 1954.</p>",
+			"htmlEn": "<p><br><br><br>Another superbly restored 1954 AWO touring motorcycle from our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "SIMSON AWO 425 Touren, year 1954 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "SIMSON AWO 425 Touren, year 1954 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Ausgangszustand war zwar weitgehend komplett, aber wenig original und über die Jahrzehnte doch &quot;sehr verbraucht&quot;, aber immerhin &quot;nummerngleich&quot;.</p>"
+			"html": "<p>Der Ausgangszustand war zwar weitgehend komplett, aber wenig original und über die Jahrzehnte doch &quot;sehr verbraucht&quot;, aber immerhin &quot;nummerngleich&quot;.</p>",
+			"htmlEn": "<p>Largely complete but far from original and heavily worn over the decades, it nevertheless retained matching numbers.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die Maschine wurde im Kundenauftrag sehr perfekt und originalgetreu restauriert und ist damit nicht nur optisch ein Leckerbissen, sondern macht auch fahrtechnisch umso größeren Spaß...</p>"
+			"html": "<p>Die Maschine wurde im Kundenauftrag sehr perfekt und originalgetreu restauriert und ist damit nicht nur optisch ein Leckerbissen, sondern macht auch fahrtechnisch umso größeren Spaß...</p>",
+			"htmlEn": "<p>We restored the motorcycle faithfully and to an exceptional standard for its owner. It is now a pleasure to look at and even more enjoyable to ride…</p>"
 		}
-	]
+	],
+	"titleEn": "SIMSON AWO 425 Touren, year 1954",
+	"descriptionEn": "Largely complete but far from original and heavily worn over the decades, it nevertheless retained matching numbers.",
+	"cardImageAltEn": "SIMSON AWO 425 Touren, year 1954",
+	"leadImageAltEn": "SIMSON AWO 425 Touren, year 1954 – vehicle record"
 }

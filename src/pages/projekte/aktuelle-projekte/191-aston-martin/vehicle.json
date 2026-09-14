@@ -17,87 +17,103 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\nHier ein seltener ASTON MARTIN als DB 2/4 Coupe des Baujahres 1957.</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\nHier ein seltener ASTON MARTIN als DB 2/4 Coupe des Baujahres 1957.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\n<br>\nA rare 1957 Aston Martin DB 2/4 Coupé.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nMotor 6 Zylinder, 3 Liter Hubraum,<br />\n2 obenliegende Nockenwellen, bis zu 165PS Leistung</p>"
+			"html": "<p><br />\nMotor 6 Zylinder, 3 Liter Hubraum,<br />\n2 obenliegende Nockenwellen, bis zu 165PS Leistung</p>",
+			"htmlEn": "<p><br>\nSix-cylinder engine, 3 litres,<br>\ntwin overhead camshafts, up to 165 PS.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 6 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dabei handelte es sich im Grunde genommen zwar um ein vollständiges und bedingt fahrbares Auto, allerdings behaftet mit allerlei Lack- und Karosserieschäden.</p>"
+			"html": "<p>Dabei handelte es sich im Grunde genommen zwar um ein vollständiges und bedingt fahrbares Auto, allerdings behaftet mit allerlei Lack- und Karosserieschäden.</p>",
+			"htmlEn": "<p>The car was essentially complete and could be driven to a limited extent, but it had numerous paint and body defects.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Im Laufe der Jahrzehnte wohl mal verunfallt und mit eher fragwürdigen Reparaturmethoden instandgesetzt, entpuppten sich die vermeintlichen &quot;Lack&quot;-schäden im Untergrund als massive Karosserieschäden, die wohl leider stets nur mit teils zentimeterdicken Spachtelschichten quasi zumodelliert wurden, was mit fachgerechter Instandsetzung im Allgemeinen und speziellem Aluminium-Karosseriebau im Besonderen eben auch gar nichts mehr zu tun hat.</p>"
+			"html": "<p>Im Laufe der Jahrzehnte wohl mal verunfallt und mit eher fragwürdigen Reparaturmethoden instandgesetzt, entpuppten sich die vermeintlichen &quot;Lack&quot;-schäden im Untergrund als massive Karosserieschäden, die wohl leider stets nur mit teils zentimeterdicken Spachtelschichten quasi zumodelliert wurden, was mit fachgerechter Instandsetzung im Allgemeinen und speziellem Aluminium-Karosseriebau im Besonderen eben auch gar nichts mehr zu tun hat.</p>",
+			"htmlEn": "<p>Apparently damaged in an accident decades ago and subsequently repaired using questionable methods, the supposed paint defects proved to conceal severe body damage. This had repeatedly been covered with filler, sometimes centimetres thick — a far cry from professional repair, particularly when working with aluminium bodywork.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -106,15 +122,18 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -123,15 +142,18 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 18 in the vehicle record"
 				}
 			]
 		},
@@ -140,32 +162,38 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 20 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Unter unzähligen Lack- und Spachtelschichten die teils gravierenden Karosserieschäden.</p>"
+			"html": "<p>Unter unzähligen Lack- und Spachtelschichten die teils gravierenden Karosserieschäden.</p>",
+			"htmlEn": "<p>Severe body damage beneath countless layers of paint and filler.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 23 in the vehicle record"
 				}
 			]
 		},
@@ -174,57 +202,68 @@
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 25 in the vehicle record"
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 26 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier die inzwischen &quot;nackte&quot; und vom Spachtelwahn der Vorgänger befreite Karosserie.</p>"
+			"html": "<p>Hier die inzwischen &quot;nackte&quot; und vom Spachtelwahn der Vorgänger befreite Karosserie.</p>",
+			"htmlEn": "<p>The stripped body, finally freed from the excessive filler applied by previous repairers.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-027.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 28 in the vehicle record"
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 29 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nun zeigten sich die massiven Blechschäden und vormals nur dilettantisch vorgenommenen Reparaturversuche in vollem Ausmaß.</p>"
+			"html": "<p>Nun zeigten sich die massiven Blechschäden und vormals nur dilettantisch vorgenommenen Reparaturversuche in vollem Ausmaß.</p>",
+			"htmlEn": "<p>The full extent of the serious panel damage and amateur repairs now became apparent.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 32 in the vehicle record"
 				}
 			]
 		},
@@ -233,36 +272,43 @@
 			"images": [
 				{
 					"src": "./image-033.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 33 in the vehicle record"
 				},
 				{
 					"src": "./image-034.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 34 in the vehicle record"
 				},
 				{
 					"src": "./image-035.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 35 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neuanfertigung und originalgetreue Neuformung des gesamten Heckbereichs aus Aluminium mit Verstärkungen.</p>"
+			"html": "<p>Neuanfertigung und originalgetreue Neuformung des gesamten Heckbereichs aus Aluminium mit Verstärkungen.</p>",
+			"htmlEn": "<p>Fabricating and faithfully reshaping the entire rear section in aluminium, including reinforcements.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 36 in the vehicle record"
 				},
 				{
 					"src": "./image-037.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 37 in the vehicle record"
 				},
 				{
 					"src": "./image-038.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 38 in the vehicle record"
 				}
 			]
 		},
@@ -271,78 +317,93 @@
 			"images": [
 				{
 					"src": "./image-039.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 39 in the vehicle record"
 				},
 				{
 					"src": "./image-040.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 40 in the vehicle record"
 				},
 				{
 					"src": "./image-041.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 41 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch Kotflügel, Türen, Radhäuser, Radläufe u.dgl. und vor allem die gesamte Front, mussten großflächig in Aluminium neu angefertigt werden.</p>"
+			"html": "<p>Auch Kotflügel, Türen, Radhäuser, Radläufe u.dgl. und vor allem die gesamte Front, mussten großflächig in Aluminium neu angefertigt werden.</p>",
+			"htmlEn": "<p>Large areas of the wings, doors, wheel housings, wheel arches and especially the entire front end also had to be newly fabricated in aluminium.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-042.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 42 in the vehicle record"
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 43 in the vehicle record"
 				},
 				{
 					"src": "./image-044.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 44 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Instandsetzung und Verstärkung des statischen Grundrohrrahmens der Motorhaube.</p>"
+			"html": "<p>Instandsetzung und Verstärkung des statischen Grundrohrrahmens der Motorhaube.</p>",
+			"htmlEn": "<p>Repairing and reinforcing the bonnet’s structural tubular frame.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-045.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 45 in the vehicle record"
 				},
 				{
 					"src": "./image-046.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 46 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 46 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 46 in the vehicle record"
 				},
 				{
 					"src": "./image-047.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 47 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 47 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 47 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neugestaltung der gesamten Fahrzeugfront gemäß Kundenwunsch mit Konturen für Frontgrill, Scheinwerfern, Blinkern und Lufteinlässen.</p>"
+			"html": "<p>Neugestaltung der gesamten Fahrzeugfront gemäß Kundenwunsch mit Konturen für Frontgrill, Scheinwerfern, Blinkern und Lufteinlässen.</p>",
+			"htmlEn": "<p>Reshaping the entire front end to the client’s wishes, including the contours for the grille, headlights, indicators and air intakes.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-048.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 48 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 48 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 48 in the vehicle record"
 				},
 				{
 					"src": "./image-049.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 49 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 49 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 49 in the vehicle record"
 				},
 				{
 					"src": "./image-050.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 50 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 50 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 50 in the vehicle record"
 				}
 			]
 		},
@@ -351,34 +412,44 @@
 			"images": [
 				{
 					"src": "./image-051.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 51 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 51 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 51 in the vehicle record"
 				},
 				{
 					"src": "./image-052.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 52 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 52 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 52 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier die nun in allen Details fertig restaurierte Aluminiumkarosserie, mitsamt dem angepassten Zierrat.</p>"
+			"html": "<p>Hier die nun in allen Details fertig restaurierte Aluminiumkarosserie, mitsamt dem angepassten Zierrat.</p>",
+			"htmlEn": "<p>The aluminium body is now fully restored in every detail, with the trim fitted.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-053.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 53 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 53 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 53 in the vehicle record"
 				},
 				{
 					"src": "./image-054.jpg",
-					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 54 der Fahrzeugdokumentation"
+					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Aufnahme 54 der Fahrzeugdokumentation",
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – photograph 54 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Inzwischen wird die Karosserie mit allen Teilen in unserer Lackierabteilung für eine hochwertige und exklusive 2-Farb-Metallic-Lackierung vorbereitet.</p>"
+			"html": "<p>Inzwischen wird die Karosserie mit allen Teilen in unserer Lackierabteilung für eine hochwertige und exklusive 2-Farb-Metallic-Lackierung vorbereitet.</p>",
+			"htmlEn": "<p>Our paint shop is preparing the body and all its components for an exclusive, high-quality two-tone metallic finish.</p>"
 		}
-	]
+	],
+	"titleEn": "ASTON MARTIN DB 2/4, year 1957",
+	"descriptionEn": "Six-cylinder engine, 3 litres, twin overhead camshafts, up to 165 PS.",
+	"cardImageAltEn": "ASTON MARTIN DB 2/4, year 1957",
+	"leadImageAltEn": "ASTON MARTIN DB 2/4, year 1957 – vehicle record"
 }

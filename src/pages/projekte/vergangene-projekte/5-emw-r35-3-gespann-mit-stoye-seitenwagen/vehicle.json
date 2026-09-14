@@ -16,20 +16,23 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDieses EMW R35/3 Gespann wurde in einen schweren Auffahrunfall verwickelt, bei dem sowohl das Heckteil des Motorrades selbst, mit Kardanantrieb, Getriebe und Motor - als auch der “Stoye” Beiwagen insgesamt stark beschädigt wurden.</p>"
+			"html": "<p><br />\nDieses EMW R35/3 Gespann wurde in einen schweren Auffahrunfall verwickelt, bei dem sowohl das Heckteil des Motorrades selbst, mit Kardanantrieb, Getriebe und Motor - als auch der “Stoye” Beiwagen insgesamt stark beschädigt wurden.</p>",
+			"htmlEn": "<p><br>\nThis EMW R35/3 combination suffered a severe rear-end collision, damaging the motorcycle’s rear, shaft drive, gearbox and engine, as well as the Stoye sidecar.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -38,20 +41,23 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Im Kundenauftrag wurde deshalb das gesamte Gespann komplett neu aufgebaut.</p>"
+			"html": "<p>Im Kundenauftrag wurde deshalb das gesamte Gespann komplett neu aufgebaut.</p>",
+			"htmlEn": "<p>We therefore completely rebuilt the entire combination for its owner.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -60,7 +66,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -69,20 +76,23 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 6 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neben Richt- und &quot;Karosserie&quot;-arbeiten an der Maschine, musste - da komplett zerstört - auch der Beiwagen völlig neu aufgebaut werden.</p>"
+			"html": "<p>Neben Richt- und &quot;Karosserie&quot;-arbeiten an der Maschine, musste - da komplett zerstört - auch der Beiwagen völlig neu aufgebaut werden.</p>",
+			"htmlEn": "<p>Alongside straightening and bodywork on the motorcycle, the completely destroyed sidecar had to be rebuilt.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -91,7 +101,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -100,7 +111,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -109,7 +121,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -118,24 +131,28 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier das neu angefertigte Aluminium-Boot des Seitenwagens.</p>"
+			"html": "<p>Hier das neu angefertigte Aluminium-Boot des Seitenwagens.</p>",
+			"htmlEn": "<p>The newly made aluminium sidecar body.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -144,7 +161,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 14 in the vehicle record"
 				}
 			]
 		},
@@ -153,7 +171,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -162,7 +181,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 16 in the vehicle record"
 				}
 			]
 		},
@@ -171,7 +191,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -180,7 +201,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 18 in the vehicle record"
 				}
 			]
 		},
@@ -189,7 +211,8 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 19 in the vehicle record"
 				}
 			]
 		},
@@ -198,7 +221,8 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -207,7 +231,8 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 21 in the vehicle record"
 				}
 			]
 		},
@@ -216,7 +241,8 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 22 in the vehicle record"
 				}
 			]
 		},
@@ -225,26 +251,34 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 23 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach diesem originalgetreuen Neuaufbau, konnte die Maschine seinem stolzen Besitzer wieder fertig restauriert ausgeliefert werden und beweisst sich selbst auf größeren Touren als ideales Gespann.</p>"
+			"html": "<p>Nach diesem originalgetreuen Neuaufbau, konnte die Maschine seinem stolzen Besitzer wieder fertig restauriert ausgeliefert werden und beweisst sich selbst auf größeren Touren als ideales Gespann.</p>",
+			"htmlEn": "<p>Following this faithful rebuild, we returned the restored motorcycle to its proud owner. It has proved an ideal combination even on longer tours.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 combination with “Stoye” sidecar – photograph 25 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "EMW R35/3 combination with “Stoye” sidecar",
+	"descriptionEn": "This EMW R35/3 combination suffered a severe rear-end collision, damaging the motorcycle’s rear, shaft drive, gearbox and engine, as well as the Stoye sidecar.",
+	"cardImageAltEn": "EMW R35/3 combination with “Stoye” sidecar",
+	"leadImageAltEn": "EMW R35/3 combination with “Stoye” sidecar – vehicle record"
 }

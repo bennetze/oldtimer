@@ -17,40 +17,48 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>BMW 328 Sport Roadster des Baujahres 1938.</p>"
+			"html": "<p>BMW 328 Sport Roadster des Baujahres 1938.</p>",
+			"htmlEn": "<p>A 1938 BMW 328 Sport Roadster.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Typ 328 zählt bekanntermaßen zu den erfolgreichsten und in Sammlerkreisen heute zu den gesuchtesten Sportwagen der Vorkriegszeit, erfüllt er doch sämtliche technischen- und vor allem alle klassischen Designmerkmale eines offenen Sport-&quot;Roadsters&quot; in Perfektion und gewann seinerzeit dutzende Rennen, u.a. das Eifelrennen, die Mille Miglia und zahlreiche Bergrennen.</p>"
+			"html": "<p>Der Typ 328 zählt bekanntermaßen zu den erfolgreichsten und in Sammlerkreisen heute zu den gesuchtesten Sportwagen der Vorkriegszeit, erfüllt er doch sämtliche technischen- und vor allem alle klassischen Designmerkmale eines offenen Sport-&quot;Roadsters&quot; in Perfektion und gewann seinerzeit dutzende Rennen, u.a. das Eifelrennen, die Mille Miglia und zahlreiche Bergrennen.</p>",
+			"htmlEn": "<p>The 328 is one of the most successful and sought-after pre-war sports cars. Combining the engineering and classic design attributes of an open roadster, it won dozens of races, including the Eifelrennen, Mille Miglia and numerous hill climbs.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Inzwischen haben wir für diverse begeisterte Kunden u.a. auch einige Top-Exemplare des BMW 328 sehr originalgetreu und authentisch restauriert</p>"
+			"html": "<p>Inzwischen haben wir für diverse begeisterte Kunden u.a. auch einige Top-Exemplare des BMW 328 sehr originalgetreu und authentisch restauriert</p>",
+			"htmlEn": "<p>We have faithfully and authentically restored several outstanding BMW 328s for enthusiastic clients</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>(s. Referenzen).</p>"
+			"html": "<p>(s. Referenzen).</p>",
+			"htmlEn": "<p>(see references).</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -59,32 +67,38 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nBei diesem Original-Exemplar war die Substanz insgesamt zwar recht gut erhalten, bei vormaligen Restaurations- und Erhaltungsversuchen wurde aber wenig Fach- und Sachkenntnis, dazu offensichtlich kaum technischer Verstand und noch weniger das notwendige handwerkliche Geschick aufgebracht, um der Seltenheit und Exklusivität eines solch bezaubernden und reinrassigen Vorkriegsroadsters gerecht zu werden.</p>"
+			"html": "<p><br />\nBei diesem Original-Exemplar war die Substanz insgesamt zwar recht gut erhalten, bei vormaligen Restaurations- und Erhaltungsversuchen wurde aber wenig Fach- und Sachkenntnis, dazu offensichtlich kaum technischer Verstand und noch weniger das notwendige handwerkliche Geschick aufgebracht, um der Seltenheit und Exklusivität eines solch bezaubernden und reinrassigen Vorkriegsroadsters gerecht zu werden.</p>",
+			"htmlEn": "<p><br>\nThis original example retained sound underlying material, but earlier restoration and preservation attempts showed little specialist knowledge, mechanical understanding or the craftsmanship required by such a rare and exclusive pre-war roadster.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>So wurden bei entsprechenden Vorbesitzern wohl zwar einige Karosseriearbeiten durchgeführt, diese bestanden aber im wesentlichen nur in großflächigen Spachtel- (eher Stuckateur-) arbeiten. So war u.a. das gesamte Heckteil (weil deformiert) großflächig mit bis zu 4cm! Spachtelschichten &quot;modelliert&quot;, was mit Karosseriebau im Allgemeinen und Aluminium-Leichtbau im Speziellen eben auch gar nichts mehr zu tun hat.<br />\n<br /></p>"
+			"html": "<p>So wurden bei entsprechenden Vorbesitzern wohl zwar einige Karosseriearbeiten durchgeführt, diese bestanden aber im wesentlichen nur in großflächigen Spachtel- (eher Stuckateur-) arbeiten. So war u.a. das gesamte Heckteil (weil deformiert) großflächig mit bis zu 4cm! Spachtelschichten &quot;modelliert&quot;, was mit Karosseriebau im Allgemeinen und Aluminium-Leichtbau im Speziellen eben auch gar nichts mehr zu tun hat.<br />\n<br /></p>",
+			"htmlEn": "<p>Previous bodywork largely consisted of extensive filler application. The deformed rear section, for example, had been sculpted with layers up to 4 cm thick — unrelated to proper body repair, especially lightweight aluminium construction.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -93,133 +107,158 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 10 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Im Auftrag des neuen Besitzers - einem langjährigen Sammler, Kenner und Automobilenthusiasten - wurde unsererseits die gesamte Karosserie größtenteils neu angefertigt, damit auch sämtliche Radien und Passungen in Aluminium wieder originalgetreu hergestellt.</p>"
+			"html": "<p>Im Auftrag des neuen Besitzers - einem langjährigen Sammler, Kenner und Automobilenthusiasten - wurde unsererseits die gesamte Karosserie größtenteils neu angefertigt, damit auch sämtliche Radien und Passungen in Aluminium wieder originalgetreu hergestellt.</p>",
+			"htmlEn": "<p>For the new owner, a longstanding collector, expert and motoring enthusiast, we largely remade the entire body, faithfully restoring its curves and fit in aluminium.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach den nun bestens abgeschlossenen sehr detaillierten Karosseriearbeiten wurde der Wagen in unserer hauseigenen Lackierung wieder in seiner damaligen Original-Auslieferungsfarbgebung neu lackiert.</p>"
+			"html": "<p>Nach den nun bestens abgeschlossenen sehr detaillierten Karosseriearbeiten wurde der Wagen in unserer hauseigenen Lackierung wieder in seiner damaligen Original-Auslieferungsfarbgebung neu lackiert.</p>",
+			"htmlEn": "<p>After completing the detailed bodywork, our in-house paint shop returned the car to its original delivery colour scheme.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 15 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nDie in unserer Lackierabteilung perfekt lackierte Karosserie.</p>"
+			"html": "<p><br />\n<br />\nDie in unserer Lackierabteilung perfekt lackierte Karosserie.</p>",
+			"htmlEn": "<p><br>\n<br>\nThe beautifully painted body from our paint shop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 18 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der originale Motorblock mitsamt dem sehr speziellen und technisch höchst innovativem 328 Zylinderkopf mit 2 obenliegenden Kipphebelwellen vor und nach der Motorüberholung.</p>"
+			"html": "<p>Der originale Motorblock mitsamt dem sehr speziellen und technisch höchst innovativem 328 Zylinderkopf mit 2 obenliegenden Kipphebelwellen vor und nach der Motorüberholung.</p>",
+			"htmlEn": "<p>The original engine block and the distinctive, innovative 328 cylinder head with two overhead rocker shafts, before and after the engine overhaul.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Motor: 6 Zylinder, 2 Liter Hubraum, 80PS Leistung, 2 obenliegende Kipphebelwellen zur V-förmigen Ventilsteuerung, 3-fach SOLEX-Vergaseranlage <br />\n<br /></p>"
+			"html": "<p>Motor: 6 Zylinder, 2 Liter Hubraum, 80PS Leistung, 2 obenliegende Kipphebelwellen zur V-förmigen Ventilsteuerung, 3-fach SOLEX-Vergaseranlage <br />\n<br /></p>",
+			"htmlEn": "<p>Engine: six cylinders, 2 litres, 80 PS, two overhead rocker shafts operating the V-arranged valves, triple SOLEX carburettors. <br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 20 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach dem Neuaufbau des Motors konnten in unserer Technikabteilung nun auch alle weiteren technischen Komponenten restauriert und eingebaut werden.</p>"
+			"html": "<p>Nach dem Neuaufbau des Motors konnten in unserer Technikabteilung nun auch alle weiteren technischen Komponenten restauriert und eingebaut werden.</p>",
+			"htmlEn": "<p>After rebuilding the engine, our mechanical department restored and installed all remaining mechanical components.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Schlussendlich entstand in unserer Sattlerei auch die gesamte Innenausstattung in rotem Echtleder, das Roadsterverdeck, die Teppiche u.dgl. originalgetreu komplett neu.<br /></p>"
+			"html": "<p>Schlussendlich entstand in unserer Sattlerei auch die gesamte Innenausstattung in rotem Echtleder, das Roadsterverdeck, die Teppiche u.dgl. originalgetreu komplett neu.<br /></p>",
+			"htmlEn": "<p>Finally, our upholstery shop faithfully recreated the complete red genuine leather interior, roadster hood, carpets and related fittings.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 23 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein sehr schön und authentisch restauriertes Originalexemplar eines der ohnehin wenigen BMW 328 Roadster.</p>"
+			"html": "<p>Ein sehr schön und authentisch restauriertes Originalexemplar eines der ohnehin wenigen BMW 328 Roadster.</p>",
+			"htmlEn": "<p>A beautifully and authentically restored original example of the rare BMW 328 Roadster.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 25 in the vehicle record"
 				}
 			]
 		},
@@ -228,13 +267,19 @@
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – photograph 26 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nicht nur fahrtechnisch nun wieder ein reinrassiger Vorkriegs-Sport-Roadster, sondern auch optisch wieder ein Hochgenuss...</p>"
+			"html": "<p>Nicht nur fahrtechnisch nun wieder ein reinrassiger Vorkriegs-Sport-Roadster, sondern auch optisch wieder ein Hochgenuss...</p>",
+			"htmlEn": "<p>Once again a thoroughbred pre-war sports roadster to drive, and a delight to admire…</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 328 Sport-Roadster, year 1938",
+	"descriptionEn": "The 328 is one of the most successful and sought-after pre-war sports cars. Combining the engineering and classic design attributes of an open roadster, it won dozens of races,…",
+	"cardImageAltEn": "BMW 328 Sport-Roadster, year 1938",
+	"leadImageAltEn": "BMW 328 Sport-Roadster, year 1938 – vehicle record"
 }

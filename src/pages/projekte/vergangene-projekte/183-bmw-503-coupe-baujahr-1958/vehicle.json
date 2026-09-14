@@ -17,32 +17,38 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nBMW 503 Coupe mit dem genialen V8 Aluminium-Motor und 140PS Leistung.</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\nBMW 503 Coupe mit dem genialen V8 Aluminium-Motor und 140PS Leistung.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA BMW 503 Coupé with the superb aluminium V8 producing 140 PS.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein Fahrzeug der Superlative, von dem in dieser Ausführung bis 1960 nur 134 Exemplare von Hand und in Aluminium gefertigt wurden.</p>"
+			"html": "<p>Ein Fahrzeug der Superlative, von dem in dieser Ausführung bis 1960 nur 134 Exemplare von Hand und in Aluminium gefertigt wurden.</p>",
+			"htmlEn": "<p>An extraordinary car: only 134 of this specification were built by hand in aluminium up to 1960.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -51,15 +57,18 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -68,49 +77,58 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Wagen wurde bei uns in vielen Details aufwendig restauriert.</p>"
+			"html": "<p><br />\nDer Wagen wurde bei uns in vielen Details aufwendig restauriert.</p>",
+			"htmlEn": "<p><br>\nWe painstakingly restored many details of the car.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nKarosseriearbeiten in Stahl und Aluminium, darunter Neuanfertigung vieler Blechteile.</p>"
+			"html": "<p><br />\nKarosseriearbeiten in Stahl und Aluminium, darunter Neuanfertigung vieler Blechteile.</p>",
+			"htmlEn": "<p><br>\nSteel and aluminium bodywork, including fabrication of numerous replacement panels.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 14 in the vehicle record"
 				}
 			]
 		},
@@ -119,95 +137,113 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 17 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hochwertige Neulackierung in der Originalfarbe silbermetallic. Restauration bzw. Neuanfertigung der beiden Stoßstangen und div. Zierteile.<br /></p>"
+			"html": "<p>Hochwertige Neulackierung in der Originalfarbe silbermetallic. Restauration bzw. Neuanfertigung der beiden Stoßstangen und div. Zierteile.<br /></p>",
+			"htmlEn": "<p>A high-quality respray in the original silver metallic. Restoration or reproduction of both bumpers and various trim pieces.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 20 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Restaurierung des originalen Echtlederinterieurs und Anfertigung neuer Teppiche.<br /></p>"
+			"html": "<p>Restaurierung des originalen Echtlederinterieurs und Anfertigung neuer Teppiche.<br /></p>",
+			"htmlEn": "<p>Restoring the original genuine leather interior and making new carpets.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 22 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eines der ganz wenigen Exemplare des 503 Coupes, die mit dem ab Werk extra oderbaren Schiebedach ausgeliefert wurden.</p>"
+			"html": "<p>Eines der ganz wenigen Exemplare des 503 Coupes, die mit dem ab Werk extra oderbaren Schiebedach ausgeliefert wurden.</p>",
+			"htmlEn": "<p>One of the very few 503 Coupés delivered with the optional factory sunroof.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 25 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach Abschluss der Restaurierung erstrahlt eines der wenigen erhaltenen BMW 503 Coupes wieder in seiner vollen Pracht und Schönheit.<br /></p>"
+			"html": "<p>Nach Abschluss der Restaurierung erstrahlt eines der wenigen erhaltenen BMW 503 Coupes wieder in seiner vollen Pracht und Schönheit.<br /></p>",
+			"htmlEn": "<p>With the restoration complete, one of the few surviving BMW 503 Coupés shines in all its beauty once again.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 28 in the vehicle record"
 				}
 			]
 		},
@@ -216,15 +252,18 @@
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 29 in the vehicle record"
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 31 in the vehicle record"
 				}
 			]
 		},
@@ -233,9 +272,14 @@
 			"images": [
 				{
 					"src": "./image-032.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1958 – photograph 32 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "BMW 503 Coupe, year 1958",
+	"descriptionEn": "An extraordinary car: only 134 of this specification were built by hand in aluminium up to 1960.",
+	"cardImageAltEn": "BMW 503 Coupe, year 1958",
+	"leadImageAltEn": "BMW 503 Coupe, year 1958 – vehicle record"
 }

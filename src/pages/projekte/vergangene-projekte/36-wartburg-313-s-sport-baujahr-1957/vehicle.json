@@ -17,83 +17,98 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein weiterer Wartburg 313 Sport, der hier in unserer Manufaktur sehr originalgetreu und komplett neu restauriert wurde.</p>"
+			"html": "<p>Hier ein weiterer Wartburg 313 Sport, der hier in unserer Manufaktur sehr originalgetreu und komplett neu restauriert wurde.</p>",
+			"htmlEn": "<p>Another Wartburg 313 Sport completely and faithfully restored at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Trotz augenscheinlich befriedigenden Zustandes, blieben auch diesem Wagen leider keine &quot;Bausünden&quot; der so genannten Vorgänger-&quot;Experten&quot; erspart.</p>"
+			"html": "<p>Trotz augenscheinlich befriedigenden Zustandes, blieben auch diesem Wagen leider keine &quot;Bausünden&quot; der so genannten Vorgänger-&quot;Experten&quot; erspart.</p>",
+			"htmlEn": "<p>Despite apparently satisfactory condition, it too had suffered poor work by previous “experts”.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 6 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>So wurden werterhaltende Maßnahmen selbst bei tragenden Schwellerblechen so ausgelegt, dass auf völlig zerrostete Bleche lediglich neue Blechstücke aufgebracht und anschließend mit reichlich Spachtelmasse quasi zumodelliert wurden.</p>"
+			"html": "<p>So wurden werterhaltende Maßnahmen selbst bei tragenden Schwellerblechen so ausgelegt, dass auf völlig zerrostete Bleche lediglich neue Blechstücke aufgebracht und anschließend mit reichlich Spachtelmasse quasi zumodelliert wurden.</p>",
+			"htmlEn": "<p>Even structural sills had been “preserved” by placing new patches over completely rusted metal and concealing them with generous filler.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 8 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Im Bereich der tragenden A-Säulen war ein vormaliger Unfall auch nur oberflächlich beigeflickt worden und musste von uns, dank speziell angefertigter Blechprofile, fachgerecht instand gesetzt werden.</p>"
+			"html": "<p>Im Bereich der tragenden A-Säulen war ein vormaliger Unfall auch nur oberflächlich beigeflickt worden und musste von uns, dank speziell angefertigter Blechprofile, fachgerecht instand gesetzt werden.</p>",
+			"htmlEn": "<p>Earlier accident damage around the structural A-pillars had been superficially patched; we repaired it properly using specially fabricated sections.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -102,7 +117,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -111,91 +127,108 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Da es speziell für diesen seltenen Modelltyp 313 Sport nahezu keine verwertbaren Teile gibt, mussten diese in unserem Karosseriebau individuell angefertigt und im Fahrzeug selbst eingepasst werden.</p>"
+			"html": "<p>Da es speziell für diesen seltenen Modelltyp 313 Sport nahezu keine verwertbaren Teile gibt, mussten diese in unserem Karosseriebau individuell angefertigt und im Fahrzeug selbst eingepasst werden.</p>",
+			"htmlEn": "<p>With virtually no usable replacement parts available for the rare 313 Sport, our body shop had to make and fit them individually to the car.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>So wurden Stück für Stück all diese - teils massiven Karosserieschäden - fachgerecht instand gesetzt.</p>"
+			"html": "<p>So wurden Stück für Stück all diese - teils massiven Karosserieschäden - fachgerecht instand gesetzt.</p>",
+			"htmlEn": "<p>Step by step, we professionally repaired all the damage, some of it severe.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 18 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier die inzwischen fertig gestellte Karosserie mit perfekten Oberflächen- und Spaltmaßen. Auch wurde nach Kundenwunsch das leider nicht mehr vorhandene Klappverdeck (Softtop) von uns originalgetreu nachgebaut und mit allen Halterungen und Traversen in das Fahrzeug eingepasst.</p>"
+			"html": "<p>Hier die inzwischen fertig gestellte Karosserie mit perfekten Oberflächen- und Spaltmaßen. Auch wurde nach Kundenwunsch das leider nicht mehr vorhandene Klappverdeck (Softtop) von uns originalgetreu nachgebaut und mit allen Halterungen und Traversen in das Fahrzeug eingepasst.</p>",
+			"htmlEn": "<p>The completed body now has excellent surfaces and panel gaps. At the client’s request, we faithfully recreated the missing folding soft top and fitted all its brackets and crossmembers.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 19 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nEin schöner Vergleich zwischen dem inzwischen perfekt fertig restaurierten 313er Sport und der aufwendig fertiggestellten Karosserie. Auch diesem Fahrzeug stand nun eine hochwertige Lackierung in unserer Lackierabteilung bevor...</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\nEin schöner Vergleich zwischen dem inzwischen perfekt fertig restaurierten 313er Sport und der aufwendig fertiggestellten Karosserie. Auch diesem Fahrzeug stand nun eine hochwertige Lackierung in unserer Lackierabteilung bevor...</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA useful comparison between a completed, fully restored 313 Sport and this painstakingly rebuilt body, now ready for high-quality paintwork in our paint shop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 21 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Entsprechend den Kundenwünschen wurde der Wagen in unserer hauseigenen Lackiererei und von unseren Lackierspezialisten in einer eigens angefertigten exklusiven Mischfarbe lackiert.</p>"
+			"html": "<p>Entsprechend den Kundenwünschen wurde der Wagen in unserer hauseigenen Lackiererei und von unseren Lackierspezialisten in einer eigens angefertigten exklusiven Mischfarbe lackiert.</p>",
+			"htmlEn": "<p>Our paint specialists applied an exclusive, specially mixed colour to the client’s wishes.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 24 in the vehicle record"
 				}
 			]
 		},
@@ -204,17 +237,24 @@
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 25 in the vehicle record"
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – photograph 26 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier die bereits komplett restaurierten Chromteile und die mittlerweile ebenso überholten 313-typischen Instrumente.</p>"
+			"html": "<p><br />\nHier die bereits komplett restaurierten Chromteile und die mittlerweile ebenso überholten 313-typischen Instrumente.</p>",
+			"htmlEn": "<p><br>\nThe fully restored chrome parts and refurbished 313-specific instruments.</p>"
 		}
-	]
+	],
+	"titleEn": "Wartburg 313 S - Sport, year 1959",
+	"descriptionEn": "Another Wartburg 313 Sport completely and faithfully restored at our workshop.",
+	"cardImageAltEn": "Wartburg 313 S - Sport, year 1959",
+	"leadImageAltEn": "Wartburg 313 S - Sport, year 1959 – vehicle record"
 }

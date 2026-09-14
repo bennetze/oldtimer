@@ -17,266 +17,319 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>OPEL ADMIRAL „Hebmüller“<br />\nSport-Kabriolett<br />\ndes Baujahres 1938.</p>"
+			"html": "<p>OPEL ADMIRAL „Hebmüller“<br />\nSport-Kabriolett<br />\ndes Baujahres 1938.</p>",
+			"htmlEn": "<p>OPEL ADMIRAL “Hebmüller”<br>\nSport Cabriolet<br>\nfrom 1938.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>&quot;DER GOLDENE KLASSIKER&quot; </strong></p>"
+			"html": "<p><strong>&quot;DER GOLDENE KLASSIKER&quot; </strong></p>",
+			"htmlEn": "<p><strong>“DER GOLDENE KLASSIKER” </strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>mit der Auszeichnung</p>"
+			"html": "<p>mit der Auszeichnung</p>",
+			"htmlEn": "<p>awarded</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>&quot;Beste Restaurierung des Jahres&quot;</strong><br />\n<br />\nGeschichtliches: Der OPEL Vorkriegs-Admiral gilt ja gemeinhin bis heute als der größte und wohl luxuriöseste je gebaute OPEL überhaupt, hatte man es in den lediglich 2 Jahren Bauzeit mit diesem Spitzenmodell doch sehr erfolgreich geschafft, in die automobile Oberklasse vorzudringen, was durch den Ausbruch des 2. Weltkriegs ein jähes Ende fand.</p>"
+			"html": "<p><strong>&quot;Beste Restaurierung des Jahres&quot;</strong><br />\n<br />\nGeschichtliches: Der OPEL Vorkriegs-Admiral gilt ja gemeinhin bis heute als der größte und wohl luxuriöseste je gebaute OPEL überhaupt, hatte man es in den lediglich 2 Jahren Bauzeit mit diesem Spitzenmodell doch sehr erfolgreich geschafft, in die automobile Oberklasse vorzudringen, was durch den Ausbruch des 2. Weltkriegs ein jähes Ende fand.</p>",
+			"htmlEn": "<p><strong>“Best Restoration of the Year”</strong><br>\n<br>\nHistory: the pre-war Opel Admiral is widely regarded as the largest and perhaps most luxurious Opel ever built. During its mere two years of production, this flagship successfully established Opel in the luxury segment, before the outbreak of the Second World War brought this to an abrupt end.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Technik: Der OPEL ADMIRAL hatte einen genialen und laufruhigen 6 Zylinder Motor mit 3,6 Litern Hubraum und ca. 80 PS Leistung, was eine Spitzengeschwindigkeit bis ca. 140km/h ermöglichen sollte.</p>"
+			"html": "<p>Technik: Der OPEL ADMIRAL hatte einen genialen und laufruhigen 6 Zylinder Motor mit 3,6 Litern Hubraum und ca. 80 PS Leistung, was eine Spitzengeschwindigkeit bis ca. 140km/h ermöglichen sollte.</p>",
+			"htmlEn": "<p>Engineering: the Opel Admiral had a smooth six-cylinder engine displacing 3.6 litres and producing around 80 PS, intended to allow a top speed of approximately 140 km/h.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Karosserievarianten: Vom ADMIRAL `38 gab es ab Werk lediglich eine stattliche 4-türige Limousine und in kleinen Stückzahlen das sehr imposante 4-türige sog. „Werkskabriolett“, was aber in Wahrheit einen Kabriolettaufbau der namhaften Dresdner Firma „Gläser“ hatte. Überdies gab es einige wenige Aufbauten als Sonderkarosserie diverser freier Anbieter u.a. der Firmen Gläser, Hebmüller, Autenrieth, Petera und weitere, dies als Pullmann-Limousine, als Kranken- und Bestattungswagen, vornehmlich aber als sehr elegante und zugleich sportliche 2-türige Kabrioletts (historisch korrekte Schreibweise!).</p>"
+			"html": "<p>Karosserievarianten: Vom ADMIRAL `38 gab es ab Werk lediglich eine stattliche 4-türige Limousine und in kleinen Stückzahlen das sehr imposante 4-türige sog. „Werkskabriolett“, was aber in Wahrheit einen Kabriolettaufbau der namhaften Dresdner Firma „Gläser“ hatte. Überdies gab es einige wenige Aufbauten als Sonderkarosserie diverser freier Anbieter u.a. der Firmen Gläser, Hebmüller, Autenrieth, Petera und weitere, dies als Pullmann-Limousine, als Kranken- und Bestattungswagen, vornehmlich aber als sehr elegante und zugleich sportliche 2-türige Kabrioletts (historisch korrekte Schreibweise!).</p>",
+			"htmlEn": "<p>Body styles: the 1938 Admiral was offered by the factory as a substantial four-door saloon and, in small numbers, an imposing four-door “factory cabriolet”. In fact, the latter had coachwork by the renowned Gläser firm in Dresden. A few special bodies were also supplied by independent coachbuilders including Gläser, Hebmüller, Autenrieth and Petera: Pullman saloons, ambulances and hearses, but above all elegant, sporty two-door cabriolets.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Unter den o.g. Karosseriefirmen sticht eine Firma durch ihre sehr eleganten und stilsicheren Sonderaufbauten stets besonders hervor - die Firma „Hebmüller“ aus Barmen/Wuppertal.</p>"
+			"html": "<p>Unter den o.g. Karosseriefirmen sticht eine Firma durch ihre sehr eleganten und stilsicheren Sonderaufbauten stets besonders hervor - die Firma „Hebmüller“ aus Barmen/Wuppertal.</p>",
+			"htmlEn": "<p>Among these coachbuilders, Hebmüller of Barmen/Wuppertal consistently stood out for its particularly elegant and assured styling.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Durch die dort engagierten, genialen Formgestalter (heute Designer) hatte man bei „Hebmüller“ ein glückliches Händchen für exklusive und formschöne Karosserien als individuelle Sonderaufbauten mit einem äußerst hohen Qualitätsanspruch gefunden.</p>"
+			"html": "<p>Durch die dort engagierten, genialen Formgestalter (heute Designer) hatte man bei „Hebmüller“ ein glückliches Händchen für exklusive und formschöne Karosserien als individuelle Sonderaufbauten mit einem äußerst hohen Qualitätsanspruch gefunden.</p>",
+			"htmlEn": "<p>Its gifted designers gave Hebmüller a remarkable flair for exclusive, beautifully proportioned bespoke bodies built to exceptionally high standards.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nEine seltene Originalaufnahme eines Admiral &quot;Hebmüller&quot;-Sport-Kabrioletts während der Automobilausstellung IAMA am Berliner Kaiserdamm von 1937.</p>"
+			"html": "<p><br />\nEine seltene Originalaufnahme eines Admiral &quot;Hebmüller&quot;-Sport-Kabrioletts während der Automobilausstellung IAMA am Berliner Kaiserdamm von 1937.</p>",
+			"htmlEn": "<p><br>\nA rare original photograph of an Admiral Hebmüller Sport Cabriolet at the 1937 IAMA motor show on Berlin’s Kaiserdamm.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Trotz des eher katastrophalen Fundzustands war die ursprüngliche Raffinesse dieses Wagens zwar schwer verblasst, trotzdem ließ sich für Kenner noch erahnen, dass es im Ursprung wohl einmal ein ganz besonderes Fahrzeug gewesen sein musste.</p>"
+			"html": "<p>Trotz des eher katastrophalen Fundzustands war die ursprüngliche Raffinesse dieses Wagens zwar schwer verblasst, trotzdem ließ sich für Kenner noch erahnen, dass es im Ursprung wohl einmal ein ganz besonderes Fahrzeug gewesen sein musste.</p>",
+			"htmlEn": "<p>Despite its disastrous as-found condition, traces of the car’s original sophistication remained, allowing a knowledgeable observer to recognise that it had once been something very special.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Aufnahmen während des aufwändigen Neuaufbaus der Karosserie.</p>"
+			"html": "<p>Aufnahmen während des aufwändigen Neuaufbaus der Karosserie.</p>",
+			"htmlEn": "<p>Photographs taken during the extensive body reconstruction.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 8 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch die gesamte Innenausstattung wurde nach Originalunterlagen rekonstruiert und auch das sportliche Cabrioletverdeck in originaler Rosshaardämmung ausgeführt.</p>"
+			"html": "<p>Auch die gesamte Innenausstattung wurde nach Originalunterlagen rekonstruiert und auch das sportliche Cabrioletverdeck in originaler Rosshaardämmung ausgeführt.</p>",
+			"htmlEn": "<p>The entire interior was also reconstructed from original documentation, and the sporty convertible hood was made with authentic horsehair insulation.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neue Sitzfederkerne und die nun fertigen Sitze in originalgetreuer Ausführung.</p>"
+			"html": "<p>Neue Sitzfederkerne und die nun fertigen Sitze in originalgetreuer Ausführung.</p>",
+			"htmlEn": "<p>New seat spring units and the completed seats, faithfully recreated to original specification.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Das Resultat ist wahrlich eine Perle eines einzigartigen Automobils.</p>"
+			"html": "<p>Das Resultat ist wahrlich eine Perle eines einzigartigen Automobils.</p>",
+			"htmlEn": "<p>The result is a true automotive jewel.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 16 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier die überholten Armaturen mit hochwertigen Stilelementen (nicht nur verchromt, sondern wie im Ursprung versilbert).</p>"
+			"html": "<p>Hier die überholten Armaturen mit hochwertigen Stilelementen (nicht nur verchromt, sondern wie im Ursprung versilbert).</p>",
+			"htmlEn": "<p>The refurbished instruments and elegant fittings — silver-plated as originally supplied, rather than simply chromed.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 17 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nSieht man beispielsweise die stilvoll geprägten Seitenflanken und die riesigen Türen (Portale) - angeschlagen an jeweils 3 kräftigen Scharnieren, die damit einhergehende 2-Farb-Lackierung oder die vielen stilvollen Art Deco Elemente, erkennt man eine Fülle von beeindruckenden, einzigartigen und formschönen Details, die gerade dieses ADMIRAL „Hebmüller“ Sport-Kabriolett zu einem insgesamt äußerst formschönen und geschmackvoll gestalteten Augenschmaus machen.</p>"
+			"html": "<p><br />\nSieht man beispielsweise die stilvoll geprägten Seitenflanken und die riesigen Türen (Portale) - angeschlagen an jeweils 3 kräftigen Scharnieren, die damit einhergehende 2-Farb-Lackierung oder die vielen stilvollen Art Deco Elemente, erkennt man eine Fülle von beeindruckenden, einzigartigen und formschönen Details, die gerade dieses ADMIRAL „Hebmüller“ Sport-Kabriolett zu einem insgesamt äußerst formschönen und geschmackvoll gestalteten Augenschmaus machen.</p>",
+			"htmlEn": "<p><br>\nThe stylishly sculpted flanks, enormous doors mounted on three substantial hinges each, two-tone paintwork and numerous Art Deco features reveal a wealth of striking, beautifully shaped details. Together, they make this Admiral Hebmüller Sport Cabriolet an exceptionally elegant and tasteful design.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 18 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Von diesem sehr frühen Aufbau als sog. Sport-Kabriolett (mit hinten angeschlagenen Türen, einzeln ausstellbaren Frontscheiben, in die Scheibenrahmen integrierten Winkern, etc.) sollen bei „Hebmüller“ im Jahre 1938 nur ca. 15 Fahrzeuge überhaupt entstanden sein, wovon heute nur noch ein Fahrzeug im erbärmlichen Zustand in Litauen bekannt ist und eben dieser hier, nun bestens restaurierte Wagen.</p>"
+			"html": "<p>Von diesem sehr frühen Aufbau als sog. Sport-Kabriolett (mit hinten angeschlagenen Türen, einzeln ausstellbaren Frontscheiben, in die Scheibenrahmen integrierten Winkern, etc.) sollen bei „Hebmüller“ im Jahre 1938 nur ca. 15 Fahrzeuge überhaupt entstanden sein, wovon heute nur noch ein Fahrzeug im erbärmlichen Zustand in Litauen bekannt ist und eben dieser hier, nun bestens restaurierte Wagen.</p>",
+			"htmlEn": "<p>Only about 15 examples of this early Sport Cabriolet body are said to have been built by Hebmüller in 1938, featuring rear-hinged doors, individually opening windscreens and semaphore indicators integrated into the screen frames. Today, only one other car, in poor condition in Lithuania, is known alongside this now superbly restored example.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die Einzigartigkeit dieses formschönen Wagens rechtfertigte den immensen Restaurationsaufwand.</p>"
+			"html": "<p>Die Einzigartigkeit dieses formschönen Wagens rechtfertigte den immensen Restaurationsaufwand.</p>",
+			"htmlEn": "<p>The unique character of this beautiful car justified the immense restoration effort.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 20 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nWunderschöne, geradezu verspielte Art-Deco Zierelemente. Das originale Karosserieemblem der Firma &quot;Hebmüller&quot; in Wuppertal/Barmen.</p>"
+			"html": "<p><br />\nWunderschöne, geradezu verspielte Art-Deco Zierelemente. Das originale Karosserieemblem der Firma &quot;Hebmüller&quot; in Wuppertal/Barmen.</p>",
+			"htmlEn": "<p><br>\nBeautiful, almost playful Art Deco details. The original coachbuilder’s badge of Hebmüller, Wuppertal/Barmen.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 21 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Das Ergebnis überraschte nicht nur uns, sondern zu aller Verwunderung wurde dieses perfekte Prachtstück nachfolgend offiziell mit der Auszeichnung &quot;Der Goldene Klassiker&quot; prämiert und zur „Besten Restaurierung des Jahres 2024“ gekürt.<br />\n<br />\n<br /></p>"
+			"html": "<p>Das Ergebnis überraschte nicht nur uns, sondern zu aller Verwunderung wurde dieses perfekte Prachtstück nachfolgend offiziell mit der Auszeichnung &quot;Der Goldene Klassiker&quot; prämiert und zur „Besten Restaurierung des Jahres 2024“ gekürt.<br />\n<br />\n<br /></p>",
+			"htmlEn": "<p>The result surprised more than just us: this magnificent car subsequently received the official “Der Goldene Klassiker” award and was named “Best Restoration of 2024”.<br>\n<br>\n<br></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die Auszeichnung, ausgelobt von einer namhaften Jury und der Fachzeitschrift &quot;Auto-Bild-Klassik&quot;, wurde uns während der offiziellen Festveranstaltung im November 2024 im Mercedes-Benz-Museum Stuttgart feierlich verliehen.</p>"
+			"html": "<p>Die Auszeichnung, ausgelobt von einer namhaften Jury und der Fachzeitschrift &quot;Auto-Bild-Klassik&quot;, wurde uns während der offiziellen Festveranstaltung im November 2024 im Mercedes-Benz-Museum Stuttgart feierlich verliehen.</p>",
+			"htmlEn": "<p>Presented by a distinguished jury and Auto Bild Klassik magazine, the award was handed to us at the official ceremony in November 2024 at the Mercedes-Benz Museum in Stuttgart.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 23 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die Auszeichnung zum &quot;Goldenen Klassiker&quot; und der &quot;Restaurierung des Jahres 2024&quot;.</p>"
+			"html": "<p>Die Auszeichnung zum &quot;Goldenen Klassiker&quot; und der &quot;Restaurierung des Jahres 2024&quot;.</p>",
+			"htmlEn": "<p>The “Goldener Klassiker” award for “Restoration of the Year 2024”.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 24 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>​</p>"
+			"html": "<p>​</p>",
+			"htmlEn": "<p>​</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Es erfüllt uns mit Stolz, dass wir mit dieser hochwertigen und sehr originalgetreuen Restaurierung solch ein kostbares Stück Automobilgeschichte für die Nachwelt erhalten können und bedanken uns bei den Initiatoren für die sensationelle Auszeichnung für dieses ebenso sensationelle Auto.</p>"
+			"html": "<p>Es erfüllt uns mit Stolz, dass wir mit dieser hochwertigen und sehr originalgetreuen Restaurierung solch ein kostbares Stück Automobilgeschichte für die Nachwelt erhalten können und bedanken uns bei den Initiatoren für die sensationelle Auszeichnung für dieses ebenso sensationelle Auto.</p>",
+			"htmlEn": "<p>We are proud that this high-quality, faithful restoration preserves such a precious piece of automotive history for future generations. We thank the organisers for this wonderful award for an equally remarkable car.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – photograph 25 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "OPEL Admiral \"Hebmüller\", year 1938",
+	"descriptionEn": "“Best Restoration of the Year” History: the pre-war Opel Admiral is widely regarded as the largest and perhaps most luxurious Opel ever built. During its mere two years of…",
+	"cardImageAltEn": "OPEL Admiral \"Hebmüller\", year 1938",
+	"leadImageAltEn": "OPEL Admiral \"Hebmüller\", year 1938 – vehicle record"
 }

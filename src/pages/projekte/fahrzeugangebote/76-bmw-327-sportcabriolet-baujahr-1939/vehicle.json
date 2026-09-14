@@ -17,36 +17,43 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 327 Sport Cabriolet, year 1939 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein BMW 327 Sportcabriolet in der späten 1939er Karosserieausführung (seltene Sickenkotflügel, einteilige durchgehende Stoßstangen, große Scheinwerfer, Rundinstrumente...).</p>"
+			"html": "<p>Hier ein BMW 327 Sportcabriolet in der späten 1939er Karosserieausführung (seltene Sickenkotflügel, einteilige durchgehende Stoßstangen, große Scheinwerfer, Rundinstrumente...).</p>",
+			"htmlEn": "<p>A BMW 327 Sport Cabriolet with the late 1939 body specification: rare beaded wings, continuous one-piece bumpers, large headlights and round instruments.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Das Fahrzeug wurde karosserieseits bereits grundlegend restauriert. Auch die Stellmacherarbeiten (Holzskelett) sind nahezu abgeschlossen und sämtliche Anbauteile und Zierteile wurden perfekt angepasst.</p>"
+			"html": "<p>Das Fahrzeug wurde karosserieseits bereits grundlegend restauriert. Auch die Stellmacherarbeiten (Holzskelett) sind nahezu abgeschlossen und sämtliche Anbauteile und Zierteile wurden perfekt angepasst.</p>",
+			"htmlEn": "<p>The body has already been fundamentally restored. The timber framework is almost complete, and all fittings and trim have been carefully aligned.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen kann gemäß Absprache gerne von uns – quasi aus einer Hand – perfekt fertig restauriert werden.</p>"
+			"html": "<p>Der Wagen kann gemäß Absprache gerne von uns – quasi aus einer Hand – perfekt fertig restauriert werden.</p>",
+			"htmlEn": "<p>By agreement, we can complete the restoration to an exceptional standard, with all work under one roof.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dabei können sämtliche Kundenwünsche (Lackierung, Polsterung, technische Details, u.dgl.) selbstverständlich individuell mit einfließen. Unzählige Beispiele dazu finden sie auch unter unserer Rubrik „Referenzen“.</p>"
+			"html": "<p>Dabei können sämtliche Kundenwünsche (Lackierung, Polsterung, technische Details, u.dgl.) selbstverständlich individuell mit einfließen. Unzählige Beispiele dazu finden sie auch unter unserer Rubrik „Referenzen“.</p>",
+			"htmlEn": "<p>Individual preferences for paintwork, upholstery, mechanical details and other features can naturally be incorporated. You will find numerous examples in our references section.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Lassen sie sich gerne beraten.</p>"
+			"html": "<p>Lassen sie sich gerne beraten.</p>",
+			"htmlEn": "<p>We will be happy to advise you.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 327 Sport Cabriolet, year 1939 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -55,13 +62,19 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 327 Sport Cabriolet, year 1939 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "contact",
-			"html": "<p>Für weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
+			"html": "<p>Für weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>",
+			"htmlEn": "<p>For further information, photographs and other vehicle details,<br>\nplease contact us on: Tel. +49 36966 83783<br>\nEmail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
 		}
-	]
+	],
+	"titleEn": "BMW 327 Sport Cabriolet, year 1939",
+	"descriptionEn": "A BMW 327 Sport Cabriolet with the late 1939 body specification: rare beaded wings, continuous one-piece bumpers, large headlights and round instruments.",
+	"cardImageAltEn": "BMW 327 Sport Cabriolet, year 1939",
+	"leadImageAltEn": "BMW 327 Sport Cabriolet, year 1939 – vehicle record"
 }

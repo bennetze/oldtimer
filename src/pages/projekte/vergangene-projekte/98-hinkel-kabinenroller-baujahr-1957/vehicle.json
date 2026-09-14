@@ -17,41 +17,48 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>HEINKEL Kabinenroller von 1957 - als äußerst seltenes Vollcabriolet.</p>"
+			"html": "<p>HEINKEL Kabinenroller von 1957 - als äußerst seltenes Vollcabriolet.</p>",
+			"htmlEn": "<p>A 1957 Heinkel bubble car in exceptionally rare full-convertible form.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die HEINKEL Flugzeugwerke AG, gegründet 1922 in Warnemünde/Rostock, waren vor und während des 2. Weltkrieges mit Ihrem Gründer Ernst Heinkel einer der führenden und innovativsten Flugzeughersteller und Raketenkonstrukteure überhaupt (mehr als 1200 Patente) und mit bis zu 55.000 Beschäftigten einer der größten Konzerne weltweit. Man baute dort nicht nur legendäre Flugmaschinen, sondern auch das erste düsengetriebene Flugzeug (He 176) und war neben den technischen Genies um Wernher von Braun auch maßgeblich an der Entwicklung der V1 und V2 beteiligt, die unweit in Peenemünde (Insel Usedom) getestet und abgeschossen wurden. Neben den Stammwerken in Rostock, gab es u.a. auch größere HEINKEL-Produktions- und Entwicklungsstätten in Berlin, Oranienburg, Krakau, Paris und Wien.</p>"
+			"html": "<p>Die HEINKEL Flugzeugwerke AG, gegründet 1922 in Warnemünde/Rostock, waren vor und während des 2. Weltkrieges mit Ihrem Gründer Ernst Heinkel einer der führenden und innovativsten Flugzeughersteller und Raketenkonstrukteure überhaupt (mehr als 1200 Patente) und mit bis zu 55.000 Beschäftigten einer der größten Konzerne weltweit. Man baute dort nicht nur legendäre Flugmaschinen, sondern auch das erste düsengetriebene Flugzeug (He 176) und war neben den technischen Genies um Wernher von Braun auch maßgeblich an der Entwicklung der V1 und V2 beteiligt, die unweit in Peenemünde (Insel Usedom) getestet und abgeschossen wurden. Neben den Stammwerken in Rostock, gab es u.a. auch größere HEINKEL-Produktions- und Entwicklungsstätten in Berlin, Oranienburg, Krakau, Paris und Wien.</p>",
+			"htmlEn": "<p>Heinkel Flugzeugwerke AG, founded in 1922 in Warnemünde near Rostock by Ernst Heinkel, became a major aircraft manufacturer before and during the Second World War, with over 1,200 patents and up to 55,000 employees. Its work included pioneering powered flight and wartime aircraft and rocket development. Alongside Rostock, major production and development facilities operated in Berlin, Oranienburg, Kraków, Paris and Vienna.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach dem für Deutschland verlorenen Krieg, untersagten die &quot;Siegermächte&quot;, neben BMW, Messerschmitt u.a. Flugzeugbauern, auch HEINKEL den Weiterbau von Flugzeugen. Auch waren zum Kriegsende durch die Bombardements der Engländer und Amerikaner, nahezu alle Produktionsanlagen zerstört.</p>"
+			"html": "<p>Nach dem für Deutschland verlorenen Krieg, untersagten die &quot;Siegermächte&quot;, neben BMW, Messerschmitt u.a. Flugzeugbauern, auch HEINKEL den Weiterbau von Flugzeugen. Auch waren zum Kriegsende durch die Bombardements der Engländer und Amerikaner, nahezu alle Produktionsanlagen zerstört.</p>",
+			"htmlEn": "<p>After Germany’s defeat, the Allied powers prohibited Heinkel, like BMW, Messerschmitt and other aircraft manufacturers, from continuing aircraft production. Much of its manufacturing capacity had also been destroyed by wartime bombing.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>So konstruierte man ab 1956, ähnlich wie BMW die Isetta oder Messerschmitt den Kabinenroller, auch bei HEINKEL in Stuttgart und Speyer einen optisch wie technisch gelungenen Kabinenroller. Später folgten sogar Lizenzen in Irland und England. Dabei gab es nur eine Handvoll der exklusiven Cabriolets wie diesen.</p>"
+			"html": "<p>So konstruierte man ab 1956, ähnlich wie BMW die Isetta oder Messerschmitt den Kabinenroller, auch bei HEINKEL in Stuttgart und Speyer einen optisch wie technisch gelungenen Kabinenroller. Später folgten sogar Lizenzen in Irland und England. Dabei gab es nur eine Handvoll der exklusiven Cabriolets wie diesen.</p>",
+			"htmlEn": "<p>From 1956, Heinkel in Stuttgart and Speyer developed a compact bubble car, comparable to BMW’s Isetta and Messerschmitt’s cabin scooters. Licensed production later followed in Ireland and England. Only a handful of exclusive convertibles like this were made.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -60,15 +67,18 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -77,34 +87,44 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 8 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />Der Wagen wurde bei uns umfassend instand gesetzt und dazu auch ein neues maßgeschneidertes Cabrio-Verdeck, nebst Scherengestell und Persenning passgenau angefertigt.</p>"
+			"html": "<p><br />Der Wagen wurde bei uns umfassend instand gesetzt und dazu auch ein neues maßgeschneidertes Cabrio-Verdeck, nebst Scherengestell und Persenning passgenau angefertigt.</p>",
+			"htmlEn": "<p><br>We extensively repaired the car and made a precisely fitted new convertible hood, folding frame and tonneau cover.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "HEINKEL Bubble Car, year 1957 – photograph 11 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "HEINKEL Bubble Car, year 1957",
+	"descriptionEn": "Heinkel Flugzeugwerke AG, founded in 1922 in Warnemünde near Rostock by Ernst Heinkel, became a major aircraft manufacturer before and during the Second World War, with over…",
+	"cardImageAltEn": "HEINKEL Bubble Car, year 1957",
+	"leadImageAltEn": "HEINKEL Bubble Car, year 1957 – vehicle record"
 }

@@ -17,28 +17,33 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Mercedes - Benz 190 SL des Baujahres 1956 - und damit ein sehr seltenes und begehrtes Modell des ersten Baujahres überhaupt.</p>"
+			"html": "<p>Mercedes - Benz 190 SL des Baujahres 1956 - und damit ein sehr seltenes und begehrtes Modell des ersten Baujahres überhaupt.</p>",
+			"htmlEn": "<p>A 1956 Mercedes-Benz 190 SL — a rare and desirable example from the early production period.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -47,57 +52,68 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ausgeliefert in die USA, wurde der Wagen zwar über Jahrzehnte in Amerika &quot;am Leben&quot; gehalten, wie sich jetzt herausstellt, allerdings mit eher fragwürdigen Methoden und dilletantischen Reparaturversuchen. <br />Das Ergebnis bildeten heute die nunmehr massiven Korrosionsschäden am gesamten Fahrzeug.</p>"
+			"html": "<p>Ausgeliefert in die USA, wurde der Wagen zwar über Jahrzehnte in Amerika &quot;am Leben&quot; gehalten, wie sich jetzt herausstellt, allerdings mit eher fragwürdigen Methoden und dilletantischen Reparaturversuchen. <br />Das Ergebnis bildeten heute die nunmehr massiven Korrosionsschäden am gesamten Fahrzeug.</p>",
+			"htmlEn": "<p>Delivered to the USA, the car was kept running there for decades, although inspection revealed questionable methods and amateur repair attempts. <br>The result was severe corrosion throughout the vehicle.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Somit musste der Wagen hier in unserer Manufaktur einer gründlichen und originalgetreuen Restauration unterzogen werden.</p>"
+			"html": "<p>Somit musste der Wagen hier in unserer Manufaktur einer gründlichen und originalgetreuen Restauration unterzogen werden.</p>",
+			"htmlEn": "<p>We therefore undertook a thorough restoration to original specification at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Selbst im Bereich tragender Achsaufnahmen an der Karosserie hat man im gelobten <em>&quot;Land der unbegrenzten Möglichkeiten&quot; </em>sehr fragwürdige Reparaturversuche beispielsweise mit Zeitungspapier, Stahlwolle (Topfkratzer) und reichlich Gips vorgenommen...</p>"
+			"html": "<p>Selbst im Bereich tragender Achsaufnahmen an der Karosserie hat man im gelobten <em>&quot;Land der unbegrenzten Möglichkeiten&quot; </em>sehr fragwürdige Reparaturversuche beispielsweise mit Zeitungspapier, Stahlwolle (Topfkratzer) und reichlich Gips vorgenommen...</p>",
+			"htmlEn": "<p>Even the load-bearing axle mounting areas of the body had been repaired in the supposedly <em>“land of unlimited opportunity” </em>using highly questionable materials such as newspaper, steel wool from pan scourers and generous quantities of plaster…</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -106,7 +122,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -115,7 +132,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 14 in the vehicle record"
 				}
 			]
 		},
@@ -124,7 +142,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -133,20 +152,23 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 16 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Daher musste quasi das gesamte untere Drittel der Karosserie neu angefertigt und mitsamt des Unterbodens mit seinen tragenden Holmen vollständig und fachgerecht durch uns erneuert werden...</p>"
+			"html": "<p>Daher musste quasi das gesamte untere Drittel der Karosserie neu angefertigt und mitsamt des Unterbodens mit seinen tragenden Holmen vollständig und fachgerecht durch uns erneuert werden...</p>",
+			"htmlEn": "<p>We therefore had to fabricate virtually the entire lower third of the body anew, professionally replacing it along with the floor and its structural members…</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -155,7 +177,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 18 in the vehicle record"
 				}
 			]
 		},
@@ -164,20 +187,23 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 19 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Währenddessen konnten bereits in unserem Motorenbau der Motor mit Anbauteilen, das Getriebe und die kompletten Achsen mit Lenkung, Bremsen u.dgl. umfangreich revidiert werden.</p>"
+			"html": "<p>Währenddessen konnten bereits in unserem Motorenbau der Motor mit Anbauteilen, das Getriebe und die kompletten Achsen mit Lenkung, Bremsen u.dgl. umfangreich revidiert werden.</p>",
+			"htmlEn": "<p>Meanwhile, our engine department comprehensively overhauled the engine and ancillaries, gearbox, complete axles, steering, brakes and related components.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -186,7 +212,8 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 21 in the vehicle record"
 				}
 			]
 		},
@@ -195,7 +222,8 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 22 in the vehicle record"
 				}
 			]
 		},
@@ -204,24 +232,28 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 24 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Gemäß Kundenwunsch bekam der Wagen in unserer Lackiererei auch wieder seine Ursprungs-Auslieferungsfarbe von 1956.</p>"
+			"html": "<p>Gemäß Kundenwunsch bekam der Wagen in unserer Lackiererei auch wieder seine Ursprungs-Auslieferungsfarbe von 1956.</p>",
+			"htmlEn": "<p>At the client’s request, our paint shop also returned the car to its original 1956 delivery colour.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 25 in the vehicle record"
 				}
 			]
 		},
@@ -230,19 +262,23 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 28 in the vehicle record"
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 29 in the vehicle record"
 				}
 			]
 		},
@@ -251,34 +287,44 @@
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 30 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Während des technischen Neuaufbaus wurde u.a. auch ein neuer Kabelbaum vollständig neu angefertigt und installiert und die gesamte Innenausstattung in feinstem Leder erneuert. Hierbei kamen ebenfalls sehr originalgetreue Materialien in identischer Qualität wie 1956, wie beispielsweise chromfrei gegerbtes und original lediglich kopfgefärbtes Leder zum Einsatz.</p>"
+			"html": "<p>Während des technischen Neuaufbaus wurde u.a. auch ein neuer Kabelbaum vollständig neu angefertigt und installiert und die gesamte Innenausstattung in feinstem Leder erneuert. Hierbei kamen ebenfalls sehr originalgetreue Materialien in identischer Qualität wie 1956, wie beispielsweise chromfrei gegerbtes und original lediglich kopfgefärbtes Leder zum Einsatz.</p>",
+			"htmlEn": "<p>During the mechanical rebuild we made and installed a completely new wiring loom, among other work, and renewed the entire interior in fine leather. We used authentic materials matching the quality of those used in 1956, including chrome-free-tanned leather with the original type of surface colouring.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 32 in the vehicle record"
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 33 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Während der Restauration der Innenausstattung bekam der Wagen auch wieder seine sehr begehrten frühen Schalensitze zurück, die komplett neu aufgebaut wurden.</p>"
+			"html": "<p>Während der Restauration der Innenausstattung bekam der Wagen auch wieder seine sehr begehrten frühen Schalensitze zurück, die komplett neu aufgebaut wurden.</p>",
+			"htmlEn": "<p>As part of the interior restoration, the car also regained its sought-after early bucket seats, which were completely rebuilt.</p>"
 		}
-	]
+	],
+	"titleEn": "Mercedes-Benz 190SL, year 1956",
+	"descriptionEn": "A 1956 Mercedes-Benz 190 SL — a rare and desirable example from the early production period.",
+	"cardImageAltEn": "Mercedes-Benz 190SL, year 1956",
+	"leadImageAltEn": "Mercedes-Benz 190SL, year 1956 – vehicle record"
 }

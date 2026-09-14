@@ -17,69 +17,83 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein Mercedes-Benz 300 &quot;Adenauer&quot; als sehr seltenes 4-türiges Cabriolet &quot;D&quot; des frühen Baujahres 1953.</p>"
+			"html": "<p>Hier ein Mercedes-Benz 300 &quot;Adenauer&quot; als sehr seltenes 4-türiges Cabriolet &quot;D&quot; des frühen Baujahres 1953.</p>",
+			"htmlEn": "<p>A Mercedes-Benz 300 Adenauer, a very rare early 1953 four-door Cabriolet D.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dieses damalige Mercedes Spitzenmodell ging als sog. &quot;Adenauer&quot;-Mercedes in die Automobilgeschichte ein, war es doch (zunächst als Limousine) der erste Dienstwagen des ersten deutschen Bundeskanzlers Konrad Adenauer. Auch Bundespräsident Theodor Heuss und andere internationale Politoberhäupter nutzten diesen komfortablen Repräsentationswagen, als damaliges Spitzenprodukt der Daimler-Benz AG.</p>"
+			"html": "<p>Dieses damalige Mercedes Spitzenmodell ging als sog. &quot;Adenauer&quot;-Mercedes in die Automobilgeschichte ein, war es doch (zunächst als Limousine) der erste Dienstwagen des ersten deutschen Bundeskanzlers Konrad Adenauer. Auch Bundespräsident Theodor Heuss und andere internationale Politoberhäupter nutzten diesen komfortablen Repräsentationswagen, als damaliges Spitzenprodukt der Daimler-Benz AG.</p>",
+			"htmlEn": "<p>This Mercedes flagship entered automotive history as the Adenauer Mercedes: initially as a saloon, it was the first official car of West Germany’s first Chancellor, Konrad Adenauer. President Theodor Heuss and other international political leaders also used this comfortable prestige car, then Daimler-Benz’s leading product.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAufgrund doch zahlreicher Karosserie- und Korrosionsschäden, musste die gesamte Karosserie mittels eigens und präzise angefertigter Blechteile neu aufgebaut werden.</p>"
+			"html": "<p><br />\n<br />\nAufgrund doch zahlreicher Karosserie- und Korrosionsschäden, musste die gesamte Karosserie mittels eigens und präzise angefertigter Blechteile neu aufgebaut werden.</p>",
+			"htmlEn": "<p><br>\n<br>\nNumerous areas of body damage and corrosion required us to reconstruct the entire body using precisely fabricated replacement panels.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -88,36 +102,43 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Bei einer solch hochwertigen &quot;Frame-Off&quot; Restauration werden üblicherweise Karosserie und Rahmen voneinander getrennt um sämtliche Bauteile separat aufbauen zu können.<br />\n<br />\n<br />\nErst nach Abschluss dieser Karosserie- und Fahrgestellarbeiten, werden diese wieder präzise vereint - auch um nachfolgend perfekte Karosseriepassungen und Spaltmaße zu erreichen.<br />\n<br />\n<br />\nAuch wurden dabei die notwendigen Stellmacherarbeiten für die Holzspriegel der Verdeckkonstruktion erneuert und eingepasst.</p>"
+			"html": "<p>Bei einer solch hochwertigen &quot;Frame-Off&quot; Restauration werden üblicherweise Karosserie und Rahmen voneinander getrennt um sämtliche Bauteile separat aufbauen zu können.<br />\n<br />\n<br />\nErst nach Abschluss dieser Karosserie- und Fahrgestellarbeiten, werden diese wieder präzise vereint - auch um nachfolgend perfekte Karosseriepassungen und Spaltmaße zu erreichen.<br />\n<br />\n<br />\nAuch wurden dabei die notwendigen Stellmacherarbeiten für die Holzspriegel der Verdeckkonstruktion erneuert und eingepasst.</p>",
+			"htmlEn": "<p>In a high-quality frame-off restoration, body and chassis are normally separated so every component can be rebuilt independently.<br>\n<br>\n<br>\nOnly once body and chassis work is complete are they precisely reunited, allowing accurate body alignment and panel gaps.<br>\n<br>\n<br>\nWe also renewed and fitted the timber bows required for the hood structure.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -126,85 +147,103 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 21 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAnschließend wurde der Wagen in unserer Lackierabteilung wunschgemäß in einem Mercedes Originalfarbton neu lackiert.</p>"
+			"html": "<p><br />\nAnschließend wurde der Wagen in unserer Lackierabteilung wunschgemäß in einem Mercedes Originalfarbton neu lackiert.</p>",
+			"htmlEn": "<p><br>\nOur paint shop then refinished the car in an original Mercedes colour chosen by the client.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 24 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Im Zuge dieser hochwertigen Vollrestauration wurde in unserer hauseigenen Sattlerei dazu auch eine komplett neue Innenausstattung in feinstem Echtleder und ein neues Cabrioletverdeck mit echter Rosshaarfütterung geschneidert.<br />\n<br /></p>"
+			"html": "<p>Im Zuge dieser hochwertigen Vollrestauration wurde in unserer hauseigenen Sattlerei dazu auch eine komplett neue Innenausstattung in feinstem Echtleder und ein neues Cabrioletverdeck mit echter Rosshaarfütterung geschneidert.<br />\n<br /></p>",
+			"htmlEn": "<p>As part of this comprehensive restoration, our in-house upholstery shop tailored an entirely new fine genuine leather interior and convertible hood with real horsehair padding.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 25 in the vehicle record"
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 28 in the vehicle record"
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 29 in the vehicle record"
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 32 in the vehicle record"
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 33 in the vehicle record"
 				}
 			]
 		},
@@ -213,49 +252,58 @@
 			"images": [
 				{
 					"src": "./image-034.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 34 in the vehicle record"
 				},
 				{
 					"src": "./image-035.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 35 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Komplette Instrumentenüberholung u.a. mit Umbau von Meilen in Kilometer, Grad Fahrenheit in Grad Celsius. usw.</p>"
+			"html": "<p>Komplette Instrumentenüberholung u.a. mit Umbau von Meilen in Kilometer, Grad Fahrenheit in Grad Celsius. usw.</p>",
+			"htmlEn": "<p>Complete instrument overhaul, including conversion from miles to kilometres and Fahrenheit to Celsius.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 36 in the vehicle record"
 				},
 				{
 					"src": "./image-037.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 37 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Generalüberholung des bis heute noch ersten, originalen 6 Zylinder-Motors, nebst Getriebeinstandsetzung.</p>"
+			"html": "<p>Generalüberholung des bis heute noch ersten, originalen 6 Zylinder-Motors, nebst Getriebeinstandsetzung.</p>",
+			"htmlEn": "<p>Full overhaul of the still-original six-cylinder engine, together with gearbox repairs.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-038.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 38 in the vehicle record"
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 39 in the vehicle record"
 				},
 				{
 					"src": "./image-040.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 40 in the vehicle record"
 				}
 			]
 		},
@@ -264,32 +312,38 @@
 			"images": [
 				{
 					"src": "./image-041.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 41 in the vehicle record"
 				},
 				{
 					"src": "./image-042.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 42 in the vehicle record"
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 43 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Feinste Innenausstattung aus unserer Sattlerei, nebst Cabriolet-Verdeck und edelsten Echt-Zierhölzern.</p>"
+			"html": "<p>Feinste Innenausstattung aus unserer Sattlerei, nebst Cabriolet-Verdeck und edelsten Echt-Zierhölzern.</p>",
+			"htmlEn": "<p>Fine upholstery, a new convertible hood and exquisite genuine wood trim from our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-044.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 44 in the vehicle record"
 				},
 				{
 					"src": "./image-045.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 45 in the vehicle record"
 				}
 			]
 		},
@@ -298,32 +352,38 @@
 			"images": [
 				{
 					"src": "./image-046.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 46 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 46 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 46 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDas originale &quot;Becker Nürburg&quot; - Radio.</p>"
+			"html": "<p><br />\nDas originale &quot;Becker Nürburg&quot; - Radio.</p>",
+			"htmlEn": "<p><br>\nThe original Becker Nürburg radio.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Von diesem frühen Typ 300 (a), des Baujahres 1953 entstanden nur 52 Fahrzeuge als 4-türiges Cabriolet (D).<br />\n<br /></p>"
+			"html": "<p>Von diesem frühen Typ 300 (a), des Baujahres 1953 entstanden nur 52 Fahrzeuge als 4-türiges Cabriolet (D).<br />\n<br /></p>",
+			"htmlEn": "<p>Only 52 examples of this early 1953 Type 300(a) were built as four-door Cabriolet Ds.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-047.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 47 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 47 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 47 in the vehicle record"
 				},
 				{
 					"src": "./image-048.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 48 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 48 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 48 in the vehicle record"
 				},
 				{
 					"src": "./image-049.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 49 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 49 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 49 in the vehicle record"
 				}
 			]
 		},
@@ -332,11 +392,13 @@
 			"images": [
 				{
 					"src": "./image-050.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 50 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 50 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 50 in the vehicle record"
 				},
 				{
 					"src": "./image-051.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 51 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 51 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 51 in the vehicle record"
 				}
 			]
 		},
@@ -345,13 +407,19 @@
 			"images": [
 				{
 					"src": "./image-052.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 52 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Aufnahme 52 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – photograph 52 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEiner der wenigen sehr perfekten, originalgetreu und professionell vollrestaurierten &quot;Adenauer&quot;-Cabriolets verlässt unser Haus an seinen Besitzer, einen Kenner, Liebhaber und Sammler solch rarer automobiler Kostbarkeiten...</p>"
+			"html": "<p><br />\n<br />\nEiner der wenigen sehr perfekten, originalgetreu und professionell vollrestaurierten &quot;Adenauer&quot;-Cabriolets verlässt unser Haus an seinen Besitzer, einen Kenner, Liebhaber und Sammler solch rarer automobiler Kostbarkeiten...</p>",
+			"htmlEn": "<p><br>\n<br>\nOne of the few Adenauer cabriolets restored professionally, faithfully and to such a high standard leaves our workshop for its owner, an expert, enthusiast and collector of rare automotive treasures.</p>"
 		}
-	]
+	],
+	"titleEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953",
+	"descriptionEn": "A Mercedes-Benz 300 Adenauer, a very rare early 1953 four-door Cabriolet D.",
+	"cardImageAltEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953",
+	"leadImageAltEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – vehicle record"
 }

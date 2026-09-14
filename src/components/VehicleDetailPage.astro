@@ -1,4 +1,5 @@
 ---
+import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
 import { join } from 'node:path';
 import sharp from 'sharp';
 import Layout from '../layouts/Layout.astro';
@@ -28,11 +29,13 @@ const previousVehicle = currentIndex > 0 ? siblings[currentIndex - 1] : undefine
 const nextVehicle = currentIndex >= 0 && currentIndex < siblings.length - 1
 	? siblings[currentIndex + 1]
 	: undefined;
+const language = vehicleLanguage(Astro.url.pathname, import.meta.env.BASE_URL);
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
 const githubPagesPreview = basePath !== '/';
-const validatedBlocks = validateVehicleBlocks(vehicle.data.blocks, `${vehicle.data.category}/${vehicle.data.slug}`);
+const content = localizeVehicle(vehicle.data, language);
+const validatedBlocks = validateVehicleBlocks(content.blocks, `${vehicle.data.category}/${vehicle.data.slug}`);
 const contentBlocks = (
 	githubPagesPreview
 		? limitVehicleGalleryBlocks(validatedBlocks, GITHUB_PAGES_GALLERY_IMAGE_LIMIT)
@@ -52,19 +55,21 @@ const leadImage = {
 };
 const vehicleJsonLd = {
 	'@type': 'Vehicle',
+	__authored: ['name', 'description'],
 	'@id': vehicleId,
-	name: vehicle.data.title,
-	description: vehicle.data.description,
+	name: content.title,
+	description: content.description,
 	image: new URL(leadImage.src, siteUrl).href,
 	...(vehicle.data.year ? { productionDate: vehicle.data.year } : {}),
 };
 ---
 
 <Layout
-	title={vehicle.data.title}
-	description={vehicle.data.description}
+	authoredTitle authoredDescription authoredImageAlt
+	title={content.title}
+	description={content.description}
 	openGraphImage={leadImage}
-	openGraphImageAlt={vehicle.data.leadImageAlt}
+	openGraphImageAlt={content.leadImageAlt}
 	structuredDataType="ItemPage"
 	dateModified={vehicle.data.dateModified}
 	additionalJsonLd={vehicleJsonLd}
@@ -73,7 +78,7 @@ const vehicleJsonLd = {
 		{ name: 'Startseite', path: '/' },
 		{ name: 'Projekte', path: '/projekte/' },
 		{ name: category.label, path: `/projekte/${vehicle.data.category}/` },
-		{ name: vehicle.data.title, path: vehicleRoute(vehicle) },
+		{ name: content.title, path: vehicleRoute(vehicle), authored: true },
 	]}
 >
 	<SiteChrome theme="light">
@@ -82,13 +87,13 @@ const vehicleJsonLd = {
 				<p>
 					<a href={sitePath(`/projekte/${vehicle.data.category}/`)}>{category.label}</a>
 				</p>
-				<h1>{vehicle.data.title}</h1>
+				<h1 data-authored>{content.title}</h1>
 			</header>
 
 			<figure class="vehicle-lead">
 				<img
 					src={leadImage.src}
-					alt={vehicle.data.leadImageAlt}
+					data-authored alt={content.leadImageAlt}
 					width={leadImage.width}
 					height={leadImage.height}
 					loading="eager"
@@ -101,13 +106,13 @@ const vehicleJsonLd = {
 				{
 					contentBlocks.map((block, blockIndex) => {
 						if (block.type === 'copy') {
-							return <div class="story-copy" set:html={block.html} />;
+							return <div class="story-copy" data-authored set:html={block.html} />;
 						}
 
 						if (block.type === 'contact') {
 							return (
 								<aside class="story-contact" aria-label="Fahrzeuganfrage">
-									<div set:html={block.html} />
+									<div data-authored set:html={block.html} />
 									<div class="story-contact__actions">
 										<a href="tel:+493696683783">03 69 66 / 83 7 83</a>
 										<a href="mailto:info@oldtimermanufaktur.de">E-Mail schreiben</a>
@@ -122,14 +127,14 @@ const vehicleJsonLd = {
 								aria-label={`Bildergruppe ${blockIndex + 1}`}
 							>
 								{block.images.map((image, imageIndex) => (
-									<figure class:list={['story-image', { 'story-image--feature': imageIndex === 0 && block.images.length >= 3 }]}>
+									<figure data-authored class:list={['story-image', { 'story-image--feature': imageIndex === 0 && block.images.length >= 3 }]}>
 										<button
 											type="button"
 											class="story-image__button"
 											data-lightbox-trigger
 											data-lightbox-src={galleryImagePath(image.src)}
 											data-lightbox-alt={image.alt}
-											aria-label={`${image.alt} vergrößern`}
+											aria-label={`${image.alt}${language === 'en' ? ' — enlarge' : ' vergrößern'}`}
 										>
 											<img
 												src={galleryImagePath(image.src)}
@@ -157,7 +162,7 @@ const vehicleJsonLd = {
 								</svg>
 								Vorheriges Fahrzeug
 							</span>
-							<strong>{previousVehicle.data.title}</strong>
+							<strong data-authored>{localizeVehicle(previousVehicle.data, language).title}</strong>
 						</a>
 					) : (
 						<span aria-hidden="true" />
@@ -175,7 +180,7 @@ const vehicleJsonLd = {
 									<path d="m18 1 5 5-5 5M1 6h22" />
 								</svg>
 							</span>
-							<strong>{nextVehicle.data.title}</strong>
+							<strong data-authored>{localizeVehicle(nextVehicle.data, language).title}</strong>
 						</a>
 					) : (
 						<span aria-hidden="true" />

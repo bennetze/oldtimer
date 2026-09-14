@@ -17,77 +17,93 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong><em>The Winner is:</em></strong></p>"
+			"html": "<p><strong><em>The Winner is:</em></strong></p>",
+			"htmlEn": "<p><strong><em>The winner is:</em></strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<h2><strong>BMW 507 Roadster</strong><br /></h2>"
+			"html": "<h2><strong>BMW 507 Roadster</strong><br /></h2>",
+			"htmlEn": "<h2><strong>BMW 507 Roadster</strong><br></h2>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>Sieger beim<br />\n&quot;European Concours de Elegance&quot;.</strong></p>"
+			"html": "<p><strong>Sieger beim<br />\n&quot;European Concours de Elegance&quot;.</strong></p>",
+			"htmlEn": "<p><strong>Winner at the<br>\n“European Concours de Elegance”.</strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier eines der kult- und kunstvollen &quot;Leckerbissen&quot; der Automobilgeschichte überhaupt. Ein BMW 507 Roadster, der bei uns eine umfangreiche Vollrestauration in allen Details erhielt.</p>"
+			"html": "<p>Hier eines der kult- und kunstvollen &quot;Leckerbissen&quot; der Automobilgeschichte überhaupt. Ein BMW 507 Roadster, der bei uns eine umfangreiche Vollrestauration in allen Details erhielt.</p>",
+			"htmlEn": "<p>One of automotive history’s most iconic creations: a BMW 507 Roadster that received a comprehensive restoration in every detail at our workshop.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der BMW 507 gilt in Kennerkreisen als der &quot;Über&quot;-BMW schlechthin. Gezeichnet von dem Industriedesigner und genialen Formgestalter Albrecht Graf von Goertz entstanden zwischen 1956 und 1959 gerade einmal 252 Stück dieser traumhaft eleganten Roadster in detailverliebter reiner Handarbeit.</p>"
+			"html": "<p>Der BMW 507 gilt in Kennerkreisen als der &quot;Über&quot;-BMW schlechthin. Gezeichnet von dem Industriedesigner und genialen Formgestalter Albrecht Graf von Goertz entstanden zwischen 1956 und 1959 gerade einmal 252 Stück dieser traumhaft eleganten Roadster in detailverliebter reiner Handarbeit.</p>",
+			"htmlEn": "<p>Enthusiasts regard the 507 as the ultimate BMW. Designed by industrial designer Albrecht Graf von Goertz, just 252 of these elegantly styled roadsters were built entirely by hand between 1956 and 1959, with meticulous attention to detail.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Sowohl der Großteil der Karosserie, als auch der geniale Motor bestanden dabei weitgehend aus dem anspruchsvollen Leichtbaumaterial Aluminium. Ein genialer V8 Motor mit 3,2 Litern Hubraum, 165 PS Leistung und bis zu 220km/h Spitzengeschwindigkeit - schon damals Leistungsparameter der absoluten Spitzenklasse!</p>"
+			"html": "<p>Sowohl der Großteil der Karosserie, als auch der geniale Motor bestanden dabei weitgehend aus dem anspruchsvollen Leichtbaumaterial Aluminium. Ein genialer V8 Motor mit 3,2 Litern Hubraum, 165 PS Leistung und bis zu 220km/h Spitzengeschwindigkeit - schon damals Leistungsparameter der absoluten Spitzenklasse!</p>",
+			"htmlEn": "<p>Much of the bodywork and the engine were made from aluminium, a demanding lightweight material. Its 3.2-litre V8 produced 165 PS and enabled a top speed of up to 220 km/h — outstanding performance figures for its time.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Namhafte Persönlichkeiten wie Elvis Presley oder Alain Delon leisteten sich ein solch seltenes wie bezauberndes Sportwagen-Exemplar mit dieser atemberaubenden und zeitlos eleganten Linienführung.</p>"
+			"html": "<p>Namhafte Persönlichkeiten wie Elvis Presley oder Alain Delon leisteten sich ein solch seltenes wie bezauberndes Sportwagen-Exemplar mit dieser atemberaubenden und zeitlos eleganten Linienführung.</p>",
+			"htmlEn": "<p>Famous owners such as Elvis Presley and Alain Delon chose this rare and captivating sports car with its breathtaking, timelessly elegant lines.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Ursprungszustand unseres Exemplars war zwar weitgehend vollständig, jedoch von den einzelnen Vorbesitzern im Laufe der Jahre stark &quot;verbastelt&quot; worden.</p>"
+			"html": "<p>Der Ursprungszustand unseres Exemplars war zwar weitgehend vollständig, jedoch von den einzelnen Vorbesitzern im Laufe der Jahre stark &quot;verbastelt&quot; worden.</p>",
+			"htmlEn": "<p>Our example was largely complete when it arrived, but previous owners had made numerous inappropriate modifications over the years.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -96,40 +112,48 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 10 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch fanden sich einige &quot;Karosseriebausünden&quot; und Schäden der Vorzeit, die von uns während der Restaurierung allesamt fachgerecht instandgesetzt wurden.</p>"
+			"html": "<p>Auch fanden sich einige &quot;Karosseriebausünden&quot; und Schäden der Vorzeit, die von uns während der Restaurierung allesamt fachgerecht instandgesetzt wurden.</p>",
+			"htmlEn": "<p>We also found poor earlier body repairs and old damage, all of which we repaired professionally during the restoration.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -138,32 +162,38 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 17 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch der gesamte BMW V8 Original-Motor erhielt eine komplette Generalinstandsetzung mit völlig neuem &quot;Innenleben&quot; hier bereits als fertige Motor-/Getriebeeinheit bereit zur großen &quot;Hochzeit&quot; - dem Einbau in die Karosserie.</p>"
+			"html": "<p>Auch der gesamte BMW V8 Original-Motor erhielt eine komplette Generalinstandsetzung mit völlig neuem &quot;Innenleben&quot; hier bereits als fertige Motor-/Getriebeeinheit bereit zur großen &quot;Hochzeit&quot; - dem Einbau in die Karosserie.</p>",
+			"htmlEn": "<p>The original BMW V8 received a complete overhaul with entirely renewed internals. Here, the finished engine and gearbox assembly is ready for its “marriage” with the body.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -172,92 +202,108 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 22 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Gemäß der in unserem Farbarchiv vorhandenen originalen BMW Musterfarbkarte von 1957, wurde der Wagen in unserer Lackierabteilung wieder in seiner originalen Ursprungsfarbe eisblau-metallic lackiert.</p>"
+			"html": "<p>Gemäß der in unserem Farbarchiv vorhandenen originalen BMW Musterfarbkarte von 1957, wurde der Wagen in unserer Lackierabteilung wieder in seiner originalen Ursprungsfarbe eisblau-metallic lackiert.</p>",
+			"htmlEn": "<p>Using an original 1957 BMW colour chart from our archive, our paint shop returned the car to its original ice blue metallic finish.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 24 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Danach erhielt auch die Innenausstattung in unserer Sattlerei ein komplett neues, originalgetreues Interieur in rotem Echtleder, ein neues Cabrioverdeck geschneidert und die Teppiche in authentischem Originalmaterial gefertigt.</p>"
+			"html": "<p>Danach erhielt auch die Innenausstattung in unserer Sattlerei ein komplett neues, originalgetreues Interieur in rotem Echtleder, ein neues Cabrioverdeck geschneidert und die Teppiche in authentischem Originalmaterial gefertigt.</p>",
+			"htmlEn": "<p>Our upholstery shop then recreated the original interior in red genuine leather, tailored a new convertible hood and made carpets from authentic original-specification material.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 25 in the vehicle record"
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 26 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch sämtliche Achsteile, Bremsen, die org. Drehstabfederung, Lenkung, sämtliche Instrumente usw. wurden von uns aufwendig revidiert und ein komplett neuer Kabelbaum angefertigt und installiert.</p>"
+			"html": "<p>Auch sämtliche Achsteile, Bremsen, die org. Drehstabfederung, Lenkung, sämtliche Instrumente usw. wurden von uns aufwendig revidiert und ein komplett neuer Kabelbaum angefertigt und installiert.</p>",
+			"htmlEn": "<p>We also comprehensively overhauled the axle components, brakes, original torsion-bar suspension, steering, instruments and other systems, and made and installed an entirely new wiring loom.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 27 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nUnzählige Zier- und Anbauteile wurden ebenso instandgesetzt und anschließend galvanisch neu verchromt.</p>"
+			"html": "<p><br />\n<br />\nUnzählige Zier- und Anbauteile wurden ebenso instandgesetzt und anschließend galvanisch neu verchromt.</p>",
+			"htmlEn": "<p><br>\n<br>\nCountless trim pieces and fittings were repaired and then electroplated with new chrome.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 28 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nNach dieser sehr detaillierten und originalgetreuen Vollrestauration wurde auch dieser BMW unsererseits umfangreichen Tests unterzogen, bevor er anschließend seinem glücklichen Sammler- und Besitzerehepaar ausgeliefert werden konnte.</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\nNach dieser sehr detaillierten und originalgetreuen Vollrestauration wurde auch dieser BMW unsererseits umfangreichen Tests unterzogen, bevor er anschließend seinem glücklichen Sammler- und Besitzerehepaar ausgeliefert werden konnte.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nAfter this detailed restoration to original specification, we thoroughly tested the BMW before delivering it to its delighted owners, a couple of collectors.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 29 in the vehicle record"
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 31 in the vehicle record"
 				}
 			]
 		},
@@ -266,53 +312,63 @@
 			"images": [
 				{
 					"src": "./image-032.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 32 in the vehicle record"
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 33 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nIn jeder Ansicht und Blickwinkel ein detailverliebter TRAUM eines der ganz wenigen BMW 507 Roadster aus der raren 1. Serie.</p>"
+			"html": "<p><br />\nIn jeder Ansicht und Blickwinkel ein detailverliebter TRAUM eines der ganz wenigen BMW 507 Roadster aus der raren 1. Serie.</p>",
+			"htmlEn": "<p><br>\nA dream from every angle, with exquisite attention to detail: one of the very few BMW 507 Roadsters from the rare first series.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-034.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 34 in the vehicle record"
 				},
 				{
 					"src": "./image-035.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 35 in the vehicle record"
 				},
 				{
 					"src": "./image-036.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 36 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Und trotz der geringen Stückzahl, arbeiten wir neben dem nun fertig restaurierten Exemplar, bereits an dem nächsten 507 Projekt - ebenfalls eine Vollrestaurierung.</p>"
+			"html": "<p>Und trotz der geringen Stückzahl, arbeiten wir neben dem nun fertig restaurierten Exemplar, bereits an dem nächsten 507 Projekt - ebenfalls eine Vollrestaurierung.</p>",
+			"htmlEn": "<p>Despite the small production run, alongside this completed example we are already working on our next 507 project — another full restoration.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-037.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 37 in the vehicle record"
 				},
 				{
 					"src": "./image-038.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 38 in the vehicle record"
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 39 in the vehicle record"
 				}
 			]
 		},
@@ -321,111 +377,134 @@
 			"images": [
 				{
 					"src": "./image-040.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 40 in the vehicle record"
 				},
 				{
 					"src": "./image-041.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 41 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der geniale BMW V8 Motor.</p>"
+			"html": "<p>Der geniale BMW V8 Motor.</p>",
+			"htmlEn": "<p>The superb BMW V8 engine.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-042.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 42 in the vehicle record"
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 43 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Selbst das bis heute original erhaltene Bordwerkzeug wurde aufwändig überarbeitet und vervollständigt.</p>"
+			"html": "<p>Selbst das bis heute original erhaltene Bordwerkzeug wurde aufwändig überarbeitet und vervollständigt.</p>",
+			"htmlEn": "<p>Even the surviving original tool kit was carefully refurbished and completed.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-044.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 44 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach Abschluss der sehr gelungenen Vollrestauration bekamen wir die Einladung, anlässlich der sog. &quot;ClassicGala&quot; von Schwetzingen, dass Auto erstmals einem breiteren Publikum vorzustellen.</p>"
+			"html": "<p>Nach Abschluss der sehr gelungenen Vollrestauration bekamen wir die Einladung, anlässlich der sog. &quot;ClassicGala&quot; von Schwetzingen, dass Auto erstmals einem breiteren Publikum vorzustellen.</p>",
+			"htmlEn": "<p>Following the successful restoration, we were invited to present the car to a wider audience for the first time at the ClassicGala in Schwetzingen.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-045.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 45 in the vehicle record"
 				},
 				{
 					"src": "./image-046.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 46 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 46 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 46 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Unter der einzigartigen Kulisse des Barockschlosses von Schwetzingen wurden wir von einer namhaften Fachjury anlässlich des dortigen &quot;European Concours de Elegance&quot; für das bestrestaurierte Fahrzeug seiner Klasse ausgezeichnet und mit einem tollen Pokal bedacht.</p>"
+			"html": "<p>Unter der einzigartigen Kulisse des Barockschlosses von Schwetzingen wurden wir von einer namhaften Fachjury anlässlich des dortigen &quot;European Concours de Elegance&quot; für das bestrestaurierte Fahrzeug seiner Klasse ausgezeichnet und mit einem tollen Pokal bedacht.</p>",
+			"htmlEn": "<p>Against the unique backdrop of Schwetzingen’s Baroque palace, a distinguished expert jury at the European Concours de Elegance awarded us a trophy for the best-restored vehicle in its class.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Inmitten der einzigartigen historischen Kulisse des Barockschlosses von Schwetzingen treffen sich alljährlich zur dortigen ClassicGala Schwetzingen die TOP-Oldtimer schlechthin.</p>"
+			"html": "<p>Inmitten der einzigartigen historischen Kulisse des Barockschlosses von Schwetzingen treffen sich alljährlich zur dortigen ClassicGala Schwetzingen die TOP-Oldtimer schlechthin.</p>",
+			"htmlEn": "<p>Every year, outstanding classic cars gather at ClassicGala Schwetzingen in the unique historic setting of the Baroque palace.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-047.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 47 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 47 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 47 in the vehicle record"
 				},
 				{
 					"src": "./image-048.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 48 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 48 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 48 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Abschließend zu unseren Restaurationsarbeiten am Originalfahrzeug BMW 507 haben wir in unserer Oldtimermanufaktur eigens für den Kunden zusätzlich ein exklusives Modellfahrzeug im Maßstab 1:18 gefertigt - sehr detailverliebt und selbstverständlich so präzise und originalgereu wie das Original - ein exklusives Einzelstück.</p>"
+			"html": "<p>Abschließend zu unseren Restaurationsarbeiten am Originalfahrzeug BMW 507 haben wir in unserer Oldtimermanufaktur eigens für den Kunden zusätzlich ein exklusives Modellfahrzeug im Maßstab 1:18 gefertigt - sehr detailverliebt und selbstverständlich so präzise und originalgereu wie das Original - ein exklusives Einzelstück.</p>",
+			"htmlEn": "<p>To complement the restoration of the full-size BMW 507, we also made an exclusive 1:18 scale model for the client at Die Oldtimermanufaktur. Meticulously detailed and as faithful to the original as the car itself, it is a unique one-off.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-049.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 49 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 49 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 49 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eine vollendete Premiumrestauration - festgehalten in einzigartigen Premiumfotos - für ein Premiumautomobil der Superlative.</p>"
+			"html": "<p>Eine vollendete Premiumrestauration - festgehalten in einzigartigen Premiumfotos - für ein Premiumautomobil der Superlative.</p>",
+			"htmlEn": "<p>An exceptional restoration, captured in exceptional photographs, for an extraordinary automobile.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-050.jpg",
-					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 50 der Fahrzeugdokumentation"
+					"alt": "BMW 507 Roadster, Baujahr 1957 – Aufnahme 50 der Fahrzeugdokumentation",
+					"altEn": "BMW 507 Roadster, year 1957 – photograph 50 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>...was für ein Auto - aus jedem Blickwinkel ein einzigartiger Augenschmaus!</p>"
+			"html": "<p>...was für ein Auto - aus jedem Blickwinkel ein einzigartiger Augenschmaus!</p>",
+			"htmlEn": "<p>…what a car — a feast for the eyes from every angle!</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 507 Roadster, year 1957",
+	"descriptionEn": "One of automotive history’s most iconic creations: a BMW 507 Roadster that received a comprehensive restoration in every detail at our workshop.",
+	"cardImageAltEn": "BMW 507 Roadster, year 1957",
+	"leadImageAltEn": "BMW 507 Roadster, year 1957 – vehicle record"
 }

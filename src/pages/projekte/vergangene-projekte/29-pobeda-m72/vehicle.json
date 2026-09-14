@@ -17,45 +17,53 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier eine russische Kostbarkeit, eines “POBEDA” von 1956, als sehr seltene 4x4 Allradausführung namens M72.</p>"
+			"html": "<p>Hier eine russische Kostbarkeit, eines “POBEDA” von 1956, als sehr seltene 4x4 Allradausführung namens M72.</p>",
+			"htmlEn": "<p>A Russian rarity: a 1956 Pobeda in the very rare M72 four-wheel-drive specification.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Motor 2,1 Liter Hubraum, 55PS Leistung, knapp 4700 Stück gebaut</p>"
+			"html": "<p>Motor 2,1 Liter Hubraum, 55PS Leistung, knapp 4700 Stück gebaut</p>",
+			"htmlEn": "<p>Engine: 2.1 litres, 55 PS; just under 4,700 built.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die Marke POBEDA (russisch für SIEG!), baute nach dem 2. Weltkrieg einen äußerst robusten, aber dennoch selbsttragenden Gelände-PKW mit sehr elegant abfallendem Heck und einem Design nach amerikanischen Vorbildern a la Buick, Hudsen u. Co.</p>"
+			"html": "<p>Die Marke POBEDA (russisch für SIEG!), baute nach dem 2. Weltkrieg einen äußerst robusten, aber dennoch selbsttragenden Gelände-PKW mit sehr elegant abfallendem Heck und einem Design nach amerikanischen Vorbildern a la Buick, Hudsen u. Co.</p>",
+			"htmlEn": "<p>Pobeda, Russian for “victory”, built this robust post-war off-road passenger car with unitary construction, an elegantly sloping rear and styling inspired by American marques such as Buick and Hudson.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Diese stromlinienförmige Gelände-Limousine mit einem noch heute sensationellen Luftwiderstandsbeiwert von 0,34 wurde in nur wenigen Stückzahlen auch als 4x4 Allradversion vornehmlich für den russischen Staatsapparat und den Geheimdienst KGB gebaut, wovon laut Recherchen des Besitzers heute deutschlandweit nur 3 Fahrzeuge existieren sollen.</p>"
+			"html": "<p>Diese stromlinienförmige Gelände-Limousine mit einem noch heute sensationellen Luftwiderstandsbeiwert von 0,34 wurde in nur wenigen Stückzahlen auch als 4x4 Allradversion vornehmlich für den russischen Staatsapparat und den Geheimdienst KGB gebaut, wovon laut Recherchen des Besitzers heute deutschlandweit nur 3 Fahrzeuge existieren sollen.</p>",
+			"htmlEn": "<p>This streamlined off-road saloon, with a drag coefficient of 0.34, was also built in small numbers as a 4×4, mainly for the Soviet state and KGB. According to the owner’s research, only three survive in Germany.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen wird bei uns aktuell allumfassend restauriert.</p>"
+			"html": "<p>Der Wagen wird bei uns aktuell allumfassend restauriert.</p>",
+			"htmlEn": "<p>The car is currently undergoing a comprehensive restoration at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -64,7 +72,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -73,20 +82,23 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Da die Substanz des Wagens bei all seinen Vorbesitzern leider stark in Mitleidenschaft gezogen wurde und die heutige Ersatzteilsituation für diesen seltenen Fahrzeugtyp gen Null tendiert, mussten in unserem Karosseriebau viele Teile gänzlich neu angefertigt werden.<br />\nDies betrifft im Grunde genommen sogar äußerst stabil gehaltene tragende Rahmenteile, die nahezu bis zur Unkenntlichkeit weggerostet waren und die Statik der Karosserie insgesamt gefährdeten.</p>"
+			"html": "<p>Da die Substanz des Wagens bei all seinen Vorbesitzern leider stark in Mitleidenschaft gezogen wurde und die heutige Ersatzteilsituation für diesen seltenen Fahrzeugtyp gen Null tendiert, mussten in unserem Karosseriebau viele Teile gänzlich neu angefertigt werden.<br />\nDies betrifft im Grunde genommen sogar äußerst stabil gehaltene tragende Rahmenteile, die nahezu bis zur Unkenntlichkeit weggerostet waren und die Statik der Karosserie insgesamt gefährdeten.</p>",
+			"htmlEn": "<p>Previous owners had badly compromised its condition, and replacement parts for this rare model are virtually unavailable. Our body shop therefore had to fabricate many parts entirely anew.<br>\nEven substantial structural frame members had rusted almost beyond recognition, threatening the integrity of the whole body.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -95,7 +107,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -104,7 +117,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -113,7 +127,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -122,7 +137,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -131,20 +147,23 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach Abschluss der aufwendigen Karosseriearbeiten, werden aktuell alle Chromteile neu aufgearbeitet und restauriert und parallel zu den anstehenden Lackierarbeiten auch die gesamte Technik revidiert.</p>"
+			"html": "<p>Nach Abschluss der aufwendigen Karosseriearbeiten, werden aktuell alle Chromteile neu aufgearbeitet und restauriert und parallel zu den anstehenden Lackierarbeiten auch die gesamte Technik revidiert.</p>",
+			"htmlEn": "<p>With the extensive bodywork complete, we are refurbishing and restoring the chrome components, while overhauling all mechanical systems alongside the forthcoming paintwork.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -153,7 +172,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -162,138 +182,169 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 21 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Überholung Motor, Achsen, Getriebe, Ausgleichsgetriebe, Allradantriebe, Bremsen, Lenkung...</p>"
+			"html": "<p>Überholung Motor, Achsen, Getriebe, Ausgleichsgetriebe, Allradantriebe, Bremsen, Lenkung...</p>",
+			"htmlEn": "<p>Overhauling engine, axles, gearbox, differential, four-wheel-drive systems, brakes and steering.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 22 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier die von &quot;Mäusenestern&quot; zerfressenen Altpolster.</p>"
+			"html": "<p>Hier die von &quot;Mäusenestern&quot; zerfressenen Altpolster.</p>",
+			"htmlEn": "<p>Old upholstery damaged by nesting mice.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 23 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Richt- und Schweißarbeiten der Sitzschlitten mit Drahtfederkörben.</p>"
+			"html": "<p>Richt- und Schweißarbeiten der Sitzschlitten mit Drahtfederkörben.</p>",
+			"htmlEn": "<p>Straightening and welding the seat runners and wire spring units.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 25 in the vehicle record"
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 27 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neupolsterung mit originalgetreuen Materialien, Himmeltuch...</p>"
+			"html": "<p>Neupolsterung mit originalgetreuen Materialien, Himmeltuch...</p>",
+			"htmlEn": "<p>New upholstery using authentic materials, headlining fabric…</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 28 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nRestaurierung der Instrumente.</p>"
+			"html": "<p><br />\nRestaurierung der Instrumente.</p>",
+			"htmlEn": "<p><br>\nRestoring the instruments.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der sehr aufwendige &quot;Zierrat&quot; mit M72 Emblem, als Kennzeichnung für die äußerst seltene Allrad-Variante.</p>"
+			"html": "<p>Der sehr aufwendige &quot;Zierrat&quot; mit M72 Emblem, als Kennzeichnung für die äußerst seltene Allrad-Variante.</p>",
+			"htmlEn": "<p>The elaborate trim with M72 badge identifies the exceptionally rare four-wheel-drive variant.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 29 in the vehicle record"
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 32 in the vehicle record"
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 33 in the vehicle record"
 				},
 				{
 					"src": "./image-034.jpg",
-					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "POBEDA M72, Baujahr 1956 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "POBEDA M72, year 1956 – photograph 34 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "POBEDA M72, year 1956",
+	"descriptionEn": "A Russian rarity: a 1956 Pobeda in the very rare M72 four-wheel-drive specification.",
+	"cardImageAltEn": "POBEDA M72, year 1956",
+	"leadImageAltEn": "POBEDA M72, year 1956 – vehicle record"
 }

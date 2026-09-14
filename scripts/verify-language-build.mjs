@@ -36,15 +36,18 @@ for (const file of globSync('dist/**/*.html')) {
 		if (!Object.hasOwn(dictionary, text) && translate(text) === text) missing.add(text);
 	};
 	de('script,style').remove();
-	de('*').contents().each((_, node) => { if (node.type === 'text') checkText(node.data); });
+	de('*').contents().each((_, node) => { if (node.type === 'text' && !de(node).parents('[data-authored]').length) checkText(node.data); });
 	de('*').each((_, node) => {
+		if (de(node).closest('[data-authored]').length) return;
 		for (const attribute of ['alt', 'aria-label', 'placeholder', 'title', 'data-lightbox-alt']) checkText(de(node).attr(attribute));
 	});
-	for (const selector of ['meta[name="description"]', 'meta[property="og:image:alt"]']) checkText(de(selector).attr('content'));
+	for (const selector of ['meta[name="description"]', 'meta[property="og:image:alt"]']) if (!de(selector).is('[data-authored]')) checkText(de(selector).attr('content'));
 	// Catch cross-record dictionary collisions that would turn a title into prose.
-	assert.ok(en('h1').text().length < de('h1').text().length * 2 + 30, `${englishFile}: expanded title`);
+	if (!de('h1').is('[data-authored]')) assert.ok(en('h1').text().length < de('h1').text().length * 2 + 30, `${englishFile}: expanded title`);
 	assert.ok(!en('#hero-title').text().includes('HISTORYN'));
 	count++;
 }
 assert.deepEqual([...missing], [], 'Missing English translations. Add entries to src/i18n/en.json.');
 console.log(`Verified ${count} language pairs: translation coverage, language links and localized metadata.`);
+
+await import('./verify-vehicle-languages.mjs');

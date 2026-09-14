@@ -17,49 +17,58 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 1 in the vehicle record"
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>EMW 327 Sportcabriolet des Baujahres 1954 zum Neuaufbau.</p>"
+			"html": "<p>EMW 327 Sportcabriolet des Baujahres 1954 zum Neuaufbau.</p>",
+			"htmlEn": "<p>A 1954 EMW 327 Sport Cabriolet awaiting reconstruction.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach den notwendigen Karosseriearbeiten bekam der Wagen auch wieder seine ursprüngliche Farbgebung elfenbein mit tiefschwarz zurück, einschl. der kunstvollen Linierungen.</p>"
+			"html": "<p>Nach den notwendigen Karosseriearbeiten bekam der Wagen auch wieder seine ursprüngliche Farbgebung elfenbein mit tiefschwarz zurück, einschl. der kunstvollen Linierungen.</p>",
+			"htmlEn": "<p>After the necessary body repairs, the car regained its original ivory and deep black colour scheme, including the intricate coachlines.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -68,32 +77,38 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Aktuell wird bei uns die Technik umfangreich revidiert, dazu auch ein komplett neuer Kabelbaum angefertigt, Chrom- und Zierteile neu verchromt und die Inneneinrichtung teilweise erneuert.</p>"
+			"html": "<p>Aktuell wird bei uns die Technik umfangreich revidiert, dazu auch ein komplett neuer Kabelbaum angefertigt, Chrom- und Zierteile neu verchromt und die Inneneinrichtung teilweise erneuert.</p>",
+			"htmlEn": "<p>We are currently carrying out an extensive mechanical overhaul, making an entirely new wiring loom, re-chroming trim and fittings, and partly renewing the interior.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -102,13 +117,19 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – photograph 14 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "EMW 327 Sport Cabriolet, year 1954",
+	"descriptionEn": "After the necessary body repairs, the car regained its original ivory and deep black colour scheme, including the intricate coachlines.",
+	"cardImageAltEn": "EMW 327 Sport Cabriolet, year 1954",
+	"leadImageAltEn": "EMW 327 Sport Cabriolet, year 1954 – vehicle record"
 }

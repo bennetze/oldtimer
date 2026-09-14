@@ -17,20 +17,23 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nBMW 327/28 Sportcabriolet von 1938</p>"
+			"html": "<p><br />\n<br />\nBMW 327/28 Sportcabriolet von 1938</p>",
+			"htmlEn": "<p><br>\n<br>\nA 1938 BMW 327/28 Sport Cabriolet.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -39,20 +42,23 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDas Fahrzeug erreichte uns mit einem massiven Motorschaden.<br />\nPleuelabriss und Durchschlag durch den Motorblock.</p>"
+			"html": "<p><br />\nDas Fahrzeug erreichte uns mit einem massiven Motorschaden.<br />\nPleuelabriss und Durchschlag durch den Motorblock.</p>",
+			"htmlEn": "<p><br>\nThe car arrived with severe engine damage.<br>\nA broken connecting rod had punctured the engine block.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -61,20 +67,23 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Motor wurde bei uns komplett neu aufgebaut und auch das Getriebe überholt.</p>"
+			"html": "<p><br />\nDer Motor wurde bei uns komplett neu aufgebaut und auch das Getriebe überholt.</p>",
+			"htmlEn": "<p><br>\nWe completely rebuilt the engine and overhauled the gearbox.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -83,7 +92,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -92,7 +102,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -101,7 +112,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -110,13 +122,19 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – photograph 11 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "BMW 327/28 Sport Cabriolet, year 1938",
+	"descriptionEn": "The car arrived with severe engine damage. A broken connecting rod had punctured the engine block.",
+	"cardImageAltEn": "BMW 327/28 Sport Cabriolet, year 1938",
+	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1938 – vehicle record"
 }

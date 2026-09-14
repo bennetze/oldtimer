@@ -17,32 +17,38 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDieser HORCH Typ &quot;Sachsenring&quot; P240 als letztgebauter HORCH Wagen überhaupt, entstammt der traditionsreichen Zwickauer &quot;HORCH&quot; Dynastie im sächsischen Zwickau und dem dortigen Bau von hochkarätigen Automobilen.</p>"
+			"html": "<p><br />\nDieser HORCH Typ &quot;Sachsenring&quot; P240 als letztgebauter HORCH Wagen überhaupt, entstammt der traditionsreichen Zwickauer &quot;HORCH&quot; Dynastie im sächsischen Zwickau und dem dortigen Bau von hochkarätigen Automobilen.</p>",
+			"htmlEn": "<p><br>\nThe Horch Sachsenring P240, the final Horch car model, came from the distinguished tradition of high-quality automobile production in Zwickau, Saxony.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong><em>Historisches: Die ruhmreiche Automobilfirma HORCH, gegründet 1899 von seinem genialen Namensgeber August Horch - seit 1904 im sächsischen Zwickau ansässig - baute dort bis in die Jahre des 2. Weltkriegs, vornehmlich formschöne und technisch äußerst fortschrittliche und geniale Luxuswagen. Durch einen Rechtsstreit wurde August Horch aus seiner eigenen Firma gedrängt und verlor damit u.a. auch die Namensrechte an seinem Namen &quot;Horch&quot;, woraufhin er im Jahre 1910 ebenfalls in Zwickau seine neue Firma AUDI gründete<br />\n(lateinische Übersetzung seines Namens Horch, HORCH=hören=AUDI...). </em></strong></p>"
+			"html": "<p><strong><em>Historisches: Die ruhmreiche Automobilfirma HORCH, gegründet 1899 von seinem genialen Namensgeber August Horch - seit 1904 im sächsischen Zwickau ansässig - baute dort bis in die Jahre des 2. Weltkriegs, vornehmlich formschöne und technisch äußerst fortschrittliche und geniale Luxuswagen. Durch einen Rechtsstreit wurde August Horch aus seiner eigenen Firma gedrängt und verlor damit u.a. auch die Namensrechte an seinem Namen &quot;Horch&quot;, woraufhin er im Jahre 1910 ebenfalls in Zwickau seine neue Firma AUDI gründete<br />\n(lateinische Übersetzung seines Namens Horch, HORCH=hören=AUDI...). </em></strong></p>",
+			"htmlEn": "<p><strong><em>History: founded in 1899 by August Horch and based in Zwickau from 1904, Horch built elegant and technically advanced luxury cars into the Second World War years. A legal dispute forced August Horch out of his own company and cost him the right to use his name. In 1910, he founded Audi, also in Zwickau,<br>\nusing the Latin translation of “Horch”, meaning “listen”. </em></strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong><em>Nach dem 2. Weltkrieg und der Teilung Deutschlands wurde ab 1949 die Firma AUDI in Düsseldorf</em></strong>/<strong><em>Ingolstadt neu gegründet. Am alten Stammsitz von HORCH und AUDI in Zwickau hingegen, baute man in den alten, durch den Krieg noch erhaltenen Fertigungshallen, weiter hochkarätige Fahrzeuge von &quot;Stil und Rasse&quot; - so ein damaliges Zitat. </em></strong></p>"
+			"html": "<p><strong><em>Nach dem 2. Weltkrieg und der Teilung Deutschlands wurde ab 1949 die Firma AUDI in Düsseldorf</em></strong>/<strong><em>Ingolstadt neu gegründet. Am alten Stammsitz von HORCH und AUDI in Zwickau hingegen, baute man in den alten, durch den Krieg noch erhaltenen Fertigungshallen, weiter hochkarätige Fahrzeuge von &quot;Stil und Rasse&quot; - so ein damaliges Zitat. </em></strong></p>",
+			"htmlEn": "<p><strong><em>Following the Second World War and Germany’s division, Audi was re-established from 1949 in Düsseldorf and</em></strong>/<strong><em>Ingolstadt. At Horch and Audi’s original Zwickau site, surviving factory halls continued to produce distinguished vehicles of “style and breeding”, as contemporary publicity put it. </em></strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch der Typ Horch &quot;Sachsenring&quot; P240, gebaut ab 1956, entstammt im Grunde dieser technisch genialen HORCH Konstruktion, gepaart mit dem damaligen Formen- und Zeitgeschmack im Stile einer hochmodernen Pontonform und ist heute unter Kennern ein sehr gefragtes Sammlerobjekt mit großem Fahrspaß und Prestigefaktor.</p>"
+			"html": "<p>Auch der Typ Horch &quot;Sachsenring&quot; P240, gebaut ab 1956, entstammt im Grunde dieser technisch genialen HORCH Konstruktion, gepaart mit dem damaligen Formen- und Zeitgeschmack im Stile einer hochmodernen Pontonform und ist heute unter Kennern ein sehr gefragtes Sammlerobjekt mit großem Fahrspaß und Prestigefaktor.</p>",
+			"htmlEn": "<p>Introduced in 1956, the Horch Sachsenring P240 combined the marque’s engineering heritage with modern ponton styling. Today it is a sought-after collector’s car, offering driving pleasure and prestige.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -51,7 +57,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -60,7 +67,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -69,7 +77,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -78,7 +87,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -87,7 +97,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -96,24 +107,28 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Wagen wurde in unserer Manufaktur einer aufwendigen Komplettrestauration im individuellen Kundenauftrag unterzogen.</p>"
+			"html": "<p><br />\nDer Wagen wurde in unserer Manufaktur einer aufwendigen Komplettrestauration im individuellen Kundenauftrag unterzogen.</p>",
+			"htmlEn": "<p><br>\nWe carried out an extensive, bespoke full restoration for the owner.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -122,15 +137,18 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -139,7 +157,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 14 in the vehicle record"
 				}
 			]
 		},
@@ -148,56 +167,68 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 17 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dabei wurde nicht nur die gesamte Karosserie restauriert, auch die aufwändige 2-Farben-Lackierung, Unmengen Chrom- und feinster Zierrat, Polster in edlen Materialien (Leder/Cord), Elektrik, Technik, usw. wurden durch unsere Fachleute umfangreich und originalgetreu wieder hergestellt. Himmel in edlem Baumwolltuch, Sitze und Verkleidungen in originaler Kombination Leder/Cordstoff - exakt so wie zum Zeitpunkt der Auslieferung (originalgetreuer geht es kaum...).</p>"
+			"html": "<p>Dabei wurde nicht nur die gesamte Karosserie restauriert, auch die aufwändige 2-Farben-Lackierung, Unmengen Chrom- und feinster Zierrat, Polster in edlen Materialien (Leder/Cord), Elektrik, Technik, usw. wurden durch unsere Fachleute umfangreich und originalgetreu wieder hergestellt. Himmel in edlem Baumwolltuch, Sitze und Verkleidungen in originaler Kombination Leder/Cordstoff - exakt so wie zum Zeitpunkt der Auslieferung (originalgetreuer geht es kaum...).</p>",
+			"htmlEn": "<p>Our specialists restored the complete body, elaborate two-tone paintwork, extensive chrome and fine trim, leather-and-cord upholstery, electrics and mechanical systems. Fine cotton headlining and the original combination of leather and cord on seats and panels recreated the delivery specification faithfully.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 25 in the vehicle record"
 				}
 			]
 		},
@@ -206,7 +237,8 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 26 in the vehicle record"
 				}
 			]
 		},
@@ -215,7 +247,8 @@
 			"images": [
 				{
 					"src": "./image-027.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 27 in the vehicle record"
 				}
 			]
 		},
@@ -224,7 +257,8 @@
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 28 in the vehicle record"
 				}
 			]
 		},
@@ -233,7 +267,8 @@
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 29 in the vehicle record"
 				}
 			]
 		},
@@ -242,7 +277,8 @@
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 30 in the vehicle record"
 				}
 			]
 		},
@@ -251,24 +287,28 @@
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 31 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der seidenweich laufende 6 Zylinder HORCH Motor mit 2,4 Litern Hubraum, 80PS Leistung und 140 km/h Höchstgeschwindigkeit - zählte anno 1957 zweifelsohne zur internationalen Luxusklasse.</p>"
+			"html": "<p>Der seidenweich laufende 6 Zylinder HORCH Motor mit 2,4 Litern Hubraum, 80PS Leistung und 140 km/h Höchstgeschwindigkeit - zählte anno 1957 zweifelsohne zur internationalen Luxusklasse.</p>",
+			"htmlEn": "<p>Its silky-smooth 2.4-litre Horch six-cylinder engine produced 80 PS and enabled 140 km/h, placing it firmly in the international luxury class of 1957.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-032.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 32 in the vehicle record"
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 33 in the vehicle record"
 				}
 			]
 		},
@@ -277,7 +317,8 @@
 			"images": [
 				{
 					"src": "./image-034.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 34 in the vehicle record"
 				}
 			]
 		},
@@ -286,7 +327,8 @@
 			"images": [
 				{
 					"src": "./image-035.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 35 in the vehicle record"
 				}
 			]
 		},
@@ -295,11 +337,13 @@
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 36 in the vehicle record"
 				},
 				{
 					"src": "./image-037.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 37 in the vehicle record"
 				}
 			]
 		},
@@ -308,11 +352,13 @@
 			"images": [
 				{
 					"src": "./image-038.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 38 in the vehicle record"
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 39 in the vehicle record"
 				}
 			]
 		},
@@ -321,33 +367,44 @@
 			"images": [
 				{
 					"src": "./image-040.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 40 in the vehicle record"
 				},
 				{
 					"src": "./image-041.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 41 in the vehicle record"
 				},
 				{
 					"src": "./image-034.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 42 in the vehicle record"
 				},
 				{
 					"src": "./image-042.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 43 in the vehicle record"
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 44 in the vehicle record"
 				},
 				{
 					"src": "./image-044.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "HORCH P240 Sachsenring, year 1957 – photograph 45 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Das Ergebnis ist zweifelsohne eine sensationelle Augenweide nicht nur für den Besitzer selbst, sondern aufgrund der Seltenheit und Exklusivität eines solchen Fahrzeuges auch für jeden automobilhistorisch interessierten Sammler.</p>"
+			"html": "<p>Das Ergebnis ist zweifelsohne eine sensationelle Augenweide nicht nur für den Besitzer selbst, sondern aufgrund der Seltenheit und Exklusivität eines solchen Fahrzeuges auch für jeden automobilhistorisch interessierten Sammler.</p>",
+			"htmlEn": "<p>The result is a remarkable sight for its owner and, given the car’s rarity and exclusivity, for any collector interested in automotive history.</p>"
 		}
-	]
+	],
+	"titleEn": "HORCH P240 Sachsenring, year 1957",
+	"descriptionEn": "The Horch Sachsenring P240, the final Horch car model, came from the distinguished tradition of high-quality automobile production in Zwickau, Saxony.",
+	"cardImageAltEn": "HORCH P240 Sachsenring, year 1957",
+	"leadImageAltEn": "HORCH P240 Sachsenring, year 1957 – vehicle record"
 }

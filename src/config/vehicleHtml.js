@@ -32,6 +32,6 @@ export function validateVehicleHtml(html, context = 'Vehicle HTML') {
 
 export function validateVehicleBlocks(blocks, context) {
 	return blocks.map((block, index) => block.type === 'copy' || block.type === 'contact'
-		? { ...block, html: validateVehicleHtml(block.html, `${context}, block ${index + 1}`) }
+		? { ...block, html: validateVehicleHtml(block.html, `${context}, block ${index + 1} Deutsch`), htmlEn: validateVehicleHtml(block.htmlEn, `${context}, block ${index + 1} English`) }
 		: block);
 }

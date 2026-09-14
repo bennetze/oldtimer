@@ -17,11 +17,13 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 1 in the vehicle record"
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -30,28 +32,33 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dieser Ihle Sport 800 wurde uns in total zerlegtem Fundzustand mit teils großen Karosserieschäden angeliefert und nachfolgend im Kundenauftrag komplett neu durch uns aufgebaut.</p>"
+			"html": "<p>Dieser Ihle Sport 800 wurde uns in total zerlegtem Fundzustand mit teils großen Karosserieschäden angeliefert und nachfolgend im Kundenauftrag komplett neu durch uns aufgebaut.</p>",
+			"htmlEn": "<p>This Ihle Sport 800 arrived completely dismantled, with major body damage in places. We subsequently rebuilt it entirely for its owner.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -60,31 +67,38 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -93,40 +107,48 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Umfangreiche Karosseriearbeiten, Lackierung, Chrom, Polster, Verdeck, Technik, Elektrik und viele weitere Details später zeigt sich der Wagen heute in perfektem Sammlerzustand mit garantiertem Fahrspaß...</p>"
+			"html": "<p>Umfangreiche Karosseriearbeiten, Lackierung, Chrom, Polster, Verdeck, Technik, Elektrik und viele weitere Details später zeigt sich der Wagen heute in perfektem Sammlerzustand mit garantiertem Fahrspaß...</p>",
+			"htmlEn": "<p>After extensive bodywork, paint, chrome, upholstery, hood, mechanical and electrical work and countless details, it is now in superb collector condition and ready to provide driving pleasure.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -135,15 +157,18 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 23 in the vehicle record"
 				}
 			]
 		},
@@ -152,54 +177,69 @@
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 25 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dieser Ihle-Sport 800 mit einem Sonderaufbau der Bruchsaler Firma &quot;Gebrüder Ihle&quot;, wurde auf BMW-Dixi-Basis dort in nur wenigen Stückzahlen und auf jeweiligen Kundenwunsch gebaut.</p>"
+			"html": "<p>Dieser Ihle-Sport 800 mit einem Sonderaufbau der Bruchsaler Firma &quot;Gebrüder Ihle&quot;, wurde auf BMW-Dixi-Basis dort in nur wenigen Stückzahlen und auf jeweiligen Kundenwunsch gebaut.</p>",
+			"htmlEn": "<p>This Ihle Sport 800 features special coachwork by Gebrüder Ihle of Bruchsal, built in small numbers on BMW Dixi foundations to individual clients’ specifications.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 28 in the vehicle record"
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 29 in the vehicle record"
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "BMW Dixi Ihle 800, year 1936 – photograph 31 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong><em> Nach der Übernahme der Eisenacher DIXI-Werke durch BMW im Jahre 1928, wurden die ursprünglich gebauten DIXI-Typen zunächst mit nur wenigen Veränderungen weitergebaut - anfangs sogar noch unter der Doppelbezeichnung &quot;BMW/DIXI&quot;.<br /><br />Die Ihle Aufbauten unterscheiden sich fast alle, vor allem in einer eigenständigen Karosseriegestaltung, die neben DIXI- bzw. BMW-Aufbauten auch auf Basis der bekannten DKW Modelle F1 bis F5, und auf Opel, Fiat, Ford und Hansa Fahrgestellen gestaltet und gebaut wurden - immer aber als &quot;Sonderkarosserien nach Kundenwunsch&quot;. Im Grunde genommen gleicht damit kein Ihle Fahrzeug dem anderen.</em></strong></p>"
+			"html": "<p><strong><em> Nach der Übernahme der Eisenacher DIXI-Werke durch BMW im Jahre 1928, wurden die ursprünglich gebauten DIXI-Typen zunächst mit nur wenigen Veränderungen weitergebaut - anfangs sogar noch unter der Doppelbezeichnung &quot;BMW/DIXI&quot;.<br /><br />Die Ihle Aufbauten unterscheiden sich fast alle, vor allem in einer eigenständigen Karosseriegestaltung, die neben DIXI- bzw. BMW-Aufbauten auch auf Basis der bekannten DKW Modelle F1 bis F5, und auf Opel, Fiat, Ford und Hansa Fahrgestellen gestaltet und gebaut wurden - immer aber als &quot;Sonderkarosserien nach Kundenwunsch&quot;. Im Grunde genommen gleicht damit kein Ihle Fahrzeug dem anderen.</em></strong></p>",
+			"htmlEn": "<p><strong><em> After BMW acquired the Eisenach Dixi works in 1928, the existing Dixi models initially continued with few changes, even retaining the combined BMW/Dixi name at first.<br><br>Ihle bodies were almost all individually styled. Alongside Dixi and BMW chassis, the company used DKW F1–F5, Opel, Fiat, Ford and Hansa platforms, always building bespoke coachwork to clients’ wishes. Virtually no two Ihle cars are alike.</em></strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong><em> Die Firma Ihle der beiden Bruchsaler Kraftfahrzeugmeister &quot;Gebrüder IHLE&quot; gilt gemeinhin als &quot;Erfinder&quot; der so genannten &quot;BMW-Niere&quot; - so die hartnäckige Legende. Was heute nicht so ganz eindeutig belegt ist, wurden damals doch auch selbst OPEL und DKW Karosseriefronten von Ihle mit diesen Doppel-&quot;Nieren&quot; ausgestattet und so quasi parallel mit BMW Wagen gebaut.<br /><br /> Ein weiteres und sehr erfolgreiches Geschäftsfeld der Gebrüder Ihle in Bruchsal war der Bau von Karussellfahrzeugen und vor allem Autoscootern, die ebenfalls meist mit der heute BMW-typischen &quot;Doppelniere&quot; versehen wurden und bei historischen Jahrmärkten teilweise heute noch im Einsatz sind.</em></strong></p>"
+			"html": "<p><strong><em> Die Firma Ihle der beiden Bruchsaler Kraftfahrzeugmeister &quot;Gebrüder IHLE&quot; gilt gemeinhin als &quot;Erfinder&quot; der so genannten &quot;BMW-Niere&quot; - so die hartnäckige Legende. Was heute nicht so ganz eindeutig belegt ist, wurden damals doch auch selbst OPEL und DKW Karosseriefronten von Ihle mit diesen Doppel-&quot;Nieren&quot; ausgestattet und so quasi parallel mit BMW Wagen gebaut.<br /><br /> Ein weiteres und sehr erfolgreiches Geschäftsfeld der Gebrüder Ihle in Bruchsal war der Bau von Karussellfahrzeugen und vor allem Autoscootern, die ebenfalls meist mit der heute BMW-typischen &quot;Doppelniere&quot; versehen wurden und bei historischen Jahrmärkten teilweise heute noch im Einsatz sind.</em></strong></p>",
+			"htmlEn": "<p><strong><em> The Ihle brothers, both master motor engineers in Bruchsal, are often credited with inventing BMW’s kidney grille. This persistent story is not conclusively documented: Ihle also fitted twin-kidney fronts to Opel and DKW bodies, built alongside its BMW-based cars.<br><br> Another successful area for the Ihle brothers was fairground vehicles, particularly bumper cars. These too often had the twin-kidney grille now associated with BMW, and some still operate at historic fairs.</em></strong></p>"
 		}
-	]
+	],
+	"titleEn": "BMW Dixi Ihle 800, year 1936",
+	"descriptionEn": "This Ihle Sport 800 arrived completely dismantled, with major body damage in places. We subsequently rebuilt it entirely for its owner.",
+	"cardImageAltEn": "BMW Dixi Ihle 800, year 1936",
+	"leadImageAltEn": "BMW Dixi Ihle 800, year 1936 – vehicle record"
 }

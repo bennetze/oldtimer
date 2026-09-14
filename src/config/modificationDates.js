@@ -2,12 +2,12 @@
 // output changes; advance a template/page date for a more limited change.
 export const modificationDates = {
 	shared: '2026-09-13',
-	archive: '2026-09-05',
-	vehicle: '2026-09-05',
+	archive: '2026-09-14',
+	vehicle: '2026-09-13',
 	pages: {
 		'/': '2026-09-13',
-		'/handwerk/': '2026-09-12',
-		'/ueber-uns/': '2026-09-13',
+		'/handwerk/': '2026-09-14',
+		'/ueber-uns/': '2026-09-14',
 		'/projekte/': '2026-08-06',
 	},
 };

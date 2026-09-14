@@ -14,67 +14,87 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Mercedes – Benz 500 K, Cabriolet B, Baujahr 1935 mit “Sindelfinger” Sonderkarosserie in B – Ausführung (Vier – Fenster Cabriolet).<br /><br />\nBei diesem Wagen handelt es sich um ein seltenes Objekt aus der rühmlichen Ära der schweren Kompressor – Vorkriegs – Mercedes.</p>"
+			"html": "<p>Mercedes – Benz 500 K, Cabriolet B, Baujahr 1935 mit “Sindelfinger” Sonderkarosserie in B – Ausführung (Vier – Fenster Cabriolet).<br /><br />\nBei diesem Wagen handelt es sich um ein seltenes Objekt aus der rühmlichen Ära der schweren Kompressor – Vorkriegs – Mercedes.</p>",
+			"htmlEn": "<p>A 1935 Mercedes-Benz 500 K Cabriolet B with special Sindelfingen coachwork in the four-window B configuration.<br><br>\nA rare example from the celebrated era of the large supercharged pre-war Mercedes cars.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein Fahrzeug der Superlative:</p>"
+			"html": "<p>Ein Fahrzeug der Superlative:</p>",
+			"htmlEn": "<p>An extraordinary vehicle:</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>8 Zylinder Reihenmotor mit</p>"
+			"html": "<p>8 Zylinder Reihenmotor mit</p>",
+			"htmlEn": "<p>straight-eight engine with</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>5 Litern Hubraum und 160 PS mit Kompressoraufladung (Roots – Gebläse).</p>"
+			"html": "<p>5 Litern Hubraum und 160 PS mit Kompressoraufladung (Roots – Gebläse).</p>",
+			"htmlEn": "<p>5 litres and 160 PS with Roots supercharging.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen wurde bei uns einer grundlegenden Komplettrestauration unterzogen.</p>"
+			"html": "<p>Der Wagen wurde bei uns einer grundlegenden Komplettrestauration unterzogen.</p>",
+			"htmlEn": "<p>The car underwent a fundamental, complete restoration at our workshop.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Viele Karosserie- und Fehlteile mussten dabei sehr aufwendig neu angefertigt werden.</p>"
+			"html": "<p>Viele Karosserie- und Fehlteile mussten dabei sehr aufwendig neu angefertigt werden.</p>",
+			"htmlEn": "<p>Many body panels and missing parts had to be painstakingly fabricated anew.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch ein Großteil der Zier-, Anbau- und Mechanikteile wurden nach historischen Vorlagen durch uns nachgefertigt.</p>"
+			"html": "<p>Auch ein Großteil der Zier-, Anbau- und Mechanikteile wurden nach historischen Vorlagen durch uns nachgefertigt.</p>",
+			"htmlEn": "<p>We also reproduced much of the trim, fittings and mechanical hardware from historic references.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>So wurde unter anderem der sogenannte Röhrchenkühler in alter Handwerkstradition komplett neu gebaut.</p>"
+			"html": "<p>So wurde unter anderem der sogenannte Röhrchenkühler in alter Handwerkstradition komplett neu gebaut.</p>",
+			"htmlEn": "<p>This included completely rebuilding the tubular radiator using traditional craftsmanship.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der für die damalige Zeit unheimlich leistungsfähige und mit 5000ccm Hubraum äußerst voluminöse Motor, erfuhr ebenso wie der Kompressor und sämtliche Anbauteile einen kompletten Neuaufbau in allen Details.</p>"
+			"html": "<p>Der für die damalige Zeit unheimlich leistungsfähige und mit 5000ccm Hubraum äußerst voluminöse Motor, erfuhr ebenso wie der Kompressor und sämtliche Anbauteile einen kompletten Neuaufbau in allen Details.</p>",
+			"htmlEn": "<p>Exceptionally powerful for its time, the large 5,000 cc engine was completely rebuilt in every detail, together with its supercharger and ancillaries.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Von diesem Mercedes-Benz Typ: 500K, mit diesem speziellen Karosserieaufbau wurden laut historischen Unterlagen des Konzernarchivs seinerzeit nur drei Fahrzeuge überhaupt gebaut.\n<br /><br />\nEntsprechend umfangreichen Recherchen handelt es sich hierbei um den einzigen noch existierenden Wagen mit dieser “Sindelfinger” Sonderkarosserie.</p>"
+			"html": "<p>Von diesem Mercedes-Benz Typ: 500K, mit diesem speziellen Karosserieaufbau wurden laut historischen Unterlagen des Konzernarchivs seinerzeit nur drei Fahrzeuge überhaupt gebaut.\n<br /><br />\nEntsprechend umfangreichen Recherchen handelt es sich hierbei um den einzigen noch existierenden Wagen mit dieser “Sindelfinger” Sonderkarosserie.</p>",
+			"htmlEn": "<p>According to historical documents in the manufacturer’s archive, only three Mercedes-Benz 500 K cars were built with this particular coachwork.\n<br><br>\nExtensive research indicates that this is the sole surviving car with this special Sindelfingen body.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die gesamte Inneneinrichtung konnte nur nach alten historischen Unterlagen neu entstehen.<br />\n\nSo wurden auch die sogenannten Liegesitze komplett und originalgetreu neu gebaut.<br /><br />\nDie Edelholzapplikationen entstanden entsprechend den Kundenwünschen aus einem massiven japanischen Tulpenbaum - abgesetzt mit Perlmutteinlagen neben der komplett neu entstandenen Instrumentierung und der Echtleder-Innenausstattung.</p>"
+			"html": "<p>Die gesamte Inneneinrichtung konnte nur nach alten historischen Unterlagen neu entstehen.<br />\n\nSo wurden auch die sogenannten Liegesitze komplett und originalgetreu neu gebaut.<br /><br />\nDie Edelholzapplikationen entstanden entsprechend den Kundenwünschen aus einem massiven japanischen Tulpenbaum - abgesetzt mit Perlmutteinlagen neben der komplett neu entstandenen Instrumentierung und der Echtleder-Innenausstattung.</p>",
+			"htmlEn": "<p>The complete interior could only be recreated from historic documentation.<br>\n\nThe reclining seats were also entirely and faithfully rebuilt.<br><br>\nAt the client’s request, the fine wood fittings were made from solid Japanese tulip tree timber with mother-of-pearl inlays, complementing the newly recreated instruments and genuine leather upholstery.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch ein Traum in Chrom: Die 6 neu entstandenen Speichenräder mit Zentralverschlüssen -\n70 spezialangefertigte Speichen pro Rad ... und der neue, gigantische - jetzt fertig verchromte Röhrchen-Spitzkühler.</p>"
+			"html": "<p>Auch ein Traum in Chrom: Die 6 neu entstandenen Speichenräder mit Zentralverschlüssen -\n70 spezialangefertigte Speichen pro Rad ... und der neue, gigantische - jetzt fertig verchromte Röhrchen-Spitzkühler.</p>",
+			"htmlEn": "<p>A dream in chrome too: six newly made centre-lock wire wheels, each with 70 specially manufactured spokes, and the enormous, newly chromed pointed tubular radiator.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eine mehrjährige Restauration mit entsprechend hoher handwerklicher Herausforderung in allen Gewerken und für unser gesamtes hochmotiviertes Team, neigt sich dem Ende.</p>"
+			"html": "<p>Eine mehrjährige Restauration mit entsprechend hoher handwerklicher Herausforderung in allen Gewerken und für unser gesamtes hochmotiviertes Team, neigt sich dem Ende.</p>",
+			"htmlEn": "<p>A restoration lasting several years, demanding the highest craftsmanship across every trade and our entire dedicated team, is drawing to a close.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Das Endergebnis stellt ohne Frage eine Augenweide dar.Eine äußerst kostbare Rarität und ein historischer Meilenstein in der Entwicklungsgeschichte des Automobilbaus schlechthin, konnte kürzlich seinem überglücklichen Besitzerpaar\nfeierlich überreicht werden.</p>"
+			"html": "<p>Das Endergebnis stellt ohne Frage eine Augenweide dar.Eine äußerst kostbare Rarität und ein historischer Meilenstein in der Entwicklungsgeschichte des Automobilbaus schlechthin, konnte kürzlich seinem überglücklichen Besitzerpaar\nfeierlich überreicht werden.</p>",
+			"htmlEn": "<p>The result is unquestionably beautiful. This precious rarity, a milestone in automotive history, was recently handed over to its overjoyed owners.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach diesem perfekten Neuaufbau in unserem Hause - spielte das Fahrzeug - während historischer Filmaufnahmen - bereits eine einzigartige Filmrolle.</p>"
+			"html": "<p>Nach diesem perfekten Neuaufbau in unserem Hause - spielte das Fahrzeug - während historischer Filmaufnahmen - bereits eine einzigartige Filmrolle.</p>",
+			"htmlEn": "<p>Following its complete restoration at our workshop, the car took on a special role in a historical film production.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dabei ging es im <strong>ZDF - 3-Teiler “KRUPP”</strong> um die einstmals mächtigste deutsche Industriedynastie, der Familie KRUPP - mit mehr als 100.000 Arbeitern und Angestellten einer der größten Industriegiganten dieser Zeit.\n<br /><br />\nDer hier gezeigte und durch uns perfekt restaurierte Wagen, wird dabei vom Firmeneigner Alfried Krupp (alias Benjamin Sadler in der Hauptrolle), während verschiedener Anlässe u.a. vor dem Essener Firmensitz, der altehrwürdigen “Villa Hügel”, chauffiert.\n<br /><br />\nIn weiteren Hauptrollen: Iris Berben (Bertha Krupp), Heino Ferch, Barbara Auer, Fritz Karl, Valerie Koch und Thomas Thieme.\n<br /><br /><strong>Ein überaus bewegendes historisches Geschichtsdrama von packender Emotionalität.\n<br />\nNach der hier erfolgten überaus gelungenen Restauration freut es natürlich unser gesamtes Team, dass ein solches Schmuckstück der Automobilgeschichte während einer so bedeutenden Geschichtsverfilmung mitspielte und dadurch auch einem breiten Publikum gezeigt werden konnte.</strong>\n<br /><br />\nAuch der Besitzer des Wagens erfreut sich seither seiner automobilen Kostbarkeit, konnte der Wagen während einiger schöner Veranstaltungen, wie der “ARLBERG-CLASSIC”,der “BODENSEE-CLASSIC” und bei den einschlägigen “Mercedes-Kompressor-Treffen”\nbereits entsprechende Preise gewinnen.</p>"
+			"html": "<p>Dabei ging es im <strong>ZDF - 3-Teiler “KRUPP”</strong> um die einstmals mächtigste deutsche Industriedynastie, der Familie KRUPP - mit mehr als 100.000 Arbeitern und Angestellten einer der größten Industriegiganten dieser Zeit.\n<br /><br />\nDer hier gezeigte und durch uns perfekt restaurierte Wagen, wird dabei vom Firmeneigner Alfried Krupp (alias Benjamin Sadler in der Hauptrolle), während verschiedener Anlässe u.a. vor dem Essener Firmensitz, der altehrwürdigen “Villa Hügel”, chauffiert.\n<br /><br />\nIn weiteren Hauptrollen: Iris Berben (Bertha Krupp), Heino Ferch, Barbara Auer, Fritz Karl, Valerie Koch und Thomas Thieme.\n<br /><br /><strong>Ein überaus bewegendes historisches Geschichtsdrama von packender Emotionalität.\n<br />\nNach der hier erfolgten überaus gelungenen Restauration freut es natürlich unser gesamtes Team, dass ein solches Schmuckstück der Automobilgeschichte während einer so bedeutenden Geschichtsverfilmung mitspielte und dadurch auch einem breiten Publikum gezeigt werden konnte.</strong>\n<br /><br />\nAuch der Besitzer des Wagens erfreut sich seither seiner automobilen Kostbarkeit, konnte der Wagen während einiger schöner Veranstaltungen, wie der “ARLBERG-CLASSIC”,der “BODENSEE-CLASSIC” und bei den einschlägigen “Mercedes-Kompressor-Treffen”\nbereits entsprechende Preise gewinnen.</p>",
+			"htmlEn": "<p>The production was <strong>ZDF’s three-part drama “Krupp”,</strong> about the Krupp family, once Germany’s most powerful industrial dynasty, employing more than 100,000 people and ranking among the era’s industrial giants.\n<br><br>\nOur restored car appears with company owner Alfried Krupp, played by Benjamin Sadler, on various occasions, including outside the historic Villa Hügel headquarters in Essen.\n<br><br>\nOther leading actors include Iris Berben as Bertha Krupp, Heino Ferch, Barbara Auer, Fritz Karl, Valerie Koch and Thomas Thieme.\n<br><br><strong>A deeply moving historical drama with powerful emotion.\n<br>\nOur whole team was delighted that, following its successful restoration, this automotive jewel appeared in such a significant historical production and could be seen by a broad audience.</strong>\n<br><br>\nThe owner has also enjoyed this automotive treasure at events including Arlberg Classic, Bodensee Classic and Mercedes supercharged-car gatherings, where it has won awards.</p>"
 		}
-	]
+	],
+	"titleEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935",
+	"descriptionEn": "A 1935 Mercedes-Benz 500 K Cabriolet B with special Sindelfingen coachwork in the four-window B configuration. A rare example from the celebrated era of the large supercharged…",
+	"cardImageAltEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935",
+	"leadImageAltEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – vehicle record"
 }

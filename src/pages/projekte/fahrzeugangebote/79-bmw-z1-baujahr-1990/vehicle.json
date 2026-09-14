@@ -17,28 +17,33 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>- Der Roadster schlechthin -</p>"
+			"html": "<p>- Der Roadster schlechthin -</p>",
+			"htmlEn": "<p>— The quintessential roadster —</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Sehr gepflegter und originaler</p>"
+			"html": "<p>Sehr gepflegter und originaler</p>",
+			"htmlEn": "<p>Exceptionally well cared for and original:</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>BMW Z1 Roadster, Baujahr 1990 in urgrünmetallic mit erst 76.000km.</p>"
+			"html": "<p>BMW Z1 Roadster, Baujahr 1990 in urgrünmetallic mit erst 76.000km.</p>",
+			"htmlEn": "<p>a 1990 BMW Z1 Roadster in Urgrün metallic with just 76,000 km.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -47,7 +52,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -56,7 +62,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -65,20 +72,23 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch die Lackierung in BMW-urgrünmetallic ist, wie das ganze Auto, noch immer nahezu neuwertig, die originalen Sitze mit echtem Nubukleder und Camouflage-Echtleder-Einlagen sind ohne Fehler und sehr gepflegt. Das Cabriolet-Verdeck wurde in der Autosattler-Fachwerkstatt erneuert und passt perfekt. Auch die Technik ist voll funktionstüchtig und wurde gemäß beiliegendem Serviceheft stets gewartet, Inspektion mit Zahnriemenwechsel, Reifen, TÜV neu.</p>"
+			"html": "<p>Auch die Lackierung in BMW-urgrünmetallic ist, wie das ganze Auto, noch immer nahezu neuwertig, die originalen Sitze mit echtem Nubukleder und Camouflage-Echtleder-Einlagen sind ohne Fehler und sehr gepflegt. Das Cabriolet-Verdeck wurde in der Autosattler-Fachwerkstatt erneuert und passt perfekt. Auch die Technik ist voll funktionstüchtig und wurde gemäß beiliegendem Serviceheft stets gewartet, Inspektion mit Zahnriemenwechsel, Reifen, TÜV neu.</p>",
+			"htmlEn": "<p>Like the whole car, the BMW Urgrün metallic paintwork remains almost as new. The original seats in genuine nubuck leather with camouflage-pattern leather inserts are immaculate and well maintained. The convertible hood was renewed by a specialist automotive upholsterer and fits perfectly. All mechanical systems function fully and have been regularly maintained, as documented in the accompanying service book. Recent inspection with timing-belt replacement, new tyres and TÜV inspection.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -87,7 +97,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -96,7 +107,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -105,7 +117,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -114,7 +127,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -123,7 +137,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -132,7 +147,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -141,7 +157,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -150,7 +167,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 14 in the vehicle record"
 				}
 			]
 		},
@@ -159,74 +177,94 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 15 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEiner der wenigen sehr original erhaltenen und unverbastelten Z1 Roadster in makellosem TOP-Zustand – Fahrspaß garantiert…</p>"
+			"html": "<p><br />\n<br />\nEiner der wenigen sehr original erhaltenen und unverbastelten Z1 Roadster in makellosem TOP-Zustand – Fahrspaß garantiert…</p>",
+			"htmlEn": "<p><br>\n<br>\nOne of the few highly original, unmodified Z1 Roadsters in immaculate condition — driving pleasure guaranteed…</p>"
 		},
 		{
 			"type": "contact",
-			"html": "<p>Für weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
+			"html": "<p>Für weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>",
+			"htmlEn": "<p>For further information, photographs and other vehicle details,<br>\nplease contact us on: Tel. +49 36966 83783<br>\nEmail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 25 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "BMW Z1 Roadster, year 1990 – photograph 28 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "BMW Z1 Roadster, year 1990",
+	"descriptionEn": "Like the whole car, the BMW Urgrün metallic paintwork remains almost as new. The original seats in genuine nubuck leather with camouflage-pattern leather inserts are immaculate…",
+	"cardImageAltEn": "BMW Z1 Roadster, year 1990",
+	"leadImageAltEn": "BMW Z1 Roadster, year 1990 – vehicle record"
 }

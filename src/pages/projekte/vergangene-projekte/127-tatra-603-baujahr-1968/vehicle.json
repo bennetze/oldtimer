@@ -17,24 +17,28 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Tatra 603, Baujahr 1968 der allumfassend bei uns restauriert wurde.</p>"
+			"html": "<p>Tatra 603, Baujahr 1968 der allumfassend bei uns restauriert wurde.</p>",
+			"htmlEn": "<p>A 1968 Tatra 603, comprehensively restored at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -43,20 +47,23 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Angefangen bei umfangreichen Schweißarbeiten, über Elektrik bis hin zu Lackierungs- und Polsterarbeiten, mußte der Wagen auch technisch grundlegend restauriert werden.</p>"
+			"html": "<p>Angefangen bei umfangreichen Schweißarbeiten, über Elektrik bis hin zu Lackierungs- und Polsterarbeiten, mußte der Wagen auch technisch grundlegend restauriert werden.</p>",
+			"htmlEn": "<p>From extensive welding and electrical work to paint and upholstery, the car also required a fundamental mechanical restoration.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -65,7 +72,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -74,20 +82,23 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 7 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Motor V8 luftgekühlt, 105 PS, Heckantrieb</p>"
+			"html": "<p>Motor V8 luftgekühlt, 105 PS, Heckantrieb</p>",
+			"htmlEn": "<p>Air-cooled V8 engine, 105 PS, rear-wheel drive.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -96,7 +107,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -105,7 +117,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -114,7 +127,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -123,11 +137,13 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -136,13 +152,19 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "Tatra 603, Baujahr 1968 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "Tatra 603, year 1968 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Tatra Typ 603 war eine großzügige und repräsentative Staatslimousine mit einer sagenhaften Aerodynamik, die nur in wenigen Stückzahlen nach Deutschland, bzw. in die damalige DDR exportiert wurde.</p>"
+			"html": "<p>Der Tatra Typ 603 war eine großzügige und repräsentative Staatslimousine mit einer sagenhaften Aerodynamik, die nur in wenigen Stückzahlen nach Deutschland, bzw. in die damalige DDR exportiert wurde.</p>",
+			"htmlEn": "<p>The Tatra 603 was a spacious, prestigious state limousine with remarkable aerodynamics. Only small numbers were exported to Germany, then the GDR.</p>"
 		}
-	]
+	],
+	"titleEn": "Tatra 603, year 1968",
+	"descriptionEn": "From extensive welding and electrical work to paint and upholstery, the car also required a fundamental mechanical restoration.",
+	"cardImageAltEn": "Tatra 603, year 1968",
+	"leadImageAltEn": "Tatra 603, year 1968 – vehicle record"
 }

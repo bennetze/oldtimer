@@ -17,40 +17,48 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 1 in the vehicle record"
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dieser BMW 340 ist mit seinem recht frühen Baujahr noch ein echter &quot;BMW&quot;, gebaut bei den Bayrischen-Motoren-Werken in Eisenach, dort wo bis zum<br />\n2. Weltkrieg und noch wenige Jahre danach ausnahmslos alle BMW Automobile im thüringischen Eisenach entstanden.</p>"
+			"html": "<p>Dieser BMW 340 ist mit seinem recht frühen Baujahr noch ein echter &quot;BMW&quot;, gebaut bei den Bayrischen-Motoren-Werken in Eisenach, dort wo bis zum<br />\n2. Weltkrieg und noch wenige Jahre danach ausnahmslos alle BMW Automobile im thüringischen Eisenach entstanden.</p>",
+			"htmlEn": "<p>This early BMW 340 is still a genuine BMW, built by Bayerische Motorenwerke in Eisenach, where until the<br>\nSecond World War and for a few years afterwards every BMW car was manufactured.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Angefangen von den DIXI Modellen der 1910/20er Jahre, über die namhaften BMW Typen 303, 309, 315, 319, 320, 321, 326, 327, 327/28, 328, 329 und 335 der 30er und 40er Jahre bis eben zum frühen Nackriegstyp BMW 340 - als Weiterentwicklung des bewährten Vorkriegs-BMW 326, stammen alle bis dahin gebauten BMW Automobile aus Eisenach.</p>"
+			"html": "<p>Angefangen von den DIXI Modellen der 1910/20er Jahre, über die namhaften BMW Typen 303, 309, 315, 319, 320, 321, 326, 327, 327/28, 328, 329 und 335 der 30er und 40er Jahre bis eben zum frühen Nackriegstyp BMW 340 - als Weiterentwicklung des bewährten Vorkriegs-BMW 326, stammen alle bis dahin gebauten BMW Automobile aus Eisenach.</p>",
+			"htmlEn": "<p>From the Dixi models of the 1910s and 1920s through the BMW 303, 309, 315, 319, 320, 321, 326, 327, 327/28, 328, 329 and 335 of the 1930s and 1940s, to the early post-war BMW 340 developed from the proven 326, all these cars came from Eisenach.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dieser hier gezeigte BMW 340 als stattliche Limousine mit dem begehrten Faltschiebedach wurde komplett, originalgetreu und perfekt bei uns neu aufgebaut.</p>"
+			"html": "<p>Dieser hier gezeigte BMW 340 als stattliche Limousine mit dem begehrten Faltschiebedach wurde komplett, originalgetreu und perfekt bei uns neu aufgebaut.</p>",
+			"htmlEn": "<p>This imposing BMW 340 saloon with its sought-after folding sliding roof was completely and faithfully rebuilt at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -59,32 +67,38 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 7 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach umfangreichen Karosseriearbeiten und einer kundenwunschspezifischen KTL-Beschichtung der gesamten Karosserie (kathodische Tauch-Lackierung) wurde auch das Dach wieder mit dem sehr seltenen Faltschiebedach ausgerüstet.</p>"
+			"html": "<p>Nach umfangreichen Karosseriearbeiten und einer kundenwunschspezifischen KTL-Beschichtung der gesamten Karosserie (kathodische Tauch-Lackierung) wurde auch das Dach wieder mit dem sehr seltenen Faltschiebedach ausgerüstet.</p>",
+			"htmlEn": "<p>Following extensive bodywork and a client-requested cathodic dip coating of the entire body, we reinstated the rare folding sliding roof.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -93,41 +107,48 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 12 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDanach wurde der Wagen in unserer Lackierung wieder in seinen Originalfarben lackiert.</p>"
+			"html": "<p><br />\nDanach wurde der Wagen in unserer Lackierung wieder in seinen Originalfarben lackiert.</p>",
+			"htmlEn": "<p><br>\nOur paint shop then refinished the car in its original colours.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNeuer Chrom und generalüberholte Instrumente.</p>"
+			"html": "<p><br />\nNeuer Chrom und generalüberholte Instrumente.</p>",
+			"htmlEn": "<p><br>\nNew chrome and fully refurbished instruments.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -136,7 +157,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 16 in the vehicle record"
 				}
 			]
 		},
@@ -145,7 +167,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -154,7 +177,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 18 in the vehicle record"
 				}
 			]
 		},
@@ -163,40 +187,48 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 19 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach grundlegender Überholung auch aller technischen Komponenten, wurde zum Neuaufbau der gesamten Innenausstattung der heute nicht mehr erhältliche Polsterstoff originalgetreu nachgewebt.</p>"
+			"html": "<p>Nach grundlegender Überholung auch aller technischen Komponenten, wurde zum Neuaufbau der gesamten Innenausstattung der heute nicht mehr erhältliche Polsterstoff originalgetreu nachgewebt.</p>",
+			"htmlEn": "<p>After thoroughly overhauling all mechanical components, we had the unavailable original upholstery fabric faithfully rewoven for the complete interior rebuild.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 25 in the vehicle record"
 				}
 			]
 		},
@@ -205,13 +237,19 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW 340, Baujahr 1952 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW 340, year 1952 – photograph 26 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nDas Endergebnis ist in der Ausführung, der Originalität und der Qualität der bei uns durchgeführten Arbeiten einer solch aufwendigen Vollrestauration kaum mehr zu toppen.<br />\n<br />\nEine Augenweide und sicher einer der Besten 340er überhaupt...</p>"
+			"html": "<p><br />\n<br />\nDas Endergebnis ist in der Ausführung, der Originalität und der Qualität der bei uns durchgeführten Arbeiten einer solch aufwendigen Vollrestauration kaum mehr zu toppen.<br />\n<br />\nEine Augenweide und sicher einer der Besten 340er überhaupt...</p>",
+			"htmlEn": "<p><br>\n<br>\nThe workmanship, originality and quality of this extensive restoration are hard to surpass.<br>\n<br>\nA feast for the eyes and surely one of the finest 340s…</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 340, year 1952",
+	"descriptionEn": "This early BMW 340 is still a genuine BMW, built by Bayerische Motorenwerke in Eisenach, where until the Second World War and for a few years afterwards every BMW car was…",
+	"cardImageAltEn": "BMW 340, year 1952",
+	"leadImageAltEn": "BMW 340, year 1952 – vehicle record"
 }

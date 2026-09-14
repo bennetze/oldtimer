@@ -17,41 +17,48 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nFRANKLIN &quot;Airman&quot; des Baujahres 1931 mit einem sehr eleganten und großzügigen Sedan-Aufbau.<br />\n<br />\nDie Marke FRANKLIN - neben Cadillac und Packard eine der namhaften Luxusmarken damaliger amerikanischer Automobilbaukunst, baute bis Mitte der 30er Jahre in New York vor allem sehr elegante und großzügige Qualitätsautomobile mit höchstem Komfort und technischer Raffinesse.</p>"
+			"html": "<p><br />\nFRANKLIN &quot;Airman&quot; des Baujahres 1931 mit einem sehr eleganten und großzügigen Sedan-Aufbau.<br />\n<br />\nDie Marke FRANKLIN - neben Cadillac und Packard eine der namhaften Luxusmarken damaliger amerikanischer Automobilbaukunst, baute bis Mitte der 30er Jahre in New York vor allem sehr elegante und großzügige Qualitätsautomobile mit höchstem Komfort und technischer Raffinesse.</p>",
+			"htmlEn": "<p><br>\nA 1931 Franklin Airman with elegant, spacious sedan coachwork.<br>\n<br>\nAlongside Cadillac and Packard, Franklin was a distinguished American luxury marque. Until the mid-1930s, it built elegant, spacious, high-quality cars in New York, combining exceptional comfort with technical sophistication.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>FRANKLIN selbst stammt ursprünglich aus dem Flugmotoren- und Flugzeugbau. Die dafür entwickelten Motoren waren nicht nur bei FRANKLIN üblicherweise in Leichtbauweise und luftgekühlt!<br />\nSomit wurden auch alle FRANKLIN Automobile mit dieser genialen, turbinenunterstützten &quot;Luftfahrt&quot;-Technik versehen - daher der Name &quot;Airman&quot; (auch &quot;Aircooler&quot; genannt).<br />\nTechnik: Motor 6 Zylinder, luftgekühlt, turbinenunterstützt, 4,6 Liter Hubraum, Leistung &quot;ausreichend&quot;, thermostatisch gesteuerte Kühllamellen, vollsynchronisiertes Getriebe, rundum Doppelelliptikfedern mit hydraulischen Stoßdämpfern, vollhydraulische Bremsanlage.</p>"
+			"html": "<p>FRANKLIN selbst stammt ursprünglich aus dem Flugmotoren- und Flugzeugbau. Die dafür entwickelten Motoren waren nicht nur bei FRANKLIN üblicherweise in Leichtbauweise und luftgekühlt!<br />\nSomit wurden auch alle FRANKLIN Automobile mit dieser genialen, turbinenunterstützten &quot;Luftfahrt&quot;-Technik versehen - daher der Name &quot;Airman&quot; (auch &quot;Aircooler&quot; genannt).<br />\nTechnik: Motor 6 Zylinder, luftgekühlt, turbinenunterstützt, 4,6 Liter Hubraum, Leistung &quot;ausreichend&quot;, thermostatisch gesteuerte Kühllamellen, vollsynchronisiertes Getriebe, rundum Doppelelliptikfedern mit hydraulischen Stoßdämpfern, vollhydraulische Bremsanlage.</p>",
+			"htmlEn": "<p>Franklin’s origins lie in aircraft and aircraft engines. Engines developed for aviation were commonly lightweight and air-cooled, at Franklin as elsewhere.<br>\nFranklin cars were therefore equipped with this ingenious, turbine-assisted aviation technology — hence the name Airman, also known as Aircooler.<br>\nEngineering: six-cylinder, air-cooled engine with turbine assistance, 4.6 litres, “ample” power, thermostatically controlled cooling shutters, fully synchronised gearbox, double-elliptic springs and hydraulic dampers all round, and fully hydraulic brakes.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -60,11 +67,13 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -73,11 +82,13 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -86,7 +97,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -95,24 +107,28 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nDieser FRANKLIN 153 Airman wurde sehr detailliert und originalgetreu neu aufgebaut und gilt heute als das einzig erhaltene Fahrzeug dieses Typ`s in ganz Europa.</p>"
+			"html": "<p><br />\n<br />\n<br />\nDieser FRANKLIN 153 Airman wurde sehr detailliert und originalgetreu neu aufgebaut und gilt heute als das einzig erhaltene Fahrzeug dieses Typ`s in ganz Europa.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\nThis Franklin 153 Airman was rebuilt with meticulous attention to original detail and is considered the only surviving example of this model in Europe today.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -121,20 +137,23 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Edelste Materialien, Rollos an allen hinteren Fenstern, Einstiegsbeleuchtung und Lampen mit Gläsern aus Kristallglas, Innenraum mit thermostatisch geregelter Warmluftheizung - insgesamt purer Luxus in Vollendung.</p>"
+			"html": "<p>Edelste Materialien, Rollos an allen hinteren Fenstern, Einstiegsbeleuchtung und Lampen mit Gläsern aus Kristallglas, Innenraum mit thermostatisch geregelter Warmluftheizung - insgesamt purer Luxus in Vollendung.</p>",
+			"htmlEn": "<p>Fine materials, blinds on all rear windows, entry lighting, crystal-glass lamp lenses and a thermostatically controlled warm-air heater in the cabin — luxury in every detail.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -143,7 +162,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 16 in the vehicle record"
 				}
 			]
 		},
@@ -152,7 +172,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -161,11 +182,13 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 19 in the vehicle record"
 				}
 			]
 		},
@@ -174,7 +197,8 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -183,34 +207,44 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 21 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>.</p>"
+			"html": "<p>.</p>",
+			"htmlEn": "<p>.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "FRANKLIN Airman, Baujahr 1931 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "FRANKLIN Airman, year 1931 – photograph 22 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>...die fliegende Schwalbe als Symbol der Lüfte und Synonym für die Luftkühlung dieses seltenen FRANKLIN Airman.</p>"
+			"html": "<p>...die fliegende Schwalbe als Symbol der Lüfte und Synonym für die Luftkühlung dieses seltenen FRANKLIN Airman.</p>",
+			"htmlEn": "<p>…the swallow in flight, a symbol of the skies and of this rare Franklin Airman’s air cooling.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Diese Automobilrarität steht nach seiner umfangreichen und sehr liebevollen, perfekten Spitzenrestauration zum Verkauf.<br /></p>"
+			"html": "<p>Diese Automobilrarität steht nach seiner umfangreichen und sehr liebevollen, perfekten Spitzenrestauration zum Verkauf.<br /></p>",
+			"htmlEn": "<p>This automotive rarity is offered for sale following an extensive, meticulous restoration to an exceptional standard.<br></p>"
 		},
 		{
 			"type": "contact",
-			"html": "<p>Preis auf Anfrage.<br />\n<br />\nFür weitere Informationen zum Fahrzeug kontaktieren Sie uns bitte unter:<br />\nTel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a><br /></p>"
+			"html": "<p>Preis auf Anfrage.<br />\n<br />\nFür weitere Informationen zum Fahrzeug kontaktieren Sie uns bitte unter:<br />\nTel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a><br /></p>",
+			"htmlEn": "<p>Price on request.<br>\n<br>\nFor further vehicle information, please contact us:<br>\nTel. +49 36966 83783<br>\nEmail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a><br></p>"
 		}
-	]
+	],
+	"titleEn": "FRANKLIN Airman, year 1931",
+	"descriptionEn": "A 1931 Franklin Airman with elegant, spacious sedan coachwork. Alongside Cadillac and Packard, Franklin was a distinguished American luxury marque. Until the mid-1930s, it…",
+	"cardImageAltEn": "FRANKLIN Airman, year 1931",
+	"leadImageAltEn": "FRANKLIN Airman, year 1931 – vehicle record"
 }

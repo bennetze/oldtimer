@@ -13,42 +13,52 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Motorrad EMW R 35/3, mit original „Stoye“ – Beiwagen, Baujahr 1954; gebaut bei den Eisenacher-Motoren-Werken in Thüringen.</p>"
+			"html": "<p>Motorrad EMW R 35/3, mit original „Stoye“ – Beiwagen, Baujahr 1954; gebaut bei den Eisenacher-Motoren-Werken in Thüringen.</p>",
+			"htmlEn": "<p>A 1954 EMW R35/3 with original Stoye sidecar, built at Eisenacher Motorenwerke in Thuringia.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW R35/3 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Einzig jemals gebauter Motorradtyp von EMW und einzig gebautes Motorrad aus Eisenacher Fahrzeugproduktion.</p>"
+			"html": "<p>Einzig jemals gebauter Motorradtyp von EMW und einzig gebautes Motorrad aus Eisenacher Fahrzeugproduktion.</p>",
+			"htmlEn": "<p>EMW’s only motorcycle model, a distinctive product of Eisenach vehicle manufacturing.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW R35/3 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die Maschine, nebst Beiwagen wurde trotz „verbrauchter“ Ausgangsbasis original- und detailgetreu durch uns restauriert.</p>"
+			"html": "<p>Die Maschine, nebst Beiwagen wurde trotz „verbrauchter“ Ausgangsbasis original- und detailgetreu durch uns restauriert.</p>",
+			"htmlEn": "<p>Despite a worn starting point, we faithfully restored both motorcycle and sidecar in detail.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW R35/3 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW R35/3 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW R35/3 – photograph 3 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "EMW R35/3",
+	"descriptionEn": "A 1954 EMW R35/3 with original Stoye sidecar, built at Eisenacher Motorenwerke in Thuringia.",
+	"cardImageAltEn": "EMW R35/3",
+	"leadImageAltEn": "EMW R35/3 – vehicle record"
 }

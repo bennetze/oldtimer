@@ -16,62 +16,79 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 1 in the vehicle record"
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein inzwischen extrem seltenes Ford Consul Coupe des Jahrgangs 1974, bei dem in unserer Manufaktur ein Getriebeschaden instandgesetzt und das in unserer Sattlerei eine völlig neue Innenausstattung angefertigt bekam.</p>"
+			"html": "<p>Ein inzwischen extrem seltenes Ford Consul Coupe des Jahrgangs 1974, bei dem in unserer Manufaktur ein Getriebeschaden instandgesetzt und das in unserer Sattlerei eine völlig neue Innenausstattung angefertigt bekam.</p>",
+			"htmlEn": "<p>A now extremely rare 1974 Ford Consul Coupé. We repaired its gearbox and created an entirely new interior in our upholstery shop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "FORD Consul Coupe, 1974 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "FORD Consul Coupe, 1974 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "FORD Consul Coupe, 1974 – photograph 12 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "FORD Consul Coupe, 1974",
+	"descriptionEn": "A now extremely rare 1974 Ford Consul Coupé. We repaired its gearbox and created an entirely new interior in our upholstery shop.",
+	"cardImageAltEn": "FORD Consul Coupe, 1974",
+	"leadImageAltEn": "FORD Consul Coupe, 1974 – vehicle record"
 }

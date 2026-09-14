@@ -17,79 +17,93 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein seltenes BMW 503 Coupe im &quot;Fundzustand&quot; mit div. Fehlteilen zum völligen Neuaufbau.</p>"
+			"html": "<p>Hier ein seltenes BMW 503 Coupe im &quot;Fundzustand&quot; mit div. Fehlteilen zum völligen Neuaufbau.</p>",
+			"htmlEn": "<p>A rare BMW 503 Coupé in as-found condition, with several missing parts, awaiting a complete rebuild.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Vom diesem Typ 503 der letzten Serie wurden bis 1960 nur 134 Stück von Hand gebaut. Aufgrund der manufakturartigen Bauweise gleicht dabei kein Wagen dem anderen.</p>"
+			"html": "<p>Vom diesem Typ 503 der letzten Serie wurden bis 1960 nur 134 Stück von Hand gebaut. Aufgrund der manufakturartigen Bauweise gleicht dabei kein Wagen dem anderen.</p>",
+			"htmlEn": "<p>Only 134 examples of this final-series 503 were built by hand up to 1960. Their largely handcrafted construction means no two cars are quite alike.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Motor: BMW V8 Zylinder Aluminiummotor, 3,2 Liter Hubraum, 140 PS Leistung<br /></p>"
+			"html": "<p>Motor: BMW V8 Zylinder Aluminiummotor, 3,2 Liter Hubraum, 140 PS Leistung<br /></p>",
+			"htmlEn": "<p>Engine: BMW aluminium V8, 3.2 litres, 140 PS.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEin insgesamt bemitleidenswerter Zustand dessen Vollrestauration unser ganzes fachliches Können in Anspruch nimmt.</p>"
+			"html": "<p><br />\n<br />\nEin insgesamt bemitleidenswerter Zustand dessen Vollrestauration unser ganzes fachliches Können in Anspruch nimmt.</p>",
+			"htmlEn": "<p><br>\n<br>\nIts overall condition was pitiful; a full restoration calls on all our professional skills.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 6 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Massive Rost- Korrosionsspuren an Stahl- und Aluminiumblech.</p>"
+			"html": "<p>Massive Rost- Korrosionsspuren an Stahl- und Aluminiumblech.</p>",
+			"htmlEn": "<p>Severe rust and corrosion on steel and aluminium panels.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -98,53 +112,63 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach dem völligen Zerlegen des Fahrzeuges, musste zunächst die gesamte Alu-Außenhaut der Karosserie entfernt werden.</p>"
+			"html": "<p>Nach dem völligen Zerlegen des Fahrzeuges, musste zunächst die gesamte Alu-Außenhaut der Karosserie entfernt werden.</p>",
+			"htmlEn": "<p>After completely dismantling the vehicle, we first had to remove the entire aluminium outer skin.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Völlig zerfressene Grundsubstanz zum Neuaufbau.</p>"
+			"html": "<p>Völlig zerfressene Grundsubstanz zum Neuaufbau.</p>",
+			"htmlEn": "<p>Heavily corroded underlying structure awaiting reconstruction.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 17 in the vehicle record"
 				}
 			]
 		},
@@ -153,32 +177,38 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 19 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach den Vermessungs- und Richtarbeiten am Rahmen, wurden viele Blechteile und ganze Karosseriepartien neu angefertigt und fachgerecht verschweißt.</p>"
+			"html": "<p>Nach den Vermessungs- und Richtarbeiten am Rahmen, wurden viele Blechteile und ganze Karosseriepartien neu angefertigt und fachgerecht verschweißt.</p>",
+			"htmlEn": "<p>After measuring and straightening the frame, we fabricated many panels and entire body sections and welded them into place professionally.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 22 in the vehicle record"
 				}
 			]
 		},
@@ -187,15 +217,18 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 25 in the vehicle record"
 				}
 			]
 		},
@@ -204,28 +237,33 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 27 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nRahmenarbeiten und Neuanfertigung des Unterbodens mit Traversen.</p>"
+			"html": "<p><br />\n<br />\nRahmenarbeiten und Neuanfertigung des Unterbodens mit Traversen.</p>",
+			"htmlEn": "<p><br>\n<br>\nFrame repairs and manufacture of a new floor with crossmembers.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 28 in the vehicle record"
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 29 in the vehicle record"
 				}
 			]
 		},
@@ -234,32 +272,38 @@
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 32 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach dem Neuaufbau der Stahlblech-Grundstruktur der Karosserie bekam diese unsererseits nun eine Spezialbeschichtung zum anschließenden weiteren Karosserieaufbau der Aluminium-Außenhaut.</p>"
+			"html": "<p>Nach dem Neuaufbau der Stahlblech-Grundstruktur der Karosserie bekam diese unsererseits nun eine Spezialbeschichtung zum anschließenden weiteren Karosserieaufbau der Aluminium-Außenhaut.</p>",
+			"htmlEn": "<p>After rebuilding the body’s underlying steel structure, we applied a special coating before reconstructing the aluminium outer skin.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-033.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 33 in the vehicle record"
 				},
 				{
 					"src": "./image-034.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 34 in the vehicle record"
 				}
 			]
 		},
@@ -268,11 +312,13 @@
 			"images": [
 				{
 					"src": "./image-035.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 35 in the vehicle record"
 				},
 				{
 					"src": "./image-036.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 36 in the vehicle record"
 				}
 			]
 		},
@@ -281,91 +327,108 @@
 			"images": [
 				{
 					"src": "./image-037.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 37 in the vehicle record"
 				},
 				{
 					"src": "./image-038.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 38 in the vehicle record"
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 39 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Kompletter Neuaufbau der sensiblen Aluminium-Außenhaut, dazu originalgetreue Neuanfertigung vieler Karosseriepartien.</p>"
+			"html": "<p>Kompletter Neuaufbau der sensiblen Aluminium-Außenhaut, dazu originalgetreue Neuanfertigung vieler Karosseriepartien.</p>",
+			"htmlEn": "<p>Complete reconstruction of the delicate aluminium outer skin, including faithful reproductions of many body sections.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-040.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 40 in the vehicle record"
 				},
 				{
 					"src": "./image-041.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 41 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Einpassen der zahlreichen Zier- und Anbauteile.</p>"
+			"html": "<p>Einpassen der zahlreichen Zier- und Anbauteile.</p>",
+			"htmlEn": "<p>Fitting the numerous trim pieces and attachments.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-042.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 42 in the vehicle record"
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 43 in the vehicle record"
 				},
 				{
 					"src": "./image-044.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 44 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n...ein Teil der vielen überarbeiteten Zierteile zur Neuverchromung.</p>"
+			"html": "<p><br />\n<br />\n...ein Teil der vielen überarbeiteten Zierteile zur Neuverchromung.</p>",
+			"htmlEn": "<p><br>\n<br>\n…some of the many refurbished trim pieces awaiting new chrome plating.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-045.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 45 in the vehicle record"
 				},
 				{
 					"src": "./image-046.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 46 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 46 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 46 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>...völliger Neuaufbau des originalen V8 Motors.</p>"
+			"html": "<p>...völliger Neuaufbau des originalen V8 Motors.</p>",
+			"htmlEn": "<p>…a complete rebuild of the original V8 engine.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-047.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 47 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 47 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 47 in the vehicle record"
 				},
 				{
 					"src": "./image-048.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 48 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 48 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 48 in the vehicle record"
 				},
 				{
 					"src": "./image-049.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 49 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 49 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 49 in the vehicle record"
 				}
 			]
 		},
@@ -374,28 +437,33 @@
 			"images": [
 				{
 					"src": "./image-050.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 50 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 50 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 50 in the vehicle record"
 				},
 				{
 					"src": "./image-051.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 51 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 51 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 51 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Instandsetzung der Achsen, Bremsen, Lenkung, Stoßdämpfer, Drehstabfederung und der übrigen technischen Komponenten - hier bereits fertig zum späteren Einbau.</p>"
+			"html": "<p>Instandsetzung der Achsen, Bremsen, Lenkung, Stoßdämpfer, Drehstabfederung und der übrigen technischen Komponenten - hier bereits fertig zum späteren Einbau.</p>",
+			"htmlEn": "<p>Refurbished axles, brakes, steering, shock absorbers, torsion-bar suspension and other mechanical components, ready for installation.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-052.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 52 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 52 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 52 in the vehicle record"
 				},
 				{
 					"src": "./image-053.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 53 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 53 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 53 in the vehicle record"
 				}
 			]
 		},
@@ -404,11 +472,13 @@
 			"images": [
 				{
 					"src": "./image-054.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 54 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 54 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 54 in the vehicle record"
 				},
 				{
 					"src": "./image-055.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 55 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 55 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 55 in the vehicle record"
 				}
 			]
 		},
@@ -417,15 +487,18 @@
 			"images": [
 				{
 					"src": "./image-056.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 56 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 56 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 56 in the vehicle record"
 				},
 				{
 					"src": "./image-057.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 57 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 57 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 57 in the vehicle record"
 				},
 				{
 					"src": "./image-058.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 58 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 58 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 58 in the vehicle record"
 				}
 			]
 		},
@@ -434,21 +507,29 @@
 			"images": [
 				{
 					"src": "./image-059.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 59 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 59 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 59 in the vehicle record"
 				},
 				{
 					"src": "./image-060.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 60 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 60 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 60 in the vehicle record"
 				},
 				{
 					"src": "./image-061.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 61 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 61 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 61 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neuanfertigung der gesamten Auspuffanlage in Edelstahl.</p>"
+			"html": "<p>Neuanfertigung der gesamten Auspuffanlage in Edelstahl.</p>",
+			"htmlEn": "<p>Making an entirely new exhaust system in stainless steel.</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 503 Coupe, year 1959",
+	"descriptionEn": "A rare BMW 503 Coupé in as-found condition, with several missing parts, awaiting a complete rebuild.",
+	"cardImageAltEn": "BMW 503 Coupe, year 1959",
+	"leadImageAltEn": "BMW 503 Coupe, year 1959 – vehicle record"
 }

@@ -17,20 +17,23 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "DKW 1000S, year 1960 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein DKW 1000S in seltener 4-türiger Ausführung, der im Kundenauftrag bei uns restauriert wurde.</p>"
+			"html": "<p>Hier ein DKW 1000S in seltener 4-türiger Ausführung, der im Kundenauftrag bei uns restauriert wurde.</p>",
+			"htmlEn": "<p>A rare four-door DKW 1000 S, restored at our workshop for its owner.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "DKW 1000S, year 1960 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -39,7 +42,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "DKW 1000S, year 1960 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -48,7 +52,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "DKW 1000S, year 1960 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -57,13 +62,19 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "DKW 1000S, year 1960 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "DKW 1000S, Baujahr 1960 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "DKW 1000S, year 1960 – photograph 6 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "DKW 1000S, year 1960",
+	"descriptionEn": "A rare four-door DKW 1000 S, restored at our workshop for its owner.",
+	"cardImageAltEn": "DKW 1000S, year 1960",
+	"leadImageAltEn": "DKW 1000S, year 1960 – vehicle record"
 }

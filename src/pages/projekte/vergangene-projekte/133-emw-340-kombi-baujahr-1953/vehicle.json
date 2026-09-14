@@ -17,69 +17,83 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>The WINNER!<br />\n2. Platz beim European Concours de Elegance!</strong><br />\n<br />\n<br />\nHier wieder eine Eisenacher Rarität, die in unserer Manufaktur einer umfangreichen Komplettrestaurierung unterzogen wurde - ein sehr seltener<br />\nEMW 340-7 &quot;Kombi- und Kurierfahrzeug&quot;.</p>"
+			"html": "<p><strong>The WINNER!<br />\n2. Platz beim European Concours de Elegance!</strong><br />\n<br />\n<br />\nHier wieder eine Eisenacher Rarität, die in unserer Manufaktur einer umfangreichen Komplettrestaurierung unterzogen wurde - ein sehr seltener<br />\nEMW 340-7 &quot;Kombi- und Kurierfahrzeug&quot;.</p>",
+			"htmlEn": "<p><strong>The winner!<br>\nSecond place at the European Concours de Elegance!</strong><br>\n<br>\n<br>\nAnother Eisenach rarity comprehensively restored at our workshop: a very rare<br>\nEMW 340-7 “Estate and Courier Vehicle”.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Typ BMW/EMW 340 ist den meisten zwar als komfortable Reiselimousine bekannt (340-2), von denen auch schon einige bestrestauriert unser Haus verlassen haben (siehe Referenzen).</p>"
+			"html": "<p>Der Typ BMW/EMW 340 ist den meisten zwar als komfortable Reiselimousine bekannt (340-2), von denen auch schon einige bestrestauriert unser Haus verlassen haben (siehe Referenzen).</p>",
+			"htmlEn": "<p>Most people know the BMW/EMW 340 as a comfortable touring saloon, the 340-2. Several beautifully restored examples have already left our workshop; see our references.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Von diesem Aufbau als so genanntes &quot;Kombi- und Kurierfahrzeug&quot; (ein echter und originaler 340-7) sind in den Jahren 1953 bis 1955 hingegen nur sehr wenige Fahrzeuge gebaut worden (die Archive sprechen von nur 364 Fahrzeugen). Heute sind weniger als 5 Fahrzeuge überhaupt bekannt.<br />\nAufgrund der Seltenheit des Fahrzeugs wurde das Auto für einen guten Kunden, Oldtimerkenner und -sammler bestens und sehr originalgetreu durch uns restauriert.</p>"
+			"html": "<p>Von diesem Aufbau als so genanntes &quot;Kombi- und Kurierfahrzeug&quot; (ein echter und originaler 340-7) sind in den Jahren 1953 bis 1955 hingegen nur sehr wenige Fahrzeuge gebaut worden (die Archive sprechen von nur 364 Fahrzeugen). Heute sind weniger als 5 Fahrzeuge überhaupt bekannt.<br />\nAufgrund der Seltenheit des Fahrzeugs wurde das Auto für einen guten Kunden, Oldtimerkenner und -sammler bestens und sehr originalgetreu durch uns restauriert.</p>",
+			"htmlEn": "<p>Very few genuine 340-7 estate and courier vehicles were built between 1953 and 1955 — archives record just 364. Fewer than five are known today.<br>\nGiven its rarity, we restored the car faithfully and to the highest standard for a valued client, classic-car enthusiast and collector.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 7 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Gebaut in Eisenach und ausgeliefert nach Finnland, wurde der Wagen dort im Laufe der Jahre zwar<br />\n&quot;am Leben gehalten&quot;.<br />\nNotwendige Reparaturen und Instandhaltungsmaßnahmen allerdings wurden wie jetzt erkennbar leider nur mit wenig Sachverstand ausgeführt.<br />\n<br />\n<br /></p>"
+			"html": "<p>Gebaut in Eisenach und ausgeliefert nach Finnland, wurde der Wagen dort im Laufe der Jahre zwar<br />\n&quot;am Leben gehalten&quot;.<br />\nNotwendige Reparaturen und Instandhaltungsmaßnahmen allerdings wurden wie jetzt erkennbar leider nur mit wenig Sachverstand ausgeführt.<br />\n<br />\n<br /></p>",
+			"htmlEn": "<p>Built in Eisenach and delivered to Finland, the car had been<br>\nkept running there over the years.<br>\nHowever, the necessary repairs and maintenance proved to have been carried out with little expertise.<br>\n<br>\n<br></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dazu mussten von uns u.a. auch größere Karosserieschäden beseitigt und dazu passgenaue Bleche angefertigt werden.</p>"
+			"html": "<p>Dazu mussten von uns u.a. auch größere Karosserieschäden beseitigt und dazu passgenaue Bleche angefertigt werden.</p>",
+			"htmlEn": "<p>We had to repair substantial body damage and fabricate accurately fitting replacement panels.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -88,20 +102,23 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 10 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAnfertigung neuer Achsbolzen und Bronzebuchsen.<br /></p>"
+			"html": "<p><br />\nAnfertigung neuer Achsbolzen und Bronzebuchsen.<br /></p>",
+			"htmlEn": "<p><br>\nMaking new axle pins and bronze bushes.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -110,7 +127,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -119,7 +137,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 13 in the vehicle record"
 				}
 			]
 		},
@@ -128,7 +147,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 14 in the vehicle record"
 				}
 			]
 		},
@@ -137,7 +157,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -146,41 +167,48 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 16 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Achsen-,</p>"
+			"html": "<p>Achsen-,</p>",
+			"htmlEn": "<p>Axle,</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 19 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Bremsen- und Getriebeüberholung.<br />\n<br />\n<br />\nNeben dem Neubau eines originalgetreuen Kühlers wurden für das Auto auch eigens völlig neue Guss-Bremstrommeln angefertigt.</p>"
+			"html": "<p>Bremsen- und Getriebeüberholung.<br />\n<br />\n<br />\nNeben dem Neubau eines originalgetreuen Kühlers wurden für das Auto auch eigens völlig neue Guss-Bremstrommeln angefertigt.</p>",
+			"htmlEn": "<p>brake and gearbox overhaul.<br>\n<br>\n<br>\nIn addition to making a faithful new radiator, we had entirely new cast brake drums manufactured for the car.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 20 in the vehicle record"
 				}
 			]
 		},
@@ -189,20 +217,23 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 21 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nIm Zuge der Karosserieinstandsetzung wurden auch die statisch wichtigen und tragenden Holzteile der Karosserie teilerneuert.</p>"
+			"html": "<p><br />\nIm Zuge der Karosserieinstandsetzung wurden auch die statisch wichtigen und tragenden Holzteile der Karosserie teilerneuert.</p>",
+			"htmlEn": "<p><br>\nDuring the body repairs, we also partly renewed the structurally important load-bearing timber components.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 22 in the vehicle record"
 				}
 			]
 		},
@@ -211,7 +242,8 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 23 in the vehicle record"
 				}
 			]
 		},
@@ -220,7 +252,8 @@
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 24 in the vehicle record"
 				}
 			]
 		},
@@ -229,66 +262,78 @@
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 25 in the vehicle record"
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 26 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nGemäß den Wünschen unseres Kunden wurde der Wagen in unserer Lackierabteilung einer aufwändigen, zeitgenössischen und originalgetreuen Zweifarben-Lackierung unterzogen.</p>"
+			"html": "<p><br />\nGemäß den Wünschen unseres Kunden wurde der Wagen in unserer Lackierabteilung einer aufwändigen, zeitgenössischen und originalgetreuen Zweifarben-Lackierung unterzogen.</p>",
+			"htmlEn": "<p><br>\nAt the client’s request, our paint shop applied an elaborate, authentic period two-tone finish.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-027.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 28 in the vehicle record"
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 29 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch die zahlreichen Echtholz-Zierteile erfuhren von unseren Lackspezialisten eine professionelle Restaurierung, einschließlich der stilvollen Holzmaserierung.</p>"
+			"html": "<p>Auch die zahlreichen Echtholz-Zierteile erfuhren von unseren Lackspezialisten eine professionelle Restaurierung, einschließlich der stilvollen Holzmaserierung.</p>",
+			"htmlEn": "<p>Our paint specialists also professionally restored the numerous real-wood trim pieces, including the elegant woodgrain finish.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 30 in the vehicle record"
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 32 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neben der Überholung der gesamten Technik, wurde in unserer Sattlerei auch die gesamte Innenausstattung erneuert. Innenhimmel aus edlem Baumwolltuch geschneidert, Polster aus beigem Echtleder mit blaugrauen Zierkedern, echtes Linoleum für die Ladefläche und Naturfaserteppiche.</p>"
+			"html": "<p>Neben der Überholung der gesamten Technik, wurde in unserer Sattlerei auch die gesamte Innenausstattung erneuert. Innenhimmel aus edlem Baumwolltuch geschneidert, Polster aus beigem Echtleder mit blaugrauen Zierkedern, echtes Linoleum für die Ladefläche und Naturfaserteppiche.</p>",
+			"htmlEn": "<p>Alongside the complete mechanical overhaul, our upholstery shop renewed the entire interior: a headlining tailored from fine cotton cloth, beige genuine leather with blue-grey piping, real linoleum for the load floor and natural-fibre carpets.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-033.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 33 in the vehicle record"
 				}
 			]
 		},
@@ -297,7 +342,8 @@
 			"images": [
 				{
 					"src": "./image-034.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 34 in the vehicle record"
 				}
 			]
 		},
@@ -306,7 +352,8 @@
 			"images": [
 				{
 					"src": "./image-035.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 35 in the vehicle record"
 				}
 			]
 		},
@@ -315,7 +362,8 @@
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 36 in the vehicle record"
 				}
 			]
 		},
@@ -324,11 +372,13 @@
 			"images": [
 				{
 					"src": "./image-037.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 37 in the vehicle record"
 				},
 				{
 					"src": "./image-038.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 38 in the vehicle record"
 				}
 			]
 		},
@@ -337,7 +387,8 @@
 			"images": [
 				{
 					"src": "./image-039.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 39 in the vehicle record"
 				}
 			]
 		},
@@ -346,7 +397,8 @@
 			"images": [
 				{
 					"src": "./image-040.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 40 in the vehicle record"
 				}
 			]
 		},
@@ -355,15 +407,18 @@
 			"images": [
 				{
 					"src": "./image-041.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 41 in the vehicle record"
 				},
 				{
 					"src": "./image-042.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 42 in the vehicle record"
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 43 in the vehicle record"
 				}
 			]
 		},
@@ -372,7 +427,8 @@
 			"images": [
 				{
 					"src": "./image-044.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 44 in the vehicle record"
 				}
 			]
 		},
@@ -381,7 +437,8 @@
 			"images": [
 				{
 					"src": "./image-045.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 45 in the vehicle record"
 				}
 			]
 		},
@@ -390,7 +447,8 @@
 			"images": [
 				{
 					"src": "./image-046.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 46 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 46 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 46 in the vehicle record"
 				}
 			]
 		},
@@ -399,46 +457,53 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 47 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 47 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 47 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nDort am Fuße der Wartburg und am Entstehungsort dieses Wagens, feierte man aus Anlass &quot;70 Jahre Neuentwicklung Typ 340&quot; eine mehrmonatige gebührende Sonderausstellung. Auch hier ist man sich der Kostbarkeit dieses Kombi Typs 340-7 und der durch uns erfolgten perfekten Restaurierung bewußt, zumal dieser Wagen im Jahre 1953 genau hier ausgeliefert und nun nach über 66 Jahren erstmals an seinen Entstehungsort zurückkehrte...</p>"
+			"html": "<p><br />\n<br />\nDort am Fuße der Wartburg und am Entstehungsort dieses Wagens, feierte man aus Anlass &quot;70 Jahre Neuentwicklung Typ 340&quot; eine mehrmonatige gebührende Sonderausstellung. Auch hier ist man sich der Kostbarkeit dieses Kombi Typs 340-7 und der durch uns erfolgten perfekten Restaurierung bewußt, zumal dieser Wagen im Jahre 1953 genau hier ausgeliefert und nun nach über 66 Jahren erstmals an seinen Entstehungsort zurückkehrte...</p>",
+			"htmlEn": "<p><br>\n<br>\nAt the foot of the Wartburg, where the car was originally built, a special exhibition lasting several months celebrated 70 years since the development of the 340. The rarity of this 340-7 estate and the quality of our restoration were recognised there too. Delivered from this very place in 1953, it returned to its birthplace for the first time after more than 66 years.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-047.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 48 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 48 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 48 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nDas fertig restaurierte Auto vor geschichtsträchtiger Kulisse - den inzwischen leider gezeichneten baulichen Resten des ehemaligen <br />\n<strong>E</strong>isenacher <strong>M</strong>otoren <strong>W</strong>erkes.</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nDas fertig restaurierte Auto vor geschichtsträchtiger Kulisse - den inzwischen leider gezeichneten baulichen Resten des ehemaligen <br />\n<strong>E</strong>isenacher <strong>M</strong>otoren <strong>W</strong>erkes.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\nThe restored car against a historic backdrop: the now sadly deteriorated remains of the former <br>\n<strong>E</strong>isenacher <strong>M</strong>otoren <strong>W</strong>erk.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-048.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 49 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 49 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 49 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\nAbschließende Premiumaufnahmen für das damalige Premiummodell EMW 340-7 &quot;Kombi- und Kurierfahrzeug&quot;.<br /></p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\nAbschließende Premiumaufnahmen für das damalige Premiummodell EMW 340-7 &quot;Kombi- und Kurierfahrzeug&quot;.<br /></p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\nFinal photographs of exceptional quality for a former premium model: the EMW 340-7 Estate and Courier Vehicle.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-049.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 50 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 50 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 50 in the vehicle record"
 				}
 			]
 		},
@@ -447,7 +512,8 @@
 			"images": [
 				{
 					"src": "./image-050.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 51 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 51 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 51 in the vehicle record"
 				}
 			]
 		},
@@ -456,51 +522,64 @@
 			"images": [
 				{
 					"src": "./image-051.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 52 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 52 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 52 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\nHier noch ein Auszug aus dem sehr raren Original-Werksprospekt von 1953.</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\nHier noch ein Auszug aus dem sehr raren Original-Werksprospekt von 1953.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\n<br>\nAn extract from the very rare original 1953 factory brochure.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-052.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 53 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 53 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 53 in the vehicle record"
 				},
 				{
 					"src": "./image-053.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 54 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 54 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 54 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Original Werbeaufnahmen von 1953 und Fahrzeuge zur Bahnverladung und teilweise weiteren Verschiffung vor allem in die skandinavischen Länder.</p>"
+			"html": "<p>Original Werbeaufnahmen von 1953 und Fahrzeuge zur Bahnverladung und teilweise weiteren Verschiffung vor allem in die skandinavischen Länder.</p>",
+			"htmlEn": "<p>Original publicity photographs from 1953, with cars awaiting rail loading and, in some cases, onward shipping, mainly to Scandinavia.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-054.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 55 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 55 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 55 in the vehicle record"
 				},
 				{
 					"src": "./image-055.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 56 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 56 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 56 in the vehicle record"
 				},
 				{
 					"src": "./image-056.jpg",
-					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 57 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Aufnahme 57 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – photograph 57 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nNoch ein Highlight zu diesem Fahrzeug:<br />\nAnlässlich der jeweils im Spätherbst stattfindenden &quot;Classic Gala Schwetzingen&quot; und dem dortigen &quot;European Concours de Elegance&quot; werden alljährlich die bestrestaurierten Oldtimer der Welt prämiert.<br />\n<br />\n<br />\nAuf besondere Einladung durfte auch dieses von uns top restaurierte Exemplar nicht fehlen und erhielt von der anwesenden fachkundigen Jury einen der hochbegehrten Pokale<br />\n(<strong>2. Platz der Classic-Jury</strong>) und damit viel Lob und Anerkennung für die durch uns durchgeführten Restaurationsarbeiten.<br />\n<br />\n<br />\nDen <strong>1. Platz</strong> übrigens erhielt ebenfalls ein aus unserer Manufaktur stammender<br />\n<strong>BMW 328 &quot;Vignale&quot;-Roadster</strong> des Jahres 1938<br />\n(siehe unsere Referenzen). <br />\n<br />\n<br />\nEs erfüllt uns mit großem Stolz, dass neben dem Besitzer - ein langjähriger guter Kunde, absoluter Kenner und Sammler dieser Fahrzeuge - auch eine internationale Fachjury von der herausragenden Qualität unserer Arbeiten überzeugt ist.</p>"
+			"html": "<p><br />\n<br />\n<br />\nNoch ein Highlight zu diesem Fahrzeug:<br />\nAnlässlich der jeweils im Spätherbst stattfindenden &quot;Classic Gala Schwetzingen&quot; und dem dortigen &quot;European Concours de Elegance&quot; werden alljährlich die bestrestaurierten Oldtimer der Welt prämiert.<br />\n<br />\n<br />\nAuf besondere Einladung durfte auch dieses von uns top restaurierte Exemplar nicht fehlen und erhielt von der anwesenden fachkundigen Jury einen der hochbegehrten Pokale<br />\n(<strong>2. Platz der Classic-Jury</strong>) und damit viel Lob und Anerkennung für die durch uns durchgeführten Restaurationsarbeiten.<br />\n<br />\n<br />\nDen <strong>1. Platz</strong> übrigens erhielt ebenfalls ein aus unserer Manufaktur stammender<br />\n<strong>BMW 328 &quot;Vignale&quot;-Roadster</strong> des Jahres 1938<br />\n(siehe unsere Referenzen). <br />\n<br />\n<br />\nEs erfüllt uns mit großem Stolz, dass neben dem Besitzer - ein langjähriger guter Kunde, absoluter Kenner und Sammler dieser Fahrzeuge - auch eine internationale Fachjury von der herausragenden Qualität unserer Arbeiten überzeugt ist.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\nAnother highlight for this vehicle:<br>\nEvery year, the Classic Gala Schwetzingen and its European Concours de Elegance recognise outstanding classic-car restorations from around the world.<br>\n<br>\n<br>\nThis superbly restored example attended by special invitation and received one of the coveted trophies from the expert jury:<br>\n(<strong>Second place from the Classic Jury.</strong>), bringing praise and recognition for our restoration work.<br>\n<br>\n<br>\nThe <strong>first prize,</strong> incidentally, also went to a car restored at our workshop:<br>\n<strong>a BMW 328 Vignale Roadster</strong> from 1938<br>\n(see our references). <br>\n<br>\n<br>\nWe are proud that both the owner — a longstanding client, expert and collector of these vehicles — and an international jury recognise the outstanding quality of our work.</p>"
 		}
-	]
+	],
+	"titleEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953",
+	"descriptionEn": "The winner! Second place at the European Concours de Elegance! Another Eisenach rarity comprehensively restored at our workshop: a very rare EMW 340-7 “Estate and Courier Vehicle”.",
+	"cardImageAltEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953",
+	"leadImageAltEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – vehicle record"
 }

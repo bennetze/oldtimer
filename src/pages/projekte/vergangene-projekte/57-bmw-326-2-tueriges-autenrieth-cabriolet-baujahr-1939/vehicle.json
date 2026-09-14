@@ -14,20 +14,27 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Bei diesem BMW 326 “Autenrieth” Cabriolet - gebaut bei den Bayerischen-Motoren-Werken in Eisenach / Thüringen - handelt es sich um eine allumfassende Vollrestauration.</p>"
+			"html": "<p>Bei diesem BMW 326 “Autenrieth” Cabriolet - gebaut bei den Bayerischen-Motoren-Werken in Eisenach / Thüringen - handelt es sich um eine allumfassende Vollrestauration.</p>",
+			"htmlEn": "<p>A comprehensive full restoration of this BMW 326 Autenrieth Cabriolet, built in Eisenach, Thuringia.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neben den anspruchsvollen Karosseriearbeiten wurde in unserem Hause der gesamte Holzskelettaufbau erneuert. Dabei mußte u.a. auch die gesamte fehlende Verdeckkonstruktion, einschließlich der aufwendigen Scherentechnik neu gebaut werden.</p>"
+			"html": "<p>Neben den anspruchsvollen Karosseriearbeiten wurde in unserem Hause der gesamte Holzskelettaufbau erneuert. Dabei mußte u.a. auch die gesamte fehlende Verdeckkonstruktion, einschließlich der aufwendigen Scherentechnik neu gebaut werden.</p>",
+			"htmlEn": "<p>Alongside demanding bodywork, we renewed the entire timber framework and recreated the missing hood structure, including its complex folding mechanism.</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939",
+	"descriptionEn": "A comprehensive full restoration of this BMW 326 Autenrieth Cabriolet, built in Eisenach, Thuringia.",
+	"cardImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939",
+	"leadImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939 – vehicle record"
 }

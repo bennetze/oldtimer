@@ -17,24 +17,28 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Saloon \"Ambi-Budd\", year 1939 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein BMW 326 von 1939 mit 4-türiger Karosserie aus Berliner Fertigung beim dortigen Karosseriebauer &quot;Ambi-Budd&quot; und damit einer der letzten 326er vor Beginn des <br />2. Weltkrieges, aber schon mit einteiligen durchgehenden Stoßstangen.</p>"
+			"html": "<p>Ein BMW 326 von 1939 mit 4-türiger Karosserie aus Berliner Fertigung beim dortigen Karosseriebauer &quot;Ambi-Budd&quot; und damit einer der letzten 326er vor Beginn des <br />2. Weltkrieges, aber schon mit einteiligen durchgehenden Stoßstangen.</p>",
+			"htmlEn": "<p>A 1939 BMW 326 with four-door coachwork by Berlin coachbuilder Ambi-Budd, one of the last 326s built before the <br>Second World War, already equipped with continuous one-piece bumpers.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Saloon \"Ambi-Budd\", year 1939 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Saloon \"Ambi-Budd\", year 1939 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -43,17 +47,24 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Saloon \"Ambi-Budd\", year 1939 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Limousine \"Ambi-Budd\", Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Saloon \"Ambi-Budd\", year 1939 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen wurde bei uns umfangreich überarbeitet und technisch instand gesetzt.</p>"
+			"html": "<p>Der Wagen wurde bei uns umfangreich überarbeitet und technisch instand gesetzt.</p>",
+			"htmlEn": "<p>We extensively refurbished and mechanically repaired the car.</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 326 Saloon \"Ambi-Budd\", year 1939",
+	"descriptionEn": "A 1939 BMW 326 with four-door coachwork by Berlin coachbuilder Ambi-Budd, one of the last 326s built before the Second World War, already equipped with continuous one-piece…",
+	"cardImageAltEn": "BMW 326 Saloon \"Ambi-Budd\", year 1939",
+	"leadImageAltEn": "BMW 326 Saloon \"Ambi-Budd\", year 1939 – vehicle record"
 }

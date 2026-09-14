@@ -17,45 +17,53 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nEin seltenes BMW 326 Reisecabriolet, gebaut 1938 bei BMW in Eisenach/Thüringen, mit einem &quot;Autenrieth&quot; Karosserieaufbau aus Darmstadt.<br />\n<br />\nDas Cabrio - seit rund 50 Jahren in Schweizer Familienhand erhalten - wurde bei uns im Kundenauftrag völlig neu und sehr originalgetreu aufgebaut.</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\nEin seltenes BMW 326 Reisecabriolet, gebaut 1938 bei BMW in Eisenach/Thüringen, mit einem &quot;Autenrieth&quot; Karosserieaufbau aus Darmstadt.<br />\n<br />\nDas Cabrio - seit rund 50 Jahren in Schweizer Familienhand erhalten - wurde bei uns im Kundenauftrag völlig neu und sehr originalgetreu aufgebaut.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA rare BMW 326 touring cabriolet built in 1938 in Eisenach, Thuringia, with Autenrieth coachwork from Darmstadt.<br>\n<br>\nPreserved in a Swiss family for around fifty years, the cabriolet was completely and faithfully rebuilt at our workshop for its owners.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen war zwar weitgehend vollständig erhalten, aber insgesamt in einem doch stark verbrauchten und teils wenig originalem Zustand.</p>"
+			"html": "<p>Der Wagen war zwar weitgehend vollständig erhalten, aber insgesamt in einem doch stark verbrauchten und teils wenig originalem Zustand.</p>",
+			"htmlEn": "<p>Although largely complete, it was heavily worn overall and partly altered from original specification.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -64,32 +72,38 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 8 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Angefangen von umfangreichen Karosseriearbeiten, Stellmacherarbeiten, einer originalgetreuen Lackierung, Instandsetzung der Technik, neuem Chrom, Neuanfertigung des gesamten Kabelbaums bis hin zur Restauration der gesamten Innenausstattung/Sattlerei und der Neuanfertigung des Cabrioletverdecks wurden damit unserseits nahezu alle Restaurationsgewerke fachmännisch ausgeführt.</p>"
+			"html": "<p>Angefangen von umfangreichen Karosseriearbeiten, Stellmacherarbeiten, einer originalgetreuen Lackierung, Instandsetzung der Technik, neuem Chrom, Neuanfertigung des gesamten Kabelbaums bis hin zur Restauration der gesamten Innenausstattung/Sattlerei und der Neuanfertigung des Cabrioletverdecks wurden damit unserseits nahezu alle Restaurationsgewerke fachmännisch ausgeführt.</p>",
+			"htmlEn": "<p>Extensive metal and timber bodywork, authentic paint, mechanical repairs, new chrome, a complete new wiring loom, interior restoration and a newly made convertible hood called on virtually all our restoration trades.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -98,24 +112,28 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 12 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier die bereits fertige restaurierte Karosserie und damit ideale Ausgangsbasis für eine perfekte Lackierung.</p>"
+			"html": "<p><br />\nHier die bereits fertige restaurierte Karosserie und damit ideale Ausgangsbasis für eine perfekte Lackierung.</p>",
+			"htmlEn": "<p><br>\nThe fully restored body provides an ideal foundation for an excellent paint finish.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 14 in the vehicle record"
 				}
 			]
 		},
@@ -124,32 +142,38 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 16 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Lackierungsvorbereitung und Vorbereitung sämtlicher Flächen und Passungen.</p>"
+			"html": "<p>Lackierungsvorbereitung und Vorbereitung sämtlicher Flächen und Passungen.</p>",
+			"htmlEn": "<p>Paint preparation, checking all surfaces and panel fit.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 19 in the vehicle record"
 				}
 			]
 		},
@@ -158,36 +182,43 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 22 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Anschließend konnte in unserer Lackierabteilung mit der hochwertigen 2-Farb-Lackierung begonnen werden, einschl. der kunstvollen Zierlinierungen.<br /></p>"
+			"html": "<p>Anschließend konnte in unserer Lackierabteilung mit der hochwertigen 2-Farb-Lackierung begonnen werden, einschl. der kunstvollen Zierlinierungen.<br /></p>",
+			"htmlEn": "<p>Our paint shop then began the high-quality two-tone finish, including intricate coachlines.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 25 in the vehicle record"
 				}
 			]
 		},
@@ -196,53 +227,63 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 27 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch die edlen originalen Massivholzzierleisten des Innenraums konnten restauriert und damit im Original erhalten werden.</p>"
+			"html": "<p><br />\nAuch die edlen originalen Massivholzzierleisten des Innenraums konnten restauriert und damit im Original erhalten werden.</p>",
+			"htmlEn": "<p><br>\nWe also restored and preserved the original solid-wood interior trim.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 28 in the vehicle record"
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 29 in the vehicle record"
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 30 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Parallel dazu wurde in unserer Technik und Feinmechanik bereits sämtliche technischen Komponenten, wie Achsen, Bremsen, Lenkung, Drehstabfederung, Stoßdämpfer, Elektrik, Instrumentierung usw. aufgearbeitet und für den Einbau vorbereitet werden.</p>"
+			"html": "<p>Parallel dazu wurde in unserer Technik und Feinmechanik bereits sämtliche technischen Komponenten, wie Achsen, Bremsen, Lenkung, Drehstabfederung, Stoßdämpfer, Elektrik, Instrumentierung usw. aufgearbeitet und für den Einbau vorbereitet werden.</p>",
+			"htmlEn": "<p>In parallel, our mechanical and precision-engineering departments refurbished the axles, brakes, steering, torsion-bar suspension, dampers, electrics and instruments, preparing them for installation.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 32 in the vehicle record"
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 33 in the vehicle record"
 				}
 			]
 		},
@@ -251,11 +292,13 @@
 			"images": [
 				{
 					"src": "./image-034.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 34 in the vehicle record"
 				},
 				{
 					"src": "./image-035.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 35 in the vehicle record"
 				}
 			]
 		},
@@ -264,74 +307,88 @@
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 36 in the vehicle record"
 				},
 				{
 					"src": "./image-037.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 37 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eigens für das Cabriolet-Verdeck wurden neue passgerechte Holzspriegel angefertigt und anschließend in unserer Sattlerei das Verdeck mit Innenhimmel neu geschneidert und dazu mit originalem Rosshaar gefüttert.</p>"
+			"html": "<p>Eigens für das Cabriolet-Verdeck wurden neue passgerechte Holzspriegel angefertigt und anschließend in unserer Sattlerei das Verdeck mit Innenhimmel neu geschneidert und dazu mit originalem Rosshaar gefüttert.</p>",
+			"htmlEn": "<p>We made accurately fitting timber bows for the hood, then tailored a new outer hood and headlining with authentic horsehair padding.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-038.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 38 in the vehicle record"
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 39 in the vehicle record"
 				},
 				{
 					"src": "./image-040.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 40 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Anschließend wurde auch das gesamte Interieur in feinstem blauen Echtleder erneuert und mit blau abgesetzten Kedern (wie im Original) abgesetzt und die Teppiche in blauem Naturfaser-Boucle erneuert und eingepasst.<br /></p>"
+			"html": "<p>Anschließend wurde auch das gesamte Interieur in feinstem blauen Echtleder erneuert und mit blau abgesetzten Kedern (wie im Original) abgesetzt und die Teppiche in blauem Naturfaser-Boucle erneuert und eingepasst.<br /></p>",
+			"htmlEn": "<p>The entire interior was renewed in fine blue genuine leather with contrasting blue piping as originally fitted, and new blue natural-fibre bouclé carpets were made and fitted.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-041.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 41 in the vehicle record"
 				},
 				{
 					"src": "./image-042.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 42 in the vehicle record"
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 43 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach Komplettierung und Fertigstellung sämtlicher Einbau- und Anbauteile erstrahlt der Wagen wieder in seiner ursprünglichen Schönheit und durfte abschließend noch einmal an seine Geburtsstätte Eisenach - von vor 85 Jahren! - reisen, bevor er anschließend wieder auf seine große Reise zu seinem glücklichen Besitzerehepaar in die Schweiz gelangt.<br /></p>"
+			"html": "<p>Nach Komplettierung und Fertigstellung sämtlicher Einbau- und Anbauteile erstrahlt der Wagen wieder in seiner ursprünglichen Schönheit und durfte abschließend noch einmal an seine Geburtsstätte Eisenach - von vor 85 Jahren! - reisen, bevor er anschließend wieder auf seine große Reise zu seinem glücklichen Besitzerehepaar in die Schweiz gelangt.<br /></p>",
+			"htmlEn": "<p>With every component assembled, the car shines in its original beauty once more. It made a final visit to Eisenach, where it was born 85 years earlier, before its journey back to its delighted owners in Switzerland.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-044.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 44 in the vehicle record"
 				},
 				{
 					"src": "./image-045.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 45 in the vehicle record"
 				},
 				{
 					"src": "./image-046.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 46 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 46 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 46 in the vehicle record"
 				}
 			]
 		},
@@ -340,47 +397,59 @@
 			"images": [
 				{
 					"src": "./image-047.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 47 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 47 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 47 in the vehicle record"
 				},
 				{
 					"src": "./image-048.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 48 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 48 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 48 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>...Es ist vollbracht...<br /></p>"
+			"html": "<p>...Es ist vollbracht...<br /></p>",
+			"htmlEn": "<p>…the work is complete.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-049.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 49 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 49 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 49 in the vehicle record"
 				},
 				{
 					"src": "./image-050.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 50 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 50 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 50 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein von uns sehr original und authentisch restauriertes BMW 326 &quot;Autenrieth&quot; Kabriolett (org. Schreibweise 1938...).</p>"
+			"html": "<p>Ein von uns sehr original und authentisch restauriertes BMW 326 &quot;Autenrieth&quot; Kabriolett (org. Schreibweise 1938...).</p>",
+			"htmlEn": "<p>A faithfully and authentically restored BMW 326 Autenrieth Cabriolet.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-051.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 51 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 51 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 51 in the vehicle record"
 				},
 				{
 					"src": "./image-052.jpg",
-					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 52 der Fahrzeugdokumentation"
+					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Aufnahme 52 der Fahrzeugdokumentation",
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – photograph 52 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938",
+	"descriptionEn": "A rare BMW 326 touring cabriolet built in 1938 in Eisenach, Thuringia, with Autenrieth coachwork from Darmstadt. Preserved in a Swiss family for around fifty years, the…",
+	"cardImageAltEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938",
+	"leadImageAltEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – vehicle record"
 }

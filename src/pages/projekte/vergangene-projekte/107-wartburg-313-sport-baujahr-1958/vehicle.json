@@ -17,20 +17,23 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier wieder eine kostbare Rarität aus traditioneller Eisenacher Sportwagen-Produktion: ein &quot;Wartburg 313 Sport&quot; - komplett neu und originalgetreu restauriert.</p>"
+			"html": "<p>Hier wieder eine kostbare Rarität aus traditioneller Eisenacher Sportwagen-Produktion: ein &quot;Wartburg 313 Sport&quot; - komplett neu und originalgetreu restauriert.</p>",
+			"htmlEn": "<p>Another precious rarity from Eisenach’s sports-car tradition: a Wartburg 313 Sport, completely and faithfully restored.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -39,7 +42,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -48,20 +52,23 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Lackierung: original sportrot mit cognacfarbener Echtleder-Innenausstattung und passend dazu abgestimmten beigefarbenem Teppichboucle.</p>"
+			"html": "<p>Lackierung: original sportrot mit cognacfarbener Echtleder-Innenausstattung und passend dazu abgestimmten beigefarbenem Teppichboucle.</p>",
+			"htmlEn": "<p>Paintwork: original Sport Red, with cognac-coloured genuine leather upholstery and coordinated beige bouclé carpeting.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -70,20 +77,23 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 6 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen verfügt über das seltene Softtop (Scheren-Federn-Verdeck) und das originale Hardtop - ebenfalls lackiert in Wagenfarbe und mit beigem Innenhimmel ausgekleidet.</p>"
+			"html": "<p>Der Wagen verfügt über das seltene Softtop (Scheren-Federn-Verdeck) und das originale Hardtop - ebenfalls lackiert in Wagenfarbe und mit beigem Innenhimmel ausgekleidet.</p>",
+			"htmlEn": "<p>The car has the rare soft top with its spring-assisted folding frame, as well as its original hardtop, painted in body colour with beige headlining.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -92,20 +102,23 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 8 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Motor mit 1000ccm Hubraum, außenliegender Wasserpumpe und org. 313 Doppelvergaseranlage.</p>"
+			"html": "<p>Motor mit 1000ccm Hubraum, außenliegender Wasserpumpe und org. 313 Doppelvergaseranlage.</p>",
+			"htmlEn": "<p>1,000 cc engine with external water pump and original 313 twin-carburettor system.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -114,7 +127,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -123,20 +137,23 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Natürlich mit den originalen 313 Instrumenten und dem originalen Schönburg-Radio.</p>"
+			"html": "<p>Natürlich mit den originalen 313 Instrumenten und dem originalen Schönburg-Radio.</p>",
+			"htmlEn": "<p>Naturally, with original 313 instruments and the original Schönburg radio.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -145,13 +162,19 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Wartburg 313-Sport, Baujahr 1958 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 313-Sport, year 1958 – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Alles in Allem ein sehr schön und aufwendig restaurierter Wartburg 313 Sport.</p>"
+			"html": "<p>Alles in Allem ein sehr schön und aufwendig restaurierter Wartburg 313 Sport.</p>",
+			"htmlEn": "<p>All in all, a beautifully and comprehensively restored Wartburg 313 Sport.</p>"
 		}
-	]
+	],
+	"titleEn": "Wartburg 313-Sport, year 1958",
+	"descriptionEn": "Another precious rarity from Eisenach’s sports-car tradition: a Wartburg 313 Sport, completely and faithfully restored.",
+	"cardImageAltEn": "Wartburg 313-Sport, year 1958",
+	"leadImageAltEn": "Wartburg 313-Sport, year 1958 – vehicle record"
 }

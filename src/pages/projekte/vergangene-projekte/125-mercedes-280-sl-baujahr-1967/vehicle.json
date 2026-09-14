@@ -17,49 +17,58 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Mercedes - Benz 280 SL &quot;Pagode&quot;</p>"
+			"html": "<p>Mercedes - Benz 280 SL &quot;Pagode&quot;</p>",
+			"htmlEn": "<p>Mercedes-Benz 280 SL “Pagoda”.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Durch einen massiven Auffahr-Unfallschaden wurde das Fahrzeug sowohl Karosserie- als auch technischerseits stark beschädigt.</p>"
+			"html": "<p>Durch einen massiven Auffahr-Unfallschaden wurde das Fahrzeug sowohl Karosserie- als auch technischerseits stark beschädigt.</p>",
+			"htmlEn": "<p>A severe rear-end collision caused extensive damage to both the body and mechanical systems.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -68,57 +77,68 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 10 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach entsprechenden Richtarbeiten und der Karosserieinstandsetzung wurde der Wagen auch komplett in Wagenfarbe neu lackiert.</p>"
+			"html": "<p>Nach entsprechenden Richtarbeiten und der Karosserieinstandsetzung wurde der Wagen auch komplett in Wagenfarbe neu lackiert.</p>",
+			"htmlEn": "<p>After straightening and body repairs, we completely repainted the car in its body colour.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Da auch die gesamte Technik in Mitleidenschaft gezogen war, mußte diese umfangreich instandgesetzt werden und Stoßstangen- bzw. Zierteile erneuert werden.</p>"
+			"html": "<p>Da auch die gesamte Technik in Mitleidenschaft gezogen war, mußte diese umfangreich instandgesetzt werden und Stoßstangen- bzw. Zierteile erneuert werden.</p>",
+			"htmlEn": "<p>The mechanical systems also required extensive repairs, while bumpers and trim needed replacement.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 16 in the vehicle record"
 				}
 			]
 		},
@@ -127,13 +147,19 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "Mercedes 280 SL, Baujahr 1967 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "Mercedes 280 SL, year 1967 – photograph 18 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "Mercedes 280 SL, year 1967",
+	"descriptionEn": "A severe rear-end collision caused extensive damage to both the body and mechanical systems.",
+	"cardImageAltEn": "Mercedes 280 SL, year 1967",
+	"leadImageAltEn": "Mercedes 280 SL, year 1967 – vehicle record"
 }

@@ -19,10 +19,31 @@ legacy source URLs remain unchanged on an unchanged route; new vehicles and cate
 moves use the canonical `/projekte/<category>/<slug>/` URL.
 
 Rich-text paste uses the website allowlist. Unsupported formatting is removed with
-a German explanation. Unsafe imported records are rejected rather than silently
+an English explanation. Unsafe imported records are rejected rather than silently
 rewritten. Images must decode as JPEG, PNG, WebP or AVIF, match their filename type,
 and remain within the documented UI limits. All order values must be safe integers
 and unique within their category; automatic beginning/end values are negative/positive.
+
+## German and English authoring
+
+The editor UI is English. Enter both languages in the paired Deutsch / English
+fields. A block has one position and two independent rich-text editors. Gallery
+images and their order are shared, with separate alternative text and captions per
+language and per occurrence. Required text must be complete in both languages.
+Captions may be omitted in both; entering one requires its counterpart.
+
+The JSON keeps German in `title`, `description`, `cardImageAlt`, `leadImageAlt`,
+block `html`, and gallery `alt`/`caption`. Their English counterparts are `titleEn`,
+`descriptionEn`, `cardImageAltEn`, `leadImageAltEn`, `htmlEn`, `altEn` and `captionEn`.
+Images are exported only once. The website renders German at the original route and
+English at `/en/` plus that route; do not create separate English folders or pages.
+Model names may legitimately be identical in both languages.
+
+For an old German-only folder, explicitly select the legacy-import checkbox. The
+tool preserves its German content and leaves English empty. Complete all English
+fields before export. The checked website importer rejects incomplete bilingual
+records; the legacy option is confined to authoring. Existing website records were
+migrated using the existing English translations without changing their dates.
 
 ## Review, then apply
 

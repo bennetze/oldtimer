@@ -17,72 +17,88 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nHier ein so genannter &quot;Berlin-Roller&quot; der Marke IWL (Industrie Werke Ludwigsfelde), der hier in unserer Manufaktur sehr umfassend restauriert wurde.</p>"
+			"html": "<p><br />\n<br />\n<br />\nHier ein so genannter &quot;Berlin-Roller&quot; der Marke IWL (Industrie Werke Ludwigsfelde), der hier in unserer Manufaktur sehr umfassend restauriert wurde.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\nA Berlin scooter by IWL, Industriewerke Ludwigsfelde, comprehensively restored at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -91,15 +107,18 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 18 in the vehicle record"
 				}
 			]
 		},
@@ -108,30 +127,39 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-001.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 20 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nEin Traum in original türkis/creme mit dem sehr begehrten &quot;Campi&quot; Anhänger als Nachläufer.<br />\nEines der wenigen originalen<br />\nBerlin-Roller- Gespanne.</p>"
+			"html": "<p><br />\nEin Traum in original türkis/creme mit dem sehr begehrten &quot;Campi&quot; Anhänger als Nachläufer.<br />\nEines der wenigen originalen<br />\nBerlin-Roller- Gespanne.</p>",
+			"htmlEn": "<p><br>\nA dream in original turquoise and cream, with the sought-after Campi trailer.<br>\nOne of the few original<br>\nBerlin scooter-and-trailer combinations.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "IWL Berlin-Roller, Baujahr 1961 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "IWL Berlin Scooter, year 1961 – photograph 21 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\nSchön und perfekt, bereit zur großen Fahrt...</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\nSchön und perfekt, bereit zur großen Fahrt...</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\n<br>\nBeautifully finished and ready for the open road…</p>"
 		}
-	]
+	],
+	"titleEn": "IWL Berlin Scooter, year 1961",
+	"descriptionEn": "A Berlin scooter by IWL, Industriewerke Ludwigsfelde, comprehensively restored at our workshop.",
+	"cardImageAltEn": "IWL Berlin Scooter, year 1961",
+	"leadImageAltEn": "IWL Berlin Scooter, year 1961 – vehicle record"
 }

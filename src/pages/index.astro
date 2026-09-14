@@ -149,7 +149,7 @@ const sectionNavigationItems = [
               >Geschichte<span class="hero-title__letter" data-hero-title-letter
                 ><span
                   class="hero-title__letter-glyph"
-                  data-hero-title-letter-glyph>N</span
+                  data-hero-title-letter-glyph>(N)</span
                 ></span
               ></span
             >
@@ -626,16 +626,11 @@ const sectionNavigationItems = [
   }
 
   .hero-title__letter {
-    --hero-title-letter-width: 0.8em;
+    --hero-title-letter-width: 1.7em;
 
     display: inline-block;
-    width: 0;
-    overflow: visible;
-    filter: blur(0.1em);
-    opacity: 0;
-    transform: translateX(-0.14em);
+    width: var(--hero-title-letter-width);
     vertical-align: baseline;
-    will-change: width, opacity, filter, transform;
   }
 
   .hero-title__letter-glyph {

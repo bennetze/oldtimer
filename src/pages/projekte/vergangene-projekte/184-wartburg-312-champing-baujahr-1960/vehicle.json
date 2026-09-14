@@ -17,70 +17,83 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nHier ein angeliefertes Fundstück aus frühen DDR Zeiten: Ein inzwischen selten gewordener Wartburg Typ 312 in der begehrten &quot;Camping&quot;-Ausführung. Gebaut im Jahre 1966 im nur wenige Kilometer entfernten Eisenach, erfuhr der Wagen hier in unserer Oldtimermanufaktur nunmehr sein &quot;2. Leben&quot;.</p>"
+			"html": "<p><br />\n<br />\nHier ein angeliefertes Fundstück aus frühen DDR Zeiten: Ein inzwischen selten gewordener Wartburg Typ 312 in der begehrten &quot;Camping&quot;-Ausführung. Gebaut im Jahre 1966 im nur wenige Kilometer entfernten Eisenach, erfuhr der Wagen hier in unserer Oldtimermanufaktur nunmehr sein &quot;2. Leben&quot;.</p>",
+			"htmlEn": "<p><br>\n<br>\nA discovery from the early GDR era: a now-rare Wartburg 312 Camping. Built in 1966 in nearby Eisenach, it received a second life here at Die Oldtimermanufaktur.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Leider bekamen wir das Fahrzeug vom Kunden in ziemlich desolatem und bereits teilzerlegten Zustand. Auch waren über die Jahre viele Teile inzwischen abhanden gekommen.</p>"
+			"html": "<p>Leider bekamen wir das Fahrzeug vom Kunden in ziemlich desolatem und bereits teilzerlegten Zustand. Auch waren über die Jahre viele Teile inzwischen abhanden gekommen.</p>",
+			"htmlEn": "<p>Unfortunately, it arrived in dilapidated, partly dismantled condition, with many parts lost over the years.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 7 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach einigen Vorbereitungsarbeiten konnten wir trotz schlechter Ausgangsbasis mit den umfangreichen Karosseriearbeiten beginnen. Dazu wurde die Karosserie zunächst vom Rahmen getrennt, mit speziellen Verstärkungen versehen und separat voneinander völlig neu aufgebaut. Hilfreich ist uns hier natürlich immer unser hoher Erfahrungsschatz, gepaart mit einem guten Teilefundus an Originalteilen.</p>"
+			"html": "<p>Nach einigen Vorbereitungsarbeiten konnten wir trotz schlechter Ausgangsbasis mit den umfangreichen Karosseriearbeiten beginnen. Dazu wurde die Karosserie zunächst vom Rahmen getrennt, mit speziellen Verstärkungen versehen und separat voneinander völlig neu aufgebaut. Hilfreich ist uns hier natürlich immer unser hoher Erfahrungsschatz, gepaart mit einem guten Teilefundus an Originalteilen.</p>",
+			"htmlEn": "<p>Despite the poor starting point, preparation allowed extensive bodywork to begin. We separated body and frame, fitted special bracing and rebuilt each independently. Our experience and stock of original parts proved invaluable.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -89,32 +102,38 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 12 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNeben vielen anderen instandzusetzenden Karosseriestellen bekam der Wagen u.a. auch kpl. neue tragende Schweller und teilweise auch eine neue Bodengruppe angefertigt.</p>"
+			"html": "<p><br />\nNeben vielen anderen instandzusetzenden Karosseriestellen bekam der Wagen u.a. auch kpl. neue tragende Schweller und teilweise auch eine neue Bodengruppe angefertigt.</p>",
+			"htmlEn": "<p><br>\nAlongside many other repairs, we made entirely new structural sills and parts of the floor.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 15 in the vehicle record"
 				}
 			]
 		},
@@ -123,49 +142,58 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 17 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch der Rahmen mit Achsen, Antrieben, Federn, Bremsen, Lenkung usw. wurde komplett überarbeitet und die sonstige Technik instandgesetzt.</p>"
+			"html": "<p><br />\nAuch der Rahmen mit Achsen, Antrieben, Federn, Bremsen, Lenkung usw. wurde komplett überarbeitet und die sonstige Technik instandgesetzt.</p>",
+			"htmlEn": "<p><br>\nThe frame, axles, drives, springs, brakes and steering were completely refurbished, and the remaining mechanical systems repaired.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 20 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dazu mussten wir u.a. selbst die teils völlig zerrosteten Rahmentraversen neu formen und fachgerecht verschweißen.<br /></p>"
+			"html": "<p>Dazu mussten wir u.a. selbst die teils völlig zerrosteten Rahmentraversen neu formen und fachgerecht verschweißen.<br /></p>",
+			"htmlEn": "<p>We even had to reshape heavily rusted frame crossmembers and weld them professionally into place.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 22 in the vehicle record"
 				}
 			]
 		},
@@ -174,36 +202,43 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 25 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Leider fehlte dem Auto auch das originale Faltschiebedach und musste mitsamt der Technik (Spriegel, Schloßträger, Führungsschienen u.dgl.) komplett neu angefertigt werden.</p>"
+			"html": "<p>Leider fehlte dem Auto auch das originale Faltschiebedach und musste mitsamt der Technik (Spriegel, Schloßträger, Führungsschienen u.dgl.) komplett neu angefertigt werden.</p>",
+			"htmlEn": "<p>The original folding sliding roof was missing, so we had to recreate the entire assembly, including bows, lock carrier and guide rails.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 26 in the vehicle record"
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 28 in the vehicle record"
 				}
 			]
 		},
@@ -212,41 +247,48 @@
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 29 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 29 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 29 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nWährend der umfangreichen Karosseriearbeiten sollte der Wagen auch die org. geschwungenen Zierleisten an den Seitenflanken wieder erhalten, die am Wagen original geformt und angepasst wurden. <br /></p>"
+			"html": "<p><br />\nWährend der umfangreichen Karosseriearbeiten sollte der Wagen auch die org. geschwungenen Zierleisten an den Seitenflanken wieder erhalten, die am Wagen original geformt und angepasst wurden. <br /></p>",
+			"htmlEn": "<p><br>\nDuring the bodywork, we also recreated and fitted the original curved trim strips along the flanks. <br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 30 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 30 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 30 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nEine durchrestaurierte, neu aufgebaute Karosserie bereit für die anstehenden Lackierarbeiten.</p>"
+			"html": "<p><br />\n<br />\n<br />\n<br />\nEine durchrestaurierte, neu aufgebaute Karosserie bereit für die anstehenden Lackierarbeiten.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA completely rebuilt body, ready for paintwork.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 31 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 31 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 31 in the vehicle record"
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 32 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 32 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 32 in the vehicle record"
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 33 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 33 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 33 in the vehicle record"
 				}
 			]
 		},
@@ -255,28 +297,33 @@
 			"images": [
 				{
 					"src": "./image-034.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 34 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 34 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 34 in the vehicle record"
 				},
 				{
 					"src": "./image-035.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 35 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 35 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 35 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAuch der Rahmen und dessen technische Anbauteile bekamen nach dem Neuaufbau eine Speziallackierung.</p>"
+			"html": "<p><br />\n<br />\nAuch der Rahmen und dessen technische Anbauteile bekamen nach dem Neuaufbau eine Speziallackierung.</p>",
+			"htmlEn": "<p><br>\n<br>\nThe rebuilt frame and its mechanical attachments also received a special coating.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 36 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 36 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 36 in the vehicle record"
 				},
 				{
 					"src": "./image-037.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 37 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 37 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 37 in the vehicle record"
 				}
 			]
 		},
@@ -285,36 +332,43 @@
 			"images": [
 				{
 					"src": "./image-038.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 38 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 38 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 38 in the vehicle record"
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 39 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 39 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 39 in the vehicle record"
 				},
 				{
 					"src": "./image-040.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 40 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 40 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 40 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Lackierungsvorbereitung und fachgerechte Unterbodenbehandlung der Karosserie, der Radhäuser u.dgl.<br /></p>"
+			"html": "<p>Lackierungsvorbereitung und fachgerechte Unterbodenbehandlung der Karosserie, der Radhäuser u.dgl.<br /></p>",
+			"htmlEn": "<p>Paint preparation and professional treatment of the underside and wheel housings.<br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-041.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 41 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 41 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 41 in the vehicle record"
 				},
 				{
 					"src": "./image-042.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 42 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 42 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 42 in the vehicle record"
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 43 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 43 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 43 in the vehicle record"
 				}
 			]
 		},
@@ -323,51 +377,64 @@
 			"images": [
 				{
 					"src": "./image-044.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 44 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 44 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 44 in the vehicle record"
 				},
 				{
 					"src": "./image-045.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 45 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 45 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 45 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHochwertige 2-Farb-Lackierung in den Originalfarben entsprechend dem Kundenwunsch.</p>"
+			"html": "<p><br />\nHochwertige 2-Farb-Lackierung in den Originalfarben entsprechend dem Kundenwunsch.</p>",
+			"htmlEn": "<p><br>\nHigh-quality two-tone paint in the original colours, as requested by the client.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-046.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 46 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 46 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 46 in the vehicle record"
 				},
 				{
 					"src": "./image-047.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 47 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 47 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 47 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDie von uns fertig restaurierten Elemente des Faltschiebedachs und bereits fertig verchromte Anbauteile.</p>"
+			"html": "<p><br />\nDie von uns fertig restaurierten Elemente des Faltschiebedachs und bereits fertig verchromte Anbauteile.</p>",
+			"htmlEn": "<p><br>\nThe restored folding-roof components and freshly chrome-plated fittings.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-048.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 48 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 48 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 48 in the vehicle record"
 				},
 				{
 					"src": "./image-049.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 49 der Fahrzeugdokumentation"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 49 der Fahrzeugdokumentation",
+					"altEn": "Wartburg 312 Camping, year 1966 – photograph 49 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach der sehr stimmigen und hochwertigen Gesamtlackierung wurde anschließend auch der Innenraum restauriert, Elektrik, Verglasung und die übrige Technik instandgesetzt...</p>"
+			"html": "<p>Nach der sehr stimmigen und hochwertigen Gesamtlackierung wurde anschließend auch der Innenraum restauriert, Elektrik, Verglasung und die übrige Technik instandgesetzt...</p>",
+			"htmlEn": "<p>Following the carefully coordinated full respray, we restored the interior, electrics, glazing and remaining mechanical systems…</p>"
 		}
-	]
+	],
+	"titleEn": "Wartburg 312 Camping, year 1966",
+	"descriptionEn": "A discovery from the early GDR era: a now-rare Wartburg 312 Camping. Built in 1966 in nearby Eisenach, it received a second life here at Die Oldtimermanufaktur.",
+	"cardImageAltEn": "Wartburg 312 Camping, year 1966",
+	"leadImageAltEn": "Wartburg 312 Camping, year 1966 – vehicle record"
 }

@@ -1,10 +1,12 @@
 ---
+import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
 import { join } from 'node:path';
 import sharp from 'sharp';
 import Layout from '../layouts/Layout.astro';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
 import { pageModified } from '../config/modificationDates.js';
 import SiteChrome from './SiteChrome.astro';
+import BackgroundTexture from './BackgroundTexture.astro';
 import VehicleCard from './VehicleCard.astro';
 import {
 	categoryByKey,
@@ -32,6 +34,7 @@ const lastIndex = firstIndex + visibleVehicles.length;
 const searchId = `vehicle-search-${category}`;
 const gridId = `vehicle-grid-${category}`;
 const pageTitle = safePage > 1 ? `${categoryData.heading} – Seite ${safePage}` : categoryData.heading;
+const language = vehicleLanguage(Astro.url.pathname, import.meta.env.BASE_URL);
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
@@ -52,7 +55,7 @@ const openGraphImage = openGraphVehicle ? {
 	height: openGraphMetadata.height,
 	format: 'webp' as const,
 } : defaultOpenGraphImage;
-const openGraphImageAlt = openGraphVehicle?.data.cardImageAlt ?? 'Ein historischer Roadster während einer Fahrt';
+const openGraphImageAlt = (openGraphVehicle ? localizeVehicle(openGraphVehicle.data, language).cardImageAlt : undefined) ?? 'Ein historischer Roadster während einer Fahrt';
 const collectionId = `${absolute(pagePath(safePage))}#itemlist`;
 const itemList = {
 	'@type': 'ItemList',
@@ -63,13 +66,15 @@ const itemList = {
 	itemListElement: visibleVehicles.map((vehicle, index) => ({
 		'@type': 'ListItem',
 		position: firstIndex + index + 1,
-		name: vehicle.data.title,
+		name: localizeVehicle(vehicle.data, language).title,
+		__authored: ['name'],
 		url: absolute(vehicleRoute(vehicle)),
 	})),
 };
 ---
 
 <Layout
+	authoredImageAlt={Boolean(openGraphVehicle)}
 	title={pageTitle}
 	description={categoryData.description}
 	openGraphImage={openGraphImage}
@@ -85,7 +90,8 @@ const itemList = {
 	]}
 >
 	<SiteChrome theme="light">
-		<main class="vehicle-archive" id="main-content" tabindex="-1">
+		<main class="vehicle-archive textured-background" id="main-content" tabindex="-1">
+			<BackgroundTexture />
 			<header class="archive-intro">
 				<h1>{categoryData.heading}</h1>
 			</header>

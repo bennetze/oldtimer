@@ -1,0 +1,36 @@
+---
+import texture from '../assets/oldtimer/leather-texture.webp';
+---
+
+<div
+	class="background-texture"
+	aria-hidden="true"
+	style={`--background-texture-image: url("${texture.src}")`}
+></div>
+
+<style>
+	.background-texture {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		pointer-events: none;
+		user-select: none;
+		background-image: var(--background-texture-image);
+		background-repeat: repeat;
+		background-position: center top;
+		/* A stable physical grain size, independent of viewport and page length. */
+		background-size: 875px 875px;
+		/* Luminosity retains the gradient hue and keeps grain visible on white. */
+		mix-blend-mode: luminosity;
+		opacity: 0.25;
+	}
+
+</style>
+
+<style is:global>
+	/* Contain blending below content without changing its positioning or focus. */
+	.textured-background {
+		position: relative;
+		isolation: isolate;
+	}
+</style>

@@ -17,81 +17,99 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nHier ein wunderschönes Cabriolet des berühmten BMW 502, der bei uns umfassend überarbeitet wurde.</p>"
+			"html": "<p><br />\n<br />\nHier ein wunderschönes Cabriolet des berühmten BMW 502, der bei uns umfassend überarbeitet wurde.</p>",
+			"htmlEn": "<p><br>\n<br>\nA beautiful cabriolet version of the famous BMW 502, comprehensively refurbished by us.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Im Zuge der technischen Restaurierungsarbeiten, Lackierung, Elektrik, etc., wurde der Wagen gemäß Kundenwunsch von uns auch auf eine &quot;Servo&quot;Lenkung&quot; umgebaut, diese auch zertifiziert und gutachterlich abgenommen.</p>"
+			"html": "<p>Im Zuge der technischen Restaurierungsarbeiten, Lackierung, Elektrik, etc., wurde der Wagen gemäß Kundenwunsch von uns auch auf eine &quot;Servo&quot;Lenkung&quot; umgebaut, diese auch zertifiziert und gutachterlich abgenommen.</p>",
+			"htmlEn": "<p>During the mechanical restoration, paint and electrical work, we also converted the car to power steering at the client’s request, with certification and expert approval.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der originale V8 Zylinder Aluminiummotor mit 3,2 Litern Hubraum und 160 PS Leistung sorgt auch hier für die sprichwörtliche<br />\n&quot;Freude am Fahren&quot;.</p>"
+			"html": "<p>Der originale V8 Zylinder Aluminiummotor mit 3,2 Litern Hubraum und 160 PS Leistung sorgt auch hier für die sprichwörtliche<br />\n&quot;Freude am Fahren&quot;.</p>",
+			"htmlEn": "<p>Its original aluminium V8, 3.2 litres and 160 PS, delivers the proverbial<br>\n“sheer driving pleasure”.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Diese traumhaften Luxuscabrios entstanden in nur wenigen Stückzahlen bei der renommierten Firma &quot;Baur&quot; in Stuttgart.</p>"
+			"html": "<p>Diese traumhaften Luxuscabrios entstanden in nur wenigen Stückzahlen bei der renommierten Firma &quot;Baur&quot; in Stuttgart.</p>",
+			"htmlEn": "<p>Only small numbers of these beautiful luxury cabriolets were built by the renowned Baur firm in Stuttgart.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – photograph 10 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "BMW 502 \"Baur\"-Cabriolet, year 1959",
+	"descriptionEn": "A beautiful cabriolet version of the famous BMW 502, comprehensively refurbished by us.",
+	"cardImageAltEn": "BMW 502 \"Baur\"-Cabriolet, year 1959",
+	"leadImageAltEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – vehicle record"
 }

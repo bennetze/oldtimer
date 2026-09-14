@@ -13,18 +13,21 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Mercedes – Benz 190 SL Baujahr 1959-1961. Mittlerweile wurden bereits mehrere dieser wunderschönen Cabriolets original– und detailgetreu bei uns restauriert.</p>"
+			"html": "<p>Mercedes – Benz 190 SL Baujahr 1959-1961. Mittlerweile wurden bereits mehrere dieser wunderschönen Cabriolets original– und detailgetreu bei uns restauriert.</p>",
+			"htmlEn": "<p>Mercedes-Benz 190 SL, model years 1959–1961. We have now faithfully restored several of these beautiful cabriolets in detail.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Ein Fahrzeug kam vom deutschen Erstbesitzer.<br /><br /> Die beiden anderen wurden aus dem sonnigen Kalifornien eingeführt und fanden nach grundhafter Restauration hier im Ursprungsland neue Liebhaber.</p>"
+			"html": "<p>Ein Fahrzeug kam vom deutschen Erstbesitzer.<br /><br /> Die beiden anderen wurden aus dem sonnigen Kalifornien eingeführt und fanden nach grundhafter Restauration hier im Ursprungsland neue Liebhaber.</p>",
+			"htmlEn": "<p>One came from its first owner in Germany.<br><br> The other two were imported from sunny California and found new enthusiasts in their country of origin after thorough restoration.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 1 in the vehicle record"
 				}
 			]
 		},
@@ -33,7 +36,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 2 in the vehicle record"
 				}
 			]
 		},
@@ -42,7 +46,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -51,7 +56,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -60,7 +66,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -69,7 +76,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -78,7 +86,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -87,7 +96,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -96,7 +106,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -105,7 +116,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -114,7 +126,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -123,7 +136,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -132,9 +146,14 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "Mercedes-Benz 190 SL, Cabriolet – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – photograph 13 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "Mercedes-Benz 190 SL, Cabriolet",
+	"descriptionEn": "Mercedes-Benz 190 SL, model years 1959–1961. We have now faithfully restored several of these beautiful cabriolets in detail.",
+	"cardImageAltEn": "Mercedes-Benz 190 SL, Cabriolet",
+	"leadImageAltEn": "Mercedes-Benz 190 SL, Cabriolet – vehicle record"
 }

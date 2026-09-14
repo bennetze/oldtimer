@@ -14,44 +14,51 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Mercedes – Benz, Typ 200 lang (W21), Cabriolet B, Baujahr 1936<br />\n<br />\nElegantes und großzügiges Cabriolet in B-Ausführung (Vier – Fenster – Cabriolet) mit sehr seltenem langen Radstand.</p>"
+			"html": "<p>Mercedes – Benz, Typ 200 lang (W21), Cabriolet B, Baujahr 1936<br />\n<br />\nElegantes und großzügiges Cabriolet in B-Ausführung (Vier – Fenster – Cabriolet) mit sehr seltenem langen Radstand.</p>",
+			"htmlEn": "<p>Mercedes-Benz 200 long-wheelbase, W21, Cabriolet B, 1936.<br>\n<br>\nAn elegant, spacious four-window Cabriolet B with the very rare long wheelbase.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Von dieser Sonderausführung, mit um ca. 35 cm längerem Radstand gegenüber der Normalausführung, wurden im Werk Mannheim nur sehr wenige Stückzahlen gefertigt. Dadurch entstand ein äußerst angenehmes und komfortables Reise - Cabriolet.</p>"
+			"html": "<p>Von dieser Sonderausführung, mit um ca. 35 cm längerem Radstand gegenüber der Normalausführung, wurden im Werk Mannheim nur sehr wenige Stückzahlen gefertigt. Dadurch entstand ein äußerst angenehmes und komfortables Reise - Cabriolet.</p>",
+			"htmlEn": "<p>Only a few of this special version, with a wheelbase around 35 cm longer than standard, were built in Mannheim. The result was an exceptionally comfortable touring cabriolet.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Typ 200 – so auch dieses Fahrzeug – wurde ab Juni 1936 auf Kundenwunsch wahlweise mit einem kräftigeren 2,3 Liter Motor ab Werk ausgeliefert.<br />\n<br />\nAls Höhepunkt wurde das Fahrzeug mit dem sogenannten MAYBACH - Schnellgang-Getriebe versehen.</p>"
+			"html": "<p>Der Typ 200 – so auch dieses Fahrzeug – wurde ab Juni 1936 auf Kundenwunsch wahlweise mit einem kräftigeren 2,3 Liter Motor ab Werk ausgeliefert.<br />\n<br />\nAls Höhepunkt wurde das Fahrzeug mit dem sogenannten MAYBACH - Schnellgang-Getriebe versehen.</p>",
+			"htmlEn": "<p>From June 1936, the 200, including this car, could be ordered from the factory with the stronger 2.3-litre engine.<br>\n<br>\nA further highlight was its Maybach overdrive gearbox.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen wurde bei uns einer perfekten und allumfassenden Komplettrestauration unterzogen.</p>"
+			"html": "<p>Der Wagen wurde bei uns einer perfekten und allumfassenden Komplettrestauration unterzogen.</p>",
+			"htmlEn": "<p>We carried out a comprehensive restoration to an exceptional standard.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -60,46 +67,53 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier einige Ansichten während der umfangreichen und handwerklich sehr anspruchsvollen Karosseriearbeiten.<br />\n<br />\nDabei wurde unter anderem auch der gesamte statische Holzaufbau aufwendig erneuert.</p>"
+			"html": "<p>Hier einige Ansichten während der umfangreichen und handwerklich sehr anspruchsvollen Karosseriearbeiten.<br />\n<br />\nDabei wurde unter anderem auch der gesamte statische Holzaufbau aufwendig erneuert.</p>",
+			"htmlEn": "<p>Views of the extensive, highly demanding bodywork.<br>\n<br>\nThis included painstaking renewal of the entire structural timber framework.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nLaut historischem Archiv existieren von diesem Modell mit langem Radstand und original ausgelieferten 2,3 Liter Motor und MAYBACH - Schnellgang- Getriebe, nur weniger als 5 Fahrzeuge überhaupt.</p>"
+			"html": "<p><br />\nLaut historischem Archiv existieren von diesem Modell mit langem Radstand und original ausgelieferten 2,3 Liter Motor und MAYBACH - Schnellgang- Getriebe, nur weniger als 5 Fahrzeuge überhaupt.</p>",
+			"htmlEn": "<p><br>\nHistorical archives record fewer than five surviving examples with this long wheelbase, factory-supplied 2.3-litre engine and Maybach overdrive gearbox.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 6 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nWährend der bei uns excellent durchgeführten Vollrestauration wurde unter anderem auch der komplette Innenraum nach historischen Archivunterlagen originalgetreu neu gestaltet. Hierbei kamen feinstes Leder und edle Zierhölzer zum Einsatz.</p>"
+			"html": "<p><br />\nWährend der bei uns excellent durchgeführten Vollrestauration wurde unter anderem auch der komplette Innenraum nach historischen Archivunterlagen originalgetreu neu gestaltet. Hierbei kamen feinstes Leder und edle Zierhölzer zum Einsatz.</p>",
+			"htmlEn": "<p><br>\nDuring the restoration, we faithfully recreated the entire interior from historic archive documents, using fine leather and elegant wood trim.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -108,7 +122,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -117,7 +132,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 9 in the vehicle record"
 				}
 			]
 		},
@@ -126,7 +142,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -135,22 +152,29 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach der nun abgeschlossenen und sehr originalgetreu und perfekt durchgeführten Komplettrestauration - ist ein wunderschönes und sehr seltenes Mercedes - Vorkriegs - Cabriolet wieder neu entstanden.</p>"
+			"html": "<p>Nach der nun abgeschlossenen und sehr originalgetreu und perfekt durchgeführten Komplettrestauration - ist ein wunderschönes und sehr seltenes Mercedes - Vorkriegs - Cabriolet wieder neu entstanden.</p>",
+			"htmlEn": "<p>With the faithful full restoration complete, a beautiful and exceptionally rare pre-war Mercedes cabriolet has been reborn.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – photograph 12 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936",
+	"descriptionEn": "Mercedes-Benz 200 long-wheelbase, W21, Cabriolet B, 1936. An elegant, spacious four-window Cabriolet B with the very rare long wheelbase.",
+	"cardImageAltEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936",
+	"leadImageAltEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – vehicle record"
 }

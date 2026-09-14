@@ -14,74 +14,86 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Dieses sehr schöne BMW-Sportcabriolet wurde bei Uns einer umfangreichen Komplettrestauration unterzogen.</p>"
+			"html": "<p>Dieses sehr schöne BMW-Sportcabriolet wurde bei Uns einer umfangreichen Komplettrestauration unterzogen.</p>",
+			"htmlEn": "<p>This beautiful BMW Sport Cabriolet underwent an extensive full restoration at our workshop.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>BMW 327/28 Sportcabriolet, Baujahr 1939; gebaut bei den BMW-Werken in Eisenach/Thüringen. Bei diesem Wagen handelt es sich laut originalem handgeschriebenem Auslieferungsprotokoll um das Originalfahrzeug Heinrich Himmlers (Reichsführer der SS).<br />\n<br />\nEs wurde damals als einer der ganz wenigen 327er in einheitlich schwarzer Farbgebung mit entsprechenden Bannern... ausgeliefert. Das damit auch historisch äußerst wertvolle Fahrzeug wurde bei uns von Grund auf restauriert.</p>"
+			"html": "<p>BMW 327/28 Sportcabriolet, Baujahr 1939; gebaut bei den BMW-Werken in Eisenach/Thüringen. Bei diesem Wagen handelt es sich laut originalem handgeschriebenem Auslieferungsprotokoll um das Originalfahrzeug Heinrich Himmlers (Reichsführer der SS).<br />\n<br />\nEs wurde damals als einer der ganz wenigen 327er in einheitlich schwarzer Farbgebung mit entsprechenden Bannern... ausgeliefert. Das damit auch historisch äußerst wertvolle Fahrzeug wurde bei uns von Grund auf restauriert.</p>",
+			"htmlEn": "<p>A 1939 BMW 327/28 Sport Cabriolet, built in Eisenach, Thuringia. According to the original handwritten delivery record, it was the car of Heinrich Himmler, Reichsführer of the SS.<br>\n<br>\nIt was delivered as one of the few 327s in an entirely black finish with corresponding banners. We restored this historically significant car from the ground up.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auf dem nun feuerverzinkten Rahmen wurde der gesamte statische Holzaufbau in kammergetrockneter, verleimter Esche/Buche nach alter handwerklicher Tradition in unserer Stellmacherei neu nachgefertigt, ebenso sämtliche Verdeckspriegel.<br />\n<br />\nGroße Teile der Blechaußenhaut mussten – da vorher in sehr schlechtem und damit nur als Muster brauchbaren Zustand – ebenfalls originalgetreu nachgefertigt werden.</p>"
+			"html": "<p>Auf dem nun feuerverzinkten Rahmen wurde der gesamte statische Holzaufbau in kammergetrockneter, verleimter Esche/Buche nach alter handwerklicher Tradition in unserer Stellmacherei neu nachgefertigt, ebenso sämtliche Verdeckspriegel.<br />\n<br />\nGroße Teile der Blechaußenhaut mussten – da vorher in sehr schlechtem und damit nur als Muster brauchbaren Zustand – ebenfalls originalgetreu nachgefertigt werden.</p>",
+			"htmlEn": "<p>On the hot-dip-galvanised chassis, our coachbuilding shop recreated the complete structural timber framework and all hood bows in kiln-dried, laminated ash and beech using traditional methods.<br>\n<br>\nLarge areas of the outer metal skin were in such poor condition that they could serve only as patterns and had to be faithfully reproduced.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Motor samt Antriebseinheit wurde sehr aufwendig revidiert. Hierbei kam eine originalgetreue Nachfertigung des technisch genialen Zylinderkopfes zum Einsatz.<br />\n<br />\nEbenso sind sämtliche mechanischen Komponenten grundlegend und detailgetreu überholt worden.</p>"
+			"html": "<p>Der Motor samt Antriebseinheit wurde sehr aufwendig revidiert. Hierbei kam eine originalgetreue Nachfertigung des technisch genialen Zylinderkopfes zum Einsatz.<br />\n<br />\nEbenso sind sämtliche mechanischen Komponenten grundlegend und detailgetreu überholt worden.</p>",
+			"htmlEn": "<p>The engine and drivetrain were painstakingly overhauled, using a faithful reproduction of the distinctive cylinder head.<br>\n<br>\nAll mechanical components were likewise thoroughly restored in detail.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 3 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die damals fehlenden, sogenannten Liegesitze, samt Verstellmechanik und Holzrahmen wurden von uns komplett nachgefertigt und danach von unserem erfahrenen Polsterermeister in traditioneller Weise mit Federkernen neu aufgebaut und in Echtleder bezogen.</p>"
+			"html": "<p>Die damals fehlenden, sogenannten Liegesitze, samt Verstellmechanik und Holzrahmen wurden von uns komplett nachgefertigt und danach von unserem erfahrenen Polsterermeister in traditioneller Weise mit Federkernen neu aufgebaut und in Echtleder bezogen.</p>",
+			"htmlEn": "<p>We recreated the missing reclining seats, adjustment mechanisms and timber frames. Our master upholsterer then rebuilt them traditionally with spring units and genuine leather covers.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDie fehlenden Armaturen, nebst Telefunken-Radio sind ebenfalls originalgetreu neu entstanden.</p>"
+			"html": "<p><br />\nDie fehlenden Armaturen, nebst Telefunken-Radio sind ebenfalls originalgetreu neu entstanden.</p>",
+			"htmlEn": "<p><br>\nThe missing instruments and Telefunken radio were also faithfully recreated.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen bekam eine aufwendige Mehrschichtlackierung in zeitgenössischer Farbgebung creme/schwarz mit Klarlackversiegelung für entsprechende Farbtiefe.</p>"
+			"html": "<p>Der Wagen bekam eine aufwendige Mehrschichtlackierung in zeitgenössischer Farbgebung creme/schwarz mit Klarlackversiegelung für entsprechende Farbtiefe.</p>",
+			"htmlEn": "<p>The car received an elaborate multilayer finish in period cream and black, with clear coating for depth of colour.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -90,7 +102,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -99,7 +112,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -108,7 +122,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -117,13 +132,19 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eine äußerst gelungene Restauration eines sehr wertvollen BMW 327/28 Sportcabriolets.<br />\n<br />\nEin professionell erstelltes Wertgutachten weist das Fahrzeug als besonders erhaltenswertes technisch - historisches Kulturgut aus, gepaart mit einer exzellenten und authentisch durchgeführten Restauration.</p>"
+			"html": "<p>Eine äußerst gelungene Restauration eines sehr wertvollen BMW 327/28 Sportcabriolets.<br />\n<br />\nEin professionell erstelltes Wertgutachten weist das Fahrzeug als besonders erhaltenswertes technisch - historisches Kulturgut aus, gepaart mit einer exzellenten und authentisch durchgeführten Restauration.</p>",
+			"htmlEn": "<p>A highly successful restoration of a valuable BMW 327/28 Sport Cabriolet.<br>\n<br>\nA professional valuation identifies the vehicle as technical and historical cultural heritage worth preserving, with an excellent, authentically executed restoration.</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 327/28 Sport Cabriolet, year 1939",
+	"descriptionEn": "This beautiful BMW Sport Cabriolet underwent an extensive full restoration at our workshop.",
+	"cardImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939",
+	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939 – vehicle record"
 }

@@ -17,126 +17,159 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein traumhaft perfekter BMW 319/1 Sportroadster von 1936 aus der ruhmreichen Eisenacher BMW Vorkriegs-Sportwagenära in der Original-Farbgebung: Lackierung grün/graugrün, Echtleder grün.</p>"
+			"html": "<p>Hier ein traumhaft perfekter BMW 319/1 Sportroadster von 1936 aus der ruhmreichen Eisenacher BMW Vorkriegs-Sportwagenära in der Original-Farbgebung: Lackierung grün/graugrün, Echtleder grün.</p>",
+			"htmlEn": "<p>An exceptionally restored 1936 BMW 319/1 Sport Roadster from Eisenach’s celebrated pre-war BMW sports-car era, in its original colours: green and grey-green paintwork with green genuine leather.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auf perfekter Originalbasis absolut originalgetreu und detailliert restauriert. Mit allen originalen Bauteilen, originalen Nummern (Fahrgestellnummer/Karosserienummern/Bauteilenummern, Typenschildern u.dgl.) - sehr sehr selten...</p>"
+			"html": "<p>Auf perfekter Originalbasis absolut originalgetreu und detailliert restauriert. Mit allen originalen Bauteilen, originalen Nummern (Fahrgestellnummer/Karosserienummern/Bauteilenummern, Typenschildern u.dgl.) - sehr sehr selten...</p>",
+			"htmlEn": "<p>Meticulously restored to original specification from an excellent original basis. With all original components and numbers — chassis, body and component numbers, identification plates and more — an exceptionally rare find.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. BMW 319 Motor mit 1,9 Litern Hubraum, org. SOLEX-Dreifach-Vergaseranlage, org. Zentralverschlussräder, org. 4-Gang Hurth-Getriebe, org. Petri-Chromspeichen-Lenkrad.</p>"
+			"html": "<p>Org. BMW 319 Motor mit 1,9 Litern Hubraum, org. SOLEX-Dreifach-Vergaseranlage, org. Zentralverschlussräder, org. 4-Gang Hurth-Getriebe, org. Petri-Chromspeichen-Lenkrad.</p>",
+			"htmlEn": "<p>Original 1.9-litre BMW 319 engine, original triple SOLEX carburettors, centre-lock wheels, four-speed Hurth gearbox and Petri steering wheel with chrome spokes.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – photograph 19 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dieser BMW Typ 319/1 Sport-Roadster gilt - noch vor dem BMW 328 - als der erste reinrassige Sportwagen mit der berühmten BMW-Doppelniere.</p>"
+			"html": "<p>Dieser BMW Typ 319/1 Sport-Roadster gilt - noch vor dem BMW 328 - als der erste reinrassige Sportwagen mit der berühmten BMW-Doppelniere.</p>",
+			"htmlEn": "<p>Predating even the BMW 328, the 319/1 Sport Roadster is considered the first thoroughbred sports car with the famous BMW twin-kidney grille.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Im damaligen BMW Werk Eisenach entstanden von diesem eleganten und absolut formschönen Roadster nur 178 Stück!<br />\nDamit gilt dieser Typ als eines der extrem seltensten Fahrzeuge überhaupt.</p>"
+			"html": "<p>Im damaligen BMW Werk Eisenach entstanden von diesem eleganten und absolut formschönen Roadster nur 178 Stück!<br />\nDamit gilt dieser Typ als eines der extrem seltensten Fahrzeuge überhaupt.</p>",
+			"htmlEn": "<p>Only 178 of these elegant, beautifully shaped roadsters were built at BMW’s Eisenach plant.<br>\nThis makes the model one of the rarest cars of all.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>In diesem einmaligen, bestrestaurierten und absolut nummerngleichen Zustand, dürften heute weniger als 10 Fahrzeuge überhaupt existieren!</p>"
+			"html": "<p>In diesem einmaligen, bestrestaurierten und absolut nummerngleichen Zustand, dürften heute weniger als 10 Fahrzeuge überhaupt existieren!</p>",
+			"htmlEn": "<p>Fewer than ten examples are thought to survive in this exceptional, fully restored and entirely matching-numbers condition.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Perfekt und absolut detail- und originalgetreu restauriert.</p>"
+			"html": "<p>Perfekt und absolut detail- und originalgetreu restauriert.</p>",
+			"htmlEn": "<p>Restored to an exceptional standard with complete attention to original detail.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Gewinner mehrerer Schönheitspreise &quot;Bestrestauriertes Fahrzeug&quot; und &quot;Best of Show&quot;.</p>"
+			"html": "<p>Gewinner mehrerer Schönheitspreise &quot;Bestrestauriertes Fahrzeug&quot; und &quot;Best of Show&quot;.</p>",
+			"htmlEn": "<p>Winner of several concours awards, including “Best Restored Vehicle” and “Best of Show”.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>BMW Echtheits-Zertifikat, DEKRA Vollgutachten und H-Gutachten.</p>"
+			"html": "<p>BMW Echtheits-Zertifikat, DEKRA Vollgutachten und H-Gutachten.</p>",
+			"htmlEn": "<p>BMW certificate of authenticity, DEKRA full inspection report and German historic-vehicle assessment.</p>"
 		},
 		{
 			"type": "contact",
-			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
+			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bitte unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>",
+			"htmlEn": "<p>Price on request.<br>\nFor further information, photographs and other vehicle details,<br>\nplease contact us on: Tel. +49 36966 83783<br>\nEmail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
 		}
-	]
+	],
+	"titleEn": "BMW 319/1 Sport-Roadster, year 1936",
+	"descriptionEn": "An exceptionally restored 1936 BMW 319/1 Sport Roadster from Eisenach’s celebrated pre-war BMW sports-car era, in its original colours: green and grey-green paintwork with…",
+	"cardImageAltEn": "BMW 319/1 Sport-Roadster, year 1936",
+	"leadImageAltEn": "BMW 319/1 Sport-Roadster, year 1936 – vehicle record"
 }

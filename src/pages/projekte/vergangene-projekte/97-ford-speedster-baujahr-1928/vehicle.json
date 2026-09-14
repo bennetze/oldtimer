@@ -17,57 +17,68 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nHier ein absolutes UNIKAT - ein</p>"
+			"html": "<p><br />\n<br />\n<br />\nHier ein absolutes UNIKAT - ein</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\nA unique one-off:</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>&quot;FORD A - SPEEDSTER&quot; von 1928.</p>"
+			"html": "<p>&quot;FORD A - SPEEDSTER&quot; von 1928.</p>",
+			"htmlEn": "<p>a 1928 Ford A Speedster.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Gemäß einer reinen Designzeichnung wurde dieser Sportwagen in mühevoller Handarbeit komplett neu angefertigt und die bestehende Technik mit dem originalen 3,2 Liter Motor entsprechend &quot;optimiert und fahrtechnisch perfektioniert&quot;.</p>"
+			"html": "<p>Gemäß einer reinen Designzeichnung wurde dieser Sportwagen in mühevoller Handarbeit komplett neu angefertigt und die bestehende Technik mit dem originalen 3,2 Liter Motor entsprechend &quot;optimiert und fahrtechnisch perfektioniert&quot;.</p>",
+			"htmlEn": "<p>Working from a design drawing, we handcrafted this entire sports car and optimised its existing mechanical systems and original 3.2-litre engine for driving performance.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -76,28 +87,33 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 10 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auf der Basis eines Ford A Fahrgestells von 1928 wurden unter Verwendung von speziellem Aluminium sämtliche Karosserieteile von Hand getrieben...</p>"
+			"html": "<p>Auf der Basis eines Ford A Fahrgestells von 1928 wurden unter Verwendung von speziellem Aluminium sämtliche Karosserieteile von Hand getrieben...</p>",
+			"htmlEn": "<p>Using a 1928 Ford A chassis, we hand-formed every body panel in special aluminium…</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -106,57 +122,68 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>...und anschließend alle Blechteile handgenietet. Durch die aus dem Flugzeugbau stammende Hand-Niettechnik von Reinaluminium existiert an der Karosserie faktisch keine Schweißnaht.</p>"
+			"html": "<p>...und anschließend alle Blechteile handgenietet. Durch die aus dem Flugzeugbau stammende Hand-Niettechnik von Reinaluminium existiert an der Karosserie faktisch keine Schweißnaht.</p>",
+			"htmlEn": "<p>…then hand-riveted the panels. This aircraft-derived technique for pure aluminium means the body has virtually no welded seams.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 16 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eine handwerkstechnisch gesehene Meisterleistung, auch weil hier das &quot;schwierige&quot; Material Aluminium, weder lackiert noch gespachtelt ist, sondern eine nahezu perfekte Oberfläche nur handgeschliffen und wiederum von Hand mühevoll hochglänzend poliert wurde.</p>"
+			"html": "<p>Eine handwerkstechnisch gesehene Meisterleistung, auch weil hier das &quot;schwierige&quot; Material Aluminium, weder lackiert noch gespachtelt ist, sondern eine nahezu perfekte Oberfläche nur handgeschliffen und wiederum von Hand mühevoll hochglänzend poliert wurde.</p>",
+			"htmlEn": "<p>A remarkable feat of craftsmanship: the demanding aluminium surface is neither painted nor filled, but hand-sanded to near perfection and painstakingly polished by hand to a high gloss.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 20 in the vehicle record"
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 21 in the vehicle record"
 				}
 			]
 		},
@@ -165,13 +192,19 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "FORD Speedster, Baujahr 1928 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "FORD Speedster, year 1928 – photograph 22 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDas Fahrzeug bildet nach der formvollendeten Fertigstellung ein einzigartiges Unikat und ist nach entsprechenden Sondergutachten voll für den Straßenverkehr zugelassen.</p>"
+			"html": "<p><br />\nDas Fahrzeug bildet nach der formvollendeten Fertigstellung ein einzigartiges Unikat und ist nach entsprechenden Sondergutachten voll für den Straßenverkehr zugelassen.</p>",
+			"htmlEn": "<p><br>\nThe finished car is a unique one-off and, following the necessary special assessments, is fully approved for road use.</p>"
 		}
-	]
+	],
+	"titleEn": "FORD Speedster, year 1928",
+	"descriptionEn": "Working from a design drawing, we handcrafted this entire sports car and optimised its existing mechanical systems and original 3.2-litre engine for driving performance.",
+	"cardImageAltEn": "FORD Speedster, year 1928",
+	"leadImageAltEn": "FORD Speedster, year 1928 – vehicle record"
 }

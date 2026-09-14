@@ -17,133 +17,158 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier wieder eine Rarität aus der ruhmreichen Eisenacher BMW-Vorkriegsära. Ein bei der namhaften Karosserieschmiede &quot;Autenrieth&quot; in Darmstadt eingekleidetes BMW 327/28 Sport-Coupe des Baujahres 1938, dass vollumfassend originalgetreu und sehr perfekt hier in unserer Manufaktur restauriert wurde.</p>"
+			"html": "<p>Hier wieder eine Rarität aus der ruhmreichen Eisenacher BMW-Vorkriegsära. Ein bei der namhaften Karosserieschmiede &quot;Autenrieth&quot; in Darmstadt eingekleidetes BMW 327/28 Sport-Coupe des Baujahres 1938, dass vollumfassend originalgetreu und sehr perfekt hier in unserer Manufaktur restauriert wurde.</p>",
+			"htmlEn": "<p>Another rarity from Eisenach’s celebrated pre-war BMW era: a 1938 BMW 327/28 Sport Coupé with coachwork by the renowned Autenrieth firm in Darmstadt, comprehensively restored to original specification at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Beginnend mit dem inzwischen teilweise doch sehr maroden Holzaufbau, wurde dieser in unserer Stellmacherei teilerneuert und fachgerecht instandgesetzt.</p>"
+			"html": "<p>Beginnend mit dem inzwischen teilweise doch sehr maroden Holzaufbau, wurde dieser in unserer Stellmacherei teilerneuert und fachgerecht instandgesetzt.</p>",
+			"htmlEn": "<p>We began with the partly deteriorated timber framework, renewing sections and repairing it professionally in our coachbuilding shop.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 8 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Da die gesamte Karosserie bei vormaligen Reparaturversuchen mit teilweise mehreren Zentimeter dicken Spachtelschichten und damit eher unfachmännisch und laienhaft bei Vorgänger - &quot;Experten&quot; quasi &quot;am Leben erhalten&quot; wurde,</p>"
+			"html": "<p>Da die gesamte Karosserie bei vormaligen Reparaturversuchen mit teilweise mehreren Zentimeter dicken Spachtelschichten und damit eher unfachmännisch und laienhaft bei Vorgänger - &quot;Experten&quot; quasi &quot;am Leben erhalten&quot; wurde,</p>",
+			"htmlEn": "<p>Earlier amateur repairs had effectively kept the body together with layers of filler, in places several centimetres thick,</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 10 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>musste diese in unserem Karosseriebau umfangreich restauriert und dazu auch viele Neuteile passgerecht angefertigt werden.</p>"
+			"html": "<p>musste diese in unserem Karosseriebau umfangreich restauriert und dazu auch viele Neuteile passgerecht angefertigt werden.</p>",
+			"htmlEn": "<p>so our body shop had to carry out extensive restoration and fabricate many accurately fitting replacement parts.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 11 in the vehicle record"
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neben umfangreichen technischen Instandsetzungsarbeiten wurden auch die begehrten originalen &quot;Pilz&quot;-Instrumente komplett revidiert und das sehr seltene originale &quot;Körting&quot;-Radio aufwendig instand gesetzt und zusammen mit einer originalen &quot;Bosch&quot;-Heizung in das Fahrzeug eingepasst.</p>"
+			"html": "<p>Neben umfangreichen technischen Instandsetzungsarbeiten wurden auch die begehrten originalen &quot;Pilz&quot;-Instrumente komplett revidiert und das sehr seltene originale &quot;Körting&quot;-Radio aufwendig instand gesetzt und zusammen mit einer originalen &quot;Bosch&quot;-Heizung in das Fahrzeug eingepasst.</p>",
+			"htmlEn": "<p>Alongside extensive mechanical repairs, we completely rebuilt the sought-after original mushroom-shaped instruments and painstakingly restored the very rare original Körting radio, fitting it together with an original Bosch heater.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 16 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Im Zuge der Restauration wurde der Wagen laut Kundenwunsch in zwei sich sehr harmonisch ergänzenden Grüntönen lackiert und die originalgetreuen Linierungen aufgebracht.</p>"
+			"html": "<p>Im Zuge der Restauration wurde der Wagen laut Kundenwunsch in zwei sich sehr harmonisch ergänzenden Grüntönen lackiert und die originalgetreuen Linierungen aufgebracht.</p>",
+			"htmlEn": "<p>At the client’s request, we painted the car in two harmonious shades of green and added authentic coachlines.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 17 in the vehicle record"
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 19 in the vehicle record"
 				}
 			]
 		},
@@ -152,40 +177,48 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 20 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Sicher ein traumhaft schönes Endergebnis dieses sehr raren &quot;Autenrieth&quot; - Sportcoupes - wurden von dem Fahrzeug in der 327/28 Coupe-Variante nur 87 Stück überhaupt gebaut. Heute dürften in dieser Ausführung weniger als 10 Stück weltweit erhalten sein (der überwiegende Teil davon sicher mithilfe der begnadeten Restaurationsprofis aus unserer OLDTIMERMANUFAKTUR).</p>"
+			"html": "<p>Sicher ein traumhaft schönes Endergebnis dieses sehr raren &quot;Autenrieth&quot; - Sportcoupes - wurden von dem Fahrzeug in der 327/28 Coupe-Variante nur 87 Stück überhaupt gebaut. Heute dürften in dieser Ausführung weniger als 10 Stück weltweit erhalten sein (der überwiegende Teil davon sicher mithilfe der begnadeten Restaurationsprofis aus unserer OLDTIMERMANUFAKTUR).</p>",
+			"htmlEn": "<p>A beautiful result for this very rare Autenrieth Sport Coupé. Only 87 cars were built in the 327/28 coupé specification, and fewer than ten are thought to survive worldwide today, most with help from our restoration specialists at Die Oldtimermanufaktur.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 21 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 21 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 21 in the vehicle record"
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 22 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 22 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 22 in the vehicle record"
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 23 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 23 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 23 in the vehicle record"
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 24 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 24 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 24 in the vehicle record"
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 25 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 25 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 25 in the vehicle record"
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 26 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 26 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 26 in the vehicle record"
 				}
 			]
 		},
@@ -194,13 +227,19 @@
 			"images": [
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 27 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 27 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 27 in the vehicle record"
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 28 der Fahrzeugdokumentation"
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Aufnahme 28 der Fahrzeugdokumentation",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – photograph 28 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "BMW 327/28 Sport Coupé, year 1938",
+	"descriptionEn": "Another rarity from Eisenach’s celebrated pre-war BMW era: a 1938 BMW 327/28 Sport Coupé with coachwork by the renowned Autenrieth firm in Darmstadt, comprehensively restored…",
+	"cardImageAltEn": "BMW 327/28 Sport Coupé, year 1938",
+	"leadImageAltEn": "BMW 327/28 Sport Coupé, year 1938 – vehicle record"
 }

@@ -17,50 +17,58 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier ein sehr seltenes BMW 503 Sportcoupe, dass in unserer Manufaktur umfangreich restauriert, technisch instand gesetzt und in den damaligen Auslieferungsfarben völlig neu lackiert wurde.</p>"
+			"html": "<p>Hier ein sehr seltenes BMW 503 Sportcoupe, dass in unserer Manufaktur umfangreich restauriert, technisch instand gesetzt und in den damaligen Auslieferungsfarben völlig neu lackiert wurde.</p>",
+			"htmlEn": "<p>A very rare BMW 503 Sport Coupé extensively restored and mechanically repaired at our workshop, then completely repainted in its original delivery colours.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Die massiven Lackschäden wurden durch eine aggressive Säure verursacht und betrafen im Grunde genommen die gesamte Karosserie.</p>"
+			"html": "<p>Die massiven Lackschäden wurden durch eine aggressive Säure verursacht und betrafen im Grunde genommen die gesamte Karosserie.</p>",
+			"htmlEn": "<p>Aggressive acid had caused severe paint damage across virtually the entire body.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 4 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach dem kompletten Entfernen der alten Lackschichten und dem Beheben von diversen Karosserieschäden an der Aluminium-Karosserie, wurde die gesamte Lackierung durch uns fachgerecht komplett erneuert.</p>"
+			"html": "<p>Nach dem kompletten Entfernen der alten Lackschichten und dem Beheben von diversen Karosserieschäden an der Aluminium-Karosserie, wurde die gesamte Lackierung durch uns fachgerecht komplett erneuert.</p>",
+			"htmlEn": "<p>After removing all the old paint and repairing various areas of damage to the aluminium body, we professionally renewed the complete paint finish.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 5 in the vehicle record"
 				}
 			]
 		},
@@ -69,32 +77,38 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 6 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Da vormals teils völlig falsche Anbauteile montiert waren, wurden viele Komponenten wie beispielsweise die Rückleuchten nach entsprechendem Muster sehr detailliert und originalgetreu nachgefertigt.</p>"
+			"html": "<p>Da vormals teils völlig falsche Anbauteile montiert waren, wurden viele Komponenten wie beispielsweise die Rückleuchten nach entsprechendem Muster sehr detailliert und originalgetreu nachgefertigt.</p>",
+			"htmlEn": "<p>As several incorrect fittings had previously been installed, we faithfully reproduced many components, including the rear lights, using suitable originals as patterns.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 8 in the vehicle record"
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -103,7 +117,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -112,62 +127,73 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 12 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch wurde in unserer Sattlerei die gesamte Inneneinrichtung in feinstem Leder sehr aufwendig neu angefertigt.</p>"
+			"html": "<p>Auch wurde in unserer Sattlerei die gesamte Inneneinrichtung in feinstem Leder sehr aufwendig neu angefertigt.</p>",
+			"htmlEn": "<p>Our upholstery shop also carefully recreated the entire interior in fine leather.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 14 in the vehicle record"
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 17 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch die technischen Komponenten wurden umfangreich durch uns revidiert. BMW V8 Motor aus Vollaluminium mit 3,2 Litern Hubraum und 150 PS Leistung.</p>"
+			"html": "<p>Auch die technischen Komponenten wurden umfangreich durch uns revidiert. BMW V8 Motor aus Vollaluminium mit 3,2 Litern Hubraum und 150 PS Leistung.</p>",
+			"htmlEn": "<p>We extensively overhauled the mechanical components too. BMW all-aluminium V8 engine, 3.2 litres, 150 PS.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 18 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Sehr perfekt und nun auch wieder in den beiden Originalauslieferungsfarben Federweiß mit tiefschwarz<br />- sicher einer der Besten -<br />damals wie heute ohnehin sehr raren BMW 503 Coupe.<br /><br /></p>"
+			"html": "<p>Sehr perfekt und nun auch wieder in den beiden Originalauslieferungsfarben Federweiß mit tiefschwarz<br />- sicher einer der Besten -<br />damals wie heute ohnehin sehr raren BMW 503 Coupe.<br /><br /></p>",
+			"htmlEn": "<p>Superbly finished and once again in its original delivery colours of feather white and deep black,<br>— surely one of the finest —<br>examples of the BMW 503 Coupé, rare both then and now.<br><br></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 19 in the vehicle record"
 				}
 			]
 		},
@@ -176,17 +202,24 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "BMW 503 Coupe, year 1959 – photograph 20 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eine traumhaft formschöne Aluminium-Karosserie, gebaut 1959 in reiner Handarbeit (nur 273 Stück) zu einem damals auch atemberaubenden Preis von rund 32.000,- DM. <br /></p>"
+			"html": "<p>Eine traumhaft formschöne Aluminium-Karosserie, gebaut 1959 in reiner Handarbeit (nur 273 Stück) zu einem damals auch atemberaubenden Preis von rund 32.000,- DM. <br /></p>",
+			"htmlEn": "<p>A beautifully shaped aluminium body, built entirely by hand in 1959. Only 273 were made, at a then breathtaking price of around DM 32,000. <br></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Und zur Freude des Kunden nun wieder perfekt restauriert...</p>"
+			"html": "<p>Und zur Freude des Kunden nun wieder perfekt restauriert...</p>",
+			"htmlEn": "<p>Now restored to perfection, much to the client’s delight…</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 503 Coupe, year 1959",
+	"descriptionEn": "A very rare BMW 503 Sport Coupé extensively restored and mechanically repaired at our workshop, then completely repainted in its original delivery colours.",
+	"cardImageAltEn": "BMW 503 Coupe, year 1959",
+	"leadImageAltEn": "BMW 503 Coupe, year 1959 – vehicle record"
 }

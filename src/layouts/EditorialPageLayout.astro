@@ -1,5 +1,6 @@
 ---
 import type { ImageMetadata } from 'astro';
+import BackgroundTexture from '../components/BackgroundTexture.astro';
 import SectionNavigation from '../components/SectionNavigation.astro';
 import SiteChrome from '../components/SiteChrome.astro';
 import Layout from './Layout.astro';
@@ -53,11 +54,12 @@ const openingId = sections[0]?.id;
 >
 	<SiteChrome {theme}>
 		<main
-			class:list={['editorial-page', `editorial-page--${theme}`]}
+			class:list={['editorial-page', `editorial-page--${theme}`, { 'textured-background': theme === 'light' }]}
 			id="main-content"
 			tabindex="-1"
 			style={`--editorial-background: ${background}`}
 		>
+			{theme === 'light' && <BackgroundTexture />}
 			<SectionNavigation items={sections} {theme} visible={sectionNavigationVisible} />
 
 			<div class="editorial-opening" id={openingId}>
@@ -265,7 +267,9 @@ const openingId = sections[0]?.id;
 	.editorial-intro {
 		display: grid;
 		place-items: center;
-		padding: clamp(9rem, 13vw, 13rem) clamp(1.25rem, 5vw, 5rem) clamp(6rem, 9vw, 9rem);
+		/* Preserve the original title clearance as the shared header changes height. */
+		padding: calc(clamp(9rem, 13vw, 13rem) + var(--site-header-height, 132px) - 76px)
+			clamp(1.25rem, 5vw, 5rem) clamp(6rem, 9vw, 9rem);
 	}
 
 	.editorial-intro h1,
@@ -482,7 +486,7 @@ const openingId = sections[0]?.id;
 		}
 
 		.editorial-intro {
-			padding: 10rem 1.25rem 5.5rem;
+			padding: calc(10rem + var(--site-header-height, 104px) - 64px) 1.25rem 5.5rem;
 		}
 
 		.editorial-intro h1 {

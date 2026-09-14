@@ -16,41 +16,48 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong><br />\nThe WINNER!</strong></p>"
+			"html": "<p><strong><br />\nThe WINNER!</strong></p>",
+			"htmlEn": "<p><strong><br>\nThe winner!</strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong><br />\n1.Platz </strong><strong>beim </strong></p>"
+			"html": "<p><strong><br />\n1.Platz </strong><strong>beim </strong></p>",
+			"htmlEn": "<p><strong><br>\nFirst place </strong><strong>at the </strong></p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>European Concours </strong><strong>de Elegance!</strong></p>"
+			"html": "<p><strong>European Concours </strong><strong>de Elegance!</strong></p>",
+			"htmlEn": "<p><strong>European Concours </strong><strong>d’Elegance!</strong></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Von den 7 Fahrzeugen haben nur 3 Wagen den Krieg überlebt und dieses hier bei uns restaurierte Exemplar ist das einzige Überlebende mit planer Frontscheibe und diesem stilistisch formvollendeten Heckteil.</p>"
+			"html": "<p>Von den 7 Fahrzeugen haben nur 3 Wagen den Krieg überlebt und dieses hier bei uns restaurierte Exemplar ist das einzige Überlebende mit planer Frontscheibe und diesem stilistisch formvollendeten Heckteil.</p>",
+			"htmlEn": "<p>Of seven cars built, only three survived the war. This restored example is the sole survivor with a flat windscreen and this elegantly shaped rear body.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 3 in the vehicle record"
 				}
 			]
 		},
@@ -59,32 +66,38 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Der Wagen wurde nach den Kundenwünschen in unserer Manufaktur restauriert.</p>"
+			"html": "<p>Der Wagen wurde nach den Kundenwünschen in unserer Manufaktur restauriert.</p>",
+			"htmlEn": "<p>We restored the car to the client’s wishes.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eine überaus gelungene Vollrestauration in allen Gewerken eines auch historisch äußerst interessanten Unikates.</p>"
+			"html": "<p>Eine überaus gelungene Vollrestauration in allen Gewerken eines auch historisch äußerst interessanten Unikates.</p>",
+			"htmlEn": "<p>A highly successful full restoration across every trade of a historically fascinating one-off.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>Gewinner des European Concours d´Elegance im Schlosspark des Barockschlosses von Schwetzingen - dem Schönheitswettbewerb aller Oldtimer schlechthin - als der bestrestaurierte Wagen seiner Klasse.</strong></p>"
+			"html": "<p><strong>Gewinner des European Concours d´Elegance im Schlosspark des Barockschlosses von Schwetzingen - dem Schönheitswettbewerb aller Oldtimer schlechthin - als der bestrestaurierte Wagen seiner Klasse.</strong></p>",
+			"htmlEn": "<p><strong>Winner at the European Concours d’Elegance in the grounds of Schwetzingen’s Baroque palace, awarded best-restored car in its class.</strong></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 6 in the vehicle record"
 				}
 			]
 		},
@@ -93,7 +106,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 7 in the vehicle record"
 				}
 			]
 		},
@@ -102,7 +116,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -111,20 +126,23 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 9 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier u.a. die von uns während der Restauration komplett neu gebauten Räder mit eigens dafür angefertigten Chromspeichen - 70 Stück pro Rad!</p>"
+			"html": "<p><br />\nHier u.a. die von uns während der Restauration komplett neu gebauten Räder mit eigens dafür angefertigten Chromspeichen - 70 Stück pro Rad!</p>",
+			"htmlEn": "<p><br>\nThe wheels were completely rebuilt during the restoration, with specially manufactured chrome spokes — seventy per wheel.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 10 in the vehicle record"
 				}
 			]
 		},
@@ -133,7 +151,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 11 in the vehicle record"
 				}
 			]
 		},
@@ -142,7 +161,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 12 in the vehicle record"
 				}
 			]
 		},
@@ -151,17 +171,24 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – photograph 13 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n...auch geschlossen macht dieser HORCH Spezial-Roadster eine traumhafte Figur.</p>"
+			"html": "<p><br />\n...auch geschlossen macht dieser HORCH Spezial-Roadster eine traumhafte Figur.</p>",
+			"htmlEn": "<p><br>\n…this Horch Special Roadster looks magnificent with the hood up too.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Nach dem Abschluss unserer anspruchsvollen Restaurationsarbeiten startete dieses Prachtstück zusammen mit weiteren Koryphäen als Publikumsmagnet zur ebenfalls mittlerweile legendären - Sachsen-Klassik.<br />\n<br />\nDamit kam der Wagen nach 72 Jahren erstmals wieder an seine Geburtsstätte Zwickau - und damit in die Region seiner Erbauer - zurück.<br />\n<br />\nZudem erfüllt uns die hohe Auszeichnung mit dem<br />\n<br />\n<strong>1. Platz beim European Concours de Elegance </strong><br />\n<br />\nmit großem Stolz.<br />\n<br />\nZeigt es doch die große Resonanz unserer qualitativ äußerst hochwertigen Restaurationsarbeiten. Nicht nur für den Besitzer, sondern auch für unsere Restaurationsmanufaktur ein gemeinsames und überaus feiernswertes Ereignis...</p>"
+			"html": "<p>Nach dem Abschluss unserer anspruchsvollen Restaurationsarbeiten startete dieses Prachtstück zusammen mit weiteren Koryphäen als Publikumsmagnet zur ebenfalls mittlerweile legendären - Sachsen-Klassik.<br />\n<br />\nDamit kam der Wagen nach 72 Jahren erstmals wieder an seine Geburtsstätte Zwickau - und damit in die Region seiner Erbauer - zurück.<br />\n<br />\nZudem erfüllt uns die hohe Auszeichnung mit dem<br />\n<br />\n<strong>1. Platz beim European Concours de Elegance </strong><br />\n<br />\nmit großem Stolz.<br />\n<br />\nZeigt es doch die große Resonanz unserer qualitativ äußerst hochwertigen Restaurationsarbeiten. Nicht nur für den Besitzer, sondern auch für unsere Restaurationsmanufaktur ein gemeinsames und überaus feiernswertes Ereignis...</p>",
+			"htmlEn": "<p>After our demanding restoration work was complete, this splendid car joined other celebrated classics as a crowd favourite at the renowned Sachsen Classic.<br>\n<br>\nAfter 72 years, the car returned to its birthplace in Zwickau and the region of its makers for the first time.<br>\n<br>\nWe are also deeply proud of its<br>\n<br>\n<strong>first place at the European Concours d’Elegance. </strong><br>\n<br>\nA tremendous honour.<br>\n<br>\nIt reflects the recognition of our high-quality restoration work — an occasion to celebrate together with the owner.</p>"
 		}
-	]
+	],
+	"titleEn": "HORCH V8 930, Special Roadster, 1938",
+	"descriptionEn": "Of seven cars built, only three survived the war. This restored example is the sole survivor with a flat windscreen and this elegantly shaped rear body.",
+	"cardImageAltEn": "HORCH V8 930, Special Roadster, 1938",
+	"leadImageAltEn": "HORCH V8 930, Special Roadster, 1938 – vehicle record"
 }

@@ -26,6 +26,16 @@ Fundstelle festgehalten.
 | `src/assets/fonts/jost-variable.ttf` | Jost Project Authors | Lokale Webschrift | SIL Open Font License 1.1 | Lizenzdatei wird unter `public/licenses/Jost-OFL-1.1.txt` mit ausgeliefert |
 | Fahrzeugbilder unter `src/pages/projekte/*/<fahrzeug>/` | Migration der bestehenden Website `oldtimermanufaktur.de`; Quellen je Fahrzeug in `vehicle.json` und `VEHICLE-MIGRATION-AUDIT.json` dokumentiert | Karten, Detailseiten und Open-Graph-Bilder der Projektarchive und Fahrzeugangebote | Auftraggeber bestätigt die Rechte der GmbH zur erneuten Veröffentlichung und Erstellung responsiver Ableitungen | Interne Original-/Urheberzuordnung und vorhandene Freigaben anhand der dokumentierten Quell-URLs ablegen; die im Migrationsaudit ausgewiesene, nur durch korrigierte Dateiendungs-Großschreibung abrufbare Quelle bei der internen Zuordnung berücksichtigen |
 
+## Decorative leather texture
+
+Texture asset added on 2026-09-13: `src/assets/oldtimer/leather-texture.webp`
+is an AI-assisted repeating derivative of the user-supplied `L1007006.jpg`.
+The image editing tool softened the central leather grain into a neutral tile;
+the result was resized to 1200 × 1200 and encoded as WebP for decorative use
+on the gradient subpages. The source photograph remains unchanged. This records
+the requested preview use, not a new confirmation of production media rights;
+associate the source with its internal rights evidence before release.
+
 ## Mindestunterlagen für das Fotoshooting
 
 1. **Fotografenvertrag:** Urheber und Auftraggeber, Motive, Vergütung und konkrete

@@ -13,7 +13,12 @@
 	"blocks": [
 		{
 			"type": "copy",
-			"html": "<p>Dieser wunderschöne englische Sportroadster stammt aus Amerika und wurde durch uns komplett restauriert.</p>"
+			"html": "<p>Dieser wunderschöne englische Sportroadster stammt aus Amerika und wurde durch uns komplett restauriert.</p>",
+			"htmlEn": "<p>This beautiful British sports roadster came from America and was completely restored by us.</p>"
 		}
-	]
+	],
+	"titleEn": "Triumpf TR 3A",
+	"descriptionEn": "This beautiful British sports roadster came from America and was completely restored by us.",
+	"cardImageAltEn": "Triumpf TR 3A",
+	"leadImageAltEn": "Triumpf TR 3A – vehicle record"
 }

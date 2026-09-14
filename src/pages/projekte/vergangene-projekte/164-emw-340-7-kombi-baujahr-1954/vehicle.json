@@ -17,28 +17,33 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 Estate, year 1954 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nEMW 340-7 Kombi, Baujahr 1954.<br />\n<br />\nDieser äußerst seltene 340-7 Kombi befindet sich auch nach rund 70 Jahren noch immer im Originalzustand und wurde bei uns umfangreich revidiert. <br />\nDer Wagen wurde 1954 bei den Eisenacher Motoren Werken gebaut und erhielt vermutlich im Karosseriewerk Halle diesen seltenen Kombi-Aufbau.</p>"
+			"html": "<p><br />\n<br />\n<br />\nEMW 340-7 Kombi, Baujahr 1954.<br />\n<br />\nDieser äußerst seltene 340-7 Kombi befindet sich auch nach rund 70 Jahren noch immer im Originalzustand und wurde bei uns umfangreich revidiert. <br />\nDer Wagen wurde 1954 bei den Eisenacher Motoren Werken gebaut und erhielt vermutlich im Karosseriewerk Halle diesen seltenen Kombi-Aufbau.</p>",
+			"htmlEn": "<p><br>\n<br>\n<br>\nA 1954 EMW 340-7 estate.<br>\n<br>\nStill in original condition after around 70 years, this exceptionally rare 340-7 estate received extensive refurbishment at our workshop. <br>\nBuilt in 1954 at Eisenacher Motorenwerke, it probably received its rare estate body at the Halle coachworks.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 Estate, year 1954 – photograph 2 in the vehicle record"
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 Estate, year 1954 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 Estate, year 1954 – photograph 4 in the vehicle record"
 				}
 			]
 		},
@@ -47,21 +52,29 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 Estate, year 1954 – photograph 5 in the vehicle record"
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 Estate, year 1954 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-7 Estate, year 1954 – photograph 7 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Neben einer Vielzahl von BMW/EMW 340er Limousinen, die im Laufe der Jahre bei uns fachgerecht restauriert wurden, konnten wir mit diesem 340-7 auch einen der sehr raren 340er Kombis bei uns begrüßen, das nach grundlegender Überarbeitung nun das Besitzerherz höher schlagen lässt, existieren von diesen seltenen Kombi 340ern doch nur noch rund &quot;eine Handvoll&quot; Fahrzeuge.</p>"
+			"html": "<p>Neben einer Vielzahl von BMW/EMW 340er Limousinen, die im Laufe der Jahre bei uns fachgerecht restauriert wurden, konnten wir mit diesem 340-7 auch einen der sehr raren 340er Kombis bei uns begrüßen, das nach grundlegender Überarbeitung nun das Besitzerherz höher schlagen lässt, existieren von diesen seltenen Kombi 340ern doch nur noch rund &quot;eine Handvoll&quot; Fahrzeuge.</p>",
+			"htmlEn": "<p>Alongside the many BMW and EMW 340 saloons we have professionally restored, we welcomed this rare 340-7 estate. Thoroughly refurbished, it now delights its owner; only a handful of these estates survive.</p>"
 		}
-	]
+	],
+	"titleEn": "EMW 340-7 Estate, year 1954",
+	"descriptionEn": "A 1954 EMW 340-7 estate. Still in original condition after around 70 years, this exceptionally rare 340-7 estate received extensive refurbishment at our workshop. Built in 1954…",
+	"cardImageAltEn": "EMW 340-7 Estate, year 1954",
+	"leadImageAltEn": "EMW 340-7 Estate, year 1954 – vehicle record"
 }

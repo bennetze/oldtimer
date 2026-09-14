@@ -17,57 +17,68 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 1 in the vehicle record"
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 2 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Eine Rarität: Ein EMW 340-3 als sog. &quot;Kurier und Lieferwagen&quot;.</p>"
+			"html": "<p>Eine Rarität: Ein EMW 340-3 als sog. &quot;Kurier und Lieferwagen&quot;.</p>",
+			"htmlEn": "<p>A rarity: an EMW 340-3 “courier and delivery van”.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Gebaut im Jahre 1954 bei den Eisenacher-Motoren-Werken in Eisenach/Thüringen.</p>"
+			"html": "<p>Gebaut im Jahre 1954 bei den Eisenacher-Motoren-Werken in Eisenach/Thüringen.</p>",
+			"htmlEn": "<p>Built in 1954 at Eisenacher Motorenwerke in Eisenach, Thuringia.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 3 in the vehicle record"
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 4 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 4 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 4 in the vehicle record"
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 5 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 5 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 5 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Und wäre der spezielle Karosserieaufbau nicht fast unbekannt, so ist es heute der wohl einzige bekannte 340-3 als geschlossener &quot;Kurier-und Lieferwagen&quot; der die Zeiten - zumal in diesem völlig originalen und unverbastelten Zustand - überlebt hat.</p>"
+			"html": "<p>Und wäre der spezielle Karosserieaufbau nicht fast unbekannt, so ist es heute der wohl einzige bekannte 340-3 als geschlossener &quot;Kurier-und Lieferwagen&quot; der die Zeiten - zumal in diesem völlig originalen und unverbastelten Zustand - überlebt hat.</p>",
+			"htmlEn": "<p>This special body style is almost unknown today. It is thought to be the only known surviving enclosed 340-3 courier and delivery van, especially in such entirely original, unmodified condition.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 6 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 6 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 6 in the vehicle record"
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 7 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 7 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 7 in the vehicle record"
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 8 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 8 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 8 in the vehicle record"
 				}
 			]
 		},
@@ -76,132 +87,164 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 9 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 9 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 9 in the vehicle record"
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 10 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 10 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 10 in the vehicle record"
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 11 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 11 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 11 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Papiere</p>"
+			"html": "<p>Org. Papiere</p>",
+			"htmlEn": "<p>Original papers.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Winker - voll funktionstüchtig</p>"
+			"html": "<p>Org. Winker - voll funktionstüchtig</p>",
+			"htmlEn": "<p>Original semaphore indicators — fully functional.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Instrumente - einmalig</p>"
+			"html": "<p>Org. Instrumente - einmalig</p>",
+			"htmlEn": "<p>Original instruments — exceptional.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. erste Lederausstattung- ohne Fehler!</p>"
+			"html": "<p>Org. erste Lederausstattung- ohne Fehler!</p>",
+			"htmlEn": "<p>Original first leather upholstery — without defects.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Inneneinrichtung</p>"
+			"html": "<p>Org. Inneneinrichtung</p>",
+			"htmlEn": "<p>Original interior fittings.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. holzlasierter Armaturenträger - ohne Schäden</p>"
+			"html": "<p>Org. holzlasierter Armaturenträger - ohne Schäden</p>",
+			"htmlEn": "<p>Original woodgrain-finished dashboard — undamaged.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Innenhimmel</p>"
+			"html": "<p>Org. Innenhimmel</p>",
+			"htmlEn": "<p>Original headlining.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Fußmatten</p>"
+			"html": "<p>Org. Fußmatten</p>",
+			"htmlEn": "<p>Original floor mats.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Bordwerkzeug</p>"
+			"html": "<p>Org. Bordwerkzeug</p>",
+			"htmlEn": "<p>Original tool kit.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Werkzeugkasten</p>"
+			"html": "<p>Org. Werkzeugkasten</p>",
+			"htmlEn": "<p>Original tool box.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Org. Auskleidung des Aufbaus mit Lüftungsschlitzen</p>"
+			"html": "<p>Org. Auskleidung des Aufbaus mit Lüftungsschlitzen</p>",
+			"htmlEn": "<p>Original body lining with ventilation slots.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>...alles in einmaligem Originalzustand erhalten.</p>"
+			"html": "<p>...alles in einmaligem Originalzustand erhalten.</p>",
+			"htmlEn": "<p>…all preserved in exceptional original condition.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 12 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 12 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 12 in the vehicle record"
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 13 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 13 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 13 in the vehicle record"
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 14 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 14 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 14 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Originalmotor zeigte Verschleißerscheinungen und wurde daher kürzlich durch uns generalüberholt und mit völlig neuem &quot;Innenleben&quot; aufgebaut. Also nun auch motortechnisch perfekt.</p>"
+			"html": "<p><br />\nDer Originalmotor zeigte Verschleißerscheinungen und wurde daher kürzlich durch uns generalüberholt und mit völlig neuem &quot;Innenleben&quot; aufgebaut. Also nun auch motortechnisch perfekt.</p>",
+			"htmlEn": "<p><br>\nThe original engine showed signs of wear, so we recently gave it a complete overhaul with entirely renewed internals. Its mechanical condition is now excellent too.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Motor: EMW 6 Zylinder, 2 Liter Hubraum, 55 PS Leistung, Doppelvergaser, ca. 120km/h.</p>"
+			"html": "<p>Motor: EMW 6 Zylinder, 2 Liter Hubraum, 55 PS Leistung, Doppelvergaser, ca. 120km/h.</p>",
+			"htmlEn": "<p>Engine: EMW six-cylinder, 2 litres, 55 PS, twin carburettors, approximately 120 km/h.</p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 15 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 15 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 15 in the vehicle record"
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 16 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 16 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 16 in the vehicle record"
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 17 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 17 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 17 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Dieses einmalige Stück Zeitgeschichte eines EMW 340-3 &quot;Kurier- und Lieferwagens&quot; steht abschließend zum Verkauf.</p>"
+			"html": "<p>Dieses einmalige Stück Zeitgeschichte eines EMW 340-3 &quot;Kurier- und Lieferwagens&quot; steht abschließend zum Verkauf.</p>",
+			"htmlEn": "<p>This unique piece of history, an EMW 340-3 courier and delivery van, is now offered for sale.</p>"
 		},
 		{
 			"type": "contact",
-			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bei Interesse gerne unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
+			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bei Interesse gerne unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>",
+			"htmlEn": "<p>Price on request.<br>\nFor further information, photographs and other vehicle details,<br>\nIf interested, please contact us on: Tel. +49 36966 83783<br>\nEmail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
 		},
 		{
 			"type": "gallery",
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 18 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 18 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 18 in the vehicle record"
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 19 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 19 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 19 in the vehicle record"
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 20 der Fahrzeugdokumentation"
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Aufnahme 20 der Fahrzeugdokumentation",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – photograph 20 in the vehicle record"
 				}
 			]
 		}
-	]
+	],
+	"titleEn": "EMW 340-3 Courier and Delivery Van, year 1954",
+	"descriptionEn": "This special body style is almost unknown today. It is thought to be the only known surviving enclosed 340-3 courier and delivery van, especially in such entirely original,…",
+	"cardImageAltEn": "EMW 340-3 Courier and Delivery Van, year 1954",
+	"leadImageAltEn": "EMW 340-3 Courier and Delivery Van, year 1954 – vehicle record"
 }

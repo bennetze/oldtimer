@@ -17,21 +17,29 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 502 \"Baur\"-Coupe, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation"
+					"alt": "BMW 502 \"Baur\"-Coupe, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation",
+					"altEn": "BMW 502 \"Baur\"-Coupe, year 1954 – photograph 1 in the vehicle record"
 				}
 			]
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier wieder eine besondere automobile Kostbarkeit, zudem noch aus höchst prominentem Erstbesitz.<br />\nDer BMW Typ 502 ist gemeinhin ja nahezu jedem Oldtimerenthusiasten als sog. &quot;Barockengel&quot; und damit als 4-türige Limousine bekannt.</p>"
+			"html": "<p>Hier wieder eine besondere automobile Kostbarkeit, zudem noch aus höchst prominentem Erstbesitz.<br />\nDer BMW Typ 502 ist gemeinhin ja nahezu jedem Oldtimerenthusiasten als sog. &quot;Barockengel&quot; und damit als 4-türige Limousine bekannt.</p>",
+			"htmlEn": "<p>Another special automotive treasure, originally owned by a particularly prominent figure.<br>\nMost classic-car enthusiasts know the BMW 502 as the four-door “Baroque Angel” saloon.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Weniger geläufig sind da schon die wenigen gebauten Cabrios und noch weniger die raren <em>Coupe</em>-Aufbauten dieses Typs.</p>"
+			"html": "<p>Weniger geläufig sind da schon die wenigen gebauten Cabrios und noch weniger die raren <em>Coupe</em>-Aufbauten dieses Typs.</p>",
+			"htmlEn": "<p>Less familiar are the few cabriolets and the even rarer <em>coupé</em>versions of this model.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Hier aber ist eines der ganz besonderen Prachtexemplare eines 502 V8 <em>Coupes</em> mit einer einmaligen Sonderkarosserie der Firma &quot;Baur&quot; aus Stuttgart.</p>"
+			"html": "<p>Hier aber ist eines der ganz besonderen Prachtexemplare eines 502 V8 <em>Coupes</em> mit einer einmaligen Sonderkarosserie der Firma &quot;Baur&quot; aus Stuttgart.</p>",
+			"htmlEn": "<p>Here is a particularly magnificent 502 V8 <em>coupé,</em> with unique special coachwork by Baur of Stuttgart.</p>"
 		}
-	]
+	],
+	"titleEn": "BMW 502 \"Baur\"-Coupe, year 1954",
+	"descriptionEn": "Another special automotive treasure, originally owned by a particularly prominent figure. Most classic-car enthusiasts know the BMW 502 as the four-door “Baroque Angel” saloon.",
+	"cardImageAltEn": "BMW 502 \"Baur\"-Coupe, year 1954",
+	"leadImageAltEn": "BMW 502 \"Baur\"-Coupe, year 1954 – vehicle record"
 }
