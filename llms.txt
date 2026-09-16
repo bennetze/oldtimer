@@ -9,13 +9,15 @@ Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam
 
 ## Hauptseiten
 
-- [Startseite](https://bennetze.github.io/oldtimer/): „Wir bewahren Geschichte(n)“ – Überblick über Handwerk, Unternehmen, Projekte und Fahrzeugangebote.
+- [Startseite](https://bennetze.github.io/oldtimer/): „Wir bewahren Geschichte(n)“ – bildgeführter Überblick mit abgerundeten, transparenten Schaltflächen mit feiner Kontur und kreisförmigem Pfeilsymbol mit einem schmalen Innenabstand von 3,75 Pixeln als direkte Einstiege zu Handwerk, Unternehmen und Projekten sowie Zugang zu Fahrzeugangeboten. Die Schaltflächen stehen in allen drei Abschnitten einheitlich direkt unter den Überschriften und oberhalb der Pfeile zum nächsten Abschnitt. Bei Mauszeigerkontakt oder Tastaturfokus wird die Schaltfläche nur leicht dunkler und das Pfeilsymbol gleitet innerhalb von 500 Millisekunden sanft von links nach rechts, während die Beschriftung nach links rückt; bei reduzierter Bewegung erfolgt der Wechsel ohne Animation.
 - [Handwerk](https://bennetze.github.io/oldtimer/handwerk/): Vorläufiger, bebilderter Überblick über Karosserie, Polsterei, Lackiererei und Motorbau.
 - [Über uns](https://bennetze.github.io/oldtimer/ueber-uns/): Vorstellung von Mario Schrank (KFZ-Mechaniker-Meister, KFZ-Elektriker-Meister und Karosseriebau-Meister), Anton Schrank (KFZ-Techniker-Meister) mit ihren Meisterqualifikationen sowie Vorstellung von Team und Kontakt mit einer Deutschlandkarte und Standortmarkierung für Fischbach/Rhön.
 - [Projekte](https://bennetze.github.io/oldtimer/projekte/): Dreiteiliger visueller Einstieg in aktuelle und vergangene Restaurierungsprojekte sowie Fahrzeugangebote.
 - [Aktuelle Projekte](https://bennetze.github.io/oldtimer/projekte/aktuelle-projekte/): Laufende Restaurierungen und aktuelle Arbeiten an historischen Fahrzeugen. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
 - [Abgeschlossene Projekte](https://bennetze.github.io/oldtimer/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
 - [Fahrzeugangebote](https://bennetze.github.io/oldtimer/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot; Anfragen telefonisch oder per E-Mail. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
+
+Auf Mobilgeräten stehen die Aufwärtspfeile der Startseitenabschnitte am oberen Abschnittsrand direkt unter der festen Kopfzeile.
 
 ## Englische Seiten
 
