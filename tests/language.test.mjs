@@ -2,12 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, globSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
-import { load } from 'cheerio';
 import { languagePath, preferredLanguage } from '../src/i18n/language.js';
-import { normalize, translate } from '../src/i18n/translate.js';
+import { translate } from '../src/i18n/translate.js';
 
 const script = readFileSync(new URL('../src/scripts/language.js', import.meta.url), 'utf8');
-const dictionary = JSON.parse(readFileSync(new URL('../src/i18n/en.json', import.meta.url)));
 function visit(path, { languages = ['en-US'], language = '', base = '/', lang = path.startsWith(`${base}en/`) ? 'en' : 'de', notFound = false, links = [] } = {}) {
 	const url = new URL(path, 'https://example.com');
 	let redirected;

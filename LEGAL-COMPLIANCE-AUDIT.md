@@ -36,8 +36,8 @@ label or noindex is not an exemption. Hosting behavior was not inspected live.
 | Medium / conditional terminal-access risk | No consent-based tracking mechanism is identified in source. Local archive search uses per-entry browser history state for Back restoration; URL-based language selection is present; language detection reads browser language preferences. | Privacy reviewer: assess the actual browser/host terminal access and necessity against § 25 TDDDG. Do not add a blanket consent banner without identifying the operation requiring consent. |
 | High / conditional price and seller-role risk | Vehicle offers and enquiry-only sale flow remain. Existing “Preis auf Anfrage” wording is not evidence of an exemption. | Company/German legal reviewer: establish seller versus intermediary role, consumer audience, concrete offer presentation, total-price obligations, tax treatment and actual contract journey under PAngV and applicable consumer rules. Do not invent prices. |
 | Medium / BFSG applicability unresolved | The site directs consumers toward vehicle/service enquiries; absence of checkout alone does not resolve scope. Company size/turnover criteria are not documented. | Company/legal reviewer: assess actual consumer journey and microenterprise criteria, required accessibility information and applicable technical requirements. Engineering target remains WCAG 2.2 AA; current tests are not a conformance certification. |
-| Medium / missing claim and media evidence | Preview flags still identify synthetic placeholders. Existing history, qualifications, vehicle condition/availability and rights confirmations need supporting records. | Company/editor: reconcile visible copy, translations, metadata and real business facts; verify availability and seller authority. Complete private evidence references in MEDIA-RIGHTS-REGISTER.md without publishing releases/customer records. |
-| Medium / conditional AI transparency obligations | Synthetic placeholder imagery remains; the Commission says Article 50 applies from 2 August 2026. | Company/editor: classify each relevant synthetic asset and applicable deployer obligations, including potential deepfake disclosure, using current guidance. Preserve current disclosure; do not assume every AI-assisted asset has identical obligations or that a generic footer settles all cases. |
+| Medium / missing claim and media evidence | AI image placeholders were removed on 2026-09-28; the development-preview release gate remains. Existing history, qualifications, vehicle condition/availability and rights confirmations need supporting records. | Company/editor: reconcile visible copy, translations, metadata and real business facts; verify availability and seller authority. Complete private evidence references in MEDIA-RIGHTS-REGISTER.md without publishing releases/customer records. |
+| Closed for current media / review if reintroduced | The 28 synthetic/AI-assisted assets were removed on 2026-09-28. The decorative texture now uses the real source photo; the owner confirms all four video families are real. | Preserve the historical media record. Reassess any future synthetic media before publication; this does not resolve other release requirements. |
 | Medium / host-dependent security | Built meta CSP works on static output; Apache directives require Apache. HSTS/frame-ancestors and real redirect/404 behavior depend on response headers. | Hosting owner: verify HTTPS, canonical redirects, MIME types, HTTP headers, response CSP, injection/storage and both language error routes on the actual host. Do not represent source configuration as deployed protection. |
 
 Provider information is assessed against [§ 5 DDG](https://www.gesetze-im-internet.de/ddg/__5.html).
@@ -93,3 +93,11 @@ The approved implementation is local and reviewable, but these unavailable check
 and the legal/hosting facts remain acceptance/release work. No commits, deployment,
 production legal-text replacement, preview-safeguard removal or existing-vehicle
 replacement were performed as part of this implementation.
+
+## Cleanup security review — 2026-09-28
+
+The source remains a static Astro site. Only generated static output is intended
+for deployment. The production domain still returns Joomla/K2 headers; the old
+PHP application must be retired or isolated during a separately approved release,
+not left executable beside the static replacement. No live hosting changes are
+authorized by repository cleanup. Verify actual response headers on the final host.

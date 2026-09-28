@@ -430,16 +430,14 @@ const sitePath = (path) => {
 		}
 
 		const items = focusableMenuItems();
-		const first = items[0];
-		const last = items[items.length - 1];
-
-		if (event.shiftKey && document.activeElement === first) {
-			event.preventDefault();
-			last?.focus();
-		} else if (!event.shiftKey && document.activeElement === last) {
-			event.preventDefault();
-			first?.focus();
-		}
+		if (!items.length) return;
+		// Safari may omit links from its native Tab order. Own the entire modal
+		// cycle so every menu link is reachable and focus cannot escape.
+		event.preventDefault();
+		const index = items.indexOf(document.activeElement);
+		const next = index < 0 ? (event.shiftKey ? items.length - 1 : 0)
+			: (index + (event.shiftKey ? -1 : 1) + items.length) % items.length;
+		items[next]?.focus();
 	});
 
 	document.querySelectorAll('.menu-nav__link[href]').forEach((link) => {
@@ -680,10 +678,6 @@ const sitePath = (path) => {
 		transform: translateY(6px);
 	}
 
-	.header-spacer {
-		justify-self: end;
-		width: 24px;
-	}
 
 	.menu-overlay {
 		position: fixed;
@@ -931,9 +925,6 @@ const sitePath = (path) => {
 			font-size: 0.8rem;
 		}
 
-		.header-spacer {
-			width: 24px;
-		}
 
 		.menu-panel {
 			width: 100vw;

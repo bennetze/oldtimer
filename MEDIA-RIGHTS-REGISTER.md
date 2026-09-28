@@ -1,6 +1,6 @@
 # Medienrechte-Register
 
-**Stand:** 5. September 2026
+**Stand:** 28. September 2026
 **Rechteinhaber laut Auftraggeber:** DIE OLDTIMERMANUFAKTUR GmbH  
 **Status:** Entwicklungsnachweis; Belege vor Produktionsfreigabe vervollständigen
 
@@ -18,12 +18,12 @@ Fundstelle festgehalten.
 | Gruppe | Aktueller Ursprung | Öffentliche Darstellung | Bestätigter Status | Noch abzulegen |
 | --- | --- | --- | --- | --- |
 | `hero-site.mp4`, `hero-site.webm`, Poster und Bewegungs-Fallbacks | Reales Hero-Video und daraus erzeugte Ableitungen | Hero der Startseite und Open-Graph-Bild | Auftraggeber bestätigt sämtliche Bild-/Videorechte bei der GmbH | Original/Master, Produktions-/Übertragungsvertrag, Rechnung, Freigabe erkennbarer Personen, Fahrzeug-/Kennzeichenfreigabe, Liste der erzeugten Ableitungen |
-| KI-Motive wie `about-*`, `handwerk-motorbau-*` und die bisherigen synthetischen Projektmotive in `src/assets/oldtimer/` (nicht pauschal alle übrigen Dateien) | KI-generierte Entwicklungsplatzhalter | Nur als klar gekennzeichnete Entwicklungsvorschau | Nicht für die finale Veröffentlichung vorgesehen | Verwendetes KI-System und Konto, Erstellungsdatum, geltende Nutzungsbedingungen/Lizenz, Prompts/Job-IDs soweit vorhanden; anschließend dokumentierte Entfernung/Ersetzung |
+| KI-Motive wie `about-*`, `handwerk-motorbau-*` und die bisherigen synthetischen Projektmotive in `src/assets/oldtimer/` (nicht pauschal alle übrigen Dateien) | KI-generierte Entwicklungsplatzhalter | Am 28.09.2026 vollständig entfernt | Historischer Entwicklungsbestand; nicht mehr ausgeliefert | Verwendetes KI-System und Konto, Erstellungsdatum, geltende Nutzungsbedingungen/Lizenz, Prompts/Job-IDs soweit vorhanden; anschließend dokumentierte Entfernung/Ersetzung |
 | Reale Werkstattaufnahmen `L100*.webp`, insbesondere die auf `/handwerk/` verwendeten Dateien | Neu eingebundene reale Werkstattfotografie | Karosserie, Polsterei und Lackiererei sowie repräsentative Metadaten | Nicht als KI-Platzhalter einordnen; allgemeine Rechtebestätigung der GmbH bleibt dokumentiert | Je Motiv Original-/Urheberzuordnung, Nutzungsumfang und gegebenenfalls Freigaben erkennbarer Personen intern zuordnen; Dateinamensmuster ist kein eigenständiger Rechtebeleg |
-| `handwerk`, `ueberuns`, `projekte`: MP4/WebM, Poster und Bewegungs-Fallbacks | Weitere projektlokale Video-Familien; ursprüngliche Produktion und Ableitungen einzeln dokumentieren | Drei zusätzliche bewegte Bereiche der Startseite | Allgemeine Rechtebestätigung bleibt bestehen; konkrete Belegzuordnung und Herkunft pro Familie prüfen | Master, Urheber-/Übertragungsnachweis, reale oder synthetische Herkunft, Personen-/Standortfreigaben soweit erforderlich sowie sämtliche erzeugten Ableitungen zuordnen |
+| `handwerk`, `ueberuns`, `projekte`: MP4/WebM, Poster und Bewegungs-Fallbacks | Reale Videoaufnahmen laut Bestätigung des Auftraggebers am 28.09.2026; Produktion und Ableitungen einzeln dokumentieren | Drei zusätzliche bewegte Bereiche der Startseite | Allgemeine Rechtebestätigung bleibt bestehen; konkrete Belegzuordnung und Herkunft pro Familie prüfen | Master, Urheber-/Übertragungsnachweis, reale oder synthetische Herkunft, Personen-/Standortfreigaben soweit erforderlich sowie sämtliche erzeugten Ableitungen zuordnen |
 | Zukünftige Aufnahmen des Fotoshootings | Noch nicht erstellt | Finale Personen-, Team-, Werkstatt-, Standort- und Projektbilder | Noch offen | Fotografenvertrag mit ausschließlichen oder ausreichend weiten Nutzungsrechten, Honorar/Rechnung, Rohdateien, Model Releases, Mitarbeitereinwilligungen, Property-/Location-Releases, Fahrzeug-/Kennzeichenfreigaben |
 | `public/favicon.svg`, `.ico`, `apple-touch-icon.png` | Im Projekt erstelltes neutrales OM-Monogramm | Browser-/Gerätesymbol der Entwicklungsvorschau | Originäre einfache Projektgrafik; später zu ersetzen | Datum/Urheber dieser Erstellung und spätere Freigabe des endgültigen Unternehmenszeichens |
-| `src/assets/fonts/jost-variable.ttf` | Jost Project Authors | Lokale Webschrift | SIL Open Font License 1.1 | Lizenzdatei wird unter `public/licenses/Jost-OFL-1.1.txt` mit ausgeliefert |
+| Jost (historisch) | Jost Project Authors | Am 28.09.2026 als ungenutzte Schrift entfernt | SIL Open Font License 1.1 | Schrift und zugehörige Auslieferungslizenz entfernt; aktuelle Schriften siehe unten |
 | Fahrzeugbilder unter `src/pages/projekte/*/<fahrzeug>/` | Migration der bestehenden Website `oldtimermanufaktur.de`; Quellen je Fahrzeug in `vehicle.json` und `VEHICLE-MIGRATION-AUDIT.json` dokumentiert | Karten, Detailseiten und Open-Graph-Bilder der Projektarchive und Fahrzeugangebote | Auftraggeber bestätigt die Rechte der GmbH zur erneuten Veröffentlichung und Erstellung responsiver Ableitungen | Interne Original-/Urheberzuordnung und vorhandene Freigaben anhand der dokumentierten Quell-URLs ablegen; die im Migrationsaudit ausgewiesene, nur durch korrigierte Dateiendungs-Großschreibung abrufbare Quelle bei der internen Zuordnung berücksichtigen |
 
 ## Decorative leather texture
@@ -139,3 +139,18 @@ That ignored backup is not the permanent internal rights-evidence archive.
   all four previously approved subjects and a bounded, smaller collage height.
 - Existing pending rights documentation and release safeguards still apply.
   Reviewed robots.txt: image formats, route access and sitemap location unchanged.
+
+## Approved cleanup — 2026-09-28
+
+The 28 AI-generated/AI-assisted image files, including the synthetic leather tile,
+were removed. Earlier sections record their historical use, not the current media
+inventory. The background now uses the unchanged real `L1007006.webp` photograph.
+The owner confirmed `hero-site`, `handwerk`, `ueberuns`, and `projekte` are real
+footage; all video sources, posters and motion fallbacks remain unchanged. All real
+photographs, including unused photographs and the original-photo backups, remain.
+
+Cinzel and Cormorant Garamond are served as local WOFF2 derivatives of their retained
+TTF masters. FontTools 4.66.0 performed container compression without subsetting;
+glyph order, Unicode maps and variable axes were verified against the originals.
+The existing OFL licenses remain published. Jost and its unused license were removed.
+These changes do not constitute production approval or new rights evidence.

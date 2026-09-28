@@ -655,7 +655,8 @@ const itemList = {
 		}
 
 		.category-switcher a span {
-			max-width: 13ch;
+			max-width: min(13ch, 100%);
+			overflow-wrap: anywhere;
 			text-wrap: balance;
 		}
 

@@ -10,7 +10,7 @@ const vehicles = defineCollection({
 		base: './src/pages/projekte',
 		generateId: ({ entry }) => entry.replace(/\/vehicle\.json$/, ''),
 	}),
-	schema: ({ image }) =>
+	schema: () =>
 		z.object({
 			slug: z.string().min(1),
 			category: z.enum(['aktuelle-projekte', 'vergangene-projekte', 'fahrzeugangebote']),

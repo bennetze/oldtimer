@@ -17,7 +17,7 @@ This is a small Astro site for the German classic car restoration company
   and `LegalArticle.astro`, plus `VehicleArchivePage.astro`, `VehicleDetailPage.astro`
   and `VehicleCard.astro`.
 - `src/assets/` contains source-controlled assets imported by pages and components.
-- `src/assets/oldtimer/` contains generated homepage and subpage imagery. Keep
+- `src/assets/oldtimer/` contains real homepage and subpage photography and video. Keep
   project-referenced generated assets in this folder or another source-controlled
   asset folder, not only under `$CODEX_HOME/generated_images/`.
 - `public/` contains static files served from the site root, including favicons.
@@ -122,9 +122,10 @@ legal texts unless the user explicitly includes that work in scope. Recommend re
 by a qualified German lawyer or data-protection professional only when the uncertainty
 or potential impact warrants it, not as boilerplate.
 
-The current project is an explicitly labelled development preview. While
-`src/config/site.ts` reports AI placeholder images, keep the visible disclosure and
-the GitHub Pages `noindex` behavior active. Before any production release, confirm
+The current project is an explicitly labelled development preview. Keep the
+development-preview labels and GitHub Pages `noindex` behavior active.
+AI image placeholders were removed on 2026-09-28; their removal does not clear
+the legal, factual or media-rights release gates. Before any production release, confirm
 that every placeholder has been replaced by the approved real photography, update
 all image alternatives and representative metadata, complete the media-rights
 register, verify every factual/company claim, add the approved legal texts, turn off
@@ -162,7 +163,8 @@ either feature in page-specific code.
 
 Run commands from the repository root.
 
-- `npm install` installs dependencies from `package-lock.json`.
+- `npm ci` installs the reviewed dependency lockfile with npm 11.18.0.
+- `npm run security:check` audits all dependency types and checks registry signatures.
 - `npm run dev` starts the Astro dev server, usually at `http://localhost:4321`.
 - `npm run vehicles:sync` explicitly updates the sitemap only; llms.txt remains manual.
 - `npm run crawlers:check` validates the sitemap, LLM links and robots sitemap reference without writing source.

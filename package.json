@@ -3,7 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=22.12.0",
+    "npm": ">=11.18.0"
   },
   "scripts": {
     "dev": "npm run vehicles:gallery && astro dev",
@@ -20,18 +21,21 @@
     "encode-video": "scripts/encode-site-video.sh",
     "crawlers:check": "node scripts/sync-vehicle-crawler-files.mjs --check",
     "test": "node --test tests/*.test.mjs && npm run test:vehicle-discovery",
-    "vehicles:review": "node scripts/review-vehicle-import.mjs"
+    "vehicles:review": "node scripts/review-vehicle-import.mjs",
+    "security:check": "npm audit --include=dev --include=optional --include=peer && npm audit signatures"
   },
   "dependencies": {
-    "astro": "^7.3.2"
+    "astro": "^7.3.5"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",
     "gh-pages": "^6.3.0",
-    "sharp": "^0.35.4"
+    "sharp": "^0.35.5"
   },
   "allowScripts": {
     "esbuild@0.28.2": true,
     "fsevents@2.3.3": true
-  }
+  },
+  "private": true,
+  "packageManager": "npm@11.18.0"
 }

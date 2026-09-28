@@ -4,11 +4,13 @@ import { readFile, readdir, access } from 'node:fs/promises';
 import { join } from 'node:path';
 import { load } from 'cheerio';
 import sharp from 'sharp';
+import { verifyDeploymentArtifacts } from './lib/deployment-artifacts.mjs';
 
 const pages = process.argv[2] === 'github-pages';
 const base = pages ? '/oldtimer/' : '/';
 const origin = pages ? 'https://bennetze.github.io' : 'https://www.oldtimermanufaktur.de';
 const root = join(process.cwd(), 'dist');
+await verifyDeploymentArtifacts(root, { removeOsMetadata: true });
 const files = [];
 async function collect(dir) {
 	for (const entry of await readdir(dir, { withFileTypes: true })) {
