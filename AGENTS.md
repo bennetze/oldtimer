@@ -187,8 +187,8 @@ with the user. The current visual direction is
 restrained luxury editorial with a very dark grey background (`#111111`), `#eeeeee` as the
 main color, and neutral grey lines/interactions. Avoid accent-heavy treatments and avoid
 gold, brown, beige, tan, sepia, and retro nostalgia palettes unless explicitly requested.
-Use free commercial fonts only. The current homepage uses `Jost` for all typography,
-including display, body, and UI text.
+Use free commercial fonts only. The site uses locally hosted `Cinzel` for headings and titles and
+`Cormorant Garamond` for body and UI text.
 
 Existing light vehicle pages and current page-specific backgrounds are intentional
 exceptions to the dark/grayscale defaults below. Preserve them during maintenance
@@ -397,8 +397,8 @@ but final visuals and assets should be original and project-local.
 
 ## Checked offline vehicle editing
 
-The single-file offline editor lives in `../oldtimer-fahrzeuge/index.html`. Its
-inline contract must stay compatible with `src/config/vehicleRecord.js` and the
+The offline editor starts at `../oldtimer-fahrzeuge/index.html` and loads local
+classic scripts and styles. Its `editor.js` contract must stay compatible with `src/config/vehicleRecord.js` and the
 independent website HTML validator. Keep folder round-trip and malicious-input
 fixtures in `tests/vehicle-contract.test.mjs`, `tests/vehicle-import.test.mjs` and
 `tests/vehicle-browser-cases.js`. Run the browser harness with
@@ -424,7 +424,11 @@ A publicly accessible preview needs its own provider-information and privacy
 assessment now; preview labels and noindex do not establish a legal exemption.
 Keep the release safeguards and audit-only legal scope until approved texts and
 business/hosting facts are supplied. Follow the user's current approval scope;
-this implementation does not authorize replacing any real vehicle.
+implementation tests do not authorize replacing any real vehicle. The editor now
+also supports explicit browser-reviewed project saves with durable backups and
+recovery; keep `tests/vehicle-project-save.test.mjs` and the `/workflow` browser
+harness aligned with the CLI importer. The editor itself does not run npm or build
+the website.
 
 Archive search uses `src/scripts/archiveHistory.js` to retain the filter in its
 browser history entry. Preserve unrelated history state during fragment cleanup.

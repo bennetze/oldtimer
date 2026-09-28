@@ -2,9 +2,9 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import SiteChrome from '../components/SiteChrome.astro';
-import currentProjectsImage from '../assets/oldtimer/projects-current-color.png';
-import pastProjectsImage from '../assets/oldtimer/projects-past-color.png';
-import vehicleOffersImage from '../assets/oldtimer/projects-offers-color.png';
+import currentProjectsImage from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00407.webp';
+import pastProjectsImage from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00909.webp';
+import vehicleOffersImage from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00123.webp';
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
@@ -28,7 +28,8 @@ const projectAreas = [
 		titleLines: ['Aktuelle', 'Projekte'],
 		href: '/projekte/aktuelle-projekte/',
 		image: currentProjectsImage,
-		alt: 'KI-generierter Platzhalter: Ein klassisches Coupé wird in einer dunklen Werkstatt restauriert',
+		position: '50% 50%',
+		alt: 'Front eines historischen Mercedes-Benz mit unrestaurierter Karosserie',
 	},
 	{
 		id: 'vergangene-projekte',
@@ -36,7 +37,8 @@ const projectAreas = [
 		titleLines: ['Abgeschlossene', 'Projekte'],
 		href: '/projekte/vergangene-projekte/',
 		image: pastProjectsImage,
-		alt: 'KI-generierter Platzhalter: Ein fertig restauriertes klassisches Coupé in einer Werkstatt',
+		position: '50% 65%',
+		alt: 'Silberner historischer Rennwagen mit roten Speichenrädern in der Werkstatt',
 	},
 	{
 		id: 'fahrzeugangebote',
@@ -44,7 +46,8 @@ const projectAreas = [
 		titleLines: ['Fahrzeug', 'angebote'],
 		href: '/projekte/fahrzeugangebote/',
 		image: vehicleOffersImage,
-		alt: 'KI-generierter Platzhalter: Ein fahrbereiter klassischer Roadster in einer Werkstatt',
+		position: '50% 55%',
+		alt: 'Front eines historischen BMW-Cabriolets mit verchromtem Kühlergrill',
 	},
 ];
 ---
@@ -53,9 +56,9 @@ const projectAreas = [
 	title="Projekte"
 	description="Aktuelle und vergangene Restaurierungsprojekte der Oldtimermanufaktur sowie ausgewählte Fahrzeugangebote."
 	openGraphImage={currentProjectsImage}
-	openGraphImageAlt="Ein klassisches Coupé während einer Restaurierung in einer dunklen Werkstatt"
+	openGraphImageAlt="Front eines historischen Mercedes-Benz mit unrestaurierter Karosserie"
 	structuredDataType="CollectionPage"
-	dateModified="2026-08-06"
+	dateModified="2026-09-28"
 >
 	<SiteChrome>
 		<main class="projects-page" id="main-content" tabindex="-1">
@@ -71,9 +74,10 @@ const projectAreas = [
 							<Image
 								class="project-panel__image"
 								src={area.image}
+								style={`object-position: ${area.position}`}
 								alt={area.alt}
-								widths={[640, 960, 1280, 1600]}
-								sizes="(max-width: 760px) 100vw, 42vw"
+								widths={[480, 640, 960, 1280, 1600].filter((width) => width <= area.image.width)}
+								sizes="(max-width: 760px) 100vw, 34vw"
 								format="webp"
 								loading="eager"
 								fetchpriority={index === 0 ? 'high' : 'auto'}

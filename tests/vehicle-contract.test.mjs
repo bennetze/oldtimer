@@ -5,7 +5,7 @@ import { readFile } from 'node:fs/promises';
 import { validateVehicleRecord, validVehicleDate } from '../src/config/vehicleRecord.js';
 import { languagePath } from '../src/i18n/language.js';
 
-const tool = await readFile(new URL('../../oldtimer-fahrzeuge/index.html', import.meta.url), 'utf8');
+const tool = await readFile(new URL('../../oldtimer-fahrzeuge/editor.js', import.meta.url), 'utf8');
 const contract = tool.slice(tool.indexOf('        function validVehicleDate('), tool.indexOf('        const categories ='));
 const browser = vm.runInNewContext(`${contract}; ({ validateVehicleRecord, validVehicleDate });`, { URL });
 const record = { slug:'test-car', category:'aktuelle-projekte', title:'Fahrzeug', titleEn: 'Fahrzeug', description:'Beschreibung', descriptionEn: 'Beschreibung', sourceUrl:'https://example.com', order:-12, dateModified:'2024-02-29', cardImage:'./card.jpg', cardImageAlt:'Karte', cardImageAltEn: 'Karte', leadImage:'./card.jpg', leadImageAlt:'Titel', leadImageAltEn: 'Titel', blocks:[] };

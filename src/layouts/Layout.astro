@@ -228,10 +228,19 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 
 <style>
 	@font-face {
-		/* Jost © 2020 The Jost Project Authors, SIL OFL 1.1; see /licenses/Jost-OFL-1.1.txt */
-		font-family: 'Jost';
-		src: url('../assets/fonts/jost-variable.ttf') format('truetype');
-		font-weight: 300 600;
+		/* SIL OFL 1.1; see /licenses/CormorantGaramond-OFL-1.1.txt */
+		font-family: 'Cormorant Garamond';
+		src: url('../assets/fonts/cormorant-garamond-variable.ttf') format('truetype');
+		font-weight: 300 700;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		/* SIL OFL 1.1; see /licenses/Cinzel-OFL-1.1.txt */
+		font-family: 'Cinzel';
+		src: url('../assets/fonts/cinzel-variable.ttf') format('truetype');
+		font-weight: 400 900;
 		font-style: normal;
 		font-display: swap;
 	}
@@ -240,7 +249,8 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 		--color-background: #101010;
 		--color-main: #eeeeee;
 		--color-line: rgba(238, 238, 238, 0.18);
-		--font-body: 'Jost', 'Helvetica Neue', sans-serif;
+		--font-body: 'Cormorant Garamond', Georgia, serif;
+		--font-heading: 'Cinzel', Georgia, serif;
 	}
 
 	html,
@@ -256,6 +266,8 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 	}
 
 	body {
+		font-size: 1.15rem;
+		font-weight: 600;
 		overflow-x: hidden;
 	}
 
@@ -281,6 +293,15 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 		outline: 2px solid #101010;
 		outline-offset: -4px;
 		transform: translateY(0);
+	}
+
+	:global(h1),
+	:global(h2),
+	:global(h3),
+	:global(h4),
+	:global(h5),
+	:global(h6) {
+		font-family: var(--font-heading);
 	}
 
 	:global(*) {

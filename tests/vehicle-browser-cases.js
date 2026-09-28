@@ -109,12 +109,12 @@ frame.addEventListener('load', async () => {
   });
   await test('Missing English and unpaired captions block export and identify the field', async () => {
     await t.importVehicle(filesFor()); input('title-en', '');
-    assert(t.validate().errors.some(error=>error.includes('English')), 'missing English title accepted');
-    await t.generate(); eq(d.activeElement.id, 'title-en', 'invalid field focus');
+    assert(t.validate().errors.some(error=>error.includes('Englisch')), 'missing English title accepted');
+    await t.generate(); await new Promise(resolve=>w.requestAnimationFrame(()=>w.requestAnimationFrame(resolve))); eq(d.activeElement.id, 'title-en', 'invalid field focus');
     input('title-en', record.titleEn);
     const caption = d.querySelector('[data-entry-caption="0"][data-language="en"]');
     caption.value=''; caption.dispatchEvent(new w.Event('input',{bubbles:true}));
-    assert(t.validate().errors.some(error=>error.includes('both captions')), 'unpaired caption accepted');
+    assert(t.validate().errors.some(error=>error.includes('Beide Bildunterschriften')), 'unpaired caption accepted');
   });
   await test('Legacy imports require explicit selection and cannot export until translated', async () => {
     await t.importVehicle(filesFor());
@@ -125,7 +125,7 @@ frame.addEventListener('load', async () => {
     d.querySelector('#legacy-import').checked=true;
     await t.importVehicle(filesFor(old)); eq(t.fields.titleEn.value,'','legacy English stays empty');
     eq(t.fields.title.value,record.title,'legacy German preserved');
-    assert(t.validate().errors.some(error=>error.includes('English')), 'incomplete legacy export accepted');
+    assert(t.validate().errors.some(error=>error.includes('Englisch')), 'incomplete legacy export accepted');
     d.querySelector('#legacy-import').checked=false;
     await t.importVehicle(filesFor());
   });
@@ -135,6 +135,7 @@ frame.addEventListener('load', async () => {
   });
   await test('Each rich-text toolbar restores only its own language selection', async () => {
     await t.importVehicle(filesFor());
+    t.showStep('content');
     const block=t.state.blocks[0];
     const de=d.querySelector(`[data-editor="${block.id}"][data-language="de"]`);
     const en=d.querySelector(`[data-editor="${block.id}"][data-language="en"]`);
@@ -148,6 +149,7 @@ frame.addEventListener('load', async () => {
   });
   await test('A real download exports an immutable bilingual snapshot', async () => {
     await t.importVehicle(filesFor());
+    t.showStep('review');
     let clicked=false,blob;
     const originalClick=w.HTMLAnchorElement.prototype.click, originalUrl=w.URL.createObjectURL;
     w.HTMLAnchorElement.prototype.click=function(){clicked=true; originalClick.call(this);};
@@ -166,7 +168,7 @@ frame.addEventListener('load', async () => {
       eq(exported,record,'immutable exported record');
       const response=await fetch('/zip',{method:'POST',body:blob});assert(response.ok,'ZIP artifact save failed');
     } finally {w.HTMLAnchorElement.prototype.click=originalClick;w.URL.createObjectURL=originalUrl;t.fields.titleEn.value=record.titleEn;}
-    assert(d.querySelector('#status').textContent.includes('ZIP created'),d.querySelector('#status').textContent);
+    assert(d.querySelector('#status').textContent.includes('ZIP mit'),d.querySelector('#status').textContent);
   });
   await test('Desktop and 390px layout do not overflow', async () => {
     for (const width of [1440,390]) { frame.style.width=`${width}px`; await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))); assert(d.documentElement.scrollWidth<=width,`overflow at ${width}: ${d.documentElement.scrollWidth}`); }

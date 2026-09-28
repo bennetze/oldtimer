@@ -89,7 +89,7 @@ const sectionNavigationItems = [
   description="Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
   openGraphImage={heroSitePoster}
   openGraphImageAlt="Ein historischer Roadster während einer Fahrt"
-  dateModified="2026-09-15"
+  dateModified="2026-09-17"
 >
   <SiteChrome>
     <main id="main-content" tabindex="-1">
@@ -224,11 +224,6 @@ const sectionNavigationItems = [
           <div class="section-cta-slot">
             <a class="section-cta" href={sitePath("/handwerk/")}>
               <span class="section-cta__label">Mehr erfahren</span>
-              <span class="section-cta__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg>
-              </span>
             </a>
           </div>
           <div class="scroll-cues" aria-label="Abschnitt wechseln">
@@ -299,11 +294,6 @@ const sectionNavigationItems = [
           <div class="section-cta-slot">
             <a class="section-cta" href={sitePath("/ueber-uns/")}>
               <span class="section-cta__label">Mehr erfahren</span>
-              <span class="section-cta__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg>
-              </span>
             </a>
           </div>
           <div class="scroll-cues" aria-label="Abschnitt wechseln">
@@ -374,11 +364,6 @@ const sectionNavigationItems = [
           <div class="section-cta-slot">
             <a class="section-cta" href={sitePath("/projekte/")}>
               <span class="section-cta__label">Mehr erfahren</span>
-              <span class="section-cta__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg>
-              </span>
             </a>
           </div>
           <div class="scroll-cues" aria-label="Abschnitt wechseln">
@@ -412,6 +397,7 @@ const sectionNavigationItems = [
     background: transparent;
     border: 0;
     text-decoration: none;
+    touch-action: manipulation;
     text-transform: uppercase;
     letter-spacing: 0.24em;
     font-size: 0.66rem;
@@ -636,7 +622,7 @@ const sectionNavigationItems = [
   h1,
   .media-panel h2 {
     margin: 0;
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-weight: 300;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -690,93 +676,47 @@ const sectionNavigationItems = [
   }
 
   .section-cta {
-    position: relative;
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1.25rem;
-    width: 246px;
-    min-height: 56px;
+    justify-content: center;
+    min-width: 264px;
+    min-height: 60px;
     margin: 0;
-    padding: 7px;
-    color: #eeeeee;
-    background: rgba(17, 17, 17, 0.42);
-    border: 1px solid rgba(238, 238, 238, 0.6);
+    padding: 17px 34px;
+    color: #171717;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid transparent;
     border-radius: 999px;
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
     text-decoration: none;
+    touch-action: manipulation;
     text-transform: uppercase;
     white-space: nowrap;
-    letter-spacing: 0.14em;
-    font-size: 0.8rem;
-    font-weight: 500;
+    letter-spacing: 0.16em;
+    font-size: 0.9rem;
+    font-weight: 600;
     line-height: 1.25;
     transition:
-      background 220ms ease-in-out,
-      border-color 220ms ease-in-out;
-  }
-
-  .section-cta__label {
-    position: absolute;
-    inset: 0 3.75px 0 58.25px;
-    display: grid;
-    place-items: center;
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .section-cta__icon {
-    position: absolute;
-    left: 3.75px;
-    top: 3.75px;
-    z-index: 1;
-    display: grid;
-    place-items: center;
-    width: 46.5px;
-    height: 46.5px;
-    border-radius: 50%;
-    color: #171717;
-    background: #eeeeee;
-    transition:
-      left 500ms cubic-bezier(0.4, 0, 0.2, 1),
-      background 220ms ease-in-out;
-  }
-
-  .section-cta__icon svg {
-    width: 23px;
-    height: 23px;
-    stroke: currentColor;
-    stroke-width: 1.25;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: transform 220ms ease-in-out;
-  }
-
-  .section-cta:hover,
-  .section-cta:focus-visible {
-    background: rgba(17, 17, 17, 0.52);
-    border-color: #eeeeee;
-  }
-
-  .section-cta:hover .section-cta__icon,
-  .section-cta:focus-visible .section-cta__icon {
-    left: calc(100% - 50.25px);
-    background: #ffffff;
-  }
-
-  .section-cta:hover .section-cta__label,
-  .section-cta:focus-visible .section-cta__label {
-    transform: translateX(-54.5px);
-  }
-
-  .section-cta:hover svg,
-  .section-cta:focus-visible svg {
-    transform: translateX(2px);
+      background-color 300ms ease,
+      transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .section-cta:focus-visible {
-    outline: 2px solid #eeeeee;
+    background: rgba(255, 255, 255, 0.92);
+    outline: 2px solid #ffffff;
     outline-offset: 5px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .section-cta:hover {
+      transform: scale(1.04);
+    }
+  }
+
+  .section-cta:active {
+    background: rgba(255, 255, 255, 0.86);
+    transform: none;
   }
 
   /* Keep the down arrow below its CTA without shifting the section heading. */
@@ -914,23 +854,18 @@ const sectionNavigationItems = [
 
   @media (max-width: 360px) {
     .section-cta {
-      width: 230px;
-      gap: 1rem;
-      padding: 7px;
-      font-size: 0.76rem;
+      min-width: 230px;
+      padding: 17px 28px;
+      font-size: 0.82rem;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .section-cta,
-    .section-cta__label,
-    .section-cta__icon,
-    .section-cta__icon svg {
+    .section-cta {
       transition: none;
     }
 
-    .section-cta:hover svg,
-    .section-cta:focus-visible svg {
+    .section-cta:hover {
       transform: none;
     }
 

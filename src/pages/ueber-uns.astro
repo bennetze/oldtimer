@@ -1,20 +1,17 @@
-±/Users/betannet/.zshenv:.:3: no such file or directory: /Users/betannet/.cargo/env
-/Users/betannet/.zshenv:.:3: no such file or directory: /Users/betannet/.cargo/env
 ---
 import { Image } from 'astro:assets';
 import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
-import antonCar from '../assets/oldtimer/about-anton-car.png';
-import antonPortrait from '../assets/oldtimer/about-anton-portrait.png';
-import contactEntrance from '../assets/oldtimer/about-contact-entrance.png';
-import contactExterior from '../assets/oldtimer/about-contact-exterior.png';
-import marioCar from '../assets/oldtimer/about-mario-car.png';
-import marioPortrait from '../assets/oldtimer/about-mario-portrait.png';
-import teamConversation from '../assets/oldtimer/about-team-conversation.png';
-import teamPortrait from '../assets/oldtimer/about-team-portrait.png';
-import teamWorkshop from '../assets/oldtimer/about-team-workshop.png';
+import antonCar from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00382.webp';
+import antonPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00649.webp';
+import contactEntrance from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00445.webp';
+import contactExterior from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00113.webp';
+import marioPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00776.webp';
+import teamConversation from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00096.webp';
+import teamPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00806.webp';
+import teamWorkshop from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00104.webp';
 import germanyMap from '../assets/graphics/germany-silhouette.svg';
 import locationPin from '../assets/graphics/geo-alt-fill.svg';
-import heroSitePoster from '../assets/oldtimer/hero-site-poster.jpg';
+import teamPaint from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00517.webp';
 
 const qualifications = {
 	mario: ['KFZ-Mechaniker-Meister', 'KFZ-Elektriker-Meister', 'Karosseriebau-Meister'],
@@ -23,12 +20,13 @@ const qualifications = {
 const siteRoot = new URL(import.meta.env.BASE_URL, Astro.site ?? Astro.url);
 const aboutUrl = new URL('ueber-uns/', siteRoot);
 const people = [
-	{ name: 'Mario Schrank', id: 'mario-schrank', titles: qualifications.mario },
-	{ name: 'Anton Schrank', id: 'anton-schrank', titles: qualifications.anton },
-].map(({ name, id, titles }) => ({
+	{ name: 'Mario Schrank', id: 'mario-schrank', titles: qualifications.mario, image: marioPortrait },
+	{ name: 'Anton Schrank', id: 'anton-schrank', titles: qualifications.anton, image: antonPortrait },
+].map(({ name, id, titles, image }) => ({
 	'@type': 'Person',
 	'@id': `${aboutUrl.href}#${id}`,
 	name,
+	image: new URL(image.src, siteRoot).href,
 	worksFor: { '@id': `${siteRoot.href}#organization` },
 	subjectOf: { '@id': `${aboutUrl.href}#webpage` },
 	hasCredential: titles.map((title) => ({
@@ -52,11 +50,11 @@ const sectionNavigationItems = [
 	description="Mario Schrank, dreifacher Meister, und Anton Schrank, KFZ-Techniker-Meister: Lernen Sie die Menschen, das Handwerk und unseren Standort in Fischbach/Rhön kennen."
 	sections={sectionNavigationItems}
 	theme="light"
-	background="linear-gradient(180deg, #eeeeee 0%, #eeeeee 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #9299c4 47%, #688dca 54%, #557fb8 61%, #6695d3 70%, #82afe2 82%, #ffffff 100%)"
-	openGraphImage={heroSitePoster}
-	openGraphImageAlt="Ein historischer Roadster während einer Fahrt"
+	background="linear-gradient(180deg, #ffffff 0%, #ffffff 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #b1b6d5 47%, #8faede 54%, #80a3d1 61%, #8bb0e1 70%, #a6c6ec 82%, #ffffff 100%)"
+	openGraphImage={marioPortrait}
+	openGraphImageAlt="Mario Schrank neben einem historischen Fahrzeug in der Werkstatt"
 	structuredDataType="AboutPage"
-	dateModified="2026-09-13"
+	dateModified="2026-09-28"
 	additionalJsonLd={people}
 	sectionNavigationVisible={false}
 >
@@ -78,7 +76,7 @@ const sectionNavigationItems = [
 						</p>
 					</header>
 					<div class="story__layout">
-						<div class="collage collage--double collage--right" aria-label="Visuelle Platzhalter für Mario Schrank">
+						<div class="collage collage--single collage--right" aria-label="Mario Schrank in der Werkstatt">
 							<figure
 								class="image-layer image-layer--portrait"
 								data-parallax-layer
@@ -87,26 +85,11 @@ const sectionNavigationItems = [
 							>
 								<Image
 									src={marioPortrait}
-									alt="KI-generierter Platzhalter für ein geplantes Porträt von Mario Schrank"
+									alt="Mario Schrank neben einem historischen Fahrzeug in der Werkstatt"
 									widths={[560, 760, 972]}
 									sizes="(max-width: 840px) 88vw, 48vw"
 									format="webp"
 									loading="eager"
-								/>
-							</figure>
-							<figure
-								class="image-layer image-layer--landscape"
-								data-parallax-layer
-								data-speed="0.21"
-								data-range="196"
-							>
-								<Image
-									src={marioCar}
-									alt=""
-									widths={[640, 960, 1280]}
-									sizes="(max-width: 840px) 76vw, 42vw"
-									format="webp"
-									loading="lazy"
 								/>
 							</figure>
 						</div>
@@ -141,7 +124,7 @@ const sectionNavigationItems = [
 					</p>
 				</header>
 				<div class="story__layout">
-					<div class="collage collage--double collage--left" aria-label="Visuelle Platzhalter für Anton Schrank">
+					<div class="collage collage--double collage--left collage--portraits" aria-label="Anton Schrank in der Werkstatt">
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
@@ -150,7 +133,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={antonPortrait}
-								alt="KI-generierter Platzhalter für ein geplantes Porträt von Anton Schrank"
+								alt="Anton Schrank in der Werkstatt"
 								widths={[560, 760, 971]}
 								sizes="(max-width: 840px) 88vw, 48vw"
 								format="webp"
@@ -165,7 +148,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={antonCar}
-								alt=""
+								alt="Anton Schrank bei der Arbeit an einer Fahrzeugkarosserie"
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 76vw, 42vw"
 								format="webp"
@@ -199,16 +182,16 @@ const sectionNavigationItems = [
 			>
 				<h2 id="team-title">Das Team</h2>
 				<div class="story__layout">
-					<div class="collage collage--triple collage--right" aria-label="Visuelle Platzhalter für das Team">
+					<div class="collage collage--triple collage--right collage--team-details" aria-label="Einblicke in die Arbeit des Teams">
 						<figure
 							class="image-layer image-layer--team-main"
 							data-parallax-layer
-							data-speed="0.104"
-							data-range="122"
+							data-speed="0.10"
+							data-range="80"
 						>
 							<Image
 								src={teamPortrait}
-								alt="KI-generierter Platzhalter für eine geplante Teamaufnahme"
+								alt="Eine behandschuhte Hand prüft die rote Lackoberfläche eines Oldtimers"
 								widths={[760, 1120, 1536]}
 								sizes="(max-width: 840px) 94vw, 55vw"
 								format="webp"
@@ -218,12 +201,12 @@ const sectionNavigationItems = [
 						<figure
 							class="image-layer image-layer--team-conversation"
 							data-parallax-layer
-							data-speed="0.19"
-							data-range="180"
+							data-speed="0.18"
+							data-range="135"
 						>
 							<Image
 								src={teamConversation}
-								alt=""
+								alt="Eine Hand prüft die Form eines blanken Karosserieblechs"
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 72vw, 42vw"
 								format="webp"
@@ -233,17 +216,20 @@ const sectionNavigationItems = [
 						<figure
 							class="image-layer image-layer--team-workshop"
 							data-parallax-layer
-							data-speed="0.245"
-							data-range="220"
+							data-speed="0.24"
+							data-range="170"
 						>
 							<Image
 								src={teamWorkshop}
-								alt=""
+								alt="Präzise Handarbeit an einem kleinen Bauteil auf der Werkbank"
 								widths={[560, 840, 1120]}
 								sizes="(max-width: 840px) 58vw, 31vw"
 								format="webp"
 								loading="lazy"
 							/>
+						</figure>
+						<figure class="image-layer image-layer--team-paint" data-parallax-layer data-speed="0.14" data-range="110">
+							<Image src={teamPaint} alt="Eine Lackierpistole beim Auftragen von Lack" widths={[480, 760, 1024]} sizes="(max-width: 840px) 55vw, 28vw" format="webp" loading="lazy" />
 						</figure>
 					</div>
 
@@ -265,7 +251,7 @@ const sectionNavigationItems = [
 			>
 				<h2 id="contact-title">Kontakt</h2>
 				<div class="story__layout">
-					<div class="collage collage--double collage--left" aria-label="Visuelle Platzhalter für den Standort in Fischbach">
+					<div class="collage collage--double collage--left collage--contact" aria-label="Einblicke in die Werkstatt in Fischbach">
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
@@ -274,7 +260,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={contactExterior}
-								alt="KI-generierter Platzhalter für eine geplante Außenaufnahme des Standorts"
+								alt="Arbeit an einem historischen Cabriolet in der Werkstatt"
 								widths={[560, 760, 1024]}
 								sizes="(max-width: 840px) 88vw, 48vw"
 								format="webp"
@@ -289,7 +275,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={contactEntrance}
-								alt="KI-generierter Platzhalter für eine geplante Aufnahme des Werkstatteingangs"
+								alt="Drei Mitarbeiter im Gespräch an einem historischen Fahrzeug"
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 76vw, 42vw"
 								format="webp"
@@ -350,6 +336,101 @@ const sectionNavigationItems = [
 
 
 <style>
+	:global(.editorial-page) .collage--single,
+	:global(.editorial-page) .collage--portraits,
+	:global(.editorial-page) .collage--team-details { min-height: 0; }
+	:global(.editorial-page) :is(.collage--single, .collage--portraits) .image-layer {
+		position: relative; inset: auto; height: auto;
+	}
+	:global(.editorial-page) :is(.collage--single, .collage--portraits) img {
+		display: block; height: auto;
+	}
+	:global(.editorial-page) .collage--single .image-layer { width: 78%; margin-left: auto; }
+	:global(.editorial-page) .collage--portraits { display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
+	:global(.editorial-page) .collage--portraits .image-layer--portrait { width: 110%; }
+	:global(.editorial-page) .collage--portraits .image-layer--landscape { width: 100%; margin-top: 55%; }
+	:global(.editorial-page) .story--team {
+		/* Reserve the full 170px downward travel plus heading clearance. */
+		padding-bottom: clamp(15rem, 18vw, 18rem);
+	}
+	:global(.editorial-page) .story--team h2 {
+		/* The top photo can travel 80px toward the heading. */
+		margin-bottom: clamp(10rem, 12vw, 12rem);
+	}
+	:global(.editorial-page) .collage--team-details {
+		min-height: clamp(44rem, 58vw, 52rem);
+	}
+	:global(.editorial-page) .collage--team-details .image-layer {
+		position: absolute;
+		inset: auto;
+		height: auto;
+		margin: 0;
+	}
+	:global(.editorial-page) .collage--team-details img {
+		display: block;
+		height: auto;
+	}
+	:global(.editorial-page) .collage--team-details .image-layer--team-main {
+		top: 0;
+		right: 0;
+		width: 74%;
+		z-index: 1;
+	}
+	:global(.editorial-page) .collage--team-details .image-layer--team-conversation {
+		top: 30%;
+		left: 0;
+		width: 52%;
+		z-index: 2;
+	}
+	:global(.editorial-page) .collage--team-details .image-layer--team-workshop {
+		bottom: 4%;
+		right: 0;
+		width: 48%;
+		z-index: 3;
+	}
+	:global(.editorial-page) .collage--team-details .image-layer--team-paint {
+		bottom: 0;
+		left: 10%;
+		width: 24%;
+		z-index: 4;
+	}
+	:global(.editorial-page) .collage--contact {
+		min-height: clamp(34rem, 52vw, 48rem);
+	}
+	:global(.editorial-page) .collage--contact .image-layer--portrait {
+		width: 94%;
+		height: auto;
+	}
+	:global(.editorial-page) .collage--contact .image-layer--landscape {
+		width: 68%;
+		height: auto;
+	}
+	:global(.editorial-page) .collage--contact img {
+		display: block;
+		height: auto;
+	}
+	@media (max-width: 840px) {
+		:global(.editorial-page) .collage--single .image-layer { width: 90%; }
+		:global(.editorial-page) .story--team .story__layout { gap: 5rem; }
+		:global(.editorial-page) .collage--team-details {
+			min-height: clamp(28rem, 124vw, 44rem);
+		}
+		:global(.editorial-page) .collage--team-details .image-layer--team-main { width: 88%; }
+		:global(.editorial-page) .collage--team-details .image-layer--team-conversation { top: 32%; width: 65%; }
+		:global(.editorial-page) .collage--team-details .image-layer--team-workshop { width: 57%; bottom: 7%; }
+		:global(.editorial-page) .collage--team-details .image-layer--team-paint { width: 31%; left: 3%; }
+		:global(.editorial-page) .collage--contact {
+			min-height: 0;
+			display: grid;
+			gap: 3rem;
+		}
+		:global(.editorial-page) .collage--contact .image-layer {
+			position: relative;
+			inset: auto;
+		}
+		:global(.editorial-page) .collage--contact .image-layer--landscape { justify-self: end; }
+	}
+
 	.profile-heading {
 		margin-bottom: clamp(8rem, 10vw, 10.5rem);
 		text-align: center;
@@ -368,8 +449,8 @@ const sectionNavigationItems = [
 		gap: 0.45rem clamp(1rem, 2vw, 2.2rem);
 		max-width: 68rem;
 		margin: 0 auto;
-		font-size: clamp(0.88rem, 1.05vw, 1.08rem);
-		font-weight: 470;
+		font-size: clamp(1.02rem, 1.2vw, 1.25rem);
+		font-weight: 650;
 		line-height: 1.5;
 		letter-spacing: 0.105em;
 		text-transform: uppercase;
@@ -388,7 +469,7 @@ const sectionNavigationItems = [
 		.profile-credentials {
 			flex-direction: column;
 			gap: 0.3rem;
-			font-size: clamp(0.82rem, 3.6vw, 0.94rem);
+			font-size: clamp(0.97rem, 4.15vw, 1.1rem);
 			letter-spacing: 0.085em;
 		}
 	}
@@ -422,7 +503,7 @@ const sectionNavigationItems = [
 		position: absolute;
 		left: 46%;
 		top: 57%;
-		color: #111111;
+		color: #000000;
 	}
 
 	.location-map__marker img {
@@ -483,20 +564,20 @@ const sectionNavigationItems = [
 
 	.contact-label,
 	.contact-list strong {
-		font-size: clamp(0.88rem, 0.96vw, 1.04rem);
+		font-size: clamp(1.02rem, 1.1vw, 1.2rem);
 		line-height: 1.55;
 		transition: transform 180ms ease;
 	}
 
 	.contact-label {
-		font-weight: 430;
+		font-weight: 650;
 		letter-spacing: 0.09em;
 		text-transform: uppercase;
 	}
 
 	.contact-list strong {
 		min-width: 0;
-		font-weight: 330;
+		font-weight: 600;
 		overflow-wrap: anywhere;
 	}
 
@@ -540,7 +621,7 @@ const sectionNavigationItems = [
 
 		.contact-label,
 		.contact-list strong {
-			font-size: clamp(0.87rem, 3.8vw, 1rem);
+			font-size: clamp(1.02rem, 4.35vw, 1.15rem);
 		}
 	}
 
