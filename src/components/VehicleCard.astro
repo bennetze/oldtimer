@@ -1,6 +1,7 @@
 ---
+import { vehicleImage } from '../config/vehicleImages';
 import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
-import { vehicleImageRoute, vehicleRoute, type VehicleEntry } from '../config/vehicles';
+import { vehicleRoute, type VehicleEntry } from '../config/vehicles';
 
 interface Props {
 	vehicle: VehicleEntry;
@@ -14,6 +15,7 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
 const content = localizeVehicle(vehicle.data, language);
+const image = vehicleImage(vehicle, vehicle.data.cardImage, 'card', basePath);
 const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 ---
 
@@ -29,7 +31,8 @@ const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 	<a href={sitePath(vehicleRoute(vehicle))} aria-label={content.title}>
 		<div class="vehicle-card__media">
 			<img
-				src={sitePath(vehicleImageRoute(vehicle, vehicle.data.cardImage))}
+				{...image}
+				sizes="(max-width: 680px) 90vw, (max-width: 980px) 44vw, 29vw"
 				alt={content.cardImageAlt}
 				loading={index < 6 ? 'eager' : 'lazy'}
 				fetchpriority={index === 0 ? 'high' : 'auto'}

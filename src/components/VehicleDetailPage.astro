@@ -1,7 +1,6 @@
 ---
 import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
-import { join } from 'node:path';
-import sharp from 'sharp';
+import { vehicleImage } from '../config/vehicleImages';
 import Layout from '../layouts/Layout.astro';
 import { validateVehicleBlocks } from '../config/vehicleHtml.js';
 import {
@@ -47,11 +46,8 @@ const galleryImagePath = (source: string) => sitePath(vehicleImageRoute(vehicle,
 const siteUrl = Astro.site ?? Astro.url;
 const pageUrl = new URL(Astro.url.pathname, siteUrl).href;
 const vehicleId = `${pageUrl}#vehicle`;
-const leadImageMetadata = await sharp(join(process.cwd(), 'public', vehicleImageRoute(vehicle, vehicle.data.leadImage))).metadata();
 const leadImage = {
-	src: galleryImagePath(vehicle.data.leadImage),
-	width: leadImageMetadata.width ?? 1200,
-	height: leadImageMetadata.height ?? 800,
+	...vehicleImage(vehicle, vehicle.data.leadImage, 'detail', basePath),
 	format: 'webp' as const,
 };
 const vehicleJsonLd = {
@@ -95,6 +91,8 @@ const vehicleJsonLd = {
 			<figure class="vehicle-lead">
 				<img
 					src={leadImage.src}
+					srcset={leadImage.srcset}
+					sizes="90vw"
 					data-authored alt={content.leadImageAlt}
 					width={leadImage.width}
 					height={leadImage.height}
@@ -139,7 +137,8 @@ const vehicleJsonLd = {
 											aria-label={`${image.alt}${language === 'en' ? ' — enlarge' : ' vergrößern'}`}
 										>
 											<img
-												src={galleryImagePath(image.src)}
+												{...vehicleImage(vehicle, image.src, 'detail', basePath)}
+												sizes={block.images.length === 1 ? "90vw" : imageIndex === 0 && block.images.length >= 3 ? "(max-width: 760px) 90vw, 60vw" : "(max-width: 760px) 90vw, 45vw"}
 												alt={image.alt}
 												loading="lazy"
 												decoding="async"
@@ -228,7 +227,7 @@ const vehicleJsonLd = {
 
 	lightboxClose?.addEventListener('click', closeLightbox);
 	lightbox?.addEventListener('click', (event) => {
-		if (event.target === lightbox) closeLightbox();
+		if (event.target === lightbox || (event.target instanceof Element && event.target.classList.contains('image-lightbox__stage'))) closeLightbox();
 	});
 	lightbox?.addEventListener('keydown', (event) => {
 		if (event.key === 'Escape') {

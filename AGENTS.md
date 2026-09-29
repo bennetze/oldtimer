@@ -399,7 +399,7 @@ but final visuals and assets should be original and project-local.
 
 ## Checked offline vehicle editing
 
-The offline editor starts at `../oldtimer-fahrzeuge/index.html` and loads local
+The offline editor starts at `../oldtimer-intern/index.html` and loads local
 classic scripts and styles. Its `editor.js` contract must stay compatible with `src/config/vehicleRecord.js` and the
 independent website HTML validator. Keep folder round-trip and malicious-input
 fixtures in `tests/vehicle-contract.test.mjs`, `tests/vehicle-import.test.mjs` and

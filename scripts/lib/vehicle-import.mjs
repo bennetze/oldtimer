@@ -1,9 +1,9 @@
-import { createHash } from 'node:crypto';
+import { createHash, randomUUID } from 'node:crypto';
 import { createReadStream } from 'node:fs';
 import { lstat, readdir, readFile, writeFile, mkdir, rename, rm, realpath, mkdtemp } from 'node:fs/promises';
 import { basename, dirname, join, relative, resolve, sep } from 'node:path';
 import sharp from 'sharp';
-import { validateVehicleRecord } from '../../src/config/vehicleRecord.js';
+import { validateVehicleRecord, validVehicleFilename } from '../../src/config/vehicleRecord.js';
 import { validateVehicleHtml } from '../../src/config/vehicleHtml.js';
 import { discoverVehicleCategory } from './vehicle-files.mjs';
 import { categories, sitemapEntries, renderSitemap, checkCrawlerFiles } from './crawlers.mjs';
@@ -84,7 +84,7 @@ async function readExport(source) {
 	}
 	if (folders.length !== 1) throw new Error('Export must contain exactly one vehicle folder.');
 	const slug = folders[0];
-	if (!routeKey.test(`${category}/${slug}`)) throw new Error('Invalid vehicle folder name.');
+	if (!routeKey.test(`${category}/${slug}`) || !validVehicleFilename(`${slug}.astro`)) throw new Error('Invalid vehicle folder name.');
 	for (const name of entries) if (![slug, `${slug}.astro`].includes(name)) throw new Error(`Unexpected export entry: ${name}`);
 	if (entries.includes(`${slug}.astro`)) {
 		const wrapper = await lstat(join(source, `${slug}.astro`));
@@ -101,12 +101,13 @@ async function readExport(source) {
 		const path = join(folder, name);
 		await assertSafePath(source, path);
 		const stat = await lstat(path);
-		if (!stat.isFile() || name.includes('..') || !/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(name) || caseNames.has(name.toLowerCase())) throw new Error(`Invalid or duplicate file: ${name}`);
+		if (!stat.isFile() || !validVehicleFilename(name) || caseNames.has(name.toLowerCase())) throw new Error(`Invalid or duplicate file: ${name}`);
 		caseNames.add(name.toLowerCase());
 		total += stat.size;
 		if (total > MAX_BYTES || stat.size > (name === 'vehicle.json' ? 2 : 50) * 1024 ** 2) throw new Error('Export exceeds size limits.');
 		const bytes = await readFile(path);
 		if (name !== 'vehicle.json') {
+			if (!validVehicleFilename(name.replace(/\.[^.]+$/, '.webp'))) throw new Error(`Invalid converted filename: ${name}`);
 			const extension = name.split('.').at(-1).toLowerCase().replace('jpg', 'jpeg');
 			if (!['jpeg', 'png', 'webp', 'avif'].includes(extension)) throw new Error(`Unsupported image: ${name}`);
 			const stem = name.replace(/\.[^.]+$/, '').toLowerCase();
@@ -194,6 +195,15 @@ export async function applyImport(review, approvedToken, { afterWrite } = {}) {
 	await mkdir(join(root, '.cache'), { recursive: true });
 	const lock = join(root, '.cache/vehicle-import.lock');
 	await mkdir(lock); // Exclusive directory; an interrupted import blocks another apply.
+	const owner = randomUUID();
+	await writeFile(join(lock, 'cli.json'), jsonBytes({ id: owner }), { flag: 'wx' });
+	const assertOwner = async () => {
+		await assertSafePath(root, lock);
+		await assertSafePath(root, join(lock, 'cli.json'));
+		const files = await readdir(lock);
+		if (files.length !== 1 || files[0] !== 'cli.json' || JSON.parse(await readFile(join(lock, 'cli.json'), 'utf8')).id !== owner) throw new Error('Import lock changed; retain it for manual recovery.');
+	};
+	const currentHash = async path => await exists(path) ? fileHash(path) : null;
 	let backup;
 	const written = [];
 	try {
@@ -201,7 +211,12 @@ export async function applyImport(review, approvedToken, { afterWrite } = {}) {
 		await writeFile(join(backup, 'review.json'), jsonBytes({ token: fresh.token, from: fresh.from, to: fresh.key, summary: fresh.summary }));
 		for (const [path, bytes] of fresh.changes) {
 			await assertSafePath(root, join(root, path));
-			if (await exists(join(root, path))) { await mkdir(dirname(join(backup, 'before', path)), { recursive: true }); await writeFile(join(backup, 'before', path), await readFile(join(root, path))); }
+			if (await exists(join(root, path))) {
+				const bytes = await readFile(join(root, path));
+				if (sha(bytes) !== fresh.before[path]) throw new Error(`Website changed during backup: ${path}`);
+				await mkdir(dirname(join(backup, 'before', path)), { recursive: true }); await writeFile(join(backup, 'before', path), bytes);
+				if (await fileHash(join(backup, 'before', path)) !== fresh.before[path]) throw new Error(`Backup could not be verified: ${path}`);
+			}
 			if (bytes) { await mkdir(dirname(join(backup, 'stage', path)), { recursive: true }); await writeFile(join(backup, 'stage', path), bytes); }
 		}
 		if (JSON.stringify(fresh.before) !== JSON.stringify(await snapshot(root, trackedInputs))) throw new Error('Website changed during staging; nothing applied.');
@@ -209,9 +224,12 @@ export async function applyImport(review, approvedToken, { afterWrite } = {}) {
 		const ordered = [...fresh.changes].sort((a, b) => Number(a[1] === null) - Number(b[1] === null));
 		for (const [path, bytes] of ordered) {
 			await assertSafePath(root, join(root, path));
-			written.push(path);
+			await assertOwner();
+			if (await currentHash(join(root, path)) !== (fresh.before[path] || null)) throw new Error(`Website changed before writing: ${path}`);
 			if (bytes) { await mkdir(dirname(join(root, path)), { recursive: true }); await rename(join(backup, 'stage', path), join(root, path)); }
 			else await rm(join(root, path));
+			written.push(path);
+			if (await currentHash(join(root, path)) !== (bytes ? sha(bytes) : null)) throw new Error(`Saved bytes could not be verified: ${path}`);
 			await afterWrite?.(path); // Test-only fault injection; never exposed by CLI.
 		}
 		if (fresh.from && fresh.from !== fresh.key) await rm(join(root, pagePrefix, fresh.from), { recursive: false, force: false }).catch(async (error) => {
@@ -224,17 +242,33 @@ export async function applyImport(review, approvedToken, { afterWrite } = {}) {
 		return { backup, changes: fresh.summary };
 	} catch (error) {
 		try {
-			for (const path of written.reverse()) {
+			const checkRollback = async path => {
 				await assertSafePath(root, join(root, path));
+				await assertOwner();
+				const entry = fresh.summary.find(entry => entry.path === path);
+				const now = await currentHash(join(root, path));
+				if (now !== entry.before && now !== entry.after) throw new Error(`External edit preserved: ${path}`);
 				const original = join(backup, 'before', path);
-				if (await exists(original)) { await mkdir(dirname(join(root, path)), { recursive: true }); await writeFile(join(root, path), await readFile(original)); }
+				await assertSafePath(root, original);
+				const bytes = entry.before ? await readFile(original) : null;
+				if (bytes && sha(bytes) !== entry.before) throw new Error(`Damaged backup: ${path}`);
+				return { entry, now, bytes };
+			};
+			for (const path of written) await checkRollback(path);
+			for (const path of [...written].reverse()) {
+				const { entry, now, bytes } = await checkRollback(path);
+				if (now === entry.before) continue;
+				await assertOwner();
+				if (await currentHash(join(root, path)) !== now) throw new Error(`External edit preserved: ${path}`);
+				if (bytes) { await mkdir(dirname(join(root, path)), { recursive: true }); await writeFile(join(root, path), bytes); }
 				else await rm(join(root, path), { force: true });
+				if (await currentHash(join(root, path)) !== entry.before) throw new Error(`Restored bytes could not be verified: ${path}`);
 			}
 			const { rmdir } = await import('node:fs/promises');
 			await rmdir(join(root, pagePrefix, fresh.key)).catch((failure) => { if (!['ENOENT', 'ENOTEMPTY'].includes(failure.code)) throw failure; });
 		} catch (rollbackError) { throw new Error(`Import failed: ${error.message}. Rollback also failed: ${rollbackError.message}. Keep lock and recover from ${backup}.`, { cause: rollbackError }); }
-		await rm(lock, { recursive: true });
+		await assertOwner(); await rm(lock, { recursive: true });
 		throw new Error(`Import rolled back: ${error.message}. Backup: ${backup || 'not created'}`, { cause: error });
 	}
-	finally { if (backup && await exists(join(backup, 'COMPLETED'))) await rm(lock, { recursive: true }); }
+	finally { if (backup && await exists(join(backup, 'COMPLETED'))) { await assertOwner(); await rm(lock, { recursive: true }); } }
 }

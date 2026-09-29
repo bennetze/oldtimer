@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
+import { readVehicleTool } from '../scripts/lib/vehicle-tool.mjs';
 import { mkdtemp, mkdir, readFile, writeFile, readdir, lstat, rm } from 'node:fs/promises';
 import { join, basename } from 'node:path';
 import { tmpdir } from 'node:os';
@@ -20,16 +21,16 @@ function filesystem(root, faults = {}) {
       name: basename(path), kind,
       async getDirectoryHandle(name, { create = false } = {}) { const target = join(path, name); try { if (create) await mkdir(target, { recursive: true }); if (!(await stat(target)).isDirectory()) throw new Error('Not a directory'); return handle(target, 'directory'); } catch(e) { return error(e); } },
       async getFileHandle(name, { create = false } = {}) { const target = join(path, name); try { if (create) await writeFile(target, '', { flag: 'ax' }).catch(e => { if (e.code !== 'EEXIST') throw e; }); if (!(await stat(target)).isFile()) throw new Error('Not a file'); return handle(target, 'file'); } catch(e) { return error(e); } },
-      async getFile() { try { return new File([await readFile(path)], basename(path)); } catch (e) { return error(e); } },
-      async createWritable() { let data; return { async write(value) { if (faults.write?.(path)) throw new Error('Simulated write failure'); data = value instanceof Blob ? Buffer.from(await value.arrayBuffer()) : value; }, async close() { await writeFile(path, data); }, async abort() {} }; },
-      async removeEntry(name) { try { const target = join(path, name); if ((await stat(target)).isDirectory()) { const { rmdir } = await import('node:fs/promises'); await rmdir(target); } else await rm(target); } catch (e) { return error(e); } },
+      async getFile() { try { await faults.read?.(path); return new File([await readFile(path)], basename(path)); } catch (e) { return error(e); } },
+      async createWritable() { let data; return { async write(value) { if (faults.write?.(path)) throw new Error('Simulated write failure'); data = value instanceof Blob ? Buffer.from(await value.arrayBuffer()) : value; }, async close() { await writeFile(path, data); await faults.close?.(path); }, async abort() {} }; },
+      async removeEntry(name) { try { const target = join(path, name); if (faults.remove?.(target)) throw new Error("Simulated cleanup failure"); if ((await stat(target)).isDirectory()) { const { rmdir } = await import('node:fs/promises'); await rmdir(target); } else await rm(target); } catch (e) { return error(e); } },
       async *entries() { for (const entry of await readdir(path, { withFileTypes: true })) yield [entry.name, handle(join(path, entry.name), entry.isDirectory() ? 'directory' : 'file')]; },
     };
   }
   return handle(root, 'directory');
 }
 const context = vm.createContext({ window: {}, crypto: webcrypto, Blob, File, TextEncoder, Uint8Array, structuredClone, URL, console });
-for (const name of ['project-access.js', 'project-save.js']) vm.runInContext(await readFile(new URL(`../../oldtimer-fahrzeuge/${name}`, import.meta.url), 'utf8'), context);
+for (const name of ['project-access.js', 'project-save.js']) vm.runInContext(await readVehicleTool(name), context);
 const A = context.window.VehicleProjectAccess, S = context.window.VehicleProjectSave;
 const api = { validateRecord: value => validateVehicleRecord(value, validateVehicleHtml), createAstro: createVehiclePage, async checkImage(file) { const bytes = Buffer.from(await file.arrayBuffer()); const image = sharp(bytes); const metadata = await image.metadata(); await image.stats(); return new File([bytes], file.name, { type: `image/${metadata.format}` }); } };
 const plain = value => JSON.parse(JSON.stringify(value));
@@ -90,10 +91,10 @@ test('write failures restore originals; interrupted rollback is recoverable', as
   const before = await A.snapshot(f.handle); f.record.title = 'Edited'; let once = false;
   f.faults.write = path => { if (!once && path.endsWith('/test-car/vehicle.json') && !path.includes('backup-')) { once = true; return true; } return false; };
   await assert.rejects(S.apply(await f.prepare(from)), /wiederhergestellt/); assert.deepEqual(await A.snapshot(f.handle), before);
-  f.faults.write = path => path.endsWith('/test-car/vehicle.json') && !path.includes('backup-');
+  f.faults.close = path => { if (path.endsWith('/test-car/vehicle.json') && !path.includes('backup-')) { f.faults.write = candidate => candidate === path; throw new Error('Interrupted after durable write'); } };
   await assert.rejects(S.apply(await f.prepare(from)), /nicht abgeschlossen/);
   assert.ok(await S.readJournal(f.handle));
-  delete f.faults.write; await S.restore(f.handle); assert.deepEqual(await A.snapshot(f.handle), before);
+  delete f.faults.write; delete f.faults.close; await S.restore(f.handle); assert.deepEqual(await A.snapshot(f.handle), before);
 });
 
 test('foreign locks and tampered recovery journals are never removed', async t => {
@@ -123,9 +124,9 @@ test('failed new-file writes clean up empty files and restore an empty category'
 test('revoked access leaves a recoverable journal; recovery preserves conflicting external edits', async t => {
   const f = await fixture(t); await S.apply(await f.prepare()); const from = `${f.record.category}/${f.record.slug}`;
   f.record.title = 'Edited';
-  f.faults.write = path => { if (path.endsWith('/test-car/vehicle.json') && !path.includes('backup-')) throw new DOMException('Access revoked', 'NotAllowedError'); return false; };
+  f.faults.close = path => { if (path.endsWith('/test-car/vehicle.json') && !path.includes('backup-')) { f.faults.write = candidate => { if(candidate === path) throw new DOMException('Access revoked', 'NotAllowedError'); }; throw new DOMException('Access revoked', 'NotAllowedError'); } };
   await assert.rejects(S.apply(await f.prepare(from)), /nicht abgeschlossen/);
-  assert.ok(await S.readJournal(f.handle)); delete f.faults.write;
+  assert.ok(await S.readJournal(f.handle)); delete f.faults.write; delete f.faults.close;
   await A.write(f.handle, `${A.prefix}${from}/vehicle.json`, JSON.stringify({...f.record,title:'External edit'}));
   await assert.rejects(S.restore(f.handle), /zwischenzeitlich geändert/);
   assert.equal(JSON.parse(await A.text(f.handle, `${A.prefix}${from}/vehicle.json`)).title, 'External edit');
@@ -138,4 +139,86 @@ test('loaded project snapshots detect changes before review and reject malformed
   await assert.rejects(S.prepare(project,f.snapshot,null,api), /außerhalb/);
   await A.directory(f.handle, `${A.prefix}aktuelle-projekte/orphan`, true);
   await assert.rejects(f.project(), /zusammen vorhanden/);
+});
+
+test('completed cleanup failure reports committed and ignores obsolete damaged backups', async t => {
+  const f = await fixture(t); await S.apply(await f.prepare());
+  f.record.title = 'Committed';
+  f.faults.remove = path => path.endsWith('/vehicle-import.lock');
+  const result = await S.apply(await f.prepare(`${f.record.category}/${f.record.slug}`));
+  assert.equal(result.committed, true); assert.equal(result.cleanupPending, true);
+  const journal = await S.readJournal(f.handle); assert.equal(journal.phase, 'completed');
+  await A.write(f.handle, `${journal.backup}/before/${journal.entries[0].path}`, 'damaged obsolete backup');
+  await assert.rejects(S.restore(f.handle), /cleanup/);
+  delete f.faults.remove;
+  await S.restore(f.handle); await S.restore(f.handle);
+  assert.equal(JSON.parse(await A.text(f.handle, `${A.prefix}${journal.key}/vehicle.json`)).title, 'Committed');
+  assert.equal(await A.hasDirectory(f.handle, S.lock), false);
+});
+
+test('recovery rechecks bytes and lock ownership after backup reads', async t => {
+  for (const foreign of [false, true]) {
+    const f = await fixture(t); await S.apply(await f.prepare());
+    f.record.title = 'Committed'; f.faults.remove = path => path.endsWith('/vehicle-import.lock');
+    await S.apply(await f.prepare(`${f.record.category}/${f.record.slug}`)); delete f.faults.remove;
+    const journal = await S.readJournal(f.handle); journal.phase = 'writing';
+    await A.write(f.handle, `${journal.backup}/journal.json`, JSON.stringify(journal));
+    const path = journal.entries.find(entry => entry.path.endsWith('/vehicle.json')).path;
+    let reads = 0;
+    f.faults.read = async candidate => {
+      if (candidate.endsWith(`/before/${path}`) && ++reads === 2) {
+        if (foreign) await A.write(f.handle, `${S.lock}/foreign.txt`, 'Another writer');
+        else await A.write(f.handle, path, 'External edit');
+      }
+    };
+    await assert.rejects(S.restore(f.handle), foreign ? /fremde/ : /zwischenzeitlich/);
+    assert.equal(await A.hasDirectory(f.handle, S.lock), true);
+    if (!foreign) assert.equal(await A.text(f.handle, path), 'External edit');
+    delete f.faults.read;
+  }
+});
+
+test('review mutations and literal whitespace changes fail closed', async t => {
+  const f = await fixture(t), review = await f.prepare();
+  review.changes.set(review.summary[0].path, new Uint8Array([1]));
+  await assert.rejects(S.apply(review), /verändert/);
+  const source = await readFile(new URL('../src/config/modificationDates.js', import.meta.url), 'utf8');
+  assert.throws(() => S.parseDates(source.replace("path.startsWith('/projekte/')", "path.startsWith('/pro jekte/')")));
+  assert.throws(() => S.parseDates(source.replace('replace(/', 'replace(/ ')));
+});
+
+test('damaged writing backups stop restoration before any source mutation', async t => {
+  const f = await fixture(t); await S.apply(await f.prepare()); f.record.title='After';
+  f.faults.remove=path=>path.endsWith('/vehicle-import.lock');
+  await S.apply(await f.prepare(`${f.record.category}/${f.record.slug}`)); delete f.faults.remove;
+  const journal=await S.readJournal(f.handle);journal.phase='writing';
+  await A.write(f.handle,`${journal.backup}/journal.json`,JSON.stringify(journal));
+  const entry=journal.entries.find(entry=>entry.before);
+  await A.write(f.handle,`${journal.backup}/before/${entry.path}`,'damaged');
+  const before=await A.snapshot(f.handle);
+  await assert.rejects(S.restore(f.handle),/beschädigt/);
+  assert.deepEqual(await A.snapshot(f.handle),before);
+  journal.targetExisted=false;
+  await A.write(f.handle,`${journal.backup}/journal.json`,JSON.stringify(journal));
+  await assert.rejects(S.restore(f.handle),/Beschädigtes/);
+  assert.equal(await A.hasDirectory(f.handle,S.lock),true);
+});
+
+test('browser and CLI plans agree across every category and archive boundary', async t => {
+  const f=await fixture(t);let from=null;
+  for(const category of A.categories) {
+    f.record.category=category;f.record.sourceUrl=`https://www.oldtimermanufaktur.de/projekte/${category}/${f.record.slug}/`;
+    const source=join(f.base,'export',category);await mkdir(join(source,f.record.slug),{recursive:true});
+    await writeFile(join(source,f.record.slug,'vehicle.json'),JSON.stringify(f.record,null,'\t')+'\n');
+    await writeFile(join(source,f.record.slug,'card.jpg'),Buffer.from(await f.image.arrayBuffer()));
+    const browser=await f.prepare(from),cli=await reviewImport(f.root,source,from);
+    const hashes=entries=>plain(entries).map(({path,before,after})=>({path,before,after})).sort((a,b)=>a.path.localeCompare(b.path));
+    assert.deepEqual(hashes(browser.summary),hashes(cli.summary));
+    await S.apply(browser);from=browser.key;
+  }
+  const dates=S.parseDates(await readFile(new URL('../src/config/modificationDates.js',import.meta.url),'utf8'));
+  for(const count of [0,1,23,24,25,48,49]) {
+    const groups=A.categories.map((category,index)=>Array.from({length:index===1?count:1},(_,i)=>({category,slug:`car-${i}`,title:`Wagen ${i}`,order:i,dateModified:'2026-09-01',route:`/projekte/${category}/car-${i}/`})));
+    assert.equal(S.renderSitemap(S.sitemapEntries(groups.flat(),dates)),renderSitemap(sitemapEntries(groups)));
+  }
 });

@@ -139,3 +139,33 @@ test('move redirect artifacts remain noindex and work on production and Pages ba
 	await symlink(join(f.dir, 'export'), alias);
 	await assert.rejects(reviewImport(f.root, join(alias, categories[0])), /Symlink/);
 });
+
+test('rollback preserves concurrent edits and foreign locks', async t => {
+  for (const foreign of [false, true]) {
+    const f = await fixture(t);
+    let review = await reviewImport(f.root, f.source); await applyImport(review, review.token);
+    f.record.title = 'Changed'; await writeFile(join(f.source, 'test-car/vehicle.json'), JSON.stringify(f.record));
+    review = await reviewImport(f.root, f.source, `${f.record.category}/test-car`);
+    let path;
+    await assert.rejects(applyImport(review, review.token, { async afterWrite(written) {
+      path = written;
+      if (foreign) await writeFile(join(f.root, '.cache/vehicle-import.lock/cli.json'), JSON.stringify({id:'foreign'}));
+      else await writeFile(join(f.root, written), 'External edit');
+      throw new Error('Interrupted');
+    } }), /Rollback also failed/);
+    assert.ok((await readdir(join(f.root, '.cache'))).includes('vehicle-import.lock'));
+    if (!foreign) assert.equal(await readFile(join(f.root, path), 'utf8'), 'External edit');
+  }
+});
+
+test('writes stop when a later destination changes during apply', async t => {
+  const f = await fixture(t), review = await reviewImport(f.root, f.source);
+  const next = review.summary.find(entry => entry.path.endsWith('/vehicle.json')).path;
+  let injected = false;
+  await assert.rejects(applyImport(review, review.token, { async afterWrite() {
+    if (injected) return; injected = true;
+    await mkdir(join(f.root, 'src/pages/projekte', f.record.category, f.record.slug), {recursive:true});
+    await writeFile(join(f.root, next), 'External edit');
+  } }), /changed before writing/);
+  assert.equal(await readFile(join(f.root, next), 'utf8'), 'External edit');
+});

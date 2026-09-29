@@ -1,7 +1,6 @@
 ---
 import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
-import { join } from 'node:path';
-import sharp from 'sharp';
+import { vehicleImage } from '../config/vehicleImages';
 import Layout from '../layouts/Layout.astro';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
 import { pageModified } from '../config/modificationDates.js';
@@ -10,7 +9,6 @@ import BackgroundTexture from './BackgroundTexture.astro';
 import VehicleCard from './VehicleCard.astro';
 import {
 	categoryByKey,
-	vehicleImageRoute,
 	vehicleCategories,
 	vehicleRoute,
 	type VehicleCategoryKey,
@@ -46,13 +44,8 @@ const pagePath = (page: number) =>
 const siteUrl = Astro.site ?? Astro.url;
 const absolute = (path: string) => new URL(sitePath(path), siteUrl).href;
 const openGraphVehicle = visibleVehicles[0] ?? vehicles[0];
-const openGraphMetadata = openGraphVehicle
-	? await sharp(join(process.cwd(), 'public', vehicleImageRoute(openGraphVehicle, openGraphVehicle.data.cardImage))).metadata()
-	: undefined;
 const openGraphImage = openGraphVehicle ? {
-	src: sitePath(vehicleImageRoute(openGraphVehicle, openGraphVehicle.data.cardImage)),
-	width: openGraphMetadata.width,
-	height: openGraphMetadata.height,
+	...vehicleImage(openGraphVehicle, openGraphVehicle.data.cardImage, 'card', basePath),
 	format: 'webp' as const,
 } : defaultOpenGraphImage;
 const openGraphImageAlt = (openGraphVehicle ? localizeVehicle(openGraphVehicle.data, language).cardImageAlt : undefined) ?? 'Ein historischer Roadster während einer Fahrt';
@@ -204,6 +197,7 @@ const itemList = {
 </Layout>
 
 <script>
+	import { createCardFilter } from '../scripts/archiveSearch.js';
 	import { restoreArchiveQuery, saveArchiveQuery } from '../scripts/archiveHistory.js';
 	const archive = document.querySelector('.vehicle-archive');
 	const categoryToggle = archive?.querySelector<HTMLButtonElement>('.category-switcher__toggle');
@@ -265,70 +259,18 @@ const itemList = {
 		(card): card is HTMLElement => card instanceof HTMLElement,
 	);
 
-	const normalizeSearchValue = (value: string) =>
-		value
-			.normalize('NFD')
-			.replace(/\p{Diacritic}/gu, '')
-			.toLocaleLowerCase('de')
-			.trim();
-
-	const setCardVisibility = (card: HTMLElement, visible: boolean) => {
-		card.dataset.searchVisible = visible ? 'true' : 'false';
-		card.getAnimations().forEach((animation) => animation.cancel());
-
-		if (reducedMotion.matches) {
-			card.hidden = !visible;
-			return;
-		}
-
-		if (visible) {
-			const wasHidden = card.hidden;
-			card.hidden = false;
-			if (wasHidden) {
-				card.animate(
-					[
-						{ opacity: 0, transform: 'translateY(0.7rem)' },
-						{ opacity: 1, transform: 'translateY(0)' },
-					],
-					{ duration: 320, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' },
-				);
-			}
-			return;
-		}
-
-		if (!card.hidden) {
-			const animation = card.animate(
-				[
-					{ opacity: 1, transform: 'translateY(0)' },
-					{ opacity: 0, transform: 'translateY(-0.35rem)' },
-				],
-				{ duration: 150, easing: 'cubic-bezier(0.55, 0, 1, 0.45)' },
-			);
-			animation.finished
-				.then(() => {
-					if (card.dataset.searchVisible === 'false') card.hidden = true;
-				})
-				.catch(() => undefined);
-		}
-	};
+	const filterCards = createCardFilter(vehicleCards, reducedMotion);
+	const grid = archive?.querySelector('.vehicle-grid');
+	const pageGridLabel = grid?.getAttribute('aria-label') ?? '';
 
 	const updateVehicleSearch = () => {
 		if (!(searchInput instanceof HTMLInputElement)) return;
 
 		const rawQuery = searchInput.value.trim();
-		const normalizedQuery = normalizeSearchValue(rawQuery);
-		const queryParts = normalizedQuery.split(/\s+/).filter(Boolean);
-		const isSearching = queryParts.length > 0;
-		let matchCount = 0;
-
-		vehicleCards.forEach((card) => {
-			const searchValue = normalizeSearchValue(card.dataset.searchValue ?? '');
-			const matches = isSearching
-				? queryParts.every((part) => searchValue.includes(part))
-				: card.dataset.defaultVisible === 'true';
-			if (isSearching && matches) matchCount += 1;
-			setCardVisibility(card, matches);
-		});
+		const { searching: isSearching, count: matchCount } = filterCards(rawQuery);
+		grid?.setAttribute('aria-label', isSearching
+			? (document.documentElement.lang === 'en' ? 'Vehicle search results' : 'Ergebnisse der Fahrzeugsuche')
+			: pageGridLabel);
 
 		if (clearSearch instanceof HTMLButtonElement) clearSearch.hidden = !rawQuery;
 		if (pagination instanceof HTMLElement) pagination.hidden = isSearching;

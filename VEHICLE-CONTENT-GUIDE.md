@@ -1,6 +1,6 @@
 # Vehicle editing and checked website imports
 
-The offline editor is `../oldtimer-fahrzeuge/index.html`. Open it directly in a
+The offline editor is `../oldtimer-intern/index.html`. Open it directly in a
 browser. No vehicle content leaves the browser until you download the ZIP.
 
 ## Create or edit
@@ -129,3 +129,25 @@ localhost, with temporary artifacts and fixture images. Open the displayed URL t
 run the browser cases. The distributed editor remains a single dependency-free HTML
 file. A complete direct `file://` export and Safari/Firefox keyboard checks remain
 separate acceptance checks whenever the test environment cannot perform them.
+
+## Hardened editor/import contract
+
+The browser and CLI enforce 2 MiB JSON, 50 MiB and 100 megapixels per image,
+2000 vehicle-folder files and 512 MiB payload. Filename components must fit within
+255 ASCII bytes and exclude Windows device names. Image stems are reserved without
+case sensitivity, including the WebP destination. The Astro route suffix also
+counts toward the filename limit. Unknown record, block and gallery-image fields
+are rejected rather than silently stripped by the content schema.
+
+Rollback checks lock ownership, current hashes and backup hashes again before each
+mutation. Conflicting external edits stop recovery and retain the lock and backup.
+A completed browser journal is only finalized/unlocked: obsolete backups are not
+restored or required. A cleanup failure after durable commit is reported as saved
+with pending unlock. Selecting another project with pending recovery leaves the
+current project and draft intact until that candidate is successfully loaded.
+
+Editor fixtures resolve `../oldtimer-intern/index.html` relative to the test code.
+Set `VEHICLE_TOOL_PATH` to an alternate editor's absolute `index.html` path. Missing
+editors fail explicitly. Browser harnesses remain test-only; native folder-picker
+and platform acceptance must be checked separately. Gallery cache v3 validates
+manifest routes, derivative metadata and filesystem boundaries before reuse.

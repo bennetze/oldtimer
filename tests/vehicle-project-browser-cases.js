@@ -74,6 +74,39 @@ frame.addEventListener('load', async () => {
     assert(!await A.hasDirectory(root,'src/pages/projekte/aktuelle-projekte/test-car'),'original directory remains');
     const mapping=JSON.parse(await A.text(root,'src/config/vehicle-redirects.json'));assert(mapping['aktuelle-projekte/test-car']==='vergangene-projekte/test-car','redirect missing');
   });
+  await test('Delayed permission locks the workflow and rechecks the reviewed draft', async () => {
+    input('#title','Permission test');click('[data-step-target="review"]');click('#prepare-save');await wait(()=>!d.querySelector('#save-project').disabled);
+    const root=await w.fixtureRoot, original=root.requestPermission;let release;
+    root.requestPermission=()=>new Promise(resolve=>{release=resolve;});
+    try {
+      click('#save-project');assert(t.state.busy,'workflow not locked before permission');assert(d.querySelector('#choose-project').disabled,'project picker remained enabled');
+      input('#title','Changed while permission pending');release('granted');await wait(()=>!t.state.busy);
+      assert(d.querySelector('#save-project').disabled,'stale permission review enabled');
+      const value=JSON.parse(await w.VehicleProjectAccess.text(root,'src/pages/projekte/vergangene-projekte/test-car/vehicle.json'));
+      assert(value.title!=='Changed while permission pending','stale draft written');
+    } finally {root.requestPermission=original;}
+  });
+  await test('Gallery occurrence moves and removal invalidate reviewed changes immediately', async () => {
+    t.state.blocks.push({id:'occurrence-test',type:'gallery',imageIds:['__card__','__card__'],imageMeta:[{alt:'Erste',altEn:'First'},{alt:'Zweite',altEn:'Second'}]});t.renderBlocks();t.updateSummary();
+    click('[data-step-target="review"]');click('#prepare-save');await wait(()=>!d.querySelector('#save-project').disabled);
+    click('[data-entry-move="1"]');assert(d.querySelector('#save-project').disabled,'move retained review');
+    click('#prepare-save');await wait(()=>!d.querySelector('#save-project').disabled);
+    click('[data-entry-remove="0"]');assert(d.querySelector('#save-project').disabled,'remove retained review');
+  });
+  await test('A candidate with interrupted recovery preserves the current project and draft', async () => {
+    const root=await w.fixtureRoot, storage=await w.navigator.storage.getDirectory();
+    const candidate=await storage.getDirectoryHandle('pending-'+w.crypto.randomUUID(),{create:true});
+    const id=w.crypto.randomUUID(),backup='.cache/vehicle-browser-backup-'+id,A=w.VehicleProjectAccess;
+    const journal={id,backup,key:'aktuelle-projekte/test-car',from:null,targetExisted:false,phase:'writing',entries:[{path:'public/sitemap.xml',before:null,after:'a'.repeat(64)}]};
+    await A.write(candidate,backup+'/journal.json',JSON.stringify(journal));await A.write(candidate,w.VehicleProjectSave.lock+'/browser.json',JSON.stringify({id,backup}));
+    const picker=w.showDirectoryPicker, title=t.fields.title.value, name=d.querySelector('#project-name').textContent;
+    w.showDirectoryPicker=async()=>candidate;
+    try {
+      click('[data-step-target="project"]');click('#choose-project');await wait(()=>!t.state.busy && !d.querySelector('#recover-project').hidden);
+      assert(t.fields.title.value===title,'candidate lost draft');assert(d.querySelector('#project-name').textContent===name,'candidate replaced project');
+      assert(!d.querySelector('[data-step-target="vehicle"]').disabled,'previous project became unavailable');
+    } finally {w.showDirectoryPicker=picker;}
+  });
   await test('Every workflow step fits desktop and 390px widths', async () => {
     for(const width of [1440,390]) {frame.style.width=`${width}px`;for(const step of ['project','selection','vehicle','images','content','review']) {click(`[data-step-target="${step}"]`);await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));assert(d.documentElement.scrollWidth<=width,`${step} overflow at ${width}: ${d.documentElement.scrollWidth}`);}}
   });

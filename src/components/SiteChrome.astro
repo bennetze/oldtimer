@@ -253,6 +253,8 @@ const sitePath = (path) => {
 	};
 
 	const openMenu = () => {
+		stopSectionScroll();
+		keyboardSectionIndex = undefined;
 		if (menuOverlay instanceof HTMLElement) {
 			menuOverlay.inert = false;
 		}
@@ -283,7 +285,7 @@ const sitePath = (path) => {
 	};
 
 	const stopSectionScroll = () => {
-		if (activeSectionScroll) {
+		if (activeSectionScroll !== undefined) {
 			window.cancelAnimationFrame(activeSectionScroll);
 			activeSectionScroll = undefined;
 		}
@@ -292,7 +294,7 @@ const sitePath = (path) => {
 	const easeInOutQuart = (progress) =>
 		progress < 0.5 ? 8 * progress * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 4) / 2;
 
-	const animateSectionScroll = (targetTop) => {
+	const animateSectionScroll = (targetTop, completed) => {
 		stopSectionScroll();
 
 		const startTop = window.scrollY;
@@ -312,6 +314,7 @@ const sitePath = (path) => {
 			}
 
 			activeSectionScroll = undefined;
+			completed();
 		};
 
 		activeSectionScroll = window.requestAnimationFrame(step);
@@ -328,7 +331,7 @@ const sitePath = (path) => {
 
 		const scrollMarginTop = Number.parseFloat(window.getComputedStyle(section).scrollMarginTop) || 0;
 		const targetTop = section.getBoundingClientRect().top + window.scrollY - scrollMarginTop;
-		animateSectionScroll(targetTop);
+		animateSectionScroll(targetTop, () => { keyboardSectionIndex = undefined; });
 		clearHash();
 	};
 
@@ -349,17 +352,11 @@ const sitePath = (path) => {
 			return keyboardSectionIndex;
 		}
 
-		const activeControlIndex = sectionEntries.findIndex(({ control }) =>
-			control.classList.contains('is-active'),
-		);
-		if (activeControlIndex >= 0) {
-			return activeControlIndex;
-		}
-
 		let closestIndex = 0;
 		let closestDistance = Number.POSITIVE_INFINITY;
-		sectionTargets.forEach((section, index) => {
-			const distance = Math.abs(section.getBoundingClientRect().top);
+		[...sectionTargets, ...(siteFooter instanceof HTMLElement ? [siteFooter] : [])].forEach((section, index) => {
+			const margin = Number.parseFloat(window.getComputedStyle(section).scrollMarginTop) || 0;
+			const distance = Math.abs(section.getBoundingClientRect().top - margin);
 			if (distance < closestDistance) {
 				closestIndex = index;
 				closestDistance = distance;
@@ -387,6 +384,20 @@ const sitePath = (path) => {
 		keyboardSectionIndex = undefined;
 	}, { passive: true });
 
+	window.addEventListener('scroll', () => {
+		if (activeSectionScroll === undefined) keyboardSectionIndex = undefined;
+	}, { passive: true });
+	window.addEventListener('pointerdown', () => {
+		stopSectionScroll();
+		keyboardSectionIndex = undefined;
+	}, { passive: true });
+	prefersReducedMotion.addEventListener('change', () => {
+		if (prefersReducedMotion.matches) {
+			stopSectionScroll();
+			keyboardSectionIndex = undefined;
+		}
+	});
+
 	window.addEventListener('keydown', (event) => {
 		const shouldHandleSectionArrow =
 			['ArrowDown', 'ArrowUp'].includes(event.code) &&
@@ -405,6 +416,7 @@ const sitePath = (path) => {
 
 		if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', 'Space'].includes(event.code)) {
 			stopSectionScroll();
+			if (!shouldHandleSectionArrow) keyboardSectionIndex = undefined;
 		}
 
 		if (shouldHandleSectionArrow) {
@@ -498,7 +510,7 @@ const sitePath = (path) => {
 					return;
 				}
 
-				const activeEntry = [...visibleRatios.entries()].sort((a, b) => b[1] - a[1])[0];
+				const activeEntry = [...visibleRatios.entries()].filter(([, ratio]) => ratio > 0).sort((a, b) => b[1] - a[1])[0];
 
 				if (activeEntry?.[0]) {
 					setActiveIndicator(activeEntry[0]);
@@ -525,7 +537,7 @@ const sitePath = (path) => {
 		display: flex;
 		justify-content: flex-end;
 		gap: 0.75rem;
-		font-size: 0.9rem;
+		font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.9rem);
 		letter-spacing: 0.06em;
 	}
 
@@ -556,12 +568,12 @@ const sitePath = (path) => {
 	}
 
 	.site-shell {
-		--site-header-height: 132px;
+		--site-header-height: calc(clamp(64px, 44px + 4vw, 116px) + env(safe-area-inset-top, 0px));
 		min-height: 100vh;
 	}
 
 	.site-shell--home {
-		--site-header-height: 192px;
+		--site-header-height: calc(clamp(88px, 64px + 5vw, 168px) + env(safe-area-inset-top, 0px));
 	}
 
 	.site-shell--light {
@@ -647,7 +659,7 @@ const sitePath = (path) => {
 		grid-template-columns: 1fr auto 1fr;
 		align-items: center;
 		min-height: var(--site-header-height);
-		padding: 0 clamp(1rem, 3vw, 3rem);
+		padding: env(safe-area-inset-top, 0px) clamp(1rem, 3vw, 3rem) 0;
 		color: var(--color-main);
 		background: rgba(16, 16, 16, 0.34);
 		-webkit-backdrop-filter: blur(28px) saturate(108%);
@@ -663,13 +675,13 @@ const sitePath = (path) => {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 1.5rem;
-		font-size: clamp(1.35rem, 1.85vw, 1.8rem);
+		gap: clamp(0.5rem, 0.85vw, 1rem);
+		font-size: clamp(0.9rem, 1.35vw, 1.55rem);
 	}
 
 	.brand-mark {
 		display: block;
-		width: clamp(200px, 19vw, 280px);
+		width: clamp(128px, 12vw, 224px);
 		max-width: 100%;
 		height: auto;
 	}
@@ -686,7 +698,7 @@ const sitePath = (path) => {
 	}
 
 	.brand {
-		font-size: clamp(1.1rem, 1.5vw, 1.45rem);
+		font-size: clamp(0.75rem, 1.1vw, 1.25rem);
 	}
 
 	.footer-brand {
@@ -715,8 +727,9 @@ const sitePath = (path) => {
 
 	.menu-toggle {
 		justify-self: start;
-		padding: 1.5rem 0;
-		font-size: 0.9rem;
+		min-height: 44px;
+		padding: 0.75rem 0;
+		font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.9rem);
 	}
 
 	.menu-lines,
@@ -950,14 +963,6 @@ const sitePath = (path) => {
 	}
 
 	@media (max-width: 760px) {
-		.site-shell {
-			--site-header-height: calc(104px + env(safe-area-inset-top, 0px));
-		}
-
-		.site-shell--home {
-			--site-header-height: calc(160px + env(safe-area-inset-top, 0px));
-		}
-
 		.site-shell--home .site-header {
 			grid-template-columns: 44px minmax(0, 1fr) 88px;
 		}
@@ -967,19 +972,19 @@ const sitePath = (path) => {
 		}
 
 		.site-shell--home .brand {
-			gap: 1.15rem;
+			gap: 0.5rem;
 			container-type: inline-size;
 			width: 100%;
 			letter-spacing: 0.025em;
 		}
 
 		.site-shell--home .brand span {
-			font-size: clamp(0.625rem, 6.15cqi, 1.1rem);
+			font-size: clamp(0.625rem, 5.6cqi, 0.9rem);
 			white-space: nowrap;
 		}
 
 		.brand-mark {
-			width: min(180px, 80%);
+			width: min(128px, 70%);
 		}
 
 		.cursor {
@@ -1019,7 +1024,7 @@ const sitePath = (path) => {
 		.brand {
 			min-width: 0;
 			overflow-wrap: anywhere;
-			font-size: 0.85rem;
+			font-size: clamp(0.7rem, 1.8vw, 0.75rem);
 			letter-spacing: 0.07em;
 			white-space: normal;
 			line-height: 1.25;
@@ -1129,11 +1134,7 @@ const sitePath = (path) => {
 	}
 
 	@media (max-width: 360px) {
-		.site-header { grid-template-columns: 44px minmax(0, 1fr) 44px; }
-		.language-switch { flex-direction: column; }
-
 		.brand {
-			font-size: 0.75rem;
 			letter-spacing: 0.025em;
 		}
 	}

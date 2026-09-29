@@ -1,5 +1,5 @@
 import { defineMiddleware } from 'astro:middleware';
-import { createHash } from 'node:crypto';
+import { finalizeCsp } from './i18n/csp.js';
 import { load } from 'cheerio';
 import { translateSiteText, localizeStructuredData } from './i18n/authoredContent.js';
 import { languagePath } from './i18n/language.js';
@@ -43,8 +43,6 @@ export const onRequest = defineMiddleware(async (context, next) => {
 		$(node).text(JSON.stringify(localizeStructuredData(JSON.parse($(node).text()), english, localizeUrl)).replace(/</g, '\\u003c'));
 	});
 	// JSON-LD changes during localization; keep every inline script CSP-authorized.
-	const policy = $('meta[http-equiv="content-security-policy"]');
-	const hashes = $('script:not([src])').toArray().map((node) => `'sha256-${createHash('sha256').update($(node).html() || '').digest('base64')}'`);
-	if (policy.length) policy.attr('content', (policy.attr('content') || '').replace(/(script-src(?:-elem)?)(?=\s|;|$)([^;]*)/g, (_, name, values) => `${name} ${[...new Set([...values.trim().split(/\s+/).filter(Boolean), ...hashes])].join(' ')}`));
+	finalizeCsp($);
 	return new Response($.html(), { status: response.status, statusText: response.statusText, headers: response.headers });
 });

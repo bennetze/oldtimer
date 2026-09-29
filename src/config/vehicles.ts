@@ -52,10 +52,7 @@ export async function getDiscoveredVehicles(
 ) {
 	const pageSlugs = vehicleSlugsFromPageGlob(pageModules);
 	const pageSlugSet = new Set(pageSlugs);
-	const collectionEntries = await getCollection(
-		'vehicles',
-		(entry) => entry.data.category === category,
-	);
+	const collectionEntries = await getCategoryVehicles(category);
 	const entryBySlug = new Map(collectionEntries.map((entry) => [entry.data.slug, entry]));
 
 	const missingRecords = pageSlugs.filter((slug) => !entryBySlug.has(slug));
@@ -78,9 +75,19 @@ export async function getDiscoveredVehicles(
 		);
 }
 
+const categoryCollections = new Map<VehicleCategoryKey, Promise<VehicleEntry[]>>();
 export async function getCategoryVehicles(category: VehicleCategoryKey) {
+	// Development reads the current Astro store on every request; builds reuse it.
+	if (import.meta.env.DEV) return loadCategory(category);
+	let collection = categoryCollections.get(category);
+	if (!collection) {
+		collection = loadCategory(category);
+		categoryCollections.set(category, collection);
+	}
+	return collection;
+}
+async function loadCategory(category: VehicleCategoryKey) {
 	return (await getCollection('vehicles', (entry) => entry.data.category === category)).sort(
-		(left, right) =>
-			left.data.order - right.data.order || left.data.title.localeCompare(right.data.title, 'de'),
+		(left, right) => left.data.order - right.data.order || left.data.title.localeCompare(right.data.title, 'de'),
 	);
 }

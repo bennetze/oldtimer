@@ -1,6 +1,7 @@
 # Website security and compliance audit
 
-**Reviewed: 13 September 2026.** Current source has 157 vehicle records and builds
+**Technical status refreshed: 30 September 2026.** Legal findings below are carried
+forward from the prior audit; this refresh is not a new legal assessment. Current source has 157 vehicle records and builds
 344 HTML pages, including 172 German/English pairs. This audit supersedes the
 5 September verification counts. Legal work is audit-only: the legal pages, company
 claims, real vehicle records and release/preview safeguards were not replaced.
@@ -16,11 +17,11 @@ claims, real vehicle records and release/preview safeguards were not replaced.
 | Replacement recovery | Staging, recoverable backups, exclusive import lock and rollback on caught failures. Abrupt termination requires manual backup recovery; it is not a filesystem-wide atomic transaction. Recovery instructions are in VEHICLE-CONTENT-GUIDE.md. |
 | Category moves | Old pair removed only after replacement writes; redirect mapping emits Apache and noindex HTML redirects for both bases. No real vehicle was moved or replaced. |
 | Keyboard/editor behavior | Keyboard formatting with saved selection, labeled editors, focus restoration, handle-only drag and button alternatives. Gallery-first import no longer depends on a selected card. |
-| Shared presentation | Focus visibility, control targets, readable wrapping, responsive form text and viewport-constrained dialogs refined without changing Jost/editorial styling or intentional light vehicle pages. |
+| Shared presentation | Focus visibility, control targets, readable wrapping, responsive form text and viewport-constrained dialogs refined without changing Cinzel/Cormorant Garamond typography or editorial styling or intentional light vehicle pages. |
 | Eager media and repeated copying | Below-fold homepage videos use preload none; second poster is lazy/normal priority. Browser observed only hero playing/ready and three offscreen videos paused with readyState 0. Cached gallery output no longer recopies unchanged files on every build. |
 | Archive search lost on Back | Reproduced in the built browser; filter now lives in its history entry, preserving unrelated state. Browser Back restores both query and filtered result; clear works. No query is added to request URLs. |
 | CSP attribute directive | Middleware script directive matching now excludes script-src-attr; built verification enforces prohibited inline event handlers and script hashes. |
-| Dependency advisories | Updated Astro to 7.3.2, Sharp to 0.35.4 and affected transitive packages. Current npm audit reports zero known advisories; this is not proof of absence of all vulnerabilities. |
+| Dependency advisories | Current lockfile uses Astro 7.3.5, Sharp 0.35.5 and affected transitive packages. Current npm audit reports zero known advisories; this is not proof of absence of all vulnerabilities. |
 
 ## Open issue register and remedy plan
 
@@ -101,3 +102,5 @@ for deployment. The production domain still returns Joomla/K2 headers; the old
 PHP application must be retired or isolated during a separately approved release,
 not left executable beside the static replacement. No live hosting changes are
 authorized by repository cleanup. Verify actual response headers on the final host.
+
+The subsequent website repair register is maintained in [WEBSITE-REPAIR-AUDIT.md](WEBSITE-REPAIR-AUDIT.md). It leaves the legal, factual and media-rights release dependencies above intact.

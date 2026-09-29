@@ -8,7 +8,7 @@ frame.addEventListener('load', async () => {
   const image = (name) => new w.File([Uint8Array.from(atob(fixtureImage), (c) => c.charCodeAt(0))], name, { type: 'image/jpeg', lastModified: 1 });
   const input = (id, value) => { d.getElementById(id).value = value; d.getElementById(id).dispatchEvent(new w.Event('input', { bubbles: true })); };
   const click = (selector) => d.querySelector(selector).click();
-  const record = { slug:'test-car', category:'aktuelle-projekte', title:'Testfahrzeug 1957', titleEn: 'Testfahrzeug 1957', description:'Test für den lokalen Import.', descriptionEn: 'Test für den lokalen Import.', sourceUrl:'https://www.oldtimermanufaktur.de/aktuelle-projekte/item/test-car', order:-42, dateModified:'2026-09-01', year:'1957', cardImage:'./card.jpg', cardImageAlt:'Kartenansicht', cardImageAltEn: 'Kartenansicht', leadImage:'./image-002.jpg', leadImageAlt:'Titelansicht', leadImageAltEn: 'Titelansicht', blocks:[{type:'copy',html:'<p><strong>Originaltext</strong> mit Umlauten: äöü.</p>', htmlEn: '<p><strong>Originaltext</strong> mit Umlauten: äöü.</p>'},{type:'gallery',images:[{src:'./image-002.jpg',alt:'Zuerst', altEn: 'Zuerst',caption:'Bild zwei', captionEn: 'Bild zwei'},{src:'./image-001.jpg',alt:'Danach', altEn: 'Danach'},{src:'./image-002.jpg',alt:'Wiederholung', altEn: 'Wiederholung',caption:'Anderer Kontext', captionEn: 'Anderer Kontext'}]},{type:'contact',html:'<p>Bitte kontaktieren Sie uns.</p>', htmlEn: '<p>Bitte kontaktieren Sie uns.</p>'}] };
+  const record = { slug:'test-car', category:'aktuelle-projekte', title:'Testfahrzeug 1957', titleEn: 'Test vehicle 1957', description:'Test für den lokalen Import.', descriptionEn: 'Local import test.', sourceUrl:'https://www.oldtimermanufaktur.de/aktuelle-projekte/item/test-car', order:-42, dateModified:'2026-09-01', year:'1957', cardImage:'./card.jpg', cardImageAlt:'Kartenansicht', cardImageAltEn: 'Card view', leadImage:'./image-002.jpg', leadImageAlt:'Titelansicht', leadImageAltEn: 'Lead view', blocks:[{type:'copy',html:'<p><strong>Originaltext</strong> mit Umlauten: äöü.</p>', htmlEn: '<p><strong>Original story</strong> in English.</p>'},{type:'gallery',images:[{src:'./image-002.jpg',alt:'Zuerst', altEn: 'First',caption:'Bild zwei', captionEn: 'Second image'},{src:'./image-001.jpg',alt:'Danach', altEn: 'Next'},{src:'./image-002.jpg',alt:'Wiederholung', altEn: 'Repeated view',caption:'Anderer Kontext', captionEn: 'Another context'}]},{type:'contact',html:'<p>Bitte kontaktieren Sie uns.</p>', htmlEn: '<p>Please contact us.</p>'}] };
   const filesFor = (data = record) => [new w.File([JSON.stringify(data)], 'vehicle.json', {type:'application/json'}), image('card.jpg'), image('image-001.jpg'), image('image-002.jpg')];
   w.confirm = () => true; // Only test fixture replacement prompts.
   await test('An English-only draft is protected before importing another vehicle', async () => {
@@ -34,7 +34,7 @@ frame.addEventListener('load', async () => {
     assert(t.state.cardFile === original,'card changed');
   });
   await test('Sanitizer output is accepted by independent website HTML validation', async () => {
-    const payloads = ['<b>Fett</b><i>Kursiv</i>', '<p style="color:red" onclick="x()">Text</p>', '<svg onload="x()"></svg><p>Safe</p>', '<a href="java&#x73;cript:x()">Link</a>', '<a href="//example.com">Link</a>', '<a href="http://example.com">Link</a>', '<a href="#foo">Link</a>', '<a href="https://example.com">Link</a>', '<p>Text</p><img src="https://example.com/tracker">'];
+    const payloads = ['<html><body onload=alert(1)><p>Text</p></body></html>', '<p><strong>malformed</p></strong>', '<ul><li>one<li>two</ul>', '<a href="mailto:info@example.com">Contact</a>', '<a href="https://user:pass@example.com">Unsafe</a>', '<b>Fett</b><i>Kursiv</i>', '<p style="color:red" onclick="x()">Text</p>', '<svg onload="x()"></svg><p>Safe</p>', '<a href="java&#x73;cript:x()">Link</a>', '<a href="//example.com">Link</a>', '<a href="http://example.com">Link</a>', '<a href="#foo">Link</a>', '<a href="https://example.com">Link</a>', '<p>Text</p><img src="https://example.com/tracker">'];
     const html = payloads.map((value) => t.sanitizeHtml(value));
     const response = await fetch('/html',{method:'POST',body:JSON.stringify(html)});
     assert(response.ok,await response.text());
@@ -146,6 +146,20 @@ frame.addEventListener('load', async () => {
     assert(/<(strong|b)>/.test(en.innerHTML),'English bold selection not restored');
     eq(block.html,record.blocks[0].html,'German unchanged by English toolbar');
     t.validateRecord(t.createRecord());
+  });
+  await test('Filename stems and payload limits agree with checked saves', async () => {
+    await t.importVehicle(filesFor());
+    const preserved = t.state.images[0]; preserved.originalName='IMAGE-004.png'; preserved.outputName=preserved.originalName;
+    await t.addGalleryFiles([image('new-one.jpg'),image('new-two.jpg')]);
+    const stems=[t.state.cardName,...t.state.images.map(item=>item.outputName)].map(name=>name.replace(/\.[^.]+$/,'').toLowerCase());
+    assert(new Set(stems).size===stems.length,'case/conversion collision');
+    for(const [name,data] of [['vehicle.json',{size:2*1024**2+1}],['card.jpg',{size:50*1024**2+1}]]) {
+      let rejected=false;try{t.checkZipEntries([{name:'aktuelle-projekte/test-car/'+name,data}]);}catch{rejected=true;}assert(rejected,'oversized '+name);
+    }
+    for(const slug of ['con','nul','aux','a'.repeat(250)]) {let rejected=false;try{t.validateRecord({...record,slug});}catch{rejected=true;}assert(rejected,'unsafe slug '+slug);}
+    for(const html of ['<body onload=x()><p>Text</p></body>','<html><p>Text</p></html>']) {
+      for(const language of ['html','htmlEn']) {let rejected=false;try{t.validateRecord({...record,blocks:[{type:'copy',html:'<p>Text</p>',htmlEn:'<p>Text</p>',[language]:html}]});}catch{rejected=true;}assert(rejected,'wrapper accepted');}
+    }
   });
   await test('A real download exports an immutable bilingual snapshot', async () => {
     await t.importVehicle(filesFor());

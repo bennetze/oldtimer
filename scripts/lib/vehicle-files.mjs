@@ -1,5 +1,5 @@
 import { validateVehicleBlocks } from '../../src/config/vehicleHtml.js';
-import { validateVehicleRecord } from '../../src/config/vehicleRecord.js';
+import { validateVehicleRecord, validVehicleFilename } from '../../src/config/vehicleRecord.js';
 import { access, lstat, readdir, readFile } from 'node:fs/promises';
 import { basename, extname, join } from 'node:path';
 
@@ -47,6 +47,19 @@ export async function discoverVehicleCategory(pagesRoot, category) {
 	const vehicles = [];
 	for (const slug of pageSlugs) {
 		const vehicleDirectory = join(directory, slug);
+		const files = (await readdir(vehicleDirectory, { withFileTypes: true })).filter(entry => entry.name !== '.DS_Store');
+		if (files.length > 2000) throw new Error(`${slug}: exceeds 2000 vehicle files.`);
+		let total = 0;
+		const names = new Set(), stems = new Set();
+		for (const entry of files) {
+			const image = entry.name !== 'vehicle.json';
+			const stem = entry.name.replace(/\.[^.]+$/, '').toLowerCase();
+			if (!entry.isFile() || !validVehicleFilename(entry.name) || names.has(entry.name.toLowerCase()) || (image && (!/\.(jpe?g|png|webp|avif)$/i.test(entry.name) || !validVehicleFilename(stem + '.webp') || stems.has(stem)))) throw new Error(`${slug}: unexpected nested, unsafe or colliding vehicle file ${entry.name}.`);
+			names.add(entry.name.toLowerCase()); if (image) stems.add(stem);
+			const size = (await lstat(join(vehicleDirectory, entry.name))).size;
+			total += size;
+			if (size > (image ? 50 : 2) * 1024 ** 2 || total > 512 * 1024 ** 2) throw new Error(`${slug}: vehicle payload exceeds size limits.`);
+		}
 		const dataPath = join(vehicleDirectory, 'vehicle.json');
 		if (!(await exists(dataPath))) {
 			throw new Error(`${category.key}/${slug}: missing vehicle.json.`);

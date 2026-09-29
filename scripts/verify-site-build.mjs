@@ -54,6 +54,9 @@ for (const file of files) {
 	}
 	const policy = $('meta[http-equiv="content-security-policy"]').attr('content');
 	assert.ok(policy, `${file}: missing CSP`);
+	const head = $('head').children().toArray();
+	assert.equal(head[1], $('meta[http-equiv="content-security-policy"]')[0], `${file}: CSP must immediately follow charset`);
+	assert.ok($(head[0]).is('meta[charset]'), `${file}: charset must precede CSP`);
 	const directives = new Map(policy.split(';').map((part) => { const [name, ...values] = part.trim().split(/\s+/); return [name, values]; }));
 	assert.deepEqual(directives.get('script-src-attr'), ["'none'"]);
 	const scripts = directives.get('script-src-elem') ?? directives.get('script-src');
@@ -73,6 +76,24 @@ for (const file of files) {
 		if (!path || path.endsWith('/')) path += 'index.html';
 		await access(join(root, decodeURIComponent(path)));
 	}
+	for (const element of $('[data-vehicle-card] img,.story-image img,.vehicle-lead img').toArray()) {
+		const image = $(element);
+		const filename = new URL(image.attr('src'), origin).pathname.slice(base.length);
+		const path = join(root, filename);
+		if (!imageCache.has(path)) imageCache.set(path, await sharp(path).metadata());
+		const metadata = imageCache.get(path);
+		assert.equal(Number(image.attr('width')), metadata.width, `${file}: intrinsic image width`);
+		assert.equal(Number(image.attr('height')), metadata.height, `${file}: intrinsic image height`);
+		for (const candidate of (image.attr('srcset') || '').split(',').filter(Boolean)) {
+			const [url, descriptor] = candidate.trim().split(/\s+/);
+			const variantPath = join(root, new URL(url, origin).pathname.slice(base.length));
+			if (!imageCache.has(variantPath)) imageCache.set(variantPath, await sharp(variantPath).metadata());
+			assert.equal(descriptor, `${imageCache.get(variantPath).width}w`, `${file}: responsive width descriptor`);
+		}
+	}
+	$('[data-lightbox-trigger]').each((_, trigger) => {
+		assert.equal($(trigger).attr('data-lightbox-src'), $(trigger).find('img').attr('src'), `${file}: full-size lightbox source`);
+	});
 	const ogUrl = $('meta[property="og:url"]').attr('content');
 	assert.ok(ogUrl.startsWith(origin + base));
 	const indexable = !$('meta[name="robots"]').attr('content')?.includes('noindex');

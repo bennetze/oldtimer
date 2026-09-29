@@ -1,8 +1,12 @@
-// Browser counterpart is embedded verbatim in oldtimer-fahrzeuge/index.html.
+// Browser counterpart is embedded in oldtimer-intern/editor.js; contract tests keep it aligned.
 export function validVehicleDate(value) {
 	if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
 	const date = new Date(`${value}T12:00:00Z`);
 	return Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value;
+}
+
+export function validVehicleFilename(value) {
+	return typeof value === 'string' && value.length <= 255 && /^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(value) && !value.includes('..') && !value.endsWith('.') && !/^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(value);
 }
 
 export function validateVehicleRecord(record, checkHtml = () => {}, { legacy = false } = {}) {
@@ -13,10 +17,10 @@ export function validateVehicleRecord(record, checkHtml = () => {}, { legacy = f
 	};
 	const text = (value, context) => { if (typeof value !== 'string' || !value.trim()) fail(`${context}: Text is required.`); };
 	const image = (value) => {
-		if (typeof value !== 'string' || !/^\.\/[A-Za-z0-9][A-Za-z0-9._-]*\.(jpe?g|png|webp|avif)$/i.test(value) || value.includes('..')) fail(`Invalid image path: ${value}`);
+		if (typeof value !== 'string' || !/^\.\/[A-Za-z0-9][A-Za-z0-9._-]*\.(jpe?g|png|webp|avif)$/i.test(value) || !validVehicleFilename(value.slice(2)) || !validVehicleFilename(value.slice(2).replace(/\.[^.]+$/, '.webp'))) fail(`Invalid image path: ${value}`);
 	};
 	object(record, ['slug', 'category', 'title', 'description', 'sourceUrl', 'order', 'dateModified', 'year', 'cardImage', 'cardImageAlt', 'leadImage', 'leadImageAlt', 'blocks', 'titleEn', 'descriptionEn', 'cardImageAltEn', 'leadImageAltEn'], 'Vehicle');
-	if (typeof record.slug !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(record.slug) || ['index', 'seite'].includes(record.slug)) fail('Invalid or reserved Slug.');
+	if (typeof record.slug !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(record.slug) || !validVehicleFilename(record.slug + '.astro') || ['index', 'seite'].includes(record.slug)) fail('Invalid or reserved Slug.');
 	if (!['aktuelle-projekte', 'vergangene-projekte', 'fahrzeugangebote'].includes(record.category)) fail('Invalid category.');
 	for (const key of ['title', 'description', 'cardImageAlt', 'leadImageAlt']) text(record[key], key);
 	for (const key of ['titleEn', 'descriptionEn', 'cardImageAltEn', 'leadImageAltEn']) {
@@ -48,8 +52,8 @@ export function validateVehicleRecord(record, checkHtml = () => {}, { legacy = f
 				image(item.src); text(item.alt, `Gallery ${index + 1}: Alternative text`);
 				if (!legacy || item.altEn !== undefined) text(item.altEn, `Gallery ${index + 1}: English alternative text`);
 				if (item.captionEn !== undefined && typeof item.captionEn !== 'string') fail('English caption must be text.');
-				if (!legacy && Boolean(item.caption?.trim()) !== Boolean(item.captionEn?.trim())) fail('Captions must be provided in both languages or omitted in both.');
 				if (item.caption !== undefined && typeof item.caption !== 'string') fail('Caption must be text.');
+				if (!legacy && Boolean(item.caption?.trim()) !== Boolean(item.captionEn?.trim())) fail('Captions must be provided in both languages or omitted in both.');
 			}
 		} else fail(`Unknown block type in block ${index + 1}.`);
 	}

@@ -4,9 +4,10 @@ import { readFile, writeFile, mkdtemp } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve, dirname } from 'node:path';
 import sharp from 'sharp';
+import { vehicleToolPath } from './lib/vehicle-tool.mjs';
 import { validateVehicleHtml } from '../src/config/vehicleHtml.js';
 
-const tool = resolve(process.env.VEHICLE_TOOL_PATH || '../oldtimer-fahrzeuge/index.html');
+const tool = await vehicleToolPath();
 const output = await mkdtemp(join(tmpdir(), 'vehicle-browser-'));
 const fixtureImage = (await sharp({ create: { width: 80, height: 60, channels: 3, background: '#999' } }).jpeg().toBuffer()).toString('base64');
 const tests = await readFile(new URL('../tests/vehicle-browser-cases.js', import.meta.url), 'utf8');
@@ -17,7 +18,7 @@ for (const name of ['project-access.js', 'project-save.js', 'project-ui.js', 'ed
 // Legacy editor cases operate without a selected project; project cases have their own harness.
 const workflowSource = source;
 source = source.replace(/        workflow = window.VehicleProjectUI\([^\n]+\);\n/, '').replace('showStep("project");', 'showStep("vehicle");');
-const hooks = `\nwindow.vehicleTest = { state, fields, sanitizeHtml, validateRecord, checkImage, checkZipEntries, importVehicle, setCardFile, addGalleryFiles, createRecord, createAstro, generate, makeZip, validate, updateAutoText, updateSummary, renderBlocks, renderImages, renumberImages, localDate, showStep, resetEditor };\n`;
+const hooks = `\nwindow.vehicleTest = { state, fields, sanitizeHtml, validateRecord, checkImage, checkZipEntries, importVehicle, setCardFile, addGalleryFiles, createRecord, createAstro, generate, makeZip, validate, updateAutoText, updateSummary, renderBlocks, renderImages, renumberImages, editorSnapshot, localDate, showStep, resetEditor };\n`;
 const instrumented = source.replace('\n      })();\n', `${hooks}      })();\n`);
 const workflowTests = await readFile(new URL('../tests/vehicle-project-browser-cases.js', import.meta.url), 'utf8');
 const dateSource = await readFile(new URL('../src/config/modificationDates.js', import.meta.url), 'utf8');

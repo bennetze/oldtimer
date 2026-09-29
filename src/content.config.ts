@@ -11,7 +11,7 @@ const vehicles = defineCollection({
 		generateId: ({ entry }) => entry.replace(/\/vehicle\.json$/, ''),
 	}),
 	schema: () =>
-		z.object({
+		z.strictObject({
 			slug: z.string().min(1),
 			category: z.enum(['aktuelle-projekte', 'vergangene-projekte', 'fahrzeugangebote']),
 			title: z.string().min(1),
@@ -30,21 +30,21 @@ const vehicles = defineCollection({
 			leadImageAltEn: z.string().min(1),
 			blocks: z.array(
 				z.discriminatedUnion('type', [
-					z.object({
+					z.strictObject({
 						type: z.literal('copy'),
 						html: z.string().min(1),
 						htmlEn: z.string().min(1),
 					}),
-					z.object({
+					z.strictObject({
 						type: z.literal('contact'),
 						html: z.string().min(1),
 						htmlEn: z.string().min(1),
 					}),
-					z.object({
+					z.strictObject({
 						type: z.literal('gallery'),
 						images: z
 							.array(
-								z.object({
+								z.strictObject({
 									src: z.string().regex(/^\.\/[A-Za-z0-9._-]+$/),
 									alt: z.string().min(1),
 									altEn: z.string().min(1),
