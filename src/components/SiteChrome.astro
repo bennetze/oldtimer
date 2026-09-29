@@ -1,4 +1,5 @@
 ---
+import brandMark from '../assets/oldtimer/brand/oldtimermanufaktur-mark.svg?url';
 import { languagePath } from '../i18n/language.js';
 interface Props {
 	theme?: 'dark' | 'light';
@@ -48,7 +49,7 @@ const sitePath = (path) => {
 };
 ---
 
-<div class:list={['site-shell', { 'site-shell--light': theme === 'light' }]}>
+<div class:list={['site-shell', { 'site-shell--light': theme === 'light', 'site-shell--home': currentPath === '/' }]}>
 	<div class="cursor" aria-hidden="true"></div>
 
 	<header class="site-header" data-floating-header>
@@ -57,7 +58,8 @@ const sitePath = (path) => {
 			<span>Menü</span>
 		</button>
 		<a class="brand" href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
-			DIE OLDTIMERMANUFAKTUR
+			{currentPath === '/' && <img class="brand-mark" src={brandMark} width="2050" height="485" alt="" aria-hidden="true" draggable="false" />}
+			<span>DIE OLDTIMERMANUFAKTUR</span>
 		</a>
 		<nav class="language-switch" aria-label="Sprache wählen">
 			<a href={`${languagePath(Astro.url.pathname, 'de', basePath)}?lang=de`} data-language="de" lang="de" hreflang="de" aria-label="Deutsch">DE</a>
@@ -161,43 +163,64 @@ const sitePath = (path) => {
 	let keyboardSectionIndex;
 
 	if (cursor instanceof HTMLElement) {
-		const cursorPreference = window.matchMedia('(min-width: 761px) and (pointer: fine)');
-		const updateCursor = () => {
-			document.documentElement.classList.toggle('has-custom-cursor', cursorPreference.matches);
-			cursor.classList.remove('is-active');
-		};
-		cursorPreference.addEventListener('change', updateCursor);
-		updateCursor();
+		const cursorPreference = window.matchMedia('(min-width: 761px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
+		const forcedColors = window.matchMedia('(forced-colors: active)');
+		const increasedContrast = window.matchMedia('(prefers-contrast: more)');
+		const effect = 'blur(10px) grayscale(1) brightness(1.1) contrast(12) invert(1)';
+		const ringMask = 'radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px))';
+		const supported = typeof CSS !== 'undefined' && typeof CSS.supports === 'function'
+			&& (CSS.supports('backdrop-filter', effect) || CSS.supports('-webkit-backdrop-filter', effect))
+			&& (CSS.supports('mask-image', ringMask) || CSS.supports('-webkit-mask-image', ringMask))
+			&& typeof window.PointerEvent === 'function'
+			&& typeof window.requestAnimationFrame === 'function';
+		const nativeCursorSelector = 'dialog, input, textarea, select, [contenteditable]:not([contenteditable="false"]), iframe';
+		let cursorFrame;
 		let cursorX = -40;
 		let cursorY = -40;
-		let cursorFrame;
+		let enabled = false;
+		let pointerTarget = null;
+
+		const hideCursor = () => {
+			if (cursorFrame !== undefined) window.cancelAnimationFrame(cursorFrame);
+			cursorFrame = undefined;
+			document.documentElement.classList.remove('has-custom-cursor');
+			cursor.classList.remove('is-active');
+		};
+		const updateCursor = () => {
+			enabled = supported && cursorPreference.matches && !forcedColors.matches && !increasedContrast.matches;
+			hideCursor();
+		};
+		for (const preference of [cursorPreference, forcedColors, increasedContrast]) {
+			if (typeof preference.addEventListener === 'function') preference.addEventListener('change', updateCursor);
+			else if (typeof preference.addListener === 'function') preference.addListener(updateCursor);
+		}
+		updateCursor();
 
 		const renderCursor = () => {
 			cursorFrame = undefined;
+			if (!enabled || document.hidden) return;
 			cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
+			cursor.classList.toggle('is-active', Boolean(pointerTarget?.closest(interactiveSelector)));
+			// Hide the native pointer only once its replacement has a valid position.
+			document.documentElement.classList.add('has-custom-cursor');
 		};
-
-		const requestCursorFrame = () => {
-			if (!cursorFrame) {
-				cursorFrame = window.requestAnimationFrame(renderCursor);
-			}
-		};
-
 		window.addEventListener('pointermove', (event) => {
-			if (!cursorPreference.matches) return;
+			pointerTarget = event.target instanceof Element ? event.target : null;
+			if (!enabled || event.pointerType !== 'mouse' || pointerTarget?.closest(nativeCursorSelector)
+				|| document.querySelector('dialog[open]')) {
+				hideCursor();
+				return;
+			}
 			cursorX = event.clientX;
 			cursorY = event.clientY;
-			requestCursorFrame();
+			if (cursorFrame === undefined) cursorFrame = window.requestAnimationFrame(renderCursor);
 		}, { passive: true });
-		document.addEventListener('pointerover', (event) => {
-			if (event.target instanceof Element && event.target.closest(interactiveSelector)) {
-				cursor.classList.add('is-active');
-			}
-		});
-		document.addEventListener('pointerout', (event) => {
-			if (event.target instanceof Element && event.target.closest(interactiveSelector)) {
-				cursor.classList.remove('is-active');
-			}
+		window.addEventListener('blur', hideCursor);
+		document.documentElement.addEventListener('pointerleave', hideCursor);
+		document.addEventListener('visibilitychange', hideCursor);
+		document.addEventListener('keydown', hideCursor);
+		document.addEventListener('focusin', (event) => {
+			if (event.target instanceof Element && event.target.closest(nativeCursorSelector)) hideCursor();
 		});
 	}
 
@@ -537,6 +560,10 @@ const sitePath = (path) => {
 		min-height: 100vh;
 	}
 
+	.site-shell--home {
+		--site-header-height: 192px;
+	}
+
 	.site-shell--light {
 		background: #eeeeee;
 		background-color: #eeeeee;
@@ -550,7 +577,12 @@ const sitePath = (path) => {
 
 	/* Native dialogs are in the top layer, above the decorative cursor. */
 	:global(.has-custom-cursor dialog),
-	:global(.has-custom-cursor dialog *) {
+	:global(.has-custom-cursor dialog *),
+	:global(.has-custom-cursor input),
+	:global(.has-custom-cursor textarea),
+	:global(.has-custom-cursor select),
+	:global(.has-custom-cursor [contenteditable]:not([contenteditable="false"])),
+	:global(.has-custom-cursor [contenteditable]:not([contenteditable="false"]) *) {
 		cursor: auto !important;
 	}
 
@@ -565,32 +597,44 @@ const sitePath = (path) => {
 		z-index: 1000;
 		width: 28px;
 		height: 28px;
-		border: 1.5px solid rgba(238, 238, 238, 0.84);
+		background: transparent;
 		border-radius: 999px;
 		pointer-events: none;
 		transform: translate3d(-40px, -40px, 0) translate(-50%, -50%);
 		will-change: transform;
 		transition:
 			width 180ms ease,
-			height 180ms ease,
-			background 180ms ease,
-			border-color 180ms ease;
+			height 180ms ease;
+	}
+
+	.cursor::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		/* Average background detail and use a soft luminance threshold so black
+		   and white flow into each other along the ring. The biased threshold
+		   keeps middle gray dark; the masked edge and clear center stay crisp. */
+		-webkit-backdrop-filter: blur(10px) grayscale(1) brightness(1.1) contrast(12) invert(1);
+		backdrop-filter: blur(10px) grayscale(1) brightness(1.1) contrast(12) invert(1);
+		-webkit-mask-image: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
+		mask-image: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
 	}
 
 	.cursor.is-active {
 		width: 42px;
 		height: 42px;
-		border-color: rgba(238, 238, 238, 0.72);
-		background: rgba(238, 238, 238, 0.08);
 	}
 
-	.site-shell--light .cursor {
-		border-color: rgba(17, 17, 17, 0.68);
-	}
+	@media (forced-colors: active), (prefers-contrast: more), (prefers-reduced-motion: reduce) {
+		:global(.has-custom-cursor),
+		:global(.has-custom-cursor *) {
+			cursor: auto !important;
+		}
 
-	.site-shell--light .cursor.is-active {
-		border-color: rgba(17, 17, 17, 0.52);
-		background: rgba(17, 17, 17, 0.06);
+		.cursor {
+			display: none;
+		}
 	}
 
 	.site-header {
@@ -613,6 +657,21 @@ const sitePath = (path) => {
 	.site-shell--light .site-header {
 		color: #111111;
 		background: rgba(238, 238, 238, 0.34);
+	}
+
+	.site-shell--home .brand {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+		font-size: clamp(1.35rem, 1.85vw, 1.8rem);
+	}
+
+	.brand-mark {
+		display: block;
+		width: clamp(200px, 19vw, 280px);
+		max-width: 100%;
+		height: auto;
 	}
 
 	.brand,
@@ -892,7 +951,35 @@ const sitePath = (path) => {
 
 	@media (max-width: 760px) {
 		.site-shell {
-			--site-header-height: 104px;
+			--site-header-height: calc(104px + env(safe-area-inset-top, 0px));
+		}
+
+		.site-shell--home {
+			--site-header-height: calc(160px + env(safe-area-inset-top, 0px));
+		}
+
+		.site-shell--home .site-header {
+			grid-template-columns: 44px minmax(0, 1fr) 88px;
+		}
+
+		.site-shell--home .language-switch {
+			flex-direction: row;
+		}
+
+		.site-shell--home .brand {
+			gap: 1.15rem;
+			container-type: inline-size;
+			width: 100%;
+			letter-spacing: 0.025em;
+		}
+
+		.site-shell--home .brand span {
+			font-size: clamp(0.625rem, 6.15cqi, 1.1rem);
+			white-space: nowrap;
+		}
+
+		.brand-mark {
+			width: min(180px, 80%);
 		}
 
 		.cursor {
@@ -900,9 +987,25 @@ const sitePath = (path) => {
 		}
 
 		.site-header {
-			grid-template-columns: auto 1fr auto;
-			padding: 0 1rem;
+			grid-template-columns: 44px minmax(0, 1fr) 88px;
+			gap: 0.25rem;
+			padding: env(safe-area-inset-top, 0px) max(0.75rem, env(safe-area-inset-right, 0px)) 0 max(0.75rem, env(safe-area-inset-left, 0px));
 			background: rgba(16, 16, 16, 0.42);
+		}
+
+		.menu-toggle {
+			justify-content: center;
+			width: 44px;
+			min-height: 44px;
+			padding: 0;
+		}
+
+		.language-switch a {
+			display: grid;
+			place-items: center;
+			min-width: 44px;
+			min-height: 44px;
+			padding: 0;
 		}
 
 		.menu-toggle span:last-child {
@@ -914,54 +1017,72 @@ const sitePath = (path) => {
 		}
 
 		.brand {
-			font-size: 0.95rem;
-			letter-spacing: 0.12em;
+			min-width: 0;
+			overflow-wrap: anywhere;
+			font-size: 0.85rem;
+			letter-spacing: 0.07em;
 			white-space: normal;
 			line-height: 1.25;
 		}
 
 		.language-switch {
-			gap: 0.55rem;
+			gap: 0;
 			font-size: 0.8rem;
 		}
 
 
 		.menu-panel {
-			width: 100vw;
+			width: 100%;
 			min-height: 100svh;
-			padding: 1.25rem;
+			padding: max(1.25rem, env(safe-area-inset-top, 0px)) max(1.25rem, env(safe-area-inset-right, 0px)) max(1.25rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
 		}
 
 		.menu-panel__top {
 			align-items: flex-start;
+			min-width: 0;
+			gap: 0.75rem;
 			margin-top: 0;
 		}
 
 		.menu-panel__top span {
+			min-width: 0;
 			max-width: 190px;
+			overflow-wrap: anywhere;
+			letter-spacing: 0.12em;
 			line-height: 1.45;
 			transform: none;
 		}
 
 		.menu-close {
+			flex-shrink: 0;
+			min-height: 44px;
 			padding: 0.72rem 0.8rem;
 			font-size: 0.66rem;
 			transform: none;
 		}
 
 		.menu-nav__link {
-			font-size: clamp(1.24rem, 6vw, 1.78rem);
+			min-width: 0;
+			max-width: 100%;
+			min-height: 44px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			overflow-wrap: anywhere;
+			font-size: clamp(1.125rem, 5vw, 1.5rem);
 			line-height: 1.16;
-			letter-spacing: 0.2em;
+			letter-spacing: 0.1em;
 		}
 
 		.menu-nav {
 			gap: clamp(0.9rem, 4.4vw, 1.35rem);
-			padding: 4.5rem 0 3rem;
+			min-width: 0;
+			padding: clamp(2rem, 8svh, 4rem) 0 2rem;
 		}
 
 		.site-footer {
-			padding: 4.75rem 1.25rem 2.5rem;
+			padding: 4rem max(1.25rem, env(safe-area-inset-right, 0px)) max(2.5rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
 		}
 
 		.footer-primary {
@@ -1008,9 +1129,12 @@ const sitePath = (path) => {
 	}
 
 	@media (max-width: 360px) {
+		.site-header { grid-template-columns: 44px minmax(0, 1fr) 44px; }
+		.language-switch { flex-direction: column; }
+
 		.brand {
-			font-size: 0.9rem;
-			letter-spacing: 0.08em;
+			font-size: 0.75rem;
+			letter-spacing: 0.025em;
 		}
 	}
 </style>

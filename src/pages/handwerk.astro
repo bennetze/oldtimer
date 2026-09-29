@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
 import bodyPortrait from '../assets/oldtimer/L1005486.webp';
 import bodyLandscape from '../assets/oldtimer/L1005735.webp';
+import bodyDetail from '../assets/oldtimer/oldtimermanufaktur-verzinnen/L1006963.webp';
 import paintPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00878.webp';
 import paintLandscape from '../assets/oldtimer/L1005705.webp';
 import upholsteryPortrait from '../assets/oldtimer/L1005816.webp';
@@ -61,7 +62,7 @@ const handwerkServiceJsonLd = {
 	openGraphImage={bodyPortrait}
 	openGraphImageAlt="Ein Karosseriebauer arbeitet konzentriert an der Form eines historischen Fahrzeugs"
 	structuredDataType="CollectionPage"
-	dateModified="2026-09-27"
+	dateModified="2026-09-29"
 	additionalJsonLd={handwerkServiceJsonLd}
 >
 	<section
@@ -72,7 +73,7 @@ const handwerkServiceJsonLd = {
 	>
 		<h2 id="karosserie-title">Karosserie</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--right" aria-label="Arbeiten in der Karosserieabteilung">
+			<div class="collage collage--double collage--body-details collage--right" aria-label="Arbeiten in der Karosserieabteilung">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
@@ -99,6 +100,21 @@ const handwerkServiceJsonLd = {
 						alt="Historische Fahrzeuge und Karosserieteile in der Werkstatt"
 						widths={[640, 960, 1280, 1600]}
 						sizes="(max-width: 840px) 76vw, 42vw"
+						format="webp"
+						loading="lazy"
+					/>
+				</figure>
+				<figure
+					class="image-layer image-layer--detail"
+					data-parallax-layer
+					data-speed="0.28"
+					data-range="170"
+				>
+					<Image
+						src={bodyDetail}
+						alt="Nahaufnahme beim Verzinnen einer Karosseriekante"
+						widths={[480, 760, 1024]}
+						sizes="(max-width: 840px) 55vw, 30vw"
 						format="webp"
 						loading="lazy"
 					/>
@@ -276,6 +292,16 @@ const handwerkServiceJsonLd = {
 </EditorialPageLayout>
 
 <style>
+	:global(.editorial-page) .collage--body-details .image-layer--detail {
+		right: 0;
+		bottom: 0;
+		z-index: 3;
+		width: 48%;
+		height: 34%;
+	}
+	:global(.editorial-page) .collage--body-details .image-layer--detail img {
+		height: 100%;
+	}
 	:global(.editorial-page) .collage--craft-details .image-layer--portrait {
 		width: 76%;
 		height: 78%;
@@ -302,6 +328,10 @@ const handwerkServiceJsonLd = {
 	:global(.editorial-page) .collage--engines .image-layer--landscape { width: 84%; bottom: 8%; }
 	:global(.editorial-page) .collage--engines img { display: block; height: auto; }
 	@media (max-width: 840px) {
+		:global(.editorial-page) .collage--body-details .image-layer--detail {
+			width: 55%;
+			height: 36%;
+		}
 		:global(.editorial-page) .collage--engines { display: grid; gap: 3rem; min-height: 0; }
 		:global(.editorial-page) .collage--engines .image-layer { position: relative; inset: auto; }
 		:global(.editorial-page) .collage--engines .image-layer--landscape { justify-self: end; }

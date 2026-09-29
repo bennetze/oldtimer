@@ -48,7 +48,8 @@ for (const vehicle of vehicles) {
 		const texture = $('main.vehicle-detail.textured-background > .background-texture');
 		assert.equal(texture.length, 1, `${languagePrefix}${vehicle.route}: missing shared vehicle texture.`);
 		assert.equal(texture.attr('aria-hidden'), 'true', `${languagePrefix}${vehicle.route}: texture must be decorative.`);
-		assert.ok(texture.attr('style')?.includes(assetBase), `${languagePrefix}${vehicle.route}: incorrect texture asset base.`);
+		assert.equal(texture.find('svg image').length, 1, `${languagePrefix}${vehicle.route}: missing texture photograph.`);
+		assert.ok(texture.find('svg image').attr('href')?.startsWith(assetBase), `${languagePrefix}${vehicle.route}: incorrect texture asset base.`);
 	}
 	const galleryImages = limitVehicleGalleryBlocks(vehicle.blocks ?? [], galleryImageLimit)
 		.filter((block) => block.type === 'gallery')

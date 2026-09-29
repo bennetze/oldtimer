@@ -97,6 +97,12 @@ const itemList = {
 			</header>
 
 			<nav class="category-switcher" aria-label="Projektbereiche">
+				<button class="category-switcher__toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="project-category-dialog" hidden>
+					<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h16" /></svg>
+					<span>Projektbereich wechseln</span>
+					<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" /></svg>
+				</button>
+				<div class="category-switcher__links" id="project-category-links">
 				{
 					vehicleCategories.map((item) => (
 						<a
@@ -105,11 +111,29 @@ const itemList = {
 							data-category-link
 						>
 							<span>{item.label}</span>
-							{item.key === category && <i aria-hidden="true" />}
 						</a>
 					))
 				}
+				</div>
 			</nav>
+
+			<dialog class="category-dialog" id="project-category-dialog" aria-labelledby="project-category-title">
+				<header class="category-dialog__header">
+					<h2 id="project-category-title">Projektbereiche</h2>
+					<button class="category-dialog__close" type="button" aria-label="Schließen" autofocus>
+						<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6" /></svg>
+					</button>
+				</header>
+				<nav class="category-dialog__links" aria-label="Projektbereiche">
+					{vehicleCategories.map((item, index) => (
+						<a href={sitePath(`/projekte/${item.key}/`)} aria-current={item.key === category ? 'page' : undefined}>
+							<span class="category-dialog__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+							<span class="category-dialog__name">{item.label}{item.key === category && <small>Ausgewählt</small>}</span>
+							<svg aria-hidden="true" viewBox="0 0 24 24"><path d={item.key === category ? 'm5 12 4 4L19 6' : 'M4 12h15m-6-6 6 6-6 6'} /></svg>
+						</a>
+					))}
+				</nav>
+			</dialog>
 
 			<form class="archive-search" role="search" data-vehicle-search hidden={!vehicles.length}>
 				<label for={searchId}>Fahrzeugsuche</label>
@@ -182,6 +206,54 @@ const itemList = {
 <script>
 	import { restoreArchiveQuery, saveArchiveQuery } from '../scripts/archiveHistory.js';
 	const archive = document.querySelector('.vehicle-archive');
+	const categoryToggle = archive?.querySelector<HTMLButtonElement>('.category-switcher__toggle');
+	const categoryLinks = archive?.querySelector<HTMLElement>('.category-switcher__links');
+	const categoryDialog = archive?.querySelector<HTMLDialogElement>('.category-dialog');
+	const mobileCategories = window.matchMedia('(max-width: 760px)');
+	if (categoryToggle && categoryLinks && categoryDialog && typeof categoryDialog.showModal === 'function') {
+		const closeCategories = () => categoryDialog.close();
+		const syncCategoryLayout = () => {
+			const focused = document.activeElement;
+			const wasOpen = categoryDialog.open;
+			if (wasOpen) closeCategories();
+			categoryToggle.hidden = !mobileCategories.matches;
+			categoryLinks.hidden = mobileCategories.matches;
+			if (!mobileCategories.matches && (wasOpen || focused === categoryToggle)) categoryLinks.querySelector<HTMLAnchorElement>('[aria-current="page"]')?.focus();
+			if (mobileCategories.matches && categoryLinks.contains(focused)) categoryToggle.focus();
+		};
+		categoryToggle.addEventListener('click', () => {
+			categoryDialog.showModal();
+			categoryToggle.setAttribute('aria-expanded', 'true');
+			document.body.classList.add('category-dialog-open');
+		});
+		categoryDialog.querySelector('.category-dialog__close')?.addEventListener('click', closeCategories);
+		categoryDialog.addEventListener('click', (event) => {
+			if (event.target !== categoryDialog) return;
+			const bounds = categoryDialog.getBoundingClientRect();
+			if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) closeCategories();
+		});
+		categoryDialog.addEventListener('keydown', (event) => {
+			if (event.key !== 'Tab') return;
+			const items = [...categoryDialog.querySelectorAll<HTMLElement>('button, a[href]')];
+			const first = items[0];
+			const last = items.at(-1);
+			if (event.shiftKey && document.activeElement === first) {
+				event.preventDefault();
+				last?.focus();
+			} else if (!event.shiftKey && document.activeElement === last) {
+				event.preventDefault();
+				first?.focus();
+			}
+		});
+		categoryDialog.addEventListener('close', () => {
+			categoryToggle.setAttribute('aria-expanded', 'false');
+			document.body.classList.remove('category-dialog-open');
+			if (mobileCategories.matches) categoryToggle.focus();
+		});
+		window.addEventListener('pagehide', closeCategories);
+		mobileCategories.addEventListener('change', syncCategoryLayout);
+		syncCategoryLayout();
+	}
 	const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 	const searchForm = archive?.querySelector('[data-vehicle-search]');
 	const searchInput = searchForm?.querySelector('[data-vehicle-search-input]');
@@ -271,7 +343,6 @@ const itemList = {
 	};
 
 	const restoreArchive = () => {
-		archive?.classList.remove('archive-is-leaving');
 		if (searchInput instanceof HTMLInputElement) searchInput.value = restoreArchiveQuery(window.history, window.location.pathname, searchInput.value);
 		updateVehicleSearch();
 	};
@@ -291,28 +362,6 @@ const itemList = {
 		searchInput.focus();
 	});
 
-	document.querySelectorAll('[data-category-link]').forEach((link) => {
-		link.addEventListener('click', (event) => {
-			if (
-				!(link instanceof HTMLAnchorElement) ||
-				!(event instanceof MouseEvent) ||
-				event.defaultPrevented ||
-				event.button !== 0 ||
-				event.metaKey ||
-				event.ctrlKey ||
-				event.shiftKey ||
-				event.altKey ||
-				link.getAttribute('aria-current') === 'page' ||
-				reducedMotion.matches
-			) {
-				return;
-			}
-
-			event.preventDefault();
-			archive?.classList.add('archive-is-leaving');
-			window.setTimeout(() => window.location.assign(link.href), 220);
-		});
-	});
 </script>
 
 <style>
@@ -352,59 +401,105 @@ const itemList = {
 	}
 
 	.category-switcher {
-		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		margin-bottom: clamp(3.5rem, 6vw, 6rem);
-		border-top: 1px solid rgba(17, 17, 17, 0.3);
+		margin-bottom: clamp(2rem, 4vw, 4rem);
+	}
+
+	.category-switcher__links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem clamp(1.5rem, 4vw, 4rem);
 		border-bottom: 1px solid rgba(17, 17, 17, 0.3);
-		background: rgba(238, 238, 238, 0.18);
-		animation: tabs-enter 700ms 80ms cubic-bezier(0.22, 1, 0.36, 1) both;
 	}
 
 	.category-switcher a {
-		position: relative;
-		padding: 1.25rem clamp(0.75rem, 2vw, 1.5rem);
+		display: flex;
+		align-items: center;
+		min-height: 52px;
+		padding: 0.75rem 0;
+		border-bottom: 2px solid transparent;
 		color: inherit;
-		font-size: clamp(0.68rem, 0.78vw, 0.78rem);
-		font-weight: 460;
-		letter-spacing: 0.145em;
-		text-align: center;
+		font-size: 1.125rem;
+		font-weight: 600;
+		letter-spacing: 0.06em;
+		line-height: 1.4;
 		text-decoration: none;
 		text-transform: uppercase;
-		transition:
-			background-color 260ms ease,
-			color 260ms ease;
+		transition: border-color 180ms ease;
 	}
 
-	.category-switcher a + a {
-		border-left: 1px solid rgba(17, 17, 17, 0.3);
-	}
-
-	.category-switcher a:hover {
-		background: rgba(17, 17, 17, 0.045);
-	}
-
+	.category-switcher a:hover,
 	.category-switcher a[aria-current='page'] {
-		background: rgba(238, 238, 238, 0.32);
-		font-weight: 560;
+		border-bottom-color: currentColor;
 	}
 
-	.category-switcher i {
-		position: absolute;
-		right: 0;
-		bottom: -1px;
-		left: 0;
-		height: 2px;
+	.category-switcher a:focus-visible,
+	.category-switcher__toggle:focus-visible {
+		outline: 2px solid currentColor;
+		outline-offset: 4px;
+	}
+
+	.category-switcher__toggle {
+		display: flex;
+		align-items: center;
+		gap: 0.875rem;
+		width: 100%;
+		min-height: 58px;
+		padding: 1rem 1.125rem;
+		border: 1px solid #111111;
+		border-radius: 0;
 		background: #111111;
-		content: '';
-		transform-origin: left center;
-		animation: marker-enter 480ms 160ms cubic-bezier(0.22, 1, 0.36, 1) both;
+		color: #eeeeee;
+		font: inherit;
+		font-size: 1.0625rem;
+		font-weight: 600;
+		text-align: left;
+		cursor: pointer;
+		transition: background-color 160ms ease;
 	}
 
-	.category-switcher a:focus-visible {
-		outline: 2px solid #111111;
-		outline-offset: -4px;
+	.category-switcher__toggle:hover { background: #303030; }
+	.category-switcher__toggle:active { background: #444444; }
+	.category-switcher__toggle svg,
+	.category-dialog svg {
+		flex: 0 0 20px;
+		width: 20px;
+		height: 20px;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 1.25;
 	}
+	.category-switcher__toggle svg:last-child { margin-left: auto; width: 16px; }
+	.category-switcher [hidden] { display: none; }
+
+	:global(body.category-dialog-open) { overflow: hidden; }
+	.category-dialog {
+		position: fixed;
+		inset: auto 0 0;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 100%;
+		max-height: 90svh;
+		margin: 0;
+		padding: 1.25rem max(1.25rem, env(safe-area-inset-right, 0px)) max(1.5rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
+		border: 0;
+		border-top: 1px solid rgba(17, 17, 17, 0.25);
+		background: #eeeeee;
+		color: #111111;
+		overscroll-behavior: contain;
+	}
+	.category-dialog::backdrop { background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); }
+	.category-dialog[open] { animation: category-sheet-enter 220ms cubic-bezier(0.22, 1, 0.36, 1); }
+	.category-dialog__header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+	.category-dialog__header h2 { margin: 0; font-size: clamp(1.125rem, 5vw, 1.5rem); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+	.category-dialog__close { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 44px; padding: 0; border: 1px solid rgba(17,17,17,0.3); border-radius: 50%; background: transparent; color: inherit; cursor: pointer; }
+	.category-dialog__links a { display: flex; align-items: center; gap: 1rem; min-height: 80px; padding: 1rem 0; border-top: 1px solid rgba(17,17,17,0.25); color: inherit; text-decoration: none; }
+	.category-dialog__number { font-size: 0.875rem; color: #555555; }
+	.category-dialog__name { flex: 1; font-family: var(--font-heading); font-size: clamp(1rem, 4.5vw, 1.25rem); font-weight: 500; line-height: 1.3; overflow-wrap: anywhere; }
+	.category-dialog__name small { display: block; margin-top: 0.35rem; font-family: var(--font-body); font-size: 1rem; font-weight: 600; }
+	.category-dialog__links a:hover .category-dialog__name { text-decoration: underline; text-underline-offset: 0.2em; }
+	.category-dialog :is(a, button):focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+	@keyframes category-sheet-enter { from { opacity: 0; transform: translateY(1rem); } to { opacity: 1; transform: none; } }
+	@media (prefers-reduced-motion: reduce) { .category-dialog[open] { animation: none; } .category-switcher__toggle { transition: none; } }
 
 	.archive-search {
 		display: grid;
@@ -456,9 +551,11 @@ const itemList = {
 		background: transparent;
 		color: inherit;
 		font: inherit;
-		font-size: clamp(0.92rem, 1.15vw, 1.05rem);
+		font-size: clamp(1rem, 1.15vw, 1.05rem);
 		letter-spacing: 0.035em;
 	}
+
+	.archive-search__field:not(:has(button:not([hidden]))) input { padding-right: 0.25rem; }
 
 	.archive-search input::placeholder {
 		color: rgba(17, 17, 17, 0.5);
@@ -548,21 +645,6 @@ const itemList = {
 		}
 	}
 
-	.archive-is-leaving .archive-intro h1 {
-		animation: archive-fallback-out 190ms cubic-bezier(0.55, 0, 1, 0.45) both;
-	}
-
-	.archive-is-leaving .vehicle-grid {
-		animation: archive-fallback-out 210ms 10ms cubic-bezier(0.55, 0, 1, 0.45) both;
-	}
-
-	@keyframes archive-fallback-out {
-		to {
-			opacity: 0;
-			transform: translateY(-0.5rem);
-		}
-	}
-
 	.pagination {
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
@@ -594,8 +676,8 @@ const itemList = {
 	.pagination__pages a {
 		display: grid;
 		place-items: center;
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 2.75rem;
+		height: 2.75rem;
 		border: 1px solid rgba(17, 17, 17, 0.3);
 	}
 
@@ -619,13 +701,24 @@ const itemList = {
 		}
 	}
 
+	@media (max-width: 760px) {
+		.category-switcher__links { flex-direction: column; gap: 0; }
+		.category-switcher a { padding-inline: 0.5rem; font-size: 1rem; }
+		.category-switcher a[aria-current='page'] { border-left: 2px solid currentColor; border-bottom-color: transparent; }
+		.archive-search { margin-bottom: 2.5rem; }
+		.archive-search > label { font-size: 0.875rem; }
+		.archive-search button { min-width: 44px; min-height: 44px; font-size: 0.875rem; }
+		.archive-search input { min-height: 48px; }
+		.pagination__direction { display: inline-flex; align-items: center; min-height: 44px; }
+	}
+
 	@media (max-width: 680px) {
 		.vehicle-archive {
-			padding-top: 9rem;
+			padding-top: calc(var(--site-header-height, 104px) + 2rem);
 		}
 
 		.archive-intro {
-			padding: 2.75rem 0 3rem;
+			padding: 0 0 2rem;
 		}
 
 		.archive-intro h1 {
@@ -633,31 +726,8 @@ const itemList = {
 			font-size: clamp(1.95rem, 8vw, 2.55rem);
 			letter-spacing: 0.06em;
 			line-height: 1;
-			overflow-wrap: normal;
-			hyphens: none;
-		}
-
-		.category-switcher {
-			display: grid;
-			grid-template-columns: repeat(3, minmax(0, 1fr));
-			overflow: visible;
-		}
-
-		.category-switcher a {
-			display: grid;
-			place-items: center;
-			min-width: 0;
-			min-height: 4.25rem;
-			padding: 0.8rem 0.35rem;
-			font-size: 0.58rem;
-			letter-spacing: 0.1em;
-			line-height: 1.4;
-		}
-
-		.category-switcher a span {
-			max-width: min(13ch, 100%);
 			overflow-wrap: anywhere;
-			text-wrap: balance;
+			hyphens: none;
 		}
 
 		.archive-search {
@@ -692,7 +762,6 @@ const itemList = {
 	@media (prefers-reduced-motion: reduce) {
 		.archive-intro h1,
 		.category-switcher,
-		.category-switcher i,
 		.archive-search {
 			animation: none;
 		}

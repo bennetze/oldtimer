@@ -2,11 +2,15 @@
 import texture from '../assets/oldtimer/L1007006.webp';
 ---
 
-<div
-	class="background-texture"
-	aria-hidden="true"
-	style={`--background-texture-image: url("${texture.src}")`}
-></div>
+<div class="background-texture" aria-hidden="true">
+	<!-- One unmodified photograph, cropped past the deep fold at its left edge.
+	     A viewport-sized surface avoids both tile seams and page-length stretching. -->
+	<div class="background-texture__viewport">
+		<svg class="background-texture__surface" viewBox="400 100 1395 1450" preserveAspectRatio="xMidYMid slice" focusable="false">
+			<image href={texture.src} width={texture.width} height={texture.height} />
+		</svg>
+	</div>
+</div>
 
 <style>
 	.background-texture {
@@ -15,21 +19,28 @@ import texture from '../assets/oldtimer/L1007006.webp';
 		z-index: -1;
 		pointer-events: none;
 		user-select: none;
-		background-image: var(--background-texture-image);
-		background-repeat: repeat;
-		background-position: center top;
-		/* A stable physical grain size, independent of viewport and page length. */
-		background-size: 875px 875px;
-		/* Luminosity retains the gradient hue and keeps grain visible on white. */
-		mix-blend-mode: luminosity;
-		/* Keep the leather visible without competing with fine serif strokes. */
-		opacity: 0.1;
+		/* Clip the fixed surface to this main, including at the footer boundary.
+		   Keep the surface out of the footer. */
+		clip: rect(0, auto, auto, 0);
 	}
 
+	.background-texture__viewport {
+		opacity: 0.08;
+		position: fixed;
+		inset: 0;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.background-texture__surface {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
 </style>
 
 <style is:global>
-	/* Contain blending below content without changing its positioning or focus. */
+	/* Contain the decorative surface below content without changing focus. */
 	.textured-background {
 		position: relative;
 		isolation: isolate;

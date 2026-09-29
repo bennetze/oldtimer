@@ -142,8 +142,8 @@ const openingId = sections[0]?.id;
 
 		const viewportCenter = window.innerHeight / 2;
 		const isMobileLayout = window.innerWidth <= 840;
-		const mobileFactor = isMobileLayout ? 0.58 : 1;
-		const mobileTextClearance = 64;
+		const mobileFactor = isMobileLayout ? 0.18 : 1;
+		const mobileTextClearance = 24;
 
 		visibleGroups.forEach((group) => {
 			if (!(group instanceof HTMLElement)) {
@@ -153,7 +153,7 @@ const openingId = sections[0]?.id;
 			const groupBounds = group.getBoundingClientRect();
 			const groupCenter = groupBounds.top + groupBounds.height / 2;
 			const distance = viewportCenter - groupCenter;
-			const headingBounds = group.querySelector('h2')?.getBoundingClientRect();
+			const headingBounds = (group.querySelector('.profile-heading') ?? group.querySelector('h2'))?.getBoundingClientRect();
 			const copyBounds = group.querySelector('.story__copy')?.getBoundingClientRect();
 
 			group.querySelectorAll('[data-parallax-layer]').forEach((layer) => {
@@ -486,7 +486,7 @@ const openingId = sections[0]?.id;
 		}
 
 		.editorial-intro {
-			padding: calc(10rem + var(--site-header-height, 104px) - 64px) 1.25rem 5.5rem;
+			padding: calc(var(--site-header-height, 104px) + 2.5rem) 1.25rem 3rem;
 		}
 
 		.editorial-intro h1 {
@@ -496,11 +496,11 @@ const openingId = sections[0]?.id;
 		}
 
 		.editorial-page .story {
-			padding: 0 1.5rem clamp(10rem, 35vw, 14rem);
+			padding: 0 1.25rem clamp(4rem, 16vw, 6rem);
 		}
 
 		.editorial-page .story h2 {
-			margin-bottom: clamp(7.5rem, 31vw, 9rem);
+			margin-bottom: clamp(2rem, 8vw, 3rem);
 			font-size: clamp(1.9rem, 8vw, 2.8rem);
 			line-height: 1;
 			letter-spacing: 0.035em;
@@ -510,7 +510,7 @@ const openingId = sections[0]?.id;
 		.editorial-page .story--images-left .story__layout {
 			display: flex;
 			flex-direction: column;
-			gap: clamp(10rem, 42vw, 12rem);
+			gap: clamp(2.5rem, 10vw, 4rem);
 		}
 
 		.editorial-page .collage,
@@ -520,11 +520,11 @@ const openingId = sections[0]?.id;
 		}
 
 		.editorial-page .collage--double {
-			min-height: clamp(50rem, 108svh, 62rem);
+			min-height: clamp(25rem, 125vw, 35rem);
 		}
 
 		.editorial-page .collage--triple {
-			min-height: clamp(52rem, 116svh, 66rem);
+			min-height: clamp(25rem, 130vw, 35rem);
 		}
 
 		.editorial-page .image-layer--portrait {
@@ -553,6 +553,8 @@ const openingId = sections[0]?.id;
 			width: 54%;
 			height: 30%;
 		}
+
+		.editorial-page :is(h1, h2, .story__copy) { overflow-wrap: anywhere; }
 
 		.editorial-page .story__copy p {
 			font-size: clamp(1.15rem, 4.8vw, 1.3rem);

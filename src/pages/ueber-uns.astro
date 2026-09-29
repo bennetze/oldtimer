@@ -411,9 +411,11 @@ const sectionNavigationItems = [
 	}
 	@media (max-width: 840px) {
 		:global(.editorial-page) .collage--single .image-layer { width: 90%; }
-		:global(.editorial-page) .story--team .story__layout { gap: 5rem; }
+		:global(.editorial-page) .story--team .story__layout { gap: clamp(2.5rem, 10vw, 4rem); }
+		:global(.editorial-page) .story--team { padding-bottom: clamp(4rem, 16vw, 6rem); }
+		:global(.editorial-page) .story--team h2 { margin-bottom: clamp(2rem, 8vw, 3rem); }
 		:global(.editorial-page) .collage--team-details {
-			min-height: clamp(28rem, 124vw, 44rem);
+			min-height: clamp(25rem, 124vw, 35rem);
 		}
 		:global(.editorial-page) .collage--team-details .image-layer--team-main { width: 88%; }
 		:global(.editorial-page) .collage--team-details .image-layer--team-conversation { top: 32%; width: 65%; }
@@ -459,7 +461,7 @@ const sectionNavigationItems = [
 
 	@media (max-width: 840px) {
 		.profile-heading {
-			margin-bottom: clamp(7.5rem, 31vw, 9rem);
+			margin-bottom: clamp(2rem, 8vw, 3rem);
 		}
 
 		:global(.editorial-page .story .profile-heading h2) {

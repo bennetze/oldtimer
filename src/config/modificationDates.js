@@ -1,14 +1,17 @@
 // Reviewed content dates, never the build clock. Advance shared when site-wide
 // output changes; advance a template/page date for a more limited change.
 export const modificationDates = {
-	shared: '2026-09-28',
-	archive: '2026-09-17',
-	vehicle: '2026-09-14',
+	shared: '2026-09-29',
+	archive: '2026-09-29',
+	vehicle: '2026-09-28',
 	pages: {
-		'/': '2026-09-20',
-		'/handwerk/': '2026-09-27',
+		'/impressum/': '2026-09-28',
+		'/datenschutz/': '2026-09-28',
+		'/404.html': '2026-09-28',
+		'/': '2026-09-29',
+		'/handwerk/': '2026-09-29',
 		'/ueber-uns/': '2026-09-28',
-		'/projekte/': '2026-09-28',
+		'/projekte/': '2026-09-29',
 	},
 };
 

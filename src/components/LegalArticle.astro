@@ -1,149 +1,93 @@
 ---
+import BackgroundTexture from './BackgroundTexture.astro';
+
 interface Props {
-	title?: string;
-	eyebrow?: string;
+	title: string;
+	eyebrow: string;
 }
 
 const { title, eyebrow } = Astro.props;
-const hasHeading = Boolean(title || eyebrow);
 ---
 
-<main class:list={['legal-page', { 'legal-page--empty': !hasHeading }]} id="main-content" tabindex="-1">
-	{
-		hasHeading && (
-			<section class="legal-hero" aria-labelledby={title ? 'legal-title' : undefined}>
-				{eyebrow && <p>{eyebrow}</p>}
-				{title && <h1 id="legal-title">{title}</h1>}
-			</section>
-		)
-	}
-
-	{hasHeading && <article class="legal-copy"><slot /></article>}
+<main class="legal-page textured-background" id="main-content" tabindex="-1">
+	<BackgroundTexture />
+	<header class="legal-hero">
+		<p>{eyebrow}</p>
+		<h1>{title}</h1>
+	</header>
+	<article class="legal-copy">
+		<h2>In Vorbereitung</h2>
+		<slot />
+	</article>
 </main>
 
 <style>
 	.legal-page {
-		background: #101010;
-		color: var(--color-main);
-		min-height: 100vh;
-	}
-
-	.legal-page--empty {
 		min-height: 100svh;
+		padding-bottom: clamp(6rem, 12vw, 12rem);
+		color: #111111;
+		background: linear-gradient(180deg, #ffffff 0%, #ffffff 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #b1b6d5 47%, #8faede 54%, #80a3d1 61%, #8bb0e1 70%, #a6c6ec 82%, #ffffff 100%);
 	}
 
 	.legal-hero {
-		display: grid;
-		align-content: end;
-		min-height: min(58vh, 620px);
-		padding: clamp(8rem, 16vw, 13rem) clamp(1.25rem, 7vw, 8rem) clamp(4.5rem, 8vw, 7rem);
-		border-bottom: 1px solid rgba(238, 238, 238, 0.18);
-		background:
-			linear-gradient(180deg, rgba(238, 238, 238, 0.035), rgba(238, 238, 238, 0) 42%),
-			#101010;
+		padding: calc(clamp(9rem, 13vw, 13rem) + var(--site-header-height, 132px) - 76px)
+			clamp(1.25rem, 5vw, 5rem) clamp(4rem, 7vw, 7rem);
+		text-align: center;
 	}
 
 	.legal-hero p {
-		margin: 0 0 1.2rem;
-		color: rgba(238, 238, 238, 0.64);
+		margin: 0 0 1.75rem;
 		text-transform: uppercase;
-		letter-spacing: 0.32em;
-		font-size: clamp(0.62rem, 0.72vw, 0.74rem);
-		font-weight: 500;
+		letter-spacing: 0.24em;
+		font-size: 0.85rem;
+		font-weight: 600;
 	}
 
 	.legal-hero h1 {
-		max-width: 920px;
 		margin: 0;
 		font-family: var(--font-heading);
-		font-size: clamp(2rem, 4.4vw, 5.6rem);
-		font-weight: 300;
-		line-height: 0.98;
-		letter-spacing: 0.16em;
+		font-size: clamp(2rem, 5.2vw, 5.25rem);
+		font-weight: 350;
+		line-height: 1.12;
+		letter-spacing: 0.08em;
 		text-transform: uppercase;
-		text-wrap: balance;
+		overflow-wrap: anywhere;
+		hyphens: auto;
+		hyphenate-limit-chars: 10 6 9;
 	}
 
 	.legal-copy {
-		width: min(940px, calc(100% - 2.5rem));
+		width: min(42rem, calc(100% - 3rem));
 		margin: 0 auto;
-		padding: clamp(4.5rem, 8vw, 8rem) 0 clamp(2rem, 4vw, 4rem);
+		padding-top: clamp(2rem, 4vw, 3.5rem);
+		border-top: 1px solid rgba(17, 17, 17, 0.34);
 	}
 
-	.legal-copy :global(h2),
-	.legal-copy :global(h3) {
-		margin: clamp(2.75rem, 5vw, 4.5rem) 0 1.1rem;
+	.legal-copy h2 {
+		margin: 0 0 1.5rem;
 		font-family: var(--font-heading);
-		font-weight: 400;
-		line-height: 1.2;
-		letter-spacing: 0.22em;
+		font-size: clamp(1rem, 1.5vw, 1.35rem);
+		font-weight: 500;
+		line-height: 1.4;
+		letter-spacing: 0.12em;
 		text-transform: uppercase;
 	}
 
-	.legal-copy :global(h2) {
-		font-size: clamp(1.05rem, 1.55vw, 1.55rem);
-	}
-
-	.legal-copy :global(h3) {
-		font-size: clamp(0.82rem, 1vw, 1rem);
-	}
-
 	.legal-copy :global(p) {
-		margin: 0 0 1.35rem;
-		color: var(--color-main);
-		font-size: clamp(1.15rem, 1.25vw, 1.3rem);
+		margin: 0;
+		font-size: clamp(1.15rem, 1.25vw, 1.35rem);
 		font-weight: 600;
 		line-height: 1.75;
 	}
 
-	.legal-copy :global(strong) {
-		color: rgba(238, 238, 238, 0.94);
-		font-weight: 700;
-	}
-
-	.legal-copy :global(a) {
-		color: rgba(238, 238, 238, 0.94);
-		text-decoration-color: rgba(238, 238, 238, 0.34);
-		text-underline-offset: 0.28em;
-		transition:
-			color 180ms ease,
-			text-decoration-color 180ms ease;
-	}
-
-	.legal-copy :global(a:hover),
-	.legal-copy :global(a:focus-visible) {
-		color: #eeeeee;
-		text-decoration-color: #eeeeee;
-	}
-
-	.legal-copy :global(a:focus-visible) {
-		outline: 1px solid rgba(238, 238, 238, 0.62);
-		outline-offset: 0.35rem;
-	}
-
-	@supports not (text-wrap: balance) {
-		.legal-hero h1 {
-			text-wrap: normal;
-		}
-	}
-
-		@media (max-width: 760px) {
+	@media (max-width: 760px) {
 		.legal-hero {
-			min-height: 46svh;
-			padding: 7.5rem 1.25rem 3.5rem;
+			padding-top: calc(var(--site-header-height, 132px) + 4rem);
 		}
 
-			.legal-hero h1 {
-				font-size: clamp(1.4rem, 6.4vw, 1.9rem);
-				letter-spacing: 0.025em;
-				overflow-wrap: break-word;
-				word-break: normal;
-				hyphens: auto;
-			}
-
-		.legal-copy {
-			width: calc(100% - 2.5rem);
-			padding-top: 3.5rem;
+		.legal-hero h1 {
+			font-size: clamp(1.65rem, 7vw, 3rem);
+			letter-spacing: 0.035em;
 		}
 	}
 </style>

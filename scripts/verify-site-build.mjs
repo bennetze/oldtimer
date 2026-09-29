@@ -37,6 +37,21 @@ for (const file of files) {
 			for (const id of ($(element).attr(attribute) ?? '').split(/\s+/).filter(Boolean)) assert.ok(ids.has(id), `${file}: missing ${attribute} target ${id}`);
 		}
 	});
+	if ($('.vehicle-archive').length) {
+		const toggle = $('.category-switcher__toggle');
+		assert.equal(toggle.length, 1, `${file}: category disclosure`);
+		assert.equal(toggle.attr('type'), 'button');
+		assert.equal(toggle.attr('aria-expanded'), 'false');
+		assert.ok(toggle.is('[hidden]'), `${file}: enhancement-only trigger`);
+		const dialog = $(`#${toggle.attr('aria-controls')}`);
+		assert.ok(dialog.is('dialog:not([open])'), `${file}: category dialog starts closed`);
+		assert.equal(dialog.find('a[href]').length, 3);
+		assert.equal(dialog.find('a[aria-current="page"]').length, 1);
+		const links = $('.category-switcher__links');
+		assert.ok(!links.is('[hidden], [inert]'), `${file}: categories available without JavaScript`);
+		assert.equal(links.find('a[href]').length, 3);
+		assert.equal(links.find('a[aria-current="page"]').length, 1);
+	}
 	const policy = $('meta[http-equiv="content-security-policy"]').attr('content');
 	assert.ok(policy, `${file}: missing CSP`);
 	const directives = new Map(policy.split(';').map((part) => { const [name, ...values] = part.trim().split(/\s+/); return [name, values]; }));
