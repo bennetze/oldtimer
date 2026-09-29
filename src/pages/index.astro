@@ -5,7 +5,7 @@ import SectionNavigation from "../components/SectionNavigation.astro";
 import heroSiteMotionAvif from "../assets/oldtimer/hero-site-motion.avif";
 import heroSiteMotionWebp from "../assets/oldtimer/hero-site-motion.webp";
 import heroSiteMp4 from "../assets/oldtimer/hero-site.mp4";
-import heroSitePoster from "../assets/oldtimer/hero-site-poster.jpg";
+import heroSiteRevealPoster from "../assets/oldtimer/hero-site-reveal-poster.jpg";
 import heroSiteWebm from "../assets/oldtimer/hero-site.webm";
 import handwerkMotionAvif from "../assets/oldtimer/handwerk-motion.avif";
 import handwerkMotionWebp from "../assets/oldtimer/handwerk-motion.webp";
@@ -53,9 +53,9 @@ const sectionNavigationItems = [
 
 <Layout
   description="Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
-  openGraphImage={heroSitePoster}
-  openGraphImageAlt="Ein historischer Roadster während einer Fahrt"
-  dateModified="2026-09-17"
+  openGraphImage={heroSiteRevealPoster}
+  openGraphImageAlt="Historischer Rennwagen auf einer Landstraße bei Sonnenuntergang"
+  dateModified="2026-09-29"
 >
   <SiteChrome>
     <main id="main-content" tabindex="-1">
@@ -75,7 +75,7 @@ const sectionNavigationItems = [
           playsinline
           webkit-playsinline
           preload="auto"
-          poster={heroSitePoster.src}
+          poster={heroSiteRevealPoster.src}
           disablepictureinpicture
           data-motion-video
           aria-hidden="true"
@@ -95,8 +95,8 @@ const sectionNavigationItems = [
             alt=""
             decoding="async"
             fetchpriority="high"
-            src={heroSitePoster.src}
-            data-motion-poster={heroSitePoster.src}
+            src={heroSiteRevealPoster.src}
+            data-motion-poster={heroSiteRevealPoster.src}
             data-motion-avif={heroSiteMotionAvif.src}
             data-motion-webp={includeWebpMotionFallback ? heroSiteMotionWebp.src : undefined}
             data-motion-image
