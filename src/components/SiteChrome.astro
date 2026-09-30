@@ -672,7 +672,7 @@ const sitePath = (path) => {
 	}
 
 	.footer-brand {
-		font-size: clamp(0.64rem, 0.78vw, 0.78rem);
+		font-size: clamp(0.72rem, 0.88vw, 0.88rem);
 	}
 
 	.menu-toggle,
@@ -946,24 +946,50 @@ const sitePath = (path) => {
 	}
 
 	.footer-primary {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
+	}
+
+	.site-footer a {
+		opacity: 0.72;
+		transition: opacity 180ms ease;
 	}
 
 	.footer-primary a {
 		opacity: 0.68;
-		transition: opacity 180ms ease;
 	}
 
-	.footer-primary a:hover,
-	.footer-primary a:focus-visible,
 	.footer-primary a[aria-current='page'] {
-		opacity: 0.98;
+		opacity: 0.85;
+	}
+
+	.site-footer a:hover,
+	.site-footer a:focus-visible {
+		opacity: 1;
+	}
+
+	.site-shell--light .site-footer a {
+		opacity: 0.6;
+	}
+
+	.site-shell--light .footer-primary a[aria-current='page'] {
+		opacity: 0.72;
+	}
+
+	.site-shell--light .site-footer a:hover,
+	.site-shell--light .site-footer a:focus-visible {
+		color: #000000;
+		opacity: 1;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.site-footer a {
+			transition: none;
+		}
 	}
 
 	.footer-legal {
 		color: currentColor;
-		font-size: 0.75rem;
-		opacity: 0.72;
+		font-size: 0.84rem;
 	}
 
 	.social-links {
@@ -992,12 +1018,13 @@ const sitePath = (path) => {
 		color: currentColor;
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
-		font-size: 0.68rem;
+		font-size: 0.76rem;
 		opacity: 0.64;
 	}
 
 	.menu-toggle:focus-visible,
 	.menu-close:focus-visible,
+	.footer-brand:focus-visible,
 	.footer-primary a:focus-visible,
 	.footer-legal a:focus-visible {
 		outline: 1px solid currentColor;
@@ -1142,7 +1169,7 @@ const sitePath = (path) => {
 		.footer-legal {
 			gap: 0.5rem 0.9rem;
 			margin-top: 1.4rem;
-			font-size: 0.76rem;
+			font-size: 0.85rem;
 		}
 
 		.footer-legal a {
@@ -1170,11 +1197,11 @@ const sitePath = (path) => {
 		}
 
 		.footer-brand {
-			font-size: 0.7rem;
+			font-size: 0.78rem;
 		}
 
 		.site-footer p {
-			font-size: 0.72rem;
+			font-size: 0.8rem;
 		}
 	}
 
