@@ -1,4 +1,5 @@
-export const normalizeSearchValue = value => value.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase('de').trim();
+import { watchMedia } from './accessibility.js';
+export const normalizeSearchValue = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('de').trim();
 
 export function createCardFilter(cards, reducedMotion) {
 	const entries = cards.map(card => ({ card, title: normalizeSearchValue(card.dataset.searchValue ?? ''), visible: !card.hidden, animation: undefined }));
@@ -7,12 +8,13 @@ export function createCardFilter(cards, reducedMotion) {
 		entry.visible = visible;
 		const { card } = entry;
 		card.dataset.searchVisible = String(visible);
-		card.inert = !visible;
+		const nativeInert = 'inert' in card;
+		if (nativeInert) card.inert = !visible;
 		entry.animation?.cancel();
 		entry.animation = undefined;
 		// Cancel the entrance CSS animation only when this card actually changes.
-		card.getAnimations().forEach(animation => animation.cancel());
-		if (reducedMotion.matches || typeof card.animate !== 'function') { card.hidden = !visible; return; }
+		(typeof card.getAnimations === 'function' ? card.getAnimations() : []).forEach(animation => animation.cancel());
+		if (reducedMotion.matches || !nativeInert || typeof card.animate !== 'function') { card.hidden = !visible; return; }
 		if (visible) card.hidden = false;
 		const animation = card.animate(visible
 			? [{ opacity: 0, transform: 'translateY(0.7rem)' }, { opacity: 1, transform: 'translateY(0)' }]
@@ -25,7 +27,7 @@ export function createCardFilter(cards, reducedMotion) {
 			entry.animation = undefined;
 		}).catch(() => undefined);
 	};
-	reducedMotion.addEventListener('change', () => {
+	watchMedia(reducedMotion, () => {
 		if (!reducedMotion.matches) return;
 		for (const entry of entries) {
 			entry.animation?.cancel();

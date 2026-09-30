@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { globSync, readFileSync } from 'node:fs';
 import { load } from 'cheerio';
 import { localizeVehicle } from '../src/config/vehicleLocale.js';
+import { annotateVehicleLanguageParts } from '../src/config/vehicleLanguageParts.js';
 import { limitVehicleGalleryBlocks, GITHUB_PAGES_GALLERY_IMAGE_LIMIT } from '../src/config/vehicleGalleryPolicy.js';
 
 const fragment = html => load(html, {}, false).html();
@@ -22,7 +23,7 @@ for (const file of globSync('src/pages/projekte/*/*/vehicle.json')) {
 		const copy = $('.story-copy, .story-contact > div:first-child').toArray();
 		const expectedCopy = blocks.filter(block => block.type !== 'gallery');
 		assert.equal(copy.length, expectedCopy.length, route);
-		copy.forEach((node, index) => assert.equal(fragment($(node).html()), fragment(expectedCopy[index].html), `${route}: block ${index}`));
+		copy.forEach((node, index) => assert.equal(fragment($(node).html()), fragment(annotateVehicleLanguageParts(expectedCopy[index].html, language)), `${route}: block ${index}`));
 		const images = blocks.filter(block => block.type === 'gallery').flatMap(block => block.images);
 		assert.deepEqual($('.story-image img').toArray().map(node => $(node).attr('alt')), images.map(image => image.alt), route);
 		assert.deepEqual($('.story-image figcaption').toArray().map(node => $(node).text()), images.filter(image => image.caption).map(image => image.caption), route);

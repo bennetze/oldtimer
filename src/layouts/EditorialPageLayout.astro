@@ -75,6 +75,7 @@ const openingId = sections[0]?.id;
 </Layout>
 
 <script>
+	import { watchMedia } from '../scripts/accessibility.js';
 	import { fragmentId } from '../config/fragments.js';
 	const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 	const editorialPage = document.querySelector('.editorial-page');
@@ -201,7 +202,7 @@ const openingId = sections[0]?.id;
 	};
 
 	const requestParallaxUpdate = () => {
-		if (!parallaxFrame) {
+		if (!parallaxFrame && typeof window.requestAnimationFrame === 'function') {
 			parallaxFrame = window.requestAnimationFrame(updateParallax);
 		}
 	};
@@ -241,8 +242,9 @@ const openingId = sections[0]?.id;
 		updateStoryScrollOffset();
 		requestParallaxUpdate();
 	}, { passive: true });
-	motionPreference.addEventListener('change', requestParallaxUpdate);
-	window.requestAnimationFrame(updateStoryScrollOffset);
+	watchMedia(motionPreference, requestParallaxUpdate);
+	if (typeof window.requestAnimationFrame === 'function') window.requestAnimationFrame(updateStoryScrollOffset);
+	else updateStoryScrollOffset();
 	requestParallaxUpdate();
 </script>
 

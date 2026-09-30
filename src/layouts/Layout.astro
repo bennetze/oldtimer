@@ -34,7 +34,7 @@ const {
 	description = 'Die Oldtimermanufaktur restauriert klassische Automobile mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte.',
 	noindex = false,
 	openGraphImage = defaultOpenGraphImage,
-	openGraphImageAlt = 'Ein historischer Roadster während einer Fahrt',
+	openGraphImageAlt = 'Historischer Rennwagen von schräg vorn auf einer Landstraße, mit Fahrer und tief stehender Sonne.',
 	openGraphType = 'website',
 	structuredDataType = 'WebPage',
 	dateModified: contentDate,
@@ -258,8 +258,11 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 		margin: 0;
 		width: 100%;
 		min-height: 100%;
+		background: #101010;
 		background: var(--color-background);
+		color: #eeeeee;
 		color: var(--color-main);
+		font-family: Georgia, serif;
 		font-family: var(--font-body);
 		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing: antialiased;

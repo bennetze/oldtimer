@@ -128,7 +128,7 @@ const itemList = {
 				</nav>
 			</dialog>
 
-			<form class="archive-search" role="search" data-vehicle-search hidden={!vehicles.length}>
+			<form class="archive-search" role="search" aria-label={categoryData.label} data-vehicle-search hidden>
 				<label for={searchId}>Fahrzeugsuche</label>
 				<div class="archive-search__field">
 					<svg aria-hidden="true" viewBox="0 0 24 24">
@@ -139,7 +139,6 @@ const itemList = {
 						id={searchId}
 						type="search"
 						placeholder="Fahrzeugname eingeben"
-						aria-label={`${categoryData.label} durchsuchen`}
 						aria-controls={gridId}
 						autocomplete="off"
 						spellcheck="false"
@@ -150,7 +149,7 @@ const itemList = {
 				<p class="archive-search__empty" data-vehicle-search-empty hidden>
 					Kein Fahrzeug für diese Suche gefunden.
 				</p>
-				<span class="visually-hidden" aria-live="polite" data-vehicle-search-status></span>
+				<span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-vehicle-search-status></span>
 			</form>
 
 			{!vehicles.length && <p class="archive-empty">Zurzeit sind in diesem Bereich keine Fahrzeuge veröffentlicht.</p>}
@@ -178,7 +177,7 @@ const itemList = {
 								<a
 									href={sitePath(pagePath(page))}
 									aria-current={page === safePage ? 'page' : undefined}
-									aria-label={`Seite ${page}`}
+									aria-label={`Seite ${String(page).padStart(2, '0')}`}
 								>
 									{String(page).padStart(2, '0')}
 								</a>
@@ -197,6 +196,7 @@ const itemList = {
 </Layout>
 
 <script>
+	import { watchMedia, createModal } from '../scripts/accessibility.js';
 	import { createCardFilter } from '../scripts/archiveSearch.js';
 	import { restoreArchiveQuery, saveArchiveQuery } from '../scripts/archiveHistory.js';
 	const archive = document.querySelector('.vehicle-archive');
@@ -204,8 +204,9 @@ const itemList = {
 	const categoryLinks = archive?.querySelector<HTMLElement>('.category-switcher__links');
 	const categoryDialog = archive?.querySelector<HTMLDialogElement>('.category-dialog');
 	const mobileCategories = window.matchMedia('(max-width: 760px)');
-	if (categoryToggle && categoryLinks && categoryDialog && typeof categoryDialog.showModal === 'function') {
-		const closeCategories = () => categoryDialog.close();
+	if (categoryToggle && categoryLinks && categoryDialog && typeof categoryDialog.showModal === 'function' && typeof categoryDialog.close === 'function') {
+		const categoryModal = createModal(categoryDialog);
+		const closeCategories = () => categoryModal.close();
 		const syncCategoryLayout = () => {
 			const focused = document.activeElement;
 			const wasOpen = categoryDialog.open;
@@ -216,7 +217,7 @@ const itemList = {
 			if (mobileCategories.matches && categoryLinks.contains(focused)) categoryToggle.focus();
 		};
 		categoryToggle.addEventListener('click', () => {
-			categoryDialog.showModal();
+			categoryModal.open(categoryToggle);
 			categoryToggle.setAttribute('aria-expanded', 'true');
 			document.body.classList.add('category-dialog-open');
 		});
@@ -226,26 +227,13 @@ const itemList = {
 			const bounds = categoryDialog.getBoundingClientRect();
 			if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) closeCategories();
 		});
-		categoryDialog.addEventListener('keydown', (event) => {
-			if (event.key !== 'Tab') return;
-			const items = [...categoryDialog.querySelectorAll<HTMLElement>('button, a[href]')];
-			const first = items[0];
-			const last = items.at(-1);
-			if (event.shiftKey && document.activeElement === first) {
-				event.preventDefault();
-				last?.focus();
-			} else if (!event.shiftKey && document.activeElement === last) {
-				event.preventDefault();
-				first?.focus();
-			}
-		});
 		categoryDialog.addEventListener('close', () => {
 			categoryToggle.setAttribute('aria-expanded', 'false');
 			document.body.classList.remove('category-dialog-open');
 			if (mobileCategories.matches) categoryToggle.focus();
 		});
 		window.addEventListener('pagehide', closeCategories);
-		mobileCategories.addEventListener('change', syncCategoryLayout);
+		watchMedia(mobileCategories, syncCategoryLayout);
 		syncCategoryLayout();
 	}
 	const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -260,6 +248,7 @@ const itemList = {
 	);
 
 	const filterCards = createCardFilter(vehicleCards, reducedMotion);
+	if (searchForm instanceof HTMLElement && vehicleCards.length) searchForm.hidden = false;
 	const grid = archive?.querySelector('.vehicle-grid');
 	const pageGridLabel = grid?.getAttribute('aria-label') ?? '';
 
@@ -308,6 +297,7 @@ const itemList = {
 
 <style>
 	.vehicle-archive {
+		min-height: 100vh;
 		min-height: 100svh;
 		padding: clamp(10.5rem, 15vw, 14rem) clamp(1.25rem, 4.8vw, 5.5rem) clamp(8rem, 12vw, 13rem);
 		background:
@@ -420,6 +410,7 @@ const itemList = {
 		box-sizing: border-box;
 		width: 100%;
 		max-width: 100%;
+		max-height: 90vh;
 		max-height: 90svh;
 		margin: 0;
 		padding: 1.25rem max(1.25rem, env(safe-area-inset-right, 0px)) max(1.5rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
@@ -463,7 +454,7 @@ const itemList = {
 
 	.archive-search__field {
 		position: relative;
-		border-bottom: 1px solid rgba(17, 17, 17, 0.35);
+		border-bottom: 1px solid rgba(17, 17, 17, 0.55);
 		transition: border-color 240ms ease;
 	}
 
@@ -499,8 +490,13 @@ const itemList = {
 
 	.archive-search__field:not(:has(button:not([hidden]))) input { padding-right: 0.25rem; }
 
+	.archive-search input:focus-visible {
+		outline: 2px solid #111111;
+		outline-offset: 4px;
+	}
+
 	.archive-search input::placeholder {
-		color: rgba(17, 17, 17, 0.5);
+		color: #555555;
 		opacity: 1;
 	}
 

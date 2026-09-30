@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
+import { watchMedia } from '../src/scripts/accessibility.js';
 const script = await readFile(new URL('../src/scripts/homepage.js', import.meta.url), 'utf8');
 
 class Element {
@@ -23,14 +24,17 @@ class Video extends Element {
 	play() { return new Promise((resolve, reject) => this.requests.push({ resolve: () => { this.paused = false; resolve(); }, reject })); }
 }
 class Image extends Element {}
-function setup(reduced = false) {
+function setup(reduced = false, options = {}) {
 	const preference = new Element(); preference.matches = reduced;
+	if (options.legacy) { preference.addListener = callback => Element.prototype.addEventListener.call(preference, 'change', callback); preference.addEventListener = undefined; }
 	const video = new Video();
+	if (options.voidPlay) video.play = () => { video.paused = false; };
 	const image = new Image(); image.dataset = { motionPoster: 'poster.jpg', motionAvif: 'motion.avif', motionWebp: 'motion.webp' }; image.src = 'poster.jpg';
 	const picture = new Element(); const sources = [];
 	picture.prepend = (source) => { sources.push(source); source.remove = () => sources.splice(sources.indexOf(source), 1); };
 	picture.querySelectorAll = () => [...sources];
 	const toggle = new Element(); const panel = new Element();
+	panel.top = 0; panel.getBoundingClientRect = () => ({ top: panel.top, bottom: panel.top + 100, height: 100 });
 	panel.querySelector = (selector) => ({ '[data-motion-video]': video, '[data-motion-image]': image, '[data-motion-fallback]': picture, '[data-motion-toggle]': toggle })[selector];
 	const document = new Element();
 	document.documentElement = { lang: 'de' };
@@ -42,9 +46,10 @@ function setup(reduced = false) {
 	window.clearTimeout = (id) => timers.delete(id);
 	let intersect;
 	class Observer { constructor(callback) { intersect = callback; } observe() {} }
-	window.IntersectionObserver = Observer;
-	vm.runInNewContext(script, { document, window, HTMLElement: Element, HTMLVideoElement: Video, HTMLImageElement: Image, HTMLMediaElement: { HAVE_FUTURE_DATA: 3 }, IntersectionObserver: Observer });
-	return { video, image, sources, toggle, panel, preference, document, timers, visible: (value) => intersect([{ isIntersecting: value, intersectionRatio: value ? 1 : 0 }]) };
+	if (!options.noObserver) window.IntersectionObserver = Observer;
+	window.innerHeight = 100;
+	vm.runInNewContext(script.replace(/^import .*;\n/, ''), { watchMedia, Promise, document, window, HTMLElement: Element, HTMLVideoElement: Video, HTMLImageElement: Image, HTMLMediaElement: { HAVE_FUTURE_DATA: 3 }, IntersectionObserver: Observer });
+	return { window, video, image, sources, toggle, panel, preference, document, timers, visible: (value) => intersect([{ isIntersecting: value, intersectionRatio: value ? 1 : 0 }]) };
 }
 const settle = async () => { await Promise.resolve(); await Promise.resolve(); await Promise.resolve(); };
 
@@ -79,4 +84,12 @@ test('stall timers recheck visibility and successful video does not request moti
 	assert.equal(s.sources.length, 0); assert.equal(s.image.src, 'poster.jpg');
 	s.video.emit('stalled'); const callback = [...s.timers.values()][0];
 	s.visible(false); callback(); assert.equal(s.sources.length, 0);
+});
+
+test('legacy listeners, promise-less play and missing observers retain manual pause and visibility', async () => {
+	const s = setup(false, { legacy: true, voidPlay: true, noObserver: true }); await settle();
+	assert.equal(s.video.paused, false); assert.ok(s.panel.classes.has('is-video-ready'));
+	s.panel.top = 200; s.window.emit('scroll'); assert.equal(s.video.paused, true);
+	s.panel.top = 0; s.window.emit('scroll'); await settle(); assert.equal(s.video.paused, false);
+	s.preference.matches = true; s.preference.emit('change'); assert.equal(s.video.paused, true);
 });

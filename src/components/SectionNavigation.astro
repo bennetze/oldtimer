@@ -20,15 +20,15 @@ const { items, theme = 'dark', visible = true } = Astro.props;
 >
 	{
 		items.map((item, index) => (
-			<button
+			<a
 				class:list={['section-indicator__dot', { 'is-active': index === 0 }]}
-				type="button"
+				href={`#${item.id}`}
 				data-section-target={`#${item.id}`}
 				data-scroll-target={`#${item.id}`}
 				aria-current={index === 0 ? 'true' : undefined}
 			>
 				<span>{item.label}</span>
-			</button>
+			</a>
 		))
 	}
 </nav>
@@ -57,6 +57,7 @@ const { items, theme = 'dark', visible = true } = Astro.props;
 
 	.section-indicator__dot {
 		position: relative;
+		text-decoration: none;
 		display: grid;
 		place-items: center;
 		width: 44px;

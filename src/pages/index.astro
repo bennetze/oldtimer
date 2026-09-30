@@ -54,7 +54,7 @@ const sectionNavigationItems = [
 <Layout
   description="Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
   openGraphImage={heroSiteRevealPoster}
-  openGraphImageAlt="Historischer Rennwagen auf einer Landstraße bei Sonnenuntergang"
+  openGraphImageAlt="Offener historischer Rennwagen auf einer Landstraße im tief stehenden Sonnenlicht."
   dateModified="2026-09-29"
 >
   <SiteChrome>
@@ -106,7 +106,7 @@ const sectionNavigationItems = [
         <button
           class="hero-motion-toggle"
           type="button"
-          data-motion-toggle
+          data-motion-toggle hidden
           aria-label="Animation abspielen"
         >
           <span aria-hidden="true"></span>
@@ -122,14 +122,14 @@ const sectionNavigationItems = [
               ></span
             >
           </h1>
-          <button
+          <a
             class="scroll-cue"
-            type="button"
+            href="#handwerk"
             data-scroll-target="#handwerk"
             aria-label="Zum Handwerk scrollen"
           >
             <span aria-hidden="true"></span>
-          </button>
+          </a>
         </div>
       </section>
 
@@ -173,18 +173,18 @@ const sectionNavigationItems = [
             data-motion-image
           />
         </picture>
-        <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle aria-label="Animation abspielen">
+        <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>
         </button>
         <div class="media-panel__shade media-panel__shade--craft"></div>
-        <button
+        <a
           class="scroll-cue scroll-cue--up section-up-cue"
-          type="button"
+          href="#start"
           data-scroll-target="#start"
           aria-label="Zum Start scrollen"
         >
           <span aria-hidden="true"></span>
-        </button>
+        </a>
         <div class="media-panel__content media-panel__content--craft">
           <h2 id="craft-title">Handwerk</h2>
           <div class="section-cta-slot">
@@ -192,15 +192,15 @@ const sectionNavigationItems = [
               <span class="section-cta__label">Mehr erfahren</span>
             </a>
           </div>
-          <div class="scroll-cues" aria-label="Abschnitt wechseln">
-            <button
+          <div class="scroll-cues" role="group" aria-label="Abschnitt wechseln">
+            <a
               class="scroll-cue"
-              type="button"
+              href="#ueber-uns"
               data-scroll-target="#ueber-uns"
               aria-label="Zu Über uns scrollen"
             >
               <span aria-hidden="true"></span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -244,18 +244,18 @@ const sectionNavigationItems = [
           />
         </picture>
 
-        <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle aria-label="Animation abspielen">
+        <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>
         </button>
         <div class="media-panel__shade media-panel__shade--craft"></div>
-        <button
+        <a
           class="scroll-cue scroll-cue--up section-up-cue"
-          type="button"
+          href="#start"
           data-scroll-target="#start"
           aria-label="Zum Start scrollen"
         >
           <span aria-hidden="true"></span>
-        </button>
+        </a>
         <div class="media-panel__content media-panel__content--craft">
           <h2 id="ueber-uns-title">Über uns</h2>
           <div class="section-cta-slot">
@@ -263,15 +263,15 @@ const sectionNavigationItems = [
               <span class="section-cta__label">Mehr erfahren</span>
             </a>
           </div>
-          <div class="scroll-cues" aria-label="Abschnitt wechseln">
-            <button
+          <div class="scroll-cues" role="group" aria-label="Abschnitt wechseln">
+            <a
               class="scroll-cue"
-              type="button"
+              href="#projekte"
               data-scroll-target="#projekte"
               aria-label="Zu Projekten scrollen"
             >
               <span aria-hidden="true"></span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -315,18 +315,18 @@ const sectionNavigationItems = [
           />
         </picture>
 
-        <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle aria-label="Animation abspielen">
+        <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>
         </button>
         <div class="media-panel__shade media-panel__shade--craft"></div>
-        <button
+        <a
           class="scroll-cue scroll-cue--up section-up-cue"
-          type="button"
+          href="#start"
           data-scroll-target="#start"
           aria-label="Zum Start scrollen"
         >
           <span aria-hidden="true"></span>
-        </button>
+        </a>
         <div class="media-panel__content media-panel__content--craft">
           <h2 id="projekte-title">Projekte</h2>
           <div class="section-cta-slot">
@@ -334,15 +334,15 @@ const sectionNavigationItems = [
               <span class="section-cta__label">Mehr erfahren</span>
             </a>
           </div>
-          <div class="scroll-cues" aria-label="Abschnitt wechseln">
-            <button
+          <div class="scroll-cues" role="group" aria-label="Abschnitt wechseln">
+            <a
               class="scroll-cue"
-              type="button"
+              href="#site-footer"
               data-scroll-target="#site-footer"
               aria-label="Zum Footer scrollen"
             >
               <span aria-hidden="true"></span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -379,7 +379,7 @@ const sectionNavigationItems = [
     position: relative;
     display: grid;
     --panel-edge-cue-offset: clamp(5.25rem, 12vh, 8.5rem);
-    --action-edge: clamp(1.75rem, 4svh, 2.5rem);
+    --action-edge: clamp(1.75rem, 4vh, 2.5rem);
     min-height: 100vh;
     overflow: hidden;
     isolation: isolate;
@@ -455,7 +455,7 @@ const sectionNavigationItems = [
     width: 44px;
     height: 44px;
     padding: 0;
-    color: rgba(238, 238, 238, 0.9);
+    color: #ffffff;
     background: rgba(16, 16, 16, 0.34);
     border: 1px solid rgba(238, 238, 238, 0.42);
     border-radius: 999px;
@@ -516,6 +516,7 @@ const sectionNavigationItems = [
         rgba(12, 12, 12, 0.04) 56%,
         rgba(12, 12, 12, 0.22)
       );
+    background-color: rgba(12, 12, 12, 0.40);
     pointer-events: none;
   }
 
@@ -528,6 +529,7 @@ const sectionNavigationItems = [
         rgba(12, 12, 12, 0.62)
       ),
       linear-gradient(90deg, rgba(12, 12, 12, 0.46), rgba(12, 12, 12, 0.05) 62%);
+    background-color: rgba(12, 12, 12, 0.40);
   }
 
   #projekte .media-panel__image {
@@ -537,6 +539,8 @@ const sectionNavigationItems = [
   #ueber-uns .media-panel__image {
     object-position: 50% 44%;
   }
+
+  main { color: #ffffff; }
 
   .media-panel__content {
     position: relative;
@@ -605,6 +609,7 @@ const sectionNavigationItems = [
 
   .media-panel__content--craft h2,
   .section-cta-slot {
+    transform: translateY(clamp(-1.5rem, -2.5vh, -1rem));
     transform: translateY(clamp(-1.5rem, -2.5svh, -1rem));
   }
 
@@ -662,6 +667,7 @@ const sectionNavigationItems = [
   /* Keep the down arrow below its CTA without shifting the section heading. */
   .media-panel__content--craft .scroll-cues > .scroll-cue {
     position: absolute;
+    bottom: calc(var(--action-edge) + clamp(1rem, 2.5vh, 1.5rem));
     bottom: calc(var(--action-edge) + clamp(1rem, 2.5svh, 1.5rem));
     left: calc(50% - 22px);
   }
@@ -670,7 +676,7 @@ const sectionNavigationItems = [
     cursor: pointer;
     width: 44px;
     height: 44px;
-    color: var(--color-main);
+    color: #ffffff;
     opacity: 0.72;
     transition:
       opacity 180ms ease,
@@ -711,7 +717,7 @@ const sectionNavigationItems = [
 
   .scroll-cue:hover,
   .scroll-cue:focus-visible {
-    color: rgba(238, 238, 238, 0.96);
+    color: #ffffff;
     opacity: 1;
     transform: translateY(4px);
   }
@@ -741,10 +747,18 @@ const sectionNavigationItems = [
     }
   }
 
+  @supports (height: 1svh) {
+    .media-panel { --action-edge: clamp(1.75rem, 4svh, 2.5rem); }
+    @media (max-width: 760px) {
+      .media-panel { --panel-edge-cue-offset: clamp(7.75rem, 18svh, 10rem); }
+    }
+  }
+
   @media (max-width: 760px) {
     .media-panel {
+      min-height: 100vh;
       min-height: 100svh;
-      --panel-edge-cue-offset: clamp(7.75rem, 18svh, 10rem);
+      --panel-edge-cue-offset: clamp(7.75rem, 18vh, 10rem);
     }
 
     .section-up-cue {
@@ -757,6 +771,7 @@ const sectionNavigationItems = [
       margin: 0 auto;
       align-items: center;
       justify-content: end;
+      padding: calc(var(--site-header-height, 104px) + 3.5rem) 0 clamp(7.75rem, 18vh, 10rem);
       padding: calc(var(--site-header-height, 104px) + 3.5rem) 0 clamp(7.75rem, 18svh, 10rem);
       text-align: center;
     }
@@ -841,6 +856,7 @@ const sectionNavigationItems = [
    * controls inside the unobscured area.
    */
   :global(html.ios-safari-liquid-glass) .media-panel {
+    min-height: 100vh;
     min-height: 100lvh;
   }
 </style>

@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { runInNewContext } from 'node:vm';
 import test from 'node:test';
 
+import { systemPointerPreference } from '../src/scripts/accessibility.js';
 const component = await readFile(new URL('../src/components/SiteChrome.astro', import.meta.url), 'utf8');
 const source = component.slice(component.indexOf('\tif (cursor instanceof HTMLElement) {'), component.indexOf('\n\tconst focusableMenuItems'));
 
@@ -22,12 +23,20 @@ function harness({ supported = true, maskSupported = true, legacy = false } = {}
 		}
 		addEventListener(type, handler) { (this.listeners[type] ??= []).push(handler); }
 		emit(type, event = {}) { for (const handler of this.listeners[type] ?? []) handler(event); }
-		closest(selector) { return this.kind && selector.split(', ').includes(this.kind) ? this : null; }
+		closest(selector) {
+			const selectors = selector.split(', ');
+			return this.kind && (selectors.includes(this.kind)
+				|| (this.kind === 'input' && selectors.includes('input:not([data-system-pointer])'))
+				|| (this.kind === 'input[data-system-pointer]' && selectors.includes('input'))) ? this : null;
+		}
 	}
 	const cursor = new Element();
+	const pointerControl = new Element('input');
+	const label = new Element();
+	pointerControl.closest = () => label;
 	const document = new Element();
 	document.documentElement = new Element();
-	document.querySelector = () => document.dialogOpen ? {} : null;
+	document.querySelector = selector => selector === '[data-system-pointer]' ? pointerControl : document.dialogOpen ? {} : null;
 	const window = new Element();
 	const preferences = [];
 	window.matchMedia = () => {
@@ -45,9 +54,10 @@ function harness({ supported = true, maskSupported = true, legacy = false } = {}
 	window.requestAnimationFrame = callback => { const id = nextFrame++; frames.set(id, callback); return id; };
 	window.cancelAnimationFrame = id => frames.delete(id);
 	window.PointerEvent = function () {};
-	runInNewContext(source, { cursor, document, window, Element, HTMLElement: Element, CSS: { supports: property => property.includes('mask-image') ? maskSupported : supported }, interactiveSelector: 'a, button, [role="button"]' });
+	runInNewContext(source, { systemPointerPreference, HTMLInputElement: Element, cursor, document, window, Element, HTMLElement: Element, CSS: { supports: property => property.includes('mask-image') ? maskSupported : supported }, interactiveSelector: 'a, button, [role="button"]' });
 	return {
-		cursor, document, window, preferences, frames,
+		cursor, pointerControl, document, window, preferences, frames,
+		target: kind => new Element(kind),
 		active: () => document.documentElement.classList.contains('has-custom-cursor'),
 		move: (kind = '', pointerType = 'mouse', x = 100) => window.emit('pointermove', { target: new Element(kind), pointerType, clientX: x, clientY: 80 }),
 		flush: () => { const callbacks = [...frames.values()]; frames.clear(); callbacks.forEach(callback => callback()); },
@@ -103,4 +113,19 @@ test('touch, forms, dialogs and leaving the page restore the native pointer', ()
 		h.move(); h.flush(); h.move(); target.emit(event); h.flush();
 		assert.equal(h.active(), false, event);
 	}
+});
+
+test('pointer preference checkbox retains the custom cursor on hover and focus', () => {
+	const h = harness();
+	h.move('input[data-system-pointer]'); h.flush();
+	assert.equal(h.active(), true);
+	h.document.emit('focusin', { target: h.target('input[data-system-pointer]') });
+	assert.equal(h.active(), true);
+	assert.match(component, /:global\(\.has-custom-cursor input:not\(\[data-system-pointer\]\)\)/);
+});
+
+test('explicit system-pointer choice disables the decorative pointer immediately and can be reversed', () => {
+	const h = harness(); h.move(); h.flush(); assert.equal(h.active(), true);
+	h.pointerControl.checked = true; h.pointerControl.emit('change'); h.move(); h.flush(); assert.equal(h.active(), false);
+	h.pointerControl.checked = false; h.pointerControl.emit('change'); h.move(); h.flush(); assert.equal(h.active(), true);
 });

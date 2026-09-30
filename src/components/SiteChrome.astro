@@ -53,21 +53,21 @@ const sitePath = (path) => {
 	<div class="cursor" aria-hidden="true"></div>
 
 	<header class="site-header" data-floating-header>
-		<button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false">
+		<a class="menu-toggle" href="#site-footer" aria-controls="site-menu" aria-expanded="false">
 			<span class="menu-lines" aria-hidden="true"></span>
 			<span>Menü</span>
-		</button>
+		</a>
 		<a class="brand" href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
 			{currentPath === '/' && <img class="brand-mark" src={brandMark} width="2050" height="485" alt="" aria-hidden="true" draggable="false" />}
 			<span>DIE OLDTIMERMANUFAKTUR</span>
 		</a>
 		<nav class="language-switch" aria-label="Sprache wählen">
-			<a href={`${languagePath(Astro.url.pathname, 'de', basePath)}?lang=de`} data-language="de" lang="de" hreflang="de" aria-label="Deutsch">DE</a>
-			<a href={`${languagePath(Astro.url.pathname, 'en', basePath)}?lang=en`} data-language="en" lang="en" hreflang="en" aria-label="English">EN</a>
+			<a href={`${languagePath(Astro.url.pathname, 'de', basePath)}?lang=de`} data-language="de" lang="de" hreflang="de" aria-label="Deutsch (DE)">DE</a>
+			<a href={`${languagePath(Astro.url.pathname, 'en', basePath)}?lang=en`} data-language="en" lang="en" hreflang="en" aria-label="English (EN)">EN</a>
 		</nav>
 	</header>
 
-	<div class="menu-overlay" id="site-menu" aria-hidden="true" inert>
+	<div class="menu-overlay" id="site-menu" aria-hidden="true" inert style={`--last-item-index: ${navigationItems.length - 1}`}>
 		<div class="menu-panel" role="dialog" aria-modal="true" aria-label="Hauptmenü">
 			<div class="menu-panel__top">
 				<button class="menu-close" type="button">Schließen</button>
@@ -87,6 +87,10 @@ const sitePath = (path) => {
 					))
 				}
 			</nav>
+			<label class="pointer-preference" hidden>
+				<input type="checkbox" data-system-pointer />
+				<span>Systemzeiger verwenden</span>
+			</label>
 		</div>
 	</div>
 
@@ -110,7 +114,7 @@ const sitePath = (path) => {
 			<a href={sitePath('/impressum/')}>Impressum</a>
 			<a href={sitePath('/datenschutz/')}>Datenschutzerklärung</a>
 		</nav>
-		<div class="social-links" aria-label="Social Media">
+		<div class="social-links" role="group" aria-label="Social Media">
 			<span aria-label="YouTube-Profil folgt" title="YouTube-Profil folgt">
 				<svg viewBox="0 0 16 16" aria-hidden="true">
 					<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.568.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558l-.009-.104-.008-.105A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.171-.007.171-.007.087-.004.17-.006A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
@@ -132,6 +136,11 @@ const sitePath = (path) => {
 </div>
 
 <script>
+	import { watchMedia, setIsolated, systemPointerPreference } from '../scripts/accessibility.js';
+	// Older engines do not understand selector() conditions or :focus-visible.
+	let supportsFocusVisible = false;
+	try { supportsFocusVisible = Boolean(window.CSS?.supports?.('selector(:focus-visible)')); } catch { /* Older CSS API. */ }
+	if (!supportsFocusVisible) document.documentElement.classList.add('legacy-focus');
 	const cursor = document.querySelector('.cursor');
 	const interactiveSelector = 'a, button, [role="button"]';
 	const siteShell = document.querySelector('.site-shell');
@@ -145,24 +154,21 @@ const sitePath = (path) => {
 		? [...sectionIndicator.querySelectorAll('[data-section-target]')]
 		: [];
 	const sectionById = new Map();
-	const sectionEntries = indicatorControls.flatMap((control) => {
+	indicatorControls.forEach((control) => {
 		const targetSelector = control.getAttribute('data-section-target');
 		const section = targetSelector ? document.querySelector(targetSelector) : null;
 
 		if (!(section instanceof HTMLElement)) {
-			return [];
+			return;
 		}
 
 		sectionById.set(section.id, control);
-		return [{ control, section }];
 	});
-	const sectionTargets = sectionEntries.map(({ section }) => section);
-	const siteFooter = document.querySelector('#site-footer');
-	const menuBackgroundState = new Map();
 	let activeSectionScroll;
-	let keyboardSectionIndex;
 
 	if (cursor instanceof HTMLElement) {
+		const pointerChoice = systemPointerPreference(() => window.localStorage);
+		const pointerControl = document.querySelector('[data-system-pointer]');
 		const cursorPreference = window.matchMedia('(min-width: 761px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
 		const forcedColors = window.matchMedia('(forced-colors: active)');
 		const increasedContrast = window.matchMedia('(prefers-contrast: more)');
@@ -173,7 +179,7 @@ const sitePath = (path) => {
 			&& (CSS.supports('mask-image', ringMask) || CSS.supports('-webkit-mask-image', ringMask))
 			&& typeof window.PointerEvent === 'function'
 			&& typeof window.requestAnimationFrame === 'function';
-		const nativeCursorSelector = 'dialog, input, textarea, select, [contenteditable]:not([contenteditable="false"]), iframe';
+		const nativeCursorSelector = 'dialog, input:not([data-system-pointer]), textarea, select, [contenteditable]:not([contenteditable="false"]), iframe';
 		let cursorFrame;
 		let cursorX = -40;
 		let cursorY = -40;
@@ -187,12 +193,20 @@ const sitePath = (path) => {
 			cursor.classList.remove('is-active');
 		};
 		const updateCursor = () => {
-			enabled = supported && cursorPreference.matches && !forcedColors.matches && !increasedContrast.matches;
+			enabled = !pointerChoice.enabled && supported && cursorPreference.matches && !forcedColors.matches && !increasedContrast.matches;
 			hideCursor();
 		};
 		for (const preference of [cursorPreference, forcedColors, increasedContrast]) {
 			if (typeof preference.addEventListener === 'function') preference.addEventListener('change', updateCursor);
 			else if (typeof preference.addListener === 'function') preference.addListener(updateCursor);
+		}
+		if (pointerControl instanceof HTMLInputElement) {
+			pointerControl.checked = pointerChoice.enabled;
+			pointerControl.closest('label').hidden = false;
+			pointerControl.addEventListener('change', () => {
+				pointerChoice.set(pointerControl.checked);
+				updateCursor();
+			});
 		}
 		updateCursor();
 
@@ -225,7 +239,7 @@ const sitePath = (path) => {
 	}
 
 	const focusableMenuItems = () =>
-		menuPanel ? [...menuPanel.querySelectorAll('a[href], button:not([disabled])')] : [];
+		menuPanel ? [...menuPanel.querySelectorAll('a[href], button:not([disabled]), input:not([disabled])')] : [];
 
 	const setMenuBackgroundInert = (shouldBeInert) => {
 		if (!(siteShell instanceof HTMLElement)) {
@@ -241,41 +255,34 @@ const sitePath = (path) => {
 				return;
 			}
 
-			if (shouldBeInert) {
-				if (!menuBackgroundState.has(element)) menuBackgroundState.set(element, element.inert);
-				element.inert = true;
-				return;
-			}
-
-			element.inert = menuBackgroundState.get(element) ?? false;
-			menuBackgroundState.delete(element);
+			setIsolated(element, shouldBeInert);
 		});
 	};
 
 	const openMenu = () => {
 		stopSectionScroll();
-		keyboardSectionIndex = undefined;
 		if (menuOverlay instanceof HTMLElement) {
 			menuOverlay.inert = false;
+			menuOverlay.removeAttribute('inert');
 		}
 		menuOverlay?.setAttribute('aria-hidden', 'false');
 		menuToggle?.setAttribute('aria-expanded', 'true');
-		setMenuBackgroundInert(true);
 		document.body.classList.add('menu-is-open');
 		focusableMenuItems()[0]?.focus();
+		setMenuBackgroundInert(true);
 	};
 
 	const closeMenu = ({ restoreFocus = true } = {}) => {
+		setMenuBackgroundInert(false);
+		menuToggle?.setAttribute('aria-expanded', 'false');
+		if (restoreFocus) menuToggle?.focus();
+		else if (menuOverlay?.contains(document.activeElement)) document.activeElement?.blur();
 		menuOverlay?.setAttribute('aria-hidden', 'true');
 		if (menuOverlay instanceof HTMLElement) {
 			menuOverlay.inert = true;
+			menuOverlay.setAttribute('inert', '');
 		}
-		menuToggle?.setAttribute('aria-expanded', 'false');
 		document.body.classList.remove('menu-is-open');
-		setMenuBackgroundInert(false);
-		if (restoreFocus) {
-			menuToggle?.focus();
-		}
 	};
 
 	const clearHash = () => {
@@ -294,7 +301,7 @@ const sitePath = (path) => {
 	const easeInOutQuart = (progress) =>
 		progress < 0.5 ? 8 * progress * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 4) / 2;
 
-	const animateSectionScroll = (targetTop, completed) => {
+	const animateSectionScroll = (targetTop) => {
 		stopSectionScroll();
 
 		const startTop = window.scrollY;
@@ -314,7 +321,6 @@ const sitePath = (path) => {
 			}
 
 			activeSectionScroll = undefined;
-			completed();
 		};
 
 		activeSectionScroll = window.requestAnimationFrame(step);
@@ -323,7 +329,7 @@ const sitePath = (path) => {
 	const scrollToSection = (section) => {
 		stopSectionScroll();
 
-		if (prefersReducedMotion.matches) {
+		if (prefersReducedMotion.matches || typeof window.requestAnimationFrame !== 'function') {
 			section.scrollIntoView({ block: 'start', behavior: 'auto' });
 			clearHash();
 			return;
@@ -331,7 +337,7 @@ const sitePath = (path) => {
 
 		const scrollMarginTop = Number.parseFloat(window.getComputedStyle(section).scrollMarginTop) || 0;
 		const targetTop = section.getBoundingClientRect().top + window.scrollY - scrollMarginTop;
-		animateSectionScroll(targetTop, () => { keyboardSectionIndex = undefined; });
+		animateSectionScroll(targetTop);
 		clearHash();
 	};
 
@@ -347,106 +353,36 @@ const sitePath = (path) => {
 		});
 	};
 
-	const getCurrentSectionIndex = () => {
-		if (Number.isInteger(keyboardSectionIndex)) {
-			return keyboardSectionIndex;
-		}
-
-		let closestIndex = 0;
-		let closestDistance = Number.POSITIVE_INFINITY;
-		[...sectionTargets, ...(siteFooter instanceof HTMLElement ? [siteFooter] : [])].forEach((section, index) => {
-			const margin = Number.parseFloat(window.getComputedStyle(section).scrollMarginTop) || 0;
-			const distance = Math.abs(section.getBoundingClientRect().top - margin);
-			if (distance < closestDistance) {
-				closestIndex = index;
-				closestDistance = distance;
-			}
-		});
-
-		return closestIndex;
-	};
-
-	const isSectionArrowBlockedTarget = (target) =>
-		target instanceof Element &&
-		Boolean(
-			target.closest(
-				'a, button, input, textarea, select, summary, [contenteditable="true"], [role="textbox"], [role="button"]',
-			),
-		);
-
 	window.addEventListener('wheel', () => {
 		stopSectionScroll();
-		keyboardSectionIndex = undefined;
 	}, { passive: true });
 
 	window.addEventListener('touchstart', () => {
 		stopSectionScroll();
-		keyboardSectionIndex = undefined;
 	}, { passive: true });
 
-	window.addEventListener('scroll', () => {
-		if (activeSectionScroll === undefined) keyboardSectionIndex = undefined;
-	}, { passive: true });
 	window.addEventListener('pointerdown', () => {
 		stopSectionScroll();
-		keyboardSectionIndex = undefined;
 	}, { passive: true });
-	prefersReducedMotion.addEventListener('change', () => {
+	watchMedia(prefersReducedMotion, () => {
 		if (prefersReducedMotion.matches) {
 			stopSectionScroll();
-			keyboardSectionIndex = undefined;
 		}
 	});
 
+	// Arrow keys retain browser and assistive-technology behavior.
 	window.addEventListener('keydown', (event) => {
-		const shouldHandleSectionArrow =
-			['ArrowDown', 'ArrowUp'].includes(event.code) &&
-			sectionTargets.length > 0 &&
-			!event.altKey &&
-			!event.ctrlKey &&
-			!event.metaKey &&
-			!event.shiftKey &&
-			!isSectionArrowBlockedTarget(event.target) &&
-			menuOverlay?.getAttribute('aria-hidden') !== 'false';
-
-		if (shouldHandleSectionArrow && event.repeat) {
-			event.preventDefault();
-			return;
-		}
-
 		if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', 'Space'].includes(event.code)) {
 			stopSectionScroll();
-			if (!shouldHandleSectionArrow) keyboardSectionIndex = undefined;
-		}
-
-		if (shouldHandleSectionArrow) {
-			event.preventDefault();
-
-			const direction = event.code === 'ArrowDown' ? 1 : -1;
-			const currentIndex = getCurrentSectionIndex();
-			const nextIndex = currentIndex + direction;
-			const nextSection = sectionTargets[nextIndex];
-
-			if (nextSection instanceof HTMLElement) {
-				keyboardSectionIndex = nextIndex;
-				setActiveIndicator(nextSection.id);
-				scrollToSection(nextSection);
-				return;
-			}
-
-			if (
-				direction > 0 &&
-				siteFooter instanceof HTMLElement &&
-				currentIndex === sectionTargets.length - 1
-			) {
-				keyboardSectionIndex = sectionTargets.length;
-				scrollToSection(siteFooter);
-				return;
-			}
 		}
 	});
 
-	menuToggle?.addEventListener('click', openMenu);
+	menuToggle?.addEventListener('click', (event) => { event.preventDefault(); openMenu(); });
+	menuToggle?.setAttribute('role', 'button');
+	menuToggle?.addEventListener('keydown', (event) => {
+		if (event.key === ' ' || event.key === 'Enter') { event.preventDefault(); openMenu(); }
+	});
+	siteShell?.classList.add('chrome-ready');
 	menuClose?.addEventListener('click', closeMenu);
 	menuOverlay?.addEventListener('click', (event) => {
 		if (event.target === menuOverlay) {
@@ -482,20 +418,41 @@ const sitePath = (path) => {
 	});
 
 	document.querySelectorAll('[data-scroll-target]').forEach((control) => {
-		control.addEventListener('click', () => {
+		control.addEventListener('click', (event) => {
+			if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
 			const targetSelector = control.getAttribute('data-scroll-target');
 			const target = targetSelector ? document.querySelector(targetSelector) : null;
 
 			if (target instanceof HTMLElement) {
-				const targetIndex = sectionTargets.indexOf(target);
-				keyboardSectionIndex = targetIndex >= 0 ? targetIndex : undefined;
-				if (targetIndex >= 0) {
+				event.preventDefault();
+				if (sectionById.has(target.id)) {
 					setActiveIndicator(target.id);
 				}
 				scrollToSection(target);
 			}
 		});
 	});
+
+	const updateAccessibleTextLayout = () => {
+		const root = document.documentElement;
+		if (!(root instanceof HTMLElement)) return;
+		const style = window.getComputedStyle(root);
+		const fontSize = Number.parseFloat(style.fontSize);
+		const spacing = Number.parseFloat(style.letterSpacing);
+		root.classList.toggle('accessible-text-layout', fontSize > 20 || spacing >= fontSize * 0.1);
+		const header = document.querySelector('[data-floating-header]');
+		if (header instanceof HTMLElement) root.style.setProperty('--accessible-header-height', `${header.getBoundingClientRect().height}px`);
+	};
+	updateAccessibleTextLayout();
+	window.addEventListener('resize', updateAccessibleTextLayout);
+	window.addEventListener('load', updateAccessibleTextLayout);
+	if (document.fonts?.ready) document.fonts.ready.then(updateAccessibleTextLayout);
+	if (typeof window.ResizeObserver === 'function') {
+		const observer = new ResizeObserver(updateAccessibleTextLayout);
+		observer.observe(document.documentElement);
+		const header = document.querySelector('[data-floating-header]');
+		if (header) observer.observe(header);
+	}
 
 	if (sectionIndicator && 'IntersectionObserver' in window) {
 		const visibleRatios = new Map();
@@ -590,7 +547,7 @@ const sitePath = (path) => {
 	/* Native dialogs are in the top layer, above the decorative cursor. */
 	:global(.has-custom-cursor dialog),
 	:global(.has-custom-cursor dialog *),
-	:global(.has-custom-cursor input),
+	:global(.has-custom-cursor input:not([data-system-pointer])),
 	:global(.has-custom-cursor textarea),
 	:global(.has-custom-cursor select),
 	:global(.has-custom-cursor [contenteditable]:not([contenteditable="false"])),
@@ -661,14 +618,18 @@ const sitePath = (path) => {
 		min-height: var(--site-header-height);
 		padding: env(safe-area-inset-top, 0px) clamp(1rem, 3vw, 3rem) 0;
 		color: var(--color-main);
-		background: rgba(16, 16, 16, 0.34);
+		background: rgba(16, 16, 16, 0.85);
 		-webkit-backdrop-filter: blur(28px) saturate(108%);
 		backdrop-filter: blur(28px) saturate(108%);
 	}
 
+	.site-shell--home .site-header {
+		background: rgba(16, 16, 16, 0.40);
+	}
+
 	.site-shell--light .site-header {
 		color: #111111;
-		background: rgba(238, 238, 238, 0.34);
+		background: rgba(238, 238, 238, 0.96);
 	}
 
 	.site-shell--home .brand {
@@ -751,7 +712,49 @@ const sitePath = (path) => {
 	}
 
 
+	.pointer-preference {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.75rem 0;
+		font-size: 1rem;
+		color: inherit;
+	}
+	.pointer-preference[hidden] { display: none; }
+	.pointer-preference input {
+		appearance: none;
+		-webkit-appearance: none;
+		display: grid;
+		place-content: center;
+		flex: 0 0 1.25rem;
+		width: 1.25rem;
+		height: 1.25rem;
+		min-height: 0;
+		margin: 0;
+		padding: 0;
+		border: 1px solid currentColor;
+		border-radius: 0;
+		background: transparent;
+		color: inherit;
+	}
+	.pointer-preference input::before {
+		content: '';
+		width: 0.35rem;
+		height: 0.65rem;
+		border: solid currentColor;
+		border-width: 0 1.5px 1.5px 0;
+		transform: translateY(-0.1rem) rotate(45deg);
+		visibility: hidden;
+	}
+	.pointer-preference input:checked::before { visibility: visible; }
+	@media (forced-colors: active) {
+		.pointer-preference input { appearance: auto; -webkit-appearance: auto; }
+		.pointer-preference input::before { content: none; }
+	}
+
 	.menu-overlay {
+		/* Start the exit immediately; keep the overlay visible through the link stagger. */
+		--menu-duration: calc(480ms + var(--last-item-index) * 50ms);
 		position: fixed;
 		inset: 0;
 		overflow-y: auto;
@@ -760,11 +763,22 @@ const sitePath = (path) => {
 		background: rgba(16, 16, 16, 0.38);
 		backdrop-filter: blur(16px) saturate(106%);
 		opacity: 0;
+		visibility: hidden;
 		pointer-events: none;
-		transition: opacity 260ms ease;
+		transition:
+			opacity 260ms ease 160ms,
+			visibility 0s linear var(--menu-duration);
+	}
+
+	.site-shell--home .menu-overlay {
+		background: rgba(16, 16, 16, 0.24);
+		-webkit-backdrop-filter: blur(16px) saturate(106%);
 	}
 
 	.menu-overlay[aria-hidden='false'] {
+		transition-duration: 260ms, 0s;
+		transition-delay: 0s, 0s;
+		visibility: visible;
 		opacity: 1;
 		pointer-events: auto;
 	}
@@ -783,8 +797,16 @@ const sitePath = (path) => {
 		transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
+	.site-shell--home .menu-panel {
+		background: rgba(16, 16, 16, 0.40);
+		-webkit-backdrop-filter: blur(28px) saturate(106%);
+	}
+
 	.menu-overlay[aria-hidden='false'] .menu-panel {
 		transform: translateX(0);
+		transition-duration: 420ms;
+		transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+		transition-delay: 0s;
 	}
 
 	.menu-panel__top {
@@ -796,12 +818,13 @@ const sitePath = (path) => {
 		color: rgba(238, 238, 238, 0.76);
 		text-transform: uppercase;
 		letter-spacing: 0.24em;
-		font-size: 0.68rem;
+		font-size: 0.82rem;
 	}
 
 	.menu-close {
 		position: relative;
 		padding: 1rem 0;
+		font-size: 0.82rem;
 		transition: color 180ms ease;
 	}
 
@@ -835,14 +858,24 @@ const sitePath = (path) => {
 		transform: translateX(-24px);
 		transition:
 			color 180ms ease,
-			transform 480ms cubic-bezier(0.22, 1, 0.36, 1),
-			opacity 360ms ease;
+			transform 480ms cubic-bezier(0.64, 0, 0.78, 0) calc((var(--last-item-index) - var(--item-index, 0)) * 50ms),
+			opacity 360ms ease calc(120ms + (var(--last-item-index) - var(--item-index, 0)) * 50ms);
 	}
 
 	.menu-overlay[aria-hidden='false'] .menu-nav__link {
 		opacity: 1;
 		transform: translateX(0);
+		transition-duration: 180ms, 480ms, 360ms;
+		transition-timing-function: ease, cubic-bezier(0.22, 1, 0.36, 1), ease;
 		transition-delay: calc(120ms + (var(--item-index, 0) * 50ms));
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.menu-overlay,
+		.menu-panel,
+		.menu-nav__link {
+			transition: none;
+		}
 	}
 
 	.menu-nav__link:hover,
@@ -979,6 +1012,7 @@ const sitePath = (path) => {
 		}
 
 		.site-shell--home .brand span {
+			font-size: 0.75rem;
 			font-size: clamp(0.625rem, 5.6cqi, 0.9rem);
 			white-space: nowrap;
 		}
@@ -1038,6 +1072,7 @@ const sitePath = (path) => {
 
 		.menu-panel {
 			width: 100%;
+			min-height: 100vh;
 			min-height: 100svh;
 			padding: max(1.25rem, env(safe-area-inset-top, 0px)) max(1.25rem, env(safe-area-inset-right, 0px)) max(1.25rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
 		}
@@ -1062,7 +1097,7 @@ const sitePath = (path) => {
 			flex-shrink: 0;
 			min-height: 44px;
 			padding: 0.72rem 0.8rem;
-			font-size: 0.66rem;
+			font-size: 0.82rem;
 			transform: none;
 		}
 
@@ -1083,6 +1118,7 @@ const sitePath = (path) => {
 		.menu-nav {
 			gap: clamp(0.9rem, 4.4vw, 1.35rem);
 			min-width: 0;
+			padding: clamp(2rem, 8vh, 4rem) 0 2rem;
 			padding: clamp(2rem, 8svh, 4rem) 0 2rem;
 		}
 
@@ -1090,7 +1126,7 @@ const sitePath = (path) => {
 			padding: 4rem max(1.25rem, env(safe-area-inset-right, 0px)) max(2.5rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
 		}
 
-		.footer-primary {
+		.chrome-ready .footer-primary {
 			display: none;
 		}
 

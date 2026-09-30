@@ -1,3 +1,4 @@
+import { watchMedia } from './accessibility.js';
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 function initMotionPanel(panel) {
@@ -78,7 +79,7 @@ function initMotionPanel(panel) {
 		video.controls = false;
 		const request = ++attempt;
 		playPending = true;
-		video.play().then(() => {
+		Promise.resolve(video.play()).then(() => {
 			if (request !== attempt) return;
 			playPending = false;
 			ready();
@@ -110,7 +111,7 @@ function initMotionPanel(panel) {
 		else play({ userGesture: true });
 		updateToggle();
 	});
-	motionPreference.addEventListener('change', () => {
+	watchMedia(motionPreference, () => {
 		userPaused = motionPreference.matches || manualPaused === true;
 		if (userPaused) suspend();
 		else play();
@@ -119,6 +120,7 @@ function initMotionPanel(panel) {
 	video.autoplay = false;
 	video.pause();
 	updateToggle();
+	if (toggle instanceof HTMLElement) toggle.hidden = false;
 	if ('IntersectionObserver' in window) {
 		new IntersectionObserver(([entry]) => {
 			inViewport = entry.isIntersecting && entry.intersectionRatio >= 0.12;
@@ -126,8 +128,16 @@ function initMotionPanel(panel) {
 			else suspend();
 		}, { threshold: [0, 0.12] }).observe(panel);
 	} else {
-		inViewport = true;
-		play();
+		const updateVisibility = () => {
+			const bounds = panel.getBoundingClientRect();
+			const visibleHeight = Math.max(0, Math.min(bounds.bottom, window.innerHeight) - Math.max(bounds.top, 0));
+			inViewport = visibleHeight / Math.min(bounds.height, window.innerHeight) >= 0.12;
+			if (inViewport) play();
+			else suspend();
+		};
+		window.addEventListener('scroll', updateVisibility, { passive: true });
+		window.addEventListener('resize', updateVisibility);
+		updateVisibility();
 	}
 	document.addEventListener('visibilitychange', () => document.hidden ? suspend() : play());
 	window.addEventListener('pagehide', suspend);

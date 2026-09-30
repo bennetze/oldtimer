@@ -1,0 +1,162 @@
+{
+	"status": "approved-and-applied",
+	"date": "2026-09-30",
+	"scope": "Non-project pages only; no project, archive or vehicle image descriptions change. Decorative images remain decorative.",
+	"images": [
+		{
+			"id": "handwerk.bodyPortrait",
+			"path": "src/assets/oldtimer/L1005486.webp",
+			"sourceSha256": "670a3a56761c68b2dcacc139d3fd6744c7ca1236b58bc2e6e193312bf24f288c",
+			"alt": "Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt.",
+			"altEn": "A worker wearing protective gloves works on a bare-metal body panel inside the workshop."
+		},
+		{
+			"id": "handwerk.bodyLandscape",
+			"path": "src/assets/oldtimer/L1005735.webp",
+			"sourceSha256": "d28fcdb3e09ead9e56889bcdae10f362e37f8f40330fd837af7672aaa553d11b",
+			"alt": "Helle Cabriolet-Karosserie auf einer Hebebühne, daneben ein abgenommenes Karosserieteil und weitere Oldtimer.",
+			"altEn": "Pale convertible bodywork on a lift, with a removed body panel beside it and other classic cars behind."
+		},
+		{
+			"id": "handwerk.bodyDetail",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-verzinnen/L1006963.webp",
+			"sourceSha256": "69ade7ffa3082f901cd14e05025437ae3b9fac490e9a7b76df373f43841541fd",
+			"alt": "Brenner und Metallstab bei der Bearbeitung einer blanken Karosseriekante.",
+			"altEn": "A torch and metal rod being used on a bare-metal bodywork edge."
+		},
+		{
+			"id": "handwerk.paintPortrait",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00878.webp",
+			"sourceSha256": "d3e9189a495942cdb75b28bd8897e8459c90b9ab6c8d1fee919115740f3bea27",
+			"alt": "Ein Mitarbeiter betrachtet die Oberfläche einer roten Karosserie über deren oberer Kante.",
+			"altEn": "A worker examines the surface of red bodywork from above its upper edge."
+		},
+		{
+			"id": "handwerk.paintLandscape",
+			"path": "src/assets/oldtimer/L1005705.webp",
+			"sourceSha256": "cb6f02228ef01472e924b70b4a02362b67d6c4eebaf47cabced606aad9cbf7e0",
+			"alt": "Ein Lackierer mit Atemschutz spritzt dunkle Karosserieteile in einer Lackierkabine.",
+			"altEn": "A painter wearing a respirator sprays dark body panels inside a spray booth."
+		},
+		{
+			"id": "handwerk.upholsteryPortrait",
+			"path": "src/assets/oldtimer/L1005816.webp",
+			"sourceSha256": "1c17d76c89cfc1784a109c45b3faac16d4d163419350381a624d41ca93ee4e6e",
+			"alt": "Ein Polsterer führt helles Material unter der Nadel einer Nähmaschine.",
+			"altEn": "An upholsterer guides pale material under a sewing-machine needle."
+		},
+		{
+			"id": "handwerk.upholsteryLandscape",
+			"path": "src/assets/oldtimer/L1005861.webp",
+			"sourceSha256": "ca0b7b183a9a4676fca8e0b8671fad67474e350c455d4f9ecda8be181077bccf",
+			"alt": "Maßband, Scheren und markierte Schnittmuster auf einer Werkbank in der Polsterei.",
+			"altEn": "A tape measure, scissors and marked patterns on an upholstery workbench."
+		},
+		{
+			"id": "handwerk.enginePortrait",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00172.webp",
+			"sourceSha256": "b8d45d7b285a64b1fcc3ba7c422bc19c4b249c3fc7d4c2046301a3df55a97621",
+			"alt": "Nahansicht einer Vergaseranlage mit Gestänge, Leitungen und Befestigungen.",
+			"altEn": "Close view of a carburettor assembly with linkages, pipework and fittings."
+		},
+		{
+			"id": "handwerk.upholsteryDetail",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00189.webp",
+			"sourceSha256": "9aa47800c241f46d26e4aa6dbd74997382d0ce7b7bffd7d1a71687494e3aa210",
+			"alt": "Rote, senkrecht gesteppte Polster im Innenraum eines historischen Fahrzeugs.",
+			"altEn": "Red upholstery with vertical pleats inside a classic car."
+		},
+		{
+			"id": "handwerk.paintDetail",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00572.webp",
+			"sourceSha256": "6b311fcc18a533396b420ecb7db68be6769fac6c729d8698dbbac6fade791808",
+			"alt": "Dunkelblauer Lack wird in einem transparenten Messbecher verrührt.",
+			"altEn": "Dark-blue paint being stirred in a transparent measuring cup."
+		},
+		{
+			"id": "handwerk.engineLandscape",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00171.webp",
+			"sourceSha256": "1550a23ca68cc1ad741481e1d177767541c14d102222865d524ae4c60bfad3f8",
+			"alt": "Vergaser und Gestänge eines Motors, mit weiteren Bauteilen im Hintergrund.",
+			"altEn": "Engine carburettors and linkages, with other components behind them."
+		},
+		{
+			"id": "ueber-uns.antonCar",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00382.webp",
+			"sourceSha256": "4aa08a3240d2e0e7414d1f72376f39184df3fcec3195873622dc8b1090305941",
+			"alt": "Anton Schrank mit einem weißen Handschuh an einer dunkelblauen Karosserie.",
+			"altEn": "Anton Schrank with a white-gloved hand on dark-blue bodywork."
+		},
+		{
+			"id": "ueber-uns.antonPortrait",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00649.webp",
+			"sourceSha256": "aac677b5c0646d18ee5d3c38521559ab9ed98af62d454c53f7f4a4ea8f3f3933",
+			"alt": "Anton Schrank mit Brille und dunkelblauem Poloshirt in der Werkstatt.",
+			"altEn": "Anton Schrank wearing glasses and a dark-blue polo shirt inside the workshop."
+		},
+		{
+			"id": "ueber-uns.contactEntrance",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00445.webp",
+			"sourceSha256": "6c716e1378ace3014eb2448edf1078a4fac550fa499f97ab8b6e01517e32c527",
+			"alt": "Drei Mitarbeiter stehen im Gespräch neben einem dunkelblauen Cabriolet in der Werkstatt.",
+			"altEn": "Three workers talking beside a dark-blue convertible inside the workshop."
+		},
+		{
+			"id": "ueber-uns.contactExterior",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00113.webp",
+			"sourceSha256": "be2c60f773a3c6ac99e5b8c3dc7683ee19c1396702657d86aca3ef26f3ef5664",
+			"alt": "Ein Mitarbeiter arbeitet an einem hellblauen Cabriolet, mit weiteren Fahrzeugen in der Werkstatt.",
+			"altEn": "A worker attending to a light-blue convertible, with other vehicles inside the workshop."
+		},
+		{
+			"id": "ueber-uns.marioPortrait",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00776.webp",
+			"sourceSha256": "406cb0e4bcc12d9e0405ed56750321efca8410b6d59704fba4d7ac9f617bfff8",
+			"alt": "Mario Schrank im dunkelblauen Poloshirt neben einem roten historischen Fahrzeug.",
+			"altEn": "Mario Schrank wearing a dark-blue polo shirt beside a red classic car."
+		},
+		{
+			"id": "ueber-uns.teamConversation",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00096.webp",
+			"sourceSha256": "ebb1c4b7655281aacf7e84685bf5e17b2a974a6273f39b90b724ae9c44060b48",
+			"alt": "Eine Hand liegt auf einer blanken Karosseriekante mit Schleifspuren.",
+			"altEn": "A hand rests on a bare-metal bodywork edge showing sanding marks."
+		},
+		{
+			"id": "ueber-uns.teamPortrait",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00806.webp",
+			"sourceSha256": "327f2dfe9c9acd12ac30540351486a9820cc504dcd2f0b80e63041f154d7dbe5",
+			"alt": "Eine weiß behandschuhte Hand liegt auf rotem Lack neben einer verchromten Fahrzeugleuchte.",
+			"altEn": "A white-gloved hand rests on red paint beside a chrome vehicle lamp."
+		},
+		{
+			"id": "ueber-uns.teamWorkshop",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00104.webp",
+			"sourceSha256": "b1076c7cb8f47b77cceb471873fa3c3021eb55774607179a30c8ac058a517c1b",
+			"alt": "Hände bearbeiten die Kante eines Blechteils auf einer Werkbank.",
+			"altEn": "Hands working on the edge of a metal panel on a workbench."
+		},
+		{
+			"id": "ueber-uns.teamPaint",
+			"path": "src/assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00517.webp",
+			"sourceSha256": "250345f727ef4b67679495b81e7dd4b0ecd167211a0e17c493c74622dc12da51",
+			"alt": "Eine Lackierpistole mit weißem Behälter sprüht auf eine helle Oberfläche.",
+			"altEn": "A spray gun with a white cup spraying a pale surface."
+		},
+		{
+			"id": "home.poster",
+			"path": "src/assets/oldtimer/hero-site-reveal-poster.jpg",
+			"sourceSha256": "69859395064c6915bb5e7e3a3f66b5be2704a6b90a0bacf0505dcb1026c3d381",
+			"alt": "Offener historischer Rennwagen auf einer Landstraße im tief stehenden Sonnenlicht.",
+			"altEn": "An open-top vintage racing car on a country road in low sunlight."
+		},
+		{
+			"id": "default.poster",
+			"path": "src/assets/oldtimer/hero-site-poster.jpg",
+			"sourceSha256": "2757ab0cdbf913827ceb499fd09c9525435c3211c8236bee764a60c6c3513a3d",
+			"alt": "Historischer Rennwagen von schräg vorn auf einer Landstraße, mit Fahrer und tief stehender Sonne.",
+			"altEn": "Vintage racing car viewed from the front quarter on a country road, with its driver and the low sun visible."
+		}
+	],
+	"approval": "User approved all 22 descriptions on 2026-09-30; project/archive/vehicle alternatives excluded."
+}

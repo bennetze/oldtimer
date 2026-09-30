@@ -9,9 +9,15 @@ Die Seiten „Über uns“ und „Handwerk“ sowie die Fahrzeugarchive verbinde
 Die Website ist auf Deutsch und Englisch verfügbar. Fahrzeugdokumentationen enthalten eigene deutsche und englische Texte, Bildalternativen und Bildunterschriften. Die englischen Seiten liegen unter `/en/`; beim ersten Aufruf ohne Sprachauswahl wird anhand der bevorzugten Browsersprache Deutsch oder Englisch angezeigt. Die manuelle Sprachauswahl erfolgt über die URL, ohne Cookies oder lokalen Browserspeicher. Der aktuelle Stand ist eine Entwicklungsvorschau für die vollständig neu entwickelte Website. Die bisherigen KI-Bildplatzhalter wurden entfernt; die Website verwendet reale Fotografien und Videos. Die dekorative Ledertextur stammt ebenfalls aus einer realen Aufnahme. Die unveränderte Aufnahme wird ohne Kachelung als durchgehender, auf den sichtbaren Seitenbereich begrenzter Hintergrund dargestellt. Ein stärker eingeblendeter Ausschnitt ohne die markante Lederfalte erhält die natürliche Ledernarbung und lässt die Seitenfarben durchscheinen. Die Prüfung der Rechtebelege, Unternehmensangaben und Rechtstexte vor der Produktionsfreigabe bleibt erforderlich.
 Das Unternehmen wurde 1987 von Mario Schrank gegründet und wird heute gemeinsam mit Anton Schrank in die nächste Generation geführt.
 
-Die Startseite zeigt das offizielle Fahrzeugsignet in Weiß über dem Unternehmensnamen in einer festen, unscharf hinterlegten Kopfzeile. Auf allen Seiten nehmen die Höhe der Kopfzeile und die Schriftgrößen mit abnehmender Bildschirmbreite fließend ab; auf der Startseite wird auch das Signet kleiner und sein Abstand zum Namen kompakter. Mobil bleibt die Kopfzeile besonders flach; Menü und Sprachwahl behalten große Bedienflächen, DE und EN stehen auf der Startseite nebeneinander in einer Zeile. Das Signet dient auf allen Seiten auch als Website-Icon.
+Die Startseite zeigt das offizielle Fahrzeugsignet in Weiß über dem Unternehmensnamen in einer festen, unscharf hinterlegten Kopfzeile. Auf der Startseite lassen die moderat transparente dunkle Kopfzeile und das ebenfalls moderat transparente, unscharf hinterlegte Menü mehr von den darunterliegenden Fotografien und Videos erkennen. Auf allen Seiten nehmen die Höhe der Kopfzeile und die Schriftgrößen mit abnehmender Bildschirmbreite fließend ab; auf der Startseite wird auch das Signet kleiner und sein Abstand zum Namen kompakter. Mobil bleibt die Kopfzeile besonders flach; Menü und Sprachwahl behalten große Bedienflächen, DE und EN stehen auf der Startseite nebeneinander in einer Zeile. Das Signet dient auf allen Seiten auch als Website-Icon.
 
-Auf geeigneten Desktop-Geräten passt sich eine einzelne, scharfe Kreiszeigerkontur anhand der Helligkeit des geglätteten Hintergrunds mit weichen Übergängen zwischen Schwarz und Weiß an. Mittleres Grau ergibt eine schwarze Kontur; die Kreismitte bleibt vollständig transparent und unverändert. Bei reduzierter Bewegung, erhöhtem Kontrast, Touch-Eingabe oder fehlender Browser-Unterstützung bleibt der native Mauszeiger erhalten.
+Auf geeigneten Desktop-Geräten passt sich eine einzelne, scharfe Kreiszeigerkontur anhand der Helligkeit des geglätteten Hintergrunds mit weichen Übergängen zwischen Schwarz und Weiß an. Mittleres Grau ergibt eine schwarze Kontur; die Kreismitte bleibt vollständig transparent und unverändert. Bei reduzierter Bewegung, erhöhtem Kontrast, Touch-Eingabe oder fehlender Browser-Unterstützung bleibt der native Mauszeiger erhalten. Im Menü lässt sich über „Systemzeiger verwenden“ der Betriebssystemzeiger auswählen. Nur diese ausdrücklich gewählte Anzeigeeinstellung wird lokal im Browser gespeichert, ohne Cookies oder Übertragung. Die Pfeiltasten behalten das normale Browserverhalten; die Abschnittsnavigation bleibt über Links und Scroll-Schaltflächen erreichbar.
+
+Die Auswahl „Systemzeiger verwenden“ im Menü erscheint als ungefülltes Quadrat mit dünner Kontur; bei aktivierter Auswahl wird ein schlichtes Häkchen sichtbar. Beim Überfahren des Kontrollkästchens bleibt der benutzerdefinierte Kreiszeiger erhalten; erst die aktivierte Auswahl schaltet zum Systemzeiger um.
+
+Die Beschriftungen „Schließen“ und „Die Oldtimermanufaktur“ im Overlay-Menü sind auf Desktop- und Mobilgeräten für bessere Lesbarkeit etwas größer gesetzt.
+
+Das Menü gleitet beim Schließen ohne Wartezeit zurück, mit derselben Bewegungsdauer wie beim Öffnen. Die Navigationslinks verschwinden in umgekehrter Reihenfolge und der Hintergrund blendet aus. Bei reduzierter Bewegung öffnet und schließt es ohne Animation.
 
 ## Hauptseiten
 
@@ -31,9 +37,13 @@ Die Hero-Überschrift der Startseite ist auf Mobilgeräten größer gesetzt und 
 
 Auf Mobilgeräten stehen die Aufwärtspfeile der Startseitenabschnitte am oberen Abschnittsrand direkt unter der festen Kopfzeile.
 
+Die Abschnittspunkte und Scroll-Pfeile besitzen kontrastierende Kanten. Bei Tastaturnavigation kennzeichnet ein deutlicher zweifarbiger Fokusrahmen die Abschnittslinks und die Wiedergabe-Steuerung; auf hellen Seiten sind die Farben entsprechend umgekehrt. Im Modus für erzwungene Farben werden die Systemfarben verwendet.
+
 ## Englische Seiten
 
 - [English homepage](https://www.oldtimermanufaktur.de/en/): Englische Fassung mit der Hero-Zeile „WE PRESERVE STORIES AND HISTORY“ sowie Zugang zu Handwerk, Unternehmen, Projektarchiven und Fahrzeugdokumentationen.
+
+Die Bildalternativen der redaktionellen Seiten beschreiben die gezeigten Arbeitsabläufe und Personen auf Deutsch und Englisch. Projektarchive und einzelne Fahrzeugartikel behalten ihre vorhandenen Bildbeschreibungen.
 
 ## Nutzung durch KI-Systeme
 

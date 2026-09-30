@@ -3,6 +3,7 @@ import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
 import { vehicleImage } from '../config/vehicleImages';
 import Layout from '../layouts/Layout.astro';
 import { validateVehicleBlocks } from '../config/vehicleHtml.js';
+import { annotateVehicleLanguageParts } from '../config/vehicleLanguageParts.js';
 import {
 	GITHUB_PAGES_GALLERY_IMAGE_LIMIT,
 	limitVehicleGalleryBlocks,
@@ -35,7 +36,8 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 	: `${import.meta.env.BASE_URL}/`;
 const githubPagesPreview = basePath !== '/';
 const content = localizeVehicle(vehicle.data, language);
-const validatedBlocks = validateVehicleBlocks(content.blocks, `${vehicle.data.category}/${vehicle.data.slug}`);
+const validatedBlocks = validateVehicleBlocks(content.blocks, `${vehicle.data.category}/${vehicle.data.slug}`).map(block =>
+	block.type === 'gallery' ? block : { ...block, html: annotateVehicleLanguageParts(block.html, language) });
 const contentBlocks = (
 	githubPagesPreview
 		? limitVehicleGalleryBlocks(validatedBlocks, GITHUB_PAGES_GALLERY_IMAGE_LIMIT)
@@ -124,12 +126,13 @@ const vehicleJsonLd = {
 						return (
 							<div
 								class:list={['story-gallery', `story-gallery--${Math.min(block.images.length, 4)}`]}
+								role="group"
 								aria-label={`Bildergruppe ${blockIndex + 1}`}
 							>
 								{block.images.map((image, imageIndex) => (
 									<figure data-authored class:list={['story-image', { 'story-image--feature': imageIndex === 0 && block.images.length >= 3 }]}>
-										<button
-											type="button"
+										<a
+											href={galleryImagePath(image.src)}
 											class="story-image__button"
 											data-lightbox-trigger
 											data-lightbox-src={galleryImagePath(image.src)}
@@ -143,7 +146,7 @@ const vehicleJsonLd = {
 												loading="lazy"
 												decoding="async"
 											/>
-										</button>
+										</a>
 										{image.caption && <figcaption>{image.caption}</figcaption>}
 									</figure>
 								))}
@@ -202,50 +205,45 @@ const vehicleJsonLd = {
 </Layout>
 
 <script>
+	import { createModal } from '../scripts/accessibility.js';
 	const lightbox = document.querySelector('[data-image-lightbox]');
 	const lightboxImage = lightbox?.querySelector('[data-lightbox-image]');
 	const lightboxClose = lightbox?.querySelector('[data-lightbox-close]');
-	let lightboxOpener;
+	const modal = lightbox instanceof HTMLElement ? createModal(lightbox) : null;
 
 	document.querySelectorAll('[data-lightbox-trigger]').forEach((trigger) => {
-		trigger.addEventListener('click', () => {
-			if (!(lightbox instanceof HTMLDialogElement) || !(lightboxImage instanceof HTMLImageElement)) {
+		trigger.addEventListener('click', (event) => {
+			if (event.button > 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+			if (!modal || !(lightboxImage instanceof HTMLImageElement)) {
 				return;
 			}
 
-			lightboxOpener = trigger;
+			event.preventDefault();
 			lightboxImage.src = trigger.dataset.lightboxSrc ?? '';
 			lightboxImage.alt = trigger.dataset.lightboxAlt ?? '';
-			lightbox.showModal();
+			modal.open(trigger);
 			lightboxClose?.focus();
 		});
 	});
 
 	const closeLightbox = () => {
-		if (lightbox instanceof HTMLDialogElement) lightbox.close();
+		modal?.close();
 	};
 
 	lightboxClose?.addEventListener('click', closeLightbox);
 	lightbox?.addEventListener('click', (event) => {
 		if (event.target === lightbox || (event.target instanceof Element && event.target.classList.contains('image-lightbox__stage'))) closeLightbox();
 	});
-	lightbox?.addEventListener('keydown', (event) => {
-		if (event.key === 'Escape') {
-			event.preventDefault();
-			closeLightbox();
-		}
-	});
 	lightbox?.addEventListener('close', () => {
 		if (lightboxImage instanceof HTMLImageElement) {
 			lightboxImage.removeAttribute('src');
 		}
-		if (lightboxOpener instanceof HTMLElement) lightboxOpener.focus();
-		lightboxOpener = undefined;
 	});
 </script>
 
 <style>
 	.vehicle-detail {
+		min-height: 100vh;
 		min-height: 100svh;
 		padding-top: clamp(8.5rem, 12vw, 12rem);
 		background: #eeeeee;
@@ -310,6 +308,7 @@ const vehicleJsonLd = {
 
 	.vehicle-lead :global(img) {
 		width: 100%;
+		max-height: min(86vh, 70rem);
 		max-height: min(86svh, 70rem);
 		object-fit: cover;
 	}
@@ -382,6 +381,7 @@ const vehicleJsonLd = {
 
 	.story-image__button {
 		display: block;
+		text-decoration: none;
 		width: 100%;
 		padding: 0;
 		overflow: hidden;
@@ -533,9 +533,15 @@ const vehicleJsonLd = {
 		}
 	}
 
+	.image-lightbox:not([open]) { display: none; }
 	.image-lightbox {
+		position: fixed;
+		inset: 0;
+		z-index: 1001;
+		margin: auto;
 		width: 100vw;
 		max-width: none;
+		height: 100vh;
 		height: 100svh;
 		max-height: none;
 		padding: 0;

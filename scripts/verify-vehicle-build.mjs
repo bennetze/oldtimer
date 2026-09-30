@@ -62,7 +62,7 @@ for (const vehicle of vehicles) {
 	assert.ok(html.includes(galleryAssetBase), `${vehicle.route}: incorrect gallery asset base for ${target}.`);
 	assert.ok(html.includes(`${deployedOrigin}${vehicle.route}`), `${vehicle.route}: incorrect absolute metadata URL.`);
 	assert.equal(
-		occurrences(html, /<button[^>]+data-lightbox-trigger/g),
+		occurrences(html, /<a[^>]+data-lightbox-trigger/g),
 		galleryImages.length,
 		`${vehicle.route}: gallery image count.`,
 	);

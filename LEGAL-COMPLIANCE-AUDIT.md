@@ -104,3 +104,14 @@ not left executable beside the static replacement. No live hosting changes are
 authorized by repository cleanup. Verify actual response headers on the final host.
 
 The subsequent website repair register is maintained in [WEBSITE-REPAIR-AUDIT.md](WEBSITE-REPAIR-AUDIT.md). It leaves the legal, factual and media-rights release dependencies above intact.
+
+
+## Accessibility display preference — 30 September 2026
+
+The user-approved “Use system pointer” menu checkbox stores only the explicit
+boolean choice in localStorage under `oldtimer.systemPointer`. No cookie is set,
+no identifier is created, and the preference is not transmitted. Unchecking removes
+the key; storage denial leaves the current-page control usable. The existing language
+selection remains URL-based. Include this preference storage and its purpose in the
+approved privacy information before release; production legal text was not replaced.
+This entry records the implementation, not a new legal certification.

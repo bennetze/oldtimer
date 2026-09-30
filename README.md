@@ -32,7 +32,12 @@ Offline-editor contract tests require the sibling `../oldtimer-intern` checkout.
 If absent, those suites fail explicitly; do not skip or remove them. `npm run
 test:site` runs website tests and discovery without loading those companion suites.
 
-Builds check metadata, links, bilingual content, CSP and deployment artifacts.
+Builds check metadata, links, bilingual content, CSP, deployment artifacts and static
+accessibility invariants. The evidence, unresolved content findings and browser/AT
+verification matrix are in [ACCESSIBILITY-AUDIT.md](ACCESSIBILITY-AUDIT.md).
+`npm run audit:accessibility` scans existing built output;
+`npm run preview:accessibility` serves local compatibility/spacing fixtures.
+These checks do not establish WCAG conformance or universal compatibility.
 Keep credentials, photo backups, tooling, dependencies and source maps out of
 `public/`. The artifact gate rejects common leaked files, credential patterns and
 server executables; it is not a complete secret scanner.

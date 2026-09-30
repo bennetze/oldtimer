@@ -52,7 +52,7 @@ const sectionNavigationItems = [
 	theme="light"
 	background="linear-gradient(180deg, #ffffff 0%, #ffffff 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #b1b6d5 47%, #8faede 54%, #80a3d1 61%, #8bb0e1 70%, #a6c6ec 82%, #ffffff 100%)"
 	openGraphImage={marioPortrait}
-	openGraphImageAlt="Mario Schrank neben einem historischen Fahrzeug in der Werkstatt"
+	openGraphImageAlt="Mario Schrank im dunkelblauen Poloshirt neben einem roten historischen Fahrzeug."
 	structuredDataType="AboutPage"
 	dateModified="2026-09-28"
 	additionalJsonLd={people}
@@ -71,12 +71,12 @@ const sectionNavigationItems = [
 						data-range="42"
 					>
 						<h2 id="mario-title">Mario Schrank</h2>
-						<p class="profile-credentials" aria-label="Meisterqualifikationen">
+						<p class="profile-credentials">
 							{qualifications.mario.map((title) => <span>{title}</span>)}
 						</p>
 					</header>
 					<div class="story__layout">
-						<div class="collage collage--single collage--right" aria-label="Mario Schrank in der Werkstatt">
+						<div class="collage collage--single collage--right" role="group" aria-label="Mario Schrank in der Werkstatt">
 							<figure
 								class="image-layer image-layer--portrait"
 								data-parallax-layer
@@ -85,7 +85,7 @@ const sectionNavigationItems = [
 							>
 								<Image
 									src={marioPortrait}
-									alt="Mario Schrank neben einem historischen Fahrzeug in der Werkstatt"
+									alt="Mario Schrank im dunkelblauen Poloshirt neben einem roten historischen Fahrzeug."
 									widths={[560, 760, 972]}
 									sizes="(max-width: 840px) 88vw, 48vw"
 									format="webp"
@@ -119,12 +119,12 @@ const sectionNavigationItems = [
 					data-range="42"
 				>
 					<h2 id="anton-title">Anton Schrank</h2>
-					<p class="profile-credentials" aria-label="Meisterqualifikationen">
+					<p class="profile-credentials">
 						{qualifications.anton.map((title) => <span>{title}</span>)}
 					</p>
 				</header>
 				<div class="story__layout">
-					<div class="collage collage--double collage--left collage--portraits" aria-label="Anton Schrank in der Werkstatt">
+					<div class="collage collage--double collage--left collage--portraits" role="group" aria-label="Anton Schrank in der Werkstatt">
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
@@ -133,7 +133,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={antonPortrait}
-								alt="Anton Schrank in der Werkstatt"
+								alt="Anton Schrank mit Brille und dunkelblauem Poloshirt in der Werkstatt."
 								widths={[560, 760, 971]}
 								sizes="(max-width: 840px) 88vw, 48vw"
 								format="webp"
@@ -148,7 +148,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={antonCar}
-								alt="Anton Schrank bei der Arbeit an einer Fahrzeugkarosserie"
+								alt="Anton Schrank mit einem weißen Handschuh an einer dunkelblauen Karosserie."
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 76vw, 42vw"
 								format="webp"
@@ -182,7 +182,7 @@ const sectionNavigationItems = [
 			>
 				<h2 id="team-title">Das Team</h2>
 				<div class="story__layout">
-					<div class="collage collage--triple collage--right collage--team-details" aria-label="Einblicke in die Arbeit des Teams">
+					<div class="collage collage--triple collage--right collage--team-details" role="group" aria-label="Einblicke in die Arbeit des Teams">
 						<figure
 							class="image-layer image-layer--team-main"
 							data-parallax-layer
@@ -191,7 +191,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={teamPortrait}
-								alt="Eine behandschuhte Hand prüft die rote Lackoberfläche eines Oldtimers"
+								alt="Eine weiß behandschuhte Hand liegt auf rotem Lack neben einer verchromten Fahrzeugleuchte."
 								widths={[760, 1120, 1536]}
 								sizes="(max-width: 840px) 94vw, 55vw"
 								format="webp"
@@ -206,7 +206,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={teamConversation}
-								alt="Eine Hand prüft die Form eines blanken Karosserieblechs"
+								alt="Eine Hand liegt auf einer blanken Karosseriekante mit Schleifspuren."
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 72vw, 42vw"
 								format="webp"
@@ -221,7 +221,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={teamWorkshop}
-								alt="Präzise Handarbeit an einem kleinen Bauteil auf der Werkbank"
+								alt="Hände bearbeiten die Kante eines Blechteils auf einer Werkbank."
 								widths={[560, 840, 1120]}
 								sizes="(max-width: 840px) 58vw, 31vw"
 								format="webp"
@@ -229,7 +229,7 @@ const sectionNavigationItems = [
 							/>
 						</figure>
 						<figure class="image-layer image-layer--team-paint" data-parallax-layer data-speed="0.14" data-range="110">
-							<Image src={teamPaint} alt="Eine Lackierpistole beim Auftragen von Lack" widths={[480, 760, 1024]} sizes="(max-width: 840px) 55vw, 28vw" format="webp" loading="lazy" />
+							<Image src={teamPaint} alt="Eine Lackierpistole mit weißem Behälter sprüht auf eine helle Oberfläche." widths={[480, 760, 1024]} sizes="(max-width: 840px) 55vw, 28vw" format="webp" loading="lazy" />
 						</figure>
 					</div>
 
@@ -251,7 +251,7 @@ const sectionNavigationItems = [
 			>
 				<h2 id="contact-title">Kontakt</h2>
 				<div class="story__layout">
-					<div class="collage collage--double collage--left collage--contact" aria-label="Einblicke in die Werkstatt in Fischbach">
+					<div class="collage collage--double collage--left collage--contact" role="group" aria-label="Einblicke in die Werkstatt in Fischbach">
 						<figure
 							class="image-layer image-layer--portrait"
 							data-parallax-layer
@@ -260,7 +260,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={contactExterior}
-								alt="Arbeit an einem historischen Cabriolet in der Werkstatt"
+								alt="Ein Mitarbeiter arbeitet an einem hellblauen Cabriolet, mit weiteren Fahrzeugen in der Werkstatt."
 								widths={[560, 760, 1024]}
 								sizes="(max-width: 840px) 88vw, 48vw"
 								format="webp"
@@ -275,7 +275,7 @@ const sectionNavigationItems = [
 						>
 							<Image
 								src={contactEntrance}
-								alt="Drei Mitarbeiter im Gespräch an einem historischen Fahrzeug"
+								alt="Drei Mitarbeiter stehen im Gespräch neben einem dunkelblauen Cabriolet in der Werkstatt."
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 76vw, 42vw"
 								format="webp"

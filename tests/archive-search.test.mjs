@@ -33,3 +33,10 @@ test('search changes only affected cards and cancelled exits cannot hide restore
 	filter(''); assert.equal(cards[0].hidden, false); assert.equal(cards[1].hidden, true);
 	await Promise.resolve();
 });
+
+test('missing animation APIs and native inert fall back to immediate, nonfocusable results', () => {
+	const item = card('BMW'); delete item.getAnimations; delete item.animate; delete item.inert;
+	const filter = createCardFilter([item], { matches: false, addListener() {} });
+	assert.equal(filter('Mercedes').count, 0); assert.equal(item.hidden, true);
+	filter(''); assert.equal(item.hidden, false);
+});

@@ -8,7 +8,7 @@ export const modificationDates = {
 		'/impressum/': '2026-09-28',
 		'/datenschutz/': '2026-09-28',
 		'/404.html': '2026-09-28',
-		'/': '2026-09-29',
+		'/': '2026-09-30',
 		'/handwerk/': '2026-09-29',
 		'/ueber-uns/': '2026-09-28',
 		'/projekte/': '2026-09-29',

@@ -8,6 +8,7 @@
 	outline-offset: 4px;
 }
 :where(.story-copy, .legal-copy) a { text-underline-offset: 0.2em; }
+:where(dialog) { max-width: calc(100vw - 1rem); max-height: calc(100vh - 1rem); }
 :where(dialog) { max-width: calc(100vw - 1rem); max-height: calc(100svh - 1rem); }
 @media (max-width: 680px) {
 	:where(input, select, textarea) { font-size: max(1rem, 16px); }
@@ -15,3 +16,121 @@
 @media (prefers-reduced-motion: reduce) {
 	:where(html) { scroll-behavior: auto; }
 }
+
+/* Compatibility-only focus treatment; modern browsers retain their current rules. */
+.legacy-focus a:focus, .legacy-focus button:focus, .legacy-focus input:focus,
+.legacy-focus select:focus, .legacy-focus textarea:focus,
+.legacy-focus summary:focus, .legacy-focus [tabindex]:focus {
+	outline: 2px solid currentColor !important;
+	outline-offset: 4px;
+}
+@supports not selector(:focus-visible) {
+	:where(a, button, input, select, textarea, summary, [tabindex]):focus {
+		outline: 2px solid currentColor !important;
+		outline-offset: 4px;
+	}
+}
+/* Approved photographic control edges and keyboard-only focus treatment. */
+.scroll-cue {
+	opacity: 1 !important;
+	color: #fff !important;
+	filter: drop-shadow(1px 0 0 #111) drop-shadow(-1px 0 0 #111)
+		drop-shadow(0 1px 0 #111) drop-shadow(0 -1px 0 #111);
+}
+.section-indicator__dot::after {
+	background: #fff !important;
+	box-shadow: 0 0 0 1px #111;
+}
+.section-indicator--light .section-indicator__dot::after {
+	background: #111 !important;
+	box-shadow: 0 0 0 1px #fff;
+}
+.scroll-cue:focus-visible, .hero-motion-toggle:focus-visible,
+.section-indicator__dot:focus-visible {
+	outline: 2px solid #fff !important;
+	outline-offset: 3px !important;
+	box-shadow: 0 0 0 6px #111 !important;
+}
+.section-indicator--light .section-indicator__dot:focus-visible {
+	outline-color: #111 !important;
+	box-shadow: 0 0 0 6px #fff !important;
+}
+/* Engines without :focus-visible retain the same visible focus fallback. */
+.legacy-focus .scroll-cue:focus, .legacy-focus .hero-motion-toggle:focus,
+.legacy-focus .section-indicator__dot:focus {
+	outline: 2px solid #fff !important;
+	outline-offset: 3px !important;
+	box-shadow: 0 0 0 6px #111 !important;
+}
+.legacy-focus .section-indicator--light .section-indicator__dot:focus {
+	outline-color: #111 !important;
+	box-shadow: 0 0 0 6px #fff !important;
+}
+/* Browser/OS accessibility modes use explicit surfaces and system colors. */
+@media (forced-colors: active) {
+	:where(.site-header, .menu-panel, .site-footer, .category-dialog, .image-lightbox,
+		.vehicle-card, .section-cta, .not-found__home) {
+		background: Canvas !important;
+		color: CanvasText !important;
+		border: 1px solid CanvasText !important;
+		backdrop-filter: none !important;
+	}
+	:where(.background-texture, .cursor) { display: none !important; }
+	:where(a, button, input, label, .site-footer p) { opacity: 1 !important; }
+	:where(button, input, .section-cta) { border: 1px solid ButtonText !important; }
+	:where(a, button, input, [tabindex]):focus-visible { outline: 2px solid Highlight !important; }
+	.section-indicator__dot::after { background: ButtonText !important; }
+	.section-indicator__dot.is-active::before { border-color: Highlight !important; }
+	.scroll-cue { color: ButtonText !important; filter: none; }
+	.scroll-cue:focus-visible, .hero-motion-toggle:focus-visible,
+	.section-indicator__dot:focus-visible,
+	.section-indicator--light .section-indicator__dot:focus-visible,
+	.legacy-focus .scroll-cue:focus, .legacy-focus .hero-motion-toggle:focus,
+	.legacy-focus .section-indicator__dot:focus,
+	.legacy-focus .section-indicator--light .section-indicator__dot:focus {
+		outline-color: Highlight !important;
+		box-shadow: none !important;
+	}
+	.section-indicator__dot::after,
+	.section-indicator--light .section-indicator__dot::after {
+		background: ButtonText !important;
+		box-shadow: none;
+	}
+}
+@media (prefers-contrast: more) {
+	:where(.site-header, .menu-panel) { background: #101010 !important; color: #eeeeee !important; }
+	.site-shell--light .site-header { background: #eeeeee !important; color: #111111 !important; }
+	:where(.language-switch a, .footer-primary a, .footer-legal, .site-footer p) { opacity: 1 !important; }
+	:where(.hero-title, .media-panel__content) { text-shadow: 0 1px 3px #000; }
+}
+/* At a narrow effective viewport (including desktop zoom), let the header reflow. */
+@media (max-width: 360px) {
+	.site-header { grid-template-columns: auto minmax(0, 1fr) auto !important; gap: 0.5rem; }
+	.site-header .brand { min-width: 0; white-space: normal !important; overflow-wrap: anywhere; }
+	.site-header .brand span { white-space: normal !important; }
+	.site-header .language-switch { gap: 0.25rem; flex-wrap: wrap; }
+	.site-header .menu-toggle { letter-spacing: 0.06em; }
+	.footer-brand { white-space: normal !important; overflow-wrap: anywhere; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+	.site-header, .menu-panel { background: #101010 !important; }
+	.site-shell--light .site-header { background: #eeeeee !important; }
+}
+/* Only enlarged browser text or user text-spacing overrides activate this mode. */
+.accessible-text-layout .brand,
+.accessible-text-layout .brand span,
+.accessible-text-layout .footer-brand { white-space: normal !important; overflow-wrap: anywhere; }
+.accessible-text-layout .media-panel h1,
+.accessible-text-layout .hero-title__word { white-space: normal !important; overflow-wrap: anywhere; max-width: 100%; }
+.accessible-text-layout .hero-title__letter { width: auto !important; }
+.accessible-text-layout .menu-panel__top { flex-wrap: wrap; }
+.accessible-text-layout .menu-panel { grid-template-rows: auto auto auto; }
+.accessible-text-layout .section-cta { min-width: 0 !important; max-width: 100%; }
+:where(main[id], section[id], footer[id]) { scroll-margin-top: calc(var(--accessible-header-height, 6rem) + 1rem); }
+@media (prefers-contrast: more) {
+	.media-panel__shade { background-color: rgba(12, 12, 12, 0.65) !important; }
+	.hero-motion-toggle { border-color: currentColor !important; background-color: #101010 !important; }
+}
+/* Author display rules must not expose enhancement-only or filtered controls. */
+[hidden] { display: none !important; }
+dialog:not([open]) { display: none; }
