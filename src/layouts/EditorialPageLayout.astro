@@ -81,6 +81,11 @@ const openingId = sections[0]?.id;
 	const editorialPage = document.querySelector('.editorial-page');
 	const parallaxGroups = [...document.querySelectorAll('[data-parallax-group]')];
 	const visibleGroups = new Set();
+	const geometry = new Map(parallaxGroups.map(group => [group, {
+		heading: group.querySelector('.profile-heading') ?? group.querySelector('h2'),
+		copy: group.querySelector('.story__copy'),
+		layers: [...group.querySelectorAll('[data-parallax-layer]')],
+	}]));
 	let parallaxFrame;
 	let initialHashAligned = false;
 
@@ -146,6 +151,7 @@ const openingId = sections[0]?.id;
 		const mobileFactor = isMobileLayout ? 0.18 : 1;
 		const mobileTextClearance = 24;
 
+		const updates = [];
 		visibleGroups.forEach((group) => {
 			if (!(group instanceof HTMLElement)) {
 				return;
@@ -154,10 +160,11 @@ const openingId = sections[0]?.id;
 			const groupBounds = group.getBoundingClientRect();
 			const groupCenter = groupBounds.top + groupBounds.height / 2;
 			const distance = viewportCenter - groupCenter;
-			const headingBounds = (group.querySelector('.profile-heading') ?? group.querySelector('h2'))?.getBoundingClientRect();
-			const copyBounds = group.querySelector('.story__copy')?.getBoundingClientRect();
+			const elements = geometry.get(group);
+			const headingBounds = elements.heading?.getBoundingClientRect();
+			const copyBounds = elements.copy?.getBoundingClientRect();
 
-			group.querySelectorAll('[data-parallax-layer]').forEach((layer) => {
+			elements.layers.forEach((layer) => {
 				if (!(layer instanceof HTMLElement)) {
 					return;
 				}
@@ -196,8 +203,12 @@ const openingId = sections[0]?.id;
 					minimumOffset,
 					Math.max(minimumOffset, maximumOffset),
 				);
-				layer.style.setProperty('--parallax-y', `${offset.toFixed(2)}px`);
+				updates.push([layer, `${offset.toFixed(2)}px`]);
 			});
+		});
+		// Finish every geometry read before the first transform write.
+		updates.forEach(([layer, value]) => {
+			if (layer.style.getPropertyValue('--parallax-y') !== value) layer.style.setProperty('--parallax-y', value);
 		});
 	};
 
@@ -227,7 +238,9 @@ const openingId = sections[0]?.id;
 		parallaxGroups.forEach((group) => visibleGroups.add(group));
 	}
 
-	window.addEventListener('scroll', requestParallaxUpdate, { passive: true });
+	window.addEventListener('scroll', () => {
+		if (!motionPreference.matches && !document.hidden && visibleGroups.size) requestParallaxUpdate();
+	}, { passive: true });
 	const handlePageLoaded = () => {
 		updateStoryScrollOffset();
 		alignInitialHashTarget();
@@ -238,9 +251,12 @@ const openingId = sections[0]?.id;
 	} else {
 		window.addEventListener('load', handlePageLoaded, { once: true });
 	}
+	let resizeFrame;
 	window.addEventListener('resize', () => {
-		updateStoryScrollOffset();
-		requestParallaxUpdate();
+		if (resizeFrame !== undefined) return;
+		const update = () => { resizeFrame = undefined; updateStoryScrollOffset(); requestParallaxUpdate(); };
+		if (typeof window.requestAnimationFrame === 'function') resizeFrame = window.requestAnimationFrame(update);
+		else update();
 	}, { passive: true });
 	watchMedia(motionPreference, requestParallaxUpdate);
 	if (typeof window.requestAnimationFrame === 'function') window.requestAnimationFrame(updateStoryScrollOffset);

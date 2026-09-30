@@ -156,13 +156,13 @@ const itemList = {
 
 			<section id={gridId} class="vehicle-grid" aria-label={`${categoryData.label}, Seite ${safePage}`}>
 				{
-					vehicles.map((vehicle, index) => {
-						const defaultVisible = index >= firstIndex && index < lastIndex;
-						const displayIndex = defaultVisible ? index - firstIndex : pageSize + index;
-						return <VehicleCard vehicle={vehicle} index={displayIndex} {defaultVisible} />;
-					})
+					visibleVehicles.map((vehicle, index) => <VehicleCard vehicle={vehicle} index={index} />)
 				}
 			</section>
+			<template data-archive-deferred>
+				{vehicles.map((vehicle, index) => index < firstIndex || index >= lastIndex
+					? <VehicleCard vehicle={vehicle} index={pageSize + index} defaultVisible={false} /> : null)}
+			</template>
 
 			{
 				totalPages > 1 && (
@@ -247,9 +247,24 @@ const itemList = {
 		(card): card is HTMLElement => card instanceof HTMLElement,
 	);
 
-	const filterCards = createCardFilter(vehicleCards, reducedMotion);
-	if (searchForm instanceof HTMLElement && vehicleCards.length) searchForm.hidden = false;
 	const grid = archive?.querySelector('.vehicle-grid');
+	const deferred = archive?.querySelector<HTMLTemplateElement>('[data-archive-deferred]');
+	const filterCards = createCardFilter(vehicleCards, reducedMotion, () => {
+		if (!deferred || !grid) return [];
+		const cards = [...deferred.content.querySelectorAll<HTMLElement>('[data-vehicle-card]')];
+		const languageChoice = new URL(window.location.href).searchParams.get('lang');
+		if (languageChoice === 'de' || languageChoice === 'en') {
+			deferred.content.querySelectorAll<HTMLAnchorElement>('a[href]').forEach(link => {
+				const target = new URL(link.href, window.location.href);
+				target.searchParams.set('lang', languageChoice);
+				link.href = `${target.pathname}${target.search}${target.hash}`;
+			});
+		}
+		grid.append(deferred.content);
+		[...grid.querySelectorAll<HTMLElement>('[data-vehicle-card]')].sort((a, b) => Number(a.dataset.vehicleOrder) - Number(b.dataset.vehicleOrder)).forEach(card => grid.append(card));
+		return cards;
+	});
+	if (searchForm instanceof HTMLElement && vehicleCards.length) searchForm.hidden = false;
 	const pageGridLabel = grid?.getAttribute('aria-label') ?? '';
 
 	const updateVehicleSearch = () => {

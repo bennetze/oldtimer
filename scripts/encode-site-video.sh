@@ -59,6 +59,14 @@ if [[ ! "$base_name" =~ ^[a-z0-9][a-z0-9-]*$ ]]; then
 	exit 1
 fi
 
+if [[ ! "$width" =~ ^[0-9]+$ || ! "$fps" =~ ^[0-9]+$ || "$width" -lt 2 || "$fps" -lt 1 || "$fps" -gt 1000 ]]; then
+	echo "Error: width and fps must be positive integers (fps <= 1000)." >&2
+	exit 1
+fi
+if [[ "$(realpath "$input")" == "$(pwd)/$asset_dir/$base_name.mp4" ]]; then
+	echo "Error: input and output MP4 must differ." >&2
+	exit 1
+fi
 mkdir -p "$asset_dir"
 
 mp4="$asset_dir/$base_name.mp4"
@@ -90,11 +98,25 @@ ffmpeg -y -i "$mp4" \
 	"$avif"
 
 echo "Encoding last-resort animated WebP fallback: $webp"
-ffmpeg -y -i "$mp4" \
-	-an -dn -sn \
-	-vf "$video_filter" \
-	-loop 0 -c:v libwebp -quality 82 -compression_level 6 -preset photo \
-	"$webp"
+if ffmpeg -hide_banner -encoders 2>/dev/null | grep -q libwebp; then
+	ffmpeg -y -i "$mp4" -an -dn -sn -vf "$video_filter" -loop 0 -c:v libwebp -quality 82 -compression_level 6 -preset photo "$webp"
+else
+	# Homebrew FFmpeg can omit libwebp. The official WebP tool preserves timing.
+	command -v img2webp >/dev/null || { echo "Error: install img2webp or FFmpeg with libwebp." >&2; exit 1; }
+	frame_dir=$(mktemp -d)
+	trap 'rm -rf "$frame_dir"' EXIT
+	ffmpeg -y -i "$mp4" -an -dn -sn -vf "$video_filter" "$frame_dir/frame-%04d.png"
+	frame_args=(-loop 0 -lossy -q 82 -m 4)
+	frame_index=0
+	for frame in "$frame_dir"/frame-*.png; do
+		delay=$(( (1000 * (frame_index + 1) + fps / 2) / fps - (1000 * frame_index + fps / 2) / fps ))
+		frame_args+=(-d "$delay" "$frame")
+		frame_index=$((frame_index + 1))
+	done
+	img2webp "${frame_args[@]}" -o "$webp"
+	rm -rf "$frame_dir"
+	trap - EXIT
+fi
 
 echo "Validating MP4 streams..."
 video_codec=$(ffprobe -hide_banner -v error -select_streams v:0 -show_entries stream=codec_name -of csv=p=0 "$mp4")

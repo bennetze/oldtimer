@@ -1,7 +1,8 @@
 import { createHash, randomUUID } from 'node:crypto';
-import { mkdir, readFile, writeFile, readdir, rename, rm, realpath } from 'node:fs/promises';
+import { mkdir, readFile, writeFile, readdir, rename, rm, realpath, link } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import sharp from 'sharp';
+import { galleryDeliveryRoute } from '../../src/config/galleryDelivery.js';
 import { discoverVehicleCategory } from './vehicle-files.mjs';
 import { limitVehicleGalleryBlocks, GITHUB_PAGES_GALLERY_IMAGE_LIMIT } from '../../src/config/vehicleGalleryPolicy.js';
 import { assertSafePath } from './vehicle-import.mjs';
@@ -103,6 +104,25 @@ export async function generateVehicleGallery(root, target = 'production', output
 			expected.add(output);
 			const existing = await safeRead(output);
 			if (!existing || hash(existing) !== image.hash) await safeWrite(output, await safeRead(join(cacheRoot, 'images', image.route)));
+			if (target === 'production') {
+				const immutable = join(root, outputTarget, galleryDeliveryRoute(image, target));
+				expected.add(immutable);
+				const existingImmutable = await safeRead(immutable);
+				if (!existingImmutable || hash(existingImmutable) !== image.hash) {
+					await assertSafePath(root, immutable);
+					await mkdir(dirname(immutable), { recursive: true });
+					// Publish atomically; use a copy on filesystems without hard-link support.
+					const temporary = `${immutable}.${randomUUID()}.tmp`;
+					try {
+						try { await link(output, temporary); }
+						catch (error) {
+							if (!['EXDEV', 'EPERM', 'EOPNOTSUPP', 'ENOTSUP'].includes(error.code)) throw error;
+							await writeFile(temporary, await safeRead(output));
+						}
+						await rename(temporary, immutable);
+					} finally { await rm(temporary, { force: true }); }
+				}
+			}
 			bytes += image.bytes;
 		}
 	}
@@ -124,5 +144,5 @@ export async function generateVehicleGallery(root, target = 'production', output
 	const manifest = { version: 3, target, images: Object.fromEntries(Object.entries(images).sort(([a], [b]) => a.localeCompare(b))) };
 	const serialized = Buffer.from(JSON.stringify(manifest));
 	if (!previousBytes?.equals(serialized)) await safeWrite(manifestPath, serialized);
-	return { target, outputTarget, galleryImages: tasks.length, derivatives: expected.size, generated, reused, outputMegabytes: Number((bytes / 1024 ** 2).toFixed(1)) };
+	return { target, outputTarget, galleryImages: tasks.length, derivatives: Object.values(images).reduce((count, image) => count + 1 + image.variants.length, 0), deliveryFiles: expected.size, generated, reused, outputMegabytes: Number((bytes / 1024 ** 2).toFixed(1)) };
 }

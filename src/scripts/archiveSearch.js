@@ -1,8 +1,10 @@
 import { watchMedia } from './accessibility.js';
 export const normalizeSearchValue = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('de').trim();
 
-export function createCardFilter(cards, reducedMotion) {
-	const entries = cards.map(card => ({ card, title: normalizeSearchValue(card.dataset.searchValue ?? ''), visible: !card.hidden, animation: undefined }));
+export function createCardFilter(cards, reducedMotion, materialize = () => []) {
+	const entryFor = card => ({ card, title: normalizeSearchValue(card.dataset.searchValue ?? ''), visible: !card.hidden, animation: undefined });
+	const entries = cards.map(entryFor);
+	let materialized = false;
 	const setVisible = (entry, visible) => {
 		if (entry.visible === visible) return;
 		entry.visible = visible;
@@ -37,6 +39,10 @@ export function createCardFilter(cards, reducedMotion) {
 	});
 	return query => {
 		const parts = normalizeSearchValue(query).split(/\s+/).filter(Boolean);
+		if (parts.length && !materialized) {
+			entries.push(...materialize().map(entryFor));
+			materialized = true;
+		}
 		let count = 0;
 		for (const entry of entries) {
 			const matches = parts.length ? parts.every(part => entry.title.includes(part)) : entry.card.dataset.defaultVisible === 'true';

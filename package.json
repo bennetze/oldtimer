@@ -25,7 +25,8 @@
     "security:check": "npm audit --include=dev --include=optional --include=peer && npm audit signatures",
     "test:site": "node scripts/test-site.mjs && npm run test:vehicle-discovery",
     "audit:accessibility": "node scripts/audit-accessibility.mjs",
-    "preview:accessibility": "node scripts/preview-accessibility.mjs"
+    "preview:accessibility": "node scripts/preview-accessibility.mjs",
+    "audit:performance": "node scripts/audit-performance.mjs"
   },
   "dependencies": {
     "astro": "^7.3.5"

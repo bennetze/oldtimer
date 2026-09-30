@@ -23,6 +23,7 @@ const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 	class="vehicle-card"
 	style={`--card-index: ${index}`}
 	data-vehicle-card
+	data-vehicle-order={vehicle.data.order}
 	data-authored
 	data-search-value={content.title}
 	data-default-visible={defaultVisible ? 'true' : 'false'}

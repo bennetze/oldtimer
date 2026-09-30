@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile, readFile, utimes, rm, stat } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { galleryDeliveryRoute } from '../src/config/galleryDelivery.js';
 import sharp from 'sharp';
 import { generateVehicleGallery } from '../scripts/lib/vehicle-gallery.mjs';
 
@@ -29,6 +30,10 @@ test('gallery fingerprints bytes, repairs corruption, deduplicates widths and pr
 			const metadata = await sharp(join(root, 'public', item.route)).metadata();
 			assert.equal(metadata.width, item.width); assert.equal(metadata.height, item.height);
 		}
+		const delivery = galleryDeliveryRoute(image, 'production');
+		assert.match(delivery, /_immutable\/[a-f0-9]{64}\//);
+		assert.deepEqual(await readFile(join(root, 'public', delivery)), await readFile(join(root, 'public', image.route)));
+		assert.equal(galleryDeliveryRoute(image, 'github-pages'), image.route);
 		const output = join(root, 'public', image.route);
 		const timestamp = (await stat(output)).mtimeMs;
 		result = await generateVehicleGallery(root);
@@ -47,6 +52,8 @@ test('gallery fingerprints bytes, repairs corruption, deduplicates widths and pr
 		await writeFile(source, await make('blue'));
 		await utimes(source, 1, 1);
 		assert.equal((await generateVehicleGallery(root)).generated, 1);
+		const changed = Object.values(JSON.parse(await readFile(manifestPath)).images)[0];
+		assert.notEqual(galleryDeliveryRoute(changed, 'production'), delivery);
 		await writeFile(join(root, 'public/vehicle-gallery/stale.webp'), 'stale');
 		result = await generateVehicleGallery(root, 'github-pages');
 		assert.equal(result.derivatives, 3);

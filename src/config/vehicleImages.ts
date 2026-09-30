@@ -1,8 +1,9 @@
 import { readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { galleryDeliveryRoute } from './galleryDelivery.js';
 import { vehicleImageRoute, type VehicleEntry } from './vehicles';
 
-interface Derivative { route: string; width: number; height: number; }
+interface Derivative { route: string; width: number; height: number; hash: string; }
 interface Manifest { images: Record<string, Derivative & { variants: Derivative[] }>; }
 const manifests = new Map<string, { stamp: string; manifest: Manifest }>();
 
@@ -23,7 +24,7 @@ export function vehicleImage(vehicle: VehicleEntry, source: string, kind: 'card'
 	const candidates = [image, ...image.variants].filter(candidate => candidate === image || (kind === 'card' ? [480, 960].includes(candidate.width) : candidate.width === 800));
 	const responsive = kind === 'detail' && target === 'github-pages' ? [] : candidates.sort((a, b) => a.width - b.width);
 	return {
-		src: sitePath(route), width: image.width, height: image.height,
-		srcset: responsive.length > 1 ? responsive.map(candidate => `${sitePath(candidate.route)} ${candidate.width}w`).join(', ') : undefined,
+		src: sitePath(galleryDeliveryRoute(image, target)), width: image.width, height: image.height,
+		srcset: responsive.length > 1 ? responsive.map(candidate => `${sitePath(galleryDeliveryRoute(candidate, target))} ${candidate.width}w`).join(', ') : undefined,
 	};
 }

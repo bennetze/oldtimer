@@ -89,6 +89,9 @@ const archiveCounts = new Map([
 ]);
 for (const [route, expectedCards] of archiveCounts) {
 	const html = await readRoute(route);
+	const archive = load(html);
+	assert.equal(archive('.vehicle-grid > [data-vehicle-card]').length, expectedCards.visible, `${route}: active card count`);
+	assert.equal(load(archive('template[data-archive-deferred]').html() || '', {}, false)('[data-vehicle-card]').length, expectedCards.total - expectedCards.visible, `${route}: deferred card count`);
 	assert.equal(occurrences(html, /<article class="vehicle-card"/g), expectedCards.total, `${route}: searchable card inventory.`);
 	assert.equal(
 		occurrences(html, /<article class="vehicle-card"[^>]+data-default-visible="true"/g),

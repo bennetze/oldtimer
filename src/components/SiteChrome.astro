@@ -441,14 +441,23 @@ const sitePath = (path) => {
 		const spacing = Number.parseFloat(style.letterSpacing);
 		root.classList.toggle('accessible-text-layout', fontSize > 20 || spacing >= fontSize * 0.1);
 		const header = document.querySelector('[data-floating-header]');
-		if (header instanceof HTMLElement) root.style.setProperty('--accessible-header-height', `${header.getBoundingClientRect().height}px`);
+		if (header instanceof HTMLElement) {
+			const height = `${header.getBoundingClientRect().height}px`;
+			if (root.style.getPropertyValue('--accessible-header-height') !== height) root.style.setProperty('--accessible-header-height', height);
+		}
 	};
 	updateAccessibleTextLayout();
-	window.addEventListener('resize', updateAccessibleTextLayout);
+	let textLayoutFrame;
+	const requestTextLayout = () => {
+		if (textLayoutFrame !== undefined) return;
+		if (typeof window.requestAnimationFrame !== 'function') { updateAccessibleTextLayout(); return; }
+		textLayoutFrame = window.requestAnimationFrame(() => { textLayoutFrame = undefined; updateAccessibleTextLayout(); });
+	};
+	window.addEventListener('resize', requestTextLayout);
 	window.addEventListener('load', updateAccessibleTextLayout);
 	if (document.fonts?.ready) document.fonts.ready.then(updateAccessibleTextLayout);
 	if (typeof window.ResizeObserver === 'function') {
-		const observer = new ResizeObserver(updateAccessibleTextLayout);
+		const observer = new ResizeObserver(requestTextLayout);
 		observer.observe(document.documentElement);
 		const header = document.querySelector('[data-floating-header]');
 		if (header) observer.observe(header);

@@ -1,0 +1,16 @@
+---
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Props {
+	poster: ImageMetadata;
+	avif: string;
+	webp?: string;
+	first?: boolean;
+}
+const { poster, avif, webp, first = false } = Astro.props;
+const candidates = await Promise.all([640, 960, 1280, 1920].filter(width => width <= poster.width).map(width => getImage({src: poster, width, format: 'webp', quality: 80})));
+---
+<picture class="media-panel__image media-panel__image--motion-fallback" aria-hidden="true" data-motion-fallback>
+	<source type="image/webp" srcset={candidates.map(image => `${image.src} ${image.attributes.width}w`).join(', ')} sizes="100vw" data-motion-poster-source />
+	<img alt="" width={poster.width} height={poster.height} decoding="async" fetchpriority={first ? 'high' : 'auto'} loading={first ? 'eager' : 'lazy'} src={poster.src} data-motion-poster={poster.src} data-motion-avif={avif} data-motion-webp={webp} data-motion-image />
+</picture>

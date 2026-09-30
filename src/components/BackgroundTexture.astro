@@ -1,13 +1,15 @@
 ---
+import { getImage } from 'astro:assets';
 import texture from '../assets/oldtimer/L1007006.webp';
+const optimized = await getImage({ src: texture, width: 1280, format: 'webp', quality: 80 });
 ---
 
 <div class="background-texture" aria-hidden="true">
-	<!-- One unmodified photograph, cropped past the deep fold at its left edge.
+	<!-- One photograph, cropped past the deep fold at its left edge.
 	     A viewport-sized surface avoids both tile seams and page-length stretching. -->
 	<div class="background-texture__viewport">
 		<svg class="background-texture__surface" viewBox="400 100 1395 1450" preserveAspectRatio="xMidYMid slice" focusable="false">
-			<image href={texture.src} width={texture.width} height={texture.height} />
+			<image href={optimized.src} width={texture.width} height={texture.height} />
 		</svg>
 	</div>
 </div>

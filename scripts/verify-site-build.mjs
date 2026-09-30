@@ -114,8 +114,19 @@ for (const file of files) {
 	const metadata = imageCache.get(imagePath);
 	assert.equal(Number($('meta[property="og:image:width"]').attr('content')), metadata.width, `${file}: image width`);
 	assert.equal(Number($('meta[property="og:image:height"]').attr('content')), metadata.height, `${file}: image height`);
+	for (const node of $('[data-motion-src], [data-motion-avif], [data-motion-webp]').toArray()) {
+		for (const name of ['data-motion-src', 'data-motion-avif', 'data-motion-webp']) {
+			const value = $(node).attr(name);
+			if (!value) continue;
+			assert.ok(value.startsWith(base), `${file}: deferred media base`);
+			await access(join(root, new URL(value, origin).pathname.slice(base.length)));
+		}
+	}
 	$('[data-motion-panel]').each((_, panel) => {
 		assert.equal($(panel).find('[data-motion-toggle]').length, 1);
+		assert.equal($(panel).find('video source[src]').length, 0, 'Media sources wait for eligible playback.');
+		assert.equal($(panel).find('video').attr('preload'), 'none');
+		assert.equal($(panel).find('video[poster]').length, 0, 'The responsive still supplies the poster after selection.');
 		assert.equal($(panel).find('video[autoplay]').length, 0, 'Autoplay must wait for the motion preference check.');
 		assert.equal($(panel).find('source[data-motion-generated-source]').length, 0);
 	});

@@ -14,6 +14,9 @@ function initMotionPanel(panel) {
 	let autoplayBlocked = false;
 	let fallbackActive = false;
 	let timer;
+	let sourcesSelected = false;
+	let stalledAtTime;
+	let bufferedEnd = 0;
 	let attempt = 0;
 	let playPending = false;
 	const canAnimate = () => !userPaused && inViewport && !document.hidden;
@@ -23,7 +26,9 @@ function initMotionPanel(panel) {
 			? (userPaused ? 'Play animation' : 'Pause animation')
 			: (userPaused ? 'Animation abspielen' : 'Animation pausieren'));
 	};
+	const posterSource = picture.querySelector('[data-motion-poster-source]');
 	const showPoster = () => {
+		if (posterSource) posterSource.media = '';
 		picture.querySelectorAll('[data-motion-generated-source]').forEach((source) => source.remove());
 		image.src = image.dataset.motionPoster;
 		delete image.dataset.motionReady;
@@ -31,18 +36,22 @@ function initMotionPanel(panel) {
 	const showFallback = () => {
 		if (!canAnimate()) return;
 		window.clearTimeout(timer);
+		timer = undefined;
 		fallbackActive = true;
 		panel.classList.remove('is-video-ready');
 		panel.classList.add('is-motion-fallback');
 		if (image.dataset.motionReady !== 'true') {
-			if (image.dataset.motionAvif) {
+			if (posterSource) posterSource.media = 'not all';
+			const avif = image.dataset.motionAvif;
+			const webp = image.dataset.motionWebp;
+			if (avif) {
 				const source = document.createElement('source');
 				source.type = 'image/avif';
-				source.srcset = image.dataset.motionAvif;
+				source.srcset = avif;
 				source.dataset.motionGeneratedSource = 'true';
 				picture.prepend(source);
 			}
-			if (image.dataset.motionWebp) image.src = image.dataset.motionWebp;
+			if (webp) image.src = webp;
 			image.dataset.motionReady = 'true';
 		}
 	};
@@ -50,6 +59,7 @@ function initMotionPanel(panel) {
 		attempt++;
 		playPending = false;
 		window.clearTimeout(timer);
+		timer = undefined;
 		video.autoplay = false;
 		video.pause();
 		if (fallbackActive) showPoster();
@@ -58,6 +68,7 @@ function initMotionPanel(panel) {
 	const ready = () => {
 		if (!canAnimate()) { suspend(); return; }
 		window.clearTimeout(timer);
+		timer = undefined;
 		autoplayBlocked = false;
 		fallbackActive = false;
 		showPoster();
@@ -70,6 +81,15 @@ function initMotionPanel(panel) {
 		updateToggle();
 		if (autoplayBlocked && !userGesture) { showFallback(); return; }
 		if (playPending) return;
+		if (!sourcesSelected) {
+			video.querySelectorAll('source[data-motion-src]').forEach((source) => {
+				source.src = source.dataset.motionSrc;
+			});
+			sourcesSelected = true;
+			video.preload = 'auto';
+			video.load();
+		}
+		video.poster = image.currentSrc || image.src;
 		video.muted = true;
 		video.defaultMuted = true;
 		video.autoplay = true;
@@ -90,17 +110,29 @@ function initMotionPanel(panel) {
 			showFallback();
 		});
 	};
+	const currentBufferedEnd = () => video.buffered?.length ? video.buffered.end(video.buffered.length - 1) : 0;
 	const scheduleFallback = () => {
-		if (!canAnimate()) return;
-		window.clearTimeout(timer);
+		if (!canAnimate() || timer !== undefined) return;
+		stalledAtTime = video.currentTime;
+		bufferedEnd = currentBufferedEnd();
 		timer = window.setTimeout(() => {
-			if (canAnimate() && (video.paused || video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA)) showFallback();
-		}, 900);
+			timer = undefined;
+			if (canAnimate() && video.currentTime === stalledAtTime && currentBufferedEnd() <= bufferedEnd &&
+				(video.paused || video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA)) showFallback();
+		}, 8000);
 	};
+	const clearStall = () => { window.clearTimeout(timer); timer = undefined; };
+	video.addEventListener('timeupdate', () => {
+		if (timer !== undefined && video.currentTime !== stalledAtTime) { clearStall(); if (video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA) scheduleFallback(); }
+	});
+	video.addEventListener('progress', () => {
+		if (currentBufferedEnd() > bufferedEnd) { clearStall(); if (video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA) scheduleFallback(); }
+	});
 	video.addEventListener('playing', ready);
 	video.addEventListener('waiting', scheduleFallback);
 	video.addEventListener('stalled', scheduleFallback);
 	video.addEventListener('error', () => {
+		if (!sourcesSelected) return;
 		autoplayBlocked = true;
 		showFallback();
 	});

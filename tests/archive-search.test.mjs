@@ -40,3 +40,13 @@ test('missing animation APIs and native inert fall back to immediate, nonfocusab
 	assert.equal(filter('Mercedes').count, 0); assert.equal(item.hidden, true);
 	filter(''); assert.equal(item.hidden, false);
 });
+
+
+test('deferred cards materialize once for a restored query and clear back to the current page', () => {
+	const initial = card('BMW'); const deferred = card('Mercedes', false); let loads = 0;
+	const filter = createCardFilter([initial], {matches:true,addEventListener(){}}, () => { loads++; return [deferred]; });
+	assert.equal(filter('').count, 1); assert.equal(loads, 0);
+	assert.equal(filter('mercedes').count, 1); assert.equal(loads, 1); assert.equal(deferred.hidden, false);
+	assert.equal(filter('Mercedes').count, 1); assert.equal(loads, 1);
+	filter(''); assert.equal(initial.hidden, false); assert.equal(deferred.hidden, true);
+});

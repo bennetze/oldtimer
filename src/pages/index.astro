@@ -1,4 +1,5 @@
 ---
+import MotionPoster from "../components/MotionPoster.astro";
 import Layout from "../layouts/Layout.astro";
 import SiteChrome from "../components/SiteChrome.astro";
 import SectionNavigation from "../components/SectionNavigation.astro";
@@ -74,34 +75,18 @@ const sectionNavigationItems = [
           loop
           playsinline
           webkit-playsinline
-          preload="auto"
-          poster={heroSiteRevealPoster.src}
+          preload="none"
           disablepictureinpicture
           data-motion-video
           aria-hidden="true"
         >
-          <source src={heroSiteMp4} type="video/mp4" />
+          <source data-motion-src={heroSiteMp4} type="video/mp4" />
           <source
-            src={heroSiteWebm}
+            data-motion-src={heroSiteWebm}
             type='video/webm; codecs="av01.0.08M.08"'
           />
         </video>
-        <picture
-          class="media-panel__image media-panel__image--motion-fallback"
-          aria-hidden="true"
-          data-motion-fallback
-        >
-          <img
-            alt=""
-            decoding="async"
-            fetchpriority="high"
-            src={heroSiteRevealPoster.src}
-            data-motion-poster={heroSiteRevealPoster.src}
-            data-motion-avif={heroSiteMotionAvif.src}
-            data-motion-webp={includeWebpMotionFallback ? heroSiteMotionWebp.src : undefined}
-            data-motion-image
-          />
-        </picture>
+        <MotionPoster poster={heroSiteRevealPoster} avif={heroSiteMotionAvif.src} webp={includeWebpMotionFallback ? heroSiteMotionWebp.src : undefined} first />
         <div class="media-panel__shade"></div>
         <button
           class="hero-motion-toggle"
@@ -146,33 +131,17 @@ const sectionNavigationItems = [
           playsinline
           webkit-playsinline
           preload="none"
-          poster={handwerkPoster.src}
           disablepictureinpicture
           data-motion-video
           aria-hidden="true"
         >
-          <source src={handwerkMp4} type="video/mp4" />
+          <source data-motion-src={handwerkMp4} type="video/mp4" />
           <source
-            src={handwerkWebm}
+            data-motion-src={handwerkWebm}
             type='video/webm; codecs="av01.0.08M.08"'
           />
         </video>
-        <picture
-          class="media-panel__image media-panel__image--motion-fallback"
-          aria-hidden="true"
-          data-motion-fallback
-        >
-          <img
-            alt=""
-            decoding="async"
-            fetchpriority="auto" loading="lazy"
-            src={handwerkPoster.src}
-            data-motion-poster={handwerkPoster.src}
-            data-motion-avif={handwerkMotionAvif.src}
-            data-motion-webp={includeWebpMotionFallback ? handwerkMotionWebp.src : undefined}
-            data-motion-image
-          />
-        </picture>
+        <MotionPoster poster={handwerkPoster} avif={handwerkMotionAvif.src} webp={includeWebpMotionFallback ? handwerkMotionWebp.src : undefined} />
         <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>
         </button>
@@ -218,31 +187,15 @@ const sectionNavigationItems = [
           playsinline
           webkit-playsinline
           preload="none"
-          poster={ueberUnsPoster.src}
           disablepictureinpicture
           data-motion-video
           aria-hidden="true"
         >
-          <source src={ueberUnsMp4} type="video/mp4" />
-          <source src={ueberUnsWebm} type="video/webm" />
+          <source data-motion-src={ueberUnsMp4} type="video/mp4" />
+          <source data-motion-src={ueberUnsWebm} type="video/webm" />
         </video>
 
-        <picture
-          class="media-panel__image media-panel__image--motion-fallback"
-          aria-hidden="true"
-          data-motion-fallback
-        >
-          <img
-            alt=""
-            decoding="async"
-            loading="lazy"
-            src={ueberUnsPoster.src}
-            data-motion-poster={ueberUnsPoster.src}
-            data-motion-avif={ueberUnsMotionAvif.src}
-            data-motion-webp={includeWebpMotionFallback ? ueberUnsMotionWebp.src : undefined}
-            data-motion-image
-          />
-        </picture>
+        <MotionPoster poster={ueberUnsPoster} avif={ueberUnsMotionAvif.src} webp={includeWebpMotionFallback ? ueberUnsMotionWebp.src : undefined} />
 
         <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>
@@ -289,31 +242,15 @@ const sectionNavigationItems = [
           playsinline
           webkit-playsinline
           preload="none"
-          poster={projektePoster.src}
           disablepictureinpicture
           data-motion-video
           aria-hidden="true"
         >
-          <source src={projekteMp4} type="video/mp4" />
-          <source src={projekteWebm} type="video/webm" />
+          <source data-motion-src={projekteMp4} type="video/mp4" />
+          <source data-motion-src={projekteWebm} type="video/webm" />
         </video>
 
-        <picture
-          class="media-panel__image media-panel__image--motion-fallback"
-          aria-hidden="true"
-          data-motion-fallback
-        >
-          <img
-            alt=""
-            decoding="async"
-            loading="lazy"
-            src={projektePoster.src}
-            data-motion-poster={projektePoster.src}
-            data-motion-avif={projekteMotionAvif.src}
-            data-motion-webp={includeWebpMotionFallback ? projekteMotionWebp.src : undefined}
-            data-motion-image
-          />
-        </picture>
+        <MotionPoster poster={projektePoster} avif={projekteMotionAvif.src} webp={includeWebpMotionFallback ? projekteMotionWebp.src : undefined} />
 
         <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>

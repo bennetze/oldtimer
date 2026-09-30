@@ -53,16 +53,16 @@ backups under `.cache/image-originals/` must not be removed as ordinary cache.
 Current gallery derivatives use `.cache/vehicle-gallery-v3/` and are reproducible.
 The internal manifests record source and derivative hashes, encoding settings and
 image dimensions. Builds verify cached and published bytes before reuse and replace
-changed files atomically. Original 1600px-or-smaller URLs remain stable. Cards also
+changed files atomically. Original 1600px-or-smaller URLs remain stable. Production HTML uses SHA-256 delivery aliases for immutable caching; GitHub Pages keeps stable delivery URLs to preserve its artifact budget. Cards also
 have 480px/960px variants; production details have an 800px variant where useful.
 GitHub Pages details retain their existing sizes and gallery limit.
 After editing source images during a running dev session, run `npm run vehicles:gallery`
 to refresh derivatives; the development metadata cache notices the changed manifest.
 Vehicle collections are cached only in production builds.
 
-WOFF2 fonts are lossless container conversions of retained TTF masters, with full
-glyph coverage and variable axes. FontTools 4.66.0 with WOFF dependencies generated
-them using `TTFont`, `flavor = 'woff2'`, and `save`. No runtime font conversion or
+WOFF2 fonts use Unicode-range subsets of retained TTF masters, with complete original
+glyph coverage and variable axes across the subsets. FontTools 4.66.0 with WOFF dependencies generated
+them using `scripts/subset-fonts.py` (including coverage and metrics checks). No runtime font conversion or
 external font service is involved. Preserve the published licenses.
 
 ## Hosting and release
@@ -93,3 +93,8 @@ executables behind the static site. Repository cleanup does not secure that serv
 Complete factual, media-rights and legal approval before disabling preview flags.
 
 See [WEBSITE-REPAIR-AUDIT.md](WEBSITE-REPAIR-AUDIT.md) for the repair register and verification limits.
+
+## Performance
+
+See [PERFORMANCE-AUDIT.md](PERFORMANCE-AUDIT.md) for the local cold/warm browser audit,
+responsive media generation, cache behavior and acceptance checks.
