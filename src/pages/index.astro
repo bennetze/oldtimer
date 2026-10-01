@@ -6,21 +6,25 @@ import SectionNavigation from "../components/SectionNavigation.astro";
 import heroSiteMotionAvif from "../assets/oldtimer/hero-site-motion.avif";
 import heroSiteMotionWebp from "../assets/oldtimer/hero-site-motion.webp";
 import heroSiteMp4 from "../assets/oldtimer/hero-site.mp4";
+import heroSiteMobileMp4 from "../assets/oldtimer/hero-site-mobile.mp4";
 import heroSiteRevealPoster from "../assets/oldtimer/hero-site-reveal-poster.jpg";
 import heroSiteWebm from "../assets/oldtimer/hero-site.webm";
 import handwerkMotionAvif from "../assets/oldtimer/handwerk-motion.avif";
 import handwerkMotionWebp from "../assets/oldtimer/handwerk-motion.webp";
 import handwerkMp4 from "../assets/oldtimer/handwerk.mp4";
+import handwerkMobileMp4 from "../assets/oldtimer/handwerk-mobile.mp4";
 import handwerkPoster from "../assets/oldtimer/handwerk-poster.jpg";
 import handwerkWebm from "../assets/oldtimer/handwerk.webm";
 import ueberUnsMotionAvif from "../assets/oldtimer/ueberuns-motion.avif";
 import ueberUnsMotionWebp from "../assets/oldtimer/ueberuns-motion.webp";
 import ueberUnsMp4 from "../assets/oldtimer/ueberuns.mp4";
+import ueberUnsMobileMp4 from "../assets/oldtimer/ueberuns-mobile.mp4";
 import ueberUnsPoster from "../assets/oldtimer/ueberuns-poster.jpg";
 import ueberUnsWebm from "../assets/oldtimer/ueberuns.webm";
 import projekteMotionAvif from "../assets/oldtimer/projekte-motion.avif";
 import projekteMotionWebp from "../assets/oldtimer/projekte-motion.webp";
 import projekteMp4 from "../assets/oldtimer/projekte.mp4";
+import projekteMobileMp4 from "../assets/oldtimer/projekte-mobile.mp4";
 import projektePoster from "../assets/oldtimer/projekte-poster.jpg";
 import projekteWebm from "../assets/oldtimer/projekte.webm";
 
@@ -80,7 +84,7 @@ const sectionNavigationItems = [
           data-motion-video
           aria-hidden="true"
         >
-          <source data-motion-src={heroSiteMp4} type="video/mp4" />
+          <source data-motion-src={heroSiteMp4} data-motion-mobile-src={heroSiteMobileMp4} type="video/mp4" />
           <source
             data-motion-src={heroSiteWebm}
             type='video/webm; codecs="av01.0.08M.08"'
@@ -135,7 +139,7 @@ const sectionNavigationItems = [
           data-motion-video
           aria-hidden="true"
         >
-          <source data-motion-src={handwerkMp4} type="video/mp4" />
+          <source data-motion-src={handwerkMp4} data-motion-mobile-src={handwerkMobileMp4} type="video/mp4" />
           <source
             data-motion-src={handwerkWebm}
             type='video/webm; codecs="av01.0.08M.08"'
@@ -191,7 +195,7 @@ const sectionNavigationItems = [
           data-motion-video
           aria-hidden="true"
         >
-          <source data-motion-src={ueberUnsMp4} type="video/mp4" />
+          <source data-motion-src={ueberUnsMp4} data-motion-mobile-src={ueberUnsMobileMp4} type="video/mp4" />
           <source data-motion-src={ueberUnsWebm} type="video/webm" />
         </video>
 
@@ -203,9 +207,9 @@ const sectionNavigationItems = [
         <div class="media-panel__shade media-panel__shade--craft"></div>
         <a
           class="scroll-cue scroll-cue--up section-up-cue"
-          href="#start"
-          data-scroll-target="#start"
-          aria-label="Zum Start scrollen"
+          href="#handwerk"
+          data-scroll-target="#handwerk"
+          aria-label="Zum Handwerk scrollen"
         >
           <span aria-hidden="true"></span>
         </a>
@@ -246,7 +250,7 @@ const sectionNavigationItems = [
           data-motion-video
           aria-hidden="true"
         >
-          <source data-motion-src={projekteMp4} type="video/mp4" />
+          <source data-motion-src={projekteMp4} data-motion-mobile-src={projekteMobileMp4} type="video/mp4" />
           <source data-motion-src={projekteWebm} type="video/webm" />
         </video>
 
@@ -258,9 +262,9 @@ const sectionNavigationItems = [
         <div class="media-panel__shade media-panel__shade--craft"></div>
         <a
           class="scroll-cue scroll-cue--up section-up-cue"
-          href="#start"
-          data-scroll-target="#start"
-          aria-label="Zum Start scrollen"
+          href="#ueber-uns"
+          data-scroll-target="#ueber-uns"
+          aria-label="Zu Über uns scrollen"
         >
           <span aria-hidden="true"></span>
         </a>

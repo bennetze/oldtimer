@@ -114,8 +114,8 @@ for (const file of files) {
 	const metadata = imageCache.get(imagePath);
 	assert.equal(Number($('meta[property="og:image:width"]').attr('content')), metadata.width, `${file}: image width`);
 	assert.equal(Number($('meta[property="og:image:height"]').attr('content')), metadata.height, `${file}: image height`);
-	for (const node of $('[data-motion-src], [data-motion-avif], [data-motion-webp]').toArray()) {
-		for (const name of ['data-motion-src', 'data-motion-avif', 'data-motion-webp']) {
+	for (const node of $('[data-motion-src], [data-motion-mobile-src], [data-motion-avif], [data-motion-webp]').toArray()) {
+		for (const name of ['data-motion-src', 'data-motion-mobile-src', 'data-motion-avif', 'data-motion-webp']) {
 			const value = $(node).attr(name);
 			if (!value) continue;
 			assert.ok(value.startsWith(base), `${file}: deferred media base`);

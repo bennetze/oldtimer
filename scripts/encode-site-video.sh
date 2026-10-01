@@ -13,6 +13,7 @@ Examples:
 
 Outputs:
   src/assets/oldtimer/<output-base-name>.mp4
+  src/assets/oldtimer/<output-base-name>-mobile.mp4
   src/assets/oldtimer/<output-base-name>.webm
   src/assets/oldtimer/<output-base-name>-motion.avif
   src/assets/oldtimer/<output-base-name>-motion.webp
@@ -63,13 +64,14 @@ if [[ ! "$width" =~ ^[0-9]+$ || ! "$fps" =~ ^[0-9]+$ || "$width" -lt 2 || "$fps"
 	echo "Error: width and fps must be positive integers (fps <= 1000)." >&2
 	exit 1
 fi
-if [[ "$(realpath "$input")" == "$(pwd)/$asset_dir/$base_name.mp4" ]]; then
+if [[ "$(realpath "$input")" == "$(pwd)/$asset_dir/$base_name.mp4" || "$(realpath "$input")" == "$(pwd)/$asset_dir/$base_name-mobile.mp4" ]]; then
 	echo "Error: input and output MP4 must differ." >&2
 	exit 1
 fi
 mkdir -p "$asset_dir"
 
 mp4="$asset_dir/$base_name.mp4"
+mobile_mp4="$asset_dir/$base_name-mobile.mp4"
 webm="$asset_dir/$base_name.webm"
 avif="$asset_dir/$base_name-motion.avif"
 webp="$asset_dir/$base_name-motion.webp"
@@ -79,9 +81,17 @@ echo "Encoding Safari-safe MP4: $mp4"
 ffmpeg -y -i "$input" \
 	-map 0:v:0 -an -dn -sn \
 	-vf "$video_filter" \
-	-c:v libx264 -preset slow -crf 20 -profile:v high -level 4.0 \
+	-c:v libx264 -preset slow -crf 23 -maxrate 5000k -bufsize 10000k -g "$fps" -profile:v high -level 4.0 \
 	-movflags +faststart \
 	"$mp4"
+
+# Smaller H.264 avoids software AV1 decoding on mobile and constrained devices.
+echo "Encoding mobile MP4: $mobile_mp4"
+ffmpeg -y -i "$input" \
+	-map 0:v:0 -an -dn -sn \
+	-vf "fps=$fps,scale='min(960,iw)':-2:flags=lanczos,format=yuv420p" \
+	-c:v libx264 -preset slow -crf 23 -maxrate 1800k -bufsize 3600k -g "$fps" \
+	-profile:v high -level 4.0 -movflags +faststart "$mobile_mp4"
 
 echo "Encoding optional AV1 WebM: $webm"
 ffmpeg -y -i "$input" \
@@ -90,11 +100,13 @@ ffmpeg -y -i "$input" \
 	-c:v libsvtav1 -preset 8 -crf 32 -pix_fmt yuv420p \
 	"$webm"
 
+# Animated images may decode in software. Bound their dimensions as well.
+fallback_filter="fps=$fps,scale='min(1280,iw)':-2:flags=lanczos,format=yuv420p"
 echo "Encoding animated AVIF fallback: $avif"
 ffmpeg -y -i "$mp4" \
 	-an -dn -sn \
-	-vf "$video_filter" \
-	-c:v libsvtav1 -preset 7 -crf 21 -pix_fmt yuv420p -f avif \
+	-vf "$fallback_filter" \
+	-c:v libsvtav1 -preset 7 -crf 24 -pix_fmt yuv420p -f avif \
 	"$avif"
 
 echo "Encoding last-resort animated WebP fallback: $webp"
@@ -119,40 +131,44 @@ else
 fi
 
 echo "Validating MP4 streams..."
-video_codec=$(ffprobe -hide_banner -v error -select_streams v:0 -show_entries stream=codec_name -of csv=p=0 "$mp4")
-pixel_format=$(ffprobe -hide_banner -v error -select_streams v:0 -show_entries stream=pix_fmt -of csv=p=0 "$mp4")
-video_stream_count=$(ffprobe -hide_banner -v error -select_streams v -show_entries stream=index -of csv=p=0 "$mp4" | wc -l | tr -d ' ')
-audio_streams=$(ffprobe -hide_banner -v error -select_streams a -show_entries stream=index -of csv=p=0 "$mp4")
-data_streams=$(ffprobe -hide_banner -v error -select_streams d -show_entries stream=index -of csv=p=0 "$mp4")
+for validated_mp4 in "$mp4" "$mobile_mp4"; do
+	video_codec=$(ffprobe -hide_banner -v error -select_streams v:0 -show_entries stream=codec_name -of csv=p=0 "$validated_mp4")
+	pixel_format=$(ffprobe -hide_banner -v error -select_streams v:0 -show_entries stream=pix_fmt -of csv=p=0 "$validated_mp4")
+	video_stream_count=$(ffprobe -hide_banner -v error -select_streams v -show_entries stream=index -of csv=p=0 "$validated_mp4" | wc -l | tr -d ' ')
+	audio_streams=$(ffprobe -hide_banner -v error -select_streams a -show_entries stream=index -of csv=p=0 "$validated_mp4")
+	data_streams=$(ffprobe -hide_banner -v error -select_streams d -show_entries stream=index -of csv=p=0 "$validated_mp4")
 
-if [[ "$video_codec" != "h264" ]]; then
-	echo "Error: MP4 video codec is $video_codec, expected h264." >&2
-	exit 1
-fi
+	if [[ "$video_codec" != "h264" ]]; then
+		echo "Error: MP4 video codec is $video_codec, expected h264." >&2
+		exit 1
+	fi
 
-if [[ "$pixel_format" != "yuv420p" ]]; then
-	echo "Error: MP4 pixel format is $pixel_format, expected yuv420p." >&2
-	exit 1
-fi
+	if [[ "$pixel_format" != "yuv420p" ]]; then
+		echo "Error: MP4 pixel format is $pixel_format, expected yuv420p." >&2
+		exit 1
+	fi
 
-if [[ "$video_stream_count" != "1" ]]; then
-	echo "Error: MP4 has $video_stream_count video streams, expected exactly 1." >&2
-	exit 1
-fi
+	if [[ "$video_stream_count" != "1" ]]; then
+		echo "Error: MP4 has $video_stream_count video streams, expected exactly 1." >&2
+		exit 1
+	fi
 
-if [[ -n "$audio_streams" ]]; then
-	echo "Error: MP4 still has audio streams: $audio_streams" >&2
-	exit 1
-fi
+	if [[ -n "$audio_streams" ]]; then
+		echo "Error: MP4 still has audio streams: $audio_streams" >&2
+		exit 1
+	fi
 
-if [[ -n "$data_streams" ]]; then
-	echo "Error: MP4 still has data/timecode streams: $data_streams" >&2
-	exit 1
-fi
+	if [[ -n "$data_streams" ]]; then
+		echo "Error: MP4 still has data/timecode streams: $data_streams" >&2
+		exit 1
+	fi
+
+done
 
 echo "Done."
 echo "Generated:"
 echo "  $mp4"
+echo "  $mobile_mp4"
 echo "  $webm"
 echo "  $avif"
 echo "  $webp"

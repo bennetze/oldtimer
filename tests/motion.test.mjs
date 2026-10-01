@@ -10,7 +10,7 @@ class Element {
 	dataset = {};
 	attributes = new Map();
 	classes = new Set();
-	classList = { add: (...names) => names.forEach((name) => this.classes.add(name)), remove: (...names) => names.forEach((name) => this.classes.delete(name)), toggle: (name, state) => state ? this.classes.add(name) : this.classes.delete(name) };
+	classList = { contains: (name) => this.classes.has(name), add: (...names) => names.forEach((name) => this.classes.add(name)), remove: (...names) => names.forEach((name) => this.classes.delete(name)), toggle: (name, state) => state ? this.classes.add(name) : this.classes.delete(name) };
 	addEventListener(name, listener) { this.listeners.set(name, [...(this.listeners.get(name) ?? []), listener]); }
 	emit(name, event = {}) { for (const listener of this.listeners.get(name) ?? []) listener(event); }
 	setAttribute(name, value) { this.attributes.set(name, value); }
@@ -22,7 +22,7 @@ class Video extends Element {
 	requests = [];
 	loads = 0;
 	currentTime = 0;
-	sourceNodes = [{type:'video/mp4', dataset:{motionSrc:'desktop.mp4'}}, {type:'video/webm', dataset:{motionSrc:'desktop.webm'}}];
+	sourceNodes = [{type:'video/mp4', dataset:{motionSrc:'desktop.mp4', motionMobileSrc:'mobile.mp4'}}, {type:'video/webm', dataset:{motionSrc:'desktop.webm'}}];
 	querySelectorAll() { return this.sourceNodes; }
 	load() { this.loads++; }
 	pause() { this.paused = true; }
@@ -53,8 +53,8 @@ function setup(reduced = false, options = {}) {
 	class Observer { constructor(callback) { intersect = callback; } observe() {} }
 	if (!options.noObserver) window.IntersectionObserver = Observer;
 	window.innerHeight = 100; window.innerWidth = options.width || 1440; window.devicePixelRatio = options.pixelRatio || 1;
-	vm.runInNewContext(script.replace(/^import .*;\n/gm, ''), { watchMedia, Promise, document, window, HTMLElement: Element, HTMLVideoElement: Video, HTMLImageElement: Image, HTMLMediaElement: { HAVE_FUTURE_DATA: 3 }, IntersectionObserver: Observer });
-	return { window, video, image, sources, toggle, panel, preference, document, timers, posterSource, visible: (value) => intersect([{ isIntersecting: value, intersectionRatio: value ? 1 : 0 }]) };
+	vm.runInNewContext(script.replace(/^import .*;\n/gm, ''), { watchMedia, Promise, document, window, navigator: { connection: { saveData: options.saveData || false } }, HTMLElement: Element, HTMLVideoElement: Video, HTMLImageElement: Image, HTMLMediaElement: { HAVE_FUTURE_DATA: 3 }, IntersectionObserver: Observer });
+	return { window, video, image, sources, toggle, panel, preference, document, timers, posterSource, visible: (value, ratio = 1) => intersect([{ isIntersecting: value, intersectionRatio: value ? ratio : 0 }]) };
 }
 const settle = async () => { await Promise.resolve(); await Promise.resolve(); await Promise.resolve(); };
 
@@ -100,13 +100,13 @@ test('legacy listeners, promise-less play and missing observers retain manual pa
 });
 
 
-test('media sources stay unloaded until eligible playback and use the same desktop files at mobile widths', async () => {
+test('media sources stay unloaded until eligible playback and select a smaller mobile clip once without reloading on resize', async () => {
 	const s = setup(true, { width: 390, pixelRatio: 3 }); s.visible(true);
 	assert.equal(s.video.loads, 0); assert.equal(s.video.sourceNodes[0].src, undefined);
-	s.toggle.emit('click'); assert.equal(s.video.sourceNodes[0].src, 'desktop.mp4'); assert.equal(s.video.loads, 1);
+	s.toggle.emit('click'); assert.equal(s.video.sourceNodes[0].src, 'mobile.mp4'); assert.equal(s.video.loads, 1);
 	s.video.requests[0].resolve(); await settle();
 	s.window.innerWidth = 1440; s.visible(false); s.visible(true);
-	assert.equal(s.video.loads, 1); assert.equal(s.video.sourceNodes[0].src, 'desktop.mp4');
+	assert.equal(s.video.loads, 1); assert.equal(s.video.sourceNodes[0].src, 'mobile.mp4');
 });
 
 test('shared motion fallbacks suppress responsive still sources and restore them on pause', async () => {
@@ -124,4 +124,61 @@ test('buffer progress restarts the sustained-stall check; playback and pause can
 	s.video.emit('progress'); assert.equal(s.timers.size, 1);
 	s.video.emit('playing'); assert.equal(s.timers.size, 0);
 	s.video.emit('waiting'); s.toggle.emit('click'); assert.equal(s.timers.size, 0);
+});
+
+
+test('only a majority-visible section plays, and ordinary input does not restart playing video', async () => {
+	const s = setup(); s.visible(true, 0.49);
+	assert.equal(s.video.requests.length, 0);
+	s.visible(true, 0.6); s.video.requests[0].resolve(); await settle();
+	s.window.emit('pointerdown'); s.window.emit('keydown');
+	assert.equal(s.video.requests.length, 1);
+	assert.equal(s.video.autoplay, false);
+	s.visible(true, 0.4); assert.equal(s.video.paused, true);
+});
+
+test('a hung startup reaches fallback and cancels its late success', async () => {
+	const s = setup(); s.visible(true);
+	const callback = [...s.timers.values()][0]; callback();
+	assert.equal(s.video.paused, true); assert.equal(s.sources.length, 1);
+	s.video.requests[0].resolve(); await settle(); s.video.emit('playing');
+	assert.equal(s.video.paused, true); assert.ok(!s.panel.classes.has('is-video-ready'));
+	s.toggle.emit('click'); assert.equal(s.sources.length, 0);
+	s.toggle.emit('click'); assert.equal(s.video.requests.length, 2);
+	s.video.requests[1].resolve(); await settle();
+	assert.equal(s.sources.length, 0); assert.ok(s.panel.classes.has('is-video-ready'));
+});
+
+test('AbortError retains the startup watchdog instead of loading a second decoder', async () => {
+	const s = setup(); s.visible(true);
+	s.video.requests[0].reject(Object.assign(new Error('interrupted'), { name: 'AbortError' })); await settle();
+	assert.equal(s.sources.length, 0); assert.equal(s.timers.size, 1);
+});
+
+test('desktop frame losses downgrade once; pause cancels quality monitoring', async () => {
+	const s = setup(); let total = 0, dropped = 0;
+	s.video.getVideoPlaybackQuality = () => ({ totalVideoFrames: total, droppedVideoFrames: dropped });
+	s.visible(true); s.video.requests[0].resolve(); await settle();
+	const callback = [...s.timers.values()][0]; s.timers.clear();
+	total = 75; dropped = 50; callback();
+	assert.equal(s.video.sourceNodes[0].src, 'mobile.mp4'); assert.equal(s.video.loads, 2);
+	s.video.requests[1].resolve(); await settle(); assert.equal(s.timers.size, 0);
+	s.toggle.emit('click'); s.visible(false); s.visible(true);
+	assert.equal(s.video.paused, true); assert.equal(s.video.requests.length, 2);
+});
+
+test('data-saving desktop devices start with the smaller clip', () => {
+	const s = setup(false, { saveData: true }); s.visible(true);
+	assert.equal(s.video.sourceNodes[0].src, 'mobile.mp4');
+});
+
+
+test('fully buffered but unresolved startup keeps its watchdog after progress', () => {
+	const s = setup(); s.visible(true);
+	s.video.readyState = 4;
+	s.video.buffered = { length: 1, end: () => 10 };
+	s.video.emit('progress');
+	assert.equal(s.timers.size, 1);
+	const callback = [...s.timers.values()][0]; callback();
+	assert.equal(s.video.paused, true); assert.equal(s.sources.length, 1);
 });

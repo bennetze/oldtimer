@@ -19,6 +19,11 @@ function initMotionPanel(panel) {
 	let bufferedEnd = 0;
 	let attempt = 0;
 	let playPending = false;
+	let healthTimer;
+	let qualitySample;
+	let useMobile = window.innerWidth <= 900 || navigator.connection?.saveData === true;
+	const mobileSource = video.querySelectorAll('source[data-motion-src]')[0]?.dataset.motionMobileSrc;
+	const clearHealth = () => { window.clearTimeout(healthTimer); healthTimer = undefined; qualitySample = undefined; };
 	const canAnimate = () => !userPaused && inViewport && !document.hidden;
 	const updateToggle = () => {
 		toggle?.classList.toggle('is-paused', userPaused);
@@ -37,6 +42,13 @@ function initMotionPanel(panel) {
 		if (!canAnimate()) return;
 		window.clearTimeout(timer);
 		timer = undefined;
+		// Stop the decoder before starting an animated image; late play promises
+		// must not switch the panel back to video behind the user's pause control.
+		attempt++;
+		playPending = false;
+		clearHealth();
+		video.autoplay = false;
+		video.pause();
 		fallbackActive = true;
 		panel.classList.remove('is-video-ready');
 		panel.classList.add('is-motion-fallback');
@@ -58,6 +70,7 @@ function initMotionPanel(panel) {
 	const suspend = () => {
 		attempt++;
 		playPending = false;
+		clearHealth();
 		window.clearTimeout(timer);
 		timer = undefined;
 		video.autoplay = false;
@@ -67,6 +80,7 @@ function initMotionPanel(panel) {
 	};
 	const ready = () => {
 		if (!canAnimate()) { suspend(); return; }
+		if (fallbackActive) { video.pause(); return; }
 		window.clearTimeout(timer);
 		timer = undefined;
 		autoplayBlocked = false;
@@ -74,16 +88,21 @@ function initMotionPanel(panel) {
 		showPoster();
 		panel.classList.add('is-video-ready');
 		panel.classList.remove('is-motion-fallback');
+		monitorQuality();
 		updateToggle();
 	};
 	const play = ({ userGesture = false } = {}) => {
 		if (!canAnimate()) return;
 		updateToggle();
-		if (autoplayBlocked && !userGesture) { showFallback(); return; }
-		if (playPending) return;
+		if ((autoplayBlocked || fallbackActive) && !userGesture) { showFallback(); return; }
+		if (playPending || (!video.paused && panel.classList.contains('is-video-ready'))) return;
+		fallbackActive = false;
+		// play() is explicitly controlled here. Setting autoplay as well makes
+		// Safari's hidden-element autoplay rules race the poster reveal.
+		video.autoplay = false;
 		if (!sourcesSelected) {
 			video.querySelectorAll('source[data-motion-src]').forEach((source) => {
-				source.src = source.dataset.motionSrc;
+				source.src = useMobile && source.type === 'video/mp4' && mobileSource ? mobileSource : source.dataset.motionSrc;
 			});
 			sourcesSelected = true;
 			video.preload = 'auto';
@@ -92,23 +111,50 @@ function initMotionPanel(panel) {
 		video.poster = image.currentSrc || image.src;
 		video.muted = true;
 		video.defaultMuted = true;
-		video.autoplay = true;
+		video.autoplay = false;
 		video.loop = true;
 		video.playsInline = true;
 		video.volume = 0;
 		video.controls = false;
 		const request = ++attempt;
 		playPending = true;
-		Promise.resolve(video.play()).then(() => {
+		scheduleFallback();
+		let result;
+		try { result = video.play(); } catch (error) { result = Promise.reject(error); }
+		Promise.resolve(result).then(() => {
 			if (request !== attempt) return;
 			playPending = false;
 			ready();
-		}).catch(() => {
+		}).catch((error) => {
 			if (request !== attempt || !canAnimate()) return;
 			playPending = false;
+			if (error?.name === 'AbortError') { scheduleFallback(); return; }
 			autoplayBlocked = true;
 			showFallback();
 		});
+	};
+	const monitorQuality = () => {
+		if (!mobileSource || useMobile || !video.getVideoPlaybackQuality || healthTimer !== undefined) return;
+		qualitySample = video.getVideoPlaybackQuality();
+		healthTimer = window.setTimeout(() => {
+			healthTimer = undefined;
+			if (!canAnimate() || video.paused || fallbackActive) return;
+			const current = video.getVideoPlaybackQuality();
+			const frames = current.totalVideoFrames - qualitySample.totalVideoFrames;
+			const dropped = current.droppedVideoFrames - qualitySample.droppedVideoFrames;
+			if (frames >= 30 && dropped / frames > 0.25) {
+				// Preserve position and pause intent when a device cannot decode 1080p.
+				const position = video.currentTime;
+				suspend();
+				useMobile = true;
+				sourcesSelected = false;
+				panel.classList.remove('is-video-ready');
+				video.addEventListener('loadedmetadata', () => {
+					if (Number.isFinite(video.duration)) video.currentTime = Math.min(position, video.duration);
+				}, { once: true });
+				play();
+			} else monitorQuality();
+		}, 3000);
 	};
 	const currentBufferedEnd = () => video.buffered?.length ? video.buffered.end(video.buffered.length - 1) : 0;
 	const scheduleFallback = () => {
@@ -117,16 +163,17 @@ function initMotionPanel(panel) {
 		bufferedEnd = currentBufferedEnd();
 		timer = window.setTimeout(() => {
 			timer = undefined;
-			if (canAnimate() && video.currentTime === stalledAtTime && currentBufferedEnd() <= bufferedEnd &&
-				(video.paused || video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA)) showFallback();
+			if (!canAnimate() || video.currentTime !== stalledAtTime) return;
+			if (currentBufferedEnd() > bufferedEnd) { scheduleFallback(); return; }
+			showFallback();
 		}, 8000);
 	};
 	const clearStall = () => { window.clearTimeout(timer); timer = undefined; };
 	video.addEventListener('timeupdate', () => {
-		if (timer !== undefined && video.currentTime !== stalledAtTime) { clearStall(); if (video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA) scheduleFallback(); }
+		if (timer !== undefined && video.currentTime !== stalledAtTime) { clearStall(); if (playPending || video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA) scheduleFallback(); }
 	});
 	video.addEventListener('progress', () => {
-		if (currentBufferedEnd() > bufferedEnd) { clearStall(); if (video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA) scheduleFallback(); }
+		if (currentBufferedEnd() > bufferedEnd) { clearStall(); if (playPending || video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA) scheduleFallback(); }
 	});
 	video.addEventListener('playing', ready);
 	video.addEventListener('waiting', scheduleFallback);
@@ -155,15 +202,15 @@ function initMotionPanel(panel) {
 	if (toggle instanceof HTMLElement) toggle.hidden = false;
 	if ('IntersectionObserver' in window) {
 		new IntersectionObserver(([entry]) => {
-			inViewport = entry.isIntersecting && entry.intersectionRatio >= 0.12;
+			inViewport = entry.isIntersecting && entry.intersectionRatio > 0.5;
 			if (inViewport) play();
 			else suspend();
-		}, { threshold: [0, 0.12] }).observe(panel);
+		}, { threshold: [0, 0.5, 0.51] }).observe(panel);
 	} else {
 		const updateVisibility = () => {
 			const bounds = panel.getBoundingClientRect();
 			const visibleHeight = Math.max(0, Math.min(bounds.bottom, window.innerHeight) - Math.max(bounds.top, 0));
-			inViewport = visibleHeight / Math.min(bounds.height, window.innerHeight) >= 0.12;
+			inViewport = visibleHeight / Math.min(bounds.height, window.innerHeight) > 0.5;
 			if (inViewport) play();
 			else suspend();
 		};
