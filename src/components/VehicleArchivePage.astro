@@ -83,7 +83,7 @@ const itemList = {
 	]}
 >
 	<SiteChrome theme="light">
-		<main class="vehicle-archive textured-background" id="main-content" tabindex="-1">
+		<main class="vehicle-archive textured-background gradient-palette" id="main-content" tabindex="-1">
 			<BackgroundTexture />
 			<header class="archive-intro">
 				<h1>{categoryData.heading}</h1>
@@ -315,21 +315,8 @@ const itemList = {
 		min-height: 100vh;
 		min-height: 100svh;
 		padding: clamp(10.5rem, 15vw, 14rem) clamp(1.25rem, 4.8vw, 5.5rem) clamp(8rem, 12vw, 13rem);
-		background:
-			linear-gradient(
-				180deg,
-				#ffffff 0,
-				#ffffff 16rem,
-				#f7eee2 28rem,
-				#f8f3ec 40rem,
-				#e9dacf 51rem,
-				#b1b6d5 63rem,
-				#8faede 76rem,
-				#80a3d1 90rem,
-				#8bb0e1 105rem,
-				#a6c6ec 122rem,
-				#eeeeee 154rem
-			);
+		--archive-gutter: clamp(1.25rem, 4.8vw, 5.5rem);
+		background: var(--gradient-cream);
 		color: #000000;
 	}
 
@@ -558,6 +545,20 @@ const itemList = {
 		clip: rect(0, 0, 0, 0);
 		white-space: nowrap;
 		border: 0;
+	}
+
+	.vehicle-grid {
+		position: relative;
+	}
+
+	.vehicle-grid:has([data-vehicle-card]:not([hidden]))::before {
+		position: absolute;
+		inset: -2rem calc(-1 * var(--archive-gutter));
+		z-index: -2;
+		background: var(--gradient-archive);
+		background-color: var(--gradient-green);
+		content: '';
+		pointer-events: none;
 	}
 
 	.vehicle-grid {

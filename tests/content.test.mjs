@@ -38,7 +38,8 @@ test('empty categories keep canonical archive routes with stable reviewed dates'
 	assert.equal(entries.length, 14);
 	assert.deepEqual(entries.slice(7).map(([path]) => path), entries.slice(0, 7).map(([path]) => `/en${path}`));
 	assert.ok(entries.every(([path, date]) => date === pageModified(path)));
-	assert.equal(pageModified('/projekte/test/car/', ['2026-10-01']), '2026-10-01');
+	assert.equal(pageModified('/projekte/test/car/', ['9999-12-31']), '9999-12-31');
+	assert.equal(pageModified('/projekte/test/car/', ['2000-01-01']), pageModified('/projekte/test/car/'));
 	assert.equal(renderSitemap(sitemapEntries(groups)), files.sitemap);
 });
 

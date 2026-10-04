@@ -9,30 +9,67 @@ interface Props {
 const { title, eyebrow } = Astro.props;
 ---
 
-<main class="legal-page textured-background" id="main-content" tabindex="-1">
+<main class="legal-page textured-background gradient-palette" id="main-content" tabindex="-1">
 	<BackgroundTexture />
 	<header class="legal-hero">
 		<p>{eyebrow}</p>
 		<h1>{title}</h1>
 	</header>
-	<article class="legal-copy">
-		<h2>In Vorbereitung</h2>
-		<slot />
-	</article>
+	<div class="legal-body">
+		<article class="legal-copy">
+			<h2>In Vorbereitung</h2>
+			<slot />
+		</article>
+	</div>
 </main>
 
 <style>
 	.legal-page {
 		min-height: 100vh;
 		min-height: 100svh;
-		padding-bottom: clamp(6rem, 12vw, 12rem);
-		color: #111111;
-		background: linear-gradient(180deg, #ffffff 0%, #ffffff 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #b1b6d5 47%, #8faede 54%, #80a3d1 61%, #8bb0e1 70%, #a6c6ec 82%, #ffffff 100%);
+		--legal-fade: clamp(28rem, 65vw, 64rem);
+		color: var(--gradient-ink);
+		background: var(--gradient-cream);
+	}
+
+	.legal-hero {
+		position: relative;
+	}
+
+	.legal-hero::before,
+	.legal-body::before {
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		content: '';
+		pointer-events: none;
+	}
+
+	.legal-hero::before {
+		bottom: -2px;
+		background:
+			var(--gradient-descend) bottom / 100% var(--legal-fade) no-repeat,
+			linear-gradient(var(--gradient-cream), var(--gradient-cream))
+				top / 100% calc(100% - var(--legal-fade) + 2px) no-repeat var(--gradient-green);
+	}
+
+	.legal-body {
+		position: relative;
+		padding-bottom: var(--legal-fade);
+		color: #ffffff;
+	}
+
+	.legal-body::before {
+		bottom: -2px;
+		background:
+			var(--gradient-ascend) bottom / 100% var(--legal-fade) no-repeat,
+			linear-gradient(var(--gradient-green), var(--gradient-green))
+				top / 100% calc(100% - var(--legal-fade) + 2px) no-repeat var(--gradient-green);
 	}
 
 	.legal-hero {
 		padding: calc(clamp(9rem, 13vw, 13rem) + var(--site-header-height, 132px) - 76px)
-			clamp(1.25rem, 5vw, 5rem) clamp(4rem, 7vw, 7rem);
+			clamp(1.25rem, 5vw, 5rem) var(--legal-fade);
 		text-align: center;
 	}
 
@@ -61,7 +98,6 @@ const { title, eyebrow } = Astro.props;
 		width: min(42rem, calc(100% - 3rem));
 		margin: 0 auto;
 		padding-top: clamp(2rem, 4vw, 3.5rem);
-		border-top: 1px solid rgba(17, 17, 17, 0.34);
 	}
 
 	.legal-copy h2 {

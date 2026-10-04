@@ -54,7 +54,7 @@ const openingId = sections[0]?.id;
 >
 	<SiteChrome {theme}>
 		<main
-			class:list={['editorial-page', `editorial-page--${theme}`, { 'textured-background': theme === 'light' }]}
+			class:list={['editorial-page', `editorial-page--${theme}`, { 'textured-background gradient-palette': theme === 'light' }]}
 			id="main-content"
 			tabindex="-1"
 			style={`--editorial-background: ${background}`}
@@ -266,6 +266,7 @@ const openingId = sections[0]?.id;
 
 <style is:global>
 	.editorial-page {
+		--story-gap: clamp(38rem, 58vw, 58rem);
 		--story-scroll-offset: calc(var(--site-header-height, 132px) + clamp(1.5rem, 3vh, 2.5rem));
 		--editorial-color: #000000;
 		--editorial-line: rgba(17, 17, 17, 0.34);
@@ -281,6 +282,66 @@ const openingId = sections[0]?.id;
 		--editorial-line: rgba(238, 238, 238, 0.3);
 		--editorial-image-background: #202427;
 	}
+
+	/* Keep the color changes inside section spacing, even when mobile copy wraps.
+	   Negative layers leave the existing leather photograph above the gradient. */
+	.editorial-page--light {
+		--editorial-color: #ffffff;
+		--editorial-line: rgba(255, 255, 255, 0.4);
+	}
+
+	.editorial-page--light .editorial-opening,
+	.editorial-page--light > .story {
+		position: relative;
+	}
+
+	.editorial-page--light .editorial-opening,
+	.editorial-page--light > .story:last-child {
+		--editorial-color: var(--gradient-ink);
+		--editorial-line: rgba(20, 35, 29, 0.34);
+		color: var(--editorial-color);
+	}
+
+	.editorial-page--light .editorial-opening::before,
+	.editorial-page--light > .story::before {
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		content: '';
+		pointer-events: none;
+	}
+
+	/* Only the two color transitions need this extra travel distance. */
+	.editorial-page--light .editorial-opening,
+	.editorial-page--light > .story:nth-last-child(2) {
+		--story-gap: clamp(40rem, 65vw, 64rem);
+	}
+
+	.editorial-page--light .editorial-opening::before {
+		bottom: -2px;
+		background:
+			var(--gradient-descend) bottom / 100% var(--story-gap) no-repeat,
+			linear-gradient(var(--gradient-cream), var(--gradient-cream))
+				top / 100% calc(100% - var(--story-gap) + 2px) no-repeat var(--gradient-green);
+	}
+
+	.editorial-page--light > .story::before {
+		background: var(--gradient-green);
+	}
+
+	.editorial-page--light > .story:nth-last-child(2)::before {
+		bottom: -2px;
+		background:
+			var(--gradient-ascend) bottom / 100% var(--story-gap) no-repeat,
+			linear-gradient(var(--gradient-green), var(--gradient-green))
+				top / 100% calc(100% - var(--story-gap) + 2px) no-repeat var(--gradient-green);
+	}
+
+	.editorial-page--light > .story:last-child::before {
+		top: -2px;
+		background: var(--gradient-cream);
+	}
+
 
 	.editorial-intro {
 		display: grid;
@@ -308,7 +369,7 @@ const openingId = sections[0]?.id;
 	}
 
 	.editorial-page .story {
-		padding: 0 clamp(2rem, 6vw, 7.5rem) clamp(13rem, 20vw, 21rem);
+		padding: 0 clamp(2rem, 6vw, 7.5rem) var(--story-gap);
 	}
 
 	.editorial-page .story[id],
@@ -500,7 +561,13 @@ const openingId = sections[0]?.id;
 
 	@media (max-width: 840px) {
 		.editorial-page {
+			--story-gap: clamp(22rem, 88vw, 30rem);
 			--story-scroll-offset: calc(var(--site-header-height, 104px) + 1.25rem);
+		}
+
+		.editorial-page--light .editorial-opening,
+		.editorial-page--light > .story:nth-last-child(2) {
+			--story-gap: clamp(28rem, 110vw, 40rem);
 		}
 
 		.editorial-intro {
@@ -514,7 +581,7 @@ const openingId = sections[0]?.id;
 		}
 
 		.editorial-page .story {
-			padding: 0 1.25rem clamp(4rem, 16vw, 6rem);
+			padding: 0 1.25rem var(--story-gap);
 		}
 
 		.editorial-page .story h2 {

@@ -126,6 +126,39 @@ const { items, theme = 'dark', visible = true } = Astro.props;
 		outline: 0;
 	}
 
+	/* Match the cursor's grayscale luminance adaptation. Only the visible dot
+	   and ring filter the backdrop; the rail and ring center stay clear. */
+	@supports ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) and
+		((mask-image: radial-gradient(black, transparent)) or (-webkit-mask-image: radial-gradient(black, transparent))) {
+		@media (forced-colors: none) and (prefers-contrast: no-preference) {
+			.section-indicator[data-section-indicator] .section-indicator__dot::before,
+			.section-indicator[data-section-indicator] .section-indicator__dot::after {
+				background: transparent !important;
+				box-shadow: none !important;
+				-webkit-backdrop-filter: blur(10px) grayscale(1) brightness(1.1) contrast(12) invert(1);
+				backdrop-filter: blur(10px) grayscale(1) brightness(1.1) contrast(12) invert(1);
+			}
+
+			.section-indicator[data-section-indicator] .section-indicator__dot::before {
+				width: 25px;
+				height: 25px;
+				border: 0;
+				-webkit-mask-image: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
+				mask-image: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
+			}
+
+			.section-indicator[data-section-indicator] .section-indicator__dot::after {
+				opacity: 0.8;
+			}
+
+			.section-indicator[data-section-indicator] .section-indicator__dot.is-active::after,
+			.section-indicator[data-section-indicator] .section-indicator__dot:hover::after,
+			.section-indicator[data-section-indicator] .section-indicator__dot:focus-visible::after {
+				opacity: 1;
+			}
+		}
+	}
+
 	@media (max-width: 980px), (pointer: coarse) {
 		.section-indicator {
 			display: none;

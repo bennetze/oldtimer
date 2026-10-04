@@ -50,11 +50,11 @@ const sectionNavigationItems = [
 	description="Mario Schrank, dreifacher Meister, und Anton Schrank, KFZ-Techniker-Meister: Lernen Sie die Menschen, das Handwerk und unseren Standort in Fischbach/Rhön kennen."
 	sections={sectionNavigationItems}
 	theme="light"
-	background="linear-gradient(180deg, #ffffff 0%, #ffffff 11%, #f7eee2 18%, #f8f3ec 30%, #e9dacf 39%, #b1b6d5 47%, #8faede 54%, #80a3d1 61%, #8bb0e1 70%, #a6c6ec 82%, #ffffff 100%)"
+	background="var(--gradient-green)"
 	openGraphImage={marioPortrait}
 	openGraphImageAlt="Mario Schrank im dunkelblauen Poloshirt neben einem roten historischen Fahrzeug."
 	structuredDataType="AboutPage"
-	dateModified="2026-09-28"
+	dateModified="2026-10-04"
 	additionalJsonLd={people}
 	sectionNavigationVisible={false}
 >
@@ -351,7 +351,7 @@ const sectionNavigationItems = [
 	:global(.editorial-page) .collage--portraits .image-layer--landscape { width: 100%; margin-top: 55%; }
 	:global(.editorial-page) .story--team {
 		/* Reserve the full 170px downward travel plus heading clearance. */
-		padding-bottom: clamp(15rem, 18vw, 18rem);
+		padding-bottom: max(var(--story-gap), clamp(15rem, 18vw, 18rem));
 	}
 	:global(.editorial-page) .story--team h2 {
 		/* The top photo can travel 80px toward the heading. */
@@ -412,7 +412,7 @@ const sectionNavigationItems = [
 	@media (max-width: 840px) {
 		:global(.editorial-page) .collage--single .image-layer { width: 90%; }
 		:global(.editorial-page) .story--team .story__layout { gap: clamp(2.5rem, 10vw, 4rem); }
-		:global(.editorial-page) .story--team { padding-bottom: clamp(4rem, 16vw, 6rem); }
+		:global(.editorial-page) .story--team { padding-bottom: var(--story-gap); }
 		:global(.editorial-page) .story--team h2 { margin-bottom: clamp(2rem, 8vw, 3rem); }
 		:global(.editorial-page) .collage--team-details {
 			min-height: clamp(25rem, 124vw, 35rem);
