@@ -39,6 +39,7 @@ function instrument(scenario) {
 		const panels = [...document.querySelectorAll('[data-motion-panel]')];
 		const checks = [], samples = [];
 		const check = (name, pass) => checks.push({ name, pass: Boolean(pass) });
+		panels[0].scrollIntoView({ behavior: 'instant', block: 'center' });
 		await wait(800);
 		const hero = panels[0].querySelector('video');
 		if (scenario === 'reduce') {

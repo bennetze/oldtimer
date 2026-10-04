@@ -59,8 +59,8 @@ const sectionNavigationItems = [
 <Layout
   description="Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
   openGraphImage={heroSiteRevealPoster}
-  openGraphImageAlt="Offener historischer Rennwagen mit Fahrer auf einer Landstraße im tief stehenden Sonnenlicht."
-  dateModified="2026-09-30"
+  openGraphImageAlt="Historischer Rennwagen unter einer hellen Abdeckung in der Werkstatt."
+  dateModified="2026-10-01"
 >
   <SiteChrome>
     <main id="main-content" tabindex="-1">
@@ -149,7 +149,7 @@ const sectionNavigationItems = [
         <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>
         </button>
-        <div class="media-panel__shade media-panel__shade--craft"></div>
+        <div class="media-panel__shade"></div>
         <a
           class="scroll-cue scroll-cue--up section-up-cue"
           href="#start"
@@ -204,7 +204,7 @@ const sectionNavigationItems = [
         <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>
         </button>
-        <div class="media-panel__shade media-panel__shade--craft"></div>
+        <div class="media-panel__shade"></div>
         <a
           class="scroll-cue scroll-cue--up section-up-cue"
           href="#handwerk"
@@ -259,7 +259,7 @@ const sectionNavigationItems = [
         <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
           <span aria-hidden="true"></span>
         </button>
-        <div class="media-panel__shade media-panel__shade--craft"></div>
+        <div class="media-panel__shade"></div>
         <a
           class="scroll-cue scroll-cue--up section-up-cue"
           href="#ueber-uns"
@@ -329,18 +329,6 @@ const sectionNavigationItems = [
     isolation: isolate;
   }
 
-  .media-panel::after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    height: 18vh;
-    background: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010);
-    content: "";
-    pointer-events: none;
-  }
-
   /* MotionPoster is a child component: its media must share the absolute layer. */
   .media-panel :global(.media-panel__image),
   .media-panel__shade {
@@ -353,7 +341,6 @@ const sectionNavigationItems = [
   .media-panel :global(.media-panel__image) {
     z-index: 0;
     object-fit: cover;
-    filter: saturate(0.88) contrast(1.04) brightness(0.92);
     transform: scale(1.015);
   }
 
@@ -448,33 +435,8 @@ const sectionNavigationItems = [
 
   .media-panel__shade {
     z-index: 1;
-    background:
-      linear-gradient(
-        180deg,
-        rgba(12, 12, 12, 0.34),
-        rgba(12, 12, 12, 0.04) 40%,
-        rgba(12, 12, 12, 0.58)
-      ),
-      linear-gradient(
-        90deg,
-        rgba(12, 12, 12, 0.42),
-        rgba(12, 12, 12, 0.04) 56%,
-        rgba(12, 12, 12, 0.22)
-      );
-    background-color: rgba(12, 12, 12, 0.40);
+    background: rgba(12, 12, 12, 0.25);
     pointer-events: none;
-  }
-
-  .media-panel__shade--craft {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(12, 12, 12, 0.36),
-        rgba(12, 12, 12, 0.06) 42%,
-        rgba(12, 12, 12, 0.62)
-      ),
-      linear-gradient(90deg, rgba(12, 12, 12, 0.46), rgba(12, 12, 12, 0.05) 62%);
-    background-color: rgba(12, 12, 12, 0.40);
   }
 
   #projekte .media-panel__image {

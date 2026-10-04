@@ -11,7 +11,13 @@ import upholsteryLandscape from '../assets/oldtimer/L1005861.webp';
 import enginePortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00172.webp';
 import upholsteryDetail from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00189.webp';
 import paintDetail from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00572.webp';
-import engineLandscape from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00171.webp';
+import EditorialMotion from '../components/EditorialMotion.astro';
+import motorbauMp4 from '../assets/oldtimer/motorbau.mp4';
+import motorbauMobileMp4 from '../assets/oldtimer/motorbau-mobile.mp4';
+import motorbauWebm from '../assets/oldtimer/motorbau.webm';
+import motorbauPoster from '../assets/oldtimer/motorbau-poster.jpg';
+import motorbauMotionAvif from '../assets/oldtimer/motorbau-motion.avif?url';
+import motorbauMotionWebp from '../assets/oldtimer/motorbau-motion.webp?url';
 
 const sectionNavigationItems = [
 	{ id: 'karosserie', label: 'Karosserie' },
@@ -62,7 +68,7 @@ const handwerkServiceJsonLd = {
 	openGraphImage={bodyPortrait}
 	openGraphImageAlt="Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt."
 	structuredDataType="CollectionPage"
-	dateModified="2026-09-29"
+	dateModified="2026-10-01"
 	additionalJsonLd={handwerkServiceJsonLd}
 >
 	<section
@@ -269,13 +275,14 @@ const handwerkServiceJsonLd = {
 					data-speed="0.22"
 					data-range="204"
 				>
-					<Image
-						src={engineLandscape}
-						alt="Vergaser und Gestänge eines Motors, mit weiteren Bauteilen im Hintergrund."
-						widths={[640, 960, 1280, 1536]}
-						sizes="(max-width: 840px) 76vw, 42vw"
-						format="webp"
-						loading="lazy"
+					<EditorialMotion
+						mp4={motorbauMp4}
+						mobileMp4={motorbauMobileMp4}
+						webm={motorbauWebm}
+						poster={motorbauPoster}
+						avif={motorbauMotionAvif}
+						webp={motorbauMotionWebp}
+						alt="Nahaufnahme des Ventiltriebs eines laufenden historischen Motors."
 					/>
 				</figure>
 			</div>

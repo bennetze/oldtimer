@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 const distRoot = join(process.cwd(), 'dist');
 const assetsRoot = join(process.cwd(), 'dist', '_astro');
-const pagesOnlyFallback = /^(hero-site|handwerk|ueberuns|projekte)-motion\..+\.webp$/;
+const pagesOnlyFallback = /^(hero-site|handwerk|ueberuns|projekte|motorbau)-motion\..+\.webp$/;
 const searchableOutput = /\.(?:css|html|js)$/;
 const candidates = [];
 const removed = [];
