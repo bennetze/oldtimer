@@ -45,6 +45,24 @@ fields before export. The checked website importer rejects incomplete bilingual
 records; the legacy option is confined to authoring. Existing website records were
 migrated using the existing English translations without changing their dates.
 
+## Media review for new or replaced vehicles
+
+The internal editor saves website source files; it does not approve media rights
+or update a release inventory. Before publication, add or update the original/master
+or enumerated media-family record in [MEDIA-RIGHTS-REGISTER.md](MEDIA-RIGHTS-REGISTER.md).
+Identify the vehicle route and source filenames, creator/rights holder, permitted
+website/derivative/social-preview uses, restrictions, private evidence reference,
+named approver and date. Assess recognisable people and identifying/private details
+where applicable. Keep personal evidence in the private archive, not in vehicle JSON.
+
+Enter photograph-specific German and English alternatives for every gallery
+occurrence; replace the editor's generic numbered defaults. The website build rejects
+the known numbered-photo pattern. Saving a vehicle does not update `dist`; after
+building, reconcile the final release media against the approved originals/families
+using [PRODUCTION-RELEASE-CHECKLIST.md](PRODUCTION-RELEASE-CHECKLIST.md). Generated
+variants can share their original's evidence within the approved scope. No CSV,
+new vehicle fields or separate evidence attachment in the editor is required.
+
 ## Review, then apply
 
 Extract the downloaded ZIP into a temporary directory **outside** this repository.

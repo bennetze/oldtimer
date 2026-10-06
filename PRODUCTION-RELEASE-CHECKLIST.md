@@ -7,7 +7,7 @@ legal-text replacement or retirement of the existing hosted application is inclu
 
 The responsible people below are roles, not assumed named signatories. The company
 must nominate an accountable release owner and approvers. Evidence belongs in a
-private durable archive; record its reference here and in the media inventory.
+private durable archive; record its reference here and in the media-rights register.
 A file's existence, migration source URL or general ownership statement does not
 establish a complete rights chain or signed approval.
 
@@ -25,7 +25,7 @@ establish a complete rights chain or signed approval.
 | Video rights and derivation | Masters, creators, contracts and applicable releases for every hero/section/motor video; link MP4/WebM/mobile/poster/AVIF/WebP derivatives to the master | Company rights representative | Family statements exist; evidence linkage missing |
 | Branding | Permission/provenance and final approval for legacy logo, vector mark and vehicle-signet favicon/ICO/apple icon derivatives | Company management / brand rights holder | Current files inventoried; final permissions and brand decision missing |
 | Fonts and map graphics | Verify supplied font provenance and OFL licence applicability for delivered derivatives; retain licence notices; verify public-domain silhouette and MIT marker provenance | Release owner and developer | Local licence files/provenance recorded; final verification pending |
-| Published asset reconciliation | Review every row of `release/published-media-inventory.csv`, assign original/master ID, evidence reference and explicit approval; resolve any ambiguous source | Company rights representative and developer | Inventory prepared; approval rows pending |
+| Published asset reconciliation | Compare final root-build media with approved originals/masters and asset families in `MEDIA-RIGHTS-REGISTER.md`; record evidence and approval scope covering generated derivatives and resolve unmatched assets. Record reviewed release revision, scope, reviewer, date and unmatched assets here; use a temporary inventory if useful | Company rights representative and developer | Final reconciliation and original/master approval evidence pending; no permanent derivative CSV maintained |
 | Permanent evidence archive | Durable private storage with contracts/releases/originals, access owner and retention policy; ignored `.cache` backups are not this archive | Company rights/privacy representatives | Archive location and ownership missing |
 | Final hosting and provider facts | Confirm provider/contract, server location, logs and retention, processors/subprocessors, transfers, security and responsibilities; confirm DNS/domain operator | Company hosting/privacy owners | Final facts missing; IONOS configuration is not contract evidence |
 | Preview/provider assessment | Confirm current public preview's provider information and privacy duties and approve the applicable texts | Company management / privacy owner | Preview labels and noindex do not settle this obligation |
@@ -42,5 +42,14 @@ Repeat final legal, media, crawler, metadata, accessibility, cookie/storage, sec
 and browser checks after the release flags or hosting facts change.
 
 Technical finding closure and local screenshots are listed in
-[BROWSER-FIX-CLOSURE.md](BROWSER-FIX-CLOSURE.md). The inventory is an engineering
-reconciliation aid, not an external legal opinion or proof of ownership.
+[BROWSER-FIX-CLOSURE.md](BROWSER-FIX-CLOSURE.md). The media-rights register and
+release reconciliation organise evidence; neither proves ownership or legal approval.
+
+## Final media reconciliation record
+
+- Release revision/artifact: pending.
+- Reviewed originals and asset families: pending; see `MEDIA-RIGHTS-REGISTER.md`.
+- Review scope: all media delivered by the root build, including derivatives and unused delivered files.
+- Reviewer and review date: pending.
+- Unmatched/unapproved assets and resolution: not yet assessed for the final release.
+- Decision: pending; no production approval.

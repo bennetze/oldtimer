@@ -1,6 +1,6 @@
 # Medienrechte-Register
 
-**Stand:** 6 October 2026 (inventory reconciliation; approvals still pending)
+**Stand:** 6 October 2026 (original/media-family workflow; approvals still pending)
 **Rechteinhaber laut Auftraggeber:** DIE OLDTIMERMANUFAKTUR GmbH  
 **Status:** Entwicklungsnachweis; Belege vor Produktionsfreigabe vervollständigen
 
@@ -56,22 +56,53 @@ associate the source with its internal rights evidence before release.
    abgebildete Personen/Objekte, zugehörige Release-ID und die daraus erzeugten
    Webdateien dokumentieren.
 
-## Freigabetabelle für finale Dateien
+## Approval records for originals and media families
 
-Diese Tabelle für jedes finale Motiv ausfüllen und die Belege intern unter der
-angegebenen Referenz ablegen.
+Maintain one record per identifiable original/master or clearly enumerated asset
+family with the same rights and approval scope. A family must identify its members;
+a broad filename pattern or a company-wide statement alone is not sufficient.
+Responsive sizes, format conversions and immutable copies may share their
+original's evidence when the approved scope covers those uses. A new original or
+materially different use requires review; no separate CSV or vehicle-schema field
+is required.
 
-| Webdatei | Original-ID | Urheber | Rechteübertragung/Lizenz | Personen-Release | Standort/Fahrzeug/Kennzeichen | Freigabedatum | Belegreferenz | Final freigegeben |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| _noch offen_ |  |  |  |  |  |  |  | Nein |
+| Original/master ID and source files or vehicle route | Creator / rights holder | Licence and permitted uses, edits, credits and restrictions | Persons/private details: applicable basis or release reference | Evidence reference | Named approver and approval date | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| Not yet supplied | Pending | Pending | Pending assessment | Pending | Pending | Not approved |
 
-## Produktionssperre
+Store contracts, releases and other personal information in a private evidence
+archive with controlled access and an appropriate retention/deletion policy.
+Record only the reference needed for traceability here; do not put signatures,
+identity documents or private contact details in the repository, vehicle records
+or public assets. The register is not a GDPR processing record or privacy notice.
 
-Die Produktionsfreigabe bleibt gesperrt, solange eine verwendete Datei keine
-ausgefüllte Tabellenzeile und keine auffindbare Belegreferenz besitzt. Für jedes
-ersetzte Platzhalterbild müssen außerdem Alternativtext, Open-Graph-Metadaten,
-strukturierte Daten, `llms.txt` und der sichtbare Entwicklungshinweis erneut geprüft
-werden.
+## Production approval gate
+
+Release remains pending until every delivered media asset can be connected to an
+approved original or explicitly enumerated family and retrievable evidence.
+Before publication, review the root build's images, video variants/posters/fallbacks,
+branding, fonts and inline graphics against these records. Include unused files
+still delivered by the build. Record the reviewed release revision, scope, reviewer,
+date and unresolved assets in the release checklist. An unmatched or unapproved
+asset must be approved, removed from the release or replaced before release.
+
+For new or replaced vehicle images, review photograph-specific German and English
+alternatives, representative Open Graph/JSON-LD metadata and the visible content.
+Successful editor saves and builds do not grant publication permission.
+
+## Legal basis of this workflow — reviewed 6 October 2026
+
+The cited provisions concern permission, lawful processing and accountability;
+they do not prescribe this project's CSV format. This register and the release
+checklist organise evidence, but do not themselves establish compliance:
+
+- [German Copyright Act, section 31](https://www.gesetze-im-internet.de/urhg/__31.html): verify the scope and restrictions of rights of use, including the actual website and derivative uses.
+- [KunstUrhG, sections 22 and 23](https://www.gesetze-im-internet.de/kunsturhg/BJNR000070907.html): assess recognisable-person publication, necessary consent and any applicable exceptions; do not assume every image requires the same release.
+- [GDPR, Articles 5, 6, 7 and 24](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679): where personal data is involved, document the applicable lawful basis, accountability, and consent evidence where consent is relied upon; apply data minimisation, storage limitation and appropriate safeguards to the evidence archive.
+
+Outstanding legal texts, business/hosting facts and case-specific publication
+permissions remain subject to the existing release checklist and its approvers.
+Removing the inventory neither waives those requirements nor confirms compliance.
 
 ## Contact map assets — reviewed 2026-09-13
 
@@ -155,19 +186,19 @@ glyph order, Unicode maps and variable axes were verified against the originals.
 The existing OFL licenses remain published. Jost and its unused license were removed.
 These changes do not constitute production approval or new rights evidence.
 
-## Published inventory reconciliation — 6 October 2026
+## Release media review — 6 October 2026
 
-The authoritative engineering inventory for this release candidate is
-[`release/published-media-inventory.csv`](release/published-media-inventory.csv),
-with counts and unresolved source mappings in
-[`release/media-inventory-summary.json`](release/media-inventory-summary.json).
-It inventories every media/font file delivered by the root build, including files
-not referenced by the current page, responsive and immutable vehicle derivatives,
-video sources/posters/motion fallbacks, logo derivatives, icons, fonts and inline map
-graphics. Reproduce it after a root build with `node scripts/inventory-release-media.mjs`.
-The CSV includes published paths, SHA-256, sizes, source mapping, licence references,
-evidence status and approver role. Each row remains pending until explicit evidence
-and approval are recorded; automatic regeneration must not replace an approved ledger.
+Maintain media permissions and approvals in this register against original
+photographs, video masters and other asset families. Record the source/master ID,
+evidence reference, named approver, approved scope and date. Include website use,
+crops, responsive derivatives and social previews in the approved scope where
+applicable; generated variants can share the evidence for their original.
+
+Before a release, compare the actual root-build media with the approved originals
+and asset families, including video fallbacks/posters, branding, fonts, inline
+graphics and any delivered but unused files. A temporary build inventory may assist
+that review. No permanent per-derivative CSV is maintained; its removal does not
+approve any assets or close the outstanding evidence requirements.
 
 The current header/schema logo is
 `src/assets/oldtimer/brand/OTM_oldtimermanufaktur_Logo_v07.png`. Its responsive
