@@ -5,10 +5,10 @@ export const modificationDates = {
 	archive: '2026-10-04',
 	vehicle: '2026-09-28',
 	pages: {
-		'/impressum/': '2026-10-04',
+		'/impressum/': '2026-10-06',
 		'/datenschutz/': '2026-10-04',
 		'/404.html': '2026-09-28',
-		'/': '2026-10-01',
+		'/': '2026-10-06',
 		'/handwerk/': '2026-10-04',
 		'/ueber-uns/': '2026-10-04',
 		'/projekte/': '2026-09-29',

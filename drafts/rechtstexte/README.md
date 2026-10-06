@@ -2,11 +2,19 @@
 
 **Stand der Prüfung: 24. Juli 2026**
 
-In diesem Ordner liegen ausschließlich Arbeitsentwürfe. Die produktiven
-Astro-Seiten unter `src/pages/impressum.astro` und
-`src/pages/datenschutz.astro` wurden nicht geändert.
+Dieser Prüfvermerk dokumentiert den historischen Stand vom 24. Juli 2026.
+Am 4. Oktober 2026 wurde der Datenschutzentwurf durch den deutschen und englischen
+Text in `src/content/legal/privacy.js` ersetzt und auf der neuen Datenschutzseite
+eingebunden. Die aktuelle Liste offener Angaben und Maßnahmen steht in
+`DATENSCHUTZ-OPEN-ITEMS.md`. Aussagen dieses historischen Vermerks über fehlenden
+Browserspeicher sind überholt.
+Am 6. Oktober 2026 wurden die erneut bestätigten Unternehmensangaben in
+`src/content/legal/imprint.js` auf Deutsch und Englisch eingebunden. Der aktuelle
+Prüfstand steht in `IMPRESSUM-REVIEW.md`, die offenen Fragen in
+`IMPRESSUM-FRAGEBOGEN.md`. Der alte Impressumsentwurf ist damit historisch.
+Eine Produktionsfreigabe oder Veröffentlichung auf dem Live-Host ist nicht erfolgt.
 
-Die Entwürfe beruhen auf:
+Die historischen Entwürfe beruhen auf:
 
 - dem geprüften Quellcode der neuen Astro-Website,
 - den derzeit öffentlich sichtbaren Angaben auf

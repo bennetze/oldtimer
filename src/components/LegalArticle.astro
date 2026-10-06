@@ -4,20 +4,23 @@ import BackgroundTexture from './BackgroundTexture.astro';
 interface Props {
 	title: string;
 	eyebrow: string;
+	heading?: string | null;
+	authored?: boolean;
 }
 
-const { title, eyebrow } = Astro.props;
+const { title, eyebrow, heading = 'In Vorbereitung', authored = false } = Astro.props;
 ---
 
 <main class="legal-page textured-background gradient-palette" id="main-content" tabindex="-1">
 	<BackgroundTexture />
-	<header class="legal-hero">
+	<slot name="navigation" />
+	<header class="legal-hero" data-authored={authored || undefined}>
 		<p>{eyebrow}</p>
 		<h1>{title}</h1>
 	</header>
 	<div class="legal-body">
-		<article class="legal-copy">
-			<h2>In Vorbereitung</h2>
+		<article class="legal-copy" data-authored={authored || undefined}>
+			{heading && <h2>{heading}</h2>}
 			<slot />
 		</article>
 	</div>
@@ -28,6 +31,8 @@ const { title, eyebrow } = Astro.props;
 		min-height: 100vh;
 		min-height: 100svh;
 		--legal-fade: clamp(28rem, 65vw, 64rem);
+		--legal-hero-fade: clamp(16rem, 24vw, 24rem);
+		--legal-title-gap: clamp(8rem, 12vw, 12rem);
 		color: var(--gradient-ink);
 		background: var(--gradient-cream);
 	}
@@ -48,9 +53,9 @@ const { title, eyebrow } = Astro.props;
 	.legal-hero::before {
 		bottom: -2px;
 		background:
-			var(--gradient-descend) bottom / 100% var(--legal-fade) no-repeat,
+			var(--gradient-descend) bottom / 100% var(--legal-hero-fade) no-repeat,
 			linear-gradient(var(--gradient-cream), var(--gradient-cream))
-				top / 100% calc(100% - var(--legal-fade) + 2px) no-repeat var(--gradient-green);
+				top / 100% calc(100% - var(--legal-hero-fade) + 2px) no-repeat var(--gradient-green);
 	}
 
 	.legal-body {
@@ -69,7 +74,7 @@ const { title, eyebrow } = Astro.props;
 
 	.legal-hero {
 		padding: calc(clamp(9rem, 13vw, 13rem) + var(--site-header-height, 132px) - 76px)
-			clamp(1.25rem, 5vw, 5rem) var(--legal-fade);
+			clamp(1.25rem, 5vw, 5rem) var(--legal-title-gap);
 		text-align: center;
 	}
 
@@ -95,12 +100,12 @@ const { title, eyebrow } = Astro.props;
 	}
 
 	.legal-copy {
-		width: min(42rem, calc(100% - 3rem));
+		width: 50vw;
 		margin: 0 auto;
 		padding-top: clamp(2rem, 4vw, 3.5rem);
 	}
 
-	.legal-copy h2 {
+	.legal-copy :global(h2) {
 		margin: 0 0 1.5rem;
 		font-family: var(--font-heading);
 		font-size: clamp(1rem, 1.5vw, 1.35rem);
@@ -117,7 +122,39 @@ const { title, eyebrow } = Astro.props;
 		line-height: 1.75;
 	}
 
+	.legal-copy :global(section + section) {
+		margin-top: clamp(3rem, 6vw, 5rem);
+	}
+
+	.legal-copy :global(section) {
+		scroll-margin-top: calc(var(--site-header-height, 132px) + 2rem);
+	}
+
+	.legal-copy :global(p + p),
+	.legal-copy :global(ul),
+	.legal-copy :global(address),
+	.legal-copy :global(aside) {
+		margin: 1.25rem 0;
+	}
+
+	.legal-copy :global(ul),
+	.legal-copy :global(address) {
+		font-size: clamp(1.15rem, 1.25vw, 1.35rem);
+		font-weight: 600;
+		line-height: 1.75;
+		font-style: normal;
+	}
+
+	.legal-copy :global(li + li) { margin-top: 0.6rem; }
+	.legal-copy :global(a) { color: inherit; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
+	.legal-copy :global(a:focus-visible) { outline: 2px solid currentColor; outline-offset: 4px; }
+	.legal-copy :global(aside) { padding: 1.25rem; border: 1px solid currentColor; }
+
 	@media (max-width: 760px) {
+		.legal-copy {
+			width: calc(100% - 3rem);
+		}
+
 		.legal-hero {
 			padding-top: calc(var(--site-header-height, 132px) + 4rem);
 		}

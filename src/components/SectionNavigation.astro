@@ -8,14 +8,15 @@ interface Props {
 	items: SectionItem[];
 	theme?: 'dark' | 'light';
 	visible?: boolean;
+	ariaLabel?: string;
 }
 
-const { items, theme = 'dark', visible = true } = Astro.props;
+const { items, theme = 'dark', visible = true, ariaLabel = 'Abschnitte' } = Astro.props;
 ---
 
 <nav
 	class:list={['section-indicator', `section-indicator--${theme}`, { 'section-indicator--hidden': !visible }]}
-	aria-label="Abschnitte"
+	aria-label={ariaLabel}
 	data-section-indicator
 >
 	{

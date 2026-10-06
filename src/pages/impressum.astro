@@ -1,21 +1,43 @@
 ---
 import LegalArticle from '../components/LegalArticle.astro';
+import SectionNavigation from '../components/SectionNavigation.astro';
 import Layout from '../layouts/Layout.astro';
 import SiteChrome from '../components/SiteChrome.astro';
+import { vehicleLanguage } from '../config/vehicleLocale.js';
+import { legalNotice } from '../content/legal/imprint.js';
+
+const language = vehicleLanguage(Astro.url.pathname, import.meta.env.BASE_URL);
+const content = legalNotice[language];
+const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const privacyPath = `${basePath}${language === 'en' ? 'en/' : ''}datenschutz/`;
 ---
 
-<Layout
-	title="Impressum"
-	description="Das Impressum der neuen Website befindet sich noch in Vorbereitung."
-	noindex
->
+<Layout title={content.title} description={content.description} authoredTitle authoredDescription noindex>
 	<SiteChrome theme="light">
-		<LegalArticle title="Impressum" eyebrow="Entwicklungsvorschau">
-			<p>
-				Die Anbieterkennzeichnung für diese neue Website befindet sich noch in Vorbereitung
-				und wird vor der Produktionsfreigabe vollständig ergänzt. Diese Vorschauseite ist
-				nicht die veröffentlichte Anbieterkennzeichnung des Unternehmens.
-			</p>
+		<LegalArticle title={content.title} eyebrow={content.eyebrow} heading={null} authored>
+			<div slot="navigation" data-authored>
+				<SectionNavigation items={content.sections} theme="light" ariaLabel={content.navigation} />
+			</div>
+			{content.sections.map(section => (
+				<section id={section.id} aria-labelledby={`${section.id}-title`}>
+					<h2 id={`${section.id}-title`}>{section.title}</h2>
+					{section.id === 'impressum-anbieter' && <>
+						<address>
+							DIE OLDTIMERMANUFAKTUR GmbH<br />
+							Kreuzweg 11a<br />
+							36452 Kaltennordheim OT Fischbach<br />
+							{content.country}
+						</address>
+						<p>{content.representative}<br />Mario Schrank</p>
+					</>}
+					{section.id === 'impressum-kontakt' && <p>
+						{content.phone}: <a href="tel:+493696683783">+49 36966 83783</a><br />
+						{content.email}: <a href="mailto:info@oldtimermanufaktur.de">info@oldtimermanufaktur.de</a>
+					</p>}
+					{section.paragraphs?.map(paragraph => <p>{paragraph}</p>)}
+					{section.id === 'impressum-datenschutz' && <p><a href={privacyPath}>{content.privacyLink}</a></p>}
+				</section>
+			))}
 		</LegalArticle>
 	</SiteChrome>
 </Layout>

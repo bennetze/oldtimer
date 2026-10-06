@@ -1,22 +1,50 @@
 ---
 import LegalArticle from '../components/LegalArticle.astro';
+import SectionNavigation from '../components/SectionNavigation.astro';
 import Layout from '../layouts/Layout.astro';
 import SiteChrome from '../components/SiteChrome.astro';
+import { vehicleLanguage } from '../config/vehicleLocale.js';
+import { privacyNotice } from '../content/legal/privacy.js';
+
+const language = vehicleLanguage(Astro.url.pathname, import.meta.env.BASE_URL);
+const content = privacyNotice[language];
+const sections = content.sections;
 ---
 
 <Layout
-	title="Datenschutzerklärung"
-	description="Die Datenschutzerklärung der neuen Website befindet sich noch in Vorbereitung."
+	title={content.title}
+	description={content.description}
+	authoredTitle
+	authoredDescription
 	noindex
 >
 	<SiteChrome theme="light">
-		<LegalArticle title="Datenschutzerklärung" eyebrow="Entwicklungsvorschau">
-			<p>
-				Die Datenschutzerklärung für diese neue Website befindet sich noch in Vorbereitung
-				und wird vor der Produktionsfreigabe anhand des tatsächlichen Hostings und aller
-				Verarbeitungsvorgänge vollständig ergänzt. Diese Vorschauseite ist noch keine
-				Datenschutzerklärung.
-			</p>
+		<LegalArticle title={content.title} eyebrow={content.eyebrow} heading={null} authored>
+			<div slot="navigation" data-authored>
+				<SectionNavigation items={sections} theme="light" ariaLabel={content.navigation} />
+			</div>
+			{sections.map((section, index) => (
+				<section id={section.id} aria-labelledby={`${section.id}-title`}>
+					<h2 id={`${section.id}-title`}>{section.title}</h2>
+					{index === 0 && <p>{content.date}</p>}
+					{section.paragraphs.map(paragraph => <p>{paragraph}</p>)}
+					{index === 0 && <>
+						<p>{content.controllerLabel}</p>
+						<address>
+							DIE OLDTIMERMANUFAKTUR GmbH<br />
+							Kreuzweg 11a<br />
+							36452 Kaltennordheim OT Fischbach<br />
+							{language === 'de' ? 'Deutschland' : 'Germany'}<br />
+							<a href="tel:+493696683783">+49 36966 83783</a><br />
+							<a href="mailto:info@oldtimermanufaktur.de">info@oldtimermanufaktur.de</a>
+						</address>
+						<p>{content.contactLabel}</p>
+					</>}
+					{section.items && <ul>{section.items.map(item => <li>{item}</li>)}</ul>}
+					{section.closing?.map(paragraph => <p>{paragraph}</p>)}
+					{section.links?.map(link => <p><a href={link.href} rel="noreferrer">{link.label}</a></p>)}
+				</section>
+			))}
 		</LegalArticle>
 	</SiteChrome>
 </Layout>
