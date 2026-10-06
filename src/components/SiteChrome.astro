@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import brandMark from '../assets/oldtimer/brand/oldtimermanufaktur-mark.svg?url';
+import { branding, legacyLogo } from '../config/branding';
 import { languagePath } from '../i18n/language.js';
 interface Props {
 	theme?: 'dark' | 'light';
@@ -57,9 +59,15 @@ const sitePath = (path) => {
 			<span class="menu-lines" aria-hidden="true"></span>
 			<span>Menü</span>
 		</a>
-		<a class="brand" href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
-			{currentPath === '/' && <img class="brand-mark" src={brandMark} width="2050" height="485" alt="" aria-hidden="true" draggable="false" />}
-			<span>DIE OLDTIMERMANUFAKTUR</span>
+		<a class:list={['brand', { 'brand--legacy': branding.header === 'legacy' }]} href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
+			{branding.header === 'legacy' ? (
+				<Image class="brand-logo" src={legacyLogo} width={720} widths={[240, 360, 480, 720]} sizes="(max-width: 760px) 240px, 360px" alt="" aria-hidden="true" draggable="false" loading="eager" />
+			) : (
+				<>
+					{currentPath === '/' && <img class="brand-mark" src={brandMark} width="2050" height="485" alt="" aria-hidden="true" draggable="false" />}
+					<span>DIE OLDTIMERMANUFAKTUR</span>
+				</>
+			)}
 		</a>
 		<nav class="language-switch" aria-label="Sprache wählen">
 			<a href={`${languagePath(Astro.url.pathname, 'de', basePath)}?lang=de`} data-language="de" lang="de" hreflang="de" aria-label="Deutsch (DE)">DE</a>
@@ -671,6 +679,23 @@ const sitePath = (path) => {
 		font-size: clamp(0.75rem, 1.1vw, 1.25rem);
 	}
 
+	.brand.brand--legacy {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 0;
+		min-height: 44px;
+	}
+
+	.brand-logo {
+		display: block;
+		width: clamp(180px, 24vw, 360px);
+		max-width: 100%;
+		height: auto;
+		max-height: calc(var(--site-header-height) - env(safe-area-inset-top, 0px) - 16px);
+		object-fit: contain;
+	}
+
 	.footer-brand {
 		font-size: clamp(0.72rem, 0.88vw, 0.88rem);
 	}
@@ -1023,6 +1048,7 @@ const sitePath = (path) => {
 	}
 
 	.menu-toggle:focus-visible,
+	.brand:focus-visible,
 	.menu-close:focus-visible,
 	.footer-brand:focus-visible,
 	.footer-primary a:focus-visible,
@@ -1055,6 +1081,10 @@ const sitePath = (path) => {
 
 		.brand-mark {
 			width: min(128px, 70%);
+		}
+
+		.brand-logo {
+			width: min(100%, 240px);
 		}
 
 		.cursor {

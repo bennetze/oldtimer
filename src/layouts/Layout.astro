@@ -6,6 +6,7 @@ import { createHash } from 'node:crypto';
 import languageScript from '../scripts/language.js?raw';
 import safariScript from '../scripts/safari.js?raw';
 import { pageModified } from '../config/modificationDates.js';
+import { branding, legacyLogo } from '../config/branding';
 import type { ImageMetadata } from 'astro';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
 import { siteStatus } from '../config/site';
@@ -91,7 +92,7 @@ const jsonLdGraph: Record<string, unknown>[] = [
 		name: 'Die Oldtimermanufaktur',
 		legalName: 'DIE OLDTIMERMANUFAKTUR GmbH',
 		url: siteRootUrl.href,
-		logo: new URL(`${basePath}favicon.svg`, siteUrl).href,
+		logo: new URL(branding.header === 'legacy' ? legacyLogo.src : `${basePath}favicon.svg`, siteUrl).href,
 		description:
 			'Die Oldtimermanufaktur restauriert und bewahrt historische Automobile mit traditionellem Handwerk, technischer Sorgfalt und Liebe zum Detail.',
 		foundingDate: '1987',
