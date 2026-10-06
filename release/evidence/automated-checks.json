@@ -1,0 +1,1858 @@
+[
+  {
+    "label": "chrome-1440x900-de-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 1302,
+      "client": 1302
+    }
+  },
+  {
+    "label": "chrome-1440x900-de-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-1440x900-de-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 1302,
+      "client": 1302
+    }
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-1440x900-de-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 1302,
+      "client": 1302
+    }
+  },
+  {
+    "label": "chrome-1440x900-en-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-1440x900-en-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 1302,
+      "client": 1302
+    }
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-1440x900-en-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 350,
+      "client": 350
+    }
+  },
+  {
+    "label": "chrome-390x844-de-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-390x844-de-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 350,
+      "client": 350
+    }
+  },
+  {
+    "label": "chrome-390x844-de-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-de-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-390x844-de-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 350,
+      "client": 350
+    }
+  },
+  {
+    "label": "chrome-390x844-en-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-390x844-en-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 350,
+      "client": 350
+    }
+  },
+  {
+    "label": "chrome-390x844-en-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-390x844-en-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-390x844-en-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 280,
+      "client": 280
+    }
+  },
+  {
+    "label": "chrome-320x568-de-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-320x568-de-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 280,
+      "client": 280
+    }
+  },
+  {
+    "label": "chrome-320x568-de-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-de-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-320x568-de-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 280,
+      "client": 280
+    }
+  },
+  {
+    "label": "chrome-320x568-en-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-320x568-en-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 280,
+      "client": 280
+    }
+  },
+  {
+    "label": "chrome-320x568-en-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-320x568-en-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-320x568-en-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 763,
+      "client": 763
+    }
+  },
+  {
+    "label": "chrome-844x390-de-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-844x390-de-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 763,
+      "client": 763
+    }
+  },
+  {
+    "label": "chrome-844x390-de-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-de-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-844x390-de-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 763,
+      "client": 763
+    }
+  },
+  {
+    "label": "chrome-844x390-en-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-844x390-en-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 763,
+      "client": 763
+    }
+  },
+  {
+    "label": "chrome-844x390-en-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "chrome-844x390-en-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "chrome-844x390-en-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 1302,
+      "client": 1302
+    }
+  },
+  {
+    "label": "webkit-1440x900-de-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-1440x900-de-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 1302,
+      "client": 1302
+    }
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-1440x900-de-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 1302,
+      "client": 1302
+    }
+  },
+  {
+    "label": "webkit-1440x900-en-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-1440x900-en-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 1302,
+      "client": 1302
+    }
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-1440x900-en-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 350,
+      "client": 350
+    }
+  },
+  {
+    "label": "webkit-390x844-de-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-390x844-de-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 350,
+      "client": 350
+    }
+  },
+  {
+    "label": "webkit-390x844-de-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-de-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-390x844-de-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 350,
+      "client": 350
+    }
+  },
+  {
+    "label": "webkit-390x844-en-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-390x844-en-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 350,
+      "client": 350
+    }
+  },
+  {
+    "label": "webkit-390x844-en-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-390x844-en-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-390x844-en-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 280,
+      "client": 280
+    }
+  },
+  {
+    "label": "webkit-320x568-de-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-320x568-de-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 280,
+      "client": 280
+    }
+  },
+  {
+    "label": "webkit-320x568-de-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-de-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-320x568-de-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 280,
+      "client": 280
+    }
+  },
+  {
+    "label": "webkit-320x568-en-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-320x568-en-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 280,
+      "client": 280
+    }
+  },
+  {
+    "label": "webkit-320x568-en-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-320x568-en-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-320x568-en-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 763,
+      "client": 763
+    }
+  },
+  {
+    "label": "webkit-844x390-de-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-844x390-de-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 763,
+      "client": 763
+    }
+  },
+  {
+    "label": "webkit-844x390-de-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-de-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-844x390-de-no-preference no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 763,
+      "client": 763
+    }
+  },
+  {
+    "label": "webkit-844x390-en-reduce menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-reduce no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-844x390-en-reduce no CSP violations",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference heading single line",
+    "pass": true,
+    "detail": {
+      "lines": 1,
+      "width": 763,
+      "client": 763
+    }
+  },
+  {
+    "label": "webkit-844x390-en-no-preference menu solid background",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference last control visible",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference thumbnail/link descriptions",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference lightbox alternative",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference lightbox focus restored",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference footer legal destination",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference missing route 404",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference 404 noindex",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference 404 home recovery",
+    "pass": true
+  },
+  {
+    "label": "webkit-844x390-en-no-preference no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "label": "webkit-844x390-en-no-preference no CSP violations",
+    "pass": true
+  }
+]

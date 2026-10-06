@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine besondere automobile Kostbarkeit, zudem noch aus höchst prominentem Erstbesitz.\nDer BMW Typ 502 ist gemeinhin ja nahezu jedem Oldtimere…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/181-bmw-502-baur-coupe-baujahr-1954",
 	"order": 4,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 502 \"Baur\"-Coupe, Baujahr 1954",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 502 \"Baur\"-Coupe, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW 502 \"Baur\"-Coupe, year 1954 – photograph 1 in the vehicle record"
+					"alt": "BMW 502 \"Baur\"-Coupe, Baujahr 1954 – Blaues Coupé seitlich im Hof.",
+					"altEn": "BMW 502 \"Baur\"-Coupe, year 1954 – Blue coupé in side profile in courtyard."
 				}
 			]
 		},

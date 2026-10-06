@@ -5,7 +5,7 @@
 	"description": "Mercedes - Benz 190 SL des Baujahres 1956 - und damit ein sehr seltenes und begehrtes Modell des ersten Baujahres überhaupt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/101-mercedes-benz-190sl-baujahr-1956",
 	"order": 42,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1956",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 190SL, Baujahr 1956",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 1 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Silbernes Mercedes-Coupé schräg von vorn im Hof.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Silver Mercedes coupé from the front corner in the courtyard."
 				}
 			]
 		},
@@ -32,18 +32,18 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 2 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Rostlöcher im unteren Rand eines hellen Blechs.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Rust holes along the lower edge of a light panel."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 3 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Blank geschliffene Naht am runden Scheinwerferausschnitt.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Sanded seam around a round headlight opening."
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 4 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Freigeschliffener Blechrand über dem Radhaus.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Sanded panel edge above the wheel arch."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 5 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Helles Heckblech mit leeren Leuchtenöffnungen.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Light rear panel with empty light apertures."
 				}
 			]
 		},
@@ -72,23 +72,23 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 6 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Blanker Blechrand an der hinteren Karosserieecke.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Bare-metal edge at the rear body corner."
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 7 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Leere Karosserie auf einem Gestell in der Werkstatt.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Stripped body on a stand in the workshop."
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 8 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Nahaufnahme stark durchrosteter Bodenbleche.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Close view of heavily perforated rusty floor panels."
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 9 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Rostige Unterseite der Karosserie auf der Hebebühne.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Rusty body underside on the lift."
 				}
 			]
 		},
@@ -102,18 +102,18 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 10 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Offener Bodenbereich mit roten Trägern.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Open floor section with red structural members."
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 11 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Unterboden mit roten Trägern und dunklen Bodenblechen.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Underside with red members and dark floor panels."
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 12 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Blank eingesetzte Bodenbleche im Innenraum.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Bare-metal floor panels fitted in the cabin."
 				}
 			]
 		},
@@ -122,8 +122,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 13 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Unterboden mit blanken Blechen und sichtbaren Nähten.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Underside with bare-metal panels and visible seams."
 				}
 			]
 		},
@@ -132,8 +132,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 14 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Mercedes-Kühlergrill und Stoßstange aus niedriger Perspektive.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Mercedes grille and bumper from a low angle."
 				}
 			]
 		},
@@ -142,8 +142,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 15 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Karosserie seitlich auf einem Gestell vor der Werkstatt.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Body in side profile on a stand outside the workshop."
 				}
 			]
 		},
@@ -152,8 +152,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 16 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Karosseriefront mit Kühlergrill auf einem Gestell.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Front bodywork with grille on a stand."
 				}
 			]
 		},
@@ -167,8 +167,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 17 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Offener Motor mit Kette und Zahnrad.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Open engine with chain and sprocket."
 				}
 			]
 		},
@@ -177,8 +177,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 18 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Ausgebauter Zylinderkopf mit sichtbaren Ventilen.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Removed cylinder head with valves visible."
 				}
 			]
 		},
@@ -187,8 +187,8 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 19 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Motorblock von oben mit vier sichtbaren Kolben.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Engine block from above with four pistons visible."
 				}
 			]
 		},
@@ -202,8 +202,8 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 20 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Ausgebaute Hinterachse mit Rädern in der Werkstatt.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Removed rear axle with wheels in the workshop."
 				}
 			]
 		},
@@ -212,8 +212,8 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 21 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Ausgebaute Vorderachse mit Rädern vor der Karosserie.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Removed front axle with wheels ahead of the body."
 				}
 			]
 		},
@@ -222,8 +222,8 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 22 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 22 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Radnabe und dunkle Bremsankerplatte.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Wheel hub and dark brake backing plate."
 				}
 			]
 		},
@@ -232,13 +232,13 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 23 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 23 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Hell beschichtete abgeklebte Karosserie in der Kabine.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Light-coated masked body in the booth."
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 24 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 24 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Helle Karosserie mit offenem Kofferraum in der Werkstatt.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Light body with open boot in the workshop."
 				}
 			]
 		},
@@ -252,8 +252,8 @@
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 25 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 25 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Dunkler Motorraum mit Leitungen und eingebauten Bauteilen.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Dark engine bay with pipework and installed components."
 				}
 			]
 		},
@@ -262,23 +262,23 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 26 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 26 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Motor mit Metallabdeckung auf der Werkbank.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Engine with metal cover on the workbench."
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 27 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 27 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Armaturenbrettblech mit leeren Instrumentenöffnungen.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Dashboard panel with empty instrument openings."
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 28 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 28 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Ansaugrohr und zwei Vergaser auf Stoff ausgelegt.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Intake pipe and two carburettors laid out on fabric."
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 29 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 29 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Weißes Cabriolet mit offenem Motorraum in der Werkstatt.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – White convertible with open engine bay in the workshop."
 				}
 			]
 		},
@@ -287,8 +287,8 @@
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 30 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 30 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Motor mit Ansaugrohr und Metallabdeckung.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Engine with intake pipe and metal cover."
 				}
 			]
 		},
@@ -302,18 +302,18 @@
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 31 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 31 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Zwei rote Sitze im offenen Innenraum.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Two red seats in the open cabin."
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 32 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 32 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Helles Armaturenbrett mit runden Instrumenten und roten Polstern.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Light dashboard with round instruments and red padding."
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Aufnahme 33 der Fahrzeugdokumentation",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – photograph 33 in the vehicle record"
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Rote Sitze und Verdeckabdeckung von schräg hinten.",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Red seats and hood cover from the rear corner."
 				}
 			]
 		},

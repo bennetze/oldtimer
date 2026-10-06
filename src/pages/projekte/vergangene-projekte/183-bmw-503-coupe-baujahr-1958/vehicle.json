@@ -5,7 +5,7 @@
 	"description": "Ein Fahrzeug der Superlative, von dem in dieser Ausführung bis 1960 nur 134 Exemplare von Hand und in Aluminium gefertigt wurden.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/183-bmw-503-coupe-baujahr-1958",
 	"order": 17,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Coupe, Baujahr 1958",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 1 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Silbernes Coupé seitlich vor der Werkstatt.",
+					"altEn": "BMW 503 Coupe, year 1958 – Silver coupé in side profile outside workshop."
 				}
 			]
 		},
@@ -37,18 +37,18 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 2 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Rostiger Blechwinkel mit rechteckiger Öffnung.",
+					"altEn": "BMW 503 Coupe, year 1958 – Rusty panel corner with rectangular opening."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 3 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Rostige Fläche am inneren Karosserieblech.",
+					"altEn": "BMW 503 Coupe, year 1958 – Rusty area on inner body panel."
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 4 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Rostige Heckstruktur unter einer rechteckigen Öffnung.",
+					"altEn": "BMW 503 Coupe, year 1958 – Rusty rear structure below a rectangular opening."
 				}
 			]
 		},
@@ -57,18 +57,18 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 5 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Rostige senkrechte Naht zwischen blanken Blechen.",
+					"altEn": "BMW 503 Coupe, year 1958 – Rusty vertical seam between bare-metal panels."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 6 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Blanker Schweller mit gelbem Abdeckband.",
+					"altEn": "BMW 503 Coupe, year 1958 – Bare-metal sill with yellow masking tape."
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 7 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Offener Kofferraum mit herausgetrenntem Heckblech.",
+					"altEn": "BMW 503 Coupe, year 1958 – Open boot with rear panel cut out."
 				}
 			]
 		},
@@ -77,13 +77,13 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 8 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Offenes Heckblech mit blanken Verstrebungen.",
+					"altEn": "BMW 503 Coupe, year 1958 – Open rear panel with bare-metal braces."
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 9 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Blankes Heckblech unter offenem Kofferraum.",
+					"altEn": "BMW 503 Coupe, year 1958 – Bare rear panel beneath open boot."
 				}
 			]
 		},
@@ -97,13 +97,13 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 10 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Rot beschichteter Heckträger unter offenem Kofferraum.",
+					"altEn": "BMW 503 Coupe, year 1958 – Red-coated rear member beneath open boot."
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 11 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Kofferraumkante mit rot beschichteter Blechnaht.",
+					"altEn": "BMW 503 Coupe, year 1958 – Boot edge with red-coated panel seam."
 				}
 			]
 		},
@@ -117,18 +117,18 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 12 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Blankes Heckblech neben leerem Radhaus.",
+					"altEn": "BMW 503 Coupe, year 1958 – Bare-metal rear panel beside empty wheel arch."
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 13 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Geschliffener Kotflügel mit rechteckiger Öffnung über dem Rad.",
+					"altEn": "BMW 503 Coupe, year 1958 – Sanded wing with rectangular opening above wheel."
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 14 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Blankes Heckblech mit abgeklebt montiertem Rad.",
+					"altEn": "BMW 503 Coupe, year 1958 – Bare rear panel with fitted wheel masked."
 				}
 			]
 		},
@@ -137,18 +137,18 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 15 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
+					"altEn": "BMW 503 Coupe, year 1958 – Masked body from the rear corner in the spray booth."
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 16 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Abgeklebte Karosserie schräg von vorn in der Lackierkabine.",
+					"altEn": "BMW 503 Coupe, year 1958 – Masked body from the front corner in the spray booth."
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 17 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Silberne Fahrzeugfront mit leeren Scheinwerferausschnitten.",
+					"altEn": "BMW 503 Coupe, year 1958 – Silver front bodywork with empty headlight apertures."
 				}
 			]
 		},
@@ -162,18 +162,18 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 18 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Silbernes Coupé gerade von hinten in der Werkstatt.",
+					"altEn": "BMW 503 Coupe, year 1958 – Straight rear view of silver coupé in workshop."
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 19 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Ausgebaute rote Innenverkleidungen und Sitzpolster.",
+					"altEn": "BMW 503 Coupe, year 1958 – Removed red interior trim and seat cushions."
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 20 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Rote Türverkleidungen mit Chrombeschlägen.",
+					"altEn": "BMW 503 Coupe, year 1958 – Red door panels with chrome fittings."
 				}
 			]
 		},
@@ -187,13 +187,13 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 21 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Dreiviertelansicht von vorn in der Werkstatt.",
+					"altEn": "BMW 503 Coupe, year 1958 – Front three-quarter view inside the workshop."
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 22 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 22 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Geöffnete Dachklappe über rotem Innenraum.",
+					"altEn": "BMW 503 Coupe, year 1958 – Open roof flap above red cabin."
 				}
 			]
 		},
@@ -207,18 +207,18 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 23 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 23 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "BMW 503 Coupe, year 1958 – Front three-quarter view outdoors."
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 24 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 24 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "BMW 503 Coupe, year 1958 – Rear three-quarter view outdoors."
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 25 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 25 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "BMW 503 Coupe, year 1958 – Open engine bay showing the engine and pipework."
 				}
 			]
 		},
@@ -232,18 +232,18 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 26 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 26 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Rotes Armaturenbrett mit weißem Lenkrad.",
+					"altEn": "BMW 503 Coupe, year 1958 – Red dashboard with white steering wheel."
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 27 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 27 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Rote Innenverkleidungen und Sitz bei offener Tür.",
+					"altEn": "BMW 503 Coupe, year 1958 – Red interior trim and seat with door open."
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 28 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 28 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "BMW 503 Coupe, year 1958 – Front three-quarter view outdoors."
 				}
 			]
 		},
@@ -252,18 +252,18 @@
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 29 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 29 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Offene Türen und Kofferraum des silbernen Coupés.",
+					"altEn": "BMW 503 Coupe, year 1958 – Open doors and boot on silver coupé."
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 30 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 30 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Seitenansicht im Freien.",
+					"altEn": "BMW 503 Coupe, year 1958 – Side profile outdoors."
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 31 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 31 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Seitenansicht im Freien.",
+					"altEn": "BMW 503 Coupe, year 1958 – Side profile outdoors."
 				}
 			]
 		},
@@ -272,8 +272,8 @@
 			"images": [
 				{
 					"src": "./image-032.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1958 – Aufnahme 32 der Fahrzeugdokumentation",
-					"altEn": "BMW 503 Coupe, year 1958 – photograph 32 in the vehicle record"
+					"alt": "BMW 503 Coupe, Baujahr 1958 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "BMW 503 Coupe, year 1958 – Rear three-quarter view outdoors."
 				}
 			]
 		}

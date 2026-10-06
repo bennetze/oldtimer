@@ -689,6 +689,7 @@ const sitePath = (path) => {
 
 	.brand-logo {
 		display: block;
+		filter: saturate(75%);
 		width: clamp(180px, 24vw, 360px);
 		max-width: 100%;
 		height: auto;
@@ -795,6 +796,7 @@ const sitePath = (path) => {
 		overscroll-behavior: contain;
 		z-index: 90;
 		background: rgba(16, 16, 16, 0.38);
+		-webkit-backdrop-filter: blur(16px) saturate(106%);
 		backdrop-filter: blur(16px) saturate(106%);
 		opacity: 0;
 		visibility: hidden;
@@ -824,7 +826,9 @@ const sitePath = (path) => {
 		width: min(58vw, 820px);
 		min-height: 100vh;
 		padding: clamp(1.25rem, 3.4vw, 4rem);
-		background: rgba(16, 16, 16, 0.58);
+		/* Keep navigation readable even when the browser cannot composite blur. */
+		background: rgba(16, 16, 16, 0.96);
+		-webkit-backdrop-filter: blur(28px) saturate(106%);
 		backdrop-filter: blur(28px) saturate(106%);
 		color: var(--color-main);
 		transform: translateX(-100%);
@@ -832,7 +836,7 @@ const sitePath = (path) => {
 	}
 
 	.site-shell--home .menu-panel {
-		background: rgba(16, 16, 16, 0.40);
+		background: rgba(16, 16, 16, 0.96);
 		-webkit-backdrop-filter: blur(28px) saturate(106%);
 	}
 

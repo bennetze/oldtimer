@@ -5,7 +5,7 @@
 	"description": "BMW 326 Limousine mit “Ambi-Budd”-Aufbau, gebaut 1938 bei den Bayerischen-Motoren-Werken in Eisenach/Thüringen, wurde der Wagen bei uns technischerseits…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/54-bmw-326-limousine-baujahr-1938",
 	"order": 124,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 Limousine, Baujahr 1938",
@@ -22,8 +22,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 326 Limousine, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW 326 Saloon, year 1938 – photograph 1 in the vehicle record"
+					"alt": "BMW 326 Limousine, Baujahr 1938 – Auspuffrohre und Schalldämpfer unter dem Fahrzeug.",
+					"altEn": "BMW 326 Saloon, year 1938 – Exhaust pipes and silencers beneath the vehicle."
 				}
 			]
 		},
@@ -32,8 +32,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 326 Limousine, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "BMW 326 Saloon, year 1938 – photograph 2 in the vehicle record"
+					"alt": "BMW 326 Limousine, Baujahr 1938 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "BMW 326 Saloon, year 1938 – Open engine bay showing the engine and pipework."
 				}
 			]
 		},
@@ -42,8 +42,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 326 Limousine, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "BMW 326 Saloon, year 1938 – photograph 3 in the vehicle record"
+					"alt": "BMW 326 Limousine, Baujahr 1938 – Nahaufnahme der Lenkbaugruppe im Fahrgestell.",
+					"altEn": "BMW 326 Saloon, year 1938 – Close view of steering assembly inside the chassis."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 326 Limousine, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "BMW 326 Saloon, year 1938 – photograph 4 in the vehicle record"
+					"alt": "BMW 326 Limousine, Baujahr 1938 – Geöffnetes Differential mit sichtbaren Zahnrädern.",
+					"altEn": "BMW 326 Saloon, year 1938 – Open differential with gears visible."
 				}
 			]
 		},
@@ -62,8 +62,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 326 Limousine, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "BMW 326 Saloon, year 1938 – photograph 5 in the vehicle record"
+					"alt": "BMW 326 Limousine, Baujahr 1938 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
+					"altEn": "BMW 326 Saloon, year 1938 – Close view of grille and front bodywork."
 				}
 			]
 		},
@@ -72,8 +72,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 326 Limousine, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "BMW 326 Saloon, year 1938 – photograph 6 in the vehicle record"
+					"alt": "BMW 326 Limousine, Baujahr 1938 – Hände mit Messgerät und Leitungen auf der Werkbank.",
+					"altEn": "BMW 326 Saloon, year 1938 – Hands with measuring device and wires on the workbench."
 				}
 			]
 		},
@@ -82,8 +82,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 326 Limousine, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "BMW 326 Saloon, year 1938 – photograph 7 in the vehicle record"
+					"alt": "BMW 326 Limousine, Baujahr 1938 – Ausgebauter Kühler mit Lamellen und Anschlüssen.",
+					"altEn": "BMW 326 Saloon, year 1938 – Removed radiator with fins and connectors."
 				}
 			]
 		},

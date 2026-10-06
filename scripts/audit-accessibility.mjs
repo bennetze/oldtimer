@@ -37,7 +37,10 @@ for (const file of files) {
 	$('img').each((_, node) => {
 		images++;
 		if ($(node).attr('alt') === undefined) fail('image missing alternative attribute');
-		if (/Aufnahme \d+ der Fahrzeugdokumentation|photograph \d+ in the vehicle record/.test($(node).attr('alt') || '')) genericAlternatives++;
+		if (/Aufnahme \d+ der Fahrzeugdokumentation|photograph \d+ in the vehicle record/i.test($(node).attr('alt') || '')) {
+			genericAlternatives++;
+			fail('generic numbered vehicle photograph alternative; describe the visible photograph');
+		}
 	});
 	$('button, a[href], input:not([type="hidden"])').each((_, node) => {
 		const el = $(node);

@@ -5,7 +5,7 @@
 	"description": "In diesem Zusammenhang wurde auch die übrige Motortechnik, nebst sämtlicher Anbauteile regeneriert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/91-mercedes-280-sl",
 	"order": 77,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1968",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 280 SL, Baujahr 1968",
@@ -17,13 +17,13 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 1 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Dreiviertelansicht von vorn in der Werkstatt.",
+					"altEn": "Mercedes 280 SL, year 1968 – Front three-quarter view inside the workshop."
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 2 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Dreiviertelansicht von hinten in der Werkstatt.",
+					"altEn": "Mercedes 280 SL, year 1968 – Rear three-quarter view inside the workshop."
 				}
 			]
 		},
@@ -37,8 +37,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 3 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "Mercedes 280 SL, year 1968 – Open engine bay showing the engine and pipework."
 				}
 			]
 		},
@@ -47,8 +47,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 4 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Motorblock mit Öffnungen an einer Hebeschlinge.",
+					"altEn": "Mercedes 280 SL, year 1968 – Engine block with apertures held by a lifting sling."
 				}
 			]
 		},
@@ -62,8 +62,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 5 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Zylinderkopf mit Ventilfedern neben ausgelegten Ventilen.",
+					"altEn": "Mercedes 280 SL, year 1968 – Cylinder head with valve springs beside laid-out valves."
 				}
 			]
 		},
@@ -72,8 +72,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 6 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Ausgebauter Zylinderkopf mit sichtbaren Ventilen.",
+					"altEn": "Mercedes 280 SL, year 1968 – Removed cylinder head with valves visible."
 				}
 			]
 		},
@@ -82,8 +82,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 7 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Motorblock mit geöffneten Zylindern.",
+					"altEn": "Mercedes 280 SL, year 1968 – Engine block with cylinders exposed."
 				}
 			]
 		},
@@ -92,8 +92,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 8 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Ausgebauter Motor mit sichtbaren Anbauteilen.",
+					"altEn": "Mercedes 280 SL, year 1968 – Removed engine with attached components visible."
 				}
 			]
 		},
@@ -102,8 +102,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 9 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "Mercedes 280 SL, year 1968 – Open engine bay showing the engine and pipework."
 				}
 			]
 		},
@@ -112,8 +112,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 10 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "Mercedes 280 SL, year 1968 – Open engine bay showing the engine and pipework."
 				}
 			]
 		},
@@ -127,8 +127,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Mercedes 280 SL, Baujahr 1968 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "Mercedes 280 SL, year 1968 – photograph 11 in the vehicle record"
+					"alt": "Mercedes 280 SL, Baujahr 1968 – Dreiviertelansicht von vorn in der Werkstatt.",
+					"altEn": "Mercedes 280 SL, year 1968 – Front three-quarter view inside the workshop."
 				}
 			]
 		}

@@ -5,7 +5,7 @@
 	"description": "Diese DKW SB200 wurde bei uns technischerseits restauriert.\n\nDazu wurde unter anderem die damals übliche Kork-Lamellen-Kupplung originalgetreu instand g…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/50-dkw-sb200",
 	"order": 107,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "DKW SB200",
 	"leadImage": "./image-001.jpg",
@@ -21,8 +21,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "DKW SB200 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "DKW SB200 – photograph 1 in the vehicle record"
+					"alt": "DKW SB200 – Zwei ausgebaute zylindrische Metallgehäuse mit Anschlüssen.",
+					"altEn": "DKW SB200 – Two removed cylindrical metal housings with connectors."
 				}
 			]
 		},
@@ -31,8 +31,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "DKW SB200 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "DKW SB200 – photograph 2 in the vehicle record"
+					"alt": "DKW SB200 – Runde Kupplungsscheibe mit Korkstücken und weitere Scheibe.",
+					"altEn": "DKW SB200 – Round clutch plate with cork pieces and another disc."
 				}
 			]
 		}

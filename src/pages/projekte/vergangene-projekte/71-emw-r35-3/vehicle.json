@@ -5,7 +5,7 @@
 	"description": "Auch dieses Motorrad des Typ`s EMW R35 wurde bei uns einer kompletten Restauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/71-emw-r35-3",
 	"order": 114,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35/3",
 	"leadImage": "./image-001.jpg",
@@ -21,8 +21,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW R35/3 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 1 in the vehicle record"
+					"alt": "EMW R35/3 – Motorrad schräg von hinten im Hof.",
+					"altEn": "EMW R35/3 – Motorcycle from the rear corner in the courtyard."
 				}
 			]
 		},
@@ -31,8 +31,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW R35/3 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 2 in the vehicle record"
+					"alt": "EMW R35/3 – Motorrad seitlich im Hof.",
+					"altEn": "EMW R35/3 – Motorcycle in side profile in the courtyard."
 				}
 			]
 		},
@@ -41,8 +41,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW R35/3 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 3 in the vehicle record"
+					"alt": "EMW R35/3 – Motorradmotor und Rahmen unter dem Sattel.",
+					"altEn": "EMW R35/3 – Motorcycle engine and frame beneath the saddle."
 				}
 			]
 		},
@@ -51,8 +51,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW R35/3 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 4 in the vehicle record"
+					"alt": "EMW R35/3 – Zwei Motorräder und Seitenwagen im Hof.",
+					"altEn": "EMW R35/3 – Two motorcycles and sidecar in the courtyard."
 				}
 			]
 		},
@@ -61,8 +61,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW R35/3 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 5 in the vehicle record"
+					"alt": "EMW R35/3 – Zwei Motorräder schräg von vorn im Hof.",
+					"altEn": "EMW R35/3 – Two motorcycles from the front corner in the courtyard."
 				}
 			]
 		},
@@ -76,8 +76,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW R35/3 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 6 in the vehicle record"
+					"alt": "EMW R35/3 – Motorradmotorgehäuse mit Wellen auf der Werkbank.",
+					"altEn": "EMW R35/3 – Motorcycle engine casing with shafts on the workbench."
 				}
 			]
 		},
@@ -91,8 +91,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW R35/3 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 7 in the vehicle record"
+					"alt": "EMW R35/3 – Motorrad mit rostigem Rahmen und Rädern in der Werkstatt.",
+					"altEn": "EMW R35/3 – Motorcycle with rusty frame and wheels inside the workshop."
 				}
 			]
 		},
@@ -101,8 +101,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW R35/3 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 8 in the vehicle record"
+					"alt": "EMW R35/3 – Motorradmotorgehäuse mit Wellen auf der Werkbank.",
+					"altEn": "EMW R35/3 – Motorcycle engine casing with shafts on the workbench."
 				}
 			]
 		},
@@ -111,8 +111,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW R35/3 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 9 in the vehicle record"
+					"alt": "EMW R35/3 – Messuhr an einer Welle auf der Werkbank.",
+					"altEn": "EMW R35/3 – Dial gauge against a shaft on the workbench."
 				}
 			]
 		},
@@ -126,8 +126,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW R35/3 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 10 in the vehicle record"
+					"alt": "EMW R35/3 – Motorradmotor unter schwarzem Tank mit weißen Linien.",
+					"altEn": "EMW R35/3 – Motorcycle engine beneath black tank with white pinstripes."
 				}
 			]
 		},
@@ -136,8 +136,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW R35/3 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3 – photograph 11 in the vehicle record"
+					"alt": "EMW R35/3 – Offenes Motorradmotorengehäuse mit Kupplung.",
+					"altEn": "EMW R35/3 – Open motorcycle engine casing with clutch."
 				}
 			]
 		}

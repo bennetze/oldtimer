@@ -5,7 +5,7 @@
 	"description": "In diesem Zusammenhang bekam der Wagen auch komplett neue Zentralverschlussfelgen mit dem entsprechenden Umbau der Achsen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/75-bmw-327-28-rot-schwarz",
 	"order": 94,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 1 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Seitenansicht im Freien.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Side profile outdoors."
 				}
 			]
 		},
@@ -32,13 +32,13 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 2 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Vier ausgebaute Stahlräder mit Reifenventilen.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Four removed steel wheels with tyre valves."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 3 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Nahaufnahme einer metallblanken Radnabe.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Close view of a bare-metal wheel hub."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 4 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Rear three-quarter view outdoors."
 				}
 			]
 		},
@@ -62,8 +62,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 5 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Front three-quarter view outdoors."
 				}
 			]
 		},

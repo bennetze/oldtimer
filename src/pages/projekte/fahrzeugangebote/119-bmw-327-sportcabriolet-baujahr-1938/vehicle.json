@@ -5,7 +5,7 @@
 	"description": "Der Wagen wurde durch unsere OLDTIMERMANUFAKTUR vor wenigen Jahren komplett restauriert und befindet sich in einem außerordentlich originalen und perfek…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/119-bmw-327-sportcabriolet-baujahr-1938",
 	"order": 7,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sportcabriolet, Baujahr 1938",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 1 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Blau-helles Cabriolet vor einem Steingebäude.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Blue-and-light-coloured convertible outside a stone building."
 				}
 			]
 		},
@@ -32,13 +32,13 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 2 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Blau-helles Cabriolet schräg von vorn im Hof.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Blue-and-light-coloured convertible viewed from the front corner in the courtyard."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 3 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Motorraum mit dunklem Motor und Leitungen.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Engine bay with dark engine and pipework."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 4 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Blau-helles Cabriolet schräg von hinten.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Blue-and-light-coloured convertible viewed from the rear corner."
 				}
 			]
 		},
@@ -67,13 +67,13 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 5 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Blau-helles Cabriolet von schräg oben.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Blue-and-light-coloured convertible viewed from above at an angle."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 6 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Dunkle Sitzbank mit hellen Kedern.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Dark bench seat with light piping."
 				}
 			]
 		},
@@ -82,13 +82,13 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 7 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Dunkler Innenraum mit weißem Lenkrad.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Dark cabin with white steering wheel."
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 8 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Nahaufnahme des weißen Lenkrads und der Instrumente.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Close view of the white steering wheel and instruments."
 				}
 			]
 		},
@@ -102,8 +102,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "BMW 327 Sport Cabriolet, year 1938 – photograph 9 in the vehicle record"
+					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Offene Tür und dunkler Innenraum.",
+					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Open door and dark cabin."
 				}
 			]
 		},

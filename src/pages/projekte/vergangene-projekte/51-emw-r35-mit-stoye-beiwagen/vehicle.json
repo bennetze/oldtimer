@@ -5,7 +5,7 @@
 	"description": "Dieses EMW R35/3 Gespann, Baujahr 1955 ist eine der letztgebauten Maschinen überhaupt, bevor auch dieses interessante Stück Zeitgeschichte der Eisenache…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/51-emw-r35-mit-stoye-beiwagen",
 	"order": 92,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35 mit “Stoye”-Beiwagen",
 	"leadImage": "./image-001.jpg",
@@ -26,8 +26,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 1 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Ausgebauter Seitenwagen mit Rad auf einer Wiese.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Removed sidecar with wheel on a meadow."
 				}
 			]
 		},
@@ -36,8 +36,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 2 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Motorrad seitlich in der Werkstatt.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Motorcycle in side profile inside the workshop."
 				}
 			]
 		},
@@ -51,8 +51,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 3 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Ausgebauter blanker Motorradrahmen.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Removed bare-metal motorcycle frame."
 				}
 			]
 		},
@@ -61,8 +61,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 4 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Rundes Metallgehäuse mit zwei Öffnungen.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Round metal housing with two apertures."
 				}
 			]
 		},
@@ -71,8 +71,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 5 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Ausgebauter schwarzer Motorradrahmen mit weißen Linien.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Removed black motorcycle frame with white pinstripes."
 				}
 			]
 		},
@@ -81,8 +81,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 6 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Ausgebauter Motorradmotor mit Zylinder und Kolben.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Removed motorcycle engine with cylinder and piston."
 				}
 			]
 		},
@@ -96,8 +96,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 7 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Motorrad seitlich auf einem Werkstattgestell.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Motorcycle in side profile on a workshop stand."
 				}
 			]
 		},
@@ -106,8 +106,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 8 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Seitenwagenblech mit gemusterter Oberfläche und blauen Rändern.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Sidecar panel with patterned surface and blue edges."
 				}
 			]
 		},
@@ -116,8 +116,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 9 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Seitenwagenkarosserie auf einem Gestell.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Sidecar body on a stand."
 				}
 			]
 		},
@@ -136,8 +136,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 10 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Motorrad und Seitenwagen schräg von vorn im Hof.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Motorcycle and sidecar from the front corner in the courtyard."
 				}
 			]
 		},
@@ -146,8 +146,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 11 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Motorrad und Seitenwagen seitlich vor einer Holztür.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Motorcycle and sidecar in side profile in front of a wooden door."
 				}
 			]
 		},
@@ -156,8 +156,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 12 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Motorrad und Seitenwagen schräg von vorn aus erhöhter Perspektive.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Elevated front-corner view of motorcycle and sidecar."
 				}
 			]
 		},
@@ -166,8 +166,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 13 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Motorrad und Seitenwagen schräg von hinten aus erhöhter Perspektive.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Elevated rear-corner view of motorcycle and sidecar."
 				}
 			]
 		},
@@ -176,8 +176,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 14 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Motorrad und Seitenwagen neben einem weiteren Motorrad.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Motorcycle and sidecar beside another motorcycle."
 				}
 			]
 		},
@@ -191,8 +191,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "EMW R35 mit “Stoye”-Beiwagen – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – photograph 15 in the vehicle record"
+					"alt": "EMW R35 mit “Stoye”-Beiwagen – Motorrad und Seitenwagen von oben neben einem weiteren Motorrad.",
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Motorcycle and sidecar from above beside another motorcycle."
 				}
 			]
 		},

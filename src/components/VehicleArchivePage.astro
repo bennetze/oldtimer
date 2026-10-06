@@ -86,7 +86,7 @@ const itemList = {
 		<main class="vehicle-archive textured-background gradient-palette" id="main-content" tabindex="-1">
 			<BackgroundTexture />
 			<header class="archive-intro">
-				<h1>{categoryData.heading}</h1>
+				<h1 data-archive-heading={category}>{categoryData.heading}</h1>
 			</header>
 
 			<nav class="category-switcher" aria-label="Projektbereiche">
@@ -682,6 +682,11 @@ const itemList = {
 			line-height: 1;
 			overflow-wrap: anywhere;
 			hyphens: none;
+		}
+
+		.archive-intro h1[data-archive-heading='fahrzeugangebote']:lang(de) {
+			font-size: clamp(1.35rem, 6.8vw, 1.75rem);
+			overflow-wrap: normal;
 		}
 
 		.archive-search {

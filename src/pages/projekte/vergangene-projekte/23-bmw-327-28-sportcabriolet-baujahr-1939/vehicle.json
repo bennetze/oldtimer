@@ -5,7 +5,7 @@
 	"description": "Auch dieses BMW 327/28 Sportcabriolet wurde bei uns einer umfangreichen Vollrestauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/23-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 68,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
@@ -42,8 +42,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 1 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Front three-quarter view outdoors."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 2 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Armaturenbrett mit Instrumenten und Lenkrad.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Dashboard with instruments and steering wheel."
 				}
 			]
 		},
@@ -62,8 +62,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 3 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Cabin showing seats, steering wheel and dashboard."
 				}
 			]
 		},

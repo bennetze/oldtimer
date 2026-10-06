@@ -5,7 +5,7 @@
 	"description": "Auch die Lackierung in BMW-urgrünmetallic ist, wie das ganze Auto, noch immer nahezu neuwertig, die originalen Sitze mit echtem Nubukleder und Camouflag…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/79-bmw-z1-baujahr-1990",
 	"order": 1,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1990",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW Z1 Roadster, Baujahr 1990",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 1 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster schräg von vorn auf einer Wiese.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from the front corner on grass."
 				}
 			]
 		},
@@ -42,8 +42,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 2 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster mit versenkten Türen vor Bäumen.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster with doors lowered beside trees."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 3 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster schräg von hinten auf einer Wiese.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from the rear corner on grass."
 				}
 			]
 		},
@@ -62,8 +62,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 4 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster seitlich von oben mit versenkter Tür.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from above in side profile with door lowered."
 				}
 			]
 		},
@@ -72,8 +72,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 5 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster seitlich unter Bäumen.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster in side profile beneath trees."
 				}
 			]
 		},
@@ -87,8 +87,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 6 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster mit geschlossenem schwarzem Verdeck.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster with black soft top closed."
 				}
 			]
 		},
@@ -97,8 +97,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 7 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster von schräg hinten mit geschlossenem Verdeck.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from the rear corner with soft top closed."
 				}
 			]
 		},
@@ -107,8 +107,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 8 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Zwei graue Schalensitze im offenen Innenraum.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Two grey bucket seats in the open cabin."
 				}
 			]
 		},
@@ -117,8 +117,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 9 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Nahaufnahme eines BMW-Rads mit silbernen Speichen.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Close view of a BMW wheel with silver spokes."
 				}
 			]
 		},
@@ -127,8 +127,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 10 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Offener Motorraum mit Batterie und Ansaugrohren.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Open engine bay with battery and intake pipes."
 				}
 			]
 		},
@@ -137,8 +137,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 11 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Schwarzes Verdeck mit durchsichtigem Heckfenster.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Black soft top with transparent rear window."
 				}
 			]
 		},
@@ -147,8 +147,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 12 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadster seitlich mit versenkter Tür und geschlossenem Verdeck.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Roadster in side profile with lowered door and closed soft top."
 				}
 			]
 		},
@@ -157,8 +157,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 13 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster seitlich von oben mit versenkter Tür.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from above in side profile with door lowered."
 				}
 			]
 		},
@@ -167,8 +167,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 14 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blick von oben auf Motorhaube und offene Fahrgastzelle.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Overhead view of bonnet and open cabin."
 				}
 			]
 		},
@@ -177,8 +177,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 15 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadster schräg von vorn aus erhöhter Perspektive.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Roadster from an elevated front-corner angle."
 				}
 			]
 		},
@@ -197,68 +197,68 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 16 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster schräg von hinten vor Bäumen.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from the rear corner beside trees."
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 17 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – BMW-Rad und Reifen neben blaugrünem Kotflügel.",
+					"altEn": "BMW Z1 Roadster, year 1990 – BMW wheel and tyre beside a teal wing."
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 18 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadster seitlich mit offenem Verdeck auf einer Wiese.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Roadster in side profile with roof open on grass."
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 19 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blick von hinten auf Heckdeckel und offenen Innenraum.",
+					"altEn": "BMW Z1 Roadster, year 1990 – View from behind onto rear lid and open cabin."
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 20 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Offener Innenraum und versenkte Tür von schräg oben.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Open cabin and lowered door from above at an angle."
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 21 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadster gerade von hinten auf einer Wiese.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Straight rear view of the roadster on grass."
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 22 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 22 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadsterheck und Innenraum von schräg hinten.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Rear bodywork and cabin from the rear corner."
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 23 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 23 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Graue Schalensitze und Mittelkonsole von oben.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Grey bucket seats and centre console from above."
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 24 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 24 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadster seitlich mit offener Türöffnung.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Roadster in side profile with door aperture open."
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 25 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 25 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blick von oben in den offenen Motorraum.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Overhead view into the open engine bay."
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 26 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 26 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Durchsichtiges Heckfenster im schwarzen Verdeck.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Transparent rear window in the black soft top."
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 27 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 27 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster schräg von hinten mit geschlossenem Verdeck.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from the rear corner with soft top closed."
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "BMW Z1 Roadster, Baujahr 1990 – Aufnahme 28 der Fahrzeugdokumentation",
-					"altEn": "BMW Z1 Roadster, year 1990 – photograph 28 in the vehicle record"
+					"alt": "BMW Z1 Roadster, Baujahr 1990 – Graue Schalensitze bei versenkter Tür und geschlossenem Verdeck.",
+					"altEn": "BMW Z1 Roadster, year 1990 – Grey bucket seats with door lowered and soft top closed."
 				}
 			]
 		}

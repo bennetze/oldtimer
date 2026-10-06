@@ -5,7 +5,7 @@
 	"description": "BMW 327/28 Sportcabriolet, Baujahr 1939",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/39-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 106,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
@@ -22,8 +22,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 1 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Seitenansicht im Freien.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Side profile outdoors."
 				}
 			]
 		},
@@ -32,8 +32,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 2 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Open engine bay showing the engine and pipework."
 				}
 			]
 		},
@@ -42,8 +42,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 3 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Ausgebaute Vorderachse mit Lenkgestänge.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Removed front axle with steering linkage."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 4 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Zwei schmale Kühlergrilleinsätze.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Two narrow grille inserts."
 				}
 			]
 		},
@@ -62,8 +62,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 5 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Close view of grille and front bodywork."
 				}
 			]
 		},
@@ -72,8 +72,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – photograph 6 in the vehicle record"
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Rote Rücksitzbank und klappbare Trennscheibe.",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Red rear bench seat and folding partition screen."
 				}
 			]
 		}

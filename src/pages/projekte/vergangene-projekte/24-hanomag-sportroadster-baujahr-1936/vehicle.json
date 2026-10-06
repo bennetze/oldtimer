@@ -5,7 +5,7 @@
 	"description": "Dieser hier gezeigte und bei uns sehr perfekt restaurierte HANOMAG-Sportroadster ist nicht irgendein sportliches Vorkriegsauto, sondern fuhr vor allem i…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/24-hanomag-sportroadster-baujahr-1936",
 	"order": 35,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Hanomag Sportroadster, Baujahr 1936",
@@ -27,8 +27,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 1 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Front three-quarter view outdoors."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 2 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Nahaufnahme des Emblems auf der Karosserie.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Close view of the badge on the bodywork."
 				}
 			]
 		},
@@ -72,8 +72,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 3 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Rear three-quarter view outdoors."
 				}
 			]
 		},
@@ -82,8 +82,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 4 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Seitenansicht im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Side profile outdoors."
 				}
 			]
 		},
@@ -92,8 +92,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 5 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Rote offene Karosserie auf dem Fahrgestell in der Werkstatt.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Red open body on the chassis inside the workshop."
 				}
 			]
 		},
@@ -107,8 +107,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 6 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Rote Heckkarosserie mit blanken Blechbereichen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Red rear body with bare-metal sections."
 				}
 			]
 		},
@@ -117,8 +117,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 7 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Fahrzeugrahmen ohne Karosserie auf einem Gestell.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Chassis frame without bodywork on a stand."
 				}
 			]
 		},
@@ -127,8 +127,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 8 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Fahrzeugrahmen ohne Karosserie auf einem Gestell.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Chassis frame without bodywork on a stand."
 				}
 			]
 		},
@@ -137,8 +137,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 9 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Hölzernes Heckgerüst über Fahrgestell und Rad.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Wooden rear framework above the chassis and wheel."
 				}
 			]
 		},
@@ -157,8 +157,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 10 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Offene rote Karosserie mit sichtbaren Verstrebungen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Open red body with visible braces."
 				}
 			]
 		},
@@ -167,8 +167,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 11 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Freiliegendes hölzernes Karosseriegerüst.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Exposed wooden body framework."
 				}
 			]
 		},
@@ -177,8 +177,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 12 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Nahaufnahme von Rost und Löchern im Karosserieblech.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Close view of rust and holes in a body panel."
 				}
 			]
 		},
@@ -187,8 +187,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 13 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Eingesetztes Blech mit umlaufender Schweißnaht.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Inserted metal patch with a weld seam around its edges."
 				}
 			]
 		},
@@ -197,8 +197,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 14 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Blanker Innenraumboden mit sichtbaren Schweißnähten.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal cabin floor with visible welded seams."
 				}
 			]
 		},
@@ -212,8 +212,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 15 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Hölzernes Heckgerüst um runde blanke Ersatzradmulde.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Wooden rear framework around a round bare-metal spare-wheel recess."
 				}
 			]
 		},
@@ -222,8 +222,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 16 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Blanker Seitenbereich neben roter Motorhaube.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal side section beside a red bonnet."
 				}
 			]
 		},
@@ -232,8 +232,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 17 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Blankes Heckblech mit runder Ersatzradmulde.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal rear panel with round spare-wheel recess."
 				}
 			]
 		},
@@ -242,8 +242,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 18 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Fahrgestell mit Rädern und freiliegenden Antriebsteilen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Chassis with wheels and exposed drivetrain components."
 				}
 			]
 		},
@@ -257,8 +257,8 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 19 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Blanker Seitenbereich mit Sitzöffnung und roter Haube.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal side section with seat opening and red bonnet."
 				}
 			]
 		},
@@ -267,8 +267,8 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 20 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Blankes Blech innerhalb eines Holzrahmens.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal panel inside a wooden frame."
 				}
 			]
 		},
@@ -282,8 +282,8 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 21 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Blankes Heckblech mit runder Ersatzradmulde.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal rear panel with round spare-wheel recess."
 				}
 			]
 		},
@@ -292,13 +292,13 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 22 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 22 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Metallblanke Karosserie schräg von hinten.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal body viewed from the rear corner."
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 23 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 23 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Gebogener blanker Kotflügel in einer Blechbearbeitungsmaschine.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Curved bare-metal wing inside a panel-working machine."
 				}
 			]
 		},
@@ -307,8 +307,8 @@
 			"images": [
 				{
 					"src": "./image-024.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 24 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 24 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Metallblanke Karosserie gerade von vorn.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Straight front view of the bare-metal body."
 				}
 			]
 		},
@@ -317,8 +317,8 @@
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 25 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 25 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Metallblanke Karosserie gerade von vorn.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Straight front view of the bare-metal body."
 				}
 			]
 		},
@@ -332,8 +332,8 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 26 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 26 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Metallblanke Karosserie schräg von vorn.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal body viewed from the front corner."
 				}
 			]
 		},
@@ -347,18 +347,18 @@
 			"images": [
 				{
 					"src": "./image-027.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 27 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 27 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Armaturenbrett mit Instrumenten und Lenkrad.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Dashboard with instruments and steering wheel."
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 28 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 28 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Metallblanke Karosserie schräg von hinten.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Bare-metal body viewed from the rear corner."
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 29 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 29 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Rear three-quarter view outdoors."
 				}
 			]
 		},
@@ -367,8 +367,8 @@
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 30 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 30 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Seitenansicht im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Side profile outdoors."
 				}
 			]
 		},
@@ -382,13 +382,13 @@
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 31 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 31 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Hell beschichtete Karosserie gerade von hinten.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Straight rear view of the light-coated body."
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 32 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 32 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Rear three-quarter view outdoors."
 				}
 			]
 		},
@@ -402,18 +402,18 @@
 			"images": [
 				{
 					"src": "./image-033.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 33 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 33 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Ausgebautes Speichenrad ohne Reifen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Removed wire wheel without tyre."
 				},
 				{
 					"src": "./image-034.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 34 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 34 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Ausgebauter Felgenring.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Removed wheel-rim ring."
 				},
 				{
 					"src": "./image-035.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 35 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 35 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Vier Speichenräder mit Reifen nebeneinander.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Four wire wheels with tyres arranged together."
 				}
 			]
 		},
@@ -427,13 +427,13 @@
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 36 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 36 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Motorblock mit geöffneten Zylindern.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Engine block with cylinders exposed."
 				},
 				{
 					"src": "./image-037.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 37 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 37 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Motorblock mit geöffneten Zylindern.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Engine block with cylinders exposed."
 				}
 			]
 		},
@@ -452,13 +452,13 @@
 			"images": [
 				{
 					"src": "./image-038.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 38 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 38 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Motorblock, Laufbuchsen und Kolben nebeneinander.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Engine block, cylinder liners and pistons arranged together."
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 39 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 39 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Motorblock mit Laufbuchsen, Kolben und Dichtungen ausgelegt.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Engine block with cylinder liners, pistons and gaskets laid out."
 				}
 			]
 		},
@@ -467,8 +467,8 @@
 			"images": [
 				{
 					"src": "./image-040.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 40 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 40 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Ausgebauter Motor mit sichtbaren Anbauteilen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Removed engine with attached components visible."
 				}
 			]
 		},
@@ -477,8 +477,8 @@
 			"images": [
 				{
 					"src": "./image-041.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 41 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 41 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Zerlegter Vergaser mit Schwimmer und Gehäuseteilen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Dismantled carburettor with float and casing parts."
 				}
 			]
 		},
@@ -487,8 +487,8 @@
 			"images": [
 				{
 					"src": "./image-042.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 42 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 42 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Ausgebauter Vergaser mit Schwimmergehäuse.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Removed carburettor with float chamber."
 				}
 			]
 		},
@@ -497,8 +497,8 @@
 			"images": [
 				{
 					"src": "./image-043.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 43 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 43 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Zwei runde Instrumente mit Anschlussleitungen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Two round instruments with connecting wires."
 				}
 			]
 		},
@@ -507,8 +507,8 @@
 			"images": [
 				{
 					"src": "./image-044.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 44 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 44 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Ausgebauter rechteckiger Kraftstofftank mit Rohranschluss.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Removed rectangular fuel tank with pipe connector."
 				}
 			]
 		},
@@ -522,13 +522,13 @@
 			"images": [
 				{
 					"src": "./image-045.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 45 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 45 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Geöffnetes Differential mit großem Tellerrad.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Open differential with large crown wheel."
 				},
 				{
 					"src": "./image-046.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 46 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 46 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Schaltgestänge und Welle nebeneinander auf der Werkbank.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Gear linkage and shaft side by side on the workbench."
 				}
 			]
 		},
@@ -537,8 +537,8 @@
 			"images": [
 				{
 					"src": "./image-047.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 47 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 47 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Geöffnetes Getriebe mit sichtbaren Zahnrädern.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Open gearbox with gears visible."
 				}
 			]
 		},
@@ -552,18 +552,18 @@
 			"images": [
 				{
 					"src": "./image-048.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 48 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 48 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Cabin showing seats, steering wheel and dashboard."
 				},
 				{
 					"src": "./image-049.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 49 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 49 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Roter ausklappbarer Fahrtrichtungsanzeiger an heller Karosserie.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Red fold-out direction indicator on light-coloured bodywork."
 				},
 				{
 					"src": "./image-050.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 50 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 50 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Nahaufnahme eines Speichenrads mit Reifen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Close view of a wire wheel and tyre."
 				}
 			]
 		},
@@ -577,8 +577,8 @@
 			"images": [
 				{
 					"src": "./image-051.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 51 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 51 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Front aus niedriger Perspektive mit Kühlergrill und Scheinwerfern.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Low-angle front view showing grille and headlights."
 				}
 			]
 		},
@@ -602,8 +602,8 @@
 			"images": [
 				{
 					"src": "./image-052.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 52 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 52 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Fahrzeug in einer Halle vor einem mehrmotorigen Flugzeug.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Vehicle inside a hall in front of a multi-engine aircraft."
 				}
 			]
 		},
@@ -617,38 +617,38 @@
 			"images": [
 				{
 					"src": "./image-053.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 53 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 53 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Nahaufnahme des Emblems auf der Karosserie.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Close view of the badge on the bodywork."
 				},
 				{
 					"src": "./image-054.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 54 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 54 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Frontansicht im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Straight front view outdoors."
 				},
 				{
 					"src": "./image-055.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 55 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 55 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Rear three-quarter view outdoors."
 				},
 				{
 					"src": "./image-056.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 56 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 56 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Rear three-quarter view outdoors."
 				},
 				{
 					"src": "./image-057.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 57 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 57 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Nahaufnahme eines Speichenrads mit Reifen.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Close view of a wire wheel and tyre."
 				},
 				{
 					"src": "./image-058.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 58 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 58 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Blick von schräg oben auf Fahrzeugheck und Kofferraumdeckel.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Elevated view of the rear bodywork and boot lid."
 				},
 				{
 					"src": "./image-059.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 59 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 59 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Front three-quarter view outdoors."
 				}
 			]
 		},
@@ -657,8 +657,8 @@
 			"images": [
 				{
 					"src": "./image-060.jpg",
-					"alt": "Hanomag Sportroadster, Baujahr 1936 – Aufnahme 60 der Fahrzeugdokumentation",
-					"altEn": "Hanomag Sportroadster, year 1936 – photograph 60 in the vehicle record"
+					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "Hanomag Sportroadster, year 1936 – Front three-quarter view outdoors."
 				}
 			]
 		},

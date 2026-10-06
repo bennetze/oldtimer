@@ -5,7 +5,7 @@
 	"description": "Hier ein Wartburg Typ 312-1000 des Baujahres 1965 in der sehr begehrten \"Camping\"-Ausführung.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/153-wartburg-312-camping-baujahr-1965",
 	"order": 56,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1965",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 312 Camping, Baujahr 1965",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 1 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Front three-quarter view outdoors."
 				}
 			]
 		},
@@ -32,18 +32,18 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 2 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Hand neben abgeplatzter roter und weißer Lackierung.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Hand beside chipped red and white paintwork."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 3 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Geschliffener Kombi seitlich im Hof.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Sanded estate in side profile in the courtyard."
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 4 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Rostige Blechkante mit kleinen Öffnungen.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Rusty panel edge with small openings."
 				}
 			]
 		},
@@ -57,33 +57,33 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 5 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Rot-weiße Tür mit freigeschliffenen Flächen.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Red-and-white door with sanded areas."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 6 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Metallblanke Karosserie schräg von hinten.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Bare-metal body viewed from the rear corner."
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 7 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Masked body from the rear corner in the spray booth."
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 8 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Hell beschichteter Kombi mit offenem Vorderteil.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Light-coated estate with front section open."
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 9 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Hell beschichtete Karosserie seitlich.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Light-coated body in side profile."
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 10 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Rot-weißes abgenommenes Türblech in der Kabine.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Removed red-and-white door panel in the booth."
 				}
 			]
 		},
@@ -92,8 +92,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 11 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Abgeklebtes Kombiheck in der Kabine.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Masked estate rear in the booth."
 				}
 			]
 		},
@@ -107,18 +107,18 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 12 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Heller Dachrahmen über ausgeräumtem Innenraum.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Light roof framework above stripped cabin."
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 13 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Rot-weiße Türverkleidung mit Chromgriff.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Red-and-white door trim with chrome handle."
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 14 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Rote Rücksitzbank und weiße Vordersitzlehnen.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Red rear bench and white front seat backs."
 				}
 			]
 		},
@@ -137,63 +137,63 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 15 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Open engine bay showing the engine and pipework."
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 16 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Wartburg-Schriftzug und Emblem an weißer Motorhaube.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Wartburg lettering and badge on white bonnet."
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 17 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Open engine bay showing the engine and pipework."
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 18 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn in der Werkstatt.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Front three-quarter view inside the workshop."
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 19 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von hinten in der Werkstatt.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Rear three-quarter view inside the workshop."
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 20 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Front three-quarter view outdoors."
 				},
 				{
 					"src": "./image-001.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 21 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Front three-quarter view outdoors."
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 22 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 22 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Wartburg-312-Schriftzug auf weißem Blech.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Wartburg 312 lettering on white panel."
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 23 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 23 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Rear three-quarter view outdoors."
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 24 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 24 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Rear three-quarter view outdoors."
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 25 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 25 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Heller Dachhimmel und hintere Seitenfenster.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Light headlining and rear side windows."
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 26 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 26 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Front three-quarter view outdoors."
 				}
 			]
 		},
@@ -202,18 +202,18 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 27 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 27 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Seitenansicht im Freien.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Side profile outdoors."
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 28 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 28 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Seitliche Fenster mit Chromrahmen und heller Dachkante.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Side windows with chrome surrounds and light roof edge."
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 29 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 29 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Heller Dachhimmel und große seitliche Dachfenster.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Light headlining and large side roof windows."
 				}
 			]
 		},
@@ -222,8 +222,8 @@
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1965 – Aufnahme 30 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1965 – photograph 30 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1965 – Rot-weißer Kombi mit offener Heckklappe vor schwarzem Hintergrund.",
+					"altEn": "Wartburg 312 Camping, year 1965 – Red-and-white estate with rear door open against black background."
 				}
 			]
 		},

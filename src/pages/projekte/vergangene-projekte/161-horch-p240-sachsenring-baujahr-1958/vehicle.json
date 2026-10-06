@@ -5,7 +5,7 @@
 	"description": "Hier ein weiterer HORCH P240 \"Sachsenring\", der bei uns umfangreich restauriert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/161-horch-p240-sachsenring-baujahr-1958",
 	"order": 23,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HORCH P240 Sachsenring, Baujahr 1958",
@@ -17,13 +17,13 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "HORCH P240 Sachsenring, year 1958 – photograph 1 in the vehicle record"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Schwarz-helle Limousine seitlich in der Werkstatt.",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Black-and-light saloon in side profile in workshop."
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "HORCH P240 Sachsenring, year 1958 – photograph 2 in the vehicle record"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Dreiviertelansicht von hinten in der Werkstatt.",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Rear three-quarter view inside the workshop."
 				}
 			]
 		},
@@ -47,13 +47,13 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "HORCH P240 Sachsenring, year 1958 – photograph 3 in the vehicle record"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Dunkles Armaturenbrett mit ausgebauten Instrumenten und Verkabelung.",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Dark dashboard with instruments removed and wiring exposed."
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "HORCH P240 Sachsenring, year 1958 – photograph 4 in the vehicle record"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Ausgebautes Autoradio mit Kabeln auf einem Karton.",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Removed car radio with wires on a box."
 				}
 			]
 		},
@@ -62,13 +62,13 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "HORCH P240 Sachsenring, year 1958 – photograph 5 in the vehicle record"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Seitenansicht in der Werkstatt.",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Side profile inside the workshop."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "HORCH P240 Sachsenring, year 1958 – photograph 6 in the vehicle record"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Schwarz-helle Limousine schräg von vorn auf der Hebebühne.",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Black-and-light saloon from the front corner on lift."
 				}
 			]
 		},
@@ -77,13 +77,13 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "HORCH P240 Sachsenring, year 1958 – photograph 7 in the vehicle record"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Schwarz-helle Fahrzeugfront mit teilweise offenem Kühlerbereich.",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Black-and-light front bodywork with radiator area partly open."
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "HORCH P240 Sachsenring, year 1958 – photograph 8 in the vehicle record"
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Fahrzeug schräg von vorn mit geöffneter Motorhaube.",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Vehicle from the front corner with bonnet open."
 				}
 			]
 		},

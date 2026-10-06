@@ -5,7 +5,7 @@
 	"description": "Hier ein angeliefertes Fundstück aus frühen DDR Zeiten: Ein inzwischen selten gewordener Wartburg Typ 312 in der begehrten \"Camping\"-Ausführung. Gebaut…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/184-wartburg-312-champing-baujahr-1960",
 	"order": 98,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1966",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 312 Camping, Baujahr 1966",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 1 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Helles Kombiheck mit fehlenden Leuchten in einer Halle.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Light estate rear with lights absent in a hall."
 				}
 			]
 		},
@@ -32,18 +32,18 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 2 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Geöffnete Haube über verstaubtem Motorraum.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Open bonnet above dusty engine bay."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 3 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Verstaubter Motor mit zwei runden Luftfiltern.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Dusty engine with two round air filters."
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 4 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Nahaufnahme von Rost und Löchern im Karosserieblech.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Close view of rust and holes in a body panel."
 				}
 			]
 		},
@@ -57,18 +57,18 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 5 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Karosserie mit offenen Türöffnungen seitlich.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Body with open door apertures in side profile."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 6 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Nahaufnahme von Rost und Löchern im Karosserieblech.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Close view of rust and holes in a body panel."
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 7 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Helle Karosserie mit Kreuzverstrebungen in den Türöffnungen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Light body with cross-braces in door apertures."
 				}
 			]
 		},
@@ -82,18 +82,18 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 8 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Nahaufnahme von Rost und Löchern im Karosserieblech.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Close view of rust and holes in a body panel."
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 9 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Abgenommenes helles Blech mit rostiger Kante.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Removed light panel with rusty edge."
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 10 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Türöffnungen mit Kreuzverstrebungen über rotem Schweller.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Door apertures with cross-braces above red sill."
 				}
 			]
 		},
@@ -102,13 +102,13 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 11 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Eingesetztes Blech mit umlaufender Schweißnaht.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Inserted metal patch with a weld seam around its edges."
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 12 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Eingeschweißtes rechteckiges Blech am Innenraumboden.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Rectangular patch welded into cabin floor."
 				}
 			]
 		},
@@ -122,18 +122,18 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 13 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Blanker hinterer Innenraum mit eingelegten Bodenblechen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Bare rear cabin with floor panels fitted."
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 14 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Blanker Schweller entlang des Innenraumbodens.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Bare-metal sill along cabin floor."
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 15 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Bodenbleche mit Querstreben und blanken Nähten.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Floor panels with crossmembers and bare-metal seams."
 				}
 			]
 		},
@@ -142,13 +142,13 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 16 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Fahrgestell mit Rädern und freiliegenden Antriebsteilen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Chassis with wheels and exposed drivetrain components."
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 17 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Vorderachse mit Schraubenfedern und Radnaben.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Front axle with coil springs and wheel hubs."
 				}
 			]
 		},
@@ -162,18 +162,18 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 18 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Geschwungenes blankes Blech auf dem Boden.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Curved bare-metal panel on floor."
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 19 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Blankes Blech neben einem runden Formwerkzeug.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Bare panel beside round forming tool."
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 20 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Blankes eingesetztes Blech am hinteren Fahrzeugrahmen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Bare-metal patch fitted to rear chassis frame."
 				}
 			]
 		},
@@ -187,13 +187,13 @@
 			"images": [
 				{
 					"src": "./image-021.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 21 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Abgenommenes Bodenblech mit länglichen Vertiefungen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Removed floor panel with long recessed sections."
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 22 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 22 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Hölzerner Rahmen entlang einer hellen Karosserieöffnung.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Wood frame along a light body aperture."
 				}
 			]
 		},
@@ -202,18 +202,18 @@
 			"images": [
 				{
 					"src": "./image-023.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 23 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 23 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Leere Kombikarosserie vor der Werkstatt.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Empty estate body outside workshop."
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 24 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 24 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Offener Dachrahmen mit Kreuzverstrebungen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Open roof framework with cross-braces."
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 25 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 25 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Ausgebauter metallblanker Kraftstofftank auf einem Gestell.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Removed bare-metal fuel tank on stand."
 				}
 			]
 		},
@@ -227,18 +227,18 @@
 			"images": [
 				{
 					"src": "./image-026.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 26 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 26 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Blanker Laderaumboden und helles Innenblech.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Bare load floor and light inner panel."
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 27 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 27 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Rote Heckklappe neben hell beschichteten Kotflügeln.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Red rear door beside light-coated wings."
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 28 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 28 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Leerer Motorraum mit abgedeckten roten Kotflügeln.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Empty engine bay with red wings covered."
 				}
 			]
 		},
@@ -247,8 +247,8 @@
 			"images": [
 				{
 					"src": "./image-029.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 29 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 29 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Helle Karosserie mit roter Motorhaube und orangefarbenem Kotflügel.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Light body with red bonnet and orange wing."
 				}
 			]
 		},
@@ -262,8 +262,8 @@
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 30 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 30 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Kombi seitlich mit roten, hellen und grünen Blechflächen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Estate in side profile with red, light and green panel areas."
 				}
 			]
 		},
@@ -277,18 +277,18 @@
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 31 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 31 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Helle Karosserie mit rotem Kotflügel und offener Motorhaube.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Light body with red wing and bonnet open."
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 32 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 32 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Helle Kombikarosserie mit offenen Heck- und Fensteröffnungen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Light estate body with rear and window apertures open."
 				},
 				{
 					"src": "./image-033.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 33 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 33 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Heller Fahrzeugrahmen auf einem Gestell in der Kabine.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Light chassis frame on stand in booth."
 				}
 			]
 		},
@@ -297,13 +297,13 @@
 			"images": [
 				{
 					"src": "./image-034.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 34 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 34 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Schwarze Achslenker hängen in der Lackierkabine.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Black suspension arms hanging in spray booth."
 				},
 				{
 					"src": "./image-035.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 35 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 35 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Fahrzeugrahmen ohne Karosserie auf einem Gestell.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Chassis frame without bodywork on a stand."
 				}
 			]
 		},
@@ -317,13 +317,13 @@
 			"images": [
 				{
 					"src": "./image-036.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 36 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 36 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Nahaufnahme von Feder und Radaufhängung.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Close view of spring and suspension."
 				},
 				{
 					"src": "./image-037.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 37 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 37 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Fahrgestell mit Rädern und freiliegenden Antriebsteilen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Chassis with wheels and exposed drivetrain components."
 				}
 			]
 		},
@@ -332,18 +332,18 @@
 			"images": [
 				{
 					"src": "./image-038.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 38 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 38 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Karosserie mit leeren Scheinwerferöffnungen schräg von vorn.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Body with empty headlight apertures viewed from the front corner."
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 39 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 39 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Metallblanke Karosserie gerade von hinten.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Straight rear view of the bare-metal body."
 				},
 				{
 					"src": "./image-040.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 40 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 40 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Schwarzer Unterboden mit abgeklebten Rändern.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Black underside with masked edges."
 				}
 			]
 		},
@@ -357,18 +357,18 @@
 			"images": [
 				{
 					"src": "./image-041.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 41 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 41 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Leerer Innenraum mit freigelegten Bodenblechen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Empty cabin with floor panels exposed."
 				},
 				{
 					"src": "./image-042.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 42 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 42 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Masked body from the rear corner in the spray booth."
 				},
 				{
 					"src": "./image-043.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 43 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 43 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Ausgebauter grüner Vorderkotflügel.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Removed green front wing."
 				}
 			]
 		},
@@ -377,13 +377,13 @@
 			"images": [
 				{
 					"src": "./image-044.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 44 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 44 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Karosserie mit leeren Scheinwerferöffnungen schräg von vorn.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Body with empty headlight apertures viewed from the front corner."
 				},
 				{
 					"src": "./image-045.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 45 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 45 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Karosserie mit leeren Scheinwerferöffnungen schräg von vorn.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Body with empty headlight apertures viewed from the front corner."
 				}
 			]
 		},
@@ -397,13 +397,13 @@
 			"images": [
 				{
 					"src": "./image-046.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 46 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 46 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Schwarze Gestänge und Rahmenstücke auf einer Unterlage.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Black linkages and frame sections laid on a cloth."
 				},
 				{
 					"src": "./image-047.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 47 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 47 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Ausgebaute Chromleisten und Beschläge nebeneinander.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Removed chrome trim and fittings arranged side by side."
 				}
 			]
 		},
@@ -417,13 +417,13 @@
 			"images": [
 				{
 					"src": "./image-048.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 48 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 48 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Seitenansicht in der Werkstatt.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Side profile inside the workshop."
 				},
 				{
 					"src": "./image-049.jpg",
-					"alt": "Wartburg 312 Camping, Baujahr 1966 – Aufnahme 49 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 312 Camping, year 1966 – photograph 49 in the vehicle record"
+					"alt": "Wartburg 312 Camping, Baujahr 1966 – Offenes Radhaus mit freiliegenden Innenblechen.",
+					"altEn": "Wartburg 312 Camping, year 1966 – Open wheel arch with inner panels exposed."
 				}
 			]
 		},

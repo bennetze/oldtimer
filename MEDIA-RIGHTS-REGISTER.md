@@ -1,6 +1,6 @@
 # Medienrechte-Register
 
-**Stand:** 28. September 2026
+**Stand:** 6 October 2026 (inventory reconciliation; approvals still pending)
 **Rechteinhaber laut Auftraggeber:** DIE OLDTIMERMANUFAKTUR GmbH  
 **Status:** Entwicklungsnachweis; Belege vor Produktionsfreigabe vervollständigen
 
@@ -22,7 +22,7 @@ Fundstelle festgehalten.
 | Reale Werkstattaufnahmen `L100*.webp`, insbesondere die auf `/handwerk/` verwendeten Dateien | Neu eingebundene reale Werkstattfotografie | Karosserie, Polsterei und Lackiererei sowie repräsentative Metadaten | Nicht als KI-Platzhalter einordnen; allgemeine Rechtebestätigung der GmbH bleibt dokumentiert | Je Motiv Original-/Urheberzuordnung, Nutzungsumfang und gegebenenfalls Freigaben erkennbarer Personen intern zuordnen; Dateinamensmuster ist kein eigenständiger Rechtebeleg |
 | `handwerk`, `ueberuns`, `projekte`: MP4/WebM, Poster und Bewegungs-Fallbacks | Reale Videoaufnahmen laut Bestätigung des Auftraggebers am 28.09.2026; Produktion und Ableitungen einzeln dokumentieren | Drei zusätzliche bewegte Bereiche der Startseite | Allgemeine Rechtebestätigung bleibt bestehen; konkrete Belegzuordnung und Herkunft pro Familie prüfen | Master, Urheber-/Übertragungsnachweis, reale oder synthetische Herkunft, Personen-/Standortfreigaben soweit erforderlich sowie sämtliche erzeugten Ableitungen zuordnen |
 | Zukünftige Aufnahmen des Fotoshootings | Noch nicht erstellt | Finale Personen-, Team-, Werkstatt-, Standort- und Projektbilder | Noch offen | Fotografenvertrag mit ausschließlichen oder ausreichend weiten Nutzungsrechten, Honorar/Rechnung, Rohdateien, Model Releases, Mitarbeitereinwilligungen, Property-/Location-Releases, Fahrzeug-/Kennzeichenfreigaben |
-| `public/favicon.svg`, `.ico`, `apple-touch-icon.png` | Im Projekt erstelltes neutrales OM-Monogramm | Browser-/Gerätesymbol der Entwicklungsvorschau | Originäre einfache Projektgrafik; später zu ersetzen | Datum/Urheber dieser Erstellung und spätere Freigabe des endgültigen Unternehmenszeichens |
+| `public/favicon.svg`, `.ico`, `apple-touch-icon.png` | Aktuelles weißes Fahrzeugsignet; kein OM-Monogramm | Browser-/Gerätesymbol der Entwicklungsvorschau | Herkunft und endgültige Freigabe separat nachweisen | Originalzuordnung, Urheber-/Markenrechte und Freigabe der Ableitungen |
 | Jost (historisch) | Jost Project Authors | Am 28.09.2026 als ungenutzte Schrift entfernt | SIL Open Font License 1.1 | Schrift und zugehörige Auslieferungslizenz entfernt; aktuelle Schriften siehe unten |
 | Fahrzeugbilder unter `src/pages/projekte/*/<fahrzeug>/` | Migration der bestehenden Website `oldtimermanufaktur.de`; Quellen je Fahrzeug in `vehicle.json` und `VEHICLE-MIGRATION-AUDIT.json` dokumentiert | Karten, Detailseiten und Open-Graph-Bilder der Projektarchive und Fahrzeugangebote | Auftraggeber bestätigt die Rechte der GmbH zur erneuten Veröffentlichung und Erstellung responsiver Ableitungen | Interne Original-/Urheberzuordnung und vorhandene Freigaben anhand der dokumentierten Quell-URLs ablegen; die im Migrationsaudit ausgewiesene, nur durch korrigierte Dateiendungs-Großschreibung abrufbare Quelle bei der internen Zuordnung berücksichtigen |
 
@@ -154,3 +154,36 @@ TTF masters. FontTools 4.66.0 performed container compression without subsetting
 glyph order, Unicode maps and variable axes were verified against the originals.
 The existing OFL licenses remain published. Jost and its unused license were removed.
 These changes do not constitute production approval or new rights evidence.
+
+## Published inventory reconciliation — 6 October 2026
+
+The authoritative engineering inventory for this release candidate is
+[`release/published-media-inventory.csv`](release/published-media-inventory.csv),
+with counts and unresolved source mappings in
+[`release/media-inventory-summary.json`](release/media-inventory-summary.json).
+It inventories every media/font file delivered by the root build, including files
+not referenced by the current page, responsive and immutable vehicle derivatives,
+video sources/posters/motion fallbacks, logo derivatives, icons, fonts and inline map
+graphics. Reproduce it after a root build with `node scripts/inventory-release-media.mjs`.
+The CSV includes published paths, SHA-256, sizes, source mapping, licence references,
+evidence status and approver role. Each row remains pending until explicit evidence
+and approval are recorded; automatic regeneration must not replace an approved ledger.
+
+The current header/schema logo is
+`src/assets/oldtimer/brand/OTM_oldtimermanufaktur_Logo_v07.png`. Its responsive
+derivatives and the existing vehicle-signet favicon family need original/brand
+permission evidence. Earlier monogram statements have been corrected. Historical
+AI-placeholder and leather-tile sections above describe removed assets, not today's
+publication inventory. The background is real `L1007006.webp` photography.
+
+All 157 vehicle records were inventoried. Their 3,066 gallery occurrences use 3,021
+distinct image hashes; 153 records contain galleries and four contain none. Actual
+photographs were reviewed to author German and English visible-subject alternatives.
+This accessibility work supplies no new rights evidence. Captions, vehicle copy,
+routes, image order and filenames were preserved.
+
+Font licence files and documented map-icon provenance remain evidence to verify,
+not automatic production approval. The company-wide media statements already
+recorded above remain intact, but original/creator/release linkage is still missing.
+The [production release checklist](PRODUCTION-RELEASE-CHECKLIST.md) records these
+evidence requirements, responsible roles and the final-host acceptance gate.

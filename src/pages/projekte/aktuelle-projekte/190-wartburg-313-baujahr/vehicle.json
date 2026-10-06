@@ -5,7 +5,7 @@
 	"description": "Auch dieser Wartburg 313 Sport wird derzeit in unserer Manufaktur einer fachgerechten Vollrestauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/190-wartburg-313-baujahr",
 	"order": 3,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 S-Sport, Baujahr 1959",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 1 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet mit Hardtop im Hof.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue hardtop convertible in the courtyard."
 				}
 			]
 		},
@@ -32,18 +32,18 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 2 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Karosserie ohne Räder und Türen in der Werkstatt.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Body without wheels or doors in the workshop."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 3 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Rostiger Fahrzeugrahmen auf einem Gestell.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Rusty chassis frame on a stand."
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 4 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Ausgebauter Motor mit verrosteten Anbauteilen.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Removed engine with rusty attached components."
 				}
 			]
 		},
@@ -57,18 +57,18 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 5 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Markierte Schnittlinien am hellen Karosserieblech.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Marked cutting lines on a light-coloured body panel."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 6 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Rechteckige Schnittmarkierung am unteren Blechrand.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Rectangular cut marking near the lower panel edge."
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 7 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Helles Bodenblech mit länglichen Vertiefungen.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Light floor panel with long recessed sections."
 				}
 			]
 		},
@@ -77,18 +77,18 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 8 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Helles Heckblech mit rechteckiger Öffnung.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Light-coloured rear panel with a rectangular opening."
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 9 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Ausgebaute Achse auf der Werkbank.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Removed axle on the workbench."
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 10 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Helle Fahrzeugfront mit montiertem Kühlergrill.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Light-coloured front bodywork with grille fitted."
 				}
 			]
 		},
@@ -97,18 +97,18 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 11 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Ausgeräumter Innenraum mit Lenkrad und Verstrebungen.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Stripped cabin with steering wheel and braces."
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 12 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Cabriolet neben abgenommener Motorhaube im Hof.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Convertible beside its removed bonnet in the courtyard."
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 13 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Offener Kofferraum in der Lackierkabine.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Open boot compartment in the spray booth."
 				}
 			]
 		},
@@ -117,18 +117,18 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 14 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Helle Karosserie ohne Türen und Räder.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Light-coloured body without doors or wheels."
 				},
 				{
 					"src": "./image-015.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 15 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Abgeklebte Karosserie schräg von vorn.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Masked body viewed from the front corner."
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 16 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Abgeklebte Karosserie schräg von hinten.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Masked body viewed from the rear corner."
 				}
 			]
 		},
@@ -137,13 +137,13 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 17 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Seitliche Lüftungsöffnungen im hellen Kotflügel.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Side vent openings in the light-coloured wing."
 				},
 				{
 					"src": "./image-018.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 18 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Helles Fahrzeugheck mit geschlossenem Kofferraumdeckel.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Light-coloured rear bodywork with boot lid closed."
 				}
 			]
 		},
@@ -157,18 +157,18 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 19 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Heller Fahrzeugrahmen von oben.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Light-coloured chassis frame viewed from above."
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 20 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Dunkler Fahrzeugrahmen in der Lackierkabine.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Dark chassis frame in the spray booth."
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 21 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Fahrgestell mit Rädern im gepflasterten Hof.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Chassis with wheels in the paved courtyard."
 				}
 			]
 		},
@@ -177,18 +177,18 @@
 			"images": [
 				{
 					"src": "./image-022.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 22 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 22 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Vorderachse und Gestänge unter dem Fahrzeug.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Front axle and linkages beneath the vehicle."
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 23 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 23 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Hinterachse unter dem dunklen Unterboden.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Rear axle beneath the dark floorpan."
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 24 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 24 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blau lackierter Innenraum neben Abdeckpapier.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue-painted cabin beside masking paper."
 				}
 			]
 		},
@@ -197,18 +197,18 @@
 			"images": [
 				{
 					"src": "./image-025.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 25 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 25 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blau-silberne Karosserie mit offener Türöffnung.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue-and-silver body with an open door aperture."
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 26 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 26 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Vorderrad und seitliche Chromöffnungen der blau-silbernen Karosserie.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Front wheel and chrome side vents on the blue-and-silver body."
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 27 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 27 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blau-silbernes Cabriolet seitlich in der Werkstatt.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Side view of the blue-and-silver convertible in the workshop."
 				}
 			]
 		},
@@ -222,18 +222,18 @@
 			"images": [
 				{
 					"src": "./image-028.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 28 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 28 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Ausgebaute Vergaser auf blauem Tuch.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Removed carburettors on blue fabric."
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 29 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 29 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Vergaser mit Ansaugrohren auf der Werkbank.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Carburettors with intake pipes on the workbench."
 				},
 				{
 					"src": "./image-030.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 30 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 30 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Motorblock mit sichtbaren Anschlussöffnungen.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Engine block with exposed port openings."
 				}
 			]
 		},
@@ -242,13 +242,13 @@
 			"images": [
 				{
 					"src": "./image-031.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 31 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 31 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Geöffnetes Getriebe mit abgenommenem Deckel.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Open gearbox with its cover removed."
 				},
 				{
 					"src": "./image-032.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 32 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 32 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Nahaufnahme der Getriebezahnräder und Schaltmechanik.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Close view of gearbox gears and selector mechanism."
 				}
 			]
 		},
@@ -262,13 +262,13 @@
 			"images": [
 				{
 					"src": "./image-033.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 33 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 33 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Getriebegehäuse mit herausragender Welle.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Gearbox casing with a protruding shaft."
 				},
 				{
 					"src": "./image-034.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 34 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 34 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Geschlossenes Getriebe auf dem Werkstattboden.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Assembled gearbox on the workshop floor."
 				}
 			]
 		},
@@ -282,18 +282,18 @@
 			"images": [
 				{
 					"src": "./image-035.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 35 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 35 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Dunkles Bauteil mit herausragender Metallwelle.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Dark component with a protruding metal shaft."
 				},
 				{
 					"src": "./image-036.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 36 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 36 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Hinterachse mit Bremsen und Dämpfern.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Rear axle with brakes and shock absorbers."
 				},
 				{
 					"src": "./image-037.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 37 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 37 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Vorderachse mit Gestänge und glänzenden Beschlägen.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Front axle with linkages and shiny fittings."
 				}
 			]
 		},
@@ -302,18 +302,18 @@
 			"images": [
 				{
 					"src": "./image-038.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 38 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 38 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Kühlergrill und kleine Beschläge auf Stoff.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Grille and small fittings on fabric."
 				},
 				{
 					"src": "./image-039.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 39 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 39 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Gebogene Leisten und Rahmen auf Stoff.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Curved trim strips and frames on fabric."
 				},
 				{
 					"src": "./image-040.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 40 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 40 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Hebel, Streben und Stangen nebeneinander ausgelegt.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Levers, braces and rods arranged side by side."
 				}
 			]
 		},
@@ -327,13 +327,13 @@
 			"images": [
 				{
 					"src": "./image-041.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 41 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 41 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Sechs farbige Eisenach-Embleme auf Lochblech.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Six coloured Eisenach badges on a perforated sheet."
 				},
 				{
 					"src": "./image-042.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 42 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 42 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Zwei runde Instrumente auf einem Holztisch.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Two round instruments on a wooden table."
 				}
 			]
 		},
@@ -347,13 +347,13 @@
 			"images": [
 				{
 					"src": "./image-043.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 43 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 43 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Sitzgestell mit freiliegender Polsterung.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Seat frame with exposed padding."
 				},
 				{
 					"src": "./image-044.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 44 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 44 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Ausgebaute Autoradios auf der Werkbank.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Removed car radios on the workbench."
 				}
 			]
 		},
@@ -377,18 +377,18 @@
 			"images": [
 				{
 					"src": "./image-045.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 45 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 45 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blauer Motorraum mit eingebautem Motor.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue engine bay with engine installed."
 				},
 				{
 					"src": "./image-046.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 46 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 46 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Zwei blaue Cabriolets mit offenen Motorräumen.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Two blue convertibles with engine compartments open."
 				},
 				{
 					"src": "./image-047.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 47 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 47 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Zwei helle Sitze mit senkrechten Nähten.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Two light-coloured seats with vertical stitching."
 				}
 			]
 		},
@@ -402,18 +402,18 @@
 			"images": [
 				{
 					"src": "./image-048.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 48 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 48 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet neben abgenommenem Verdeck im Hof.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue convertible beside its removed roof in the courtyard."
 				},
 				{
 					"src": "./image-049.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 49 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 49 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Heller Innenraum mit weißem Lenkrad.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Light-coloured cabin with white steering wheel."
 				},
 				{
 					"src": "./image-050.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 50 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 50 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet mit Hardtop schräg von vorn.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue hardtop convertible viewed from the front corner."
 				}
 			]
 		},
@@ -427,18 +427,18 @@
 			"images": [
 				{
 					"src": "./image-051.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 51 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 51 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet mit Hardtop seitlich im Hof.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Side view of the blue hardtop convertible in the courtyard."
 				},
 				{
 					"src": "./image-052.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 52 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 52 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Armaturenbrett und helle Sitze von oben.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Dashboard and light-coloured seats viewed from above."
 				},
 				{
 					"src": "./image-053.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 53 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 53 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet gerade von vorn im Hof.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Straight front view of the blue convertible in the courtyard."
 				}
 			]
 		},
@@ -447,8 +447,8 @@
 			"images": [
 				{
 					"src": "./image-054.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Aufnahme 54 der Fahrzeugdokumentation",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – photograph 54 in the vehicle record"
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Gedruckte Seitenansicht eines Wartburg 313.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Printed side-view picture of a Wartburg 313."
 				}
 			]
 		},

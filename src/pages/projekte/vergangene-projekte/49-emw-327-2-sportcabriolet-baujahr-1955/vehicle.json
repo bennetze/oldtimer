@@ -5,7 +5,7 @@
 	"description": "EMW 327-2 Sportcabriolet, Baujahr 1955; gebaut bei den Eisenacher- Motoren-Werken in Thüringen.\n\nBei diesem Fahrzeug handelte es sich um einen bruchstüc…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/49-emw-327-2-sportcabriolet-baujahr-1955",
 	"order": 102,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1955",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1955",
@@ -22,8 +22,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 1 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Leere Karosserie auf Holzklötzen mit abgenommenen Türen.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Empty body on wooden blocks with doors removed."
 				}
 			]
 		},
@@ -32,8 +32,8 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 2 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Rostiger Innenraumboden mit freiliegenden Leitungen.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Rusty cabin floor with exposed wiring."
 				}
 			]
 		},
@@ -42,8 +42,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 3 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Leerer Innenraum mit freigelegten Bodenblechen.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Empty cabin with floor panels exposed."
 				}
 			]
 		},
@@ -57,8 +57,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 4 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Hölzernes Karosseriegerüst mit roten Heckblechen.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Wooden body framework with red rear panels."
 				}
 			]
 		},
@@ -67,8 +67,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 5 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Ausgebauter Motor mit sichtbaren Anbauteilen.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Removed engine with attached components visible."
 				}
 			]
 		},
@@ -77,8 +77,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 6 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Zwei ausgebaute Lenkbaugruppen mit langen Hebeln.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Two removed steering assemblies with long levers."
 				}
 			]
 		},
@@ -87,8 +87,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 7 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Ausgebaute Achsbaugruppe mit Gestänge.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Removed axle assembly with linkages."
 				}
 			]
 		},
@@ -97,8 +97,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 8 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Metallblanke Karosserie schräg von vorn.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Bare-metal body viewed from the front corner."
 				}
 			]
 		},
@@ -112,8 +112,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 9 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Close view of grille and front bodywork."
 				}
 			]
 		},
@@ -132,8 +132,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 10 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Offenes Sitzfederpolster neben herausgenommener Füllung.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Exposed seat spring cushion beside removed padding."
 				}
 			]
 		},
@@ -142,8 +142,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 11 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Zwei Sitzfederrahmen und Holzrahmen ausgelegt.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Two seat spring frames and wooden frames laid out."
 				}
 			]
 		},
@@ -152,8 +152,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 12 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Rote ausgebaute Sitzpolster nebeneinander.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Removed red seat cushions arranged together."
 				}
 			]
 		},
@@ -167,8 +167,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 13 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Cabin showing seats, steering wheel and dashboard."
 				}
 			]
 		},
@@ -177,8 +177,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 14 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Close view of grille and front bodywork."
 				}
 			]
 		},
@@ -192,8 +192,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 15 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Seitenansicht im Freien.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Side profile outdoors."
 				}
 			]
 		},
@@ -202,8 +202,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 16 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Heck und Rad aus niedriger Perspektive.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Low-angle view of rear body and wheel."
 				}
 			]
 		},
@@ -217,8 +217,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – photograph 17 in the vehicle record"
+					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Fahrzeug am Hang vor bewaldetem Tal und Gebäude.",
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1955 – Vehicle on a slope overlooking a wooded valley and building."
 				}
 			]
 		},

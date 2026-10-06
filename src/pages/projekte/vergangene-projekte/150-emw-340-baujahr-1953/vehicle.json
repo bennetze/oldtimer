@@ -5,7 +5,7 @@
 	"description": "Auch dieser BMW 340 im unvollständigen \"Fundzustand\" wurde im Auftrag seines Besitzers und langjährigen geschätzten Kunden, völlig neu durch uns aufgebaut.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/150-emw-340-baujahr-1953",
 	"order": 16,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1952",
@@ -17,18 +17,18 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 1 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – BMW-Emblem und Chromgrill an grüner Fahrzeugfront.",
+					"altEn": "BMW 340, year 1952 – BMW badge and chrome grille on green front bodywork."
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 2 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Karosserie mit offenen Türöffnungen seitlich.",
+					"altEn": "BMW 340, year 1952 – Body with open door apertures in side profile."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 3 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Offene Türöffnung mit roten Bodenblechen und Verstrebungen.",
+					"altEn": "BMW 340, year 1952 – Open door aperture with red floor panels and braces."
 				}
 			]
 		},
@@ -47,18 +47,18 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 4 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Rostige Bodenbleche neben roten Trägern.",
+					"altEn": "BMW 340, year 1952 – Rusty floor panels beside red structural members."
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 5 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Nahaufnahme einer Blechkante mit sichtbarer Schweißnaht.",
+					"altEn": "BMW 340, year 1952 – Close view of a panel edge with a visible weld seam."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 6 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Nahaufnahme einer Blechkante mit sichtbarer Schweißnaht.",
+					"altEn": "BMW 340, year 1952 – Close view of a panel edge with a visible weld seam."
 				}
 			]
 		},
@@ -67,13 +67,13 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 7 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Offenes Karosseriedach mit freiliegenden Blechkanten.",
+					"altEn": "BMW 340, year 1952 – Open body roof with exposed panel edges."
 				},
 				{
 					"src": "./image-008.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 8 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Blank geschliffene Kofferraumkante neben Chromstoßstange.",
+					"altEn": "BMW 340, year 1952 – Sanded boot edge beside chrome bumper."
 				}
 			]
 		},
@@ -87,18 +87,18 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 9 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Metallblanke Fahrzeugfront mit aufgestellter Motorhaube.",
+					"altEn": "BMW 340, year 1952 – Bare-metal front bodywork with bonnet raised."
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 10 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Karosserieheck mit blanken Blechen und braunem Dach.",
+					"altEn": "BMW 340, year 1952 – Rear bodywork with bare-metal panels and brown roof."
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 11 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Metallblanke Karosserie schräg von vorn.",
+					"altEn": "BMW 340, year 1952 – Bare-metal body viewed from the front corner."
 				}
 			]
 		},
@@ -112,18 +112,18 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 12 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Geschliffene Fahrzeugfront mit eingesetztem Chromgrill.",
+					"altEn": "BMW 340, year 1952 – Sanded front bodywork with chrome grille fitted."
 				},
 				{
 					"src": "./image-013.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 13 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Metallblanke Karosserie schräg von vorn.",
+					"altEn": "BMW 340, year 1952 – Bare-metal body viewed from the front corner."
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 14 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Seitenansicht der blanken Türen und des braunen Dachs.",
+					"altEn": "BMW 340, year 1952 – Side view of bare-metal doors and brown roof."
 				}
 			]
 		},
@@ -132,18 +132,18 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 15 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
+					"altEn": "BMW 340, year 1952 – Masked body from the rear corner in the spray booth."
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 16 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Grüner abgenommener Vorderteil auf einem Ständer.",
+					"altEn": "BMW 340, year 1952 – Green removed front section on a stand."
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 17 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
+					"altEn": "BMW 340, year 1952 – Masked body from the rear corner in the spray booth."
 				}
 			]
 		},
@@ -152,8 +152,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 18 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Grüne Karosserie ohne Türen mit offenem Kofferraum.",
+					"altEn": "BMW 340, year 1952 – Green body without doors and with boot open."
 				}
 			]
 		},
@@ -167,18 +167,18 @@
 			"images": [
 				{
 					"src": "./image-019.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 19 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Ausgebaute Lenkung über lamellenförmigem Metallteil.",
+					"altEn": "BMW 340, year 1952 – Removed steering assembly above finned metal component."
 				},
 				{
 					"src": "./image-020.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 20 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Mehrere ausgebaute Bremsbacken nebeneinander.",
+					"altEn": "BMW 340, year 1952 – Several removed brake shoes side by side."
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "BMW 340, Baujahr 1952 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "BMW 340, year 1952 – photograph 21 in the vehicle record"
+					"alt": "BMW 340, Baujahr 1952 – Schwarze Bremsankerplatte mit runden Öffnungen.",
+					"altEn": "BMW 340, year 1952 – Black brake backing plate with round openings."
 				}
 			]
 		},

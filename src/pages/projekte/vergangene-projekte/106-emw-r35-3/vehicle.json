@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine EMW R35 aus Eisenacher Produktion (Eisenacher-Motoren-Werke), die im Kundenauftrag grundhaft und originalgetreu durch uns restauriert w…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/106-emw-r35-3",
 	"order": 128,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35/3, Baujahr 1954",
@@ -17,13 +17,13 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 1 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Motorrad schräg von vorn mit hellem Tank.",
+					"altEn": "EMW R35/3, year 1954 – Motorcycle from the front corner with light fuel tank."
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 2 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Antrieb und Hinterrad des Motorrads.",
+					"altEn": "EMW R35/3, year 1954 – Motorcycle drivetrain and rear wheel."
 				}
 			]
 		},
@@ -42,8 +42,8 @@
 			"images": [
 				{
 					"src": "./image-003.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 3 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Motorradmotor unter dem Rahmen von oben.",
+					"altEn": "EMW R35/3, year 1954 – Motorcycle engine beneath the frame from above."
 				}
 			]
 		},
@@ -52,8 +52,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 4 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Motorzylinder und Emblem neben dem Tankpolster.",
+					"altEn": "EMW R35/3, year 1954 – Engine cylinder and badge beside the tank pad."
 				}
 			]
 		},
@@ -62,8 +62,8 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 5 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Motorrad von oben mit freiliegendem Motor.",
+					"altEn": "EMW R35/3, year 1954 – Motorcycle from above with exposed engine."
 				}
 			]
 		},
@@ -72,8 +72,8 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 6 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Vorderrad mit Speichen und schwarzer Gabel.",
+					"altEn": "EMW R35/3, year 1954 – Spoked front wheel and black fork."
 				}
 			]
 		},
@@ -82,8 +82,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 7 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Hinterrad und schwarzer Rahmen von der Seite.",
+					"altEn": "EMW R35/3, year 1954 – Rear wheel and black frame from the side."
 				}
 			]
 		},
@@ -92,8 +92,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 8 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Silberner Motor im schwarzen Motorradrahmen.",
+					"altEn": "EMW R35/3, year 1954 – Silver engine inside the black motorcycle frame."
 				}
 			]
 		},
@@ -107,8 +107,8 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 9 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Schwarzes Motorrad seitlich im Hof.",
+					"altEn": "EMW R35/3, year 1954 – Black motorcycle in side profile in the courtyard."
 				}
 			]
 		},
@@ -117,8 +117,8 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 10 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Schwarzes Motorrad seitlich in der Werkstatt.",
+					"altEn": "EMW R35/3, year 1954 – Black motorcycle in side profile in the workshop."
 				}
 			]
 		},
@@ -127,8 +127,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 11 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Schwarzes Motorrad schräg von der Seite auf Kopfsteinpflaster.",
+					"altEn": "EMW R35/3, year 1954 – Black motorcycle viewed obliquely on cobblestones."
 				}
 			]
 		},
@@ -137,8 +137,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 12 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Motorradheck mit Sattel, Hinterrad und Auspuff.",
+					"altEn": "EMW R35/3, year 1954 – Motorcycle rear with saddle, rear wheel and exhaust."
 				}
 			]
 		},
@@ -147,8 +147,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 13 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Motor und Tankpolster schräg von der Seite.",
+					"altEn": "EMW R35/3, year 1954 – Engine and tank pad viewed from the side."
 				}
 			]
 		},
@@ -157,8 +157,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "EMW R35/3, Baujahr 1954 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "EMW R35/3, year 1954 – photograph 14 in the vehicle record"
+					"alt": "EMW R35/3, Baujahr 1954 – Schwarzes Motorrad schräg von oben im Hof.",
+					"altEn": "EMW R35/3, year 1954 – Black motorcycle from above at an angle in the courtyard."
 				}
 			]
 		},

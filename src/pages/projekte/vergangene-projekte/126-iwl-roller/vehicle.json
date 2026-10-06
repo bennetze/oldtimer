@@ -5,7 +5,7 @@
 	"description": "Hier gleich zwei sogenannte \"Berlin - Roller\" (Stadtroller SR59) gebaut bei den Industriewerken Ludwigsfelde (IWL), Nahe Berlin.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/126-iwl-roller",
 	"order": 38,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1962",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "IWL Berlin-Roller, Baujahr 1962",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 1 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Grün-heller Motorroller mit Anhänger seitlich im Hof.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Green-and-light scooter with trailer in side profile in the courtyard."
 				}
 			]
 		},
@@ -37,23 +37,23 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 2 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Heller Rollermotor im offenen Rahmen.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Light scooter engine in the open frame."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 3 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Helles Motorgehäuse mit Hebeln und Leitungen.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Light engine casing with levers and pipework."
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 4 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Geöffneter Rollermotor mit Lüftergehäuse.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Open scooter engine with fan housing."
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 5 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Rostiger orangefarbener Anhänger mit offenem Fach.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Rusty orange trailer with open compartment."
 				}
 			]
 		},
@@ -62,13 +62,13 @@
 			"images": [
 				{
 					"src": "./image-006.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 6 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Helle Anhängerkarosserie mit offener Sitzmulde.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Light trailer body with open seat recess."
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 7 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Zwei helle Anhängerkarosserien in der Kabine.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Two light trailer bodies in the booth."
 				}
 			]
 		},
@@ -82,13 +82,13 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 8 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Abgeklebte Rollerkarosserie mit orangefarbener Fläche.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Masked scooter body with orange panel."
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 9 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Abgeklebte Anhängerkarosserie in der Kabine.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Masked trailer body in the booth."
 				}
 			]
 		},
@@ -112,18 +112,18 @@
 			"images": [
 				{
 					"src": "./image-010.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 10 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Zwei Getriebewellen mit Zahnrädern auf Holz.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Two gearbox shafts with gears on wood."
 				},
 				{
 					"src": "./image-011.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 11 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Rollermotor mit freiliegender Verkabelung auf der Werkbank.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Scooter engine with exposed wiring on the workbench."
 				},
 				{
 					"src": "./image-012.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 12 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Offenes rundes Lüftergehäuse am Rollermotor.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Open round fan housing on the scooter engine."
 				}
 			]
 		},
@@ -132,13 +132,13 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 13 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Rollermotor mit schwarzem Tank auf der Werkbank.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Scooter engine with black tank on the workbench."
 				},
 				{
 					"src": "./image-014.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 14 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orangefarbener Roller mit offenem Motorbereich.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Orange scooter with engine compartment open."
 				}
 			]
 		},
@@ -152,18 +152,18 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 15 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Abgenommene Trittbrettbleche auf einem Stuhl.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Removed footboard panels on a chair."
 				},
 				{
 					"src": "./image-016.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 16 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Rollermotor neben Trittbrett und orangefarbener Verkleidung.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Scooter engine beside footboard and orange body panel."
 				},
 				{
 					"src": "./image-017.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 17 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Ausgebaute metallblanke Rollerfelgen auf dem Boden.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Removed bare-metal scooter rims on the floor."
 				}
 			]
 		},
@@ -172,13 +172,13 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 18 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Grün-heller Roller mit offener Frontverkleidung.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Green-and-light scooter with front cover open."
 				},
 				{
 					"src": "./image-019.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 19 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 19 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orange-heller Roller ohne hintere Seitenverkleidung.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Orange-and-light scooter without rear side cover."
 				}
 			]
 		},
@@ -187,53 +187,53 @@
 			"images": [
 				{
 					"src": "./image-020.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 20 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 20 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orange-heller Roller mit freiliegendem Motor in der Werkstatt.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Orange-and-light scooter with engine exposed in the workshop."
 				},
 				{
 					"src": "./image-021.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 21 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 21 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Roller auf einem Gestell mit offenem Lüftergehäuse.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Scooter on a stand with fan housing open."
 				},
 				{
 					"src": "./image-022.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 22 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 22 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Lange Metallstifte mit unterschiedlich gefärbten Enden.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Long metal pins with differently coloured ends."
 				},
 				{
 					"src": "./image-023.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 23 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 23 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Zwei Roller nebeneinander in der Werkstatt.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Two scooters side by side in the workshop."
 				},
 				{
 					"src": "./image-024.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 24 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 24 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orange-helles Seitenblech mit Lüftungsschlitzen.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Orange-and-light side panel with ventilation slots."
 				},
 				{
 					"src": "./image-025.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 25 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 25 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orange-heller Anhänger mit gepolsterter Oberseite.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Orange-and-light trailer with padded upper surface."
 				},
 				{
 					"src": "./image-026.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 26 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 26 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orange-heller Roller schräg von vorn.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Orange-and-light scooter from the front corner."
 				},
 				{
 					"src": "./image-027.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 27 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 27 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Roller und abgenommene Anhängerkarosserien in der Werkstatt.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Scooters and removed trailer bodies in the workshop."
 				},
 				{
 					"src": "./image-028.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 28 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 28 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Grün-heller Roller mit Anhänger in der Werkstatt.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Green-and-light scooter with trailer in the workshop."
 				},
 				{
 					"src": "./image-029.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 29 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 29 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Grün-heller Roller mit weißen Sitzen und Anhänger.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Green-and-light scooter with white seats and trailer."
 				}
 			]
 		},
@@ -242,13 +242,13 @@
 			"images": [
 				{
 					"src": "./image-030.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 30 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 30 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Mehrere Roller und Anhänger nebeneinander im Hof.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Several scooters and trailers side by side in the courtyard."
 				},
 				{
 					"src": "./image-031.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Aufnahme 31 der Fahrzeugdokumentation",
-					"altEn": "IWL Berlin Scooter, year 1962 – photograph 31 in the vehicle record"
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Drei Roller schräg von vorn in der Werkstatt.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Three scooters from the front corner in the workshop."
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Dieses DKW F8 Cabriolet erhielt in unserer Stellmacherei ein neues Verdeckgestell aus Eschenholz maßgerecht angefertigt und anschließend in unserer Satt…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/140-dkw-f8-cabriolet-1938",
 	"order": 131,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "DKW F8 Cabriolet, 1938",
 	"leadImage": "./image-001.jpg",
@@ -16,38 +16,38 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 1 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Seitenansicht im Freien.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Side profile outdoors."
 				},
 				{
 					"src": "./image-002.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 2 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Freigelegte Holz- und Blechkante am dunklen Karosserieheck.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Exposed wood and panel edge on dark rear bodywork."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 3 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Hölzerner Verdeckrahmen neben schwarzem Bezug.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Wooden roof frame beside black fabric."
 				},
 				{
 					"src": "./image-004.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 4 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Gebogener Holzrahmen mit schwarzem Metallbeschlag.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Curved wooden frame with black metal fitting."
 				},
 				{
 					"src": "./image-005.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 5 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Cabriolet seitlich mit freiliegendem Verdeckgestänge.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Convertible in side profile with hood frame exposed."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 6 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Offenes Verdeckgestänge über dem Innenraum.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Open hood frame above the cabin."
 				},
 				{
 					"src": "./image-007.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 7 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Front three-quarter view outdoors."
 				}
 			]
 		},
@@ -61,13 +61,13 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 8 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Geschlossenes Stoffverdeck über dem Innenraum.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Closed fabric soft top above the cabin."
 				},
 				{
 					"src": "./image-009.jpg",
-					"alt": "DKW F8 Cabriolet, 1938 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "DKW F8 Cabriolet, 1938 – photograph 9 in the vehicle record"
+					"alt": "DKW F8 Cabriolet, 1938 – Schwarzes Verdeck mit schmalem Heckfenster.",
+					"altEn": "DKW F8 Cabriolet, 1938 – Black soft top with narrow rear window."
 				}
 			]
 		}

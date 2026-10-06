@@ -5,7 +5,7 @@
 	"description": "Dieser AMC der Marke \"American-Motors-Corporation\" wurde unter der Ägide des Mutterkonzern \"General Motors\" mit einem sehr eigenwilligen und gleichwohl…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/130-amc-pacer-baujahr-1979",
 	"order": 57,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-06",
 	"year": "1979",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "AMC Pacer, Baujahr 1979",
@@ -17,8 +17,8 @@
 			"images": [
 				{
 					"src": "./image-001.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 1 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 1 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Frontansicht im Freien.",
+					"altEn": "AMC Pacer, year 1979 – Straight front view outdoors."
 				}
 			]
 		},
@@ -42,13 +42,13 @@
 			"images": [
 				{
 					"src": "./image-002.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 2 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 2 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Nahaufnahme von Rost und Löchern im Karosserieblech.",
+					"altEn": "AMC Pacer, year 1979 – Close view of rust and holes in a body panel."
 				},
 				{
 					"src": "./image-003.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 3 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 3 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Durchrostete Karosserieecke mit großen Öffnungen.",
+					"altEn": "AMC Pacer, year 1979 – Rusted body corner with large openings."
 				}
 			]
 		},
@@ -57,8 +57,8 @@
 			"images": [
 				{
 					"src": "./image-004.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 4 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 4 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Braune Karosserie mit offenem Vorderteil auf der Hebebühne.",
+					"altEn": "AMC Pacer, year 1979 – Brown body with front section exposed on the lift."
 				}
 			]
 		},
@@ -72,13 +72,13 @@
 			"images": [
 				{
 					"src": "./image-005.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 5 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 5 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Nahaufnahme von Rost und Löchern im Karosserieblech.",
+					"altEn": "AMC Pacer, year 1979 – Close view of rust and holes in a body panel."
 				},
 				{
 					"src": "./image-006.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 6 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 6 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Braune Karosserie neben abgenommener Motorhaube im Hof.",
+					"altEn": "AMC Pacer, year 1979 – Brown body beside removed bonnet in the courtyard."
 				}
 			]
 		},
@@ -87,8 +87,8 @@
 			"images": [
 				{
 					"src": "./image-007.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 7 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 7 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Braune Karosserie mit fehlenden Scheiben von schräg oben.",
+					"altEn": "AMC Pacer, year 1979 – Brown body with windows absent from above at an angle."
 				}
 			]
 		},
@@ -97,8 +97,8 @@
 			"images": [
 				{
 					"src": "./image-008.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 8 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 8 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Rot beschichtetes Blech mit umlaufenden blanken Nähten.",
+					"altEn": "AMC Pacer, year 1979 – Red-coated panel with bare seams around the edges."
 				}
 			]
 		},
@@ -107,13 +107,13 @@
 			"images": [
 				{
 					"src": "./image-009.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 9 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 9 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Blankes Blech neben rot beschichtetem Verstärkungsblech.",
+					"altEn": "AMC Pacer, year 1979 – Bare panel beside a red-coated reinforcing panel."
 				},
 				{
 					"src": "./image-010.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 10 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 10 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Blanker Innenraumboden mit verschweißten Blechen.",
+					"altEn": "AMC Pacer, year 1979 – Bare cabin floor with welded panels."
 				}
 			]
 		},
@@ -127,8 +127,8 @@
 			"images": [
 				{
 					"src": "./image-011.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 11 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 11 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
+					"altEn": "AMC Pacer, year 1979 – Masked body from the rear corner in the spray booth."
 				}
 			]
 		},
@@ -137,8 +137,8 @@
 			"images": [
 				{
 					"src": "./image-012.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 12 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 12 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Abgeklebte Karosserie gerade von hinten in der Lackierkabine.",
+					"altEn": "AMC Pacer, year 1979 – Straight rear view of the masked body in the spray booth."
 				}
 			]
 		},
@@ -147,8 +147,8 @@
 			"images": [
 				{
 					"src": "./image-013.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 13 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 13 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Braun lackierte Tür auf einem Ständer.",
+					"altEn": "AMC Pacer, year 1979 – Brown-painted door on a stand."
 				}
 			]
 		},
@@ -157,8 +157,8 @@
 			"images": [
 				{
 					"src": "./image-014.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 14 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 14 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Karosserie ohne Leuchten und Anbauteile schräg von hinten.",
+					"altEn": "AMC Pacer, year 1979 – Body without lights or exterior fittings viewed from the rear corner."
 				}
 			]
 		},
@@ -167,8 +167,8 @@
 			"images": [
 				{
 					"src": "./image-015.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 15 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 15 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Karosserie ohne Leuchten und Anbauteile schräg von hinten.",
+					"altEn": "AMC Pacer, year 1979 – Body without lights or exterior fittings viewed from the rear corner."
 				}
 			]
 		},
@@ -177,8 +177,8 @@
 			"images": [
 				{
 					"src": "./image-016.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 16 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 16 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Brauner leerer Motorraum gerade von vorn.",
+					"altEn": "AMC Pacer, year 1979 – Straight front view of the empty brown engine bay."
 				}
 			]
 		},
@@ -187,8 +187,8 @@
 			"images": [
 				{
 					"src": "./image-017.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 17 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 17 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Radnabe mit Bremsscheibe bei ausgebautem Rad.",
+					"altEn": "AMC Pacer, year 1979 – Wheel hub and brake disc with wheel removed."
 				}
 			]
 		},
@@ -197,8 +197,8 @@
 			"images": [
 				{
 					"src": "./image-018.jpg",
-					"alt": "AMC Pacer, Baujahr 1979 – Aufnahme 18 der Fahrzeugdokumentation",
-					"altEn": "AMC Pacer, year 1979 – photograph 18 in the vehicle record"
+					"alt": "AMC Pacer, Baujahr 1979 – Blick in den offenen Motorraum auf Motor und Leitungen.",
+					"altEn": "AMC Pacer, year 1979 – Open engine bay showing the engine and pipework."
 				}
 			]
 		},
