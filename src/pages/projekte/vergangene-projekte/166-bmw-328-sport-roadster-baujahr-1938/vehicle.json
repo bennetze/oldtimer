@@ -5,7 +5,7 @@
 	"description": "Der Typ 328 zählt bekanntermaßen zu den erfolgreichsten und in Sammlerkreisen heute zu den gesuchtesten Sportwagen der Vorkriegszeit, erfüllt er doch sä…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/166-bmw-328-sport-roadster-baujahr-1938",
 	"order": 3,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 328 Sport-Roadster, Baujahr 1938",
@@ -38,11 +38,6 @@
 			"htmlEn": "<p>We have faithfully and authentically restored several outstanding BMW 328s for enthusiastic clients</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>(s. Referenzen).</p>",
-			"htmlEn": "<p>(see references).</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -63,6 +58,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>(s. Referenzen).</p>",
+			"htmlEn": "<p>(see references).</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -74,13 +74,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nBei diesem Original-Exemplar war die Substanz insgesamt zwar recht gut erhalten, bei vormaligen Restaurations- und Erhaltungsversuchen wurde aber wenig Fach- und Sachkenntnis, dazu offensichtlich kaum technischer Verstand und noch weniger das notwendige handwerkliche Geschick aufgebracht, um der Seltenheit und Exklusivität eines solch bezaubernden und reinrassigen Vorkriegsroadsters gerecht zu werden.</p>",
-			"htmlEn": "<p><br>\nThis original example retained sound underlying material, but earlier restoration and preservation attempts showed little specialist knowledge, mechanical understanding or the craftsmanship required by such a rare and exclusive pre-war roadster.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>So wurden bei entsprechenden Vorbesitzern wohl zwar einige Karosseriearbeiten durchgeführt, diese bestanden aber im wesentlichen nur in großflächigen Spachtel- (eher Stuckateur-) arbeiten. So war u.a. das gesamte Heckteil (weil deformiert) großflächig mit bis zu 4cm! Spachtelschichten &quot;modelliert&quot;, was mit Karosseriebau im Allgemeinen und Aluminium-Leichtbau im Speziellen eben auch gar nichts mehr zu tun hat.<br />\n<br /></p>",
-			"htmlEn": "<p>Previous bodywork largely consisted of extensive filler application. The deformed rear section, for example, had been sculpted with layers up to 4 cm thick — unrelated to proper body repair, especially lightweight aluminium construction.<br>\n<br></p>"
+			"html": "<p>Bei diesem Original-Exemplar war die Substanz insgesamt zwar recht gut erhalten, bei vormaligen Restaurations- und Erhaltungsversuchen wurde aber wenig Fach- und Sachkenntnis, dazu offensichtlich kaum technischer Verstand und noch weniger das notwendige handwerkliche Geschick aufgebracht, um der Seltenheit und Exklusivität eines solch bezaubernden und reinrassigen Vorkriegsroadsters gerecht zu werden.</p>",
+			"htmlEn": "<p>This original example retained sound underlying material, but earlier restoration and preservation attempts showed little specialist knowledge, mechanical understanding or the craftsmanship required by such a rare and exclusive pre-war roadster.</p>"
 		},
 		{
 			"type": "gallery",
@@ -103,6 +98,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>So wurden bei entsprechenden Vorbesitzern wohl zwar einige Karosseriearbeiten durchgeführt, diese bestanden aber im wesentlichen nur in großflächigen Spachtel- (eher Stuckateur-) arbeiten. So war u.a. das gesamte Heckteil (weil deformiert) großflächig mit bis zu 4cm! Spachtelschichten &quot;modelliert&quot;, was mit Karosseriebau im Allgemeinen und Aluminium-Leichtbau im Speziellen eben auch gar nichts mehr zu tun hat.<br />\n<br /></p>",
+			"htmlEn": "<p>Previous bodywork largely consisted of extensive filler application. The deformed rear section, for example, had been sculpted with layers up to 4 cm thick — unrelated to proper body repair, especially lightweight aluminium construction.<br>\n<br></p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -121,6 +121,11 @@
 			"type": "copy",
 			"html": "<p>Im Auftrag des neuen Besitzers - einem langjährigen Sammler, Kenner und Automobilenthusiasten - wurde unsererseits die gesamte Karosserie größtenteils neu angefertigt, damit auch sämtliche Radien und Passungen in Aluminium wieder originalgetreu hergestellt.</p>",
 			"htmlEn": "<p>For the new owner, a longstanding collector, expert and motoring enthusiast, we largely remade the entire body, faithfully restoring its curves and fit in aluminium.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Auch alle Zier- und Anbauteile wurden überarbeitet und wieder perfekt eingepasst.</p>",
+			"htmlEn": "<p>All trim pieces and fittings were also refurbished and precisely refitted.</p>"
 		},
 		{
 			"type": "gallery",
@@ -164,8 +169,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nDie in unserer Lackierabteilung perfekt lackierte Karosserie.</p>",
-			"htmlEn": "<p><br>\n<br>\nThe beautifully painted body from our paint shop.</p>"
+			"html": "<p>Die in unserer Lackierabteilung perfekt lackierte Karosserie.</p>",
+			"htmlEn": "<p>The beautifully painted body from our paint shop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -193,11 +198,6 @@
 			"htmlEn": "<p>The original engine block and the distinctive, innovative 328 cylinder head with two overhead rocker shafts, before and after the engine overhaul.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Motor: 6 Zylinder, 2 Liter Hubraum, 80PS Leistung, 2 obenliegende Kipphebelwellen zur V-förmigen Ventilsteuerung, 3-fach SOLEX-Vergaseranlage <br />\n<br /></p>",
-			"htmlEn": "<p>Engine: six cylinders, 2 litres, 80 PS, two overhead rocker shafts operating the V-arranged valves, triple SOLEX carburettors. <br>\n<br></p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -211,6 +211,11 @@
 					"altEn": "BMW 328 Sport-Roadster, year 1938 – Light roadster rear on lift."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Motor: 6 Zylinder, 2 Liter Hubraum, 80PS Leistung, 2 obenliegende Kipphebelwellen zur V-förmigen Ventilsteuerung, 3-fach SOLEX-Vergaseranlage <br />\n<br /></p>",
+			"htmlEn": "<p>Engine: six cylinders, 2 litres, 80 PS, two overhead rocker shafts operating the V-arranged valves, triple SOLEX carburettors. <br>\n<br></p>"
 		},
 		{
 			"type": "copy",
@@ -234,11 +239,6 @@
 					"src": "./image-021.jpg",
 					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Dreiviertelansicht von hinten im Freien.",
 					"altEn": "BMW 328 Sport-Roadster, year 1938 – Rear three-quarter view outdoors."
-				},
-				{
-					"src": "./image-022.jpg",
-					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Seitenansicht im Freien.",
-					"altEn": "BMW 328 Sport-Roadster, year 1938 – Side profile outdoors."
 				}
 			]
 		},
@@ -246,6 +246,16 @@
 			"type": "copy",
 			"html": "<p>Ein sehr schön und authentisch restauriertes Originalexemplar eines der ohnehin wenigen BMW 328 Roadster.</p>",
 			"htmlEn": "<p>A beautifully and authentically restored original example of the rare BMW 328 Roadster.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-022.jpg",
+					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Seitenansicht im Freien.",
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – Side profile outdoors."
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -263,6 +273,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Nicht nur fahrtechnisch nun wieder ein reinrassiger Vorkriegs-Sport-Roadster, sondern auch optisch wieder ein Hochgenuss...</p>",
+			"htmlEn": "<p>Once again a thoroughbred pre-war sports roadster to drive, and a delight to admire…</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -271,11 +286,6 @@
 					"altEn": "BMW 328 Sport-Roadster, year 1938 – Rear three-quarter view outdoors."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Nicht nur fahrtechnisch nun wieder ein reinrassiger Vorkriegs-Sport-Roadster, sondern auch optisch wieder ein Hochgenuss...</p>",
-			"htmlEn": "<p>Once again a thoroughbred pre-war sports roadster to drive, and a delight to admire…</p>"
 		}
 	],
 	"titleEn": "BMW 328 Sport-Roadster, year 1938",

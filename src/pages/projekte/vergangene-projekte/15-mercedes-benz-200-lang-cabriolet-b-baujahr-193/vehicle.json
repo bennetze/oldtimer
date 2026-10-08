@@ -5,12 +5,12 @@
 	"description": "Mercedes – Benz, Typ 200 lang (W21), Cabriolet B, Baujahr 1936\n\nElegantes und großzügiges Cabriolet in B-Ausführung (Vier – Fenster – Cabriolet) mit seh…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/15-mercedes-benz-200-lang-cabriolet-b-baujahr-193",
 	"order": 85,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936",
 	"blocks": [
 		{
 			"type": "copy",
@@ -89,8 +89,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nLaut historischem Archiv existieren von diesem Modell mit langem Radstand und original ausgelieferten 2,3 Liter Motor und MAYBACH - Schnellgang- Getriebe, nur weniger als 5 Fahrzeuge überhaupt.</p>",
-			"htmlEn": "<p><br>\nHistorical archives record fewer than five surviving examples with this long wheelbase, factory-supplied 2.3-litre engine and Maybach overdrive gearbox.</p>"
+			"html": "<p>Laut historischem Archiv existieren von diesem Modell mit langem Radstand und original ausgelieferten 2,3 Liter Motor und MAYBACH - Schnellgang- Getriebe, nur weniger als 5 Fahrzeuge überhaupt.</p>",
+			"htmlEn": "<p>Historical archives record fewer than five surviving examples with this long wheelbase, factory-supplied 2.3-litre engine and Maybach overdrive gearbox.</p>"
 		},
 		{
 			"type": "gallery",
@@ -104,8 +104,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nWährend der bei uns excellent durchgeführten Vollrestauration wurde unter anderem auch der komplette Innenraum nach historischen Archivunterlagen originalgetreu neu gestaltet. Hierbei kamen feinstes Leder und edle Zierhölzer zum Einsatz.</p>",
-			"htmlEn": "<p><br>\nDuring the restoration, we faithfully recreated the entire interior from historic archive documents, using fine leather and elegant wood trim.</p>"
+			"html": "<p>Während der bei uns excellent durchgeführten Vollrestauration wurde unter anderem auch der komplette Innenraum nach historischen Archivunterlagen originalgetreu neu gestaltet. Hierbei kamen feinstes Leder und edle Zierhölzer zum Einsatz.</p>",
+			"htmlEn": "<p>During the restoration, we faithfully recreated the entire interior from historic archive documents, using fine leather and elegant wood trim.</p>"
 		},
 		{
 			"type": "gallery",
@@ -176,5 +176,5 @@
 	"titleEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936",
 	"descriptionEn": "Mercedes-Benz 200 long-wheelbase, W21, Cabriolet B, 1936. An elegant, spacious four-window Cabriolet B with the very rare long wheelbase.",
 	"cardImageAltEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936",
-	"leadImageAltEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – vehicle record"
+	"leadImageAltEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936"
 }

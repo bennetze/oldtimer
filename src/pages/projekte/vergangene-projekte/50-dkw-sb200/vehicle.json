@@ -5,11 +5,11 @@
 	"description": "Diese DKW SB200 wurde bei uns technischerseits restauriert.\n\nDazu wurde unter anderem die damals übliche Kork-Lamellen-Kupplung originalgetreu instand g…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/50-dkw-sb200",
 	"order": 107,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "DKW SB200",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "DKW SB200 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "DKW SB200",
 	"blocks": [
 		{
 			"type": "copy",
@@ -40,5 +40,5 @@
 	"titleEn": "DKW SB200",
 	"descriptionEn": "We restored the mechanical systems of this DKW SB200. This included faithfully repairing its period cork-plate clutch and refurbishing the Bing carburettor.",
 	"cardImageAltEn": "DKW SB200",
-	"leadImageAltEn": "DKW SB200 – vehicle record"
+	"leadImageAltEn": "DKW SB200"
 }

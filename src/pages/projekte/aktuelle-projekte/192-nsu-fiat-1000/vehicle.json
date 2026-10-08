@@ -5,7 +5,7 @@
 	"description": "Hier ein inzwischen relativ unbekanntes Exemplar eines schicken Vorkriegs-Cabriolets - ein NSU-Fiat mit einer Kabriolett Karosserie der Firma \"Weinsberg…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/192-nsu-fiat-1000",
 	"order": 12,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1935",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "NSU-Fiat \"Weinsberg\" Cabriolet, Baujahr 1935",
@@ -34,8 +34,13 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p>Um die Bekanntheit des Namens NSU weiter zu nutzen, wählte man fortan die Doppelbezeichnung NSU-Fiat und baute für einige Jahre zunächst div. lizenzierte italienische Fiat Modelle.</p>",
-			"htmlEn": "<p>To retain the established NSU name, the company adopted the combined NSU-Fiat badge and initially built various Italian Fiat models under licence for several years.</p>"
+			"html": "<p>Geschichtlicher Hintergrund:</p>",
+			"htmlEn": "<p>Historical background:</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Bereits Ende der 20er Jahre des letzten Jahrhunderts baute die Firma NSU in Heilbronn ein brandneues Fertigungswerk, hatte sich aber durch weitere Übernahmen und Beteiligungen finanziell übernommen und kam damit bereits nach kurzer Zeit in starke finanzielle Engpässe, sodass das neue Werk bereits 1928 mitsamt Material und Maschinen an die Firma FIAT verkauft werden musste.</p>",
+			"htmlEn": "<p>In the late 1920s, NSU built a brand-new factory in Heilbronn. Further acquisitions and investments, however, overstretched the company financially and soon led to severe difficulties. In 1928, it had to sell the new factory, including its materials and machinery, to FIAT.</p>"
 		},
 		{
 			"type": "gallery",
@@ -59,6 +64,11 @@
 		},
 		{
 			"type": "copy",
+			"html": "<p>Um die Bekanntheit des Namens NSU weiter zu nutzen, wählte man fortan die Doppelbezeichnung NSU-Fiat und baute für einige Jahre zunächst div. lizenzierte italienische Fiat Modelle.</p>",
+			"htmlEn": "<p>To retain the established NSU name, the company adopted the combined NSU-Fiat badge and initially built various Italian Fiat models under licence for several years.</p>"
+		},
+		{
+			"type": "copy",
 			"html": "<p>Einige schöne Ursprungsfotos der 30er Jahre.</p>",
 			"htmlEn": "<p>Some beautiful original photographs from the 1930s.</p>"
 		},
@@ -74,8 +84,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nDer Ausgangszustand dieses seltenen &quot;Weinsberg&quot; Kabrioletts war zwar zunächst relativ komplett und ansprechend, im Kern allerdings zeigte sich gerade die Karosserie in ihrem statischen Grundaufbau doch sehr marode.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nThis rare Weinsberg cabriolet initially appeared relatively complete and attractive, but its underlying body structure proved badly deteriorated.</p>"
+			"html": "<p>Der Ausgangszustand dieses seltenen &quot;Weinsberg&quot; Kabrioletts war zwar zunächst relativ komplett und ansprechend, im Kern allerdings zeigte sich gerade die Karosserie in ihrem statischen Grundaufbau doch sehr marode.</p>",
+			"htmlEn": "<p>This rare Weinsberg cabriolet initially appeared relatively complete and attractive, but its underlying body structure proved badly deteriorated.</p>"
 		},
 		{
 			"type": "gallery",
@@ -254,8 +264,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nIm Anschluss an die Holz-Stellmacherarbeiten wurde nun die Blech-Außenhaut, mit Bodenanlage, Spritzwand, Anbauteilen u.dgl. restauriert und segmentweise neu aufgebaut.</p>",
-			"htmlEn": "<p><br>\nFollowing the timber work, the metal outer skin, floor, bulkhead and fittings were restored and reconstructed section by section.</p>"
+			"html": "<p>Im Anschluss an die Holz-Stellmacherarbeiten wurde nun die Blech-Außenhaut, mit Bodenanlage, Spritzwand, Anbauteilen u.dgl. restauriert und segmentweise neu aufgebaut.</p>",
+			"htmlEn": "<p>Following the timber work, the metal outer skin, floor, bulkhead and fittings were restored and reconstructed section by section.</p>"
 		},
 		{
 			"type": "gallery",
@@ -329,7 +339,12 @@
 					"src": "./image-039.jpg",
 					"alt": "NSU-Fiat \"Weinsberg\" Cabriolet, Baujahr 1935 – Cabriolet mit offenen Türen und angehobener Motorhaube.",
 					"altEn": "NSU-Fiat \"Weinsberg\" Cabriolet, year 1935 – Convertible with doors open and bonnet raised."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-040.jpg",
 					"alt": "NSU-Fiat \"Weinsberg\" Cabriolet, Baujahr 1935 – Helle Karosserie schräg von vorn in der Werkstatt.",

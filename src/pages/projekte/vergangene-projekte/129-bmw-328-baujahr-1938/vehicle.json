@@ -5,7 +5,7 @@
 	"description": "BMW 328 Sport-Roadster von 1938. Vor dem 2. Weltkrieg galt der BMW 328 als DER Supersportwagen schlechthin und gilt heute unter Kennern als eines der be…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/129-bmw-328-baujahr-1938",
 	"order": 8,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 328 Sport-Roadster, Baujahr 1938",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nBMW 328 Sport-Roadster von 1938. Vor dem 2. Weltkrieg galt der BMW 328 als DER Supersportwagen schlechthin und gilt heute unter Kennern als eines der begehrtesten Sammlerobjekte überhaupt.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA 1938 BMW 328 Sport Roadster. Before the Second World War, the 328 was regarded as the definitive super sports car. Today it is one of the most coveted collector cars among enthusiasts.</p>"
+			"html": "<p>BMW 328 Sport-Roadster von 1938. Vor dem 2. Weltkrieg galt der BMW 328 als DER Supersportwagen schlechthin und gilt heute unter Kennern als eines der begehrtesten Sammlerobjekte überhaupt.</p>",
+			"htmlEn": "<p>A 1938 BMW 328 Sport Roadster. Before the Second World War, the 328 was regarded as the definitive super sports car. Today it is one of the most coveted collector cars among enthusiasts.</p>"
 		},
 		{
 			"type": "copy",
@@ -129,7 +129,12 @@
 					"src": "./image-011.jpg",
 					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Blanker Kotflügel neben roter Karosserie.",
 					"altEn": "BMW 328 Sport-Roadster, year 1938 – Bare-metal wing beside red bodywork."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-012.jpg",
 					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Abgetrennter rostiger Blechstreifen auf rotem Träger.",
@@ -164,7 +169,12 @@
 					"src": "./image-017.jpg",
 					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Metallblanker Kotflügel über einem abgedeckten Rad.",
 					"altEn": "BMW 328 Sport-Roadster, year 1938 – Bare-metal wing above a masked wheel."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-018.jpg",
 					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
@@ -194,8 +204,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAuch die gesamte Technik und Elektrik erfuhr in unserer mechanischen Abteilung eine umfassende Restaurierung.</p>",
-			"htmlEn": "<p><br>\n<br>\nOur mechanical department also comprehensively restored all mechanical and electrical systems.</p>"
+			"html": "<p>Auch die gesamte Technik und Elektrik erfuhr in unserer mechanischen Abteilung eine umfassende Restaurierung.</p>",
+			"htmlEn": "<p>Our mechanical department also comprehensively restored all mechanical and electrical systems.</p>"
 		},
 		{
 			"type": "gallery",
@@ -374,8 +384,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\nEin weiterer bei uns perfekt restaurierter BMW 328 Sport zur Übergabe an seinen Besitzer...</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\n<br>\nAnother superbly restored BMW 328 Sport, ready to return to its owner…</p>"
+			"html": "<p>Ein weiterer bei uns perfekt restaurierter BMW 328 Sport zur Übergabe an seinen Besitzer...</p>",
+			"htmlEn": "<p>Another superbly restored BMW 328 Sport, ready to return to its owner…</p>"
 		},
 		{
 			"type": "gallery",
@@ -394,7 +404,12 @@
 					"src": "./image-039.jpg",
 					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Motorhaube mit Schlitzen und quer verlaufendem Lederriemen.",
 					"altEn": "BMW 328 Sport-Roadster, year 1938 – Bonnet with slots and transverse leather strap."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-040.jpg",
 					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Zwei graue Roadster nebeneinander im Hof.",

@@ -5,7 +5,7 @@
 	"description": "Hier ein weiterer Wartburg 313 Sport, der hier in unserer Manufaktur sehr originalgetreu und komplett neu restauriert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/36-wartburg-313-s-sport-baujahr-1957",
 	"order": 51,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 S - Sport, Baujahr 1959",
@@ -138,11 +138,6 @@
 			"htmlEn": "<p>With virtually no usable replacement parts available for the rare 313 Sport, our body shop had to make and fit them individually to the car.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>So wurden Stück für Stück all diese - teils massiven Karosserieschäden - fachgerecht instand gesetzt.</p>",
-			"htmlEn": "<p>Step by step, we professionally repaired all the damage, some of it severe.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -159,7 +154,17 @@
 					"src": "./image-016.jpg",
 					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Metallblanke Karosserie schräg von hinten.",
 					"altEn": "Wartburg 313 S - Sport, year 1959 – Bare-metal body viewed from the rear corner."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>So wurden Stück für Stück all diese - teils massiven Karosserieschäden - fachgerecht instand gesetzt.</p>",
+			"htmlEn": "<p>Step by step, we professionally repaired all the damage, some of it severe.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-017.jpg",
 					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Innenraum mit Holzrahmen, Lenkrad und freigelegtem Boden.",
@@ -189,8 +194,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nEin schöner Vergleich zwischen dem inzwischen perfekt fertig restaurierten 313er Sport und der aufwendig fertiggestellten Karosserie. Auch diesem Fahrzeug stand nun eine hochwertige Lackierung in unserer Lackierabteilung bevor...</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA useful comparison between a completed, fully restored 313 Sport and this painstakingly rebuilt body, now ready for high-quality paintwork in our paint shop.</p>"
+			"html": "<p>Ein schöner Vergleich zwischen dem inzwischen perfekt fertig restaurierten 313er Sport und der aufwendig fertiggestellten Karosserie. Auch diesem Fahrzeug stand nun eine hochwertige Lackierung in unserer Lackierabteilung bevor...</p>",
+			"htmlEn": "<p>A useful comparison between a completed, fully restored 313 Sport and this painstakingly rebuilt body, now ready for high-quality paintwork in our paint shop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -249,8 +254,308 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier die bereits komplett restaurierten Chromteile und die mittlerweile ebenso überholten 313-typischen Instrumente.</p>",
-			"htmlEn": "<p><br>\nThe fully restored chrome parts and refurbished 313-specific instruments.</p>"
+			"html": "<p>Hier die bereits komplett restaurierten Chromteile und die mittlerweile ebenso überholten 313-typischen Instrumente.</p>",
+			"htmlEn": "<p>The fully restored chrome parts and refurbished 313-specific instruments.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-036.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Motor mit weißem Lüfter im roten Motorraum.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Engine with a white fan in the red engine bay."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Antriebswelle und Gelenk während der Montage",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Drive shaft and joint during assembly"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Restauriertes Fahrgestell mit Achsen",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Restored chassis with axles"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Motor auf einem Montageständer",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Engine on an assembly stand"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-004.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Restauriertes Getriebe in der Werkstatt",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Restored gearbox in the workshop"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach Aufarbeitung sämtlicher technischer Komponenten, einschließlich Motor, Getriebe, Achsen, Antrieben, usw. wurde die nun perfekt lackierte Karosserie wieder auf seinen überholten Rahmen gesetzt und in unserer Fertigmacherei unter anderem ein neuer Kabelbaum angefertigt und eingebaut, sowie sämtliche sonstigen technischen Einbauten vorgenommen.</p>",
+			"htmlEn": "<p>Once all mechanical components, including the engine, gearbox, axles and drives, had been refurbished, the freshly painted body was reunited with its restored frame. Our assembly workshop made and installed a new wiring loom and fitted all the remaining mechanical equipment.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-027.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Originales BERLIN-Autoradio auf der Werkbank.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Original BERLIN car radio on the workbench."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Auch haben wir das Original &quot;BERLIN&quot;-Radio - eine Rarität - umfassend restauriert, zeitgleich von 6 auf 12 Volt umgebaut und mit einigen technischen Kniffen sogar den seit Anfang 2016 nicht mehr gesendeten Mittelwellen-Kanal (MW) wunschgemäß auf moderne UKW-Technik funktionstüchtig umbauen können.</p>",
+			"htmlEn": "<p>We also comprehensively restored the rare original BERLIN radio, converted it from 6 to 12 volts and, through some technical ingenuity, adapted its medium-wave channel to modern FM reception at the customer's request. Medium-wave broadcasts had ceased at the beginning of 2016.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-028.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Roter Innenraum mit Lenkrad während der Montage.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Red cabin with steering wheel during assembly."
+				},
+				{
+					"src": "./restored-029.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Offener Innenraum mit Verdeckgestänge.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Open cabin with its hood frame."
+				},
+				{
+					"src": "./restored-030.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Freigelegte Polsterfedern eines Sitzes.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Exposed upholstery springs of a seat."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-031.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Rotes Armaturenbrett und heller Bezug während der Innenraummontage.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Red dashboard and light trim during cabin assembly."
+				},
+				{
+					"src": "./restored-032.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Hinterer Innenraum mit rotem Boden und hellen Seitenverkleidungen.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Rear cabin with a red floor and light side trim."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hiernach wurden in unserer Sattlerei die Originalsitze mit neuen Federkernen aufgebaut und die gesamte Inneneinrichtung nach den Wünschen des Kunden in edlem beigefarbenem Leder mit roten Kontrastkedern neu gepolstert und das Verdeck passgerecht neu angefertigt.</p>",
+			"htmlEn": "<p>Our upholstery workshop then rebuilt the original seats with new spring cores and retrimmed the entire interior to the customer's wishes in fine beige leather with red contrast piping. A new convertible hood was tailored to fit.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-033.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Neu angefertigtes schwarzes Verdeck am roten Wagen.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Newly tailored black hood on the red car."
+				},
+				{
+					"src": "./restored-034.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Helle Sitzpolster mit roten Kontrastkedern.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Light seat upholstery with red contrast piping."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-035.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Chromverkleidete seitliche Lüftungsöffnungen auf rotem Lack.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Chrome-trimmed side vents on red paintwork."
+				},
+				{
+					"src": "./restored-036.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Motor mit weißem Lüfter im roten Motorraum.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Engine with a white fan in the red engine bay."
+				},
+				{
+					"src": "./restored-037.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Motor und Batterie unter der geöffneten Haube.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Engine and battery beneath the open bonnet."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-038.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Fertig restaurierter roter Roadster schräg von vorn in der Werkstatt.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Fully restored red roadster viewed from the front corner in the workshop."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-039.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Roter Roadster schräg von hinten in der Werkstatt.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Red roadster viewed from the rear corner in the workshop."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-040.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Heckansicht des roten Roadsters mit Chromstoßstange.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Rear view of the red roadster with its chrome bumper."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-041.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Seitenansicht des roten Roadsters vor der Werkstatt.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Side view of the red roadster outside the workshop."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-042.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Roter Roadster schräg von hinten vor der Werkstatt.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Red roadster viewed from the rear corner outside the workshop."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach Fertigstellung aller Komponenten konnte das Fahrzeug bei uns abschließend umfangreichen Testläufen unterzogen und danach seinem uns seit Jahren bestens bekannten stolzen Besitzerehepaar übergeben werden.</p>",
+			"htmlEn": "<p>Once every component was complete, we carried out extensive final tests before handing the car over to its proud owners, a couple we have known well for years.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-001.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Dreiviertelansicht von vorn im Freien.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Front three-quarter view outdoors."
+				},
+				{
+					"src": "./restored-043.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Roter Roadster mit Hardtop schräg von vorn im Hof.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Red roadster with a hardtop viewed from the front corner in the courtyard."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach mittlerweile einer Vielzahl exklusiv restaurierter Kostbarkeiten aus unserer Hand, wird dieser traumhaft restaurierte WARTBURG 313 SPORT deren einmalige Klassikersammlung zweifelsohne sicherlich nochmals bereichern.</p>",
+			"htmlEn": "<p>Having already restored many exclusive treasures for them, we are sure that this beautifully restored WARTBURG 313 SPORT will further enrich their unique collection of classics.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p><strong>Danke damit auch nochmal an dieser Stelle V. u. R. von unserem gesamten Team der OLDTIMERMANUFAKTUR und allzeit gute Fahrt mit dieser automobilen Kostbarkeit...</strong></p>",
+			"htmlEn": "<p>Our entire team at Die Oldtimermanufaktur would like to thank V. and R. once again and wish them many happy journeys in this automotive treasure…</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-044.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Roter Wartburg vor dem AWE-Gebäude in Eisenach.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Red Wartburg outside the AWE building in Eisenach."
+				},
+				{
+					"src": "./restored-045.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Roter Wartburg mit der Wartburg im Hintergrund.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Red Wartburg with Wartburg castle in the background."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Eine der ersten Touren ging dann auch gleich an seinen historischen Geburtsort, dem &quot;AWE&quot;Automobil-Werk-Eisenach und zum ursprünglichen Namensgeber des WARTBURG, der im Volksmund genannten &quot;deutschesten&quot; aller Burgen der &quot;WARTBURG&quot;.<br />\n<br />\n<br />\n<br />\nGanz gleich aus welchem Blickwinkel, zeigt sich der Wagen doch immer wieder mit neuen stilvollen Designelementen, die ein jedes Automobilherz höher schlagen lassen.</p>",
+			"htmlEn": "<p>One of its first outings took it back to its historic birthplace, the AWE Automobil-Werk-Eisenach, and to the Wartburg castle that gave the car its name, popularly called the ‘most German’ of castles. From every angle, the car reveals stylish design details that delight any motoring enthusiast.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-046.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Seitliche Chromzierleisten und Lüftungsöffnungen in Nahaufnahme.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Close view of side chrome trim and vents."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-047.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Blick von oben in den offenen Motorraum.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – View down into the open engine bay."
+				},
+				{
+					"src": "./restored-048.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Helle Ledersitze, weißes Lenkrad und rotes Armaturenbrett.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Light leather seats, white steering wheel and red dashboard."
+				},
+				{
+					"src": "./restored-049.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Geöffnete Tür mit heller Verkleidung und Blick in den Innenraum.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Open door with light trim and a view into the cabin."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-050.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Roter Roadster schräg von vorn vor der Werkstatt.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Red roadster viewed from the front corner outside the workshop."
+				},
+				{
+					"src": "./restored-035.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Chromverkleidete seitliche Lüftungsöffnungen auf rotem Lack.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Chrome-trimmed side vents on red paintwork."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-051.jpg",
+					"alt": "Wartburg 313 S - Sport, Baujahr 1959 – Seitenansicht des roten Wagens mit Hardtop vor schwarzem Hintergrund.",
+					"altEn": "Wartburg 313 S - Sport, year 1959 – Side view of the red car with a hardtop against a black background."
+				}
+			]
 		}
 	],
 	"titleEn": "Wartburg 313 S - Sport, year 1959",

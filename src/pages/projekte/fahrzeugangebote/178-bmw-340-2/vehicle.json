@@ -5,7 +5,7 @@
 	"description": "Hier ein sehr früher BMW Typ 340, gebaut 1952 im BMW Werk Eisenach/Thüringen, als sehr elegante und repräsentative Limousine.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/178-bmw-340-2",
 	"order": 2,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340 Limousine, Baujahr 1952",
@@ -54,7 +54,12 @@
 					"src": "./image-004.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Gestreifte Sitzbank und weißes Lenkrad durch die offene Tür.",
 					"altEn": "BMW 340 Saloon, year 1952 – Striped bench seat and white steering wheel through the open door."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Holzarmaturenbrett über einer gestreiften Sitzbank.",
@@ -69,7 +74,12 @@
 					"src": "./image-007.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Grünes Fahrzeugheck mit Chromstoßstange.",
 					"altEn": "BMW 340 Saloon, year 1952 – Green rear bodywork with chrome bumper."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Holzarmaturenbrett mit Typenschild hinter dem Lenkrad.",
@@ -84,7 +94,12 @@
 					"src": "./image-010.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Grüne Limousine schräg von vorn auf der Straße.",
 					"altEn": "BMW 340 Saloon, year 1952 – Green saloon from the front corner on the road."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-011.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Grüne Limousine schräg von hinten vor einer Wiese.",
@@ -99,7 +114,12 @@
 					"src": "./image-013.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Holzarmaturenbrett und weißes Lenkrad vor grüner Landschaft.",
 					"altEn": "BMW 340 Saloon, year 1952 – Wood dashboard and white steering wheel overlooking green countryside."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-014.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Gestreifte Rücksitzbank und helle Türverkleidung.",

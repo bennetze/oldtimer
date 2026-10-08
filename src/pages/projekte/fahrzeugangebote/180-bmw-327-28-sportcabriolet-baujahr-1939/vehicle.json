@@ -5,7 +5,7 @@
 	"description": "BMW 327/28 Sportcabriolet des Baujahres 1939 aus sensationellem \"Erstbesitz\" mit org. Papieren im absoluten Bestzustand. Top-Restauration in sehr stimmi…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/180-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 4,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
@@ -49,7 +49,12 @@
 					"src": "./image-004.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blaue Fahrzeugfront mit aufrechtem Doppelgrill.",
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Blue front bodywork with upright twin grille."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blaue Sitze und Armaturenbrett mit weißem Lenkrad.",
@@ -64,7 +69,12 @@
 					"src": "./image-007.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blick von oben auf Lenkrad und blaues Armaturenbrett.",
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Overhead view of the steering wheel and blue dashboard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Nahaufnahme weißer Instrumente hinter dem Lenkrad.",
@@ -79,7 +89,12 @@
 					"src": "./image-010.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blaue Tür, Windschutzscheibe und seitliche Lüftungsöffnungen.",
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Blue door, windscreen and side vents."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-011.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Motor unter der angehobenen blauen Motorhaube.",
@@ -94,7 +109,12 @@
 					"src": "./image-013.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blaues Cabriolet seitlich vor Bäumen.",
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Blue convertible in side profile beside trees."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-014.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blaues Cabriolet schräg von vorn im Hof.",
@@ -109,7 +129,12 @@
 					"src": "./image-016.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blaues Cabriolet seitlich von oben im Hof.",
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Blue convertible from above in side profile in the courtyard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-017.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blaues Cabriolet gerade von hinten mit Reserveradabdeckung.",

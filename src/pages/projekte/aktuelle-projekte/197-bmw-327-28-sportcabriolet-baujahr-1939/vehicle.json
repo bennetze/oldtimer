@@ -5,7 +5,7 @@
 	"description": "Auch die gesamte Lackierung wurde gemäß den Kundenwünschen in unserer Lackierabteilung, hier in fischsilber-metallic mit tiefschwarz erneuert, einschl.…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/197-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 9,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
@@ -89,7 +89,12 @@
 					"src": "./image-011.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Metallblanke Fahrzeugfront mit aufrechtem Doppelgrill.",
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Bare-metal front bodywork with upright twin grille."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-012.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Metallblanker Roadster mit rundem Heckblech.",

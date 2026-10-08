@@ -5,7 +5,7 @@
 	"description": "JAGUAR E-Type S1 Cabriolet des Baujahres 1966.Der Wagen wurde im Kundenauftrag allumfassend neu aufgebaut.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/113-jaguar-e-type-baujahr-1966",
 	"order": 52,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1966",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "JAGUAR E-Type S1, Baujahr 1966",
@@ -49,7 +49,12 @@
 					"src": "./image-005.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Abgenommenes rotes Vorderteil auf dem Werkstattboden.",
 					"altEn": "JAGUAR E-Type S1, year 1966 – Removed red front body section on the workshop floor."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-006.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Blankes abgenommenes Vorderteil mit Scheinwerferöffnungen.",
@@ -124,7 +129,12 @@
 					"src": "./image-015.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Motor und Vergaser von oben im roten Rahmen.",
 					"altEn": "JAGUAR E-Type S1, year 1966 – Engine and carburettors from above in the red frame."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-016.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Motor und Speichenrad am offenen Fahrgestell.",
@@ -139,7 +149,12 @@
 					"src": "./image-018.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Rotes Vorderteil mit geöffneten Scheinwerferausschnitten.",
 					"altEn": "JAGUAR E-Type S1, year 1966 – Red front body section with open headlight apertures."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-019.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Roter Jaguar ohne vordere Karosserie im Hof.",
@@ -154,7 +169,12 @@
 					"src": "./image-021.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Drei Vergaser und Rohrleitungen neben dem Motor.",
 					"altEn": "JAGUAR E-Type S1, year 1966 – Three carburettors and pipework beside the engine."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-022.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Rotes Vorderteil schräg von oben in der Werkstatt.",
@@ -214,7 +234,12 @@
 					"src": "./image-029.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Roter Jaguar seitlich im Hof.",
 					"altEn": "JAGUAR E-Type S1, year 1966 – Red Jaguar in side profile in the courtyard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-030.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Offene Tür und helle Sitze von schräg oben.",
@@ -229,7 +254,12 @@
 					"src": "./image-032.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Armaturenbrett, Radio und Schalthebel im hellen Innenraum.",
 					"altEn": "JAGUAR E-Type S1, year 1966 – Dashboard, radio and gear lever in the light cabin."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-033.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Roter Jaguar mit schwarzem Verdeck schräg von hinten.",
@@ -244,7 +274,12 @@
 					"src": "./image-035.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Roter Jaguar schräg von vorn im gepflasterten Hof.",
 					"altEn": "JAGUAR E-Type S1, year 1966 – Red Jaguar from the front corner in the paved courtyard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-036.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Rote Innenseite der geöffneten Motorhaube.",

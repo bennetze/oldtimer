@@ -5,7 +5,7 @@
 	"description": "Das Fahrzeug erreichte uns mit einem massiven Motorschaden.\nPleuelabriss und Durchschlag durch den Motorblock.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/167-bmw-327-28-sportcabriolet-baujahr-1938",
 	"order": 46,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1938",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nBMW 327/28 Sportcabriolet von 1938</p>",
-			"htmlEn": "<p><br>\n<br>\nA 1938 BMW 327/28 Sport Cabriolet.</p>"
+			"html": "<p>BMW 327/28 Sportcabriolet von 1938</p>",
+			"htmlEn": "<p>A 1938 BMW 327/28 Sport Cabriolet.</p>"
 		},
 		{
 			"type": "gallery",
@@ -49,8 +49,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDas Fahrzeug erreichte uns mit einem massiven Motorschaden.<br />\nPleuelabriss und Durchschlag durch den Motorblock.</p>",
-			"htmlEn": "<p><br>\nThe car arrived with severe engine damage.<br>\nA broken connecting rod had punctured the engine block.</p>"
+			"html": "<p>Das Fahrzeug erreichte uns mit einem massiven Motorschaden.<br />\nPleuelabriss und Durchschlag durch den Motorblock.</p>",
+			"htmlEn": "<p>The car arrived with severe engine damage.<br>\nA broken connecting rod had punctured the engine block.</p>"
 		},
 		{
 			"type": "gallery",
@@ -74,8 +74,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Motor wurde bei uns komplett neu aufgebaut und auch das Getriebe überholt.</p>",
-			"htmlEn": "<p><br>\nWe completely rebuilt the engine and overhauled the gearbox.</p>"
+			"html": "<p>Der Motor wurde bei uns komplett neu aufgebaut und auch das Getriebe überholt.</p>",
+			"htmlEn": "<p>We completely rebuilt the engine and overhauled the gearbox.</p>"
 		},
 		{
 			"type": "gallery",

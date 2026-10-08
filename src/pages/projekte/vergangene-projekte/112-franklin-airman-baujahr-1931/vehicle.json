@@ -5,7 +5,7 @@
 	"description": "FRANKLIN \"Airman\" des Baujahres 1931 mit großzügigem Sedan-Aufbau.\n\nDie Marke FRANKLIN - neben Cadillac und Packard eine der Luxusmarken damaliger ameri…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/112-franklin-airman-baujahr-1931",
 	"order": 27,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1931",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "FRANKLIN Airman, Baujahr 1931",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nFRANKLIN &quot;Airman&quot; des Baujahres 1931 mit großzügigem Sedan-Aufbau.<br />\n<br />\nDie Marke FRANKLIN - neben Cadillac und Packard eine der Luxusmarken damaliger amerikanischer Automobilbaukunst, baute bis Mitte der 30er Jahre in New York vor allem sehr elegante und großzügige Qualitätsautomobile mit hohem Komfort und technischer Raffinesse.</p>",
-			"htmlEn": "<p><br>\nA 1931 Franklin Airman with spacious sedan coachwork.<br>\n<br>\nAlongside Cadillac and Packard, Franklin was a luxury marque of American automotive engineering. Until the mid-1930s, it built elegant, spacious, high-quality cars in New York, offering considerable comfort and technical sophistication.</p>"
+			"html": "<p>FRANKLIN &quot;Airman&quot; des Baujahres 1931 mit großzügigem Sedan-Aufbau.<br />\n<br />\nDie Marke FRANKLIN - neben Cadillac und Packard eine der Luxusmarken damaliger amerikanischer Automobilbaukunst, baute bis Mitte der 30er Jahre in New York vor allem sehr elegante und großzügige Qualitätsautomobile mit hohem Komfort und technischer Raffinesse.</p>",
+			"htmlEn": "<p>A 1931 Franklin Airman with spacious sedan coachwork.<br>\n<br>\nAlongside Cadillac and Packard, Franklin was a luxury marque of American automotive engineering. Until the mid-1930s, it built elegant, spacious, high-quality cars in New York, offering considerable comfort and technical sophistication.</p>"
 		},
 		{
 			"type": "gallery",
@@ -53,11 +53,6 @@
 			"htmlEn": "<p>Franklin’s origins lie in aircraft and aircraft engines. Engines developed for aviation were commonly air-cooled, at Franklin as elsewhere.<br>\nAll Franklin cars were therefore equipped with this ingenious turbine-assisted technology — hence Airman, also called Aircooler.<br>\nEngineering: six-cylinder, air-cooled engine with turbine assistance and thermostatically controlled cooling shutters, 4.6 litres,</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Leistung &quot;ausreichend&quot;, vollsynchronisiertes 3-Gang-Getriebe, rundum Doppelelliptikfedern mit hydraulischen Stoßdämpfern, vollhydraulische Bremsanlage.</p>",
-			"htmlEn": "<p>“ample” power, fully synchronised three-speed gearbox, double-elliptic springs and hydraulic dampers all round, fully hydraulic brakes.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -81,6 +76,11 @@
 					"altEn": "FRANKLIN Airman, year 1931 – Green saloon in side profile on grass."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Leistung &quot;ausreichend&quot;, vollsynchronisiertes 3-Gang-Getriebe, rundum Doppelelliptikfedern mit hydraulischen Stoßdämpfern, vollhydraulische Bremsanlage.</p>",
+			"htmlEn": "<p>“ample” power, fully synchronised three-speed gearbox, double-elliptic springs and hydraulic dampers all round, fully hydraulic brakes.</p>"
 		},
 		{
 			"type": "gallery",
@@ -119,8 +119,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nDieser FRANKLIN 153 Airman wurde sehr detailliert und originalgetreu neu aufgebaut und gilt heute als das einzig erhaltene Fahrzeug dieses Typ`s in ganz Europa.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nThis Franklin 153 Airman was rebuilt with meticulous attention to original detail and is considered the only surviving example of this model in Europe today.</p>"
+			"html": "<p>Dieser FRANKLIN 153 Airman wurde sehr detailliert und originalgetreu neu aufgebaut und gilt heute als das einzig erhaltene Fahrzeug dieses Typ`s in ganz Europa.</p>",
+			"htmlEn": "<p>This Franklin 153 Airman was rebuilt with meticulous attention to original detail and is considered the only surviving example of this model in Europe today.</p>"
 		},
 		{
 			"type": "gallery",
@@ -208,6 +208,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>.</p>",
+			"htmlEn": "<p>.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -216,11 +221,6 @@
 					"altEn": "FRANKLIN Airman, year 1931 – Close view of grille and bonnet ornament."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>.</p>",
-			"htmlEn": "<p>.</p>"
 		},
 		{
 			"type": "gallery",

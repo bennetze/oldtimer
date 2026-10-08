@@ -5,7 +5,7 @@
 	"description": "BMW 327/28 Sport-Coupe, gebaut bei BMW in Eisenach mit einer Karosserie von \"Autenrieth\" aus Darmstadt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/123-bmw-327-sportcoupe-baujahr-1939",
 	"order": 33,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcoupe, Baujahr 1939",
@@ -16,11 +16,6 @@
 			"type": "copy",
 			"html": "<p>BMW 327/28 Sport-Coupe, gebaut bei BMW in Eisenach mit einer Karosserie von &quot;Autenrieth&quot; aus Darmstadt.</p>",
 			"htmlEn": "<p>A BMW 327/28 Sport Coupé built by BMW in Eisenach, with coachwork by Autenrieth of Darmstadt.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Der Wagen wurde in unserer Manufaktur karosserieseits grundlegend restauriert, gemäß den Kundenwünschen neu lackiert und technisch umfassend revidiert.</p>",
-			"htmlEn": "<p>At our workshop, the car received a fundamental body restoration, new paintwork to the client’s wishes and a comprehensive mechanical overhaul.</p>"
 		},
 		{
 			"type": "gallery",
@@ -51,6 +46,11 @@
 					"altEn": "BMW 327/28 Sport Coupé, year 1939 – Light-coated door aperture beside masking paper."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wagen wurde in unserer Manufaktur karosserieseits grundlegend restauriert, gemäß den Kundenwünschen neu lackiert und technisch umfassend revidiert.</p>",
+			"htmlEn": "<p>At our workshop, the car received a fundamental body restoration, new paintwork to the client’s wishes and a comprehensive mechanical overhaul.</p>"
 		},
 		{
 			"type": "copy",
@@ -144,7 +144,12 @@
 					"src": "./image-013.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1939 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
 					"altEn": "BMW 327/28 Sport Coupé, year 1939 – Masked body from the rear corner in the spray booth."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-014.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1939 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",

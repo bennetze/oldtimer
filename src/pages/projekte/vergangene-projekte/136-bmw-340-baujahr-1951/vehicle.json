@@ -5,7 +5,7 @@
 	"description": "Dieser BMW 340 des Jahrgangs 1951, gebaut bei BMW in Eisenach, erreichte uns als komplett zerlegtes und obendrein völlig desolates Restaurationsobjekt m…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/136-bmw-340-baujahr-1951",
 	"order": 48,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1951",
@@ -53,11 +53,6 @@
 			"htmlEn": "<p>Having known these cars and their details for decades, and restored several excellent reference examples, we were confident we could rescue this one too.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Angefangen von sehr umfangreichen Karosseriearbeiten und der Neuanfertigung ganzer Karosseriestrukturen über die Holzarbeiten im Dachbereich, wurde Stück für Stück eine vorzeigbare Gesamtkarosserie mitsamt allen Anbauteilen neu aufgebaut.</p>",
-			"htmlEn": "<p>From extensive panel work and entirely new structural sections to timber repairs around the roof, we rebuilt the complete body and all its fittings step by step.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -69,18 +64,28 @@
 					"src": "./image-006.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
 					"altEn": "BMW 340, year 1951 – Masked body from the rear corner in the spray booth."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Angefangen von sehr umfangreichen Karosseriearbeiten und der Neuanfertigung ganzer Karosseriestrukturen über die Holzarbeiten im Dachbereich, wurde Stück für Stück eine vorzeigbare Gesamtkarosserie mitsamt allen Anbauteilen neu aufgebaut.</p>",
+			"htmlEn": "<p>From extensive panel work and entirely new structural sections to timber repairs around the roof, we rebuilt the complete body and all its fittings step by step.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hiernach bekam der Wagen in unserer Lackierung wieder seine Originalfarbe steingrau und die am Armaturenträger so typische Holzoptik mittels Lasurtechnik zurück.</p>",
+			"htmlEn": "<p>Our paint shop restored the original stone grey finish and recreated the dashboard’s characteristic woodgrain using a glazing technique.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-007.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Abgeklebte Karosserie schräg von vorn in der Lackierkabine.",
 					"altEn": "BMW 340, year 1951 – Masked body from the front corner in the spray booth."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Hiernach bekam der Wagen in unserer Lackierung wieder seine Originalfarbe steingrau und die am Armaturenträger so typische Holzoptik mittels Lasurtechnik zurück.</p>",
-			"htmlEn": "<p>Our paint shop restored the original stone grey finish and recreated the dashboard’s characteristic woodgrain using a glazing technique.</p>"
 		},
 		{
 			"type": "gallery",
@@ -99,7 +104,12 @@
 					"src": "./image-010.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Kurbelwelle und Nockenwelle neben Lagerdeckeln.",
 					"altEn": "BMW 340, year 1951 – Crankshaft and camshaft beside bearing caps."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-011.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Kurbelwelle und abgenommene Lagerdeckel auf Papier.",
@@ -134,7 +144,12 @@
 					"src": "./image-015.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Ausgebaute Chromleisten neben Schrauben auf Stoff.",
 					"altEn": "BMW 340, year 1951 – Removed chrome strips beside screws on fabric."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-016.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Chromrahmen und Leisten auf dunkler Karosserie ausgelegt.",
@@ -159,7 +174,17 @@
 					"src": "./image-019.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Heller Dachhimmel über dem Innenraum.",
 					"altEn": "BMW 340, year 1951 – Light headlining above the cabin."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Gemäß den Wünschen des Kunden kam in unserer Polsterei für den Innenraum feinstes Leder zum Einsatz (nicht ganz original aber Kundenwunsch).</p>",
+			"htmlEn": "<p>At the client’s request, our upholstery shop used fine leather for the interior — not entirely original, but their chosen specification.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-020.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Geschlossenes dunkles Stoffdach aus erhöhter Perspektive.",
@@ -171,11 +196,6 @@
 					"altEn": "BMW 340, year 1951 – Red door trim and red seats inside the cabin."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Gemäß den Wünschen des Kunden kam in unserer Polsterei für den Innenraum feinstes Leder zum Einsatz (nicht ganz original aber Kundenwunsch).</p>",
-			"htmlEn": "<p>At the client’s request, our upholstery shop used fine leather for the interior — not entirely original, but their chosen specification.</p>"
 		},
 		{
 			"type": "gallery",
@@ -194,7 +214,12 @@
 					"src": "./image-024.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Helle Karosserie mit offenem Motorraum und abgedecktem Kotflügel.",
 					"altEn": "BMW 340, year 1951 – Light body with open engine bay and covered wing."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-025.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Geöffnete Türen mit roter Innenverkleidung vor der Werkstatt.",
@@ -209,7 +234,12 @@
 					"src": "./image-027.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Rote Rücksitzbank mit Blick auf den Fahrerplatz.",
 					"altEn": "BMW 340, year 1951 – Red rear bench seat overlooking the driver's area."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-028.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Dreiviertelansicht von hinten im Freien.",

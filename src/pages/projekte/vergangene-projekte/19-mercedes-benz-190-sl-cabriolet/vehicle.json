@@ -5,21 +5,16 @@
 	"description": "Mercedes – Benz 190 SL Baujahr 1959-1961. Mittlerweile wurden bereits mehrere dieser wunderschönen Cabriolets original– und detailgetreu bei uns restaur…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/19-mercedes-benz-190-sl-cabriolet",
 	"order": 100,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 190 SL, Cabriolet",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "Mercedes-Benz 190 SL, Cabriolet – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "Mercedes-Benz 190 SL, Cabriolet",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Mercedes – Benz 190 SL Baujahr 1959-1961. Mittlerweile wurden bereits mehrere dieser wunderschönen Cabriolets original– und detailgetreu bei uns restauriert.</p>",
 			"htmlEn": "<p>Mercedes-Benz 190 SL, model years 1959–1961. We have now faithfully restored several of these beautiful cabriolets in detail.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Ein Fahrzeug kam vom deutschen Erstbesitzer.<br /><br /> Die beiden anderen wurden aus dem sonnigen Kalifornien eingeführt und fanden nach grundhafter Restauration hier im Ursprungsland neue Liebhaber.</p>",
-			"htmlEn": "<p>One came from its first owner in Germany.<br><br> The other two were imported from sunny California and found new enthusiasts in their country of origin after thorough restoration.</p>"
 		},
 		{
 			"type": "gallery",
@@ -50,6 +45,11 @@
 					"altEn": "Mercedes-Benz 190 SL, Cabriolet – Carburettor and intake components in a light-coloured engine bay."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Ein Fahrzeug kam vom deutschen Erstbesitzer.<br /><br /> Die beiden anderen wurden aus dem sonnigen Kalifornien eingeführt und fanden nach grundhafter Restauration hier im Ursprungsland neue Liebhaber.</p>",
+			"htmlEn": "<p>One came from its first owner in Germany.<br><br> The other two were imported from sunny California and found new enthusiasts in their country of origin after thorough restoration.</p>"
 		},
 		{
 			"type": "gallery",
@@ -155,5 +155,5 @@
 	"titleEn": "Mercedes-Benz 190 SL, Cabriolet",
 	"descriptionEn": "Mercedes-Benz 190 SL, model years 1959–1961. We have now faithfully restored several of these beautiful cabriolets in detail.",
 	"cardImageAltEn": "Mercedes-Benz 190 SL, Cabriolet",
-	"leadImageAltEn": "Mercedes-Benz 190 SL, Cabriolet – vehicle record"
+	"leadImageAltEn": "Mercedes-Benz 190 SL, Cabriolet"
 }

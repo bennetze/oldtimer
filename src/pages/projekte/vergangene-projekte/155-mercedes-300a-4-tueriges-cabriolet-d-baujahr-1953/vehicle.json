@@ -5,7 +5,7 @@
 	"description": "Hier ein Mercedes-Benz 300 \"Adenauer\" als sehr seltenes 4-türiges Cabriolet \"D\" des frühen Baujahres 1953.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/155-mercedes-300a-4-tueriges-cabriolet-d-baujahr-1953",
 	"order": 13,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1953",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953",
@@ -49,7 +49,22 @@
 					"src": "./image-004.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Leerer Innenraum mit freigelegten Bodenblechen.",
 					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Empty cabin with floor panels exposed."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Gemäß vorliegender Expertise wurde der Wagen ursprünglich nach New York ausgeliefert und fand in den 2000er Jahren den Weg zurück nach Deutschland und wurde im Auftrag seines Besitzers hier in unserer Manufaktur vollumfänglich restauriert.</p>",
+			"htmlEn": "<p>According to the available expert report, the car was originally delivered to New York. It returned to Germany in the 2000s and was comprehensively restored here at our workshop on behalf of its owner.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Motor 6 Zylinder mit 3 Liter Hubraum und 115PS Leistung.</p>",
+			"htmlEn": "<p>Six-cylinder engine with 3 litres displacement and 115 PS.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Abgenommenes rostiges Bodenblech über einem Träger.",
@@ -64,7 +79,12 @@
 					"src": "./image-007.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Rostiger Schweller mit mehreren Löchern.",
 					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Rusty sill with several holes."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Herausgetrennte Öffnung im rostigen Radhaus.",
@@ -79,8 +99,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAufgrund doch zahlreicher Karosserie- und Korrosionsschäden, musste die gesamte Karosserie mittels eigens und präzise angefertigter Blechteile neu aufgebaut werden.</p>",
-			"htmlEn": "<p><br>\n<br>\nNumerous areas of body damage and corrosion required us to reconstruct the entire body using precisely fabricated replacement panels.</p>"
+			"html": "<p>Aufgrund doch zahlreicher Karosserie- und Korrosionsschäden, musste die gesamte Karosserie mittels eigens und präzise angefertigter Blechteile neu aufgebaut werden.</p>",
+			"htmlEn": "<p>Numerous areas of body damage and corrosion required us to reconstruct the entire body using precisely fabricated replacement panels.</p>"
 		},
 		{
 			"type": "gallery",
@@ -109,11 +129,6 @@
 					"src": "./image-013.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Helle Fahrgastzelle ohne Türen und Vorderteil.",
 					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Light cabin section without doors or front bodywork."
-				},
-				{
-					"src": "./image-014.jpg",
-					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Offenes Heck mit Rostspuren und rotem Innenblech.",
-					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Open rear bodywork with rust marks and red inner panel."
 				}
 			]
 		},
@@ -121,6 +136,16 @@
 			"type": "copy",
 			"html": "<p>Bei einer solch hochwertigen &quot;Frame-Off&quot; Restauration werden üblicherweise Karosserie und Rahmen voneinander getrennt um sämtliche Bauteile separat aufbauen zu können.<br />\n<br />\n<br />\nErst nach Abschluss dieser Karosserie- und Fahrgestellarbeiten, werden diese wieder präzise vereint - auch um nachfolgend perfekte Karosseriepassungen und Spaltmaße zu erreichen.<br />\n<br />\n<br />\nAuch wurden dabei die notwendigen Stellmacherarbeiten für die Holzspriegel der Verdeckkonstruktion erneuert und eingepasst.</p>",
 			"htmlEn": "<p>In a high-quality frame-off restoration, body and chassis are normally separated so every component can be rebuilt independently.<br>\n<br>\n<br>\nOnly once body and chassis work is complete are they precisely reunited, allowing accurate body alignment and panel gaps.<br>\n<br>\n<br>\nWe also renewed and fitted the timber bows required for the hood structure.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-014.jpg",
+					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Offenes Heck mit Rostspuren und rotem Innenblech.",
+					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Open rear bodywork with rust marks and red inner panel."
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -159,7 +184,12 @@
 					"src": "./image-020.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Dunkler Kotflügel mit abgeklebter Leuchtenöffnung in der Kabine.",
 					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Dark wing with masked light aperture in the booth."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-021.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Dunkle Fahrzeugfront mit Stoffabdeckungen.",
@@ -169,8 +199,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAnschließend wurde der Wagen in unserer Lackierabteilung wunschgemäß in einem Mercedes Originalfarbton neu lackiert.</p>",
-			"htmlEn": "<p><br>\nOur paint shop then refinished the car in an original Mercedes colour chosen by the client.</p>"
+			"html": "<p>Anschließend wurde der Wagen in unserer Lackierabteilung wunschgemäß in einem Mercedes Originalfarbton neu lackiert.</p>",
+			"htmlEn": "<p>Our paint shop then refinished the car in an original Mercedes colour chosen by the client.</p>"
 		},
 		{
 			"type": "gallery",
@@ -193,11 +223,6 @@
 			]
 		},
 		{
-			"type": "copy",
-			"html": "<p>Im Zuge dieser hochwertigen Vollrestauration wurde in unserer hauseigenen Sattlerei dazu auch eine komplett neue Innenausstattung in feinstem Echtleder und ein neues Cabrioletverdeck mit echter Rosshaarfütterung geschneidert.<br />\n<br /></p>",
-			"htmlEn": "<p>As part of this comprehensive restoration, our in-house upholstery shop tailored an entirely new fine genuine leather interior and convertible hood with real horsehair padding.<br>\n<br></p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -214,7 +239,17 @@
 					"src": "./image-027.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Helle Polsterteile nebeneinander auf Stoff ausgelegt.",
 					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Light padded trim pieces side by side on fabric."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Im Zuge dieser hochwertigen Vollrestauration wurde in unserer hauseigenen Sattlerei dazu auch eine komplett neue Innenausstattung in feinstem Echtleder und ein neues Cabrioletverdeck mit echter Rosshaarfütterung geschneidert.<br />\n<br /></p>",
+			"htmlEn": "<p>As part of this comprehensive restoration, our in-house upholstery shop tailored an entirely new fine genuine leather interior and convertible hood with real horsehair padding.<br>\n<br></p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-028.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Helle Seitenverkleidungen im ausgeräumten Innenraum.",
@@ -229,7 +264,12 @@
 					"src": "./image-030.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Geöffnete Tür mit Innenverkleidung und Beschlägen.",
 					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Open door with interior trim and fittings."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-031.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Heller Einzelsitz auf der Werkbank.",
@@ -359,13 +399,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDas originale &quot;Becker Nürburg&quot; - Radio.</p>",
-			"htmlEn": "<p><br>\nThe original Becker Nürburg radio.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Von diesem frühen Typ 300 (a), des Baujahres 1953 entstanden nur 52 Fahrzeuge als 4-türiges Cabriolet (D).<br />\n<br /></p>",
-			"htmlEn": "<p>Only 52 examples of this early 1953 Type 300(a) were built as four-door Cabriolet Ds.<br>\n<br></p>"
+			"html": "<p>Das originale &quot;Becker Nürburg&quot; - Radio.</p>",
+			"htmlEn": "<p>The original Becker Nürburg radio.</p>"
 		},
 		{
 			"type": "gallery",
@@ -379,7 +414,17 @@
 					"src": "./image-048.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Dreiviertelansicht von vorn im Freien.",
 					"altEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953 – Front three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Von diesem frühen Typ 300 (a), des Baujahres 1953 entstanden nur 52 Fahrzeuge als 4-türiges Cabriolet (D).<br />\n<br /></p>",
+			"htmlEn": "<p>Only 52 examples of this early 1953 Type 300(a) were built as four-door Cabriolet Ds.<br>\n<br></p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-049.jpg",
 					"alt": "Mercedes-Benz 300 ADENAUER, 4-türiges Cabriolet-D, Baujahr 1953 – Dreiviertelansicht von hinten im Freien.",
@@ -414,8 +459,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEiner der wenigen sehr perfekten, originalgetreu und professionell vollrestaurierten &quot;Adenauer&quot;-Cabriolets verlässt unser Haus an seinen Besitzer, einen Kenner, Liebhaber und Sammler solch rarer automobiler Kostbarkeiten...</p>",
-			"htmlEn": "<p><br>\n<br>\nOne of the few Adenauer cabriolets restored professionally, faithfully and to such a high standard leaves our workshop for its owner, an expert, enthusiast and collector of rare automotive treasures.</p>"
+			"html": "<p>Einer der wenigen sehr perfekten, originalgetreu und professionell vollrestaurierten &quot;Adenauer&quot;-Cabriolets verlässt unser Haus an seinen Besitzer, einen Kenner, Liebhaber und Sammler solch rarer automobiler Kostbarkeiten...</p>",
+			"htmlEn": "<p>One of the few Adenauer cabriolets restored professionally, faithfully and to such a high standard leaves our workshop for its owner, an expert, enthusiast and collector of rare automotive treasures.</p>"
 		}
 	],
 	"titleEn": "Mercedes-Benz 300 ADENAUER, 4-door Cabriolet-D, year 1953",

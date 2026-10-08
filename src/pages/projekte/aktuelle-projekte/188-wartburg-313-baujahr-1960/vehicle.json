@@ -5,7 +5,7 @@
 	"description": "Wieder ein seltener Wartburg 313 Sport, der aktuell bei uns eine Vollrestauration erfährt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/188-wartburg-313-baujahr-1960",
 	"order": 10,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1960",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 Sport, Baujahr 1960",
@@ -44,11 +44,6 @@
 					"src": "./image-003.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1960 – Herausgetrenntes Bodenblech mit Rost und einer Vertiefung.",
 					"altEn": "Wartburg 313 Sport, year 1960 – Cut-out floor panel with rust and a recessed section."
-				},
-				{
-					"src": "./image-004.jpg",
-					"alt": "Wartburg 313 Sport, Baujahr 1960 – Ausgeräumter Motorraum mit Kühler und dunklen Bauteilen.",
-					"altEn": "Wartburg 313 Sport, year 1960 – Stripped engine bay containing a radiator and dark components."
 				}
 			]
 		},
@@ -56,6 +51,16 @@
 			"type": "copy",
 			"html": "<p>In den Jahren 1957 bis 1960 größtenteils von Hand und in nur 469 Einheiten gebaut, war der Wagen schon damals ein bildschöner, wie zeitlos gestalteter 2-sitziger Sportwagen und damit einhergehend sogar ein lukrativer Devisenbringer im Ausland - verschifft selbst in die USA oder nach Südafrika.<br /></p>",
 			"htmlEn": "<p>Just 469 were built, largely by hand, between 1957 and 1960. This beautiful, timeless two-seat sports car also earned valuable foreign currency through exports, reaching even the USA and South Africa.<br></p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-004.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Ausgeräumter Motorraum mit Kühler und dunklen Bauteilen.",
+					"altEn": "Wartburg 313 Sport, year 1960 – Stripped engine bay containing a radiator and dark components."
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -149,8 +154,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nVor allem von der Karosserie ist hier nur wenig zu retten und muss im Zuge einer fachgerechten Restauration unsererseits, nun in großen Teilen segmentartig neu aufgebaut werden.</p>",
-			"htmlEn": "<p><br>\nVery little of the bodywork can be saved. As part of a professional restoration, we now have to rebuild large areas section by section.</p>"
+			"html": "<p>Vor allem von der Karosserie ist hier nur wenig zu retten und muss im Zuge einer fachgerechten Restauration unsererseits, nun in großen Teilen segmentartig neu aufgebaut werden.</p>",
+			"htmlEn": "<p>Very little of the bodywork can be saved. As part of a professional restoration, we now have to rebuild large areas section by section.</p>"
 		},
 		{
 			"type": "copy",
@@ -269,11 +274,6 @@
 					"src": "./image-031.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1960 – Cabriolet seitlich vor dem Werkstattgebäude.",
 					"altEn": "Wartburg 313 Sport, year 1960 – Convertible in side profile outside the workshop."
-				},
-				{
-					"src": "./image-032.jpg",
-					"alt": "Wartburg 313 Sport, Baujahr 1960 – Cabriolet schräg von hinten im Hof.",
-					"altEn": "Wartburg 313 Sport, year 1960 – Convertible viewed from the rear corner in the courtyard."
 				}
 			]
 		},
@@ -281,6 +281,16 @@
 			"type": "copy",
 			"html": "<p>Nach den aufwendigen Karosseriearbeiten erhält der Wagen in unserer Lackiererei nun wieder eine hochwertige originalgetreue Lackierung unter Berücksichtigung der individuellen Kundenwünsche.</p>",
 			"htmlEn": "<p>Following the extensive bodywork, our paint shop is giving the car a high-quality, period-correct finish that also reflects the client’s individual preferences.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-032.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Cabriolet schräg von hinten im Hof.",
+					"altEn": "Wartburg 313 Sport, year 1960 – Convertible viewed from the rear corner in the courtyard."
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -354,8 +364,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n...der nun einbaufertig regenerierte Motor mit völlig neuem &quot;Innenleben&quot;.</p>",
-			"htmlEn": "<p><br>\n…the rebuilt engine, with entirely renewed internals, now ready to install.</p>"
+			"html": "<p>...der nun einbaufertig regenerierte Motor mit völlig neuem &quot;Innenleben&quot;.</p>",
+			"htmlEn": "<p>…the rebuilt engine, with entirely renewed internals, now ready to install.</p>"
 		},
 		{
 			"type": "gallery",
@@ -374,8 +384,38 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nÜberarbeitung und Neuverchromung sämtlicher Zier- und Anbauteile.</p>",
-			"htmlEn": "<p><br>\n<br>\nRefurbishing and re-chroming all trim pieces and fittings.</p>"
+			"html": "<p>Überarbeitung und Neuverchromung sämtlicher Zier- und Anbauteile.</p>",
+			"htmlEn": "<p>Refurbishing and re-chroming all trim pieces and fittings.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Blau lackierte Karosserie in der Lackierkabine",
+					"altEn": "Wartburg 313 Sport, year 1960 – Blue painted body in the paint booth"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Abgeklebte Karosserie mit Grundierung",
+					"altEn": "Wartburg 313 Sport, year 1960 – Masked body with primer"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1960 – Teilweise grundierte Karosserie",
+					"altEn": "Wartburg 313 Sport, year 1960 – Partly primed body"
+				}
+			]
 		},
 		{
 			"type": "gallery",

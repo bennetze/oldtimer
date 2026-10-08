@@ -5,7 +5,7 @@
 	"description": "Dieser BMW Typ AM4 von 1933 gilt als der legitime Nachfolger des legendären DIXI - mit dem die Firma BMW, 1928 - durch die Übernahme der Eisenacher DIXI…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/94-bmw-am4-baujahr-1933",
 	"order": 74,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1933",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW AM4, Baujahr 1933",
@@ -33,6 +33,11 @@
 			"htmlEn": "<p>AM stands for “Auto München”, although this car, like all pre-war BMWs, was built in Eisenach rather than Munich.</p>"
 		},
 		{
+			"type": "copy",
+			"html": "<p>Dieser mittlerweile sehr selten gewordene AM4 wurde in unserer Manufaktur - unweit seines früheren Entstehungsortes - technisch grundlegend überarbeitet und umfassend instand gesetzt.</p>",
+			"htmlEn": "<p>We thoroughly overhauled and extensively repaired this now-rare AM4 near its original birthplace.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -51,11 +56,6 @@
 					"altEn": "BMW AM4, year 1933 – Removed carburettor with round float chamber."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Dieser mittlerweile sehr selten gewordene AM4 wurde in unserer Manufaktur - unweit seines früheren Entstehungsortes - technisch grundlegend überarbeitet und umfassend instand gesetzt.</p>",
-			"htmlEn": "<p>We thoroughly overhauled and extensively repaired this now-rare AM4 near its original birthplace.</p>"
 		},
 		{
 			"type": "gallery",

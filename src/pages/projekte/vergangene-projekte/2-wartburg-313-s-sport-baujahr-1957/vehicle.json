@@ -5,7 +5,7 @@
 	"description": "Wieder ein stilistischer Meilenstein und optischer Augenschmaus der deutschen Automobilbaugeschichte.\n\nEiner der wenigen gebauten Wartburg 313 Sport Har…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/2-wartburg-313-s-sport-baujahr-1957",
 	"order": 87,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 S - Sport, Baujahr 1957",
@@ -544,7 +544,12 @@
 					"src": "./image-047.jpg",
 					"alt": "Wartburg 313 S - Sport, Baujahr 1957 – Blick in den offenen Motorraum auf Motor und Leitungen.",
 					"altEn": "Wartburg 313 S - Sport, year 1957 – Open engine bay showing the engine and pipework."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-048.jpg",
 					"alt": "Wartburg 313 S - Sport, Baujahr 1957 – Dreiviertelansicht von vorn im Freien.",

@@ -63,7 +63,7 @@ for (const vehicle of vehicles) {
 	assert.ok(html.includes(`${deployedOrigin}${vehicle.route}`), `${vehicle.route}: incorrect absolute metadata URL.`);
 	assert.equal(
 		occurrences(html, /<a[^>]+data-lightbox-trigger/g),
-		galleryImages.length,
+		galleryImages.length + (!galleryImages.some(image => image.src === vehicle.leadImage) ? 1 : 0),
 		`${vehicle.route}: gallery image count.`,
 	);
 	for (const image of galleryImages) {

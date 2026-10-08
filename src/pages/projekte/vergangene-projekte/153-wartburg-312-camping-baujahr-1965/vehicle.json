@@ -5,7 +5,7 @@
 	"description": "Hier ein Wartburg Typ 312-1000 des Baujahres 1965 in der sehr begehrten \"Camping\"-Ausführung.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/153-wartburg-312-camping-baujahr-1965",
 	"order": 56,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1965",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 312 Camping, Baujahr 1965",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nHier ein Wartburg Typ 312-1000 des Baujahres 1965 in der sehr begehrten &quot;Camping&quot;-Ausführung.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nA 1965 Wartburg 312-1000 in the sought-after Camping estate specification.</p>"
+			"html": "<p>Hier ein Wartburg Typ 312-1000 des Baujahres 1965 in der sehr begehrten &quot;Camping&quot;-Ausführung.</p>",
+			"htmlEn": "<p>A 1965 Wartburg 312-1000 in the sought-after Camping estate specification.</p>"
 		},
 		{
 			"type": "gallery",
@@ -49,8 +49,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach dem Entfernen unzähliger Lackschichten und einem offensichtlich &quot;bewegten Leben&quot; bei diversen Vorbesitzern, zeigte sich der Wagen zwar substanziell durchaus erhaltenswert, musste aber im Auftrag seines Besitzers und langjährigen befreundeten Kunden vollständig durch uns restauriert werden.</p>",
-			"htmlEn": "<p><br>\nAfter removing countless paint layers, the car revealed evidence of an eventful life with several previous owners. Its underlying material was worth saving, but it needed a full restoration for its owner, a longstanding client and friend.</p>"
+			"html": "<p>Nach dem Entfernen unzähliger Lackschichten und einem offensichtlich &quot;bewegten Leben&quot; bei diversen Vorbesitzern, zeigte sich der Wagen zwar substanziell durchaus erhaltenswert, musste aber im Auftrag seines Besitzers und langjährigen befreundeten Kunden vollständig durch uns restauriert werden.</p>",
+			"htmlEn": "<p>After removing countless paint layers, the car revealed evidence of an eventful life with several previous owners. Its underlying material was worth saving, but it needed a full restoration for its owner, a longstanding client and friend.</p>"
 		},
 		{
 			"type": "gallery",
@@ -69,7 +69,12 @@
 					"src": "./image-007.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
 					"altEn": "Wartburg 312 Camping, year 1965 – Masked body from the rear corner in the spray booth."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Hell beschichteter Kombi mit offenem Vorderteil.",
@@ -99,8 +104,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach umfangreichen Karosseriearbeiten wurde der Wagen in unserer Lackierabteilung auch wieder in seinen beiden Originalfarben lackiert.</p>",
-			"htmlEn": "<p><br>\nFollowing extensive bodywork, our paint shop repainted the car in its two original colours.</p>"
+			"html": "<p>Nach umfangreichen Karosseriearbeiten wurde der Wagen in unserer Lackierabteilung auch wieder in seinen beiden Originalfarben lackiert.</p>",
+			"htmlEn": "<p>Following extensive bodywork, our paint shop repainted the car in its two original colours.</p>"
 		},
 		{
 			"type": "gallery",
@@ -128,11 +133,6 @@
 			"htmlEn": "<p>Our upholstery shop also professionally renewed the complete interior to original specification.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Achsen, Bremsen, Motor, Getriebe, Elektrik, Chrom u.dgl. wurden ebenso umfangreich revidiert und instandgesetzt.<br />\n<br /></p>",
-			"htmlEn": "<p>Axles, brakes, engine, gearbox, electrics, chrome and related components were likewise extensively overhauled and repaired.<br>\n<br></p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -149,7 +149,17 @@
 					"src": "./image-017.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Blick in den offenen Motorraum auf Motor und Leitungen.",
 					"altEn": "Wartburg 312 Camping, year 1965 – Open engine bay showing the engine and pipework."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Achsen, Bremsen, Motor, Getriebe, Elektrik, Chrom u.dgl. wurden ebenso umfangreich revidiert und instandgesetzt.<br />\n<br /></p>",
+			"htmlEn": "<p>Axles, brakes, engine, gearbox, electrics, chrome and related components were likewise extensively overhauled and repaired.<br>\n<br></p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-018.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn in der Werkstatt.",
@@ -164,7 +174,12 @@
 					"src": "./image-020.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn im Freien.",
 					"altEn": "Wartburg 312 Camping, year 1965 – Front three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn im Freien.",
@@ -174,12 +189,22 @@
 					"src": "./image-021.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Wartburg-312-Schriftzug auf weißem Blech.",
 					"altEn": "Wartburg 312 Camping, year 1965 – Wartburg 312 lettering on white panel."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-022.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von hinten im Freien.",
 					"altEn": "Wartburg 312 Camping, year 1965 – Rear three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-023.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von hinten im Freien.",
@@ -209,7 +234,12 @@
 					"src": "./image-027.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Seitliche Fenster mit Chromrahmen und heller Dachkante.",
 					"altEn": "Wartburg 312 Camping, year 1965 – Side windows with chrome surrounds and light roof edge."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-028.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Heller Dachhimmel und große seitliche Dachfenster.",

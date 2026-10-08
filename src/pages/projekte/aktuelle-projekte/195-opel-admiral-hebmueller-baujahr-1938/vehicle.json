@@ -5,7 +5,7 @@
 	"description": "\"Beste Restaurierung des Jahres\"\n\nGeschichtliches: Der OPEL Vorkriegs-Admiral gilt ja gemeinhin bis heute als der größte und wohl luxuriöseste je gebaut…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/195-opel-admiral-hebmueller-baujahr-1938",
 	"order": 2,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "OPEL Admiral \"Hebmüller\", Baujahr 1938",
@@ -58,11 +58,6 @@
 			"htmlEn": "<p>Among these coachbuilders, Hebmüller of Barmen/Wuppertal consistently stood out for its particularly elegant and assured styling.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Durch die dort engagierten, genialen Formgestalter (heute Designer) hatte man bei „Hebmüller“ ein glückliches Händchen für exklusive und formschöne Karosserien als individuelle Sonderaufbauten mit einem äußerst hohen Qualitätsanspruch gefunden.</p>",
-			"htmlEn": "<p>Its gifted designers gave Hebmüller a remarkable flair for exclusive, beautifully proportioned bespoke bodies built to exceptionally high standards.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -74,8 +69,13 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nEine seltene Originalaufnahme eines Admiral &quot;Hebmüller&quot;-Sport-Kabrioletts während der Automobilausstellung IAMA am Berliner Kaiserdamm von 1937.</p>",
-			"htmlEn": "<p><br>\nA rare original photograph of an Admiral Hebmüller Sport Cabriolet at the 1937 IAMA motor show on Berlin’s Kaiserdamm.</p>"
+			"html": "<p>Durch die dort engagierten, genialen Formgestalter (heute Designer) hatte man bei „Hebmüller“ ein glückliches Händchen für exklusive und formschöne Karosserien als individuelle Sonderaufbauten mit einem äußerst hohen Qualitätsanspruch gefunden.</p>",
+			"htmlEn": "<p>Its gifted designers gave Hebmüller a remarkable flair for exclusive, beautifully proportioned bespoke bodies built to exceptionally high standards.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Eine seltene Originalaufnahme eines Admiral &quot;Hebmüller&quot;-Sport-Kabrioletts während der Automobilausstellung IAMA am Berliner Kaiserdamm von 1937.</p>",
+			"htmlEn": "<p>A rare original photograph of an Admiral Hebmüller Sport Cabriolet at the 1937 IAMA motor show on Berlin’s Kaiserdamm.</p>"
 		},
 		{
 			"type": "copy",
@@ -214,8 +214,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nSieht man beispielsweise die stilvoll geprägten Seitenflanken und die riesigen Türen (Portale) - angeschlagen an jeweils 3 kräftigen Scharnieren, die damit einhergehende 2-Farb-Lackierung oder die vielen stilvollen Art Deco Elemente, erkennt man eine Fülle von beeindruckenden, einzigartigen und formschönen Details, die gerade dieses ADMIRAL „Hebmüller“ Sport-Kabriolett zu einem insgesamt äußerst formschönen und geschmackvoll gestalteten Augenschmaus machen.</p>",
-			"htmlEn": "<p><br>\nThe stylishly sculpted flanks, enormous doors mounted on three substantial hinges each, two-tone paintwork and numerous Art Deco features reveal a wealth of striking, beautifully shaped details. Together, they make this Admiral Hebmüller Sport Cabriolet an exceptionally elegant and tasteful design.</p>"
+			"html": "<p>Sieht man beispielsweise die stilvoll geprägten Seitenflanken und die riesigen Türen (Portale) - angeschlagen an jeweils 3 kräftigen Scharnieren, die damit einhergehende 2-Farb-Lackierung oder die vielen stilvollen Art Deco Elemente, erkennt man eine Fülle von beeindruckenden, einzigartigen und formschönen Details, die gerade dieses ADMIRAL „Hebmüller“ Sport-Kabriolett zu einem insgesamt äußerst formschönen und geschmackvoll gestalteten Augenschmaus machen.</p>",
+			"htmlEn": "<p>The stylishly sculpted flanks, enormous doors mounted on three substantial hinges each, two-tone paintwork and numerous Art Deco features reveal a wealth of striking, beautifully shaped details. Together, they make this Admiral Hebmüller Sport Cabriolet an exceptionally elegant and tasteful design.</p>"
 		},
 		{
 			"type": "gallery",
@@ -254,8 +254,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nWunderschöne, geradezu verspielte Art-Deco Zierelemente. Das originale Karosserieemblem der Firma &quot;Hebmüller&quot; in Wuppertal/Barmen.</p>",
-			"htmlEn": "<p><br>\nBeautiful, almost playful Art Deco details. The original coachbuilder’s badge of Hebmüller, Wuppertal/Barmen.</p>"
+			"html": "<p>Wunderschöne, geradezu verspielte Art-Deco Zierelemente. Das originale Karosserieemblem der Firma &quot;Hebmüller&quot; in Wuppertal/Barmen.</p>",
+			"htmlEn": "<p>Beautiful, almost playful Art Deco details. The original coachbuilder’s badge of Hebmüller, Wuppertal/Barmen.</p>"
 		},
 		{
 			"type": "gallery",

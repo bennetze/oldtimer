@@ -169,3 +169,33 @@ Set `VEHICLE_TOOL_PATH` to an alternate editor's absolute `index.html` path. Mis
 editors fail explicitly. Browser harnesses remain test-only; native folder-picker
 and platform acceptance must be checked separately. Gallery cache v3 validates
 manifest routes, derivative metadata and filesystem boundaries before reuse.
+
+## Vehicle display and editor compatibility (2026-10-07)
+
+Every vehicle's `vehicle.json` is the sole source of its text, image references and
+reading order. The website displays `blocks` in the exact saved order. Copy, contact
+and photo runs stack vertically on desktop and mobile. Consecutive gallery blocks
+form one uninterrupted photo run, ending at the next copy or contact block. Photos
+display in one column below 760px, up to two from 760px and up to three from 1100px,
+with a maximum display width of 420px. Reading order stays left to right, then down. Captions stay under their
+own image. The lead image appears separately only when it is not already used in
+a gallery. Selecting an existing gallery photo as the lead therefore avoids a
+second copy above the story while still supplying representative metadata.
+
+The old-site migration restored 72 German passages and 244 photographs. Its
+reviewed relationships have been converted into ordinary ordered vehicle blocks,
+including smaller gallery blocks where text belongs between photo sets. All
+German/English wording and photo occurrences were retained. There is no central
+layout manifest, signature fallback or mandatory old-site audit snapshot.
+
+The existing offline editor can load, edit, save, export and move these records
+using its current contract. Category moves carry the complete story with the
+vehicle folder; text edits do not invalidate presentation data. Historical source
+comparisons are migration work, not a requirement for owner-authored new cars.
+See `EDITOR-COMPATIBILITY-TODO.md` for suggested editor preview/documentation work.
+
+Verify normal maintenance with the contract, import and project-save tests, browser
+editor harness and both website builds. Build checks compare the rendered block
+sequence directly with each current vehicle record, without assuming a fixed
+vehicle inventory. Do not introduce sidecar content files without supporting them
+in the editor, importer, backup/recovery and ZIP contracts first.

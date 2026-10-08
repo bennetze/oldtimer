@@ -5,7 +5,7 @@
 	"description": "Ein weiterer EMW 340, welcher sich aktuell bei uns in der Restauration befindet. Augenscheinlich zunächst halbwegs intakt, hatte die Karosserie doch tei…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/182-emw-340-baujahr-1954",
 	"order": 11,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1951",
@@ -28,6 +28,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Ein weiterer EMW 340, welcher sich aktuell bei uns in der Restauration befindet. Augenscheinlich zunächst halbwegs intakt, hatte die Karosserie doch teilweise massive Rostschäden, die allesamt durch uns behoben werden mussten.</p>",
+			"htmlEn": "<p>Another EMW 340 currently being restored at our workshop. It initially appeared reasonably intact, but parts of the body had severe rust damage, all of which required repair.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -43,11 +48,6 @@
 			]
 		},
 		{
-			"type": "copy",
-			"html": "<p>Ein weiterer EMW 340, welcher sich aktuell bei uns in der Restauration befindet. Augenscheinlich zunächst halbwegs intakt, hatte die Karosserie doch teilweise massive Rostschäden, die allesamt durch uns behoben werden mussten.</p>",
-			"htmlEn": "<p>Another EMW 340 currently being restored at our workshop. It initially appeared reasonably intact, but parts of the body had severe rust damage, all of which required repair.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -59,11 +59,6 @@
 					"src": "./image-006.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Limousinenkarosserie mit freiliegenden Blechen schräg von hinten im Freien.",
 					"altEn": "BMW 340, year 1951 – Saloon body with exposed metal viewed from the rear corner outdoors."
-				},
-				{
-					"src": "./image-007.jpg",
-					"alt": "BMW 340, Baujahr 1951 – Karosserie gerade von hinten mit ausgebautem Kofferraumdeckel.",
-					"altEn": "BMW 340, year 1951 – Straight rear view of the body with its boot lid removed."
 				}
 			]
 		},
@@ -71,6 +66,16 @@
 			"type": "copy",
 			"html": "<p>Während der Karosseriearbeiten bekam der Wagen gemäß Kundenwunsch von uns auch das begehrte Faltschiebedach nachgerüstet.</p>",
 			"htmlEn": "<p>During the bodywork, we also retrofitted the sought-after folding sliding roof at the client’s request.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "BMW 340, Baujahr 1951 – Karosserie gerade von hinten mit ausgebautem Kofferraumdeckel.",
+					"altEn": "BMW 340, year 1951 – Straight rear view of the body with its boot lid removed."
+				}
+			]
 		},
 		{
 			"type": "gallery",

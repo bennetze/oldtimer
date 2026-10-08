@@ -5,7 +5,7 @@
 	"description": "Hier ein traumhaft perfekter BMW 319/1 Sportroadster von 1936 aus der ruhmreichen Eisenacher BMW Vorkriegs-Sportwagenära in der Original-Farbgebung: Lac…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/179-bmw-319-1",
 	"order": 3,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 319/1 Sport-Roadster, Baujahr 1936",
@@ -54,7 +54,12 @@
 					"src": "./image-004.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Grünes Roadsterheck gerade von hinten.",
 					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – Straight rear view of the green roadster."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Grün-heller Roadster mit offener Tür auf der Straße.",
@@ -69,7 +74,12 @@
 					"src": "./image-007.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Roadster seitlich von oben im Hof.",
 					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – Roadster viewed from above in side profile in the courtyard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Grüne Sitze und weißes Lenkrad von oben.",
@@ -84,7 +94,12 @@
 					"src": "./image-010.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Windschutzscheibe und grüne Sitzlehne schräg von der Seite.",
 					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – Windscreen and green seat back viewed from the side."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-011.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Grünes Roadsterheck schräg von oben.",
@@ -99,7 +114,12 @@
 					"src": "./image-013.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Roadster seitlich vor Hügeln und Feldern.",
 					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – Roadster in side profile beside hills and fields."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-014.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Grün-heller Roadster schräg von vorn vor Bäumen.",
@@ -114,7 +134,12 @@
 					"src": "./image-016.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Doppelgrill unter weit geöffneten Motorhaubenhälften.",
 					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – Twin grille beneath wide-open bonnet halves."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-017.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Dunkler Motor mit Leitungen im Motorraum.",

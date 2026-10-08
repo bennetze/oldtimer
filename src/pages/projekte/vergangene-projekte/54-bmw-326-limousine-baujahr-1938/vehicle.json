@@ -5,12 +5,12 @@
 	"description": "BMW 326 Limousine mit “Ambi-Budd”-Aufbau, gebaut 1938 bei den Bayerischen-Motoren-Werken in Eisenach/Thüringen, wurde der Wagen bei uns technischerseits…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/54-bmw-326-limousine-baujahr-1938",
 	"order": 124,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 Limousine, Baujahr 1938",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 326 Limousine, Baujahr 1938 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 326 Limousine, Baujahr 1938",
 	"blocks": [
 		{
 			"type": "copy",
@@ -96,5 +96,5 @@
 	"titleEn": "BMW 326 Saloon, year 1938",
 	"descriptionEn": "A 1938 BMW 326 saloon with Ambi-Budd coachwork, built in Eisenach, Thuringia. We comprehensively repaired its engine, axles, dampers and brakes.",
 	"cardImageAltEn": "BMW 326 Saloon, year 1938",
-	"leadImageAltEn": "BMW 326 Saloon, year 1938 – vehicle record"
+	"leadImageAltEn": "BMW 326 Saloon, year 1938"
 }

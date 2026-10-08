@@ -5,22 +5,17 @@
 	"description": "Pünktlich zu den Olympischen Spielen im August 1936 in Berlin, brachte Opel als großen Wurf diesen bezeichnenden Typ “Olympia” auf den Markt.\n\nEr gilt a…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/66-opel-olympia-baujahr-1936",
 	"order": 123,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "OPEL Olympia, Baujahr 1936",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "OPEL Olympia, Baujahr 1936 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "OPEL Olympia, Baujahr 1936",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Hier ein seltener OPEL Olympia Vorkrieg von 1936.</p>",
 			"htmlEn": "<p>A rare pre-war Opel Olympia from 1936.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Pünktlich zu den Olympischen Spielen im August 1936 in Berlin, brachte Opel als großen Wurf diesen bezeichnenden Typ “Olympia” auf den Markt.<br />\n<br />\nEr gilt als erster richtiger “Volkswagen” der in Großserie gebaut wurde, noch lange vor dem späteren Volkswagen Käfer.</p>",
-			"htmlEn": "<p>Opel’s aptly named Olympia was presented in connection with the 1936 Berlin Olympic era.<br>\n<br>\nIt is regarded as an early mass-produced “people’s car”, preceding the later Volkswagen Beetle.</p>"
 		},
 		{
 			"type": "gallery",
@@ -54,6 +49,11 @@
 		},
 		{
 			"type": "copy",
+			"html": "<p>Pünktlich zu den Olympischen Spielen im August 1936 in Berlin, brachte Opel als großen Wurf diesen bezeichnenden Typ “Olympia” auf den Markt.<br />\n<br />\nEr gilt als erster richtiger “Volkswagen” der in Großserie gebaut wurde, noch lange vor dem späteren Volkswagen Käfer.</p>",
+			"htmlEn": "<p>Opel’s aptly named Olympia was presented in connection with the 1936 Berlin Olympic era.<br>\n<br>\nIt is regarded as an early mass-produced “people’s car”, preceding the later Volkswagen Beetle.</p>"
+		},
+		{
+			"type": "copy",
 			"html": "<p>Der Wagen wurde bei uns in sehr vielen Details umfangreich überarbeitet (Technik, Elektrik, Innenausstattung).</p>",
 			"htmlEn": "<p>We extensively refurbished many details, including mechanical and electrical systems and the interior.</p>"
 		}
@@ -61,5 +61,5 @@
 	"titleEn": "OPEL Olympia, year 1936",
 	"descriptionEn": "Opel’s aptly named Olympia was presented in connection with the 1936 Berlin Olympic era. It is regarded as an early mass-produced “people’s car”, preceding the later Volkswagen…",
 	"cardImageAltEn": "OPEL Olympia, year 1936",
-	"leadImageAltEn": "OPEL Olympia, year 1936 – vehicle record"
+	"leadImageAltEn": "OPEL Olympia, year 1936"
 }

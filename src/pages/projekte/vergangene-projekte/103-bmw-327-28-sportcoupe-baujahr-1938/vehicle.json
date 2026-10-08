@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine Rarität aus der ruhmreichen Eisenacher BMW-Vorkriegsära. Ein bei der namhaften Karosserieschmiede \"Autenrieth\" in Darmstadt eingekleide…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/103-bmw-327-28-sportcoupe-baujahr-1938",
 	"order": 54,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcoupe, Baujahr 1938",
@@ -59,7 +59,12 @@
 					"src": "./image-005.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Freigeschliffene Fläche am grünen Karosserieblech.",
 					"altEn": "BMW 327/28 Sport Coupé, year 1938 – Sanded area on a green body panel."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-006.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Rostige, beschädigte Holz- und Blechstruktur.",
@@ -126,6 +131,36 @@
 			"type": "copy",
 			"html": "<p>Neben umfangreichen technischen Instandsetzungsarbeiten wurden auch die begehrten originalen &quot;Pilz&quot;-Instrumente komplett revidiert und das sehr seltene originale &quot;Körting&quot;-Radio aufwendig instand gesetzt und zusammen mit einer originalen &quot;Bosch&quot;-Heizung in das Fahrzeug eingepasst.</p>",
 			"htmlEn": "<p>Alongside extensive mechanical repairs, we completely rebuilt the sought-after original mushroom-shaped instruments and painstakingly restored the very rare original Körting radio, fitting it together with an original Bosch heater.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Ausgebaute Polster vor der Aufarbeitung",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – Removed upholstery before refurbishment"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Neu bezogener Vordersitz",
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – Newly upholstered front seat"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Auch im Innenraum mussten die völlig desolaten Sitze in unserer Sattlerei fachgerecht restauriert werden.</p>",
+			"htmlEn": "<p>Our upholstery workshop also had to professionally restore the severely deteriorated seats.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Die damit ebenfalls von Vorgängern recht eigenartig anmutenden Reparaturversuche der Sitzfederkerne, wurden komplett und originalgetreu erneuert, was jetzt auch wieder einen unvergleichlichen Sitzkomfort gewährleistet.</p>",
+			"htmlEn": "<p>The seat spring cores, which had undergone some rather unusual previous repairs, were completely renewed to original specification, restoring exceptional seating comfort.</p>"
 		},
 		{
 			"type": "gallery",
@@ -199,12 +234,22 @@
 					"src": "./image-022.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Grünes Coupé mit Reserveradabdeckung schräg von hinten.",
 					"altEn": "BMW 327/28 Sport Coupé, year 1938 – Green coupé with spare-wheel cover from the rear corner."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-023.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Grünes Coupé gerade von hinten.",
 					"altEn": "BMW 327/28 Sport Coupé, year 1938 – Straight rear view of the green coupé."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-024.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Grünes Coupé aus niedriger Perspektive vor einem Turm.",
@@ -214,7 +259,17 @@
 					"src": "./image-025.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Grünes Coupé schräg von vorn im Hof.",
 					"altEn": "BMW 327/28 Sport Coupé, year 1938 – Green coupé from the front corner in the courtyard."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>...ein sehr begehrtes und originales 327/28er BMW Sportcoupe bereit für die große Fahrt...</p>",
+			"htmlEn": "<p>…a highly sought-after, original BMW 327/28 sports coupé, ready for the open road…</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-026.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Grünes Armaturenbrett mit weißem Lenkrad.",

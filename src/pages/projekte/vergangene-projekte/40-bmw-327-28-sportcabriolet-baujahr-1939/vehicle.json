@@ -5,13 +5,23 @@
 	"description": "Auch dieses BMW 327/28 Sportcabriolet - gebaut 1939 bei den Bayerischen - Motoren - Werken in Eisenach/Thüringen wurde bei uns einer umfangreichen Kompl…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/40-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 62,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
 	"leadImage": "./image-001.jpg",
 	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Fahrzeugdokumentation",
 	"blocks": [
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Fertiges Cabriolet vor dem Gebäude",
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Finished convertible outside the building"
+				}
+			]
+		},
 		{
 			"type": "copy",
 			"html": "<p>Auch dieses BMW 327/28 Sportcabriolet - gebaut 1939 bei den Bayerischen - Motoren - Werken in Eisenach/Thüringen wurde bei uns einer umfangreichen Komplettrestauration unterzogen.</p>",

@@ -5,7 +5,7 @@
 	"description": "Hier ein weiterer HORCH P240 \"Sachsenring\", der bei uns umfangreich restauriert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/161-horch-p240-sachsenring-baujahr-1958",
 	"order": 23,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HORCH P240 Sachsenring, Baujahr 1958",
@@ -29,18 +29,13 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier ein weiterer HORCH P240 &quot;Sachsenring&quot;, der bei uns umfangreich restauriert wurde.</p>",
-			"htmlEn": "<p><br>\nAnother Horch P240 Sachsenring extensively restored at our workshop.</p>"
+			"html": "<p>Hier ein weiterer HORCH P240 &quot;Sachsenring&quot;, der bei uns umfangreich restauriert wurde.</p>",
+			"htmlEn": "<p>Another Horch P240 Sachsenring extensively restored at our workshop.</p>"
 		},
 		{
 			"type": "copy",
 			"html": "<p>In den Jahren von 1955 bis 1958 entstanden in den ehemaligen Horch Werken in Zwickau diese formschönen und repräsentativen Luxuslimousinen in einer bescheidenen Stückzahl von rund 1400 Einheiten.</p>",
 			"htmlEn": "<p>Around 1,400 of these elegant, distinguished luxury saloons were produced at the former Horch works in Zwickau between 1955 and 1958.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Motor: 6 Zylinder, 2,4 Liter Hubraum, 80PS Leistung</p>",
-			"htmlEn": "<p>Engine: six cylinders, 2.4 litres, 80 PS.</p>"
 		},
 		{
 			"type": "gallery",
@@ -56,6 +51,11 @@
 					"altEn": "HORCH P240 Sachsenring, year 1958 – Removed car radio with wires on a box."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Motor: 6 Zylinder, 2,4 Liter Hubraum, 80PS Leistung</p>",
+			"htmlEn": "<p>Engine: six cylinders, 2.4 litres, 80 PS.</p>"
 		},
 		{
 			"type": "gallery",
@@ -98,9 +98,164 @@
 			"htmlEn": "<p><strong><em>History: founded in 1899 by August Horch and based in Zwickau from 1904, Horch built elegant and technically advanced luxury cars into the Second World War years. A legal dispute forced August Horch out of his own company and cost him the right to use his name. In 1910, he founded Audi, also in Zwickau,<br>\nusing the Latin translation of “Horch”, meaning “listen”. </em></strong></p>"
 		},
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Restaurierte Vorderachse am Fahrgestell",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Restored front axle on the chassis"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Bremse und Radaufhängung am Fahrgestell",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Brake and suspension on the chassis"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Ausgebautes Differential",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Removed differential"
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p><strong><em>Nach dem 2. Weltkrieg und der Teilung Deutschlands wurde ab 1949 die Firma AUDI in Düsseldorf</em></strong>/<strong><em>Ingolstadt neu gegründet. Am alten Stammsitz von HORCH und AUDI in Zwickau hingegen, baute man in den alten, durch den Krieg noch erhaltenen Fertigungshallen, weiter hochkarätige Fahrzeuge von &quot;Stil und Rasse&quot; - so ein damaliges Zitat. </em></strong></p>",
 			"htmlEn": "<p><strong><em>Following the Second World War and Germany’s division, Audi was re-established from 1949 in Düsseldorf and</em></strong>/<strong><em>Ingolstadt. At Horch and Audi’s original Zwickau site, surviving factory halls continued to produce distinguished vehicles of “style and breeding”, as contemporary publicity put it. </em></strong></p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-004.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Alte Türverkleidungen vor der Aufarbeitung",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Old door panels before refurbishment"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-005.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Neu gefertigte Türverkleidung",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Newly made door panel"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-006.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Zweifarbige Türverkleidung mit Griffen",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Two-tone door panel with handles"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-007.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Fertige Limousine von schräg vorn",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Finished saloon from the front quarter"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-008.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Scheinwerfer und vorderer Kotflügel",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Headlight and front wing"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-009.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Fertige Limousine mit geöffneten Türen",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Finished saloon with open doors"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-010.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Lenkrad und Armaturenbrett",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Steering wheel and dashboard"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-011.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Fertige Limousine von der Seite",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Finished saloon viewed from the side"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-012.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Fertige Limousine im Grünen",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Finished saloon in a green setting"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-013.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Fertige Limousine von schräg hinten",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Finished saloon from the rear quarter"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-014.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Sachsenring-Schriftzug an der Karosserie",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Sachsenring lettering on the body"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-015.jpg",
+					"alt": "HORCH P240 Sachsenring, Baujahr 1958 – Front mit Kühlergrill und Stoßfänger",
+					"altEn": "HORCH P240 Sachsenring, year 1958 – Front with radiator grille and bumper"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Eines der wenigen erhaltenen und formschönen HORCH Sachsenring Limousinen mit unvergleichlich hohem Fahrkomfort und sehr detailreichem Luxus- und Repräsentationswert.</p>",
+			"htmlEn": "<p>One of the few surviving, beautifully styled HORCH Sachsenring saloons, offering exceptional ride comfort and richly detailed luxury and presence.</p>"
 		}
 	],
 	"titleEn": "HORCH P240 Sachsenring, year 1958",

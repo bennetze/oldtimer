@@ -5,7 +5,7 @@
 	"description": "Auch dieser Wartburg 313 Sport wird derzeit in unserer Manufaktur einer fachgerechten Vollrestauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/190-wartburg-313-baujahr",
 	"order": 3,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 S-Sport, Baujahr 1959",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nAuch dieser Wartburg 313 Sport wird derzeit in unserer Manufaktur einer fachgerechten Vollrestauration unterzogen.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\nThis Wartburg 313 Sport is also currently receiving a professional full restoration at our workshop.</p>"
+			"html": "<p>Auch dieser Wartburg 313 Sport wird derzeit in unserer Manufaktur einer fachgerechten Vollrestauration unterzogen.</p>",
+			"htmlEn": "<p>This Wartburg 313 Sport is also currently receiving a professional full restoration at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -124,7 +124,12 @@
 					"src": "./image-015.jpg",
 					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Abgeklebte Karosserie schräg von vorn.",
 					"altEn": "Wartburg 313 S-Sport, year 1959 – Masked body viewed from the front corner."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-016.jpg",
 					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Abgeklebte Karosserie schräg von hinten.",
@@ -149,8 +154,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nNeuaufbau Fahrgestell mitsamt Achsen, Lenkung, Bremsen u.dgl.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nRebuilding the chassis, including axles, steering, brakes and related components.</p>"
+			"html": "<p>Neuaufbau Fahrgestell mitsamt Achsen, Lenkung, Bremsen u.dgl.</p>",
+			"htmlEn": "<p>Rebuilding the chassis, including axles, steering, brakes and related components.</p>"
 		},
 		{
 			"type": "gallery",
@@ -254,8 +259,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nÜberholung Technik, Neuaufbau Motor, Doppelvergaser, Getriebe, usw.</p>",
-			"htmlEn": "<p><br>\n<br>\nMechanical overhaul, rebuilding the engine, twin carburettors, gearbox and other components.</p>"
+			"html": "<p>Überholung Technik, Neuaufbau Motor, Doppelvergaser, Getriebe, usw.</p>",
+			"htmlEn": "<p>Mechanical overhaul, rebuilding the engine, twin carburettors, gearbox and other components.</p>"
 		},
 		{
 			"type": "gallery",
@@ -274,8 +279,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nDie inzwischen fertig überholten Achsen.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\nThe fully refurbished axles.</p>"
+			"html": "<p>Die inzwischen fertig überholten Achsen.</p>",
+			"htmlEn": "<p>The fully refurbished axles.</p>"
 		},
 		{
 			"type": "gallery",
@@ -339,8 +344,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nKomplette Instrumentenüberholung und Restaurierung der frühen &quot;bunten&quot; Markenembleme.</p>",
-			"htmlEn": "<p><br>\nA complete instrument overhaul and restoration of the early multicoloured marque badges.</p>"
+			"html": "<p>Komplette Instrumentenüberholung und Restaurierung der frühen &quot;bunten&quot; Markenembleme.</p>",
+			"htmlEn": "<p>A complete instrument overhaul and restoration of the early multicoloured marque badges.</p>"
 		},
 		{
 			"type": "gallery",
@@ -409,11 +414,6 @@
 					"src": "./image-049.jpg",
 					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Heller Innenraum mit weißem Lenkrad.",
 					"altEn": "Wartburg 313 S-Sport, year 1959 – Light-coloured cabin with white steering wheel."
-				},
-				{
-					"src": "./image-050.jpg",
-					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet mit Hardtop schräg von vorn.",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue hardtop convertible viewed from the front corner."
 				}
 			]
 		},
@@ -421,6 +421,16 @@
 			"type": "copy",
 			"html": "<p>Nun haben wir ja in den vergangenen Jahrzehnten schon einige dieser wunderschönen Wartburg Sport neu aufgebaut. Hier nun ein weiterer Leckerbissen, der ohne Zweifel die Nachwelt erfreuen wird.</p>",
 			"htmlEn": "<p>We have rebuilt several of these beautiful Wartburg Sports over the decades. Here is another fine example that will undoubtedly delight future generations.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-050.jpg",
+					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet mit Hardtop schräg von vorn.",
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue hardtop convertible viewed from the front corner."
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -434,7 +444,12 @@
 					"src": "./image-052.jpg",
 					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Armaturenbrett und helle Sitze von oben.",
 					"altEn": "Wartburg 313 S-Sport, year 1959 – Dashboard and light-coloured seats viewed from above."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-053.jpg",
 					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet gerade von vorn im Hof.",

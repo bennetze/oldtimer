@@ -5,12 +5,12 @@
 	"description": "Hier wieder ein BMW 327 Sportcabriolet des Baujahres 1939 aus Eisenacher Produktion, der gemäß den Kundenwünschen in unserer Manufaktur ebenfalls einer…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/30-bmw-327-sportcabriolet-baujahr-1939",
 	"order": 11,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sportcabriolet, Baujahr 1939",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 327 Sportcabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 327 Sportcabriolet, Baujahr 1939",
 	"blocks": [
 		{
 			"type": "gallery",
@@ -66,6 +66,11 @@
 					"altEn": "BMW 327 Sport Cabriolet, year 1939 – Bare-metal body viewed from the rear corner."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Leider blieben auch diesem Wagen, die im Laufe der vergangenen Jahrzehnte durchgeführten zahlreichen Umbauarbeiten (Motor, usw.) nicht erspart und mussten gemäß Kundenwusch in den Originalzustand zurück versetzt werden. Äußerlich zunächst ansprechend, zeigte sich die Karosserie in der Grundsubstanz allerdings in einem bemitleidenwerten Eindruck und musste aufwendig restauriert werden.</p>",
+			"htmlEn": "<p>This car had also undergone numerous alterations over the decades, including changes to its engine. At the customer's request, these had to be reversed to restore its original condition. Although initially attractive on the outside, the underlying bodywork was in a sorry state and required extensive restoration.</p>"
 		},
 		{
 			"type": "gallery",
@@ -269,12 +274,12 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEs erfüllt uns mit Stolz, konnten wir dem Kunden nicht nur seinen Traum von einem perfekt restaurierten BMW 327 Sport-Cabriolet erfüllen - nein wir bekamen abschließend auch gleich einen weiteren Folgeauftrag zur detailgetreuen Restauration seines BMW 327/28 Sport-Coupes...</p>",
-			"htmlEn": "<p><br>\n<br>\nWe were proud not only to fulfil the client’s dream of a superbly restored BMW 327 Sport Cabriolet, but also to receive a follow-up commission to restore their BMW 327/28 Sport Coupé in detail.</p>"
+			"html": "<p>Es erfüllt uns mit Stolz, konnten wir dem Kunden nicht nur seinen Traum von einem perfekt restaurierten BMW 327 Sport-Cabriolet erfüllen - nein wir bekamen abschließend auch gleich einen weiteren Folgeauftrag zur detailgetreuen Restauration seines BMW 327/28 Sport-Coupes...</p>",
+			"htmlEn": "<p>We were proud not only to fulfil the client’s dream of a superbly restored BMW 327 Sport Cabriolet, but also to receive a follow-up commission to restore their BMW 327/28 Sport Coupé in detail.</p>"
 		}
 	],
 	"titleEn": "BMW 327 Sport Cabriolet, year 1939",
 	"descriptionEn": "Another 1939 BMW 327 Sport Cabriolet from Eisenach, extensively restored at our workshop to the client’s wishes.",
 	"cardImageAltEn": "BMW 327 Sport Cabriolet, year 1939",
-	"leadImageAltEn": "BMW 327 Sport Cabriolet, year 1939 – vehicle record"
+	"leadImageAltEn": "BMW 327 Sport Cabriolet, year 1939"
 }

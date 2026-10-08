@@ -5,12 +5,12 @@
 	"description": "BMW 327/28 Sportcabriolet, Baujahr 1939",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/39-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 106,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
 	"blocks": [
 		{
 			"type": "copy",
@@ -76,10 +76,15 @@
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Red rear bench seat and folding partition screen."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Auf Kundenwunsch wurde eigens für dieses Fahrzeug ein passgerechtes Windschott gebaut.</p>",
+			"htmlEn": "<p>At the customer's request, a wind deflector was made specifically to fit this car.</p>"
 		}
 	],
 	"titleEn": "BMW 327/28 Sport Cabriolet, year 1939",
 	"descriptionEn": "BMW 327/28 Sport Cabriolet, year 1939",
 	"cardImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939",
-	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939 – vehicle record"
+	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939"
 }

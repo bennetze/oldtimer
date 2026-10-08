@@ -5,7 +5,7 @@
 	"description": "Dieser HORCH Typ \"Sachsenring\" P240 als letztgebauter HORCH Wagen überhaupt, entstammt der traditionsreichen Zwickauer \"HORCH\" Dynastie im sächsischen Z…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/148-horch-p240-sachsenring-baujahr-1957",
 	"order": 14,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HORCH P240 Sachsenring, Baujahr 1957",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDieser HORCH Typ &quot;Sachsenring&quot; P240 als letztgebauter HORCH Wagen überhaupt, entstammt der traditionsreichen Zwickauer &quot;HORCH&quot; Dynastie im sächsischen Zwickau und dem dortigen Bau von hochkarätigen Automobilen.</p>",
-			"htmlEn": "<p><br>\nThe Horch Sachsenring P240, the final Horch car model, came from the distinguished tradition of high-quality automobile production in Zwickau, Saxony.</p>"
+			"html": "<p>Dieser HORCH Typ &quot;Sachsenring&quot; P240 als letztgebauter HORCH Wagen überhaupt, entstammt der traditionsreichen Zwickauer &quot;HORCH&quot; Dynastie im sächsischen Zwickau und dem dortigen Bau von hochkarätigen Automobilen.</p>",
+			"htmlEn": "<p>The Horch Sachsenring P240, the final Horch car model, came from the distinguished tradition of high-quality automobile production in Zwickau, Saxony.</p>"
 		},
 		{
 			"type": "copy",
@@ -36,11 +36,6 @@
 			"type": "copy",
 			"html": "<p><strong><em>Nach dem 2. Weltkrieg und der Teilung Deutschlands wurde ab 1949 die Firma AUDI in Düsseldorf</em></strong>/<strong><em>Ingolstadt neu gegründet. Am alten Stammsitz von HORCH und AUDI in Zwickau hingegen, baute man in den alten, durch den Krieg noch erhaltenen Fertigungshallen, weiter hochkarätige Fahrzeuge von &quot;Stil und Rasse&quot; - so ein damaliges Zitat. </em></strong></p>",
 			"htmlEn": "<p><strong><em>Following the Second World War and Germany’s division, Audi was re-established from 1949 in Düsseldorf and</em></strong>/<strong><em>Ingolstadt. At Horch and Audi’s original Zwickau site, surviving factory halls continued to produce distinguished vehicles of “style and breeding”, as contemporary publicity put it. </em></strong></p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Auch der Typ Horch &quot;Sachsenring&quot; P240, gebaut ab 1956, entstammt im Grunde dieser technisch genialen HORCH Konstruktion, gepaart mit dem damaligen Formen- und Zeitgeschmack im Stile einer hochmodernen Pontonform und ist heute unter Kennern ein sehr gefragtes Sammlerobjekt mit großem Fahrspaß und Prestigefaktor.</p>",
-			"htmlEn": "<p>Introduced in 1956, the Horch Sachsenring P240 combined the marque’s engineering heritage with modern ponton styling. Today it is a sought-after collector’s car, offering driving pleasure and prestige.</p>"
 		},
 		{
 			"type": "gallery",
@@ -71,6 +66,11 @@
 					"altEn": "HORCH P240 Sachsenring, year 1957 – Close view of rust and holes in a body panel."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Auch der Typ Horch &quot;Sachsenring&quot; P240, gebaut ab 1956, entstammt im Grunde dieser technisch genialen HORCH Konstruktion, gepaart mit dem damaligen Formen- und Zeitgeschmack im Stile einer hochmodernen Pontonform und ist heute unter Kennern ein sehr gefragtes Sammlerobjekt mit großem Fahrspaß und Prestigefaktor.</p>",
+			"htmlEn": "<p>Introduced in 1956, the Horch Sachsenring P240 combined the marque’s engineering heritage with modern ponton styling. Today it is a sought-after collector’s car, offering driving pleasure and prestige.</p>"
 		},
 		{
 			"type": "gallery",
@@ -119,8 +119,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Wagen wurde in unserer Manufaktur einer aufwendigen Komplettrestauration im individuellen Kundenauftrag unterzogen.</p>",
-			"htmlEn": "<p><br>\nWe carried out an extensive, bespoke full restoration for the owner.</p>"
+			"html": "<p>Der Wagen wurde in unserer Manufaktur einer aufwendigen Komplettrestauration im individuellen Kundenauftrag unterzogen.</p>",
+			"htmlEn": "<p>We carried out an extensive, bespoke full restoration for the owner.</p>"
 		},
 		{
 			"type": "gallery",
@@ -144,7 +144,12 @@
 					"src": "./image-012.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Geschliffene Motorhaube mit sichtbaren Farbresten.",
 					"altEn": "HORCH P240 Sachsenring, year 1957 – Sanded bonnet with remaining paint patches."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-013.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Abgeklebte Karosserie schräg von vorn in der Lackierkabine.",
@@ -169,7 +174,12 @@
 					"src": "./image-015.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Abgeklebte Karosserie seitlich in der Lackierkabine.",
 					"altEn": "HORCH P240 Sachsenring, year 1957 – Masked body in side profile in the spray booth."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-016.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Blau-helle Fahrzeugfront mit leerem Motorraum.",
@@ -204,7 +214,12 @@
 					"src": "./image-020.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Radio und Chromgitter im zweifarbigen Armaturenbrett.",
 					"altEn": "HORCH P240 Sachsenring, year 1957 – Radio and chrome grille in two-tone dashboard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-021.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Blau-helle Türverkleidung mit hellem Griff.",
@@ -219,7 +234,12 @@
 					"src": "./image-023.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Blau-helle Rücksitzbank unter hellem Dachhimmel.",
 					"altEn": "HORCH P240 Sachsenring, year 1957 – Blue-and-light rear bench beneath light headlining."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-024.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Dreiviertelansicht von vorn im Freien.",
@@ -369,7 +389,12 @@
 					"src": "./image-040.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Geöffneter Kofferraum mit ausgekleidetem Boden.",
 					"altEn": "HORCH P240 Sachsenring, year 1957 – Open boot compartment with lined floor."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-041.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Radio und Gitter im hellen Armaturenbrett.",
@@ -384,7 +409,12 @@
 					"src": "./image-042.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Seitenansicht im Freien.",
 					"altEn": "HORCH P240 Sachsenring, year 1957 – Side profile outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-043.jpg",
 					"alt": "HORCH P240 Sachsenring, Baujahr 1957 – Dreiviertelansicht von vorn im Freien.",

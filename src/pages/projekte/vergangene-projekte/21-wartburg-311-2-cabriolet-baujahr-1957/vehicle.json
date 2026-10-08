@@ -5,7 +5,7 @@
 	"description": "Hier ein Wartburg 311 als seltene Cabriolet - Ausführung, das 1957 unweit von uns - in Eisenach - gebaut und nach Norddeutschland ausgeliefert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/21-wartburg-311-2-cabriolet-baujahr-1957",
 	"order": 80,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 311-2 Cabriolet, Baujahr 1957",
@@ -288,6 +288,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Nachdem nun auch sämtliche technischen Komponenten wie Motor, Getriebe, Achsen, Elektrik, usw. grundlegend überholt wurden, konnte der Wagen anschließend umfangreichen Probe- und Testläufen unterzogen werden.</p>",
+			"htmlEn": "<p>Once the engine, gearbox, axles, electrical system and other mechanical components were thoroughly overhauled, we carried out extensive tests and trial runs.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -306,11 +311,6 @@
 					"altEn": "Wartburg 311-2 Cabriolet, year 1957 – Open drum brake with brake shoes and springs."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Nachdem nun auch sämtliche technischen Komponenten wie Motor, Getriebe, Achsen, Elektrik, usw. grundlegend überholt wurden, konnte der Wagen anschließend umfangreichen Probe- und Testläufen unterzogen werden.</p>",
-			"htmlEn": "<p>Once the engine, gearbox, axles, electrical system and other mechanical components were thoroughly overhauled, we carried out extensive tests and trial runs.</p>"
 		},
 		{
 			"type": "gallery",
@@ -339,7 +339,12 @@
 					"src": "./image-030.jpg",
 					"alt": "Wartburg 311-2 Cabriolet, Baujahr 1957 – Dreiviertelansicht von hinten im Freien.",
 					"altEn": "Wartburg 311-2 Cabriolet, year 1957 – Rear three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-031.jpg",
 					"alt": "Wartburg 311-2 Cabriolet, Baujahr 1957 – Seitenansicht im Freien.",
@@ -364,7 +369,12 @@
 					"src": "./image-033.jpg",
 					"alt": "Wartburg 311-2 Cabriolet, Baujahr 1957 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
 					"altEn": "Wartburg 311-2 Cabriolet, year 1957 – Close view of grille and front bodywork."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-034.jpg",
 					"alt": "Wartburg 311-2 Cabriolet, Baujahr 1957 – Nahaufnahme des Emblems auf der Karosserie.",
@@ -389,7 +399,12 @@
 					"src": "./image-036.jpg",
 					"alt": "Wartburg 311-2 Cabriolet, Baujahr 1957 – Blick auf die Rücksitzbank im Innenraum.",
 					"altEn": "Wartburg 311-2 Cabriolet, year 1957 – View of the rear bench seat inside the cabin."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-037.jpg",
 					"alt": "Wartburg 311-2 Cabriolet, Baujahr 1957 – Dreiviertelansicht von vorn im Freien.",

@@ -5,7 +5,7 @@
 	"description": "Hier ein HANOMAG Rekord Cabriolet des Baujahres 1938 mit einer sehr seltenen Sportkarosserie des namhaften Berliner Karosseriebauers \"Ambi-Budd\" (ABP=Am…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/152-hanomag-rekord-ambi-budd-baujahr-1938",
 	"order": 21,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", Baujahr 1938",
@@ -73,11 +73,6 @@
 			]
 		},
 		{
-			"type": "copy",
-			"html": "<p>Leider blieben auch diesem Wagen mehrere gescheiterte Restaurationsversuche einiger Vorgänger-&quot;Experten&quot; nicht erspart. Somit bekamen wir den Wagen leider nur in völlig zerlegtem und eher fragmentösen Zustand.<br />\n<br /></p>",
-			"htmlEn": "<p>It too had suffered several unsuccessful restoration attempts by previous “experts”. It therefore arrived completely dismantled and in a rather fragmentary state.<br>\n<br></p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -96,6 +91,11 @@
 					"altEn": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", year 1938 – Close view of rust and holes in a body panel."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Leider blieben auch diesem Wagen mehrere gescheiterte Restaurationsversuche einiger Vorgänger-&quot;Experten&quot; nicht erspart. Somit bekamen wir den Wagen leider nur in völlig zerlegtem und eher fragmentösen Zustand.<br />\n<br /></p>",
+			"htmlEn": "<p>It too had suffered several unsuccessful restoration attempts by previous “experts”. It therefore arrived completely dismantled and in a rather fragmentary state.<br>\n<br></p>"
 		},
 		{
 			"type": "copy",
@@ -119,7 +119,12 @@
 					"src": "./image-012.jpg",
 					"alt": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", Baujahr 1938 – Rostige Blechkante am hellen hinteren Kotflügel.",
 					"altEn": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", year 1938 – Rusty panel edge on light rear wing."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-013.jpg",
 					"alt": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", Baujahr 1938 – Rundes blankes Heckblech mit Rostpunkten.",
@@ -194,8 +199,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch die teils tragenden Holzspriegel der Karosserie und des Verdeckgestells wurden unsererseits mittels neu angefertigter Hölzer aus getrockneter Esche neu hergestellt und eingebracht.</p>",
-			"htmlEn": "<p><br>\nWe also recreated and installed structural wooden bows for the body and hood frame in seasoned ash.</p>"
+			"html": "<p>Auch die teils tragenden Holzspriegel der Karosserie und des Verdeckgestells wurden unsererseits mittels neu angefertigter Hölzer aus getrockneter Esche neu hergestellt und eingebracht.</p>",
+			"htmlEn": "<p>We also recreated and installed structural wooden bows for the body and hood frame in seasoned ash.</p>"
 		},
 		{
 			"type": "gallery",
@@ -234,8 +239,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nZahlreiche aufgearbeitete bzw. angefertigte Zier- und Anbauteile zur Neuverchromung.</p>",
-			"htmlEn": "<p><br>\n<br>\nNumerous refurbished or newly made trim pieces and fittings awaiting chrome plating.</p>"
+			"html": "<p>Zahlreiche aufgearbeitete bzw. angefertigte Zier- und Anbauteile zur Neuverchromung.</p>",
+			"htmlEn": "<p>Numerous refurbished or newly made trim pieces and fittings awaiting chrome plating.</p>"
 		},
 		{
 			"type": "gallery",
@@ -269,8 +274,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nKühlerrestauration mit kpl. neu angefertigtem Kühlernetz.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nRadiator restoration with an entirely new core.</p>"
+			"html": "<p>Kühlerrestauration mit kpl. neu angefertigtem Kühlernetz.</p>",
+			"htmlEn": "<p>Radiator restoration with an entirely new core.</p>"
 		},
 		{
 			"type": "gallery",
@@ -289,8 +294,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nDas original &quot;ABP&quot;-Emblem für &quot;Ambi-Budd-Presswerke&quot; in Berlin Johannisthal.</p>",
-			"htmlEn": "<p><br>\n<br>\nThe original ABP badge for Ambi-Budd-Presswerke in Berlin-Johannisthal.</p>"
+			"html": "<p>Das original &quot;ABP&quot;-Emblem für &quot;Ambi-Budd-Presswerke&quot; in Berlin Johannisthal.</p>",
+			"htmlEn": "<p>The original ABP badge for Ambi-Budd-Presswerke in Berlin-Johannisthal.</p>"
 		},
 		{
 			"type": "gallery",
@@ -309,8 +314,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nNeu angefertigte Zierhözer.</p>",
-			"htmlEn": "<p><br>\n<br>\nNewly made wood trim.</p>"
+			"html": "<p>Neu angefertigte Zierhözer.</p>",
+			"htmlEn": "<p>Newly made wood trim.</p>"
 		},
 		{
 			"type": "gallery",
@@ -344,8 +349,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nIm Zuge der originalgetreuen Ganzlackierung der neu aufgebauten Karosserie konnte gemäß den Kundenwünschen in unserer Lackierabteilung der Wagen auch wieder mit den beiden mutmaßlichen Originalfarbtönen (blau/blau) aus dem Jahre 1938 fachgerecht lackiert werden.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nAs part of the authentic full respray, our paint shop applied the two presumed original shades of blue from 1938 to the client’s wishes.</p>"
+			"html": "<p>Im Zuge der originalgetreuen Ganzlackierung der neu aufgebauten Karosserie konnte gemäß den Kundenwünschen in unserer Lackierabteilung der Wagen auch wieder mit den beiden mutmaßlichen Originalfarbtönen (blau/blau) aus dem Jahre 1938 fachgerecht lackiert werden.</p>",
+			"htmlEn": "<p>As part of the authentic full respray, our paint shop applied the two presumed original shades of blue from 1938 to the client’s wishes.</p>"
 		},
 		{
 			"type": "gallery",
@@ -409,8 +414,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nDas Ergebnis:</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nThe result:</p>"
+			"html": "<p>Das Ergebnis:</p>",
+			"htmlEn": "<p>The result:</p>"
 		},
 		{
 			"type": "copy",

@@ -5,22 +5,17 @@
 	"description": "Auch dieses Mercedes 170S B-Cabriolet wurde gemäß Kundenwunsch in unserer Manufaktur allumfassend restauriert (Karosserie, Technik, Elektrik, Lackierung…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/16-mercedes-170-s-cabriolet-baujahr-1950",
 	"order": 95,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1950",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 170 S Cabriolet, Baujahr 1950",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "Mercedes 170 S Cabriolet, Baujahr 1950 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "Mercedes 170 S Cabriolet, Baujahr 1950",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Auch dieses Mercedes 170S B-Cabriolet wurde gemäß Kundenwunsch in unserer Manufaktur allumfassend restauriert (Karosserie, Technik, Elektrik, Lackierung, Chrom, Polster, Verdeck, etc.).</p>",
 			"htmlEn": "<p>This Mercedes 170 S Cabriolet B also received a comprehensive restoration to the client’s wishes: bodywork, mechanics, electrics, paint, chrome, upholstery and hood.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Neben umfangreichen Karosseriearbeiten musste u.a. auch die gesamte Frontmaske - da nicht mehr zu retten - komplett und originalgetreu nachgebaut und anschließend neu verchromt werden - hier rechts im Bild.</p>",
-			"htmlEn": "<p>Alongside extensive body repairs, the entire front grille assembly was beyond saving and had to be faithfully reproduced and newly chromed, shown here on the right.</p>"
 		},
 		{
 			"type": "gallery",
@@ -51,6 +46,11 @@
 					"altEn": "Mercedes 170 S Cabriolet, year 1950 – Bare-metal rear wing above fitted wheel."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Neben umfangreichen Karosseriearbeiten musste u.a. auch die gesamte Frontmaske - da nicht mehr zu retten - komplett und originalgetreu nachgebaut und anschließend neu verchromt werden - hier rechts im Bild.</p>",
+			"htmlEn": "<p>Alongside extensive body repairs, the entire front grille assembly was beyond saving and had to be faithfully reproduced and newly chromed, shown here on the right.</p>"
 		},
 		{
 			"type": "gallery",
@@ -129,8 +129,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nIn unserer Autosattlerei wurde zudem das gesamte Cabrioletdach...<br />\n<br />\n...einschließlich der Rosshaardämmung und der Innenhimmel neu geschneidert...</p>",
-			"htmlEn": "<p><br>\nOur upholstery shop also recreated the complete convertible roof…<br>\n<br>\n…including horsehair insulation and headlining…</p>"
+			"html": "<p>In unserer Autosattlerei wurde zudem das gesamte Cabrioletdach...<br />\n<br />\n...einschließlich der Rosshaardämmung und der Innenhimmel neu geschneidert...</p>",
+			"htmlEn": "<p>Our upholstery shop also recreated the complete convertible roof…<br>\n<br>\n…including horsehair insulation and headlining…</p>"
 		},
 		{
 			"type": "copy",
@@ -186,5 +186,5 @@
 	"titleEn": "Mercedes 170 S Cabriolet, year 1950",
 	"descriptionEn": "This Mercedes 170 S Cabriolet B also received a comprehensive restoration to the client’s wishes: bodywork, mechanics, electrics, paint, chrome, upholstery and hood.",
 	"cardImageAltEn": "Mercedes 170 S Cabriolet, year 1950",
-	"leadImageAltEn": "Mercedes 170 S Cabriolet, year 1950 – vehicle record"
+	"leadImageAltEn": "Mercedes 170 S Cabriolet, year 1950"
 }

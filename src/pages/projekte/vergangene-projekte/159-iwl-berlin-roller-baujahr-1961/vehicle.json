@@ -5,7 +5,7 @@
 	"description": "Hier ein so genannter \"Berlin-Roller\" der Marke IWL (Industrie Werke Ludwigsfelde), der hier in unserer Manufaktur sehr umfassend restauriert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/159-iwl-berlin-roller-baujahr-1961",
 	"order": 25,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1961",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "IWL Berlin-Roller, Baujahr 1961",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nHier ein so genannter &quot;Berlin-Roller&quot; der Marke IWL (Industrie Werke Ludwigsfelde), der hier in unserer Manufaktur sehr umfassend restauriert wurde.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nA Berlin scooter by IWL, Industriewerke Ludwigsfelde, comprehensively restored at our workshop.</p>"
+			"html": "<p>Hier ein so genannter &quot;Berlin-Roller&quot; der Marke IWL (Industrie Werke Ludwigsfelde), der hier in unserer Manufaktur sehr umfassend restauriert wurde.</p>",
+			"htmlEn": "<p>A Berlin scooter by IWL, Industriewerke Ludwigsfelde, comprehensively restored at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -44,7 +44,12 @@
 					"src": "./image-004.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Abgenommener blanker Kotflügel mit Öffnungen.",
 					"altEn": "IWL Berlin Scooter, year 1961 – Removed bare-metal mudguard with openings."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Blankes Blech mit Verstärkung und runden Öffnungen.",
@@ -59,7 +64,12 @@
 					"src": "./image-007.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Helles Roller-Seitenblech mit Lüftungsschlitzen.",
 					"altEn": "IWL Berlin Scooter, year 1961 – Light scooter side panel with ventilation slots."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Hell beschichtete Anhängerkarosserie in der Kabine.",
@@ -74,7 +84,12 @@
 					"src": "./image-010.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Offener Rollermotor mit Zahnrädern und rundem Gehäuse.",
 					"altEn": "IWL Berlin Scooter, year 1961 – Open scooter engine with gears and round casing."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-011.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Zwei Zahnräder auf Wellen im offenen Gehäuse.",
@@ -89,7 +104,12 @@
 					"src": "./image-013.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Blauer Rollerrahmen neben orangefarbenem Roller.",
 					"altEn": "IWL Berlin Scooter, year 1961 – Blue scooter frame beside orange scooter."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-014.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Blau-helles Seitenblech mit montiertem Sitz.",
@@ -139,8 +159,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nEin Traum in original türkis/creme mit dem sehr begehrten &quot;Campi&quot; Anhänger als Nachläufer.<br />\nEines der wenigen originalen<br />\nBerlin-Roller- Gespanne.</p>",
-			"htmlEn": "<p><br>\nA dream in original turquoise and cream, with the sought-after Campi trailer.<br>\nOne of the few original<br>\nBerlin scooter-and-trailer combinations.</p>"
+			"html": "<p>Ein Traum in original türkis/creme mit dem sehr begehrten &quot;Campi&quot; Anhänger als Nachläufer.<br />\nEines der wenigen originalen<br />\nBerlin-Roller- Gespanne.</p>",
+			"htmlEn": "<p>A dream in original turquoise and cream, with the sought-after Campi trailer.<br>\nOne of the few original<br>\nBerlin scooter-and-trailer combinations.</p>"
 		},
 		{
 			"type": "gallery",
@@ -154,8 +174,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\nSchön und perfekt, bereit zur großen Fahrt...</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\n<br>\nBeautifully finished and ready for the open road…</p>"
+			"html": "<p>Schön und perfekt, bereit zur großen Fahrt...</p>",
+			"htmlEn": "<p>Beautifully finished and ready for the open road…</p>"
 		}
 	],
 	"titleEn": "IWL Berlin Scooter, year 1961",

@@ -5,12 +5,12 @@
 	"description": "Farben bourdeaux-rot / tiefschwarz in der Ausführung mit dem sehr begehrten Faltschiebedach.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/53-emw-bmw-340-limousine-baujahr-1951",
 	"order": 111,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW/BMW 340 Limousine, Baujahr 1951",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "EMW/BMW 340 Limousine, Baujahr 1951 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "EMW/BMW 340 Limousine, Baujahr 1951",
 	"blocks": [
 		{
 			"type": "copy",
@@ -69,8 +69,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer klassische BMW/EMW 2 Liter, 6 Zylinder mit 55 PS Leistung.</p>",
-			"htmlEn": "<p><br>\nThe classic BMW/EMW six-cylinder, 2 litres, 55 PS.</p>"
+			"html": "<p>Der klassische BMW/EMW 2 Liter, 6 Zylinder mit 55 PS Leistung.</p>",
+			"htmlEn": "<p>The classic BMW/EMW six-cylinder, 2 litres, 55 PS.</p>"
 		},
 		{
 			"type": "copy",
@@ -91,5 +91,5 @@
 	"titleEn": "EMW/BMW 340 Saloon, year 1951",
 	"descriptionEn": "Burgundy and deep black, with the sought-after folding sliding roof.",
 	"cardImageAltEn": "EMW/BMW 340 Saloon, year 1951",
-	"leadImageAltEn": "EMW/BMW 340 Saloon, year 1951 – vehicle record"
+	"leadImageAltEn": "EMW/BMW 340 Saloon, year 1951"
 }

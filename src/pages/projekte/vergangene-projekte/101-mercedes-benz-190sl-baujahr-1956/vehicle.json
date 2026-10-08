@@ -5,7 +5,7 @@
 	"description": "Mercedes - Benz 190 SL des Baujahres 1956 - und damit ein sehr seltenes und begehrtes Modell des ersten Baujahres überhaupt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/101-mercedes-benz-190sl-baujahr-1956",
 	"order": 42,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1956",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 190SL, Baujahr 1956",
@@ -79,7 +79,12 @@
 					"src": "./image-007.jpg",
 					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Leere Karosserie auf einem Gestell in der Werkstatt.",
 					"altEn": "Mercedes-Benz 190SL, year 1956 – Stripped body on a stand in the workshop."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Nahaufnahme stark durchrosteter Bodenbleche.",
@@ -269,7 +274,12 @@
 					"src": "./image-027.jpg",
 					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Armaturenbrettblech mit leeren Instrumentenöffnungen.",
 					"altEn": "Mercedes-Benz 190SL, year 1956 – Dashboard panel with empty instrument openings."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-028.jpg",
 					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Ansaugrohr und zwei Vergaser auf Stoff ausgelegt.",
@@ -293,11 +303,6 @@
 			]
 		},
 		{
-			"type": "copy",
-			"html": "<p>Während des technischen Neuaufbaus wurde u.a. auch ein neuer Kabelbaum vollständig neu angefertigt und installiert und die gesamte Innenausstattung in feinstem Leder erneuert. Hierbei kamen ebenfalls sehr originalgetreue Materialien in identischer Qualität wie 1956, wie beispielsweise chromfrei gegerbtes und original lediglich kopfgefärbtes Leder zum Einsatz.</p>",
-			"htmlEn": "<p>During the mechanical rebuild we made and installed a completely new wiring loom, among other work, and renewed the entire interior in fine leather. We used authentic materials matching the quality of those used in 1956, including chrome-free-tanned leather with the original type of surface colouring.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -319,8 +324,78 @@
 		},
 		{
 			"type": "copy",
+			"html": "<p>Während des technischen Neuaufbaus wurde u.a. auch ein neuer Kabelbaum vollständig neu angefertigt und installiert und die gesamte Innenausstattung in feinstem Leder erneuert. Hierbei kamen ebenfalls sehr originalgetreue Materialien in identischer Qualität wie 1956, wie beispielsweise chromfrei gegerbtes und original lediglich kopfgefärbtes Leder zum Einsatz.</p>",
+			"htmlEn": "<p>During the mechanical rebuild we made and installed a completely new wiring loom, among other work, and renewed the entire interior in fine leather. We used authentic materials matching the quality of those used in 1956, including chrome-free-tanned leather with the original type of surface colouring.</p>"
+		},
+		{
+			"type": "copy",
 			"html": "<p>Während der Restauration der Innenausstattung bekam der Wagen auch wieder seine sehr begehrten frühen Schalensitze zurück, die komplett neu aufgebaut wurden.</p>",
 			"htmlEn": "<p>As part of the interior restoration, the car also regained its sought-after early bucket seats, which were completely rebuilt.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Fertiges Cabriolet im Garten",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Finished convertible in the garden"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Sicher einer der Besten frühen Modelle des ohnehin traumhaft schönen Mercedes-Benz 190SL Roadsters.</p>",
+			"htmlEn": "<p>Surely one of the finest early examples of the beautiful Mercedes-Benz 190 SL Roadster.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Fertiges Cabriolet mit rotem Innenraum",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Finished convertible with red interior"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Seitenansicht des fertigen Cabriolets",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Side view of the finished convertible"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-004.jpg",
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Frontansicht des fertigen Cabriolets",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Front view of the finished convertible"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-005.jpg",
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Motor im geöffneten Motorraum",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Engine in the open engine bay"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-006.jpg",
+					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Fertiges Cabriolet vor der Werkstatt",
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Finished convertible outside the workshop"
+				}
+			]
 		}
 	],
 	"titleEn": "Mercedes-Benz 190SL, year 1956",

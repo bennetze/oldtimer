@@ -5,12 +5,12 @@
 	"description": "EMW 327-2 Sportcabriolet, Baujahr 1955; gebaut bei den Eisenacher- Motoren-Werken in Thüringen.\n\nBei diesem Fahrzeug handelte es sich um einen bruchstüc…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/49-emw-327-2-sportcabriolet-baujahr-1955",
 	"order": 102,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1955",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1955",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1955 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1955",
 	"blocks": [
 		{
 			"type": "copy",
@@ -104,8 +104,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch die gesamte Technik wurde aufwendig durch uns revidiert.</p>",
-			"htmlEn": "<p><br>\nWe also extensively overhauled all mechanical systems.</p>"
+			"html": "<p>Auch die gesamte Technik wurde aufwendig durch uns revidiert.</p>",
+			"htmlEn": "<p>We also extensively overhauled all mechanical systems.</p>"
 		},
 		{
 			"type": "gallery",
@@ -119,8 +119,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nEbenso wurden selbst die handwerklich hochkomplizierten Stoßstangen als auch der gesamte Zierrat der prägnanten Frontmaske aufwendig und originalgetreu nachgefertigt.</p>",
-			"htmlEn": "<p><br>\nEven the technically complex bumpers and the distinctive front trim were painstakingly and faithfully reproduced.</p>"
+			"html": "<p>Ebenso wurden selbst die handwerklich hochkomplizierten Stoßstangen als auch der gesamte Zierrat der prägnanten Frontmaske aufwendig und originalgetreu nachgefertigt.</p>",
+			"htmlEn": "<p>Even the technically complex bumpers and the distinctive front trim were painstakingly and faithfully reproduced.</p>"
 		},
 		{
 			"type": "copy",
@@ -231,5 +231,5 @@
 	"titleEn": "EMW 327-2 Sport Cabriolet, year 1955",
 	"descriptionEn": "A 1955 EMW 327-2 Sport Cabriolet, built at Eisenacher Motorenwerke in Thuringia. A fragmentary barn find with many missing parts, it received a demanding and faithful full…",
 	"cardImageAltEn": "EMW 327-2 Sport Cabriolet, year 1955",
-	"leadImageAltEn": "EMW 327-2 Sport Cabriolet, year 1955 – vehicle record"
+	"leadImageAltEn": "EMW 327-2 Sport Cabriolet, year 1955"
 }

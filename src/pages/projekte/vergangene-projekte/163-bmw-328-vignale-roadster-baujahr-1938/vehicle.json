@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine Kostbarkeit aus dem Hause BMW, gebaut ab 1937 im Werk Eisenach/Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/163-bmw-328-vignale-roadster-baujahr-1938",
 	"order": 28,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<strong>The WINNER!<br />\n1. Platz beim European Concours de Elegance!</strong></p>",
-			"htmlEn": "<p><br>\n<strong>The winner!<br>\nFirst place at the European Concours de Elegance!</strong></p>"
+			"html": "<p><strong>The WINNER!<br />\n1. Platz beim European Concours de Elegance!</strong></p>",
+			"htmlEn": "<p><strong>The winner!<br>\nFirst place at the European Concours de Elegance!</strong></p>"
 		},
 		{
 			"type": "copy",
@@ -39,13 +39,13 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p>Wie allgemein bekannt, erfuhren u.a. auch einige Fahrzeuge des Typs BMW 328 von diversen privaten Karosseriefirmen teils traumhaft schöne Sonderaufbauten, meist als Einzelstücke, bzw. Kleinstserien, wie z.B. der Firma Weinberger, Autenrieth,<br />\nWendler, Gläser, u.a.</p>",
-			"htmlEn": "<p>Several BMW 328s received beautiful special bodies from independent coachbuilders, usually as one-offs or very small runs, including Weinberger, Autenrieth,<br>\nWendler, Gläser and others.</p>"
+			"html": "<p>Der Wagen stellt eine einzigartige Kostbarkeit dar, erhielt er doch ehemals einen traumhaft hinreisenden Sonderaufbau aus der italienischen &quot;Feinkostabteilung&quot; des begnadeten Karosseriedesigners Alfredo &quot;VIGNALE&quot; in Turin - eine sog. &quot;Modellkarosserie&quot; als Einzelstück.</p>",
+			"htmlEn": "<p>This car is a unique treasure: it received a breathtaking special body from the talented Italian coachbuilder Alfredo VIGNALE in Turin, a one-off ‘model body’.</p>"
 		},
 		{
 			"type": "copy",
-			"html": "<p>Auch im Ausland, darunter vor allem bei den div. begnadeten Karosserieschneidern Italiens, bediente man sich des genialen Aufbaus des BMW 328.<br />\nNeben der Mailänder Firma &quot;Touring&quot; mit ihrer bis dahin einmaligen &quot;Superleggera&quot;-Leichtbauweise, wurde u.a. auch von der Turiner Firma &quot;Vignale&quot; in reiner Handarbeit dieser hinreisend schöne Roadsteraufbau als Einzelstück gefertigt.<br /></p>",
-			"htmlEn": "<p>Coachbuilders abroad, particularly Italy’s gifted body designers, also used the BMW 328’s superb engineering as a basis.<br>\nAlongside Milan’s Touring with its distinctive Superleggera lightweight construction, Turin-based Vignale created this captivating roadster body entirely by hand as a one-off.<br></p>"
+			"html": "<p>Wie allgemein bekannt, erfuhren u.a. auch einige Fahrzeuge des Typs BMW 328 von diversen privaten Karosseriefirmen teils traumhaft schöne Sonderaufbauten, meist als Einzelstücke, bzw. Kleinstserien, wie z.B. der Firma Weinberger, Autenrieth,<br />\nWendler, Gläser, u.a.</p>",
+			"htmlEn": "<p>Several BMW 328s received beautiful special bodies from independent coachbuilders, usually as one-offs or very small runs, including Weinberger, Autenrieth,<br>\nWendler, Gläser and others.</p>"
 		},
 		{
 			"type": "gallery",
@@ -69,6 +69,11 @@
 		},
 		{
 			"type": "copy",
+			"html": "<p>Auch im Ausland, darunter vor allem bei den div. begnadeten Karosserieschneidern Italiens, bediente man sich des genialen Aufbaus des BMW 328.<br />\nNeben der Mailänder Firma &quot;Touring&quot; mit ihrer bis dahin einmaligen &quot;Superleggera&quot;-Leichtbauweise, wurde u.a. auch von der Turiner Firma &quot;Vignale&quot; in reiner Handarbeit dieser hinreisend schöne Roadsteraufbau als Einzelstück gefertigt.<br /></p>",
+			"htmlEn": "<p>Coachbuilders abroad, particularly Italy’s gifted body designers, also used the BMW 328’s superb engineering as a basis.<br>\nAlongside Milan’s Touring with its distinctive Superleggera lightweight construction, Turin-based Vignale created this captivating roadster body entirely by hand as a one-off.<br></p>"
+		},
+		{
+			"type": "copy",
 			"html": "<p>&quot;Carozzeria VIGNALE&quot; - gegründet im Jahre 1946 von Alfredo Vignale als Designstudio in Turin, schuf zunächst zusammen mit dem bekannten Karosseriegestalter Giovanni Michelotti, sehr elegante, formschöne und &quot;schnittige&quot; Roadster-Sportwagen auf Basis div. europäischer Automobilhersteller. Allen voran natürlich der italienischen Marken wie Maserati, Ferrari, Lancia, Alfa Romeo, aber auch der englischen Edelmarken u.a. Aston-Martin oder Lagonda und eben auch des deutschen Herstellers BMW<br />\n- hier des Typs 328 als Ausgangsbasis.</p>",
 			"htmlEn": "<p>Carrozzeria Vignale, founded by Alfredo Vignale in Turin in 1946, initially worked with renowned designer Giovanni Michelotti to create elegant, streamlined sports roadsters on chassis from various European manufacturers. These included Italian marques such as Maserati, Ferrari, Lancia and Alfa Romeo, British names including Aston Martin and Lagonda, and Germany’s BMW,<br>\nwith the 328 providing the basis here.</p>"
 		},
@@ -84,7 +89,12 @@
 					"src": "./image-006.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Lange gebogene Chromleisten nebeneinander auf Stoff.",
 					"altEn": "BMW 328 \"Vignale\" Roadster, year 1938/49 – Long curved chrome strips side by side on fabric."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-007.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Helle Sitzbank und hölzerne Innenverkleidung.",
@@ -139,7 +149,12 @@
 					"src": "./image-014.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Motorraum mit drei runden Luftfiltern von oben.",
 					"altEn": "BMW 328 \"Vignale\" Roadster, year 1938/49 – Engine bay with three round air filters from above."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-015.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Rundes goldfarbenes Blech am Formwerkzeug.",
@@ -169,7 +184,17 @@
 					"src": "./image-019.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Blick von schräg oben auf Fahrzeugheck und Kofferraumdeckel.",
 					"altEn": "BMW 328 \"Vignale\" Roadster, year 1938/49 – Elevated view of the rear bodywork and boot lid."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>...Deutsche BMW Super-Sportwagen-Technik der späten 30er Jahre, gepaart mit dem italienischen Chick von &quot;VIGNALE&quot; der späten 40er Jahre, hier als Top restauriertes Einzelstück eines BMW 328 &quot;Vignale&quot; - Roadsters<br />\nfachgerecht und originalgetreu restauriert in<br />\nder OLDTIMERMANUFAKTUR...</p>",
+			"htmlEn": "<p>…German BMW sports-car engineering of the late 1930s paired with Italian Vignale style of the late 1940s: a beautifully restored, one-off BMW 328 Vignale Roadster,<br>\nprofessionally and faithfully restored at<br>\nDie Oldtimermanufaktur…</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-020.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
@@ -183,11 +208,6 @@
 			]
 		},
 		{
-			"type": "copy",
-			"html": "<p>...Deutsche BMW Super-Sportwagen-Technik der späten 30er Jahre, gepaart mit dem italienischen Chick von &quot;VIGNALE&quot; der späten 40er Jahre, hier als Top restauriertes Einzelstück eines BMW 328 &quot;Vignale&quot; - Roadsters<br />\nfachgerecht und originalgetreu restauriert in<br />\nder OLDTIMERMANUFAKTUR...</p>",
-			"htmlEn": "<p>…German BMW sports-car engineering of the late 1930s paired with Italian Vignale style of the late 1940s: a beautifully restored, one-off BMW 328 Vignale Roadster,<br>\nprofessionally and faithfully restored at<br>\nDie Oldtimermanufaktur…</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -196,6 +216,16 @@
 					"altEn": "BMW 328 \"Vignale\" Roadster, year 1938/49 – Side profile outdoors."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Noch ein Highlight zu diesem Fahrzeug:</p>",
+			"htmlEn": "<p>Another highlight for this vehicle:</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Anlässlich der jeweils im Spätherbst stattfindenden &quot;Classic Gala Schwetzingen&quot; und dem dortigen &quot;European Concours de Elegance&quot; werden alljährlich die bestrestaurierten Oldtimer der Welt prämiert.</p>",
+			"htmlEn": "<p>Every year, the Classic Gala Schwetzingen and its European Concours de Elegance recognise outstanding classic-car restorations from around the world.</p>"
 		},
 		{
 			"type": "gallery",
@@ -219,7 +249,12 @@
 					"src": "./image-025.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Zwei Pokale auf der roten Motorhaube.",
 					"altEn": "BMW 328 \"Vignale\" Roadster, year 1938/49 – Two trophies on the red bonnet."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-026.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Cabriolet auf Veranstaltungsplattform mit Personen daneben.",
@@ -234,13 +269,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p>Noch ein Highlight zu diesem Fahrzeug:</p>",
-			"htmlEn": "<p>Another highlight for this vehicle:</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Anlässlich der jeweils im Spätherbst stattfindenden &quot;Classic Gala Schwetzingen&quot; und dem dortigen &quot;European Concours de Elegance&quot; werden alljährlich die bestrestaurierten Oldtimer der Welt prämiert.</p>",
-			"htmlEn": "<p>Every year, the Classic Gala Schwetzingen and its European Concours de Elegance recognise outstanding classic-car restorations from around the world.</p>"
+			"html": "<p>Darunter auch die 150 bestrestaurierten Oldtimer aus ganz Europa von Marken wie z.B. Rollce-Royce, Bentley, Bugatti, Horch und Maybach.<br />\n<br />\n<br />\nAuf besondere Einladung durfte auch dieses von uns top restaurierte Exemplar eines <strong>BMW 328 &quot;Vignale&quot; Roadsters</strong> nicht fehlen und erhielt von der anwesenden fachkundigen Jury gleich mehrere der hochbegehrten Pokale und damit viel Lob und Anerkennung für die durch uns durchgeführten Restaurationsarbeiten.</p>",
+			"htmlEn": "<p>Among them were 150 outstandingly restored classics from across Europe, including Rolls-Royce, Bentley, Bugatti, Horch and Maybach.<br>\n<br>\n<br>\nAttending by special invitation, this superbly restored <strong>BMW 328 Vignale Roadster</strong> received several coveted trophies from the expert jury, bringing praise and recognition for our restoration work.</p>"
 		},
 		{
 			"type": "gallery",
@@ -251,11 +281,6 @@
 					"altEn": "BMW 328 \"Vignale\" Roadster, year 1938/49 – Red convertible outside a palace building."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Darunter auch die 150 bestrestaurierten Oldtimer aus ganz Europa von Marken wie z.B. Rollce-Royce, Bentley, Bugatti, Horch und Maybach.<br />\n<br />\n<br />\nAuf besondere Einladung durfte auch dieses von uns top restaurierte Exemplar eines <strong>BMW 328 &quot;Vignale&quot; Roadsters</strong> nicht fehlen und erhielt von der anwesenden fachkundigen Jury gleich mehrere der hochbegehrten Pokale und damit viel Lob und Anerkennung für die durch uns durchgeführten Restaurationsarbeiten.</p>",
-			"htmlEn": "<p>Among them were 150 outstandingly restored classics from across Europe, including Rolls-Royce, Bentley, Bugatti, Horch and Maybach.<br>\n<br>\n<br>\nAttending by special invitation, this superbly restored <strong>BMW 328 Vignale Roadster</strong> received several coveted trophies from the expert jury, bringing praise and recognition for our restoration work.</p>"
 		},
 		{
 			"type": "copy",

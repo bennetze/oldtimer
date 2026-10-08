@@ -5,11 +5,11 @@
 	"description": "Dieses wunderschöne und äußerst seltene Wartburg 311-2 Kabriolett wurde sehr aufwendig und originalgetreu restauriert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/61-wartburg-311-2-cabriolet-1957",
 	"order": 104,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 311-2 Cabriolet, 1957",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "Wartburg 311-2 Cabriolet, 1957 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "Wartburg 311-2 Cabriolet, 1957",
 	"blocks": [
 		{
 			"type": "copy",
@@ -75,5 +75,5 @@
 	"titleEn": "Wartburg 311-2 Cabriolet, 1957",
 	"descriptionEn": "This beautiful and exceptionally rare Wartburg 311-2 Cabriolet received an extensive, faithful restoration.",
 	"cardImageAltEn": "Wartburg 311-2 Cabriolet, 1957",
-	"leadImageAltEn": "Wartburg 311-2 Cabriolet, 1957 – vehicle record"
+	"leadImageAltEn": "Wartburg 311-2 Cabriolet, 1957"
 }

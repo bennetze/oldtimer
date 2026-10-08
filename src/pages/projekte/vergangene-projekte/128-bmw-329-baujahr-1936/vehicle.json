@@ -5,7 +5,7 @@
 	"description": "Der damals wie heute sehr seltene BMW Typ 329 gilt in der Automobilhistorie von BMW eigentlich als \"Zwitter\". Durch die vorübergehende Beibehaltung des…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/128-bmw-329-baujahr-1936",
 	"order": 31,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936",
@@ -33,11 +33,6 @@
 			"htmlEn": "<p>The BMW 329 was offered only with cabriolet bodies. Most were supplied by Drauz in Heilbronn, with a few also built by Reutter in Stuttgart.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Dieser Wagen besitzt eine solche seltene &quot;Reutter&quot; -Karosserie und wurde bei uns grundlegend restauriert.</p>",
-			"htmlEn": "<p>This car has one of those rare Reutter bodies and received a thorough restoration at our workshop.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -58,6 +53,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Dieser Wagen besitzt eine solche seltene &quot;Reutter&quot; -Karosserie und wurde bei uns grundlegend restauriert.</p>",
+			"htmlEn": "<p>This car has one of those rare Reutter bodies and received a thorough restoration at our workshop.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -69,11 +69,6 @@
 					"src": "./image-006.jpg",
 					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Geöffneter Motorblock mit sichtbarer Kurbelwelle.",
 					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Open engine block with crankshaft exposed."
-				},
-				{
-					"src": "./image-007.jpg",
-					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Nahaufnahme der Kurbelwelle und Lagerflächen.",
-					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Close view of crankshaft and bearing surfaces."
 				}
 			]
 		},
@@ -81,6 +76,16 @@
 			"type": "copy",
 			"html": "<p>Nach einem massiven Motorschaden wurde das gesamte Innenleben des Motors bei uns generalüberholt und größtenteils erneuert.</p>",
 			"htmlEn": "<p>Following severe engine damage, we completely overhauled and largely renewed its internal components.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Nahaufnahme der Kurbelwelle und Lagerflächen.",
+					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Close view of crankshaft and bearing surfaces."
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -104,11 +109,6 @@
 					"src": "./image-010.jpg",
 					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Dreiviertelansicht von vorn im Freien.",
 					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Front three-quarter view outdoors."
-				},
-				{
-					"src": "./image-011.jpg",
-					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Dreiviertelansicht von hinten im Freien.",
-					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Rear three-quarter view outdoors."
 				}
 			]
 		},
@@ -116,6 +116,16 @@
 			"type": "copy",
 			"html": "<p>Im Ergebnis ein traumhaft schönes und äußerst seltenes BMW 329 &quot;Reutter&quot; Sportcabriolet.</p>",
 			"htmlEn": "<p>The result: a beautiful and exceptionally rare BMW 329 Reutter Sport Cabriolet.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-011.jpg",
+					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Dreiviertelansicht von hinten im Freien.",
+					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Rear three-quarter view outdoors."
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -129,7 +139,12 @@
 					"src": "./image-013.jpg",
 					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Braune Sitze im grünen Cabriolet von oben.",
 					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Tan seats in the green convertible from above."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-014.jpg",
 					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Dreiviertelansicht von vorn im Freien.",

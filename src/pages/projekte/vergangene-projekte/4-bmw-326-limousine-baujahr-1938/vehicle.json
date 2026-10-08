@@ -5,18 +5,13 @@
 	"description": "Auch diese BMW 326 Limousine, gebaut bei den Bayerischen - Motoren - Werken in Eisenach/Thüringen, wurde bei uns einer Komplettrestauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/4-bmw-326-limousine-baujahr-1938",
 	"order": 70,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 Limousine, Baujahr 1938",
 	"leadImage": "./image-001.jpg",
 	"leadImageAlt": "BMW 326 Limousine, Baujahr 1938 – Fahrzeugdokumentation",
 	"blocks": [
-		{
-			"type": "copy",
-			"html": "<p>Auch diese BMW 326 Limousine, gebaut bei den Bayerischen - Motoren - Werken in Eisenach/Thüringen, wurde bei uns einer Komplettrestauration unterzogen.</p>",
-			"htmlEn": "<p>This BMW 326 saloon, built by Bayerische Motorenwerke in Eisenach, Thuringia, also received a full restoration.</p>"
-		},
 		{
 			"type": "gallery",
 			"images": [
@@ -39,6 +34,11 @@
 		},
 		{
 			"type": "copy",
+			"html": "<p>Auch diese BMW 326 Limousine, gebaut bei den Bayerischen - Motoren - Werken in Eisenach/Thüringen, wurde bei uns einer Komplettrestauration unterzogen.</p>",
+			"htmlEn": "<p>This BMW 326 saloon, built by Bayerische Motorenwerke in Eisenach, Thuringia, also received a full restoration.</p>"
+		},
+		{
+			"type": "copy",
 			"html": "<p>Die Karosserie stammt hierbei von dem damals größten europäischen Karosseriebauer überhaupt - der Firma “ABP” (Ambi-Budd-Presswerk) aus Berlin Johannisthal.</p>",
 			"htmlEn": "<p>Its body came from what was then Europe’s largest coachbuilder, ABP, Ambi-Budd-Presswerk, in Berlin-Johannisthal.</p>"
 		},
@@ -46,11 +46,6 @@
 			"type": "copy",
 			"html": "<p>Durch das Zusammengehen des deutschen Maschinenbaukonzerns Ambi mit dem amerikanischen Karosseriebauer Budd, entstand ab 1926 der Pionier und Wegbereiter im Bereich von Ganzstahlkarosserien, der es ermöglichte Karosserien für verschiedene Automobilfirmen in Ganzstahlbauweise und gleichzeitig in relativ großen Stückzahlen herzustellen. Ambi-Budd war zudem über viele Jahre alleiniger Patentinhaber für diese revolutionäre Bauweise und verdiente laut historischen Archivangaben mit diesem Novum &quot;ein Vermögen&quot;.</p>",
 			"htmlEn": "<p>The partnership between Germany’s Ambi engineering group and American body manufacturer Budd created a pioneer of all-steel bodies from 1926, enabling relatively large-scale production for various car manufacturers. For many years, Ambi-Budd also held exclusive patents for this revolutionary construction, earning a fortune according to historical archives.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Da auch dieses Fahrzeug über all die Jahrzehnte stark in Mitleidenschaft gezogen wurde, mußte es entsprechend den Kundenwünschen hier in unserer Manufaktur völlig neu aufgebaut werden.</p>",
-			"htmlEn": "<p>Heavily affected by decades of use, this car needed a complete rebuild at our workshop to the client’s wishes.</p>"
 		},
 		{
 			"type": "gallery",
@@ -81,6 +76,11 @@
 					"altEn": "BMW 326 Saloon, year 1938 – Two long side ventilation grilles."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Da auch dieses Fahrzeug über all die Jahrzehnte stark in Mitleidenschaft gezogen wurde, mußte es entsprechend den Kundenwünschen hier in unserer Manufaktur völlig neu aufgebaut werden.</p>",
+			"htmlEn": "<p>Heavily affected by decades of use, this car needed a complete rebuild at our workshop to the client’s wishes.</p>"
 		},
 		{
 			"type": "gallery",
@@ -283,6 +283,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Nach dem Neuaufbau sämtlicher technischen Komponenten, konnten diese in die Karosserie eingebaut und abschließend das Fahrzeug insgesamt fertiggestellt werden.</p>",
+			"htmlEn": "<p>Once all mechanical components had been rebuilt, they were installed in the body and the car could be completed.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -364,7 +369,12 @@
 					"src": "./image-035.jpg",
 					"alt": "BMW 326 Limousine, Baujahr 1938 – Armaturenbrett mit Instrumenten und Lenkrad.",
 					"altEn": "BMW 326 Saloon, year 1938 – Dashboard with instruments and steering wheel."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-036.jpg",
 					"alt": "BMW 326 Limousine, Baujahr 1938 – Blick in den offenen Motorraum auf Motor und Leitungen.",
@@ -399,11 +409,6 @@
 					"src": "./image-040.jpg",
 					"alt": "BMW 326 Limousine, Baujahr 1938 – Dreiviertelansicht von vorn im Freien.",
 					"altEn": "BMW 326 Saloon, year 1938 – Front three-quarter view outdoors."
-				},
-				{
-					"src": "./image-041.jpg",
-					"alt": "BMW 326 Limousine, Baujahr 1938 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
-					"altEn": "BMW 326 Saloon, year 1938 – Close view of grille and front bodywork."
 				}
 			]
 		},
@@ -411,6 +416,16 @@
 			"type": "copy",
 			"html": "<p>Sicher einer der Besten 326er, der seinem Besitzer auch heute noch die sprichwörtliche &quot;Freude am Fahren&quot; vermittelt...</p>",
 			"htmlEn": "<p>Surely one of the finest 326s, still giving its owner the proverbial “sheer driving pleasure”.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-041.jpg",
+					"alt": "BMW 326 Limousine, Baujahr 1938 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
+					"altEn": "BMW 326 Saloon, year 1938 – Close view of grille and front bodywork."
+				}
+			]
 		}
 	],
 	"titleEn": "BMW 326 Saloon, year 1938",

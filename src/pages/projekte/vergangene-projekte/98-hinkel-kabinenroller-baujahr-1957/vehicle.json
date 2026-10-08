@@ -5,7 +5,7 @@
 	"description": "Die HEINKEL Flugzeugwerke AG, gegründet 1922 in Warnemünde/Rostock, waren vor und während des 2. Weltkrieges mit Ihrem Gründer Ernst Heinkel einer der f…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/98-hinkel-kabinenroller-baujahr-1957",
 	"order": 76,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HEINKEL Kabinenroller, Baujahr 1957",
@@ -48,11 +48,6 @@
 			"htmlEn": "<p>After Germany’s defeat, the Allied powers prohibited Heinkel, like BMW, Messerschmitt and other aircraft manufacturers, from continuing aircraft production. Much of its manufacturing capacity had also been destroyed by wartime bombing.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>So konstruierte man ab 1956, ähnlich wie BMW die Isetta oder Messerschmitt den Kabinenroller, auch bei HEINKEL in Stuttgart und Speyer einen optisch wie technisch gelungenen Kabinenroller. Später folgten sogar Lizenzen in Irland und England. Dabei gab es nur eine Handvoll der exklusiven Cabriolets wie diesen.</p>",
-			"htmlEn": "<p>From 1956, Heinkel in Stuttgart and Speyer developed a compact bubble car, comparable to BMW’s Isetta and Messerschmitt’s cabin scooters. Licensed production later followed in Ireland and England. Only a handful of exclusive convertibles like this were made.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -74,7 +69,17 @@
 					"src": "./image-005.jpg",
 					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Dreiviertelansicht von vorn im Freien.",
 					"altEn": "HEINKEL Bubble Car, year 1957 – Front three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>So konstruierte man ab 1956, ähnlich wie BMW die Isetta oder Messerschmitt den Kabinenroller, auch bei HEINKEL in Stuttgart und Speyer einen optisch wie technisch gelungenen Kabinenroller. Später folgten sogar Lizenzen in Irland und England. Dabei gab es nur eine Handvoll der exklusiven Cabriolets wie diesen.</p>",
+			"htmlEn": "<p>From 1956, Heinkel in Stuttgart and Speyer developed a compact bubble car, comparable to BMW’s Isetta and Messerschmitt’s cabin scooters. Licensed production later followed in Ireland and England. Only a handful of exclusive convertibles like this were made.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-006.jpg",
 					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Frontansicht im Freien.",
@@ -99,8 +104,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />Der Wagen wurde bei uns umfassend instand gesetzt und dazu auch ein neues maßgeschneidertes Cabrio-Verdeck, nebst Scherengestell und Persenning passgenau angefertigt.</p>",
-			"htmlEn": "<p><br>We extensively repaired the car and made a precisely fitted new convertible hood, folding frame and tonneau cover.</p>"
+			"html": "<p>Der Wagen wurde bei uns umfassend instand gesetzt und dazu auch ein neues maßgeschneidertes Cabrio-Verdeck, nebst Scherengestell und Persenning passgenau angefertigt.</p>",
+			"htmlEn": "<p>We extensively repaired the car and made a precisely fitted new convertible hood, folding frame and tonneau cover.</p>"
 		},
 		{
 			"type": "gallery",

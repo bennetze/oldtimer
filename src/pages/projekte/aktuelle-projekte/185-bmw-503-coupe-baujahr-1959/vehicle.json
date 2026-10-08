@@ -5,7 +5,7 @@
 	"description": "Hier ein seltenes BMW 503 Coupe im \"Fundzustand\" mit div. Fehlteilen zum völligen Neuaufbau.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/185-bmw-503-coupe-baujahr-1959",
 	"order": 6,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Coupe, Baujahr 1959",
@@ -59,8 +59,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEin insgesamt bemitleidenswerter Zustand dessen Vollrestauration unser ganzes fachliches Können in Anspruch nimmt.</p>",
-			"htmlEn": "<p><br>\n<br>\nIts overall condition was pitiful; a full restoration calls on all our professional skills.</p>"
+			"html": "<p>Ein insgesamt bemitleidenswerter Zustand dessen Vollrestauration unser ganzes fachliches Können in Anspruch nimmt.</p>",
+			"htmlEn": "<p>Its overall condition was pitiful; a full restoration calls on all our professional skills.</p>"
 		},
 		{
 			"type": "gallery",
@@ -249,8 +249,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nRahmenarbeiten und Neuanfertigung des Unterbodens mit Traversen.</p>",
-			"htmlEn": "<p><br>\n<br>\nFrame repairs and manufacture of a new floor with crossmembers.</p>"
+			"html": "<p>Rahmenarbeiten und Neuanfertigung des Unterbodens mit Traversen.</p>",
+			"htmlEn": "<p>Frame repairs and manufacture of a new floor with crossmembers.</p>"
 		},
 		{
 			"type": "gallery",
@@ -266,6 +266,11 @@
 					"altEn": "BMW 503 Coupe, year 1959 – Stripped body viewed from the front corner in the workshop."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach dem Neuaufbau der Stahlblech-Grundstruktur der Karosserie bekam diese unsererseits nun eine Spezialbeschichtung zum anschließenden weiteren Karosserieaufbau der Aluminium-Außenhaut.</p>",
+			"htmlEn": "<p>After rebuilding the body’s underlying steel structure, we applied a special coating before reconstructing the aluminium outer skin.</p>"
 		},
 		{
 			"type": "gallery",
@@ -288,11 +293,6 @@
 			]
 		},
 		{
-			"type": "copy",
-			"html": "<p>Nach dem Neuaufbau der Stahlblech-Grundstruktur der Karosserie bekam diese unsererseits nun eine Spezialbeschichtung zum anschließenden weiteren Karosserieaufbau der Aluminium-Außenhaut.</p>",
-			"htmlEn": "<p>After rebuilding the body’s underlying steel structure, we applied a special coating before reconstructing the aluminium outer skin.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -306,6 +306,11 @@
 					"altEn": "BMW 503 Coupe, year 1959 – Light-coated rear bodywork and open cabin viewed from the rear corner."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Kompletter Neuaufbau der sensiblen Aluminium-Außenhaut, dazu originalgetreue Neuanfertigung vieler Karosseriepartien.</p>",
+			"htmlEn": "<p>Complete reconstruction of the delicate aluminium outer skin, including faithful reproductions of many body sections.</p>"
 		},
 		{
 			"type": "gallery",
@@ -341,11 +346,6 @@
 					"altEn": "BMW 503 Coupe, year 1959 – Straight rear view of the body with a bare-metal boot lid fitted."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Kompletter Neuaufbau der sensiblen Aluminium-Außenhaut, dazu originalgetreue Neuanfertigung vieler Karosseriepartien.</p>",
-			"htmlEn": "<p>Complete reconstruction of the delicate aluminium outer skin, including faithful reproductions of many body sections.</p>"
 		},
 		{
 			"type": "gallery",
@@ -389,8 +389,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n...ein Teil der vielen überarbeiteten Zierteile zur Neuverchromung.</p>",
-			"htmlEn": "<p><br>\n<br>\n…some of the many refurbished trim pieces awaiting new chrome plating.</p>"
+			"html": "<p>...ein Teil der vielen überarbeiteten Zierteile zur Neuverchromung.</p>",
+			"htmlEn": "<p>…some of the many refurbished trim pieces awaiting new chrome plating.</p>"
 		},
 		{
 			"type": "gallery",
@@ -494,7 +494,12 @@
 					"src": "./image-057.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Zwei Zylinderköpfe mit sichtbaren Ventilen auf der Werkbank.",
 					"altEn": "BMW 503 Coupe, year 1959 – Two cylinder heads with visible valves on the workbench."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-058.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Offener Zylinderkopf mit Ventilfedern und Kipphebeln.",
@@ -509,16 +514,6 @@
 					"src": "./image-059.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Zwei ausgebaute Auspuffschalldämpfer auf dem Boden.",
 					"altEn": "BMW 503 Coupe, year 1959 – Two removed exhaust silencers on the floor."
-				},
-				{
-					"src": "./image-060.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Durchrosteter Rand eines hellen Karosserieblechs.",
-					"altEn": "BMW 503 Coupe, year 1959 – Rust holes along the edge of a light-coloured body panel."
-				},
-				{
-					"src": "./image-061.jpg",
-					"alt": "BMW 503 Coupe, Baujahr 1959 – Offenes Karosserieheck mit Verstrebungen und hellen Blechen.",
-					"altEn": "BMW 503 Coupe, year 1959 – Open rear bodywork with braces and light-coloured panels."
 				}
 			]
 		},
@@ -526,6 +521,26 @@
 			"type": "copy",
 			"html": "<p>Neuanfertigung der gesamten Auspuffanlage in Edelstahl.</p>",
 			"htmlEn": "<p>Making an entirely new exhaust system in stainless steel.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-060.jpg",
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Durchrosteter Rand eines hellen Karosserieblechs.",
+					"altEn": "BMW 503 Coupe, year 1959 – Rust holes along the edge of a light-coloured body panel."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-061.jpg",
+					"alt": "BMW 503 Coupe, Baujahr 1959 – Offenes Karosserieheck mit Verstrebungen und hellen Blechen.",
+					"altEn": "BMW 503 Coupe, year 1959 – Open rear bodywork with braces and light-coloured panels."
+				}
+			]
 		}
 	],
 	"titleEn": "BMW 503 Coupe, year 1959",

@@ -5,12 +5,12 @@
 	"description": "Auch dieses BMW 326 Cabriolet - gebaut 1938 bei den Bayerischen Motoren Werken in Eisenach - wurde bei uns einer vollumfänglichen Restauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/58-bmw-326-autenrieth-cabriolet-baujahr-1938",
 	"order": 105,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 326 “Autenrieth” Cabriolet, Baujahr 1938",
 	"blocks": [
 		{
 			"type": "copy",
@@ -109,8 +109,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach der Zusammenführung aller technischen Komponenten wurde von uns unter anderem auch ein neuer originalgetreuer Kabelbaum angefertigt.</p>",
-			"htmlEn": "<p><br>\nOnce the mechanical components were assembled, we also made a new authentic wiring loom.</p>"
+			"html": "<p>Nach der Zusammenführung aller technischen Komponenten wurde von uns unter anderem auch ein neuer originalgetreuer Kabelbaum angefertigt.</p>",
+			"htmlEn": "<p>Once the mechanical components were assembled, we also made a new authentic wiring loom.</p>"
 		},
 		{
 			"type": "gallery",
@@ -184,12 +184,12 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach dieser, auch im Detail perfekt abgeschlossenen Restauration, ist hiermit in unserer Manufaktur ein wunderschönes BMW 326 “Autenrieth”- Cabriolet entstanden, welches jedes Oldtimerherz höher schlagen lässt.</p>",
-			"htmlEn": "<p><br>\nThis restoration, completed carefully down to the details, produced a beautiful BMW 326 Autenrieth Cabriolet sure to delight any classic-car enthusiast.</p>"
+			"html": "<p>Nach dieser, auch im Detail perfekt abgeschlossenen Restauration, ist hiermit in unserer Manufaktur ein wunderschönes BMW 326 “Autenrieth”- Cabriolet entstanden, welches jedes Oldtimerherz höher schlagen lässt.</p>",
+			"htmlEn": "<p>This restoration, completed carefully down to the details, produced a beautiful BMW 326 Autenrieth Cabriolet sure to delight any classic-car enthusiast.</p>"
 		}
 	],
 	"titleEn": "BMW 326 “Autenrieth” Cabriolet, year 1938",
 	"descriptionEn": "This 1938 BMW 326 Cabriolet from Eisenach also underwent a complete restoration.",
 	"cardImageAltEn": "BMW 326 “Autenrieth” Cabriolet, year 1938",
-	"leadImageAltEn": "BMW 326 “Autenrieth” Cabriolet, year 1938 – vehicle record"
+	"leadImageAltEn": "BMW 326 “Autenrieth” Cabriolet, year 1938"
 }

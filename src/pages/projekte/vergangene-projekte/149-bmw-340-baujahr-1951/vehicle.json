@@ -5,7 +5,7 @@
 	"description": "Dieser BMW wurde uns in diesem \"verbrauchten\" aber dennoch \"rettbaren\" Zustand angeliefert und im Auftrag seines Besitzers und BMW Kenners bei uns einer…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/149-bmw-340-baujahr-1951",
 	"order": 10,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1951",
@@ -29,8 +29,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nBMW 340 Limousine des Baujahres 1951.</p>",
-			"htmlEn": "<p><br>\nA 1951 BMW 340 saloon.</p>"
+			"html": "<p>BMW 340 Limousine des Baujahres 1951.</p>",
+			"htmlEn": "<p>A 1951 BMW 340 saloon.</p>"
 		},
 		{
 			"type": "gallery",
@@ -53,11 +53,6 @@
 			]
 		},
 		{
-			"type": "copy",
-			"html": "<p>Dieser BMW wurde uns in diesem &quot;verbrauchten&quot; aber dennoch &quot;rettbaren&quot; Zustand angeliefert und im Auftrag seines Besitzers und BMW Kenners bei uns einer originalgetreuen Vollrestaurierung unterzogen.</p>",
-			"htmlEn": "<p>Delivered in worn but salvageable condition, this BMW received a faithful full restoration for its owner, a BMW enthusiast.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -76,6 +71,11 @@
 					"altEn": "BMW 340, year 1951 – Rusty sill beside rear door aperture."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dieser BMW wurde uns in diesem &quot;verbrauchten&quot; aber dennoch &quot;rettbaren&quot; Zustand angeliefert und im Auftrag seines Besitzers und BMW Kenners bei uns einer originalgetreuen Vollrestaurierung unterzogen.</p>",
+			"htmlEn": "<p>Delivered in worn but salvageable condition, this BMW received a faithful full restoration for its owner, a BMW enthusiast.</p>"
 		},
 		{
 			"type": "copy",
@@ -224,8 +224,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach Fertigstellung der hier getätigten aufwendigen Karosseriearbeiten, erhielt der Wagen in unserer Lackierabteilung auch eine fachgerechte Lackierung.</p>",
-			"htmlEn": "<p><br>\nFollowing the extensive bodywork, our paint shop applied a professional finish.</p>"
+			"html": "<p>Nach Fertigstellung der hier getätigten aufwendigen Karosseriearbeiten, erhielt der Wagen in unserer Lackierabteilung auch eine fachgerechte Lackierung.</p>",
+			"htmlEn": "<p>Following the extensive bodywork, our paint shop applied a professional finish.</p>"
 		},
 		{
 			"type": "gallery",
@@ -284,7 +284,12 @@
 					"src": "./image-033.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Dreiviertelansicht von vorn im Freien.",
 					"altEn": "BMW 340, year 1951 – Front three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-034.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
@@ -309,7 +314,12 @@
 					"src": "./image-036.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
 					"altEn": "BMW 340, year 1951 – Cabin showing seats, steering wheel and dashboard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-037.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Graue Sitzbank unter geöffnetem Stoffdach.",
@@ -334,7 +344,12 @@
 					"src": "./image-039.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Dreiviertelansicht von vorn im Freien.",
 					"altEn": "BMW 340, year 1951 – Front three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-040.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Nahaufnahme der vorderen Seitenscheibe mit Chromrahmen.",
@@ -358,6 +373,11 @@
 			"htmlEn": "<p>The engine bay is now not only mechanically overhauled but visually appealing once again.</p>"
 		},
 		{
+			"type": "copy",
+			"html": "<p>Bereit für die große Fahrt...</p>",
+			"htmlEn": "<p>Ready for the open road…</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -369,18 +389,18 @@
 					"src": "./image-043.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Nahaufnahme des Kühlergrills und der Fahrzeugfront.",
 					"altEn": "BMW 340, year 1951 – Close view of grille and front bodywork."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-044.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Frontansicht im Freien.",
 					"altEn": "BMW 340, year 1951 – Straight front view outdoors."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Bereit für die große Fahrt...</p>",
-			"htmlEn": "<p>Ready for the open road…</p>"
 		},
 		{
 			"type": "gallery",

@@ -5,7 +5,7 @@
 	"description": "Auch die Lackierung in BMW-urgrünmetallic ist, wie das ganze Auto, noch immer nahezu neuwertig, die originalen Sitze mit echtem Nubukleder und Camouflag…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/79-bmw-z1-baujahr-1990",
 	"order": 1,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1990",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW Z1 Roadster, Baujahr 1990",
@@ -184,8 +184,13 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEiner der wenigen sehr original erhaltenen und unverbastelten Z1 Roadster in makellosem TOP-Zustand – Fahrspaß garantiert…</p>",
-			"htmlEn": "<p><br>\n<br>\nOne of the few highly original, unmodified Z1 Roadsters in immaculate condition — driving pleasure guaranteed…</p>"
+			"html": "<p>Einer der wenigen sehr original erhaltenen und unverbastelten Z1 Roadster in makellosem TOP-Zustand – Fahrspaß garantiert…</p>",
+			"htmlEn": "<p>One of the few highly original, unmodified Z1 Roadsters in immaculate condition — driving pleasure guaranteed…</p>"
+		},
+		{
+			"type": "contact",
+			"html": "<p>Preis auf Anfrage.</p>",
+			"htmlEn": "<p>Price on request.</p>"
 		},
 		{
 			"type": "contact",
@@ -209,7 +214,12 @@
 					"src": "./image-017.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadster seitlich mit offenem Verdeck auf einer Wiese.",
 					"altEn": "BMW Z1 Roadster, year 1990 – Roadster in side profile with roof open on grass."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-018.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blick von hinten auf Heckdeckel und offenen Innenraum.",
@@ -224,7 +234,12 @@
 					"src": "./image-020.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadster gerade von hinten auf einer Wiese.",
 					"altEn": "BMW Z1 Roadster, year 1990 – Straight rear view of the roadster on grass."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-021.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadsterheck und Innenraum von schräg hinten.",
@@ -239,7 +254,12 @@
 					"src": "./image-023.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Roadster seitlich mit offener Türöffnung.",
 					"altEn": "BMW Z1 Roadster, year 1990 – Roadster in side profile with door aperture open."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-024.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blick von oben in den offenen Motorraum.",
@@ -254,7 +274,12 @@
 					"src": "./image-026.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster schräg von hinten mit geschlossenem Verdeck.",
 					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from the rear corner with soft top closed."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-027.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Graue Schalensitze bei versenkter Tür und geschlossenem Verdeck.",

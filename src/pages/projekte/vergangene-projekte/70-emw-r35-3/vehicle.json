@@ -5,11 +5,11 @@
 	"description": "Motorrad EMW R 35/3, mit original „Stoye“ – Beiwagen, Baujahr 1954; gebaut bei den Eisenacher-Motoren-Werken in Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/70-emw-r35-3",
 	"order": 117,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35/3",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "EMW R35/3 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "EMW R35/3",
 	"blocks": [
 		{
 			"type": "copy",
@@ -60,5 +60,5 @@
 	"titleEn": "EMW R35/3",
 	"descriptionEn": "A 1954 EMW R35/3 with original Stoye sidecar, built at Eisenacher Motorenwerke in Thuringia.",
 	"cardImageAltEn": "EMW R35/3",
-	"leadImageAltEn": "EMW R35/3 – vehicle record"
+	"leadImageAltEn": "EMW R35/3"
 }

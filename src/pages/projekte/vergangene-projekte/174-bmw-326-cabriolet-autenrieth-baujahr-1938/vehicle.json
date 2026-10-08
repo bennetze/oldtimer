@@ -5,7 +5,7 @@
 	"description": "Ein seltenes BMW 326 Reisecabriolet, gebaut 1938 bei BMW in Eisenach/Thüringen, mit einem \"Autenrieth\" Karosserieaufbau aus Darmstadt.\n\nDas Cabrio - sei…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/174-bmw-326-cabriolet-autenrieth-baujahr-1938",
 	"order": 15,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nEin seltenes BMW 326 Reisecabriolet, gebaut 1938 bei BMW in Eisenach/Thüringen, mit einem &quot;Autenrieth&quot; Karosserieaufbau aus Darmstadt.<br />\n<br />\nDas Cabrio - seit rund 50 Jahren in Schweizer Familienhand erhalten - wurde bei uns im Kundenauftrag völlig neu und sehr originalgetreu aufgebaut.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA rare BMW 326 touring cabriolet built in 1938 in Eisenach, Thuringia, with Autenrieth coachwork from Darmstadt.<br>\n<br>\nPreserved in a Swiss family for around fifty years, the cabriolet was completely and faithfully rebuilt at our workshop for its owners.</p>"
+			"html": "<p>Ein seltenes BMW 326 Reisecabriolet, gebaut 1938 bei BMW in Eisenach/Thüringen, mit einem &quot;Autenrieth&quot; Karosserieaufbau aus Darmstadt.<br />\n<br />\nDas Cabrio - seit rund 50 Jahren in Schweizer Familienhand erhalten - wurde bei uns im Kundenauftrag völlig neu und sehr originalgetreu aufgebaut.</p>",
+			"htmlEn": "<p>A rare BMW 326 touring cabriolet built in 1938 in Eisenach, Thuringia, with Autenrieth coachwork from Darmstadt.<br>\n<br>\nPreserved in a Swiss family for around fifty years, the cabriolet was completely and faithfully rebuilt at our workshop for its owners.</p>"
 		},
 		{
 			"type": "gallery",
@@ -119,8 +119,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier die bereits fertige restaurierte Karosserie und damit ideale Ausgangsbasis für eine perfekte Lackierung.</p>",
-			"htmlEn": "<p><br>\nThe fully restored body provides an ideal foundation for an excellent paint finish.</p>"
+			"html": "<p>Hier die bereits fertige restaurierte Karosserie und damit ideale Ausgangsbasis für eine perfekte Lackierung.</p>",
+			"htmlEn": "<p>The fully restored body provides an ideal foundation for an excellent paint finish.</p>"
 		},
 		{
 			"type": "gallery",
@@ -239,8 +239,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch die edlen originalen Massivholzzierleisten des Innenraums konnten restauriert und damit im Original erhalten werden.</p>",
-			"htmlEn": "<p><br>\nWe also restored and preserved the original solid-wood interior trim.</p>"
+			"html": "<p>Auch die edlen originalen Massivholzzierleisten des Innenraums konnten restauriert und damit im Original erhalten werden.</p>",
+			"htmlEn": "<p>We also restored and preserved the original solid-wood interior trim.</p>"
 		},
 		{
 			"type": "gallery",

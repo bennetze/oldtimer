@@ -5,7 +5,7 @@
 	"description": "Hier ein sehr seltenes BMW 503 Sportcoupe, dass in unserer Manufaktur umfangreich restauriert, technisch instand gesetzt und in den damaligen Auslieferu…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/104-bmw-503-coupe",
 	"order": 65,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Coupe, Baujahr 1959",
@@ -104,7 +104,12 @@
 					"src": "./image-009.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Weiße Karosserie seitlich mit offenen Türöffnungen.",
 					"altEn": "BMW 503 Coupe, year 1959 – White body in side profile with door apertures open."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-010.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Weißes Cabriolet mit schwarzem Hardtop in der Werkstatt.",
@@ -154,7 +159,12 @@
 					"src": "./image-015.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Offener Kofferraum mit grauer Auskleidung.",
 					"altEn": "BMW 503 Coupe, year 1959 – Open boot with grey lining."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-016.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Dunkler Motor mit Leitungen im Motorraum.",

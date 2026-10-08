@@ -5,7 +5,7 @@
 	"description": "Dieses DKW F8 Cabriolet erhielt in unserer Stellmacherei ein neues Verdeckgestell aus Eschenholz maßgerecht angefertigt und anschließend in unserer Satt…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/140-dkw-f8-cabriolet-1938",
 	"order": 131,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "DKW F8 Cabriolet, 1938",
 	"leadImage": "./image-001.jpg",
@@ -28,7 +28,12 @@
 					"src": "./image-003.jpg",
 					"alt": "DKW F8 Cabriolet, 1938 – Hölzerner Verdeckrahmen neben schwarzem Bezug.",
 					"altEn": "DKW F8 Cabriolet, 1938 – Wooden roof frame beside black fabric."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-004.jpg",
 					"alt": "DKW F8 Cabriolet, 1938 – Gebogener Holzrahmen mit schwarzem Metallbeschlag.",
@@ -43,7 +48,12 @@
 					"src": "./image-006.jpg",
 					"alt": "DKW F8 Cabriolet, 1938 – Offenes Verdeckgestänge über dem Innenraum.",
 					"altEn": "DKW F8 Cabriolet, 1938 – Open hood frame above the cabin."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-007.jpg",
 					"alt": "DKW F8 Cabriolet, 1938 – Dreiviertelansicht von vorn im Freien.",
@@ -63,7 +73,12 @@
 					"src": "./image-008.jpg",
 					"alt": "DKW F8 Cabriolet, 1938 – Geschlossenes Stoffverdeck über dem Innenraum.",
 					"altEn": "DKW F8 Cabriolet, 1938 – Closed fabric soft top above the cabin."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-009.jpg",
 					"alt": "DKW F8 Cabriolet, 1938 – Schwarzes Verdeck mit schmalem Heckfenster.",

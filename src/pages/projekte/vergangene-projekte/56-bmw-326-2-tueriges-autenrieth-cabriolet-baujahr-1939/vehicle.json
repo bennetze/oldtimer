@@ -5,12 +5,12 @@
 	"description": "Bei diesem Wagen wurde das gesamte Fahrgestell - Achsen, Stoßdämpfer, Federn, Ausgleichsgetriebe, Bremsen, Lager etc. umfangreich revidiert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/56-bmw-326-2-tueriges-autenrieth-cabriolet-baujahr-1939",
 	"order": 126,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939",
 	"leadImage": "./card.jpg",
-	"leadImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"leadImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939",
 	"blocks": [
 		{
 			"type": "copy",
@@ -21,5 +21,5 @@
 	"titleEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939",
 	"descriptionEn": "We extensively overhauled the chassis systems: axles, dampers, springs, differential, brakes and bearings.",
 	"cardImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939",
-	"leadImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939 – vehicle record"
+	"leadImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939"
 }

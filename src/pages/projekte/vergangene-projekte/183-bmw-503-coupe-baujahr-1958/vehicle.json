@@ -5,7 +5,7 @@
 	"description": "Ein Fahrzeug der Superlative, von dem in dieser Ausführung bis 1960 nur 134 Exemplare von Hand und in Aluminium gefertigt wurden.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/183-bmw-503-coupe-baujahr-1958",
 	"order": 17,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Coupe, Baujahr 1958",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nBMW 503 Coupe mit dem genialen V8 Aluminium-Motor und 140PS Leistung.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA BMW 503 Coupé with the superb aluminium V8 producing 140 PS.</p>"
+			"html": "<p>BMW 503 Coupe mit dem genialen V8 Aluminium-Motor und 140PS Leistung.</p>",
+			"htmlEn": "<p>A BMW 503 Coupé with the superb aluminium V8 producing 140 PS.</p>"
 		},
 		{
 			"type": "copy",
@@ -89,8 +89,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Wagen wurde bei uns in vielen Details aufwendig restauriert.</p>",
-			"htmlEn": "<p><br>\nWe painstakingly restored many details of the car.</p>"
+			"html": "<p>Der Wagen wurde bei uns in vielen Details aufwendig restauriert.</p>",
+			"htmlEn": "<p>We painstakingly restored many details of the car.</p>"
 		},
 		{
 			"type": "gallery",
@@ -109,8 +109,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nKarosseriearbeiten in Stahl und Aluminium, darunter Neuanfertigung vieler Blechteile.</p>",
-			"htmlEn": "<p><br>\nSteel and aluminium bodywork, including fabrication of numerous replacement panels.</p>"
+			"html": "<p>Karosseriearbeiten in Stahl und Aluminium, darunter Neuanfertigung vieler Blechteile.</p>",
+			"htmlEn": "<p>Steel and aluminium bodywork, including fabrication of numerous replacement panels.</p>"
 		},
 		{
 			"type": "gallery",
@@ -214,7 +214,12 @@
 					"src": "./image-024.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1958 – Dreiviertelansicht von hinten im Freien.",
 					"altEn": "BMW 503 Coupe, year 1958 – Rear three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-025.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1958 – Blick in den offenen Motorraum auf Motor und Leitungen.",
@@ -239,7 +244,12 @@
 					"src": "./image-027.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1958 – Rote Innenverkleidungen und Sitz bei offener Tür.",
 					"altEn": "BMW 503 Coupe, year 1958 – Red interior trim and seat with door open."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-028.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1958 – Dreiviertelansicht von vorn im Freien.",
@@ -259,7 +269,12 @@
 					"src": "./image-030.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1958 – Seitenansicht im Freien.",
 					"altEn": "BMW 503 Coupe, year 1958 – Side profile outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-031.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1958 – Seitenansicht im Freien.",

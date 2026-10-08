@@ -5,22 +5,17 @@
 	"description": "Dieses äußerst seltene 4-türige BMW 326 Reise-Cabriolet mit einer Sonderkarosserie von “Autenrieth” wurde bei uns einer umfangreichen Komplettrestaurati…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/59-bmw-326-4-tueriges-autenrieth-cabriolet-baujahr-1939",
 	"order": 69,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Dieses äußerst seltene 4-türige BMW 326 Reise-Cabriolet mit einer Sonderkarosserie von “Autenrieth” wurde bei uns einer umfangreichen Komplettrestauration unterzogen.</p>",
 			"htmlEn": "<p>This exceptionally rare four-door BMW 326 touring cabriolet with special Autenrieth coachwork received an extensive full restoration.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Die Ausgangsbasis schien in einem recht verbrauchten aber dennoch kompletten Erhaltungszustand und bildete somit die ideale Substanz für eine Vollrestauration in unserer Manufaktur.</p>",
-			"htmlEn": "<p>Its worn but apparently complete starting condition provided a good basis for restoration at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -31,6 +26,11 @@
 					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – Rusty body with folded soft top outdoors."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Die Ausgangsbasis schien in einem recht verbrauchten aber dennoch kompletten Erhaltungszustand und bildete somit die ideale Substanz für eine Vollrestauration in unserer Manufaktur.</p>",
+			"htmlEn": "<p>Its worn but apparently complete starting condition provided a good basis for restoration at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -79,8 +79,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer gesamte Zierrat der prägnanten Frontmaske wurde ebenso aufwendig wie detailgetreu nachgefertigt.</p>",
-			"htmlEn": "<p><br>\nAll the distinctive front trim was painstakingly reproduced in detail.</p>"
+			"html": "<p>Der gesamte Zierrat der prägnanten Frontmaske wurde ebenso aufwendig wie detailgetreu nachgefertigt.</p>",
+			"htmlEn": "<p>All the distinctive front trim was painstakingly reproduced in detail.</p>"
 		},
 		{
 			"type": "copy",
@@ -281,5 +281,5 @@
 	"titleEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939",
 	"descriptionEn": "This exceptionally rare four-door BMW 326 touring cabriolet with special Autenrieth coachwork received an extensive full restoration.",
 	"cardImageAltEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939",
-	"leadImageAltEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – vehicle record"
+	"leadImageAltEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939"
 }

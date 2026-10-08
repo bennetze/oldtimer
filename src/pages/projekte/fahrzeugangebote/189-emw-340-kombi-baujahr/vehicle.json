@@ -5,7 +5,7 @@
 	"description": "Und wäre der spezielle Karosserieaufbau nicht fast unbekannt, so ist es heute der wohl einzige bekannte 340-3 als geschlossener \"Kurier-und Lieferwagen\"…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/189-emw-340-kombi-baujahr",
 	"order": 9,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954",
@@ -74,7 +74,22 @@
 					"src": "./image-007.jpg",
 					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Grüner Lieferwagen seitlich vor bewaldeten Hügeln.",
 					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Green delivery van in side profile beside wooded hills."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Org. Papiere</p>",
+			"htmlEn": "<p>Original papers.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Org. Winker - voll funktionstüchtig</p>",
+			"htmlEn": "<p>Original semaphore indicators — fully functional.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Grüner Lieferwagen gerade von vorn.",
@@ -89,28 +104,8 @@
 					"src": "./image-009.jpg",
 					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Holzarmaturenbrett und dunkles Lenkrad im Fahrerhaus.",
 					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Wood dashboard and dark steering wheel in the cab."
-				},
-				{
-					"src": "./image-010.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Nahaufnahme von Lenkrad und Holzarmaturenbrett.",
-					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Close view of steering wheel and wood dashboard."
-				},
-				{
-					"src": "./image-011.jpg",
-					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Offene Fahrertür mit zweifarbigem Sitz.",
-					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Open driver's door with two-tone seat."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Org. Papiere</p>",
-			"htmlEn": "<p>Original papers.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Org. Winker - voll funktionstüchtig</p>",
-			"htmlEn": "<p>Original semaphore indicators — fully functional.</p>"
 		},
 		{
 			"type": "copy",
@@ -148,6 +143,21 @@
 			"htmlEn": "<p>Original tool kit.</p>"
 		},
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-010.jpg",
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Nahaufnahme von Lenkrad und Holzarmaturenbrett.",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Close view of steering wheel and wood dashboard."
+				},
+				{
+					"src": "./image-011.jpg",
+					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Offene Fahrertür mit zweifarbigem Sitz.",
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Open driver's door with two-tone seat."
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p>Org. Werkzeugkasten</p>",
 			"htmlEn": "<p>Original tool box.</p>"
@@ -174,18 +184,23 @@
 					"src": "./image-013.jpg",
 					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Offener Motorraum des grünen Lieferwagens.",
 					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Open engine bay of the green delivery van."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Originalmotor zeigte Verschleißerscheinungen und wurde daher kürzlich durch uns generalüberholt und mit völlig neuem &quot;Innenleben&quot; aufgebaut. Also nun auch motortechnisch perfekt.</p>",
+			"htmlEn": "<p>The original engine showed signs of wear, so we recently gave it a complete overhaul with entirely renewed internals. Its mechanical condition is now excellent too.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-014.jpg",
 					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Grüner Lieferwagen aus niedriger Perspektive schräg von vorn.",
 					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Green delivery van from a low front-corner angle."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p><br />\nDer Originalmotor zeigte Verschleißerscheinungen und wurde daher kürzlich durch uns generalüberholt und mit völlig neuem &quot;Innenleben&quot; aufgebaut. Also nun auch motortechnisch perfekt.</p>",
-			"htmlEn": "<p><br>\nThe original engine showed signs of wear, so we recently gave it a complete overhaul with entirely renewed internals. Its mechanical condition is now excellent too.</p>"
 		},
 		{
 			"type": "copy",
@@ -218,11 +233,6 @@
 			"htmlEn": "<p>This unique piece of history, an EMW 340-3 courier and delivery van, is now offered for sale.</p>"
 		},
 		{
-			"type": "contact",
-			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bei Interesse gerne unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>",
-			"htmlEn": "<p>Price on request.<br>\nFor further information, photographs and other vehicle details,<br>\nIf interested, please contact us on: Tel. +49 36966 83783<br>\nEmail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -234,7 +244,17 @@
 					"src": "./image-019.jpg",
 					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Grüner Lieferwagen mit hochgestellter Motorhaube.",
 					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Green delivery van with bonnet raised upright."
-				},
+				}
+			]
+		},
+		{
+			"type": "contact",
+			"html": "<p>Preis auf Anfrage.<br />\nFür weitere Informationen, Fotos und sonstige Details zum Fahrzeug<br />\nkontaktieren Sie uns bei Interesse gerne unter: Tel. 036 966 / 83 7 83<br />\nE-mail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>",
+			"htmlEn": "<p>Price on request.<br>\nFor further information, photographs and other vehicle details,<br>\nIf interested, please contact us on: Tel. +49 36966 83783<br>\nEmail: <a href=\"mailto:info@oldtimermanufaktur.de\">info@oldtimermanufaktur.de</a></p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-020.jpg",
 					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Grüner Lieferwagen gerade von hinten.",

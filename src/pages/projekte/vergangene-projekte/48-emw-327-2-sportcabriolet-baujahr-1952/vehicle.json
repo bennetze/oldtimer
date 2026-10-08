@@ -5,18 +5,13 @@
 	"description": "Hier wieder ein EMW 327-2 Sportcabriolet, Baujahr 1952;\n\ngebaut bei den Eisenacher- Motoren-Werken in Thüringen, der nach einer umfangreichen und sehr o…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/48-emw-327-2-sportcabriolet-baujahr-1952",
 	"order": 64,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1952",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1952",
 	"blocks": [
-		{
-			"type": "copy",
-			"html": "<p>Hier wieder ein EMW 327-2 Sportcabriolet, Baujahr 1952;<br />\n<br />\ngebaut bei den Eisenacher- Motoren-Werken in Thüringen, der nach einer umfangreichen und sehr originalgetreuen Komplettrestauration hier in unserer Manufaktur wieder zu einem neuen Leben erwachen durfte.</p>",
-			"htmlEn": "<p>Another 1952 EMW 327-2 Sport Cabriolet,<br>\n<br>\nbuilt at Eisenacher Motorenwerke in Thuringia, brought back to life through an extensive, faithful full restoration at our workshop.</p>"
-		},
 		{
 			"type": "gallery",
 			"images": [
@@ -46,6 +41,11 @@
 					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – Body without lights or exterior fittings viewed from the rear corner."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hier wieder ein EMW 327-2 Sportcabriolet, Baujahr 1952;<br />\n<br />\ngebaut bei den Eisenacher- Motoren-Werken in Thüringen, der nach einer umfangreichen und sehr originalgetreuen Komplettrestauration hier in unserer Manufaktur wieder zu einem neuen Leben erwachen durfte.</p>",
+			"htmlEn": "<p>Another 1952 EMW 327-2 Sport Cabriolet,<br>\n<br>\nbuilt at Eisenacher Motorenwerke in Thuringia, brought back to life through an extensive, faithful full restoration at our workshop.</p>"
 		},
 		{
 			"type": "copy",
@@ -129,8 +129,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch die Sitze erhielten einen neuen Holzrahmen und wurden für einen optimalen Sitzkomfort mit maßgeschneiderten Federkernen versehen.</p>",
-			"htmlEn": "<p><br>\nThe seats received new timber frames and tailored spring units for optimal comfort.</p>"
+			"html": "<p>Auch die Sitze erhielten einen neuen Holzrahmen und wurden für einen optimalen Sitzkomfort mit maßgeschneiderten Federkernen versehen.</p>",
+			"htmlEn": "<p>The seats received new timber frames and tailored spring units for optimal comfort.</p>"
 		},
 		{
 			"type": "gallery",
@@ -144,8 +144,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach der aufwendigen Lackierung in den beiden zeitgenössischen Farben einschliesslich der originalgetreuen Linierungen, wurde das Fahrzeug in unserer Fertigmacherei wieder komplettiert und in allen Details fertig gestellt.</p>",
-			"htmlEn": "<p><br>\nFollowing elaborate period two-tone paintwork and authentic coachlines, our finishing department assembled and completed the car in every detail.</p>"
+			"html": "<p>Nach der aufwendigen Lackierung in den beiden zeitgenössischen Farben einschliesslich der originalgetreuen Linierungen, wurde das Fahrzeug in unserer Fertigmacherei wieder komplettiert und in allen Details fertig gestellt.</p>",
+			"htmlEn": "<p>Following elaborate period two-tone paintwork and authentic coachlines, our finishing department assembled and completed the car in every detail.</p>"
 		},
 		{
 			"type": "gallery",
@@ -296,5 +296,5 @@
 	"titleEn": "EMW 327-2 Sport Cabriolet, year 1952",
 	"descriptionEn": "Another 1952 EMW 327-2 Sport Cabriolet, built at Eisenacher Motorenwerke in Thuringia, brought back to life through an extensive, faithful full restoration at our workshop.",
 	"cardImageAltEn": "EMW 327-2 Sport Cabriolet, year 1952",
-	"leadImageAltEn": "EMW 327-2 Sport Cabriolet, year 1952 – vehicle record"
+	"leadImageAltEn": "EMW 327-2 Sport Cabriolet, year 1952"
 }

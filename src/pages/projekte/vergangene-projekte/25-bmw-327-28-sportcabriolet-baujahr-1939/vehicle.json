@@ -5,22 +5,17 @@
 	"description": "Dieses sehr schöne BMW-Sportcabriolet wurde bei Uns einer umfangreichen Komplettrestauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/25-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 97,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Dieses sehr schöne BMW-Sportcabriolet wurde bei Uns einer umfangreichen Komplettrestauration unterzogen.</p>",
 			"htmlEn": "<p>This beautiful BMW Sport Cabriolet underwent an extensive full restoration at our workshop.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>BMW 327/28 Sportcabriolet, Baujahr 1939; gebaut bei den BMW-Werken in Eisenach/Thüringen. Bei diesem Wagen handelt es sich laut originalem handgeschriebenem Auslieferungsprotokoll um das Originalfahrzeug Heinrich Himmlers (Reichsführer der SS).<br />\n<br />\nEs wurde damals als einer der ganz wenigen 327er in einheitlich schwarzer Farbgebung mit entsprechenden Bannern... ausgeliefert. Das damit auch historisch äußerst wertvolle Fahrzeug wurde bei uns von Grund auf restauriert.</p>",
-			"htmlEn": "<p>A 1939 BMW 327/28 Sport Cabriolet, built in Eisenach, Thuringia. According to the original handwritten delivery record, it was the car of Heinrich Himmler, Reichsführer of the SS.<br>\n<br>\nIt was delivered as one of the few 327s in an entirely black finish with corresponding banners. We restored this historically significant car from the ground up.</p>"
 		},
 		{
 			"type": "gallery",
@@ -31,6 +26,11 @@
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Front three-quarter view inside the workshop."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>BMW 327/28 Sportcabriolet, Baujahr 1939; gebaut bei den BMW-Werken in Eisenach/Thüringen. Bei diesem Wagen handelt es sich laut originalem handgeschriebenem Auslieferungsprotokoll um das Originalfahrzeug Heinrich Himmlers (Reichsführer der SS).<br />\n<br />\nEs wurde damals als einer der ganz wenigen 327er in einheitlich schwarzer Farbgebung mit entsprechenden Bannern... ausgeliefert. Das damit auch historisch äußerst wertvolle Fahrzeug wurde bei uns von Grund auf restauriert.</p>",
+			"htmlEn": "<p>A 1939 BMW 327/28 Sport Cabriolet, built in Eisenach, Thuringia. According to the original handwritten delivery record, it was the car of Heinrich Himmler, Reichsführer of the SS.<br>\n<br>\nIt was delivered as one of the few 327s in an entirely black finish with corresponding banners. We restored this historically significant car from the ground up.</p>"
 		},
 		{
 			"type": "copy",
@@ -79,8 +79,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDie fehlenden Armaturen, nebst Telefunken-Radio sind ebenfalls originalgetreu neu entstanden.</p>",
-			"htmlEn": "<p><br>\nThe missing instruments and Telefunken radio were also faithfully recreated.</p>"
+			"html": "<p>Die fehlenden Armaturen, nebst Telefunken-Radio sind ebenfalls originalgetreu neu entstanden.</p>",
+			"htmlEn": "<p>The missing instruments and Telefunken radio were also faithfully recreated.</p>"
 		},
 		{
 			"type": "copy",
@@ -146,5 +146,5 @@
 	"titleEn": "BMW 327/28 Sport Cabriolet, year 1939",
 	"descriptionEn": "This beautiful BMW Sport Cabriolet underwent an extensive full restoration at our workshop.",
 	"cardImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939",
-	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939 – vehicle record"
+	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939"
 }

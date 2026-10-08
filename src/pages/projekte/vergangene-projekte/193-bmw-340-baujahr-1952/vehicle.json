@@ -5,7 +5,7 @@
 	"description": "Ein weiterer BMW 340, der bei uns umfassend instandgesetzt und teilrestauriert wurde (Motor, Getriebe, Achsen, Stoßdämpfer, Elektrik, Lackierung usw.).",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/193-bmw-340-baujahr-1952",
 	"order": 9,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1952",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEin weiterer BMW 340, der bei uns umfassend instandgesetzt und teilrestauriert wurde (Motor, Getriebe, Achsen, Stoßdämpfer, Elektrik, Lackierung usw.).</p>",
-			"htmlEn": "<p><br>\n<br>\nAnother BMW 340 extensively repaired and partly restored at our workshop, including engine, gearbox, axles, dampers, electrics and paintwork.</p>"
+			"html": "<p>Ein weiterer BMW 340, der bei uns umfassend instandgesetzt und teilrestauriert wurde (Motor, Getriebe, Achsen, Stoßdämpfer, Elektrik, Lackierung usw.).</p>",
+			"htmlEn": "<p>Another BMW 340 extensively repaired and partly restored at our workshop, including engine, gearbox, axles, dampers, electrics and paintwork.</p>"
 		},
 		{
 			"type": "gallery",
@@ -84,7 +84,12 @@
 					"src": "./image-008.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Abgeklebte Karosserie schräg von vorn in der Lackierkabine.",
 					"altEn": "BMW 340, year 1952 – Masked body from the front corner in the spray booth."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-009.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Karosserie mit leeren Scheinwerferöffnungen schräg von vorn.",

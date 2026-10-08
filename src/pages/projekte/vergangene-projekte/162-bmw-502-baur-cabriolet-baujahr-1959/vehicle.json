@@ -5,7 +5,7 @@
 	"description": "Hier ein wunderschönes Cabriolet des berühmten BMW 502, der bei uns umfassend überarbeitet wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/162-bmw-502-baur-cabriolet-baujahr-1959",
 	"order": 43,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nHier ein wunderschönes Cabriolet des berühmten BMW 502, der bei uns umfassend überarbeitet wurde.</p>",
-			"htmlEn": "<p><br>\n<br>\nA beautiful cabriolet version of the famous BMW 502, comprehensively refurbished by us.</p>"
+			"html": "<p>Hier ein wunderschönes Cabriolet des berühmten BMW 502, der bei uns umfassend überarbeitet wurde.</p>",
+			"htmlEn": "<p>A beautiful cabriolet version of the famous BMW 502, comprehensively refurbished by us.</p>"
 		},
 		{
 			"type": "gallery",
@@ -79,7 +79,17 @@
 					"src": "./image-007.jpg",
 					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Blick auf die Vordersitze im Innenraum.",
 					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – View of the front seats inside the cabin."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Diese traumhaften Luxuscabrios entstanden in nur wenigen Stückzahlen bei der renommierten Firma &quot;Baur&quot; in Stuttgart.</p>",
+			"htmlEn": "<p>Only small numbers of these beautiful luxury cabriolets were built by the renowned Baur firm in Stuttgart.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Blick von schräg oben auf Fahrzeugfront und Motorhaube.",
@@ -91,11 +101,6 @@
 					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – View of the front seats inside the cabin."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Diese traumhaften Luxuscabrios entstanden in nur wenigen Stückzahlen bei der renommierten Firma &quot;Baur&quot; in Stuttgart.</p>",
-			"htmlEn": "<p>Only small numbers of these beautiful luxury cabriolets were built by the renowned Baur firm in Stuttgart.</p>"
 		},
 		{
 			"type": "gallery",

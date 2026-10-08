@@ -5,7 +5,7 @@
 	"description": "Ein inzwischen extrem seltenes Ford Consul Coupe des Jahrgangs 1974, bei dem in unserer Manufaktur ein Getriebeschaden instandgesetzt und das in unserer…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/139-ford-consul-coupe-1974",
 	"order": 130,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "FORD Consul Coupe, 1974",
 	"leadImage": "./image-001.jpg",
@@ -48,12 +48,22 @@
 					"src": "./image-005.jpg",
 					"alt": "FORD Consul Coupe, 1974 – Blauer Motor mit gelbem Luftfiltergehäuse.",
 					"altEn": "FORD Consul Coupe, 1974 – Blue engine with yellow air-filter housing."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-006.jpg",
 					"alt": "FORD Consul Coupe, 1974 – Blauer Motor und Batterie im gelben Motorraum.",
 					"altEn": "FORD Consul Coupe, 1974 – Blue engine and battery in yellow engine bay."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-007.jpg",
 					"alt": "FORD Consul Coupe, 1974 – Consul-L-Schriftzug an gelbem Heckblech.",
@@ -68,7 +78,12 @@
 					"src": "./image-009.jpg",
 					"alt": "FORD Consul Coupe, 1974 – Ausgebautes Getriebe mit Gehäuse und Welle.",
 					"altEn": "FORD Consul Coupe, 1974 – Removed gearbox with casing and shaft."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-010.jpg",
 					"alt": "FORD Consul Coupe, 1974 – Seitenansicht im Freien.",

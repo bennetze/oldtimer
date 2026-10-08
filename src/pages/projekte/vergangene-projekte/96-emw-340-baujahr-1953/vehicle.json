@@ -5,7 +5,7 @@
 	"description": "Aufgrund eines schweren Motorschadens wurde dieser in unserer Motorenabteilung grundlegend neu aufgebaut.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/96-emw-340-baujahr-1953",
 	"order": 79,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1953",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 340, Baujahr 1953",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEMW 340, Baujahr 1953, gebaut bei den Eisenacher - Motoren - Werken.</p>",
-			"htmlEn": "<p><br>\n<br>\nA 1953 EMW 340, built at Eisenacher Motorenwerke.</p>"
+			"html": "<p>EMW 340, Baujahr 1953, gebaut bei den Eisenacher - Motoren - Werken.</p>",
+			"htmlEn": "<p>A 1953 EMW 340, built at Eisenacher Motorenwerke.</p>"
 		},
 		{
 			"type": "copy",

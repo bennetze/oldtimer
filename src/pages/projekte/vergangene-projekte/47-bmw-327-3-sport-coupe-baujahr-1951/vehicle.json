@@ -5,12 +5,12 @@
 	"description": "Hier ein sehr frühes BMW(!) 327 Nachkriegs-Sportcoupe namens 327/3, Baujahr 1951, das sehr detailliert und originalgetreu in unserer Manufaktur überarbe…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/47-bmw-327-3-sport-coupe-baujahr-1951",
 	"order": 115,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327-3 Sport - Coupe, Baujahr 1951",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 327-3 Sport - Coupe, Baujahr 1951 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 327-3 Sport - Coupe, Baujahr 1951",
 	"blocks": [
 		{
 			"type": "copy",
@@ -101,5 +101,5 @@
 	"titleEn": "BMW 327-3 Sport - Coupe, year 1951",
 	"descriptionEn": "A very early post-war BMW 327/3 Sport Coupé from 1951, carefully refurbished to original specification at our workshop.",
 	"cardImageAltEn": "BMW 327-3 Sport - Coupe, year 1951",
-	"leadImageAltEn": "BMW 327-3 Sport - Coupe, year 1951 – vehicle record"
+	"leadImageAltEn": "BMW 327-3 Sport - Coupe, year 1951"
 }

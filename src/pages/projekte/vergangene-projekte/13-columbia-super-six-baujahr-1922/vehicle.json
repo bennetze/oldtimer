@@ -5,12 +5,12 @@
 	"description": "COLUMBIA-SUPER-SIX, Typ: Deluxe-Double-Phaeton, Baujahr: 1922, gebaut in Detroit / Michigan – USA.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/13-columbia-super-six-baujahr-1922",
 	"order": 81,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1922",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "COLUMBIA-SUPER-SIX, Baujahr 1922",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "COLUMBIA-SUPER-SIX, Baujahr 1922 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "COLUMBIA-SUPER-SIX, Baujahr 1922",
 	"blocks": [
 		{
 			"type": "copy",
@@ -29,8 +29,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Wagen wurde in sehr schlechtem Zustand aus Amerika über Dänemark nach Deutschland eingeführt...</p>",
-			"htmlEn": "<p><br>\nThe car was imported from America via Denmark to Germany in very poor condition…</p>"
+			"html": "<p>Der Wagen wurde in sehr schlechtem Zustand aus Amerika über Dänemark nach Deutschland eingeführt...</p>",
+			"htmlEn": "<p>The car was imported from America via Denmark to Germany in very poor condition…</p>"
 		},
 		{
 			"type": "gallery",
@@ -44,8 +44,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n...und komplett und originalgetreu durch Uns restauriert.</p>",
-			"htmlEn": "<p><br>\n…and completely restored to original specification by our workshop.</p>"
+			"html": "<p>...und komplett und originalgetreu durch Uns restauriert.</p>",
+			"htmlEn": "<p>…and completely restored to original specification by our workshop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -83,11 +83,6 @@
 			"htmlEn": "<p>Wooden-spoke wheels.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Faltverdeck</p>",
-			"htmlEn": "<p>Folding hood.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -99,12 +94,17 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nGewinner mehrerer Preise und Schöhnheitswettbewerbe bei exklusiven Oldtimerveranstaltungen u. a. beim „European Concours d´Elegance“ oder dem 10. Internationalen Oldtimer – Schlössertreffen.<br /></p>",
-			"htmlEn": "<p><br>\nWinner of several prizes and concours awards at exclusive classic-car events, including the European Concours d’Elegance and the 10th International Classic Car Castles Meeting.<br></p>"
+			"html": "<p>Faltverdeck</p>",
+			"htmlEn": "<p>Folding hood.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Gewinner mehrerer Preise und Schöhnheitswettbewerbe bei exklusiven Oldtimerveranstaltungen u. a. beim „European Concours d´Elegance“ oder dem 10. Internationalen Oldtimer – Schlössertreffen.<br /></p>",
+			"htmlEn": "<p>Winner of several prizes and concours awards at exclusive classic-car events, including the European Concours d’Elegance and the 10th International Classic Car Castles Meeting.<br></p>"
 		}
 	],
 	"titleEn": "COLUMBIA-SUPER-SIX, year 1922",
 	"descriptionEn": "Columbia Super Six, Deluxe Double Phaeton, built in 1922 in Detroit, Michigan, USA.",
 	"cardImageAltEn": "COLUMBIA-SUPER-SIX, year 1922",
-	"leadImageAltEn": "COLUMBIA-SUPER-SIX, year 1922 – vehicle record"
+	"leadImageAltEn": "COLUMBIA-SUPER-SIX, year 1922"
 }

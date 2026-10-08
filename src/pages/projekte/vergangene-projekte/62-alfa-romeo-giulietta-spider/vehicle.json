@@ -5,11 +5,11 @@
 	"description": "Mittlerweile mehrere dieser Sportwagen wurden fachgerecht und grundlegend durch uns restauriert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/62-alfa-romeo-giulietta-spider",
 	"order": 116,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Alfa - Romeo Giulietta-Spider",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "Alfa - Romeo Giulietta-Spider – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "Alfa - Romeo Giulietta-Spider",
 	"blocks": [
 		{
 			"type": "copy",
@@ -50,5 +50,5 @@
 	"titleEn": "Alfa - Romeo Giulietta-Spider",
 	"descriptionEn": "We have now professionally and thoroughly restored several of these sports cars.",
 	"cardImageAltEn": "Alfa - Romeo Giulietta-Spider",
-	"leadImageAltEn": "Alfa - Romeo Giulietta-Spider – vehicle record"
+	"leadImageAltEn": "Alfa - Romeo Giulietta-Spider"
 }

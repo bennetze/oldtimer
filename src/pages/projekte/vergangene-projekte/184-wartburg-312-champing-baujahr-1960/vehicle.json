@@ -5,7 +5,7 @@
 	"description": "Hier ein angeliefertes Fundstück aus frühen DDR Zeiten: Ein inzwischen selten gewordener Wartburg Typ 312 in der begehrten \"Camping\"-Ausführung. Gebaut…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/184-wartburg-312-champing-baujahr-1960",
 	"order": 98,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1966",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 312 Camping, Baujahr 1966",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nHier ein angeliefertes Fundstück aus frühen DDR Zeiten: Ein inzwischen selten gewordener Wartburg Typ 312 in der begehrten &quot;Camping&quot;-Ausführung. Gebaut im Jahre 1966 im nur wenige Kilometer entfernten Eisenach, erfuhr der Wagen hier in unserer Oldtimermanufaktur nunmehr sein &quot;2. Leben&quot;.</p>",
-			"htmlEn": "<p><br>\n<br>\nA discovery from the early GDR era: a now-rare Wartburg 312 Camping. Built in 1966 in nearby Eisenach, it received a second life here at Die Oldtimermanufaktur.</p>"
+			"html": "<p>Hier ein angeliefertes Fundstück aus frühen DDR Zeiten: Ein inzwischen selten gewordener Wartburg Typ 312 in der begehrten &quot;Camping&quot;-Ausführung. Gebaut im Jahre 1966 im nur wenige Kilometer entfernten Eisenach, erfuhr der Wagen hier in unserer Oldtimermanufaktur nunmehr sein &quot;2. Leben&quot;.</p>",
+			"htmlEn": "<p>A discovery from the early GDR era: a now-rare Wartburg 312 Camping. Built in 1966 in nearby Eisenach, it received a second life here at Die Oldtimermanufaktur.</p>"
 		},
 		{
 			"type": "gallery",
@@ -114,8 +114,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNeben vielen anderen instandzusetzenden Karosseriestellen bekam der Wagen u.a. auch kpl. neue tragende Schweller und teilweise auch eine neue Bodengruppe angefertigt.</p>",
-			"htmlEn": "<p><br>\nAlongside many other repairs, we made entirely new structural sills and parts of the floor.</p>"
+			"html": "<p>Neben vielen anderen instandzusetzenden Karosseriestellen bekam der Wagen u.a. auch kpl. neue tragende Schweller und teilweise auch eine neue Bodengruppe angefertigt.</p>",
+			"htmlEn": "<p>Alongside many other repairs, we made entirely new structural sills and parts of the floor.</p>"
 		},
 		{
 			"type": "gallery",
@@ -154,8 +154,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch der Rahmen mit Achsen, Antrieben, Federn, Bremsen, Lenkung usw. wurde komplett überarbeitet und die sonstige Technik instandgesetzt.</p>",
-			"htmlEn": "<p><br>\nThe frame, axles, drives, springs, brakes and steering were completely refurbished, and the remaining mechanical systems repaired.</p>"
+			"html": "<p>Auch der Rahmen mit Achsen, Antrieben, Federn, Bremsen, Lenkung usw. wurde komplett überarbeitet und die sonstige Technik instandgesetzt.</p>",
+			"htmlEn": "<p>The frame, axles, drives, springs, brakes and steering were completely refurbished, and the remaining mechanical systems repaired.</p>"
 		},
 		{
 			"type": "gallery",
@@ -254,8 +254,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nWährend der umfangreichen Karosseriearbeiten sollte der Wagen auch die org. geschwungenen Zierleisten an den Seitenflanken wieder erhalten, die am Wagen original geformt und angepasst wurden. <br /></p>",
-			"htmlEn": "<p><br>\nDuring the bodywork, we also recreated and fitted the original curved trim strips along the flanks. <br></p>"
+			"html": "<p>Während der umfangreichen Karosseriearbeiten sollte der Wagen auch die org. geschwungenen Zierleisten an den Seitenflanken wieder erhalten, die am Wagen original geformt und angepasst wurden. <br /></p>",
+			"htmlEn": "<p>During the bodywork, we also recreated and fitted the original curved trim strips along the flanks. <br></p>"
 		},
 		{
 			"type": "gallery",
@@ -269,8 +269,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nEine durchrestaurierte, neu aufgebaute Karosserie bereit für die anstehenden Lackierarbeiten.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nA completely rebuilt body, ready for paintwork.</p>"
+			"html": "<p>Eine durchrestaurierte, neu aufgebaute Karosserie bereit für die anstehenden Lackierarbeiten.</p>",
+			"htmlEn": "<p>A completely rebuilt body, ready for paintwork.</p>"
 		},
 		{
 			"type": "gallery",
@@ -309,8 +309,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAuch der Rahmen und dessen technische Anbauteile bekamen nach dem Neuaufbau eine Speziallackierung.</p>",
-			"htmlEn": "<p><br>\n<br>\nThe rebuilt frame and its mechanical attachments also received a special coating.</p>"
+			"html": "<p>Auch der Rahmen und dessen technische Anbauteile bekamen nach dem Neuaufbau eine Speziallackierung.</p>",
+			"htmlEn": "<p>The rebuilt frame and its mechanical attachments also received a special coating.</p>"
 		},
 		{
 			"type": "gallery",
@@ -389,8 +389,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHochwertige 2-Farb-Lackierung in den Originalfarben entsprechend dem Kundenwunsch.</p>",
-			"htmlEn": "<p><br>\nHigh-quality two-tone paint in the original colours, as requested by the client.</p>"
+			"html": "<p>Hochwertige 2-Farb-Lackierung in den Originalfarben entsprechend dem Kundenwunsch.</p>",
+			"htmlEn": "<p>High-quality two-tone paint in the original colours, as requested by the client.</p>"
 		},
 		{
 			"type": "gallery",
@@ -409,8 +409,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDie von uns fertig restaurierten Elemente des Faltschiebedachs und bereits fertig verchromte Anbauteile.</p>",
-			"htmlEn": "<p><br>\nThe restored folding-roof components and freshly chrome-plated fittings.</p>"
+			"html": "<p>Die von uns fertig restaurierten Elemente des Faltschiebedachs und bereits fertig verchromte Anbauteile.</p>",
+			"htmlEn": "<p>The restored folding-roof components and freshly chrome-plated fittings.</p>"
 		},
 		{
 			"type": "gallery",

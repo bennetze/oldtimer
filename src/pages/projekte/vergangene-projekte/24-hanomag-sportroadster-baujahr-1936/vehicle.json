@@ -5,23 +5,13 @@
 	"description": "Dieser hier gezeigte und bei uns sehr perfekt restaurierte HANOMAG-Sportroadster ist nicht irgendein sportliches Vorkriegsauto, sondern fuhr vor allem i…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/24-hanomag-sportroadster-baujahr-1936",
 	"order": 35,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Hanomag Sportroadster, Baujahr 1936",
 	"leadImage": "./image-001.jpg",
 	"leadImageAlt": "Hanomag Sportroadster, Baujahr 1936 – Fahrzeugdokumentation",
 	"blocks": [
-		{
-			"type": "copy",
-			"html": "<p>Rückkehr eines &quot;WELTSTARS&quot;</p>",
-			"htmlEn": "<p>Return of a “world star”.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>(Pressezitat)</p>",
-			"htmlEn": "<p>(Press quotation.)</p>"
-		},
 		{
 			"type": "gallery",
 			"images": [
@@ -31,6 +21,16 @@
 					"altEn": "Hanomag Sportroadster, year 1936 – Front three-quarter view outdoors."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Rückkehr eines &quot;WELTSTARS&quot;</p>",
+			"htmlEn": "<p>Return of a “world star”.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>(Pressezitat)</p>",
+			"htmlEn": "<p>(Press quotation.)</p>"
 		},
 		{
 			"type": "copy",
@@ -339,8 +339,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nHier die fast fertige, komplett neu aufgebaute Karosserie mit allen anzupassenden Anbauteilen.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nThe nearly complete rebuilt body, with all fittings being aligned.</p>"
+			"html": "<p>Hier die fast fertige, komplett neu aufgebaute Karosserie mit allen anzupassenden Anbauteilen.</p>",
+			"htmlEn": "<p>The nearly complete rebuilt body, with all fittings being aligned.</p>"
 		},
 		{
 			"type": "gallery",
@@ -419,8 +419,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nLeider waren auch die Speichenräder des Wagens irreparabel verschlissen und allenfalls noch als Muster zu gebrauchen. Daher mußten wir parallel zu den Lackierarbeiten auch alle 5 Speichenräder neu anfertigen - neue Felgenringe nach Muster anfertigen, Felgen bohren und punzen, Felgenringe mit Felgentöpfen wunschgemäß lackieren, sämtliche Speichen neu anfertigen und verchromen, 5 Räder komplett neu einspeichen - 70 Speichen pro Rad...</p>",
-			"htmlEn": "<p><br>\n<br>\nThe wire wheels were irreparably worn and usable only as patterns. Alongside painting, we remade all five: new rims, drilling and dimpling, painting rims and centres to specification, making and chroming all spokes, and lacing seventy spokes into each wheel.</p>"
+			"html": "<p>Leider waren auch die Speichenräder des Wagens irreparabel verschlissen und allenfalls noch als Muster zu gebrauchen. Daher mußten wir parallel zu den Lackierarbeiten auch alle 5 Speichenräder neu anfertigen - neue Felgenringe nach Muster anfertigen, Felgen bohren und punzen, Felgenringe mit Felgentöpfen wunschgemäß lackieren, sämtliche Speichen neu anfertigen und verchromen, 5 Räder komplett neu einspeichen - 70 Speichen pro Rad...</p>",
+			"htmlEn": "<p>The wire wheels were irreparably worn and usable only as patterns. Alongside painting, we remade all five: new rims, drilling and dimpling, painting rims and centres to specification, making and chroming all spokes, and lacing seventy spokes into each wheel.</p>"
 		},
 		{
 			"type": "gallery",
@@ -514,8 +514,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nVergaser, Anbauteile und Instrumente wurden originalgetreu revidiert und ein neuer Kraftstofftank aus Edelstahl gebaut.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nCarburettor, ancillaries and instruments were faithfully refurbished, and a new stainless-steel fuel tank was made.</p>"
+			"html": "<p>Vergaser, Anbauteile und Instrumente wurden originalgetreu revidiert und ein neuer Kraftstofftank aus Edelstahl gebaut.</p>",
+			"htmlEn": "<p>Carburettor, ancillaries and instruments were faithfully refurbished, and a new stainless-steel fuel tank was made.</p>"
 		},
 		{
 			"type": "gallery",
@@ -593,11 +593,6 @@
 			"htmlEn": "<p>Following completion and extensive testing, the car made its first major appearance on 3 October 2014 at the former racing course near Dessau, Saxony-Anhalt.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p><strong><em>Hintergrund: Im Jahre 1939 wurden auf einem speziell für Hochgeschwindigkeiten ausgebauten Teilabschnitt der neu eröffneten Reichsautobahn Berlin-Leipzig (heutige A9) bei Dessau eine Reihe von Weltrekorden gefahren. In den nur wenigen Monaten bis zum Ausbruch des 2. Weltkrieges nutzten alle namhaften nationalen und internationalen Automobilhersteller diese Spezialpiste für Test- und Rekordfahrten.<br />\n<br />\nEines der Rekordfahrzeuge war ein HANOMAG-Diesel Stromlinienwagen mit einer eigens dafür handgefertigten Stromlinienkarosserie. Bei mehreren Rekordversuchen wurden bis dahin ungeahnte Spitzengeschwindigkeiten erreicht. – Zu diesem Zeitpunkt war die Hanomag AG in Hannover-Linden einer der großen und zugleich erfolgreichen deutschen Fahrzeughersteller, nebst eigener Motorenfertigung.<br />\n<br />\nDer Hanomag Interessengemeinschaft und dem Hugo Junkers Museum Dessau, ist es nach 75 Jahren gelungen, zum Tag der Deutschen Einheit am 03.10.2014, dieses heute noch erhaltene Autobahnteilstück der A9, unter den legendären &quot;Bauhaus&quot;-Brücken bei Dessau - als Hommage an diese spektakuläre Rennära - komplett sperren und dieses Revival mit zahlreichen Oldtimerenthusiasten und tausenden Schaulustigen noch einmal aufleben zu lassen.<br />\n<br />\nIn der &quot;Bauhaus&quot; und &quot;Junkers&quot;-Stadt Dessau fand auf historischem Boden der Junkers Flugzeugwerften, eigens dazu die so genannte &quot;Rekordwoche-Dessau&quot; statt - eine einmalige und spektakuläre Veranstaltung rund um das geschichtsträchtige &quot;Hugo Junkers-Museum&quot;.<br />\n<br />\nNeben dem HANOMAG-Diesel-Weltrekordwagen von 1939, kam auch dieser bei uns bestens restaurierte HANOMAG Sportroadster mit seinem stolzen Besitzer dort zum Einsatz.</em></strong></p>",
-			"htmlEn": "<p><strong><em>Background: in 1939, several world records were set on a specially prepared high-speed section of the newly opened Berlin–Leipzig autobahn, today’s A9, near Dessau. In the months before the Second World War, leading German and international manufacturers used this track for testing and record attempts.<br>\n<br>\nOne record car was a Hanomag diesel with a specially hand-built streamlined body, achieving previously unexpected top speeds. At the time, Hanomag AG in Hanover-Linden was a major, successful German vehicle manufacturer with its own engine production.<br>\n<br>\nSeventy-five years later, the Hanomag interest group and Hugo Junkers Museum arranged a complete closure of this surviving A9 section beneath Dessau’s legendary Bauhaus bridges on German Unity Day, 3 October 2014. Numerous classic-car enthusiasts and thousands of spectators revived the spirit of that spectacular racing era.<br>\n<br>\nThe “Rekordwoche Dessau” took place on the historic grounds of the Junkers aircraft works in the city associated with Bauhaus and Junkers, centred on the Hugo Junkers Museum.<br>\n<br>\nAlongside the 1939 Hanomag diesel world-record car, our restored Hanomag Sport Roadster took part with its proud owner.</em></strong></p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -606,6 +601,11 @@
 					"altEn": "Hanomag Sportroadster, year 1936 – Vehicle inside a hall in front of a multi-engine aircraft."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p><strong><em>Hintergrund: Im Jahre 1939 wurden auf einem speziell für Hochgeschwindigkeiten ausgebauten Teilabschnitt der neu eröffneten Reichsautobahn Berlin-Leipzig (heutige A9) bei Dessau eine Reihe von Weltrekorden gefahren. In den nur wenigen Monaten bis zum Ausbruch des 2. Weltkrieges nutzten alle namhaften nationalen und internationalen Automobilhersteller diese Spezialpiste für Test- und Rekordfahrten.<br />\n<br />\nEines der Rekordfahrzeuge war ein HANOMAG-Diesel Stromlinienwagen mit einer eigens dafür handgefertigten Stromlinienkarosserie. Bei mehreren Rekordversuchen wurden bis dahin ungeahnte Spitzengeschwindigkeiten erreicht. – Zu diesem Zeitpunkt war die Hanomag AG in Hannover-Linden einer der großen und zugleich erfolgreichen deutschen Fahrzeughersteller, nebst eigener Motorenfertigung.<br />\n<br />\nDer Hanomag Interessengemeinschaft und dem Hugo Junkers Museum Dessau, ist es nach 75 Jahren gelungen, zum Tag der Deutschen Einheit am 03.10.2014, dieses heute noch erhaltene Autobahnteilstück der A9, unter den legendären &quot;Bauhaus&quot;-Brücken bei Dessau - als Hommage an diese spektakuläre Rennära - komplett sperren und dieses Revival mit zahlreichen Oldtimerenthusiasten und tausenden Schaulustigen noch einmal aufleben zu lassen.<br />\n<br />\nIn der &quot;Bauhaus&quot; und &quot;Junkers&quot;-Stadt Dessau fand auf historischem Boden der Junkers Flugzeugwerften, eigens dazu die so genannte &quot;Rekordwoche-Dessau&quot; statt - eine einmalige und spektakuläre Veranstaltung rund um das geschichtsträchtige &quot;Hugo Junkers-Museum&quot;.<br />\n<br />\nNeben dem HANOMAG-Diesel-Weltrekordwagen von 1939, kam auch dieser bei uns bestens restaurierte HANOMAG Sportroadster mit seinem stolzen Besitzer dort zum Einsatz.</em></strong></p>",
+			"htmlEn": "<p><strong><em>Background: in 1939, several world records were set on a specially prepared high-speed section of the newly opened Berlin–Leipzig autobahn, today’s A9, near Dessau. In the months before the Second World War, leading German and international manufacturers used this track for testing and record attempts.<br>\n<br>\nOne record car was a Hanomag diesel with a specially hand-built streamlined body, achieving previously unexpected top speeds. At the time, Hanomag AG in Hanover-Linden was a major, successful German vehicle manufacturer with its own engine production.<br>\n<br>\nSeventy-five years later, the Hanomag interest group and Hugo Junkers Museum arranged a complete closure of this surviving A9 section beneath Dessau’s legendary Bauhaus bridges on German Unity Day, 3 October 2014. Numerous classic-car enthusiasts and thousands of spectators revived the spirit of that spectacular racing era.<br>\n<br>\nThe “Rekordwoche Dessau” took place on the historic grounds of the Junkers aircraft works in the city associated with Bauhaus and Junkers, centred on the Hugo Junkers Museum.<br>\n<br>\nAlongside the 1939 Hanomag diesel world-record car, our restored Hanomag Sport Roadster took part with its proud owner.</em></strong></p>"
 		},
 		{
 			"type": "copy",
@@ -619,7 +619,12 @@
 					"src": "./image-053.jpg",
 					"alt": "Hanomag Sportroadster, Baujahr 1936 – Nahaufnahme des Emblems auf der Karosserie.",
 					"altEn": "Hanomag Sportroadster, year 1936 – Close view of the badge on the bodywork."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-054.jpg",
 					"alt": "Hanomag Sportroadster, Baujahr 1936 – Frontansicht im Freien.",
@@ -634,7 +639,12 @@
 					"src": "./image-056.jpg",
 					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von hinten im Freien.",
 					"altEn": "Hanomag Sportroadster, year 1936 – Rear three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-057.jpg",
 					"alt": "Hanomag Sportroadster, Baujahr 1936 – Nahaufnahme eines Speichenrads mit Reifen.",
@@ -664,8 +674,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach dieser auch für uns durchaus herausfordernden, aber damit auch im Detail äußerst gelungenen Restauration, konnten wir diesen geschichtsträchtigen Sportroadster wieder feierlich seinem stolzen Besitzerehepaar übergeben.</p>",
-			"htmlEn": "<p><br>\nAfter a challenging but highly successful restoration, we ceremonially returned this historic Sport Roadster to its proud owners.</p>"
+			"html": "<p>Nach dieser auch für uns durchaus herausfordernden, aber damit auch im Detail äußerst gelungenen Restauration, konnten wir diesen geschichtsträchtigen Sportroadster wieder feierlich seinem stolzen Besitzerehepaar übergeben.</p>",
+			"htmlEn": "<p>After a challenging but highly successful restoration, we ceremonially returned this historic Sport Roadster to its proud owners.</p>"
 		},
 		{
 			"type": "copy",

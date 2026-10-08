@@ -5,11 +5,11 @@
 	"description": "Auch dieses Motorrad des Typ`s EMW R35 wurde bei uns einer kompletten Restauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/71-emw-r35-3",
 	"order": 114,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35/3",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "EMW R35/3 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "EMW R35/3",
 	"blocks": [
 		{
 			"type": "copy",
@@ -145,5 +145,5 @@
 	"titleEn": "EMW R35/3",
 	"descriptionEn": "This EMW R35 motorcycle also underwent a complete restoration at our workshop.",
 	"cardImageAltEn": "EMW R35/3",
-	"leadImageAltEn": "EMW R35/3 – vehicle record"
+	"leadImageAltEn": "EMW R35/3"
 }

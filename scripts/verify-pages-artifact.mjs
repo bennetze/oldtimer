@@ -2,7 +2,8 @@ import { lstat, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const root = join(process.cwd(), 'dist');
-const maxFiles = 1800;
+// All vehicle documentation is included; compressed images keep the artifact bounded.
+const maxFiles = 5000;
 const maxBytes = 150 * 1024 * 1024;
 let files = 0;
 let bytes = 0;

@@ -5,7 +5,7 @@
 	"description": "Auch dieses BMW 327 Sport-Kabriolett (org. Schreibweise 1938!), gebaut 1938 bei denBayerischen-Motoren-Werken in Eisenach/Thüringen wurde gemäß den Kund…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/6-bmw-327-sportcabriolet-baujahr-1938",
 	"order": 32,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sportcabriolet, Baujahr 1938",
@@ -129,7 +129,12 @@
 					"src": "./image-014.jpg",
 					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Kolben, Pleuel und Lagerschalen ausgelegt.",
 					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Piston, connecting rod and bearing shells laid out."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-015.jpg",
 					"alt": "BMW 327 Sportcabriolet, Baujahr 1938 – Motorblock mit fünf herausstehenden Kolben.",
@@ -168,6 +173,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Da wir unsere Manufaktur seit einigen Jahren konsequenterweise auch mit einer eigenen leistungsfähigen Lackiererei nochmals erweitert haben, stand auch diesem Wagen nach dem Abschluss der Karosseriearbeiten eine perfekte und originalgetreue Lackierung bevor.</p>",
+			"htmlEn": "<p>With our workshop expanded to include its own fully equipped paint shop, the completed body could receive an excellent, faithful finish in-house.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -176,11 +186,6 @@
 					"altEn": "BMW 327 Sport Cabriolet, year 1938 – Side profile outdoors."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Da wir unsere Manufaktur seit einigen Jahren konsequenterweise auch mit einer eigenen leistungsfähigen Lackiererei nochmals erweitert haben, stand auch diesem Wagen nach dem Abschluss der Karosseriearbeiten eine perfekte und originalgetreue Lackierung bevor.</p>",
-			"htmlEn": "<p>With our workshop expanded to include its own fully equipped paint shop, the completed body could receive an excellent, faithful finish in-house.</p>"
 		},
 		{
 			"type": "gallery",

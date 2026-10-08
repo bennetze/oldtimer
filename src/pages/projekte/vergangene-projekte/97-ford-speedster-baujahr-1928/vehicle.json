@@ -5,7 +5,7 @@
 	"description": "Gemäß einer reinen Designzeichnung wurde dieser Sportwagen in mühevoller Handarbeit komplett neu angefertigt und die bestehende Technik mit dem original…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/97-ford-speedster-baujahr-1928",
 	"order": 36,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1928",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "FORD Speedster, Baujahr 1928",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nHier ein absolutes UNIKAT - ein</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nA unique one-off:</p>"
+			"html": "<p>Hier ein absolutes UNIKAT - ein</p>",
+			"htmlEn": "<p>A unique one-off:</p>"
 		},
 		{
 			"type": "copy",
@@ -64,7 +64,12 @@
 					"src": "./image-005.jpg",
 					"alt": "FORD Speedster, Baujahr 1928 – Nahaufnahme genieteter Karosseriebleche.",
 					"altEn": "FORD Speedster, year 1928 – Close view of riveted body panels."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-006.jpg",
 					"alt": "FORD Speedster, Baujahr 1928 – Rotes Speichenrad mit verchromter Radkappe.",
@@ -174,7 +179,12 @@
 					"src": "./image-019.jpg",
 					"alt": "FORD Speedster, Baujahr 1928 – Seitenansicht im Freien.",
 					"altEn": "FORD Speedster, year 1928 – Side profile outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-020.jpg",
 					"alt": "FORD Speedster, Baujahr 1928 – Front mit rotem Kühlerrahmen und seitlichen Lüftungsschlitzen.",
@@ -199,8 +209,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDas Fahrzeug bildet nach der formvollendeten Fertigstellung ein einzigartiges Unikat und ist nach entsprechenden Sondergutachten voll für den Straßenverkehr zugelassen.</p>",
-			"htmlEn": "<p><br>\nThe finished car is a unique one-off and, following the necessary special assessments, is fully approved for road use.</p>"
+			"html": "<p>Das Fahrzeug bildet nach der formvollendeten Fertigstellung ein einzigartiges Unikat und ist nach entsprechenden Sondergutachten voll für den Straßenverkehr zugelassen.</p>",
+			"htmlEn": "<p>The finished car is a unique one-off and, following the necessary special assessments, is fully approved for road use.</p>"
 		}
 	],
 	"titleEn": "FORD Speedster, year 1928",

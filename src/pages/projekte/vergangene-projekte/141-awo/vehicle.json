@@ -5,7 +5,7 @@
 	"description": "\"SIMSON\" AWO 425 Sport, 1960",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/141-awo",
 	"order": 132,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "\"SIMSON\" AWO 425 Sport, 1960",
 	"leadImage": "./image-001.jpg",
@@ -28,7 +28,12 @@
 					"src": "./image-003.jpg",
 					"alt": "\"SIMSON\" AWO 425 Sport, 1960 – Silbernes Motorrad schräg von vorn in der Werkstatt.",
 					"altEn": "\"SIMSON\" AWO 425 Sport, 1960 – Silver motorcycle from the front corner in the workshop."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-004.jpg",
 					"alt": "\"SIMSON\" AWO 425 Sport, 1960 – Motorrad mit offenem Rahmen und freiliegendem Motor.",
@@ -43,7 +48,12 @@
 					"src": "./image-006.jpg",
 					"alt": "\"SIMSON\" AWO 425 Sport, 1960 – Zwei ausgebaute Hebelbauteile auf Stoff.",
 					"altEn": "\"SIMSON\" AWO 425 Sport, 1960 – Two removed lever components on fabric."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-007.jpg",
 					"alt": "\"SIMSON\" AWO 425 Sport, 1960 – Zylinder mit Kolben und Dichtung auf der Werkbank.",

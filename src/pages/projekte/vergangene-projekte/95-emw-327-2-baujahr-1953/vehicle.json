@@ -5,7 +5,7 @@
 	"description": "EMW 327 Sportcabriolet des Baujahres 1953 - gebaut bei den \"Eisenacher - Motoren - Werken\" in Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/95-emw-327-2-baujahr-1953",
 	"order": 45,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1953",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327 Sportcabriolet, Baujahr 1953",
@@ -26,6 +26,11 @@
 			"type": "copy",
 			"html": "<p>EMW 327 Sportcabriolet des Baujahres 1953 - gebaut bei den &quot;Eisenacher - Motoren - Werken&quot; in Thüringen.</p>",
 			"htmlEn": "<p>A 1953 EMW 327 Sport Cabriolet, built at Eisenacher Motorenwerke in Thuringia.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dieser Wagen wurde 1953 - von der damals noch recht jungen DDR - als &quot;Devisenbringer&quot; bis nach Schweden ausgeliefert und nun in unserer OLDTIMERMANUFAKTUR (unweit seines Eisenacher Entstehungsortes) sehr original und perfekt restauriert.</p>",
+			"htmlEn": "<p>In 1953, the still young East German state exported this car to Sweden to earn foreign currency. It has now been meticulously restored to original specification at Die Oldtimermanufaktur, close to its birthplace in Eisenach.</p>"
 		},
 		{
 			"type": "gallery",
@@ -79,7 +84,12 @@
 					"src": "./image-007.jpg",
 					"alt": "EMW 327 Sportcabriolet, Baujahr 1953 – Offenes Radhaus mit freiliegenden Innenblechen.",
 					"altEn": "EMW 327 Sport Cabriolet, year 1953 – Open wheel arch with inner panels exposed."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-008.jpg",
 					"alt": "EMW 327 Sportcabriolet, Baujahr 1953 – Hölzerne Querstrebe über innerem Radhaus.",
@@ -184,7 +194,12 @@
 					"src": "./image-018.jpg",
 					"alt": "EMW 327 Sportcabriolet, Baujahr 1953 – Ausgebaute Instrumentenplatte mit drei rechteckigen Anzeigen.",
 					"altEn": "EMW 327 Sport Cabriolet, year 1953 – Removed instrument panel with three rectangular gauges."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-019.jpg",
 					"alt": "EMW 327 Sportcabriolet, Baujahr 1953 – Zwei ausgebaute rechteckige Kraftstofftanks.",

@@ -5,7 +5,7 @@
 	"description": "Hier eines der kult- und kunstvollen \"Leckerbissen\" der Automobilgeschichte überhaupt. Ein BMW 507 Roadster, der bei uns eine umfangreiche Vollrestaurat…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/170-bmw-507-roadster",
 	"order": 1,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 507 Roadster, Baujahr 1957",
@@ -69,7 +69,12 @@
 					"src": "./image-003.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Silberner Roadster schräg von hinten auf der Hebebühne.",
 					"altEn": "BMW 507 Roadster, year 1957 – Silver roadster viewed from the rear corner on the workshop lift."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-004.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Offene Tür mit freiliegendem Innenblech neben rotem Innenraum und weißem Lenkrad.",
@@ -139,7 +144,12 @@
 					"src": "./image-012.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Metallblanke Karosserie schräg von hinten auf einem Rollgestell im Freien.",
 					"altEn": "BMW 507 Roadster, year 1957 – Bare-metal body viewed from the rear corner on a wheeled frame outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-013.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Metallblanke Karosserie schräg von vorn in der Werkstatt.",
@@ -149,7 +159,12 @@
 					"src": "./image-014.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Nahaufnahme der metallblanken Tür und seitlichen Lüftungsöffnung.",
 					"altEn": "BMW 507 Roadster, year 1957 – Close view of the bare-metal door and side vent opening."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-015.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Metallblankes Fahrzeugheck in der Lackierkabine.",
@@ -269,8 +284,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nUnzählige Zier- und Anbauteile wurden ebenso instandgesetzt und anschließend galvanisch neu verchromt.</p>",
-			"htmlEn": "<p><br>\n<br>\nCountless trim pieces and fittings were repaired and then electroplated with new chrome.</p>"
+			"html": "<p>Unzählige Zier- und Anbauteile wurden ebenso instandgesetzt und anschließend galvanisch neu verchromt.</p>",
+			"htmlEn": "<p>Countless trim pieces and fittings were repaired and then electroplated with new chrome.</p>"
 		},
 		{
 			"type": "gallery",
@@ -284,8 +299,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nNach dieser sehr detaillierten und originalgetreuen Vollrestauration wurde auch dieser BMW unsererseits umfangreichen Tests unterzogen, bevor er anschließend seinem glücklichen Sammler- und Besitzerehepaar ausgeliefert werden konnte.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nAfter this detailed restoration to original specification, we thoroughly tested the BMW before delivering it to its delighted owners, a couple of collectors.</p>"
+			"html": "<p>Nach dieser sehr detaillierten und originalgetreuen Vollrestauration wurde auch dieser BMW unsererseits umfangreichen Tests unterzogen, bevor er anschließend seinem glücklichen Sammler- und Besitzerehepaar ausgeliefert werden konnte.</p>",
+			"htmlEn": "<p>After this detailed restoration to original specification, we thoroughly tested the BMW before delivering it to its delighted owners, a couple of collectors.</p>"
 		},
 		{
 			"type": "gallery",
@@ -324,8 +339,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nIn jeder Ansicht und Blickwinkel ein detailverliebter TRAUM eines der ganz wenigen BMW 507 Roadster aus der raren 1. Serie.</p>",
-			"htmlEn": "<p><br>\nA dream from every angle, with exquisite attention to detail: one of the very few BMW 507 Roadsters from the rare first series.</p>"
+			"html": "<p>In jeder Ansicht und Blickwinkel ein detailverliebter TRAUM eines der ganz wenigen BMW 507 Roadster aus der raren 1. Serie.</p>",
+			"htmlEn": "<p>A dream from every angle, with exquisite attention to detail: one of the very few BMW 507 Roadsters from the rare first series.</p>"
 		},
 		{
 			"type": "gallery",
@@ -364,7 +379,12 @@
 					"src": "./image-038.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Blauer Roadster neben einer silbernen Karosserie mit offenem Motorraum.",
 					"altEn": "BMW 507 Roadster, year 1957 – Blue roadster beside a silver body with its engine compartment exposed."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-039.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Blauer und silberner Roadster schräg von hinten im Hof.",
@@ -428,6 +448,11 @@
 			"htmlEn": "<p>Following the successful restoration, we were invited to present the car to a wider audience for the first time at the ClassicGala in Schwetzingen.</p>"
 		},
 		{
+			"type": "copy",
+			"html": "<p>Unter der einzigartigen Kulisse des Barockschlosses von Schwetzingen wurden wir von einer namhaften Fachjury anlässlich des dortigen &quot;European Concours de Elegance&quot; für das bestrestaurierte Fahrzeug seiner Klasse ausgezeichnet und mit einem tollen Pokal bedacht.</p>",
+			"htmlEn": "<p>Against the unique backdrop of Schwetzingen’s Baroque palace, a distinguished expert jury at the European Concours de Elegance awarded us a trophy for the best-restored vehicle in its class.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -441,11 +466,6 @@
 					"altEn": "BMW 507 Roadster, year 1957 – Trophy and yellow rosette in front of a display cabinet."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Unter der einzigartigen Kulisse des Barockschlosses von Schwetzingen wurden wir von einer namhaften Fachjury anlässlich des dortigen &quot;European Concours de Elegance&quot; für das bestrestaurierte Fahrzeug seiner Klasse ausgezeichnet und mit einem tollen Pokal bedacht.</p>",
-			"htmlEn": "<p>Against the unique backdrop of Schwetzingen’s Baroque palace, a distinguished expert jury at the European Concours de Elegance awarded us a trophy for the best-restored vehicle in its class.</p>"
 		},
 		{
 			"type": "copy",

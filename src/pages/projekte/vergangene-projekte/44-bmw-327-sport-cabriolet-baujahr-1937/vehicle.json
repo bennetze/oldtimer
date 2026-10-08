@@ -5,22 +5,17 @@
 	"description": "BMW 327, Baujahr 1937 - und damit einer der Ersten dieser zeitlos schönen Sportcabriolets, die bei den Bayerischen - Motoren - Werken in Eisenach/Thürin…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/44-bmw-327-sport-cabriolet-baujahr-1937",
 	"order": 90,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1937",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1937",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1937 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1937",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>BMW 327, Baujahr 1937 - und damit einer der Ersten dieser zeitlos schönen Sportcabriolets, die bei den Bayerischen - Motoren - Werken in Eisenach/Thüringen gebaut wurden.</p>",
 			"htmlEn": "<p>A 1937 BMW 327, among the earliest of these timelessly beautiful Sport Cabriolets built in Eisenach, Thuringia.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Äußerlich zwar ganz hübsch anzusehen - und im Laufe der vergangenen Jahrzehnte wohl auch schon mehrfach &quot;restauriert&quot; bzw. eher unfachmännisch überarbeitet...<br />\n...wurde dieser Wagen gemäß den Kundenwünschen in unserer Manufaktur fachgerecht restauriert.<br />\nDabei musste vor allem die Karosserie mit Ihrem tragenden Holzskelett umfangreich überarbeitet...</p>",
-			"htmlEn": "<p>Attractive from the outside, but apparently “restored” or rather poorly refurbished several times over the decades…<br>\n…the car received a professional restoration at our workshop to the client’s wishes.<br>\nIn particular, the body and its load-bearing timber framework required extensive work…</p>"
 		},
 		{
 			"type": "gallery",
@@ -53,6 +48,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Äußerlich zwar ganz hübsch anzusehen - und im Laufe der vergangenen Jahrzehnte wohl auch schon mehrfach &quot;restauriert&quot; bzw. eher unfachmännisch überarbeitet...<br />\n...wurde dieser Wagen gemäß den Kundenwünschen in unserer Manufaktur fachgerecht restauriert.<br />\nDabei musste vor allem die Karosserie mit Ihrem tragenden Holzskelett umfangreich überarbeitet...</p>",
+			"htmlEn": "<p>Attractive from the outside, but apparently “restored” or rather poorly refurbished several times over the decades…<br>\n…the car received a professional restoration at our workshop to the client’s wishes.<br>\nIn particular, the body and its load-bearing timber framework required extensive work…</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -64,8 +64,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n...und viele verlorene Originalteile, wie die typischen 327er &quot;MELAS&quot;-Winker u.dgl. aufwendig neu angefertigt und in die Karosserie integriert werden.</p>",
-			"htmlEn": "<p><br>\n…and many lost original parts, including the typical 327 Melas semaphore indicators, had to be painstakingly reproduced and integrated into the body.</p>"
+			"html": "<p>...und viele verlorene Originalteile, wie die typischen 327er &quot;MELAS&quot;-Winker u.dgl. aufwendig neu angefertigt und in die Karosserie integriert werden.</p>",
+			"htmlEn": "<p>…and many lost original parts, including the typical 327 Melas semaphore indicators, had to be painstakingly reproduced and integrated into the body.</p>"
 		},
 		{
 			"type": "gallery",
@@ -79,8 +79,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch der gesamte Zierrat der prägnanten Frontmaske wurde durch uns komplett nachgebaut und viele weitere Details originalgetreu restauriert.</p>",
-			"htmlEn": "<p><br>\nWe also recreated all the distinctive front trim and faithfully restored many other details.</p>"
+			"html": "<p>Auch der gesamte Zierrat der prägnanten Frontmaske wurde durch uns komplett nachgebaut und viele weitere Details originalgetreu restauriert.</p>",
+			"htmlEn": "<p>We also recreated all the distinctive front trim and faithfully restored many other details.</p>"
 		},
 		{
 			"type": "copy",
@@ -231,5 +231,5 @@
 	"titleEn": "BMW 327 Sport - Cabriolet, year 1937",
 	"descriptionEn": "A 1937 BMW 327, among the earliest of these timelessly beautiful Sport Cabriolets built in Eisenach, Thuringia.",
 	"cardImageAltEn": "BMW 327 Sport - Cabriolet, year 1937",
-	"leadImageAltEn": "BMW 327 Sport - Cabriolet, year 1937 – vehicle record"
+	"leadImageAltEn": "BMW 327 Sport - Cabriolet, year 1937"
 }

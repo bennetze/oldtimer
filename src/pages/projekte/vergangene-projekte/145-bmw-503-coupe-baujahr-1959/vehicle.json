@@ -5,7 +5,7 @@
 	"description": "BMW 503 Coupe (Serie 2)\nMotor: V8, 3,2 Liter Hubraum,\n140PS Leistung,\n195 km/h Spitzengeschwindigkeit.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/145-bmw-503-coupe-baujahr-1959",
 	"order": 39,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Coupe, Baujahr 1959",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nBMW 503 Coupe (Serie 2)<br />\nMotor: V8, 3,2 Liter Hubraum,<br />\n140PS Leistung,<br />\n195 km/h Spitzengeschwindigkeit.</p>",
-			"htmlEn": "<p><br>\nBMW 503 Coupé, Series 2.<br>\nEngine: V8, 3.2 litres,<br>\n140 PS,<br>\ntop speed 195 km/h.</p>"
+			"html": "<p>BMW 503 Coupe (Serie 2)<br />\nMotor: V8, 3,2 Liter Hubraum,<br />\n140PS Leistung,<br />\n195 km/h Spitzengeschwindigkeit.</p>",
+			"htmlEn": "<p>BMW 503 Coupé, Series 2.<br>\nEngine: V8, 3.2 litres,<br>\n140 PS,<br>\ntop speed 195 km/h.</p>"
 		},
 		{
 			"type": "gallery",
@@ -84,8 +84,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Wagen wurde bei uns im Kundenauftrag umfangreich und originalgetreu restauriert. <br />\n<br />\n<br /></p>",
-			"htmlEn": "<p><br>\nWe extensively restored the car to original specification for its owner. <br>\n<br>\n<br></p>"
+			"html": "<p>Der Wagen wurde bei uns im Kundenauftrag umfangreich und originalgetreu restauriert. <br />\n<br />\n<br /></p>",
+			"htmlEn": "<p>We extensively restored the car to original specification for its owner. <br>\n<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",

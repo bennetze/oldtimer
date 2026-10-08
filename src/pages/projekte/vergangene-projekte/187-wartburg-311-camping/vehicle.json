@@ -5,7 +5,7 @@
 	"description": "Aufwändige Neuanfertigung der sehr frühen Zierleistenausführung in Messing, zum anschließenden verchromen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/187-wartburg-311-camping",
 	"order": 99,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 311 Camping, Baujahr 1958",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nWartburg 311 Camping, Baujahr 1958</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\nWartburg 311 Camping, year 1958</p>"
+			"html": "<p>Wartburg 311 Camping, Baujahr 1958</p>",
+			"htmlEn": "<p>Wartburg 311 Camping, year 1958</p>"
 		},
 		{
 			"type": "gallery",
@@ -44,8 +44,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDen Wagen bekamen wir in unvollständigem und teilrestauriertem Zustand.</p>",
-			"htmlEn": "<p><br>\nThe car arrived incomplete and partly restored.</p>"
+			"html": "<p>Den Wagen bekamen wir in unvollständigem und teilrestauriertem Zustand.</p>",
+			"htmlEn": "<p>The car arrived incomplete and partly restored.</p>"
 		},
 		{
 			"type": "gallery",
@@ -64,8 +64,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAufwändige Neuanfertigung der sehr frühen Zierleistenausführung in Messing, zum anschließenden verchromen.</p>",
-			"htmlEn": "<p><br>\nPainstaking reproduction of the early trim profile in brass, ready for chrome plating.</p>"
+			"html": "<p>Aufwändige Neuanfertigung der sehr frühen Zierleistenausführung in Messing, zum anschließenden verchromen.</p>",
+			"htmlEn": "<p>Painstaking reproduction of the early trim profile in brass, ready for chrome plating.</p>"
 		},
 		{
 			"type": "gallery",

@@ -5,7 +5,7 @@
 	"description": "Mercedes – Benz 500 K, Cabriolet B, Baujahr 1935 mit “Sindelfinger” Sonderkarosserie in B – Ausführung (Vier – Fenster Cabriolet).\nBei diesem Wagen hand…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/14-mercedes-benz-500-k-cabriolet-b-baujahr-1935",
 	"order": 55,
-	"dateModified": "2026-08-06",
+	"dateModified": "2026-10-07",
 	"year": "1935",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935",
@@ -13,9 +13,29 @@
 	"leadImageAlt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Fahrzeugdokumentation",
 	"blocks": [
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Fertiges Cabriolet vor dem Gebäude",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Finished convertible outside the building"
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p>Mercedes – Benz 500 K, Cabriolet B, Baujahr 1935 mit “Sindelfinger” Sonderkarosserie in B – Ausführung (Vier – Fenster Cabriolet).<br /><br />\nBei diesem Wagen handelt es sich um ein seltenes Objekt aus der rühmlichen Ära der schweren Kompressor – Vorkriegs – Mercedes.</p>",
 			"htmlEn": "<p>A 1935 Mercedes-Benz 500 K Cabriolet B with special Sindelfingen coachwork in the four-window B configuration.<br><br>\nA rare example from the celebrated era of the large supercharged pre-war Mercedes cars.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Restaurierter Motor mit Anbauteilen",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Restored engine with ancillary components"
+				}
+			]
 		},
 		{
 			"type": "copy",
@@ -38,9 +58,29 @@
 			"htmlEn": "<p>The car underwent a fundamental, complete restoration at our workshop.</p>"
 		},
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Karosserie mit geöffneten Türen in der Werkstatt",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Body with open doors in the workshop"
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p>Viele Karosserie- und Fehlteile mussten dabei sehr aufwendig neu angefertigt werden.</p>",
 			"htmlEn": "<p>Many body panels and missing parts had to be painstakingly fabricated anew.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-004.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Fahrzeug vor der Restaurierung",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Vehicle before restoration"
+				}
+			]
 		},
 		{
 			"type": "copy",
@@ -48,9 +88,29 @@
 			"htmlEn": "<p>We also reproduced much of the trim, fittings and mechanical hardware from historic references.</p>"
 		},
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-005.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Fahrgestell mit Motor und Kühler",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Chassis with engine and radiator"
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p>So wurde unter anderem der sogenannte Röhrchenkühler in alter Handwerkstradition komplett neu gebaut.</p>",
 			"htmlEn": "<p>This included completely rebuilding the tubular radiator using traditional craftsmanship.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-006.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Ausgebauter Motor auf dem Werkstattboden",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Removed engine on the workshop floor"
+				}
+			]
 		},
 		{
 			"type": "copy",
@@ -63,9 +123,59 @@
 			"htmlEn": "<p>According to historical documents in the manufacturer’s archive, only three Mercedes-Benz 500 K cars were built with this particular coachwork.\n<br><br>\nExtensive research indicates that this is the sole surviving car with this special Sindelfingen body.</p>"
 		},
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-007.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Fertiges Cabriolet von der Seite",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Finished convertible viewed from the side"
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p>Die gesamte Inneneinrichtung konnte nur nach alten historischen Unterlagen neu entstehen.<br />\n\nSo wurden auch die sogenannten Liegesitze komplett und originalgetreu neu gebaut.<br /><br />\nDie Edelholzapplikationen entstanden entsprechend den Kundenwünschen aus einem massiven japanischen Tulpenbaum - abgesetzt mit Perlmutteinlagen neben der komplett neu entstandenen Instrumentierung und der Echtleder-Innenausstattung.</p>",
 			"htmlEn": "<p>The complete interior could only be recreated from historic documentation.<br>\n\nThe reclining seats were also entirely and faithfully rebuilt.<br><br>\nAt the client’s request, the fine wood fittings were made from solid Japanese tulip tree timber with mother-of-pearl inlays, complementing the newly recreated instruments and genuine leather upholstery.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-008.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Roter Innenraum und Holzarmaturenbrett",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Red interior and wooden dashboard"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-009.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Lenkrad und Instrumente im Innenraum",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Steering wheel and instruments in the interior"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-010.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Kühlerfigur und Kühlergrill",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Radiator mascot and grille"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-011.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Speichenrad und vorderer Kotflügel",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Wire wheel and front wing"
+				}
+			]
 		},
 		{
 			"type": "copy",
@@ -78,6 +188,26 @@
 			"htmlEn": "<p>A restoration lasting several years, demanding the highest craftsmanship across every trade and our entire dedicated team, is drawing to a close.</p>"
 		},
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-012.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Fertiges Cabriolet von schräg vorn",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Finished convertible from the front quarter"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-013.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Fertiges Cabriolet von schräg hinten",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Finished convertible from the rear quarter"
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p>Das Endergebnis stellt ohne Frage eine Augenweide dar.Eine äußerst kostbare Rarität und ein historischer Meilenstein in der Entwicklungsgeschichte des Automobilbaus schlechthin, konnte kürzlich seinem überglücklichen Besitzerpaar\nfeierlich überreicht werden.</p>",
 			"htmlEn": "<p>The result is unquestionably beautiful. This precious rarity, a milestone in automotive history, was recently handed over to its overjoyed owners.</p>"
@@ -86,6 +216,16 @@
 			"type": "copy",
 			"html": "<p>Nach diesem perfekten Neuaufbau in unserem Hause - spielte das Fahrzeug - während historischer Filmaufnahmen - bereits eine einzigartige Filmrolle.</p>",
 			"htmlEn": "<p>Following its complete restoration at our workshop, the car took on a special role in a historical film production.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-014.jpg",
+					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Fertiges Cabriolet vor dem Gebäude",
+					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Finished convertible outside the building"
+				}
+			]
 		},
 		{
 			"type": "copy",

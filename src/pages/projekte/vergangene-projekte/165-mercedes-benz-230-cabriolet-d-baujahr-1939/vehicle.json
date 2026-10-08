@@ -5,7 +5,7 @@
 	"description": "Komplette Neupolsterung in feinstem grünen Echtleder - harmonierend zu den beiden Außenfarben.\nNeuer passgerecht angefertigter Federkernunterbau für die…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/165-mercedes-benz-230-cabriolet-d-baujahr-1939",
 	"order": 18,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939",
@@ -24,8 +24,13 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\nMercedes-Benz Typ 230, 4-türiges Cabriolet &quot;D&quot;</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\nMercedes-Benz 230, four-door Cabriolet D.</p>"
+			"html": "<p>Mercedes-Benz Typ 230, 4-türiges Cabriolet &quot;D&quot;</p>",
+			"htmlEn": "<p>Mercedes-Benz 230, four-door Cabriolet D.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Bei diesem Typ 230 (W143) des Baujahres 1939 handelt es sich um einen Sonderaufbau auf verlängertem Fahrgestell (3050mm), der so nur in wenigen Stückzahlen im damaligen Mercedes-Benz Werk in Mannheim - hier in der äußerst seltenen und luxuriösen</p>",
+			"htmlEn": "<p>This 1939 Type 230 (W143) has a special body on an extended 3,050 mm chassis, built in small numbers at the former Mercedes-Benz factory in Mannheim — here in the exceptionally rare and luxurious</p>"
 		},
 		{
 			"type": "gallery",
@@ -46,6 +51,16 @@
 					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Rusty convertible with open door from the front corner."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>4-türigen Cabrioletversion (Cabriolet D) entstand.</p>",
+			"htmlEn": "<p>four-door convertible version, the Cabriolet D.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Es erfolgte ein kompletter Neuaufbau einschl. der statisch wichtigen Holzskelett-Stellmacherarbeiten, Karosseriearbeiten, 2-Farb-Lackierung gemäß Kundenwunsch, kpl. Technik, Chrom, Elektrik, Polsterung u.dgl.</p>",
+			"htmlEn": "<p>It underwent a complete rebuild, including the structurally important timber frame, bodywork, the customer's chosen two-tone paint finish, all mechanical components, chrome, electrics, upholstery and other fittings.</p>"
 		},
 		{
 			"type": "gallery",
@@ -84,8 +99,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nHier die bereits fertig gestellte und lackierte Karosserie.</p>",
-			"htmlEn": "<p><br>\n<br>\nThe completed and painted body.</p>"
+			"html": "<p>Hier die bereits fertig gestellte und lackierte Karosserie.</p>",
+			"htmlEn": "<p>The completed and painted body.</p>"
 		},
 		{
 			"type": "gallery",
@@ -104,8 +119,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nDer Ursprungsmotor, zwar komplett aber mit erheblichen Vorschäden.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\nThe original engine, complete but with substantial existing damage.</p>"
+			"html": "<p>Der Ursprungsmotor, zwar komplett aber mit erheblichen Vorschäden.</p>",
+			"htmlEn": "<p>The original engine, complete but with substantial existing damage.</p>"
 		},
 		{
 			"type": "gallery",
@@ -138,19 +153,9 @@
 			]
 		},
 		{
-			"type": "gallery",
-			"images": [
-				{
-					"src": "./image-016.jpg",
-					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Motorbauteile, Kolben und Wellen auf einem Tisch.",
-					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Engine components, pistons and shafts on a table."
-				}
-			]
-		},
-		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nDaher erfolgte ein kompletter Motorneuaufbau bis ins kleinste Detail.</p>",
-			"htmlEn": "<p><br>\n<br>\nA complete engine rebuild down to the smallest detail was therefore required.</p>"
+			"html": "<p>Daher erfolgte ein kompletter Motorneuaufbau bis ins kleinste Detail.</p>",
+			"htmlEn": "<p>A complete engine rebuild down to the smallest detail was therefore required.</p>"
 		},
 		{
 			"type": "copy",
@@ -171,6 +176,16 @@
 			"type": "gallery",
 			"images": [
 				{
+					"src": "./image-016.jpg",
+					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Motorbauteile, Kolben und Wellen auf einem Tisch.",
+					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Engine components, pistons and shafts on a table."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
 					"src": "./image-017.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Kurbelwelle und Pleuelstangen nebeneinander.",
 					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Crankshaft and connecting rods side by side."
@@ -179,7 +194,12 @@
 					"src": "./image-018.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Ausgebauter Zylinderkopf mit sichtbaren Ventilen.",
 					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Removed cylinder head with valves visible."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-019.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Ausgebauter Motor mit sichtbaren Anbauteilen.",
@@ -189,7 +209,12 @@
 					"src": "./image-020.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Motor auf der Werkbank mit Verteiler und Zündkabeln.",
 					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Engine on workbench with distributor and ignition leads."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-021.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Ausgebauter Vergaser auf braunem Stoff.",
@@ -204,7 +229,12 @@
 					"src": "./image-023.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Offener Motorraum mit abgedecktem grünem Kotflügel.",
 					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Open engine bay with green wing covered."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-024.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Blick in den offenen Motorraum auf Motor und Leitungen.",
@@ -279,7 +309,12 @@
 					"src": "./image-032.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Abgenommener Verdeckrahmen mit hellem Bezug.",
 					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Removed roof frame with light fabric."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-033.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Seitenansicht aus erhöhter Perspektive.",

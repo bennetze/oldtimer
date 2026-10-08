@@ -5,7 +5,7 @@
 	"description": "Hier ein weiteres \"Fundstück\" des Typs WARTBURG 313 SPORT, dass in unserer Manufaktur einem völligen Neuaufbau unterzogen wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/121-wartburg-313-sport-baujahr-1957",
 	"order": 30,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 Sport, Baujahr 1957",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier ein weiteres &quot;Fundstück&quot; des Typs WARTBURG 313 SPORT, dass in unserer Manufaktur einem völligen Neuaufbau unterzogen wurde.</p>",
-			"htmlEn": "<p><br>\nAnother Wartburg 313 Sport discovery that underwent a complete rebuild at our workshop.</p>"
+			"html": "<p>Hier ein weiteres &quot;Fundstück&quot; des Typs WARTBURG 313 SPORT, dass in unserer Manufaktur einem völligen Neuaufbau unterzogen wurde.</p>",
+			"htmlEn": "<p>Another Wartburg 313 Sport discovery that underwent a complete rebuild at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -44,7 +44,12 @@
 					"src": "./image-004.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1957 – Abgenommenes Bodenblech mit Streben darunter.",
 					"altEn": "Wartburg 313 Sport, year 1957 – Removed floor panel with braces beneath it."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1957 – Blanker Innenraumboden mit sichtbaren Schweißnähten.",
@@ -114,8 +119,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch wurde u.a. eine neue Verdeckkonstruktion hergestellt und eingepasst.</p>",
-			"htmlEn": "<p><br>\nWe also manufactured and fitted a new convertible hood structure.</p>"
+			"html": "<p>Auch wurde u.a. eine neue Verdeckkonstruktion hergestellt und eingepasst.</p>",
+			"htmlEn": "<p>We also manufactured and fitted a new convertible hood structure.</p>"
 		},
 		{
 			"type": "gallery",
@@ -134,8 +139,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nHiernach konnte der Wagen einer hochwertigen Neulackierung unterzogen werden, während parallel dazu bereits sämtliche technischen Komponenten überarbeitet wurden.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nThe car could then receive a high-quality respray, while all mechanical components were already being refurbished in parallel.</p>"
+			"html": "<p>Hiernach konnte der Wagen einer hochwertigen Neulackierung unterzogen werden, während parallel dazu bereits sämtliche technischen Komponenten überarbeitet wurden.</p>",
+			"htmlEn": "<p>The car could then receive a high-quality respray, while all mechanical components were already being refurbished in parallel.</p>"
 		}
 	],
 	"titleEn": "Wartburg 313 Sport, year 1957",

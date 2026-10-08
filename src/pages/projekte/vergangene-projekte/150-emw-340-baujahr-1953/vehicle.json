@@ -5,7 +5,7 @@
 	"description": "Auch dieser BMW 340 im unvollständigen \"Fundzustand\" wurde im Auftrag seines Besitzers und langjährigen geschätzten Kunden, völlig neu durch uns aufgebaut.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/150-emw-340-baujahr-1953",
 	"order": 16,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1952",
@@ -24,7 +24,12 @@
 					"src": "./image-002.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Karosserie mit offenen Türöffnungen seitlich.",
 					"altEn": "BMW 340, year 1952 – Body with open door apertures in side profile."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-003.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Offene Türöffnung mit roten Bodenblechen und Verstrebungen.",
@@ -79,8 +84,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nSehr aufwändige Karosseriearbeiten rundum und originalgetreuer Neubau des begehrten Faltschiebedachs.</p>",
-			"htmlEn": "<p><br>\nExtensive bodywork throughout and faithful recreation of the sought-after folding sliding roof.</p>"
+			"html": "<p>Sehr aufwändige Karosseriearbeiten rundum und originalgetreuer Neubau des begehrten Faltschiebedachs.</p>",
+			"htmlEn": "<p>Extensive bodywork throughout and faithful recreation of the sought-after folding sliding roof.</p>"
 		},
 		{
 			"type": "gallery",
@@ -159,8 +164,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach den originalgetreuen Lackierarbeiten wurde der Wagen mit den ebenfalls revidierten technischen Komponenten wieder komplettiert, auch ein neuer Kabelbaum angefertigt und installiert und die Polsterung, nebst dem raren Faltschiebedach komplett erneuert.</p>",
-			"htmlEn": "<p><br>\nAfter authentic paintwork, the car was reassembled with its refurbished mechanical components. We made and installed a new wiring loom and completely renewed the upholstery and rare folding sliding roof.</p>"
+			"html": "<p>Nach den originalgetreuen Lackierarbeiten wurde der Wagen mit den ebenfalls revidierten technischen Komponenten wieder komplettiert, auch ein neuer Kabelbaum angefertigt und installiert und die Polsterung, nebst dem raren Faltschiebedach komplett erneuert.</p>",
+			"htmlEn": "<p>After authentic paintwork, the car was reassembled with its refurbished mechanical components. We made and installed a new wiring loom and completely renewed the upholstery and rare folding sliding roof.</p>"
 		},
 		{
 			"type": "gallery",
@@ -186,6 +191,171 @@
 			"type": "copy",
 			"html": "<p>Auch Achsen, Federn, Bremsen, Stoßdämpfer, Lenkung, usw. wurden in unserer Technikabteilung umfangreich neu aufgebaut.</p>",
 			"htmlEn": "<p>Our mechanical department also extensively rebuilt the axles, springs, brakes, shock absorbers, steering and other components.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Restaurierter Motor in der Werkstatt",
+					"altEn": "BMW 340, year 1952 – Restored engine in the workshop"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Grün lackierte Karosserie während der Montage",
+					"altEn": "BMW 340, year 1952 – Green painted body during assembly"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Chromleisten des Kühlergrills",
+					"altEn": "BMW 340, year 1952 – Chrome radiator grille strips"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-004.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Instrumente mit Holzrahmen",
+					"altEn": "BMW 340, year 1952 – Instruments in a wooden surround"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>...völlig neuer Chrom aller Zier- und Anbauteile.</p>",
+			"htmlEn": "<p>…entirely renewed chrome on all trim pieces and fittings.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>...überholte Instrumentierung.</p>",
+			"htmlEn": "<p>…overhauled instruments.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-005.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Fertige grüne Limousine vor der Werkstatt",
+					"altEn": "BMW 340, year 1952 – Finished green saloon outside the workshop"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-006.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Fertige Limousine von schräg hinten",
+					"altEn": "BMW 340, year 1952 – Finished saloon from the rear quarter"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-007.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Fertige Limousine im Grünen",
+					"altEn": "BMW 340, year 1952 – Finished saloon in a green setting"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-008.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Sitzpolster während der Aufarbeitung",
+					"altEn": "BMW 340, year 1952 – Seat upholstery during refurbishment"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-009.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Neu bezogener Vordersitz und Türverkleidung",
+					"altEn": "BMW 340, year 1952 – Newly upholstered front seat and door trim"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-010.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Neu bezogene Rückbank",
+					"altEn": "BMW 340, year 1952 – Newly upholstered rear seat"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-011.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Innenraum mit Lenkrad und Armaturenbrett",
+					"altEn": "BMW 340, year 1952 – Interior with steering wheel and dashboard"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-012.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Armaturenbrett mit Instrumenten",
+					"altEn": "BMW 340, year 1952 – Dashboard with instruments"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Das Ergebnis ist mal wieder nicht nur optisch ein Leckerbissen, sondern auch technisch befindet sich der Wagen wieder auf originalem und bestens restauriertem Stand - zur Freude seiner Besitzer...</p>",
+			"htmlEn": "<p>The result is once again a delight to look at, with the car's mechanical components also restored to excellent, original condition — much to its owners' pleasure…</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-013.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Front der fertigen Limousine",
+					"altEn": "BMW 340, year 1952 – Front of the finished saloon"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-014.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Motorraum der fertigen Limousine",
+					"altEn": "BMW 340, year 1952 – Engine bay of the finished saloon"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-015.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Kühlergrill der fertigen Limousine",
+					"altEn": "BMW 340, year 1952 – Radiator grille of the finished saloon"
+				}
+			]
 		}
 	],
 	"titleEn": "BMW 340, year 1952",

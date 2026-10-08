@@ -5,7 +5,7 @@
 	"description": "Dieser Ihle Sport 800 wurde uns in total zerlegtem Fundzustand mit teils großen Karosserieschäden angeliefert und nachfolgend im Kundenauftrag komplett…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/134-bmw-dixi-ihle-800-baujahr-1936",
 	"order": 53,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW Dixi Ihle 800, Baujahr 1936",
@@ -79,7 +79,12 @@
 					"src": "./image-009.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Fahrgestell mit Rädern und freiliegenden Antriebsteilen.",
 					"altEn": "BMW Dixi Ihle 800, year 1936 – Chassis with wheels and exposed drivetrain components."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-010.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Hell beschichtete Karosseriehälfte auf einem Gestell.",
@@ -94,7 +99,12 @@
 					"src": "./image-012.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Abgeklebte Karosserie schräg von hinten in der Lackierkabine.",
 					"altEn": "BMW Dixi Ihle 800, year 1936 – Masked body from the rear corner in the spray booth."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-013.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Fahrgestell mit Rädern und freiliegenden Antriebsteilen.",
@@ -134,7 +144,12 @@
 					"src": "./image-017.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Rote Teppichstücke mit dunklen Rändern.",
 					"altEn": "BMW Dixi Ihle 800, year 1936 – Red carpet pieces with dark edges."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-018.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Weißer Roadster mit freiliegendem Fahrgestell im Hof.",
@@ -209,7 +224,12 @@
 					"src": "./image-028.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Blick von schräg oben auf Fahrzeugfront und Motorhaube.",
 					"altEn": "BMW Dixi Ihle 800, year 1936 – Elevated view of the front bodywork and bonnet."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-029.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Nahaufnahme eines Speichenrads mit Reifen.",

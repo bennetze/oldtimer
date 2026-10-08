@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import { readVehicleTool } from '../scripts/lib/vehicle-tool.mjs';
-import { readFile } from 'node:fs/promises';
+import { readFile, glob } from 'node:fs/promises';
 import { validateVehicleRecord, validVehicleDate } from '../src/config/vehicleRecord.js';
 import { languagePath } from '../src/i18n/language.js';
 
@@ -26,5 +26,20 @@ test('404 language links target actual static files on both deployment bases', (
 		assert.equal(languagePath(`${base}404/`, 'de', base),`${base}404.html`);
 		assert.equal(languagePath(`${base}404.html`, 'en', base),`${base}en/404/`);
 		assert.equal(languagePath(`${base}en/404/`, 'de', base),`${base}404.html`);
+	}
+});
+
+
+test('every maintained vehicle is accepted by the unmodified offline editor, including category moves and ordinary edits', async () => {
+	for await (const file of glob('src/pages/projekte/*/*/vehicle.json')) {
+		const vehicle = JSON.parse(await readFile(file, 'utf8'));
+		browser.validateVehicleRecord(vehicle);
+		const moved = { ...vehicle, category: vehicle.category === 'aktuelle-projekte' ? 'vergangene-projekte' : 'aktuelle-projekte' };
+		browser.validateVehicleRecord(moved);
+		assert.equal(JSON.stringify(moved.blocks), JSON.stringify(vehicle.blocks));
+		const edited = structuredClone(vehicle);
+		const paragraph = edited.blocks.find(block => block.type === 'copy');
+		if (paragraph) paragraph.html = '<p>Bearbeitete Fahrzeugbeschreibung.</p>';
+		browser.validateVehicleRecord(edited);
 	}
 });

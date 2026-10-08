@@ -5,7 +5,7 @@
 	"description": "Hier wieder eines der seltensten und exklusivsten Fahrzeuge der Vorkriegsära überhaupt:\nEin Zwickauer HORCH 8, Typ 350 als 7-sitziger offener \"Flanier-…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/3-horch-350-doppel-phaeton-baujahr-1928",
 	"order": 2,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1928",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen”",
@@ -124,8 +124,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHiernach konnten wir in unserem Karosseriebau sämtliche Blechteile originalgetreu neu herstellen und den Holzaufbau &quot;einkleiden&quot;.</p>",
-			"htmlEn": "<p><br>\nOur body shop then faithfully fabricated all the metal panels to clothe the timber structure.</p>"
+			"html": "<p>Hiernach konnten wir in unserem Karosseriebau sämtliche Blechteile originalgetreu neu herstellen und den Holzaufbau &quot;einkleiden&quot;.</p>",
+			"htmlEn": "<p>Our body shop then faithfully fabricated all the metal panels to clothe the timber structure.</p>"
 		},
 		{
 			"type": "gallery",
@@ -139,18 +139,23 @@
 					"src": "./image-011.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Frontansicht in der Werkstatt.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Straight front view inside the workshop."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Dazu mussten auch viele wichtige Zier- und Anbauteile, wie die massiven Türscharniere und Scheibenrahmen aus Bronze, sowie ganze Türschlösser, Griffe, Zierleisten, Scheinwerfer, usw. größtenteils aus Messing ebenfalls neu gefertigt werden.</p>",
+			"htmlEn": "<p>We also recreated many important fittings: substantial bronze door hinges and windscreen frames, complete locks, handles, trim, headlights and other parts, largely in brass.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-012.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Messingfarbene Verriegelungsteile und Schlüssel ausgelegt.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Brass-coloured latch parts and keys laid out."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p><br />\nDazu mussten auch viele wichtige Zier- und Anbauteile, wie die massiven Türscharniere und Scheibenrahmen aus Bronze, sowie ganze Türschlösser, Griffe, Zierleisten, Scheinwerfer, usw. größtenteils aus Messing ebenfalls neu gefertigt werden.</p>",
-			"htmlEn": "<p><br>\nWe also recreated many important fittings: substantial bronze door hinges and windscreen frames, complete locks, handles, trim, headlights and other parts, largely in brass.</p>"
 		},
 		{
 			"type": "gallery",
@@ -164,8 +169,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAuch das konstruktiv aufwendige und großvolumige Scheren-Verdeckgestell konnten wir rekonstruieren.<br />\n<br /></p>",
-			"htmlEn": "<p><br>\n<br>\nWe reconstructed the large, mechanically complex folding hood frame too.<br>\n<br></p>"
+			"html": "<p>Auch das konstruktiv aufwendige und großvolumige Scheren-Verdeckgestell konnten wir rekonstruieren.<br />\n<br /></p>",
+			"htmlEn": "<p>We reconstructed the large, mechanically complex folding hood frame too.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
@@ -259,7 +264,12 @@
 					"src": "./image-024.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Zylinderkopf von unten mit sichtbaren Ventiltellern.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Underside of cylinder head with valve faces visible."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-025.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Pleuel und Lagerschalen nebeneinander.",
@@ -269,8 +279,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nFeinste Vorbereitungsarbeiten u.a. mit neu angefertigten Kurbelwellen-, Nockenwellen- und Pleuellagern, nebst eigens angefertigter Spezialkolben...</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nMeticulous preparation, including newly made crankshaft, camshaft and connecting-rod bearings and specially manufactured pistons.</p>"
+			"html": "<p>Feinste Vorbereitungsarbeiten u.a. mit neu angefertigten Kurbelwellen-, Nockenwellen- und Pleuellagern, nebst eigens angefertigter Spezialkolben...</p>",
+			"htmlEn": "<p>Meticulous preparation, including newly made crankshaft, camshaft and connecting-rod bearings and specially manufactured pistons.</p>"
 		},
 		{
 			"type": "gallery",
@@ -314,8 +324,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nNach den aufwendigen und auch aus heutiger Sicht hochkomplexen Montagearbeiten sämtlicher Motorkomponenten, konnte der Motor erstmals nach Jahrzehnten wieder auf seinen ersten Prüfstandslauf vorbereitet werden.<br />\nDas Ergebnis: Ein seidenweich ruhiger Lauf. Umwerfend...! Einzigartig...! <br />\nEhrfurcht - vor der knapp einhundert Jahre alten Technik mit hoher Laufkultur!<br />\nSelbst für unsere erfahrenen Techniker und Restauratoren.</p>",
-			"htmlEn": "<p><br>\n<br>\nAfter painstaking assembly, complex even by modern standards, the engine was prepared for its first test-bench run in decades.<br>\nThe result: silky-smooth running. Remarkable and unique. <br>\nAlmost century-old engineering with such refinement inspires respect,<br>\neven among our experienced technicians and restorers.</p>"
+			"html": "<p>Nach den aufwendigen und auch aus heutiger Sicht hochkomplexen Montagearbeiten sämtlicher Motorkomponenten, konnte der Motor erstmals nach Jahrzehnten wieder auf seinen ersten Prüfstandslauf vorbereitet werden.<br />\nDas Ergebnis: Ein seidenweich ruhiger Lauf. Umwerfend...! Einzigartig...! <br />\nEhrfurcht - vor der knapp einhundert Jahre alten Technik mit hoher Laufkultur!<br />\nSelbst für unsere erfahrenen Techniker und Restauratoren.</p>",
+			"htmlEn": "<p>After painstaking assembly, complex even by modern standards, the engine was prepared for its first test-bench run in decades.<br>\nThe result: silky-smooth running. Remarkable and unique. <br>\nAlmost century-old engineering with such refinement inspires respect,<br>\neven among our experienced technicians and restorers.</p>"
 		},
 		{
 			"type": "gallery",
@@ -334,7 +344,12 @@
 					"src": "./image-031.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Getriebe im Fahrgestell mit Gestänge.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Gearbox inside chassis with linkages."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-032.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Ausgebautes Zahnrad mit Welle auf der Werkbank.",
@@ -374,8 +389,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nHier ein Teil der unzähligen neu angefertigten bzw. aufgearbeiteten Zier- und Anbauteile.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nSome of the countless newly made or refurbished trim pieces and fittings.</p>"
+			"html": "<p>Hier ein Teil der unzähligen neu angefertigten bzw. aufgearbeiteten Zier- und Anbauteile.</p>",
+			"htmlEn": "<p>Some of the countless newly made or refurbished trim pieces and fittings.</p>"
 		},
 		{
 			"type": "gallery",
@@ -394,8 +409,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\nDas &quot;gekrönte&quot; HORCH Emblem und der &quot;geflügelte&quot; HORCH Pfeil - quasi die &quot;Krone&quot; der Automobilbau-&quot;Kunst&quot;.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\nThe crowned Horch badge and winged arrow — symbols of excellence in automotive design.</p>"
+			"html": "<p>Das &quot;gekrönte&quot; HORCH Emblem und der &quot;geflügelte&quot; HORCH Pfeil - quasi die &quot;Krone&quot; der Automobilbau-&quot;Kunst&quot;.</p>",
+			"htmlEn": "<p>The crowned Horch badge and winged arrow — symbols of excellence in automotive design.</p>"
 		},
 		{
 			"type": "gallery",
@@ -409,18 +424,23 @@
 					"src": "./image-040.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Dreiviertelansicht von vorn im Freien.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Front three-quarter view outdoors."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Was für ein Auto...!!!</p>",
+			"htmlEn": "<p>What a car!</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-041.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Dreiviertelansicht von hinten im Freien.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Rear three-quarter view outdoors."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\n<br />\n<br />\nWas für ein Auto...!!!</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\n<br>\n<br>\nWhat a car!</p>"
 		},
 		{
 			"type": "copy",
@@ -444,8 +464,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nAuch das Problem der originalgetreuen 4-Farben-Premium-Lackierung einschl. Zierlinierungen konnte von unseren Lackprofis bestens gelöst werden.</p>",
-			"htmlEn": "<p><br>\n<br>\nOur paint specialists also mastered the authentic four-colour finish and coachlines.</p>"
+			"html": "<p>Auch das Problem der originalgetreuen 4-Farben-Premium-Lackierung einschl. Zierlinierungen konnte von unseren Lackprofis bestens gelöst werden.</p>",
+			"htmlEn": "<p>Our paint specialists also mastered the authentic four-colour finish and coachlines.</p>"
 		},
 		{
 			"type": "gallery",
@@ -459,12 +479,22 @@
 					"src": "./image-044.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Mehrere helle Räder ohne Reifen nebeneinander.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Several light-coloured wheels without tyres arranged together."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-045.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Nahaufnahme von Rad und Reifen.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Close view of wheel and tyre."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-046.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Ausgebautes Holzlenkrad mit drei Metallspeichen.",
@@ -554,12 +584,22 @@
 					"src": "./image-054.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Pedale im Fußraum unter dem Armaturenbrett.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Pedals in the footwell below the dashboard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-055.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Cabin showing seats, steering wheel and dashboard."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-056.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Blick auf die Rücksitzbank im Innenraum.",
@@ -618,11 +658,6 @@
 			"htmlEn": "<p>Following an extensive, faithful rebuild, this successful and subsequently award-winning restoration from Die Oldtimermanufaktur could be presented to a wider public.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Anlässlich des &quot;European Concours de Elegance&quot; zur sog. &quot;ClassicGala&quot; im Barockschloss von Schwetzingen (Baden Württemberg) wurden wir eingeladen den Wagen dort unter den bestrestaurierten Fahrzeugen zu präsentieren.</p>",
-			"htmlEn": "<p>We were invited to show it among outstanding restorations at the European Concours d’Elegance during ClassicGala at Schwetzingen’s Baroque palace in Baden-Württemberg.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -634,7 +669,17 @@
 					"src": "./image-061.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Fahrzeug auf einer Veranstaltungsplattform mit Personen daneben.",
 					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Vehicle on an event platform with people standing beside it."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Anlässlich des &quot;European Concours de Elegance&quot; zur sog. &quot;ClassicGala&quot; im Barockschloss von Schwetzingen (Baden Württemberg) wurden wir eingeladen den Wagen dort unter den bestrestaurierten Fahrzeugen zu präsentieren.</p>",
+			"htmlEn": "<p>We were invited to show it among outstanding restorations at the European Concours d’Elegance during ClassicGala at Schwetzingen’s Baroque palace in Baden-Württemberg.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-062.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Drei Pokale auf der Motorhaube.",

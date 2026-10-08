@@ -5,22 +5,17 @@
 	"description": "Hier wieder ein wunderschönes BMW 327/28 Sportcabriolet, gebaut im Jahre 1939 bei BMW in Eisenach/Thüringen, in den Farben tiefschwarz und fischsilber-m…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/41-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 88,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Hier wieder ein wunderschönes BMW 327/28 Sportcabriolet, gebaut im Jahre 1939 bei BMW in Eisenach/Thüringen, in den Farben tiefschwarz und fischsilber-metallic.</p>",
 			"htmlEn": "<p>Another beautiful 1939 BMW 327/28 Sport Cabriolet from Eisenach, finished in deep black and fish silver metallic.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Der Wagen wurde in allen Details perfekt restauriert.</p>",
-			"htmlEn": "<p>The car was restored to an exceptional standard in every detail.</p>"
 		},
 		{
 			"type": "gallery",
@@ -41,6 +36,11 @@
 					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Straight front view outdoors."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wagen wurde in allen Details perfekt restauriert.</p>",
+			"htmlEn": "<p>The car was restored to an exceptional standard in every detail.</p>"
 		},
 		{
 			"type": "gallery",
@@ -79,8 +79,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nZudem besitzt der Wagen die begehrten originalen Zentralverschlussräder, die ebenfalls umfassend überarbeitet wurden und dadurch heute einen unvergleichlich guten Rundlauf gewährleisten.</p>",
-			"htmlEn": "<p><br>\nThe car also retains its sought-after original centre-lock wheels, comprehensively refurbished for exceptionally true running.</p>"
+			"html": "<p>Zudem besitzt der Wagen die begehrten originalen Zentralverschlussräder, die ebenfalls umfassend überarbeitet wurden und dadurch heute einen unvergleichlich guten Rundlauf gewährleisten.</p>",
+			"htmlEn": "<p>The car also retains its sought-after original centre-lock wheels, comprehensively refurbished for exceptionally true running.</p>"
 		},
 		{
 			"type": "gallery",
@@ -94,8 +94,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch die Inneneinrichtung bekam entsprechend dem Original eine völlig neue Echtlederausstattung...</p>",
-			"htmlEn": "<p><br>\nThe interior received entirely new genuine leather upholstery to original specification…</p>"
+			"html": "<p>Auch die Inneneinrichtung bekam entsprechend dem Original eine völlig neue Echtlederausstattung...</p>",
+			"htmlEn": "<p>The interior received entirely new genuine leather upholstery to original specification…</p>"
 		},
 		{
 			"type": "gallery",
@@ -109,8 +109,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n...mitsamt neuem Cabrioletverdeck.</p>",
-			"htmlEn": "<p><br>\n…together with a new convertible hood.</p>"
+			"html": "<p>...mitsamt neuem Cabrioletverdeck.</p>",
+			"htmlEn": "<p>…together with a new convertible hood.</p>"
 		},
 		{
 			"type": "gallery",
@@ -176,5 +176,5 @@
 	"titleEn": "BMW 327/28 Sport Cabriolet, year 1939",
 	"descriptionEn": "Another beautiful 1939 BMW 327/28 Sport Cabriolet from Eisenach, finished in deep black and fish silver metallic.",
 	"cardImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939",
-	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939 – vehicle record"
+	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939"
 }

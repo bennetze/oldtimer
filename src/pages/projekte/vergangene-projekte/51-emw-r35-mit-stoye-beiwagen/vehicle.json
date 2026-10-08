@@ -5,21 +5,16 @@
 	"description": "Dieses EMW R35/3 Gespann, Baujahr 1955 ist eine der letztgebauten Maschinen überhaupt, bevor auch dieses interessante Stück Zeitgeschichte der Eisenache…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/51-emw-r35-mit-stoye-beiwagen",
 	"order": 92,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35 mit “Stoye”-Beiwagen",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "EMW R35 mit “Stoye”-Beiwagen – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "EMW R35 mit “Stoye”-Beiwagen",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Dieses EMW R35/3 Gespann, Baujahr 1955 ist eine der letztgebauten Maschinen überhaupt, bevor auch dieses interessante Stück Zeitgeschichte der Eisenacher Fahrzeugproduktion ein für alle Mal endete.</p>",
 			"htmlEn": "<p>This 1955 EMW R35/3 combination is among the final motorcycles built before this chapter of Eisenach vehicle production ended.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Von einer ursprünglich stark verbrauchten Ausgangsbasis...</p>",
-			"htmlEn": "<p>From a heavily worn starting point…</p>"
 		},
 		{
 			"type": "gallery",
@@ -40,6 +35,11 @@
 					"altEn": "EMW R35 mit “Stoye”-sidecar – Motorcycle in side profile inside the workshop."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Von einer ursprünglich stark verbrauchten Ausgangsbasis...</p>",
+			"htmlEn": "<p>From a heavily worn starting point…</p>"
 		},
 		{
 			"type": "copy",
@@ -88,8 +88,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier der frisch lackierte und handlinierte Rahmen vor dem Einbau der generalüberholten Motor-/ Getriebeeinheit.</p>",
-			"htmlEn": "<p><br>\nThe freshly painted and hand-lined frame, before installation of the rebuilt engine and gearbox.</p>"
+			"html": "<p>Hier der frisch lackierte und handlinierte Rahmen vor dem Einbau der generalüberholten Motor-/ Getriebeeinheit.</p>",
+			"htmlEn": "<p>The freshly painted and hand-lined frame, before installation of the rebuilt engine and gearbox.</p>"
 		},
 		{
 			"type": "gallery",
@@ -123,8 +123,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nAuch der original “Stoye”-Beiwagen wurde sehr aufwendig revidiert und dabei entsprechend dem Original mit einem von uns eigens dafür angefertigten Werkzeug die Aluminiumoberfläche “marmoriert”.</p>",
-			"htmlEn": "<p><br>\nWe also extensively refurbished the original Stoye sidecar, recreating the patterned aluminium surface with a specially made tool to match the original.</p>"
+			"html": "<p>Auch der original “Stoye”-Beiwagen wurde sehr aufwendig revidiert und dabei entsprechend dem Original mit einem von uns eigens dafür angefertigten Werkzeug die Aluminiumoberfläche “marmoriert”.</p>",
+			"htmlEn": "<p>We also extensively refurbished the original Stoye sidecar, recreating the patterned aluminium surface with a specially made tool to match the original.</p>"
 		},
 		{
 			"type": "copy",
@@ -205,5 +205,5 @@
 	"titleEn": "EMW R35 mit “Stoye”-sidecar",
 	"descriptionEn": "This 1955 EMW R35/3 combination is among the final motorcycles built before this chapter of Eisenach vehicle production ended.",
 	"cardImageAltEn": "EMW R35 mit “Stoye”-sidecar",
-	"leadImageAltEn": "EMW R35 mit “Stoye”-sidecar – vehicle record"
+	"leadImageAltEn": "EMW R35 mit “Stoye”-sidecar"
 }

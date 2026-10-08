@@ -5,11 +5,11 @@
 	"description": "Mercedes - Benz 300 SL “Flügeltürer”",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/18-mercedes-benz-300-sl-fluegeltuerer",
 	"order": 91,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes - Benz 300 SL “Flügeltürer”",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "Mercedes - Benz 300 SL “Flügeltürer” – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "Mercedes - Benz 300 SL “Flügeltürer”",
 	"blocks": [
 		{
 			"type": "copy",
@@ -50,5 +50,5 @@
 	"titleEn": "Mercedes - Benz 300 SL “Gullwing”",
 	"descriptionEn": "Mercedes - Benz 300 SL “Gullwing”",
 	"cardImageAltEn": "Mercedes - Benz 300 SL “Gullwing”",
-	"leadImageAltEn": "Mercedes - Benz 300 SL “Gullwing” – vehicle record"
+	"leadImageAltEn": "Mercedes - Benz 300 SL “Gullwing”"
 }

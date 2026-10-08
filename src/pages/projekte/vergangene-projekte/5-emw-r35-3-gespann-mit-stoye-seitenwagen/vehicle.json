@@ -5,7 +5,7 @@
 	"description": "Dieses EMW R35/3 Gespann wurde in einen schweren Auffahrunfall verwickelt, bei dem sowohl das Heckteil des Motorrades selbst, mit Kardanantrieb, Getrieb…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/5-emw-r35-3-gespann-mit-stoye-seitenwagen",
 	"order": 84,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35/3 Gespann mit “Stoye” Seitenwagen",
 	"leadImage": "./image-001.jpg",
@@ -23,8 +23,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDieses EMW R35/3 Gespann wurde in einen schweren Auffahrunfall verwickelt, bei dem sowohl das Heckteil des Motorrades selbst, mit Kardanantrieb, Getriebe und Motor - als auch der “Stoye” Beiwagen insgesamt stark beschädigt wurden.</p>",
-			"htmlEn": "<p><br>\nThis EMW R35/3 combination suffered a severe rear-end collision, damaging the motorcycle’s rear, shaft drive, gearbox and engine, as well as the Stoye sidecar.</p>"
+			"html": "<p>Dieses EMW R35/3 Gespann wurde in einen schweren Auffahrunfall verwickelt, bei dem sowohl das Heckteil des Motorrades selbst, mit Kardanantrieb, Getriebe und Motor - als auch der “Stoye” Beiwagen insgesamt stark beschädigt wurden.</p>",
+			"htmlEn": "<p>This EMW R35/3 combination suffered a severe rear-end collision, damaging the motorcycle’s rear, shaft drive, gearbox and engine, as well as the Stoye sidecar.</p>"
 		},
 		{
 			"type": "gallery",

@@ -5,7 +5,7 @@
 	"description": "Dieser BMW 340 ist mit seinem recht frühen Baujahr noch ein echter \"BMW\", gebaut bei den Bayrischen-Motoren-Werken in Eisenach, dort wo bis zum\n2. Weltk…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/135-bmw-340-baujahr-1952",
 	"order": 22,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1952",
@@ -33,6 +33,16 @@
 			"htmlEn": "<p>This early BMW 340 is still a genuine BMW, built by Bayerische Motorenwerke in Eisenach, where until the<br>\nSecond World War and for a few years afterwards every BMW car was manufactured.</p>"
 		},
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "BMW 340, Baujahr 1952 – Unlackierte Karosserie auf dem Hof",
+					"altEn": "BMW 340, year 1952 – Unpainted body in the courtyard"
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p>Angefangen von den DIXI Modellen der 1910/20er Jahre, über die namhaften BMW Typen 303, 309, 315, 319, 320, 321, 326, 327, 327/28, 328, 329 und 335 der 30er und 40er Jahre bis eben zum frühen Nackriegstyp BMW 340 - als Weiterentwicklung des bewährten Vorkriegs-BMW 326, stammen alle bis dahin gebauten BMW Automobile aus Eisenach.</p>",
 			"htmlEn": "<p>From the Dixi models of the 1910s and 1920s through the BMW 303, 309, 315, 319, 320, 321, 326, 327, 327/28, 328, 329 and 335 of the 1930s and 1940s, to the early post-war BMW 340 developed from the proven 326, all these cars came from Eisenach.</p>"
@@ -54,7 +64,17 @@
 					"src": "./image-004.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Hell beschichtetes Karosserieblech auf einem Holzgestell.",
 					"altEn": "BMW 340, year 1952 – Light-coated body panel on a wooden frame."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach umfangreichen Karosseriearbeiten und einer kundenwunschspezifischen KTL-Beschichtung der gesamten Karosserie (kathodische Tauch-Lackierung) wurde auch das Dach wieder mit dem sehr seltenen Faltschiebedach ausgerüstet.</p>",
+			"htmlEn": "<p>Following extensive bodywork and a client-requested cathodic dip coating of the entire body, we reinstated the rare folding sliding roof.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Metallblanke Karosserie schräg von vorn.",
@@ -76,11 +96,6 @@
 					"altEn": "BMW 340, year 1952 – Bare-metal body viewed from the rear corner."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Nach umfangreichen Karosseriearbeiten und einer kundenwunschspezifischen KTL-Beschichtung der gesamten Karosserie (kathodische Tauch-Lackierung) wurde auch das Dach wieder mit dem sehr seltenen Faltschiebedach ausgerüstet.</p>",
-			"htmlEn": "<p>Following extensive bodywork and a client-requested cathodic dip coating of the entire body, we reinstated the rare folding sliding roof.</p>"
 		},
 		{
 			"type": "gallery",
@@ -119,8 +134,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDanach wurde der Wagen in unserer Lackierung wieder in seinen Originalfarben lackiert.</p>",
-			"htmlEn": "<p><br>\nOur paint shop then refinished the car in its original colours.</p>"
+			"html": "<p>Danach wurde der Wagen in unserer Lackierung wieder in seinen Originalfarben lackiert.</p>",
+			"htmlEn": "<p>Our paint shop then refinished the car in its original colours.</p>"
 		},
 		{
 			"type": "gallery",
@@ -139,8 +154,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNeuer Chrom und generalüberholte Instrumente.</p>",
-			"htmlEn": "<p><br>\nNew chrome and fully refurbished instruments.</p>"
+			"html": "<p>Neuer Chrom und generalüberholte Instrumente.</p>",
+			"htmlEn": "<p>New chrome and fully refurbished instruments.</p>"
 		},
 		{
 			"type": "gallery",
@@ -214,7 +229,12 @@
 					"src": "./image-022.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Offene Türen und geöffnetes Stoffdach von schräg oben.",
 					"altEn": "BMW 340, year 1952 – Open doors and open fabric roof from above at an angle."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-023.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Blick in den offenen Motorraum auf Motor und Leitungen.",
@@ -244,8 +264,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nDas Endergebnis ist in der Ausführung, der Originalität und der Qualität der bei uns durchgeführten Arbeiten einer solch aufwendigen Vollrestauration kaum mehr zu toppen.<br />\n<br />\nEine Augenweide und sicher einer der Besten 340er überhaupt...</p>",
-			"htmlEn": "<p><br>\n<br>\nThe workmanship, originality and quality of this extensive restoration are hard to surpass.<br>\n<br>\nA feast for the eyes and surely one of the finest 340s…</p>"
+			"html": "<p>Das Endergebnis ist in der Ausführung, der Originalität und der Qualität der bei uns durchgeführten Arbeiten einer solch aufwendigen Vollrestauration kaum mehr zu toppen.<br />\n<br />\nEine Augenweide und sicher einer der Besten 340er überhaupt...</p>",
+			"htmlEn": "<p>The workmanship, originality and quality of this extensive restoration are hard to surpass.<br>\n<br>\nA feast for the eyes and surely one of the finest 340s…</p>"
 		}
 	],
 	"titleEn": "BMW 340, year 1952",

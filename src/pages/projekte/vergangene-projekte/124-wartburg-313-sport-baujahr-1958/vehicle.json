@@ -5,7 +5,7 @@
 	"description": "Hier ein weiterer WARTBURG 313 SPORT, der bei uns nach entsprechenden Kundenwünschen sehr aufwendig und originalgetreu einer Vollrestauration unterzogen…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/124-wartburg-313-sport-baujahr-1958",
 	"order": 37,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 Sport, Baujahr 1958",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nHier ein weiterer WARTBURG 313 SPORT, der bei uns nach entsprechenden Kundenwünschen sehr aufwendig und originalgetreu einer Vollrestauration unterzogen wurde.</p>",
-			"htmlEn": "<p><br>\n<br>\nAnother Wartburg 313 Sport that received an extensive, faithful full restoration to the client’s wishes at our workshop.</p>"
+			"html": "<p>Hier ein weiterer WARTBURG 313 SPORT, der bei uns nach entsprechenden Kundenwünschen sehr aufwendig und originalgetreu einer Vollrestauration unterzogen wurde.</p>",
+			"htmlEn": "<p>Another Wartburg 313 Sport that received an extensive, faithful full restoration to the client’s wishes at our workshop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -54,7 +54,12 @@
 					"src": "./image-004.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Rostige Bodenbleche neben einem Querträger.",
 					"altEn": "Wartburg 313 Sport, year 1958 – Rusty floor panels beside a crossmember."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Nahaufnahme einer dick beschichteten Karosserieecke.",
@@ -66,6 +71,11 @@
 					"altEn": "Wartburg 313 Sport, year 1958 – Empty body with wooden framework on a stand."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Durch die fachlich eher fragwürdigen Reparaturversuche der jeweiligen Besitzer vergangener Jahrzehnte, war die Karosserie im Grunde weitgehend unbrauchbar. Somit dienten die verbliebenen Karosserieteile allenfalls als Muster für einen originalgetreuen Neubau in unserer Karosseriebauabteilung.</p>",
+			"htmlEn": "<p>The questionable repairs carried out by successive owners over the decades had left the body largely unusable. The remaining panels could therefore serve only as patterns for a faithful reconstruction in our body shop.</p>"
 		},
 		{
 			"type": "gallery",
@@ -84,7 +94,12 @@
 					"src": "./image-009.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Offenes Radhaus mit freiliegenden Innenblechen.",
 					"altEn": "Wartburg 313 Sport, year 1958 – Open wheel arch with inner panels exposed."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-010.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Offenes Karosserieheck mit freiliegenden Trägern.",
@@ -99,7 +114,12 @@
 					"src": "./image-012.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Abgenommene Tür mit Holzstruktur und roten Blechflächen.",
 					"altEn": "Wartburg 313 Sport, year 1958 – Removed door with wooden structure and red metal panels."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-013.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Freiliegendes hölzernes Karosseriegerüst.",
@@ -114,8 +134,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nMehrere Fahrzeugbeispiele gelungener Top Restaurationen aus unserem Hause u.a. auch des seltenen Wartburg 313 Sport, befinden sich unter der Rubrik &quot;Referenzen&quot;.</p>",
-			"htmlEn": "<p><br>\n<br>\nOur references section contains several examples of outstanding restorations, including the rare Wartburg 313 Sport.</p>"
+			"html": "<p>Mehrere Fahrzeugbeispiele gelungener Top Restaurationen aus unserem Hause u.a. auch des seltenen Wartburg 313 Sport, befinden sich unter der Rubrik &quot;Referenzen&quot;.</p>",
+			"htmlEn": "<p>Our references section contains several examples of outstanding restorations, including the rare Wartburg 313 Sport.</p>"
 		},
 		{
 			"type": "copy",
@@ -139,8 +159,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nSelbst der Rahmen wurde gerichtet und aufwendig aufgearbeitet.</p>",
-			"htmlEn": "<p><br>\nEven the frame was straightened and extensively refurbished.</p>"
+			"html": "<p>Selbst der Rahmen wurde gerichtet und aufwendig aufgearbeitet.</p>",
+			"htmlEn": "<p>Even the frame was straightened and extensively refurbished.</p>"
 		},
 		{
 			"type": "gallery",
@@ -159,7 +179,12 @@
 					"src": "./image-019.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Blanker Innenraumboden mit sichtbaren Schweißnähten.",
 					"altEn": "Wartburg 313 Sport, year 1958 – Bare-metal cabin floor with visible welded seams."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-020.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Blanker Innenraumboden mit sichtbaren Schweißnähten.",
@@ -209,7 +234,12 @@
 					"src": "./image-026.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Rot-helle Karosserie ohne Türen und Scheinwerfer.",
 					"altEn": "Wartburg 313 Sport, year 1958 – Red-and-light body without doors or headlights."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-027.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Abgeklebte Karosserie schräg von vorn in der Lackierkabine.",
@@ -219,8 +249,38 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nEs ist uns gelungen den Originalfarbton in unserer Lackierung 1:1 nachmischen zu können.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nWe succeeded in matching the original colour exactly in our paint shop.</p>"
+			"html": "<p>Es ist uns gelungen den Originalfarbton in unserer Lackierung 1:1 nachmischen zu können.</p>",
+			"htmlEn": "<p>We succeeded in matching the original colour exactly in our paint shop.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1958 – Rot lackierter Innenraum mit Armaturenbrett",
+					"altEn": "Wartburg 313 Sport, year 1958 – Red painted interior with dashboard"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1958 – Motorraum während der Montage",
+					"altEn": "Wartburg 313 Sport, year 1958 – Engine bay during assembly"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "Wartburg 313 Sport, Baujahr 1958 – Karosserieboden während der Montage",
+					"altEn": "Wartburg 313 Sport, year 1958 – Body floor during assembly"
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -254,8 +314,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach den sehr gelungenen Lackierungsarbeiten wurde der Wagen anschließend wieder komplettiert, die gesamte Inneneinrichtung samt Polsterung in edlem zweifarbigem Echtleder erneuert und alle technischen Komponenten ausgiebig getestet.<br />\n<br /></p>",
-			"htmlEn": "<p><br>\nFollowing the successful paintwork, the car was reassembled, the entire interior and upholstery renewed in fine two-tone genuine leather, and all mechanical systems thoroughly tested.<br>\n<br></p>"
+			"html": "<p>Nach den sehr gelungenen Lackierungsarbeiten wurde der Wagen anschließend wieder komplettiert, die gesamte Inneneinrichtung samt Polsterung in edlem zweifarbigem Echtleder erneuert und alle technischen Komponenten ausgiebig getestet.<br />\n<br /></p>",
+			"htmlEn": "<p>Following the successful paintwork, the car was reassembled, the entire interior and upholstery renewed in fine two-tone genuine leather, and all mechanical systems thoroughly tested.<br>\n<br></p>"
 		},
 		{
 			"type": "gallery",
@@ -313,6 +373,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Ein rundum beeindruckendes Gesamtergebnis, auch und gerade für den stolzen Besitzer.</p>",
+			"htmlEn": "<p>An impressive result in every respect, particularly for its proud owner.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -324,7 +389,12 @@
 					"src": "./image-037.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Blick von schräg oben auf Fahrzeugheck und Kofferraumdeckel.",
 					"altEn": "Wartburg 313 Sport, year 1958 – Elevated view of the rear bodywork and boot lid."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-038.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Seitenansicht aus erhöhter Perspektive.",

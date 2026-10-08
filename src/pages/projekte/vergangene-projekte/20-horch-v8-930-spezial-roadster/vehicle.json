@@ -5,7 +5,7 @@
 	"description": "Von den 7 Fahrzeugen haben nur 3 Wagen den Krieg überlebt und dieses hier bei uns restaurierte Exemplar ist das einzige Überlebende mit planer Frontsche…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/20-horch-v8-930-spezial-roadster",
 	"order": 71,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HORCH V8 930, Spezialroadster, 1938",
 	"leadImage": "./image-001.jpg",
@@ -35,6 +35,11 @@
 			"type": "copy",
 			"html": "<p><strong>European Concours </strong><strong>de Elegance!</strong></p>",
 			"htmlEn": "<p><strong>European Concours </strong><strong>d’Elegance!</strong></p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Hier ein besonderes Highlight: Dieser Horch Spezial-Roadster wurde 1938 - und auf besonderen Kundenwunsch als einer von nur 7 je gebauten Spezial-Roadstern bei dem damals sehr renommierten Dresdener Karosserieschneider “Gläser” gebaut.</p>",
+			"htmlEn": "<p>A special highlight: this Horch Special Roadster was built in 1938 to a customer's individual order by the renowned Dresden coachbuilder Gläser, as one of only seven Special Roadsters ever made.</p>"
 		},
 		{
 			"type": "gallery",
@@ -80,6 +85,16 @@
 			"type": "copy",
 			"html": "<p>Der Wagen wurde nach den Kundenwünschen in unserer Manufaktur restauriert.</p>",
 			"htmlEn": "<p>We restored the car to the client’s wishes.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "HORCH V8 930, Spezialroadster, 1938 – Fertiger zweifarbiger Roadster",
+					"altEn": "HORCH V8 930, Special Roadster, 1938 – Finished two-tone roadster"
+				}
+			]
 		},
 		{
 			"type": "copy",
@@ -133,8 +148,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nHier u.a. die von uns während der Restauration komplett neu gebauten Räder mit eigens dafür angefertigten Chromspeichen - 70 Stück pro Rad!</p>",
-			"htmlEn": "<p><br>\nThe wheels were completely rebuilt during the restoration, with specially manufactured chrome spokes — seventy per wheel.</p>"
+			"html": "<p>Hier u.a. die von uns während der Restauration komplett neu gebauten Räder mit eigens dafür angefertigten Chromspeichen - 70 Stück pro Rad!</p>",
+			"htmlEn": "<p>The wheels were completely rebuilt during the restoration, with specially manufactured chrome spokes — seventy per wheel.</p>"
 		},
 		{
 			"type": "gallery",
@@ -178,8 +193,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n...auch geschlossen macht dieser HORCH Spezial-Roadster eine traumhafte Figur.</p>",
-			"htmlEn": "<p><br>\n…this Horch Special Roadster looks magnificent with the hood up too.</p>"
+			"html": "<p>...auch geschlossen macht dieser HORCH Spezial-Roadster eine traumhafte Figur.</p>",
+			"htmlEn": "<p>…this Horch Special Roadster looks magnificent with the hood up too.</p>"
 		},
 		{
 			"type": "copy",

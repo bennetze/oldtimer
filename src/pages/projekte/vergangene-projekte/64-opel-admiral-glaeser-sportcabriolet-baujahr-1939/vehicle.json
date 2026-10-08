@@ -5,7 +5,7 @@
 	"description": "Hier einer der sehr seltenen Vorkriegs - “Flaggschiffe” von OPEL: Ein ADMIRAL mit einer Sonderkarosserie des damals äußerst renommierten Dresdener Karos…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/64-opel-admiral-glaeser-sportcabriolet-baujahr-1939",
 	"order": 49,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939",
@@ -26,11 +26,6 @@
 			"type": "copy",
 			"html": "<p>Hier einer der sehr seltenen Vorkriegs - “Flaggschiffe” von OPEL: Ein ADMIRAL mit einer Sonderkarosserie des damals äußerst renommierten Dresdener Karosserieschneiders “GLÄSER”.</p>",
 			"htmlEn": "<p>One of Opel’s rare pre-war flagships: an Admiral with special coachwork by the renowned Gläser firm in Dresden.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Der Wagen wurde technischerseits in unserer Manufaktur umfassend revidiert und der Motor nach einem massiven Motorschaden überholt und fachgerecht instand gesetzt.</p>",
-			"htmlEn": "<p>We comprehensively overhauled its mechanical systems and professionally rebuilt the engine following severe damage.</p>"
 		},
 		{
 			"type": "gallery",
@@ -61,6 +56,11 @@
 					"altEn": "Opel Admiral “Gläser” Sport Cabriolet, year 1939 – Removed cylinder head from beneath with valves visible."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wagen wurde technischerseits in unserer Manufaktur umfassend revidiert und der Motor nach einem massiven Motorschaden überholt und fachgerecht instand gesetzt.</p>",
+			"htmlEn": "<p>We comprehensively overhauled its mechanical systems and professionally rebuilt the engine following severe damage.</p>"
 		},
 		{
 			"type": "gallery",

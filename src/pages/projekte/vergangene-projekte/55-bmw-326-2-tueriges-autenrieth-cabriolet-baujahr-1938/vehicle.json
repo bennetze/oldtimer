@@ -5,12 +5,12 @@
 	"description": "BMW 326 Cabriolet “Autenrieth”, gebaut 1938 bei den Bayerischen - Motoren - Werken in Eisenach/Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/55-bmw-326-2-tueriges-autenrieth-cabriolet-baujahr-1938",
 	"order": 125,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1938",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1938 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1938",
 	"blocks": [
 		{
 			"type": "copy",
@@ -154,8 +154,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Wagen nach seiner Lackierung einschließlich der aufwendigen originalgetreuen Linierungen.</p>",
-			"htmlEn": "<p><br>\nThe painted car with its elaborate authentic coachlines.</p>"
+			"html": "<p>Der Wagen nach seiner Lackierung einschließlich der aufwendigen originalgetreuen Linierungen.</p>",
+			"htmlEn": "<p>The painted car with its elaborate authentic coachlines.</p>"
 		},
 		{
 			"type": "copy",
@@ -226,5 +226,5 @@
 	"titleEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1938",
 	"descriptionEn": "A 1938 BMW 326 Autenrieth Cabriolet, built in Eisenach, Thuringia.",
 	"cardImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1938",
-	"leadImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1938 – vehicle record"
+	"leadImageAltEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1938"
 }

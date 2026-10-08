@@ -5,7 +5,7 @@
 	"description": "Hier gleich zwei sogenannte \"Berlin - Roller\" (Stadtroller SR59) gebaut bei den Industriewerken Ludwigsfelde (IWL), Nahe Berlin.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/126-iwl-roller",
 	"order": 38,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1962",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "IWL Berlin-Roller, Baujahr 1962",
@@ -28,11 +28,6 @@
 			"htmlEn": "<p>Two Berlin scooters, officially Stadtroller SR59, built by Industriewerke Ludwigsfelde near Berlin.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Beide Roller wurden bei uns einer vollumfänglichen Restauration unterzogen und erhielten gemäß Kundenwunsch dabei auch jeweils einen originalen und mittlerweile sehr seltenen sog. &quot;Campi-Anhänger&quot;.</p>",
-			"htmlEn": "<p>Both underwent full restorations at our workshop and, at the client’s request, each received an original, now very rare Campi trailer.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -49,7 +44,17 @@
 					"src": "./image-004.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Geöffneter Rollermotor mit Lüftergehäuse.",
 					"altEn": "IWL Berlin Scooter, year 1962 – Open scooter engine with fan housing."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Beide Roller wurden bei uns einer vollumfänglichen Restauration unterzogen und erhielten gemäß Kundenwunsch dabei auch jeweils einen originalen und mittlerweile sehr seltenen sog. &quot;Campi-Anhänger&quot;.</p>",
+			"htmlEn": "<p>Both underwent full restorations at our workshop and, at the client’s request, each received an original, now very rare Campi trailer.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-005.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Rostiger orangefarbener Anhänger mit offenem Fach.",
@@ -64,11 +69,6 @@
 					"src": "./image-006.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Helle Anhängerkarosserie mit offener Sitzmulde.",
 					"altEn": "IWL Berlin Scooter, year 1962 – Light trailer body with open seat recess."
-				},
-				{
-					"src": "./image-007.jpg",
-					"alt": "IWL Berlin-Roller, Baujahr 1962 – Zwei helle Anhängerkarosserien in der Kabine.",
-					"altEn": "IWL Berlin Scooter, year 1962 – Two light trailer bodies in the booth."
 				}
 			]
 		},
@@ -76,6 +76,26 @@
 			"type": "copy",
 			"html": "<p>Lackier- und Linierarbeiten gemäß Kundenwunsch.<br /></p>",
 			"htmlEn": "<p>Paintwork and coachlining to the client’s wishes.<br></p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Leider hatten wir nur diese &quot;fragmentösen Fundstücke&quot; zur Vorgabe.</p>",
+			"htmlEn": "<p>Unfortunately, these fragmentary finds were all we had to work from.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Das Ziel beider Roller sollte &quot;bestens restauriert&quot; sein.</p>",
+			"htmlEn": "<p>The aim for both scooters was restoration to the highest standard.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./image-007.jpg",
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Zwei helle Anhängerkarosserien in der Kabine.",
+					"altEn": "IWL Berlin Scooter, year 1962 – Two light trailer bodies in the booth."
+				}
+			]
 		},
 		{
 			"type": "gallery",
@@ -91,16 +111,6 @@
 					"altEn": "IWL Berlin Scooter, year 1962 – Masked trailer body in the booth."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Leider hatten wir nur diese &quot;fragmentösen Fundstücke&quot; zur Vorgabe.</p>",
-			"htmlEn": "<p>Unfortunately, these fragmentary finds were all we had to work from.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Das Ziel beider Roller sollte &quot;bestens restauriert&quot; sein.</p>",
-			"htmlEn": "<p>The aim for both scooters was restoration to the highest standard.</p>"
 		},
 		{
 			"type": "copy",
@@ -144,8 +154,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nMotor- und Getriebeüberholung.</p>",
-			"htmlEn": "<p><br>\nEngine and gearbox overhaul.</p>"
+			"html": "<p>Motor- und Getriebeüberholung.</p>",
+			"htmlEn": "<p>Engine and gearbox overhaul.</p>"
 		},
 		{
 			"type": "gallery",
@@ -189,7 +199,12 @@
 					"src": "./image-020.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orange-heller Roller mit freiliegendem Motor in der Werkstatt.",
 					"altEn": "IWL Berlin Scooter, year 1962 – Orange-and-light scooter with engine exposed in the workshop."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-021.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Roller auf einem Gestell mit offenem Lüftergehäuse.",
@@ -204,7 +219,12 @@
 					"src": "./image-023.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Zwei Roller nebeneinander in der Werkstatt.",
 					"altEn": "IWL Berlin Scooter, year 1962 – Two scooters side by side in the workshop."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-024.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orange-helles Seitenblech mit Lüftungsschlitzen.",
@@ -219,7 +239,12 @@
 					"src": "./image-026.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Orange-heller Roller schräg von vorn.",
 					"altEn": "IWL Berlin Scooter, year 1962 – Orange-and-light scooter from the front corner."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-027.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Roller und abgenommene Anhängerkarosserien in der Werkstatt.",
@@ -256,6 +281,16 @@
 			"type": "copy",
 			"html": "<p>Mittlerweile haben wir eine ganze &quot;Armarda&quot; dieser prachtvollen &quot;Berlin&quot; - Roller nebst der begehrten &quot;Campi&quot; - Anhänger bestens restauriert.</p>",
 			"htmlEn": "<p>We have now restored a whole fleet of these splendid Berlin scooters and their sought-after Campi trailers to an excellent standard.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "IWL Berlin-Roller, Baujahr 1962 – Grün-weißer Roller vor der Werkstatt",
+					"altEn": "IWL Berlin Scooter, year 1962 – Green and white scooter outside the workshop"
+				}
+			]
 		},
 		{
 			"type": "copy",

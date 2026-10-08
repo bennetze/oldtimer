@@ -5,7 +5,7 @@
 	"description": "Den Wagen bekamen wir in völlig zerlegtem und in Kartons und Kisten verpackten Zustand mit Fehlteilen. Leider wurden an dem Fahrzeug von div. Vorgängern…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/186-emw-327-sportcabriolet",
 	"order": 20,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1953",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327 Sportcabriolet, Baujahr 1953",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\nEMW 327-2 Sportcabriolet, Baujahr 1953</p>",
-			"htmlEn": "<p><br>\n<br>\nA 1953 EMW 327-2 Sport Cabriolet.</p>"
+			"html": "<p>EMW 327-2 Sportcabriolet, Baujahr 1953</p>",
+			"htmlEn": "<p>A 1953 EMW 327-2 Sport Cabriolet.</p>"
 		},
 		{
 			"type": "gallery",

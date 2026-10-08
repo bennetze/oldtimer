@@ -5,7 +5,7 @@
 	"description": "EMW 340-7 Kombi, Baujahr 1954.\n\nDieser äußerst seltene 340-7 Kombi befindet sich auch nach rund 70 Jahren noch immer im Originalzustand und wurde bei un…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/164-emw-340-7-kombi-baujahr-1954",
 	"order": 60,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 340-7 Kombi, Baujahr 1954",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n<br />\nEMW 340-7 Kombi, Baujahr 1954.<br />\n<br />\nDieser äußerst seltene 340-7 Kombi befindet sich auch nach rund 70 Jahren noch immer im Originalzustand und wurde bei uns umfangreich revidiert. <br />\nDer Wagen wurde 1954 bei den Eisenacher Motoren Werken gebaut und erhielt vermutlich im Karosseriewerk Halle diesen seltenen Kombi-Aufbau.</p>",
-			"htmlEn": "<p><br>\n<br>\n<br>\nA 1954 EMW 340-7 estate.<br>\n<br>\nStill in original condition after around 70 years, this exceptionally rare 340-7 estate received extensive refurbishment at our workshop. <br>\nBuilt in 1954 at Eisenacher Motorenwerke, it probably received its rare estate body at the Halle coachworks.</p>"
+			"html": "<p>EMW 340-7 Kombi, Baujahr 1954.<br />\n<br />\nDieser äußerst seltene 340-7 Kombi befindet sich auch nach rund 70 Jahren noch immer im Originalzustand und wurde bei uns umfangreich revidiert. <br />\nDer Wagen wurde 1954 bei den Eisenacher Motoren Werken gebaut und erhielt vermutlich im Karosseriewerk Halle diesen seltenen Kombi-Aufbau.</p>",
+			"htmlEn": "<p>A 1954 EMW 340-7 estate.<br>\n<br>\nStill in original condition after around 70 years, this exceptionally rare 340-7 estate received extensive refurbishment at our workshop. <br>\nBuilt in 1954 at Eisenacher Motorenwerke, it probably received its rare estate body at the Halle coachworks.</p>"
 		},
 		{
 			"type": "gallery",
@@ -46,6 +46,11 @@
 					"altEn": "EMW 340-7 Estate, year 1954 – Rear three-quarter view outdoors."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Die allermeisten dieser gebauten Kombiwagen gingen als Devisenbringer Richtung Finnland und in die skandinavischen Länder, dieser hier hat offenbar als einer der ganz wenigen in der DDR &quot;überlebt&quot;.</p>",
+			"htmlEn": "<p>Most of these estates were exported to Finland and the Scandinavian countries to earn foreign currency. This example appears to be one of the very few that survived in East Germany.</p>"
 		},
 		{
 			"type": "gallery",

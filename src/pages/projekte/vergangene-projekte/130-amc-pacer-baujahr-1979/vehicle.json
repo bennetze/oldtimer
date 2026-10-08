@@ -5,7 +5,7 @@
 	"description": "Dieser AMC der Marke \"American-Motors-Corporation\" wurde unter der Ägide des Mutterkonzern \"General Motors\" mit einem sehr eigenwilligen und gleichwohl…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/130-amc-pacer-baujahr-1979",
 	"order": 57,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1979",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "AMC Pacer, Baujahr 1979",
@@ -211,6 +211,126 @@
 			"type": "copy",
 			"html": "<p>Auch die beim Vorbesitzer völlig zerlegte Technik wurde von uns allumfassend überholt und wieder in das Fahrzeug integriert und damit auch viele Teile erneuert bzw. restauriert.</p>",
 			"htmlEn": "<p>We also comprehensively overhauled the mechanical systems, which the previous owner had completely dismantled, restoring or replacing many parts before reinstalling them.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Gerade das mit seinen riesigen Glasflächen recht skurrile Design des AMC Pacer macht ihn heute zu einem begehrten Sammlerobjekt mit dem Kultstatus einer Designikone.</p>",
+			"htmlEn": "<p>The AMC Pacer's unusual design and vast glass surfaces have made it a sought-after collector's car with the cult status of a design icon.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Restaurierte Radaufhängung und Bremsscheibe",
+					"altEn": "AMC Pacer, year 1979 – Restored suspension and brake disc"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Motor im geöffneten Motorraum",
+					"altEn": "AMC Pacer, year 1979 – Engine in the open engine bay"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Karosserie in der Werkstatt",
+					"altEn": "AMC Pacer, year 1979 – Body in the workshop"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-004.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Armaturenbrett und Lenkrad",
+					"altEn": "AMC Pacer, year 1979 – Dashboard and steering wheel"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-005.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Heckansicht des fertigen Fahrzeugs",
+					"altEn": "AMC Pacer, year 1979 – Rear view of the finished vehicle"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-006.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Vordersitze und Türverkleidung",
+					"altEn": "AMC Pacer, year 1979 – Front seats and door trim"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-007.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Fertiges Fahrzeug von schräg hinten",
+					"altEn": "AMC Pacer, year 1979 – Finished vehicle from the rear quarter"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-008.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Pacer-Schriftzug am Kotflügel",
+					"altEn": "AMC Pacer, year 1979 – Pacer badge on the wing"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-009.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Fertiges Fahrzeug von der Seite",
+					"altEn": "AMC Pacer, year 1979 – Finished vehicle viewed from the side"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-010.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Fertiges Fahrzeug von schräg vorn",
+					"altEn": "AMC Pacer, year 1979 – Finished vehicle from the front quarter"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-011.jpg",
+					"alt": "AMC Pacer, Baujahr 1979 – Kühlergrill und Scheinwerfer",
+					"altEn": "AMC Pacer, year 1979 – Radiator grille and headlights"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach Überholung aller Komponenten, nebst Teilerneuerung der Polsterung, Himmel, Teppichen usw. in unserer Sattlerei konnte der Kunde seinen nun top restaurierten AMC Pacer feierlich in Empfang nehmen.</p>",
+			"htmlEn": "<p>After all components had been overhauled and parts of the upholstery, headlining, carpets and other trim renewed in our upholstery workshop, the customer was able to take delivery of the beautifully restored AMC Pacer.</p>"
 		}
 	],
 	"titleEn": "AMC Pacer, year 1979",

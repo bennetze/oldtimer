@@ -5,7 +5,7 @@
 	"description": "Hier eine russische Kostbarkeit, eines “POBEDA” von 1956, als sehr seltene 4x4 Allradausführung namens M72.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/29-pobeda-m72",
 	"order": 19,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1956",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "POBEDA M72, Baujahr 1956",
@@ -53,11 +53,6 @@
 			"htmlEn": "<p>This streamlined off-road saloon, with a drag coefficient of 0.34, was also built in small numbers as a 4×4, mainly for the Soviet state and KGB. According to the owner’s research, only three survive in Germany.</p>"
 		},
 		{
-			"type": "copy",
-			"html": "<p>Der Wagen wird bei uns aktuell allumfassend restauriert.</p>",
-			"htmlEn": "<p>The car is currently undergoing a comprehensive restoration at our workshop.</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -86,6 +81,11 @@
 					"altEn": "POBEDA M72, year 1956 – Close view of a panel edge with a visible weld seam."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wagen wird bei uns aktuell allumfassend restauriert.</p>",
+			"htmlEn": "<p>The car is currently undergoing a comprehensive restoration at our workshop.</p>"
 		},
 		{
 			"type": "copy",
@@ -178,6 +178,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Überholung Motor, Achsen, Getriebe, Ausgleichsgetriebe, Allradantriebe, Bremsen, Lenkung...</p>",
+			"htmlEn": "<p>Overhauling engine, axles, gearbox, differential, four-wheel-drive systems, brakes and steering.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -194,7 +199,12 @@
 					"src": "./image-016.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Geöffnete Trommelbremse mit Bremsbacken und Federn.",
 					"altEn": "POBEDA M72, year 1956 – Open drum brake with brake shoes and springs."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-017.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Drei schwarze Bremstrommeln nebeneinander.",
@@ -209,7 +219,12 @@
 					"src": "./image-019.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Hinterachse und Differential von unten.",
 					"altEn": "POBEDA M72, year 1956 – Rear axle and differential viewed from beneath."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-020.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Geöffnetes Getriebe mit sichtbaren Zahnrädern.",
@@ -221,11 +236,6 @@
 					"altEn": "POBEDA M72, year 1956 – Open gearbox with gears visible."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p>Überholung Motor, Achsen, Getriebe, Ausgleichsgetriebe, Allradantriebe, Bremsen, Lenkung...</p>",
-			"htmlEn": "<p>Overhauling engine, axles, gearbox, differential, four-wheel-drive systems, brakes and steering.</p>"
 		},
 		{
 			"type": "gallery",
@@ -269,7 +279,17 @@
 					"src": "./image-025.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Blick auf die Rücksitzbank im Innenraum.",
 					"altEn": "POBEDA M72, year 1956 – View of the rear bench seat inside the cabin."
-				},
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Neupolsterung mit originalgetreuen Materialien, Himmeltuch...</p>",
+			"htmlEn": "<p>New upholstery using authentic materials, headlining fabric…</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-026.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Karosserie mit leeren Scheinwerferöffnungen schräg von vorn.",
@@ -283,11 +303,6 @@
 			]
 		},
 		{
-			"type": "copy",
-			"html": "<p>Neupolsterung mit originalgetreuen Materialien, Himmeltuch...</p>",
-			"htmlEn": "<p>New upholstery using authentic materials, headlining fabric…</p>"
-		},
-		{
 			"type": "gallery",
 			"images": [
 				{
@@ -299,8 +314,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nRestaurierung der Instrumente.</p>",
-			"htmlEn": "<p><br>\nRestoring the instruments.</p>"
+			"html": "<p>Restaurierung der Instrumente.</p>",
+			"htmlEn": "<p>Restoring the instruments.</p>"
 		},
 		{
 			"type": "copy",
@@ -324,7 +339,12 @@
 					"src": "./image-031.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Nahaufnahme des Emblems auf der Karosserie.",
 					"altEn": "POBEDA M72, year 1956 – Close view of the badge on the bodywork."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-032.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Blick in den offenen Motorraum auf Motor und Leitungen.",

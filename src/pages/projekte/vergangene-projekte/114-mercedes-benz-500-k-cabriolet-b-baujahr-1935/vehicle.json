@@ -5,7 +5,7 @@
 	"description": "Hier wieder eines der atemberaubendsten Relikte der Automobilbaugeschichte schlechthin: Ein weiterer MERCEDES-BENZ 500K, Cabriolet-B des Baujahres 1935,…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/114-mercedes-benz-500-k-cabriolet-b-baujahr-1935",
 	"order": 34,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1935",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935",
@@ -54,7 +54,12 @@
 					"src": "./image-005.jpg",
 					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Dunkles Speichenrad mit Reifen.",
 					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Dark wire wheel and tyre."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-006.jpg",
 					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Dunkles Cabriolet mit offenem Vorderteil in der Werkstatt.",
@@ -109,7 +114,12 @@
 					"src": "./image-013.jpg",
 					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Vorderachse und Radaufhängung von unten.",
 					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Front axle and suspension viewed from beneath."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-014.jpg",
 					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
@@ -159,7 +169,12 @@
 					"src": "./image-020.jpg",
 					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Nahaufnahme eines Speichenrads mit Reifen.",
 					"altEn": "Mercedes-Benz 500 K, Cabriolet B, year 1935 – Close view of a wire wheel and tyre."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-021.jpg",
 					"alt": "Mercedes-Benz 500 K, Cabriolet B, Baujahr 1935 – Heckansicht im Freien.",

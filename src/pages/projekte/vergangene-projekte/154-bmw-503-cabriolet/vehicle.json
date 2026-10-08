@@ -5,7 +5,7 @@
 	"description": "BMW 503 Cabriolet des Baujahres 1957 (Serie 1).\n\nV8 Aluminiummotor mit 3,2 Liter Hubraum und 140PS Leistung. In vorwiegend manufakturartiger Handbauweis…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/154-bmw-503-cabriolet",
 	"order": 40,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Cabriolet, Baujahr 1957",
@@ -63,6 +63,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>Der Wagen wurde im Kundenauftrag durch uns teilrestauriert.</p>",
+			"htmlEn": "<p>We carried out a partial restoration for its owner.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -71,11 +76,6 @@
 					"altEn": "BMW 503 Cabriolet, year 1957 – Side profile outdoors."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p><br />\nDer Wagen wurde im Kundenauftrag durch uns teilrestauriert.</p>",
-			"htmlEn": "<p><br>\nWe carried out a partial restoration for its owner.</p>"
 		},
 		{
 			"type": "gallery",

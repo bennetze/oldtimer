@@ -5,22 +5,17 @@
 	"description": "Dieses wunderschöne BMW 327/28 Sportcabriolet wurde bei Uns einer umfangreichen und detailgetreuen Komplettrestauration unterzogen.\n\nBMW 327/28 Sportcab…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/38-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 103,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Dieses wunderschöne BMW 327/28 Sportcabriolet wurde bei Uns einer umfangreichen und detailgetreuen Komplettrestauration unterzogen.<br />\n<br />\nBMW 327/28 Sportcabriolet, Baujahr 1939; gebaut bei den BMW-Werken in Eisenach/Thüringen.</p>",
 			"htmlEn": "<p>This beautiful BMW 327/28 Sport Cabriolet received an extensive, detailed full restoration at our workshop.<br>\n<br>\nA 1939 BMW 327/28 Sport Cabriolet, built at BMW’s Eisenach works in Thuringia.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Auf dem vollkommen entkernten, gestrahlten und grundierten Rahmen wurde der gesamte statische Holzaufbau in kammergetrockneter, verleimter Esche/Buche nach alter handwerklicher Tradition neu nachgefertigt, ebenso sämtliche Verdeckspriegel.</p>",
-			"htmlEn": "<p>On the completely stripped, blasted and primed chassis, we traditionally recreated the structural timber framework and all hood bows in kiln-dried, laminated ash and beech.</p>"
 		},
 		{
 			"type": "gallery",
@@ -54,6 +49,11 @@
 		},
 		{
 			"type": "copy",
+			"html": "<p>Auf dem vollkommen entkernten, gestrahlten und grundierten Rahmen wurde der gesamte statische Holzaufbau in kammergetrockneter, verleimter Esche/Buche nach alter handwerklicher Tradition neu nachgefertigt, ebenso sämtliche Verdeckspriegel.</p>",
+			"htmlEn": "<p>On the completely stripped, blasted and primed chassis, we traditionally recreated the structural timber framework and all hood bows in kiln-dried, laminated ash and beech.</p>"
+		},
+		{
+			"type": "copy",
 			"html": "<p>Die damals fehlenden, sogenannten Liegesitze, samt Verstellmechanik und Holzrahmen wurden komplett von uns nachgefertigt und danach von unserem erfahrenen Autosattler mit aufwendiger Federkerntechnik neu aufgebaut und in Echtleder entsprechend den Kundenwünschen bezogen.</p>",
 			"htmlEn": "<p>We recreated the missing reclining seats, adjustment mechanisms and timber frames. Our experienced upholsterer rebuilt their elaborate spring units and covered them in genuine leather to the client’s wishes.</p>"
 		},
@@ -69,8 +69,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDie fehlenden Armaturen sind ebenfalls originalgetreu neu entstanden.</p>",
-			"htmlEn": "<p><br>\nThe missing instruments were also faithfully recreated.</p>"
+			"html": "<p>Die fehlenden Armaturen sind ebenfalls originalgetreu neu entstanden.</p>",
+			"htmlEn": "<p>The missing instruments were also faithfully recreated.</p>"
 		},
 		{
 			"type": "gallery",
@@ -84,8 +84,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nGroße Teile der Blechaußenhaut mussten – da vorher in sehr schlechtem und damit nur als Muster brauchbaren Zustand – ebenfalls originalgetreu nachgefertigt werden.</p>",
-			"htmlEn": "<p><br>\nLarge areas of the outer metal skin were in such poor condition that they could serve only as patterns and had to be faithfully reproduced.</p>"
+			"html": "<p>Große Teile der Blechaußenhaut mussten – da vorher in sehr schlechtem und damit nur als Muster brauchbaren Zustand – ebenfalls originalgetreu nachgefertigt werden.</p>",
+			"htmlEn": "<p>Large areas of the outer metal skin were in such poor condition that they could serve only as patterns and had to be faithfully reproduced.</p>"
 		},
 		{
 			"type": "gallery",
@@ -99,8 +99,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nSelbst der Werkzeugkasten mit all seinem Werkzeug, wurde original- und detailgetreu nachgebaut.</p>",
-			"htmlEn": "<p><br>\nEven the tool box and all its tools were reproduced in original detail.</p>"
+			"html": "<p>Selbst der Werkzeugkasten mit all seinem Werkzeug, wurde original- und detailgetreu nachgebaut.</p>",
+			"htmlEn": "<p>Even the tool box and all its tools were reproduced in original detail.</p>"
 		},
 		{
 			"type": "copy",
@@ -139,8 +139,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDer Motor samt Antriebseinheit wurde ebenfalls sehr aufwendig revidiert.<br />\n<br />\nEbenso sind sämtliche mechanischen Komponenten grundlegend und detailgetreu überholt worden.</p>",
-			"htmlEn": "<p><br>\nThe engine and drivetrain were also extensively overhauled.<br>\n<br>\nAll mechanical components were likewise thoroughly restored in detail.</p>"
+			"html": "<p>Der Motor samt Antriebseinheit wurde ebenfalls sehr aufwendig revidiert.<br />\n<br />\nEbenso sind sämtliche mechanischen Komponenten grundlegend und detailgetreu überholt worden.</p>",
+			"htmlEn": "<p>The engine and drivetrain were also extensively overhauled.<br>\n<br>\nAll mechanical components were likewise thoroughly restored in detail.</p>"
 		},
 		{
 			"type": "gallery",
@@ -171,5 +171,5 @@
 	"titleEn": "BMW 327/28 Sport Cabriolet, year 1939",
 	"descriptionEn": "This beautiful BMW 327/28 Sport Cabriolet received an extensive, detailed full restoration at our workshop. A 1939 BMW 327/28 Sport Cabriolet, built at BMW’s Eisenach works in…",
 	"cardImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939",
-	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939 – vehicle record"
+	"leadImageAltEn": "BMW 327/28 Sport Cabriolet, year 1939"
 }

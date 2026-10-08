@@ -5,7 +5,7 @@
 	"description": "Hierbei handelt es sich um einen der wenigen in Deutschland produzierten FORD V8, zudem noch mit einem äußerst seltenen Sonder-Karosserieaufbau der Firm…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/146-ford-v8-drauz-cabriolet-baujahr-1935",
 	"order": 44,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1935",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "FORD V8 \"DRAUZ\" Cabriolet, Baujahr 1935",
@@ -119,8 +119,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p>Man beachte auch den selbstbewußten Original-Schriftzug &quot;FORD - DEUTSCHES ERZEUGNIS&quot; auf dem Kühlergrill.</p>",
-			"htmlEn": "<p>Note the confident original grille inscription: “FORD — DEUTSCHES ERZEUGNIS” (“German product”).</p>"
+			"html": "<p>Dieser FORD V8 wurde 1935 in Köln als rollendes Fahrgestell mit Motor, Getriebe und Achsen ausgeliefert und hiernach auf Wunsch einer in Berlin ansässigen adligen Dame auf deren Kundenwunsch bei der Firma DRAUZ in Heilbronn mit dieser bildhübschen großzügigen Vollcabriolet-Karosserie versehen.</p>",
+			"htmlEn": "<p>This FORD V8 was delivered in Cologne in 1935 as a rolling chassis with engine, gearbox and axles. At the request of its owner, an aristocratic lady living in Berlin, DRAUZ in Heilbronn fitted this beautiful, spacious full-convertible body.</p>"
 		},
 		{
 			"type": "gallery",
@@ -136,6 +136,11 @@
 					"altEn": "FORD V8 \"DRAUZ\" Cabriolet, year 1935 – Green engine beneath open bonnet."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Man beachte auch den selbstbewußten Original-Schriftzug &quot;FORD - DEUTSCHES ERZEUGNIS&quot; auf dem Kühlergrill.</p>",
+			"htmlEn": "<p>Note the confident original grille inscription: “FORD — DEUTSCHES ERZEUGNIS” (“German product”).</p>"
 		},
 		{
 			"type": "copy",

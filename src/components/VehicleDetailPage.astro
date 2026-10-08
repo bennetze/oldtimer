@@ -5,10 +5,6 @@ import Layout from '../layouts/Layout.astro';
 import { validateVehicleBlocks } from '../config/vehicleHtml.js';
 import { annotateVehicleLanguageParts } from '../config/vehicleLanguageParts.js';
 import {
-	GITHUB_PAGES_GALLERY_IMAGE_LIMIT,
-	limitVehicleGalleryBlocks,
-} from '../config/vehicleGalleryPolicy.js';
-import {
 	categoryByKey,
 	getCategoryVehicles,
 	vehicleRoute,
@@ -33,15 +29,23 @@ const language = vehicleLanguage(Astro.url.pathname, import.meta.env.BASE_URL);
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
-const githubPagesPreview = basePath !== '/';
 const content = localizeVehicle(vehicle.data, language);
 const validatedBlocks = validateVehicleBlocks(content.blocks, `${vehicle.data.category}/${vehicle.data.slug}`).map(block =>
 	block.type === 'gallery' ? block : { ...block, html: annotateVehicleLanguageParts(block.html, language) });
-const contentBlocks = (
-	githubPagesPreview
-		? limitVehicleGalleryBlocks(validatedBlocks, GITHUB_PAGES_GALLERY_IMAGE_LIMIT)
-		: validatedBlocks
-) as typeof vehicle.data.blocks;
+// Join only uninterrupted photo runs for responsive rows; text always ends a run.
+// This presentation step never changes the editor's records or image order.
+const contentBlocks = validatedBlocks.reduce<typeof vehicle.data.blocks>((blocks, block) => {
+	const previous = blocks.at(-1);
+	if (block.type === 'gallery' && previous?.type === 'gallery') {
+		previous.images.push(...block.images);
+	} else {
+		blocks.push(block.type === 'gallery' ? { ...block, images: [...block.images] } : block);
+	}
+	return blocks;
+}, []);
+const hasLeadInStory = contentBlocks.some(block => block.type === 'gallery' && block.images.some(image => image.src === vehicle.data.leadImage));
+const showLeadImage = !hasLeadInStory;
+const firstGalleryBlock = contentBlocks.findIndex(block => block.type === 'gallery');
 const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 const galleryImagePath = (source: string) => vehicleImage(vehicle, source, 'detail', basePath).src;
 const siteUrl = Astro.site ?? Astro.url;
@@ -89,11 +93,12 @@ const vehicleJsonLd = {
 				<h1 data-authored>{content.title}</h1>
 			</header>
 
-			<figure class="vehicle-lead">
+			{showLeadImage && <figure class="vehicle-lead">
+				<a class="story-image__button" href={leadImage.src} data-lightbox-trigger data-lightbox-src={leadImage.src} data-lightbox-alt={content.leadImageAlt} aria-label={`${content.leadImageAlt}${language === 'en' ? ' — enlarge' : ' vergrößern'}`}>
 				<img
 					src={leadImage.src}
 					srcset={leadImage.srcset}
-					sizes="90vw"
+					sizes="(max-width: 760px) 90vw, 480px"
 					data-authored alt={content.leadImageAlt}
 					width={leadImage.width}
 					height={leadImage.height}
@@ -101,7 +106,8 @@ const vehicleJsonLd = {
 					fetchpriority="high"
 					decoding="async"
 				/>
-			</figure>
+				</a>
+			</figure>}
 
 			<article class="vehicle-story">
 				{
@@ -124,12 +130,12 @@ const vehicleJsonLd = {
 
 						return (
 							<div
-								class:list={['story-gallery', `story-gallery--${Math.min(block.images.length, 4)}`]}
+								class:list={['story-gallery', { 'story-gallery--multiple': block.images.length > 1 }]}
 								role="group"
 								aria-label={`Bildergruppe ${blockIndex + 1}`}
 							>
 								{block.images.map((image, imageIndex) => (
-									<figure data-authored class:list={['story-image', { 'story-image--feature': imageIndex === 0 && block.images.length >= 3 }]}>
+									<figure data-authored class="story-image">
 										<a
 											href={galleryImagePath(image.src)}
 											class="story-image__button"
@@ -140,9 +146,10 @@ const vehicleJsonLd = {
 										>
 											<img
 												{...vehicleImage(vehicle, image.src, 'detail', basePath)}
-												sizes={block.images.length === 1 ? "90vw" : imageIndex === 0 && block.images.length >= 3 ? "(max-width: 760px) 90vw, 60vw" : "(max-width: 760px) 90vw, 45vw"}
+												sizes={block.images.length > 1 ? "(max-width: 759px) 90vw, (max-width: 1099px) 45vw, 33vw" : "(max-width: 760px) 90vw, 420px"}
 												alt={image.alt}
-												loading="lazy"
+												loading={!showLeadImage && blockIndex === firstGalleryBlock && imageIndex === 0 ? 'eager' : 'lazy'}
+												fetchpriority={!showLeadImage && blockIndex === firstGalleryBlock && imageIndex === 0 ? 'high' : undefined}
 												decoding="async"
 											/>
 										</a>
@@ -258,8 +265,8 @@ const vehicleJsonLd = {
 	.vehicle-masthead {
 		display: grid;
 		place-items: center;
-		min-height: clamp(27rem, 58vw, 48rem);
-		padding: 5rem 0;
+		min-height: 0;
+		padding: 2rem 0 3rem;
 		text-align: center;
 	}
 
@@ -290,9 +297,9 @@ const vehicleJsonLd = {
 	}
 
 	.vehicle-masthead h1 {
-		max-width: 19ch;
+		max-width: 28ch;
 		margin: 0;
-		font-size: clamp(2.45rem, 4.7vw, 5rem);
+		font-size: clamp(2rem, 3.4vw, 3.5rem);
 		font-weight: 340;
 		letter-spacing: 0.065em;
 		line-height: 0.98;
@@ -301,28 +308,35 @@ const vehicleJsonLd = {
 	}
 
 	.vehicle-lead {
-		margin: 0;
-		background: #d7d7d7;
+		width: min(90%, 30rem);
+		margin: 0 auto;
 	}
 
 	.vehicle-lead :global(img) {
+		display: block;
 		width: 100%;
-		max-height: min(86vh, 70rem);
-		max-height: min(86svh, 70rem);
-		object-fit: cover;
+		height: auto;
+		max-height: 30rem;
+		object-fit: contain;
 	}
 
 	.vehicle-story {
-		padding: clamp(8rem, 14vw, 14rem) clamp(1.25rem, 5vw, 6.5rem);
+		width: min(100%, 70rem);
+		margin: 0 auto;
+		padding: 1rem clamp(1.25rem, 4vw, 3rem) 5rem;
 	}
 
+	.vehicle-story > :not(:first-child) { margin-top: 1.25rem; }
+	.vehicle-story > .story-gallery + .story-gallery { margin-top: 2rem; }
+
 	.story-copy {
-		width: min(100%, 49rem);
-		margin: 0 auto clamp(4rem, 7vw, 7rem);
-		font-size: clamp(1.4rem, 1.9vw, 1.85rem);
+		width: min(100%, 46rem);
+		min-width: 0;
+		margin: 0 auto;
+		font-size: clamp(1.25rem, 1.6vw, 1.5rem);
 		font-weight: 600;
-		line-height: 1.65;
-		text-align: center;
+		line-height: 1.6;
+		text-align: left;
 	}
 
 	.story-copy :global(p),
@@ -334,7 +348,7 @@ const vehicleJsonLd = {
 	.story-copy :global(h2),
 	.story-copy :global(h3) {
 		margin: 0;
-		font-size: clamp(1.65rem, 3.5vw, 3.5rem);
+		font-size: clamp(1.5rem, 2.5vw, 2.2rem);
 		font-weight: 440;
 		letter-spacing: 0.055em;
 		line-height: 1.05;
@@ -352,30 +366,34 @@ const vehicleJsonLd = {
 
 	.story-gallery {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: clamp(0.75rem, 1.5vw, 1.5rem);
-		width: min(100%, 108rem);
-		margin: 0 auto clamp(8rem, 13vw, 13rem);
-	}
-
-	.story-gallery--1 {
 		grid-template-columns: minmax(0, 1fr);
-		width: min(100%, 92rem);
+		gap: 1rem;
+		width: min(100%, 26.25rem);
+		margin-inline: auto;
+		align-items: start;
 	}
 
-	.story-gallery--3,
-	.story-gallery--4 {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+	@media (min-width: 760px) {
+		.story-gallery--multiple {
+			width: min(100%, 53.5rem);
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (min-width: 1100px) {
+		.story-gallery--multiple {
+			width: 100%;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+		.story-gallery--multiple:has(> :nth-child(2):last-child) {
+			width: min(100%, 53.5rem);
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	.story-image {
 		min-width: 0;
 		margin: 0;
-	}
-
-	.story-image--feature {
-		grid-column: span 2;
-		grid-row: span 2;
 	}
 
 	.story-image__button {
@@ -386,7 +404,7 @@ const vehicleJsonLd = {
 		overflow: hidden;
 		border: 0;
 		border-radius: 0;
-		background: #d7d7d7;
+		background: transparent;
 		cursor: zoom-in;
 	}
 
@@ -394,9 +412,8 @@ const vehicleJsonLd = {
 		display: block;
 		width: 100%;
 		height: auto;
-		min-height: 18rem;
-		max-height: 62rem;
-		object-fit: cover;
+		max-height: 26rem;
+		object-fit: contain;
 		transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
@@ -419,11 +436,11 @@ const vehicleJsonLd = {
 
 	.story-contact {
 		width: min(100%, 58rem);
-		margin: 0 auto clamp(8rem, 13vw, 13rem);
-		padding: clamp(2rem, 4vw, 4rem);
+		margin: 0 auto;
+		padding: 1.5rem 0;
 		border-top: 1px solid rgba(17, 17, 17, 0.32);
 		border-bottom: 1px solid rgba(17, 17, 17, 0.32);
-		font-size: clamp(1.3rem, 1.7vw, 1.65rem);
+		font-size: clamp(1.25rem, 1.6vw, 1.5rem);
 		font-weight: 600;
 		line-height: 1.65;
 		text-align: center;
@@ -591,7 +608,7 @@ const vehicleJsonLd = {
 		.story-image figcaption,
 		.vehicle-adjacent { min-width: 0; overflow-wrap: anywhere; }
 		.story-copy,
-		.story-contact { margin-bottom: 3rem; }
+		.story-contact { margin-bottom: 0; }
 		.story-contact { padding: 2rem 0.5rem; }
 		.image-lightbox__close { min-height: 44px; font-size: 0.875rem; }
 		.image-lightbox__stage { padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px)); }
@@ -605,19 +622,7 @@ const vehicleJsonLd = {
 		}
 
 		.vehicle-story {
-			padding-block: 3rem;
-		}
-
-		.story-gallery,
-		.story-gallery--3,
-		.story-gallery--4 {
-			grid-template-columns: 1fr;
-			margin-bottom: 3rem;
-		}
-
-		.story-image--feature {
-			grid-column: auto;
-			grid-row: auto;
+			padding-block: 0.5rem 3rem;
 		}
 
 		.story-image__button :global(img) {

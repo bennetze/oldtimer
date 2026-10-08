@@ -9,7 +9,7 @@ import { assertSafePath } from './vehicle-import.mjs';
 import { validVehicleFilename } from '../../src/config/vehicleRecord.js';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
-const settings = JSON.stringify({ version: 3, sharp: sharp.versions, rotate: true, quality: 72, effort: 5, smartSubsample: true });
+const settings = JSON.stringify({ version: 3, sharp: sharp.versions, rotate: true, quality: 72, previewQuality: 62, previewWidth: 1000, effort: 5, smartSubsample: true });
 export function validateGalleryManifest(value, target) {
 	const fail = () => { throw new Error('Invalid vehicle gallery cache manifest. Remove the affected cache manifest and rebuild.'); };
 	const object = value => value && typeof value === 'object' && !Array.isArray(value);
@@ -83,14 +83,14 @@ export async function generateVehicleGallery(root, target = 'production', output
 		else {
 			const metadata = await sharp(input).metadata();
 			const sourceWidth = metadata.orientation >= 5 ? metadata.height : metadata.width;
-			const primaryWidth = Math.min(sourceWidth, 1600);
+			const primaryWidth = Math.min(sourceWidth, target === 'github-pages' ? 1000 : 1600);
 			const widths = new Set([primaryWidth]);
 			if (task.card) for (const width of [480, 960]) widths.add(Math.min(sourceWidth, width));
 			if (task.detail && target === 'production') widths.add(Math.min(sourceWidth, 800));
 			const derivatives = [];
 			for (const width of [...widths].sort((a, b) => a - b)) {
 				const route = width === primaryWidth ? task.route : task.route.replace(/\/([^/]+)$/, `/_responsive/${width}/$1`);
-				const { data, info } = await sharp(input).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: 72, effort: 5, smartSubsample: true }).toBuffer({ resolveWithObject: true });
+				const { data, info } = await sharp(input).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: target === 'github-pages' ? 62 : 72, effort: 5, smartSubsample: true }).toBuffer({ resolveWithObject: true });
 				await safeWrite(join(cacheRoot, 'images', route), data);
 				derivatives.push({ route, width: info.width, height: info.height, hash: hash(data), bytes: data.length });
 			}

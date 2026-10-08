@@ -5,7 +5,7 @@
 	"description": "Dieser Mercedes 280SL \"Pagode\" erhielt in unserer Manufaktur eine umfassende Vollrestauration in allen Details. Karosserie, Technik, Chrom, Elektrik, La…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/172-mercedes-280-sl-baujahr-1968",
 	"order": 12,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1968",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 280 SL \"Pagode\" Baujahr 1968",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDieser Mercedes 280SL &quot;Pagode&quot; erhielt in unserer Manufaktur eine umfassende Vollrestauration in allen Details. Karosserie, Technik, Chrom, Elektrik, Lackierung, Polsterung in Echtleder, Verdeck, Zierhölzer u.dgl.</p>",
-			"htmlEn": "<p><br>\nThis Mercedes 280 SL Pagoda received a full restoration in every detail: bodywork, mechanics, chrome, electrics, paint, genuine leather upholstery, hood and wood trim.</p>"
+			"html": "<p>Dieser Mercedes 280SL &quot;Pagode&quot; erhielt in unserer Manufaktur eine umfassende Vollrestauration in allen Details. Karosserie, Technik, Chrom, Elektrik, Lackierung, Polsterung in Echtleder, Verdeck, Zierhölzer u.dgl.</p>",
+			"htmlEn": "<p>This Mercedes 280 SL Pagoda received a full restoration in every detail: bodywork, mechanics, chrome, electrics, paint, genuine leather upholstery, hood and wood trim.</p>"
 		},
 		{
 			"type": "gallery",
@@ -89,8 +89,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDie Karosserie bekam in unserer Lackierabteilung eine Neulackierung in Originalfarbe.</p>",
-			"htmlEn": "<p><br>\nOur paint shop refinished the body in its original colour.</p>"
+			"html": "<p>Die Karosserie bekam in unserer Lackierabteilung eine Neulackierung in Originalfarbe.</p>",
+			"htmlEn": "<p>Our paint shop refinished the body in its original colour.</p>"
 		},
 		{
 			"type": "gallery",
@@ -109,8 +109,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\n<br />\n...neu verchromte Zier- und Anbauteile.</p>",
-			"htmlEn": "<p><br>\n<br>\n…newly chrome-plated trim and fittings.</p>"
+			"html": "<p>...neu verchromte Zier- und Anbauteile.</p>",
+			"htmlEn": "<p>…newly chrome-plated trim and fittings.</p>"
 		},
 		{
 			"type": "gallery",
@@ -154,8 +154,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDas Ergebnis: ...eine Perle einer Mercedes-Benz 280SL Pagode.</p>",
-			"htmlEn": "<p><br>\nThe result: a jewel of a Mercedes-Benz 280 SL Pagoda.</p>"
+			"html": "<p>Das Ergebnis: ...eine Perle einer Mercedes-Benz 280SL Pagode.</p>",
+			"htmlEn": "<p>The result: a jewel of a Mercedes-Benz 280 SL Pagoda.</p>"
 		},
 		{
 			"type": "gallery",
@@ -189,7 +189,12 @@
 					"src": "./image-020.jpg",
 					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Offene braune Tür neben weißem Fahrzeugheck.",
 					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – Open tan door beside white rear bodywork."
-				},
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
 				{
 					"src": "./image-021.jpg",
 					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Weißes Lenkrad und braunes Armaturenbrettpolster von unten.",

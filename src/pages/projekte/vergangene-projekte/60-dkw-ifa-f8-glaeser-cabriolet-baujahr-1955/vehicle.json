@@ -5,22 +5,17 @@
 	"description": "Bei diesem Fahrzeug handelt es sich um die äußerst seltene und begehrte “Gläser”-Sonderkarosserie, die nur in wenigen Stückzahlen vornehmlich für den Ex…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/60-dkw-ifa-f8-glaeser-cabriolet-baujahr-1955",
 	"order": 113,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1955",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "DKW (IFA) F8, “Gläser”-Cabriolet, Baujahr 1955",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Bei diesem Fahrzeug handelt es sich um die äußerst seltene und begehrte “Gläser”-Sonderkarosserie, die nur in wenigen Stückzahlen vornehmlich für den Export gebaut wurde.</p>",
 			"htmlEn": "<p>This car has exceptionally rare, sought-after special Gläser coachwork, built in small numbers mainly for export.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Der Wagen wurde bei uns von Grund auf restauriert.</p>",
-			"htmlEn": "<p>We restored the car from the ground up.</p>"
 		},
 		{
 			"type": "gallery",
@@ -31,6 +26,11 @@
 					"altEn": "DKW (IFA) F8, “Gläser”-Cabriolet, year 1955 – Front three-quarter view outdoors."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Der Wagen wurde bei uns von Grund auf restauriert.</p>",
+			"htmlEn": "<p>We restored the car from the ground up.</p>"
 		},
 		{
 			"type": "gallery",
@@ -56,5 +56,5 @@
 	"titleEn": "DKW (IFA) F8, “Gläser”-Cabriolet, year 1955",
 	"descriptionEn": "This car has exceptionally rare, sought-after special Gläser coachwork, built in small numbers mainly for export.",
 	"cardImageAltEn": "DKW (IFA) F8, “Gläser”-Cabriolet, year 1955",
-	"leadImageAltEn": "DKW (IFA) F8, “Gläser”-Cabriolet, year 1955 – vehicle record"
+	"leadImageAltEn": "DKW (IFA) F8, “Gläser”-Cabriolet, year 1955"
 }

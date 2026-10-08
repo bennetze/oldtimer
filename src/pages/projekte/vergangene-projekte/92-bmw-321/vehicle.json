@@ -5,7 +5,7 @@
 	"description": "BMW 321 des seltenen Jahrgangs 1949 - gebaut bei der\"BMW-AWTOWELO-AG\" in Eisenach/Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/92-bmw-321",
 	"order": 61,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1949",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 321 \"Awtowelo\" Baujahr 1949",
@@ -38,9 +38,234 @@
 			"htmlEn": "<p>These vehicles were packed in wooden crates and sent to Russia by rail as reparations.</p>"
 		},
 		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-001.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Front mit Kühlergrill und Scheinwerfern",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Front with radiator grille and headlights"
+				}
+			]
+		},
+		{
 			"type": "copy",
 			"html": "<p>Nur sehr wenige Fahrzeuge, wie dieser hier bei uns restaurierte BMW 321, dürften die Wirren der Zeit überlebt haben. <br /><br />Nach einer abgebrochenen Restauration beim Vorbesitzer, wurde dieser BMW 321 gemäß den Kundenwünschen in unserer OLDTIMERMANUFAKTUR allumfassend restauriert.</p>",
 			"htmlEn": "<p>Very few are thought to have survived, including this BMW 321 restored at our workshop. <br><br>Following an abandoned restoration by the previous owner, we comprehensively restored this BMW 321 to the client’s wishes.</p>"
+		},
+		{
+			"type": "copy",
+			"html": "<p>Leider wurde der Wagen karosserieseits vormals arg &quot;verpfuscht&quot; und zerrostete Blechteile nur lieblos &quot;zugeflickt&quot; und anschließend eher nach Stuckateurmanier dick zugespachtelt, was nun durch uns ebenso aufwendig und originalgetreu in den Ursprungszustand versetzt werden musste...</p>",
+			"htmlEn": "<p>Unfortunately, previous body repairs had been badly botched: corroded panels were carelessly patched and then smothered in thick filler. We had to undertake extensive work to restore them to their original condition…</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-002.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Korrosion am Schweller",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Corrosion on the sill"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-003.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Freigelegte und korrodierte Karosseriebleche",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Exposed and corroded body panels"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-002.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Freigelegter Schweller mit bearbeiteten Blechflächen.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Exposed sill with repaired metal surfaces."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>...davon waren sogar tragende und damit statisch wichtige Segmente der Karosserie betroffen.<br /><br />Dazu mussten auch viele Blechteile individuell neu angefertigt und eingepasst werden.</p>",
+			"htmlEn": "<p>…even load-bearing, structurally important body sections were affected. Many panels therefore had to be individually remade and fitted.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-003.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Türöffnung und Schweller während der Karosseriearbeiten.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Door opening and sill during body repairs."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-004.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Geöffneter Motorblock mit sichtbarer Kurbelwelle.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Open engine block with its crankshaft visible."
+				},
+				{
+					"src": "./restored-005.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Motorblock mit montiertem Zylinderkopf.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Engine block with its cylinder head fitted."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Auch der Motor, Getriebe, Achsen und die gesamte übrige Technik wurde dazu in unserer Technik-Abteilung komplett generalüberholt.</p>",
+			"htmlEn": "<p>Our mechanical department also completely overhauled the engine, gearbox, axles and all remaining mechanical components.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-006.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Überarbeiteter Motor auf einem Gestell.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Overhauled engine on a stand."
+				},
+				{
+					"src": "./restored-007.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Ausgebaute Motorbauteile auf einer hellen Unterlage.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Removed engine components on a light surface."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-008.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Dunkel grundierte Karosserie schräg von hinten in der Lackierkabine.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Dark-primed body viewed from the rear corner in the spray booth."
+				},
+				{
+					"src": "./restored-009.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Hell grundiertes Fahrzeugheck in der Lackierkabine.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Light-primed rear bodywork in the spray booth."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Gemäß Kundenwusch bekam der Wagen hiernach in unserer Lackiererei eine neue Mehrfarblackierung, einschließlich der kunstvollen Originallinierungen.</p>",
+			"htmlEn": "<p>At the customer's request, our paint shop then gave the car a new multi-colour finish, including its intricate original pinstriping.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-010.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Abgeklebte blau-schwarze Karosserie schräg von vorn.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Masked blue and black body viewed from the front corner."
+				},
+				{
+					"src": "./restored-011.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Abgeklebtes Fahrzeugheck nach der Lackierung.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Masked rear bodywork after painting."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-004.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Aufgearbeitete Holzleisten",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Refurbished wooden trim strips"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-005.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Neu bezogene Vordersitze",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Newly upholstered front seats"
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Neben einer völlig neu entstandenen Echtleder-Innenausstattung wurden auch die Zierhölzer im Innenraum erneuert und sämtliche Chromteile aufwendig aufgearbeitet.</p>",
+			"htmlEn": "<p>Alongside an entirely new genuine leather interior, the cabin's timber trim was renewed and all chrome parts were carefully refurbished.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-006.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Türverkleidung und Innenraum während der Montage",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Door trim and interior during assembly"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./source-restored-007.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Rücksitzbereich während der Montage",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Rear seating area during assembly"
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-012.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Blau-schwarze Limousine schräg von hinten im Hof.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Blue and black saloon viewed from the rear corner in the courtyard."
+				},
+				{
+					"src": "./restored-013.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Frontansicht der blau-schwarzen Limousine.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Front view of the blue and black saloon."
+				}
+			]
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-014.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Blau-schwarze Limousine schräg von vorn vor der Werkstatt.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Blue and black saloon viewed from the front corner outside the workshop."
+				},
+				{
+					"src": "./restored-015.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Limousine mit geöffneten Motorhaubenteilen in der Werkstatt.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Saloon with its bonnet panels open inside the workshop."
+				}
+			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Nach Abschluss aller durchgeführten, sehr detaillierten und damit originalgetreuen Restaurationsarbeiten, konnte der Wagen abschließend wieder unserem hocherfreuten Kunden übergeben werden.</p>",
+			"htmlEn": "<p>After this detailed restoration to original specification was complete, we were able to hand the car back to our delighted customer.</p>"
+		},
+		{
+			"type": "gallery",
+			"images": [
+				{
+					"src": "./restored-016.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Blau-schwarze Limousine mit geöffneter Haube im Hof.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Blue and black saloon with its bonnet open in the courtyard."
+				},
+				{
+					"src": "./restored-017.jpg",
+					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Limousine schräg von vorn mit geschlossener Motorhaube.",
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Saloon viewed from the front corner with its bonnet closed."
+				}
+			]
 		}
 	],
 	"titleEn": "BMW 321 \"Awtowelo\" year 1949",

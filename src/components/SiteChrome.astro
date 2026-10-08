@@ -122,23 +122,6 @@ const sitePath = (path) => {
 			<a href={sitePath('/impressum/')}>Impressum</a>
 			<a href={sitePath('/datenschutz/')}>Datenschutzerklärung</a>
 		</nav>
-		<div class="social-links" role="group" aria-label="Social Media">
-			<span aria-label="YouTube-Profil folgt" title="YouTube-Profil folgt">
-				<svg viewBox="0 0 16 16" aria-hidden="true">
-					<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.568.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558l-.009-.104-.008-.105A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.171-.007.171-.007.087-.004.17-.006A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
-				</svg>
-			</span>
-			<span aria-label="Instagram-Profil folgt" title="Instagram-Profil folgt">
-				<svg viewBox="0 0 16 16" aria-hidden="true">
-					<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.276.373.145.64.318.92.598s.453.546.598.92c.11.281.24.705.276 1.485.039.844.047 1.096.047 3.232s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.276 1.485a2.5 2.5 0 0 1-.598.92c-.28.28-.547.453-.92.598-.282.11-.706.241-1.486.276-.843.039-1.096.047-3.232.047s-2.39-.008-3.233-.047c-.78-.035-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.598-.92c-.11-.282-.241-.706-.276-1.486-.039-.843-.046-1.096-.046-3.232s.007-2.388.046-3.232c.035-.78.166-1.204.276-1.486.145-.373.318-.64.598-.92s.547-.453.92-.598c.282-.11.705-.241 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216m0 1.442a2.666 2.666 0 1 1 0 5.332 2.666 2.666 0 0 1 0-5.332" />
-				</svg>
-			</span>
-			<span aria-label="TikTok-Profil folgt" title="TikTok-Profil folgt">
-				<svg viewBox="0 0 16 16" aria-hidden="true">
-					<path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
-				</svg>
-			</span>
-		</div>
 		<p>© 2026 DIE OLDTIMERMANUFAKTUR</p>
 	</footer>
 </div>
@@ -697,6 +680,10 @@ const sitePath = (path) => {
 		object-fit: contain;
 	}
 
+	.site-shell:not(.site-shell--home) .brand-logo {
+		max-height: calc(var(--site-header-height) - env(safe-area-inset-top, 0px) - clamp(28px, 2.5vw, 40px));
+	}
+
 	.footer-brand {
 		font-size: clamp(0.72rem, 0.88vw, 0.88rem);
 	}
@@ -936,7 +923,7 @@ const sitePath = (path) => {
 		border-top: 1px solid rgba(238, 238, 238, 0.12);
 		background: inherit;
 		color: inherit;
-		padding: clamp(5.5rem, 10vw, 9rem) clamp(1rem, 5.6vw, 6.5rem) 3.5rem;
+		padding: clamp(2.5rem, 4vw, 3.5rem) clamp(1rem, 5.6vw, 6.5rem) 3.5rem;
 		text-align: center;
 	}
 
@@ -950,8 +937,7 @@ const sitePath = (path) => {
 	}
 
 	.footer-primary,
-	.footer-legal,
-	.social-links {
+	.footer-legal {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -960,8 +946,7 @@ const sitePath = (path) => {
 	}
 
 	.footer-primary a,
-	.footer-legal a,
-	.social-links span {
+	.footer-legal a {
 		color: currentColor;
 		text-decoration: none;
 	}
@@ -1021,29 +1006,8 @@ const sitePath = (path) => {
 		font-size: 0.84rem;
 	}
 
-	.social-links {
-		margin: clamp(1.5rem, 2.6vw, 2rem) 0 1.6rem;
-	}
-
-	.social-links span {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 34px;
-		height: 34px;
-		color: currentColor;
-		opacity: 0.32;
-		cursor: default;
-	}
-
-	.social-links svg {
-		width: 24px;
-		height: 24px;
-		fill: currentColor;
-	}
-
 	.site-footer p {
-		margin: 0;
+		margin: clamp(1.5rem, 2.6vw, 2rem) 0 0;
 		color: currentColor;
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
@@ -1193,7 +1157,7 @@ const sitePath = (path) => {
 		}
 
 		.site-footer {
-			padding: 4rem max(1.25rem, env(safe-area-inset-right, 0px)) max(2.5rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
+			padding: 2.5rem max(1.25rem, env(safe-area-inset-right, 0px)) max(2.5rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
 		}
 
 		.chrome-ready .footer-primary {
@@ -1214,13 +1178,8 @@ const sitePath = (path) => {
 			line-height: 1.2;
 		}
 
-		.social-links {
-			margin: 1.25rem 0 1.15rem;
-		}
-
-		.social-links span {
-			width: 44px;
-			height: 44px;
+		.site-footer p {
+			margin-top: 1.25rem;
 		}
 
 		.footer-brand,

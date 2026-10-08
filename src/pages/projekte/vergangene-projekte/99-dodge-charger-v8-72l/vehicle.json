@@ -5,7 +5,7 @@
 	"description": "Mit seinen 7,2 Liter Hubraum verfügt \"Mann\" über \"ausreichend\" Hubraum und eine Leistung von 380 PS. Der Wagen erinnert mit seiner für deutsche Verhältn…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/99-dodge-charger-v8-72l",
 	"order": 101,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1968",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "DODGE Charger V8 R/T 7,2l Baujahr 1968",
@@ -24,8 +24,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br /><br /><br />DODGE Charger V8 R/T von 1968.</p>",
-			"htmlEn": "<p><br><br><br>A 1968 Dodge Charger V8 R/T.</p>"
+			"html": "<p>DODGE Charger V8 R/T von 1968.</p>",
+			"htmlEn": "<p>A 1968 Dodge Charger V8 R/T.</p>"
 		},
 		{
 			"type": "gallery",

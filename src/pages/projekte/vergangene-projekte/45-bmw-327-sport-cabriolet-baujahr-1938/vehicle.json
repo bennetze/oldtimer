@@ -5,22 +5,17 @@
 	"description": "Auch dieses BMW 327 Sportcabriolet - gebaut bei den Bayerischen Motoren Werken in Eisenach - wurde im Kundenauftrag bei uns einer umfangreichen und allu…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/45-bmw-327-sport-cabriolet-baujahr-1938",
 	"order": 89,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1938",
-	"leadImage": "./image-001.jpg",
-	"leadImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1938 – Fahrzeugdokumentation",
+	"leadImage": "./card.jpg",
+	"leadImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1938",
 	"blocks": [
 		{
 			"type": "copy",
 			"html": "<p>Auch dieses BMW 327 Sportcabriolet - gebaut bei den Bayerischen Motoren Werken in Eisenach - wurde im Kundenauftrag bei uns einer umfangreichen und allumfassenden Komplettrestauration unterzogen.</p>",
 			"htmlEn": "<p>This Eisenach-built BMW 327 Sport Cabriolet also received an extensive, comprehensive full restoration for its owner.</p>"
-		},
-		{
-			"type": "copy",
-			"html": "<p>Leider wurde auch dieser Wagen im Laufe der vergangenen Jahrzehnte stark “verbastelt” und dabei von den Vorbesitzern eher unsachgemäß “am Leben erhalten”.</p>",
-			"htmlEn": "<p>Over the decades, previous owners had heavily modified the car and kept it running with inappropriate methods.</p>"
 		},
 		{
 			"type": "gallery",
@@ -51,6 +46,11 @@
 					"altEn": "BMW 327 Sport - Cabriolet, year 1938 – Empty body with rear structure exposed."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Leider wurde auch dieser Wagen im Laufe der vergangenen Jahrzehnte stark “verbastelt” und dabei von den Vorbesitzern eher unsachgemäß “am Leben erhalten”.</p>",
+			"htmlEn": "<p>Over the decades, previous owners had heavily modified the car and kept it running with inappropriate methods.</p>"
 		},
 		{
 			"type": "copy",
@@ -144,8 +144,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nDabei wurde auch der gesamte Zierrat der prägnanten Frontmaske einschliesslich der Nieren komplett nachgefertigt.</p>",
-			"htmlEn": "<p><br>\nWe also completely remade the distinctive front trim, including the kidney grilles.</p>"
+			"html": "<p>Dabei wurde auch der gesamte Zierrat der prägnanten Frontmaske einschliesslich der Nieren komplett nachgefertigt.</p>",
+			"htmlEn": "<p>We also completely remade the distinctive front trim, including the kidney grilles.</p>"
 		},
 		{
 			"type": "gallery",
@@ -179,8 +179,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nNach dem Abschluss der aufwendigen Karosseriearbeiten wurde das Fahrzeug gemäß den Kundenwünschen zweifarbig originalgetreu lackiert und liniert.</p>",
-			"htmlEn": "<p><br>\nAfter bodywork, we applied an authentic two-tone finish and coachlines to the client’s wishes.</p>"
+			"html": "<p>Nach dem Abschluss der aufwendigen Karosseriearbeiten wurde das Fahrzeug gemäß den Kundenwünschen zweifarbig originalgetreu lackiert und liniert.</p>",
+			"htmlEn": "<p>After bodywork, we applied an authentic two-tone finish and coachlines to the client’s wishes.</p>"
 		},
 		{
 			"type": "copy",
@@ -229,8 +229,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><br />\nSomit konnten in unserer Fertigmacherei jetzt wieder alle Komponenten vereint und in unserer Polsterei eine neue Innenausstattung, nebst Cabrioletverdeck angefertigt werden.</p>",
-			"htmlEn": "<p><br>\nOur finishing department then reunited the components, while our upholstery shop made a new interior and convertible hood.</p>"
+			"html": "<p>Somit konnten in unserer Fertigmacherei jetzt wieder alle Komponenten vereint und in unserer Polsterei eine neue Innenausstattung, nebst Cabrioletverdeck angefertigt werden.</p>",
+			"htmlEn": "<p>Our finishing department then reunited the components, while our upholstery shop made a new interior and convertible hood.</p>"
 		},
 		{
 			"type": "gallery",
@@ -341,10 +341,15 @@
 					"altEn": "BMW 327 Sport - Cabriolet, year 1938 – Front three-quarter view outdoors."
 				}
 			]
+		},
+		{
+			"type": "copy",
+			"html": "<p>Insgesamt eine äußerst authentische und sehr originalgetreue Restauration eines auch im Detail perfekt restaurierten BMW 327 Sportcabriolet`s aus unserer Manufaktur, das kürzlich seinem hocherfreuten Besitzerehepaar ausgeliefert werden konnte.</p>",
+			"htmlEn": "<p>An exceptionally authentic restoration of a BMW 327 Sportcabriolet, faithful to the original in every detail, completed at our workshop and recently delivered to its delighted owners.</p>"
 		}
 	],
 	"titleEn": "BMW 327 Sport - Cabriolet, year 1938",
 	"descriptionEn": "This Eisenach-built BMW 327 Sport Cabriolet also received an extensive, comprehensive full restoration for its owner.",
 	"cardImageAltEn": "BMW 327 Sport - Cabriolet, year 1938",
-	"leadImageAltEn": "BMW 327 Sport - Cabriolet, year 1938 – vehicle record"
+	"leadImageAltEn": "BMW 327 Sport - Cabriolet, year 1938"
 }

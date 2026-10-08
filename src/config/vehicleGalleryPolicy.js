@@ -1,4 +1,5 @@
-export const GITHUB_PAGES_GALLERY_IMAGE_LIMIT = 4;
+// Preview visitors need the same complete documentation as production visitors.
+export const GITHUB_PAGES_GALLERY_IMAGE_LIMIT = Number.POSITIVE_INFINITY;
 
 export function limitVehicleGalleryBlocks(blocks, galleryImageLimit = Number.POSITIVE_INFINITY) {
 	if (!Number.isFinite(galleryImageLimit)) return blocks;

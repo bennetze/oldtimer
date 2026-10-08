@@ -5,7 +5,7 @@
 	"description": "Hier eine englische Sportwagenikone der ruhmreichen 30er Jahre:\nEin ALVIS Speed mit 4,3 Litern Hubraum, hier als so genannter \"Special-Roadster\", der in…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/169-alvis-speed-4-3-litre-special-1938",
 	"order": 29,
-	"dateModified": "2026-10-06",
+	"dateModified": "2026-10-07",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Alvis Speed 4,3 Litre Special, Baujahr 1938",
@@ -113,6 +113,11 @@
 			]
 		},
 		{
+			"type": "copy",
+			"html": "<p>...Was für ein Auto? - mit absolut stimmigen Proportionen und Details die einen typischen reinrassigen Sportwagen ausmachen.</p>",
+			"htmlEn": "<p>…what a car, with perfectly balanced proportions and the details of a true thoroughbred sports car.</p>"
+		},
+		{
 			"type": "gallery",
 			"images": [
 				{
@@ -126,11 +131,6 @@
 					"altEn": "Alvis Speed 4,3 Litre Special, year 1938 – Side mirror beside vent openings in dark panel."
 				}
 			]
-		},
-		{
-			"type": "copy",
-			"html": "<p><br />\n<br />\n...Was für ein Auto? - mit absolut stimmigen Proportionen und Details die einen typischen reinrassigen Sportwagen ausmachen.</p>",
-			"htmlEn": "<p><br>\n<br>\n…what a car, with perfectly balanced proportions and the details of a true thoroughbred sports car.</p>"
 		},
 		{
 			"type": "gallery",
