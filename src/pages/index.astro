@@ -50,9 +50,9 @@ const sitePath = (path) => {
 
 const sectionNavigationItems = [
   { id: "start", label: "Start" },
-  { id: "handwerk", label: "Handwerk" },
-  { id: "ueber-uns", label: "Über uns" },
-  { id: "projekte", label: "Projekte" },
+  { id: "ueber-uns", label: "Wir Über Uns" },
+  { id: "handwerk", label: "Unser Handwerk" },
+  { id: "projekte", label: "Unsere Projekte" },
 ];
 ---
 
@@ -60,7 +60,7 @@ const sectionNavigationItems = [
   description="Die Oldtimermanufaktur bewahrt die Geschichte klassischer Automobile – mit handwerklicher Präzision, technischer Sorgfalt und Respekt vor ihrer Geschichte."
   openGraphImage={heroSiteRevealPoster}
   openGraphImageAlt="Historischer Rennwagen unter einer hellen Abdeckung in der Werkstatt."
-  dateModified="2026-10-06"
+  dateModified="2026-10-09"
 >
   <SiteChrome>
     <main id="main-content" tabindex="-1">
@@ -113,12 +113,67 @@ const sectionNavigationItems = [
           </h1>
           <a
             class="scroll-cue"
-            href="#handwerk"
-            data-scroll-target="#handwerk"
-            aria-label="Zum Handwerk scrollen"
+            href="#ueber-uns"
+            data-scroll-target="#ueber-uns"
+            aria-label="Zu Über uns scrollen"
           >
             <span aria-hidden="true"></span>
           </a>
+        </div>
+      </section>
+
+      <section
+        class="media-panel editorial-panel"
+        id="ueber-uns"
+        aria-labelledby="ueber-uns-title"
+        data-motion-panel
+      >
+        <video
+          class="media-panel__image"
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          preload="none"
+          disablepictureinpicture
+          data-motion-video
+          aria-hidden="true"
+        >
+          <source data-motion-src={ueberUnsMp4} data-motion-mobile-src={ueberUnsMobileMp4} type="video/mp4" />
+          <source data-motion-src={ueberUnsWebm} type="video/webm" />
+        </video>
+
+        <MotionPoster poster={ueberUnsPoster} avif={ueberUnsMotionAvif.src} webp={includeWebpMotionFallback ? ueberUnsMotionWebp.src : undefined} />
+
+        <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="media-panel__shade"></div>
+        <a
+          class="scroll-cue scroll-cue--up section-up-cue"
+          href="#start"
+          data-scroll-target="#start"
+          aria-label="Zum Start scrollen"
+        >
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="media-panel__content media-panel__content--craft">
+          <h2 id="ueber-uns-title">Wir Über Uns</h2>
+          <div class="section-cta-slot">
+            <a class="section-cta" href={sitePath("/ueber-uns/")}>
+              <span class="section-cta__label">Mehr erfahren</span>
+            </a>
+          </div>
+          <div class="scroll-cues" role="group" aria-label="Abschnitt wechseln">
+            <a
+              class="scroll-cue"
+              href="#handwerk"
+              data-scroll-target="#handwerk"
+              aria-label="Zum Handwerk scrollen"
+            >
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -152,71 +207,16 @@ const sectionNavigationItems = [
         <div class="media-panel__shade"></div>
         <a
           class="scroll-cue scroll-cue--up section-up-cue"
-          href="#start"
-          data-scroll-target="#start"
-          aria-label="Zum Start scrollen"
+          href="#ueber-uns"
+          data-scroll-target="#ueber-uns"
+          aria-label="Zu Über uns scrollen"
         >
           <span aria-hidden="true"></span>
         </a>
         <div class="media-panel__content media-panel__content--craft">
-          <h2 id="craft-title">Handwerk</h2>
+          <h2 id="craft-title">Unser Handwerk</h2>
           <div class="section-cta-slot">
             <a class="section-cta" href={sitePath("/handwerk/")}>
-              <span class="section-cta__label">Mehr erfahren</span>
-            </a>
-          </div>
-          <div class="scroll-cues" role="group" aria-label="Abschnitt wechseln">
-            <a
-              class="scroll-cue"
-              href="#ueber-uns"
-              data-scroll-target="#ueber-uns"
-              aria-label="Zu Über uns scrollen"
-            >
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="media-panel editorial-panel"
-        id="ueber-uns"
-        aria-labelledby="ueber-uns-title"
-        data-motion-panel
-      >
-        <video
-          class="media-panel__image"
-          muted
-          loop
-          playsinline
-          webkit-playsinline
-          preload="none"
-          disablepictureinpicture
-          data-motion-video
-          aria-hidden="true"
-        >
-          <source data-motion-src={ueberUnsMp4} data-motion-mobile-src={ueberUnsMobileMp4} type="video/mp4" />
-          <source data-motion-src={ueberUnsWebm} type="video/webm" />
-        </video>
-
-        <MotionPoster poster={ueberUnsPoster} avif={ueberUnsMotionAvif.src} webp={includeWebpMotionFallback ? ueberUnsMotionWebp.src : undefined} />
-
-        <button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen">
-          <span aria-hidden="true"></span>
-        </button>
-        <div class="media-panel__shade"></div>
-        <a
-          class="scroll-cue scroll-cue--up section-up-cue"
-          href="#handwerk"
-          data-scroll-target="#handwerk"
-          aria-label="Zum Handwerk scrollen"
-        >
-          <span aria-hidden="true"></span>
-        </a>
-        <div class="media-panel__content media-panel__content--craft">
-          <h2 id="ueber-uns-title">Über uns</h2>
-          <div class="section-cta-slot">
-            <a class="section-cta" href={sitePath("/ueber-uns/")}>
               <span class="section-cta__label">Mehr erfahren</span>
             </a>
           </div>
@@ -262,14 +262,14 @@ const sectionNavigationItems = [
         <div class="media-panel__shade"></div>
         <a
           class="scroll-cue scroll-cue--up section-up-cue"
-          href="#ueber-uns"
-          data-scroll-target="#ueber-uns"
-          aria-label="Zu Über uns scrollen"
+          href="#handwerk"
+          data-scroll-target="#handwerk"
+          aria-label="Zum Handwerk scrollen"
         >
           <span aria-hidden="true"></span>
         </a>
         <div class="media-panel__content media-panel__content--craft">
-          <h2 id="projekte-title">Projekte</h2>
+          <h2 id="projekte-title">Unsere Projekte</h2>
           <div class="section-cta-slot">
             <a class="section-cta" href={sitePath("/projekte/")}>
               <span class="section-cta__label">Mehr erfahren</span>

@@ -57,7 +57,6 @@ for (const file of files) {
 		galleryLinks++;
 		if (node.tagName !== 'a' || $(node).attr('href') !== $(node).attr('data-lightbox-src')) fail('gallery requires a direct image link fallback');
 	});
-	if ($('[data-system-pointer]').length !== 1) fail('missing pointer preference');
 	if ($('.menu-toggle').attr('href') !== '#site-footer') fail('missing non-script navigation fallback');
 	if ($('[data-vehicle-search]').length && !$('[data-vehicle-search-status][role="status"][aria-atomic="true"]').length) fail('missing search status semantics');
 }

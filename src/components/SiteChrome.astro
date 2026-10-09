@@ -1,7 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import brandMark from '../assets/oldtimer/brand/oldtimermanufaktur-mark.svg?url';
-import { branding, legacyLogo } from '../config/branding';
+import { companyLogo } from '../config/branding';
 import { languagePath } from '../i18n/language.js';
 interface Props {
 	theme?: 'dark' | 'light';
@@ -17,6 +16,7 @@ const navigationItems = [
 		href: '/projekte/fahrzeugangebote/',
 		activePath: '/projekte/fahrzeugangebote',
 	},
+	{ title: 'Kontakte', href: '/ueber-uns/#kontakt', activePath: undefined },
 ];
 
 const { theme = 'dark' } = Astro.props;
@@ -52,22 +52,13 @@ const sitePath = (path) => {
 ---
 
 <div class:list={['site-shell', { 'site-shell--light': theme === 'light', 'site-shell--home': currentPath === '/' }]}>
-	<div class="cursor" aria-hidden="true"></div>
-
 	<header class="site-header" data-floating-header>
 		<a class="menu-toggle" href="#site-footer" aria-controls="site-menu" aria-expanded="false">
 			<span class="menu-lines" aria-hidden="true"></span>
 			<span>Menü</span>
 		</a>
-		<a class:list={['brand', { 'brand--legacy': branding.header === 'legacy' }]} href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
-			{branding.header === 'legacy' ? (
-				<Image class="brand-logo" src={legacyLogo} width={720} widths={[240, 360, 480, 720]} sizes="(max-width: 760px) 240px, 360px" alt="" aria-hidden="true" draggable="false" loading="eager" />
-			) : (
-				<>
-					{currentPath === '/' && <img class="brand-mark" src={brandMark} width="2050" height="485" alt="" aria-hidden="true" draggable="false" />}
-					<span>DIE OLDTIMERMANUFAKTUR</span>
-				</>
-			)}
+		<a class="brand brand--logo" href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
+			<Image class="brand-logo" src={companyLogo} width={720} widths={[240, 360, 480, 720]} sizes="(max-width: 760px) 240px, 360px" alt="" aria-hidden="true" draggable="false" loading="eager" />
 		</a>
 		<nav class="language-switch" aria-label="Sprache wählen">
 			<a href={`${languagePath(Astro.url.pathname, 'de', basePath)}?lang=de`} data-language="de" lang="de" hreflang="de" aria-label="Deutsch (DE)">DE</a>
@@ -95,10 +86,6 @@ const sitePath = (path) => {
 					))
 				}
 			</nav>
-			<label class="pointer-preference" hidden>
-				<input type="checkbox" data-system-pointer />
-				<span>Systemzeiger verwenden</span>
-			</label>
 		</div>
 	</div>
 
@@ -127,13 +114,11 @@ const sitePath = (path) => {
 </div>
 
 <script>
-	import { watchMedia, setIsolated, systemPointerPreference } from '../scripts/accessibility.js';
+	import { watchMedia, setIsolated } from '../scripts/accessibility.js';
 	// Older engines do not understand selector() conditions or :focus-visible.
 	let supportsFocusVisible = false;
 	try { supportsFocusVisible = Boolean(window.CSS?.supports?.('selector(:focus-visible)')); } catch { /* Older CSS API. */ }
 	if (!supportsFocusVisible) document.documentElement.classList.add('legacy-focus');
-	const cursor = document.querySelector('.cursor');
-	const interactiveSelector = 'a, button, [role="button"]';
 	const siteShell = document.querySelector('.site-shell');
 	const menuToggle = document.querySelector('.menu-toggle');
 	const menuOverlay = document.querySelector('.menu-overlay');
@@ -157,78 +142,6 @@ const sitePath = (path) => {
 	});
 	let activeSectionScroll;
 
-	if (cursor instanceof HTMLElement) {
-		const pointerChoice = systemPointerPreference(() => window.localStorage);
-		const pointerControl = document.querySelector('[data-system-pointer]');
-		const cursorPreference = window.matchMedia('(min-width: 761px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
-		const forcedColors = window.matchMedia('(forced-colors: active)');
-		const increasedContrast = window.matchMedia('(prefers-contrast: more)');
-		const effect = 'blur(10px) grayscale(1) brightness(1.1) contrast(12) invert(1)';
-		const ringMask = 'radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px))';
-		const supported = typeof CSS !== 'undefined' && typeof CSS.supports === 'function'
-			&& (CSS.supports('backdrop-filter', effect) || CSS.supports('-webkit-backdrop-filter', effect))
-			&& (CSS.supports('mask-image', ringMask) || CSS.supports('-webkit-mask-image', ringMask))
-			&& typeof window.PointerEvent === 'function'
-			&& typeof window.requestAnimationFrame === 'function';
-		const nativeCursorSelector = 'dialog, input:not([data-system-pointer]), textarea, select, [contenteditable]:not([contenteditable="false"]), iframe';
-		let cursorFrame;
-		let cursorX = -40;
-		let cursorY = -40;
-		let enabled = false;
-		let pointerTarget = null;
-
-		const hideCursor = () => {
-			if (cursorFrame !== undefined) window.cancelAnimationFrame(cursorFrame);
-			cursorFrame = undefined;
-			document.documentElement.classList.remove('has-custom-cursor');
-			cursor.classList.remove('is-active');
-		};
-		const updateCursor = () => {
-			enabled = !pointerChoice.enabled && supported && cursorPreference.matches && !forcedColors.matches && !increasedContrast.matches;
-			hideCursor();
-		};
-		for (const preference of [cursorPreference, forcedColors, increasedContrast]) {
-			if (typeof preference.addEventListener === 'function') preference.addEventListener('change', updateCursor);
-			else if (typeof preference.addListener === 'function') preference.addListener(updateCursor);
-		}
-		if (pointerControl instanceof HTMLInputElement) {
-			pointerControl.checked = pointerChoice.enabled;
-			pointerControl.closest('label').hidden = false;
-			pointerControl.addEventListener('change', () => {
-				pointerChoice.set(pointerControl.checked);
-				updateCursor();
-			});
-		}
-		updateCursor();
-
-		const renderCursor = () => {
-			cursorFrame = undefined;
-			if (!enabled || document.hidden) return;
-			cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
-			cursor.classList.toggle('is-active', Boolean(pointerTarget?.closest(interactiveSelector)));
-			// Hide the native pointer only once its replacement has a valid position.
-			document.documentElement.classList.add('has-custom-cursor');
-		};
-		window.addEventListener('pointermove', (event) => {
-			pointerTarget = event.target instanceof Element ? event.target : null;
-			if (!enabled || event.pointerType !== 'mouse' || pointerTarget?.closest(nativeCursorSelector)
-				|| document.querySelector('dialog[open]')) {
-				hideCursor();
-				return;
-			}
-			cursorX = event.clientX;
-			cursorY = event.clientY;
-			if (cursorFrame === undefined) cursorFrame = window.requestAnimationFrame(renderCursor);
-		}, { passive: true });
-		window.addEventListener('blur', hideCursor);
-		document.documentElement.addEventListener('pointerleave', hideCursor);
-		document.addEventListener('visibilitychange', hideCursor);
-		document.addEventListener('keydown', hideCursor);
-		document.addEventListener('focusin', (event) => {
-			if (event.target instanceof Element && event.target.closest(nativeCursorSelector)) hideCursor();
-		});
-	}
-
 	const focusableMenuItems = () =>
 		menuPanel ? [...menuPanel.querySelectorAll('a[href], button:not([disabled]), input:not([disabled])')] : [];
 
@@ -240,8 +153,7 @@ const sitePath = (path) => {
 		[...siteShell.children, document.querySelector('.skip-link')].forEach((element) => {
 			if (
 				!(element instanceof HTMLElement) ||
-				element === menuOverlay ||
-				element === cursor
+				element === menuOverlay
 			) {
 				return;
 			}
@@ -250,7 +162,10 @@ const sitePath = (path) => {
 		});
 	};
 
+	let menuNavigationPending = false;
+
 	const openMenu = () => {
+		if (menuNavigationPending) return;
 		stopSectionScroll();
 		if (menuOverlay instanceof HTMLElement) {
 			menuOverlay.inert = false;
@@ -402,9 +317,61 @@ const sitePath = (path) => {
 		items[next]?.focus();
 	});
 
+	// Wait for the real CSS exit, including cancellation when motion preferences change.
+	const waitForExit = async (element, fallbackDuration) => {
+		if (prefersReducedMotion.matches || !(element instanceof HTMLElement)) return;
+		const animations = element.getAnimations?.() ?? [];
+		await new Promise((resolve) => {
+			const timer = window.setTimeout(resolve, fallbackDuration);
+			if (animations.length) {
+				Promise.allSettled(animations.map((animation) => animation.finished)).then(() => {
+				window.clearTimeout(timer);
+				resolve();
+				});
+			}
+		});
+	};
+
+	window.addEventListener('pageshow', () => {
+		// Back/Forward may restore the departing document from the browser cache.
+		menuNavigationPending = false;
+		menuOverlay?.classList.remove('is-navigating');
+		setMenuBackgroundInert(false);
+	});
+
 	document.querySelectorAll('.menu-nav__link[href]').forEach((link) => {
-		link.addEventListener('click', () => {
-			closeMenu({ restoreFocus: false });
+		link.addEventListener('click', async (event) => {
+			if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+			if (!(link instanceof HTMLAnchorElement) || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
+			const destination = new URL(link.href, window.location.href);
+			if (destination.origin !== window.location.origin) return;
+			event.preventDefault();
+			if (menuNavigationPending) return;
+			menuNavigationPending = true;
+			const samePage = destination.pathname === window.location.pathname && destination.search === window.location.search;
+			menuOverlay?.classList.add('is-navigating');
+			closeMenu({ restoreFocus: true });
+			setMenuBackgroundInert(true);
+			await waitForExit(menuPanel, 220);
+			if (samePage) {
+				menuNavigationPending = false;
+				menuOverlay?.classList.remove('is-navigating');
+				setMenuBackgroundInert(false);
+				if (destination.hash) {
+					window.location.assign(destination.href);
+					let target;
+					try { target = document.getElementById(decodeURIComponent(destination.hash.slice(1))); } catch { /* Preserve native fragment handling. */ }
+					if (target instanceof HTMLElement) {
+						if (!target.hasAttribute('tabindex')) {
+							target.setAttribute('tabindex', '-1');
+							target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
+						}
+						target.focus({ preventScroll: true });
+					}
+				}
+				return;
+			}
+			window.location.assign(destination.href);
 		});
 	});
 
@@ -494,7 +461,7 @@ const sitePath = (path) => {
 		display: flex;
 		justify-content: flex-end;
 		gap: 0.75rem;
-		font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.9rem);
+		font-size: clamp(1rem, 0.9rem + 0.4vw, 1.3rem);
 		letter-spacing: 0.06em;
 	}
 
@@ -537,73 +504,6 @@ const sitePath = (path) => {
 		background: #eeeeee;
 		background-color: #eeeeee;
 		color: #111111;
-	}
-
-	:global(.has-custom-cursor),
-	:global(.has-custom-cursor *) {
-		cursor: none !important;
-	}
-
-	/* Native dialogs are in the top layer, above the decorative cursor. */
-	:global(.has-custom-cursor dialog),
-	:global(.has-custom-cursor dialog *),
-	:global(.has-custom-cursor input:not([data-system-pointer])),
-	:global(.has-custom-cursor textarea),
-	:global(.has-custom-cursor select),
-	:global(.has-custom-cursor [contenteditable]:not([contenteditable="false"])),
-	:global(.has-custom-cursor [contenteditable]:not([contenteditable="false"]) *) {
-		cursor: auto !important;
-	}
-
-	:global(html:not(.has-custom-cursor)) .cursor {
-		display: none;
-	}
-
-	.cursor {
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 1000;
-		width: 28px;
-		height: 28px;
-		background: transparent;
-		border-radius: 999px;
-		pointer-events: none;
-		transform: translate3d(-40px, -40px, 0) translate(-50%, -50%);
-		will-change: transform;
-		transition:
-			width 180ms ease,
-			height 180ms ease;
-	}
-
-	.cursor::before {
-		content: '';
-		position: absolute;
-		inset: 0;
-		border-radius: inherit;
-		/* Average background detail and use a soft luminance threshold so black
-		   and white flow into each other along the ring. The biased threshold
-		   keeps middle gray dark; the masked edge and clear center stay crisp. */
-		-webkit-backdrop-filter: blur(10px) grayscale(1) brightness(1.1) contrast(12) invert(1);
-		backdrop-filter: blur(10px) grayscale(1) brightness(1.1) contrast(12) invert(1);
-		-webkit-mask-image: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
-		mask-image: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
-	}
-
-	.cursor.is-active {
-		width: 42px;
-		height: 42px;
-	}
-
-	@media (forced-colors: active), (prefers-contrast: more), (prefers-reduced-motion: reduce) {
-		:global(.has-custom-cursor),
-		:global(.has-custom-cursor *) {
-			cursor: auto !important;
-		}
-
-		.cursor {
-			display: none;
-		}
 	}
 
 	.site-header {
@@ -662,7 +562,7 @@ const sitePath = (path) => {
 		font-size: clamp(0.75rem, 1.1vw, 1.25rem);
 	}
 
-	.brand.brand--legacy {
+	.brand.brand--logo {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -672,7 +572,7 @@ const sitePath = (path) => {
 
 	.brand-logo {
 		display: block;
-		filter: saturate(75%);
+		filter: brightness(85%);
 		width: clamp(180px, 24vw, 360px);
 		max-width: 100%;
 		height: auto;
@@ -712,7 +612,7 @@ const sitePath = (path) => {
 		justify-self: start;
 		min-height: 44px;
 		padding: 0.75rem 0;
-		font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.9rem);
+		font-size: clamp(1rem, 0.9rem + 0.4vw, 1.3rem);
 	}
 
 	.menu-lines,
@@ -733,46 +633,6 @@ const sitePath = (path) => {
 		transform: translateY(6px);
 	}
 
-
-	.pointer-preference {
-		display: flex;
-		align-items: center;
-		gap: 0.75rem;
-		padding: 0.75rem 0;
-		font-size: 1rem;
-		color: inherit;
-	}
-	.pointer-preference[hidden] { display: none; }
-	.pointer-preference input {
-		appearance: none;
-		-webkit-appearance: none;
-		display: grid;
-		place-content: center;
-		flex: 0 0 1.25rem;
-		width: 1.25rem;
-		height: 1.25rem;
-		min-height: 0;
-		margin: 0;
-		padding: 0;
-		border: 1px solid currentColor;
-		border-radius: 0;
-		background: transparent;
-		color: inherit;
-	}
-	.pointer-preference input::before {
-		content: '';
-		width: 0.35rem;
-		height: 0.65rem;
-		border: solid currentColor;
-		border-width: 0 1.5px 1.5px 0;
-		transform: translateY(-0.1rem) rotate(45deg);
-		visibility: hidden;
-	}
-	.pointer-preference input:checked::before { visibility: visible; }
-	@media (forced-colors: active) {
-		.pointer-preference input { appearance: auto; -webkit-appearance: auto; }
-		.pointer-preference input::before { content: none; }
-	}
 
 	.menu-overlay {
 		/* Start the exit immediately; keep the overlay visible through the link stagger. */
@@ -895,7 +755,26 @@ const sitePath = (path) => {
 		transition-delay: calc(120ms + (var(--item-index, 0) * 50ms));
 	}
 
+	/* Link activation slides the intact panel away, then navigates immediately. */
+	.menu-overlay.is-navigating {
+		opacity: 1;
+		transition: visibility 0s linear 180ms;
+	}
+
+	.menu-overlay.is-navigating .menu-panel {
+		transition-duration: 180ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+	}
+
+	.menu-overlay.is-navigating .menu-nav__link {
+		opacity: 1;
+		transform: translateX(0);
+		transition: none;
+	}
+
 	@media (prefers-reduced-motion: reduce) {
+		.menu-overlay.is-navigating,
+		.menu-overlay.is-navigating .menu-panel,
 		.menu-overlay,
 		.menu-panel,
 		.menu-nav__link {
@@ -929,6 +808,7 @@ const sitePath = (path) => {
 
 	.site-shell--light .site-footer {
 		border-top-color: rgba(17, 17, 17, 0.14);
+		color: #000000;
 	}
 
 	.site-footer > * {
@@ -982,11 +862,11 @@ const sitePath = (path) => {
 	}
 
 	.site-shell--light .site-footer a {
-		opacity: 0.6;
+		opacity: 1;
 	}
 
 	.site-shell--light .footer-primary a[aria-current='page'] {
-		opacity: 0.72;
+		opacity: 1;
 	}
 
 	.site-shell--light .site-footer a:hover,
@@ -1013,6 +893,10 @@ const sitePath = (path) => {
 		letter-spacing: 0.2em;
 		font-size: 0.76rem;
 		opacity: 0.64;
+	}
+
+	.site-shell--light .site-footer p {
+		opacity: 1;
 	}
 
 	.menu-toggle:focus-visible,
@@ -1053,10 +937,6 @@ const sitePath = (path) => {
 
 		.brand-logo {
 			width: min(100%, 240px);
-		}
-
-		.cursor {
-			display: none;
 		}
 
 		.site-header {
@@ -1100,7 +980,7 @@ const sitePath = (path) => {
 
 		.language-switch {
 			gap: 0;
-			font-size: 0.8rem;
+			font-size: 1.05rem;
 		}
 
 

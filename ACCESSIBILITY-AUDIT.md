@@ -10,20 +10,20 @@ Manual browser sampling covered the homepage, Handwerk, company profile, project
 
 Actual Chrome 400% page zoom was verified in the browser UI and restored to 100%. The root-font fixture is not a substitute for a native browser text-only enlargement test. Feature-removal fixtures run in a current browser and are not evidence that an actual legacy engine passes. Script-removal fixtures verify script-independent HTML but do not replace testing with the browser JavaScript setting disabled.
 
-Native browser keyboard and accessibility-tree menu checks were performed in Chrome 154.0.8037.93, Firefox 156.0.1 and Safari 27.0 on macOS 27.0. Opening the menu removed background content from the exposed tree, reverse Tab wrapped to the pointer checkbox, and Escape returned focus to Menu. Accessibility-tree inspection is not a screen-reader speech test. VoiceOver was not enabled. At the user’s explicit request, no further VoiceOver or VoiceOver Utility interaction will be performed; direct VoiceOver behavior remains unverified. Chromium in-app browser checks supplied DOM, viewport and interaction evidence.
+Native browser keyboard and accessibility-tree menu checks were performed in Chrome 154.0.8037.93, Firefox 156.0.1 and Safari 27.0 on macOS 27.0. Opening the menu removed background content from the exposed tree, reverse Tab wrapped within the menu (before its display preference was removed on 9 October 2026), and Escape returned focus to Menu. Accessibility-tree inspection is not a screen-reader speech test. VoiceOver was not enabled. At the user’s explicit request, no further VoiceOver or VoiceOver Utility interaction will be performed; direct VoiceOver behavior remains unverified. Chromium in-app browser checks supplied DOM, viewport and interaction evidence.
 
 ## Findings and disposition
 
 | ID | Finding / affected components | Evidence and disposition |
 | --- | --- | --- |
 | A01 | Global Up/Down section navigation interfered with native navigation | Removed as approved. Explicit section links and scroll controls remain. Regression checks that native arrow events are not prevented. |
-| A02 | Custom pointer could override a preferred system pointer | Approved menu checkbox added in both languages. Explicit choice persists in `oldtimer.systemPointer`; unchecked removes it. Storage denial preserves the in-memory choice. No cookies, tracking or transmission. Privacy review recorded in LEGAL-COMPLIANCE-AUDIT.md; production legal text unchanged. |
+| A02 | Preferred system pointer | Decorative pointer and display-preference switch removed on 9 October 2026; the browser now supplies its native pointer throughout. |
 | A03 | Menu depended on native `inert` | Fallback saves/restores original tabindex, aria-hidden and pointer state; focus moves before background isolation. Native and fallback restoration regressions pass. |
 | A04 | Gallery enlargement depended on native dialog APIs | Shared modal helper provides fallback isolation, Tab containment, Escape and opener restoration. Original-image anchors remain usable without scripts. Native and simulated fallback checked. |
 | A05 | Legacy optional media listeners, animations and observers | Legacy `addListener`, guarded animation methods, promise-less `play()`, geometry-based video visibility and guarded observers added. Current-engine feature-removal tests pass; actual older engines remain unverified. |
 | A06 | Essential unsupported CSS and script failure paths | Viewport and font fallbacks, blur-free readable surfaces and older-focus treatment added. Fragment links, footer navigation, pagination and image links remain in HTML. Search/motion controls stay hidden until their controller initializes. Global hidden enforcement prevents author display rules exposing hidden controls/results. |
 | A07 | Enlarged text and text spacing clipped the header/homepage | Approved conditional wrapping and measured header scroll margins added. 320px, real 400% Chrome zoom and root-font fixture checked. Native 200% text-only testing remains outstanding. |
-| A08 | OS contrast modes needed explicit surfaces | Approved forced-color system colors, contrast-mode surfaces and cursor suppression added. CSS and feature logic inspected. Actual Windows forced colors and macOS contrast preference changes unverified. |
+| A08 | OS contrast modes needed explicit surfaces | Approved forced-color system colors, contrast-mode surfaces added. CSS and feature logic inspected. Actual Windows forced colors and macOS contrast preference changes unverified. |
 | A09 | Search accessible name overrode its visible label | Removed the override; associated visible label is the name. Polite atomic result status added. Hidden-card animation is guarded; unsupported inert uses immediate hiding. Search and Back restoration checked. |
 | A10 | Labelled generic elements / paragraph name | Gallery, section-cue and collage groups now use group semantics; prohibited paragraph label removed while retaining visible qualifications. No authored vehicle record changed. |
 | A11 | White homepage headings over bright motion frames | Stronger overlay preview approved, then revised at user's direction: homepage text `#ffffff`, base shade 40% instead of 56%, existing gradients preserved. Large headings (minimum 27.2px) have a conservative 3.10:1 bound over a white image beneath both gradient minima. This bound does not certify translucent navigation/icons or every UI state. |
@@ -83,7 +83,7 @@ Native browser keyboard and accessibility-tree menu checks were performed in Chr
 | 3.1.1 Language of Page | Pass (scoped) | All generated html roots use de/en; bilingual boundary build checks pass. |
 | 3.1.2 Language of Parts | Unverified | A15 exact known English phrases annotated after validation; complete authored language review pending. |
 | 3.2.1 On Focus | Pass (scoped) | Sampled focus does not navigate/change context. |
-| 3.2.2 On Input | Pass (scoped) | Search locally filters and announces; pointer checkbox does not navigate. |
+| 3.2.2 On Input | Pass (scoped) | Search locally filters and announces. |
 | 3.2.3 Consistent Navigation | Pass (scoped) | Shared chrome/archives retain route order and destinations. |
 | 3.2.4 Consistent Identification | Pass (scoped) | Shared controls use consistent labels/icons in each language. |
 | 3.2.6 Consistent Help | Pass (scoped) | Existing telephone/email contact mechanisms retain shared placement; no new help flow. |
@@ -111,18 +111,18 @@ Native browser keyboard and accessibility-tree menu checks were performed in Chr
 | Android Chrome + TalkBack | Unverified; viewport resizing is not Android testing. |
 | OS voice control / speech input | Unverified; label inspection is not direct speech activation. |
 | Switch scanning / external switch hardware | Unverified; keyboard evidence only. |
-| OS forced colors, increased contrast, enlarged pointer | Unverified directly; conditional code reviewed. System pointer choice persists and works with denied storage in regression tests. |
+| OS forced colors, increased contrast, enlarged pointer | Unverified directly; contrast-mode code reviewed. Native browser pointer is used throughout. |
 | OS reduced motion | Controller branches and live changes regression-tested; real OS preference/AT interaction unverified. |
 | Real older browser versions | Unverified; missing-feature fixtures tested only in a current engine. |
 | Touch hardware / both device orientations | Unverified directly; responsive layouts and single-pointer actions inspected. |
 
 ## Verification and reproducibility
 
-- `npm test`: 70 regressions passed plus vehicle-discovery fixture. Includes modal restoration, legacy media listeners, pointer persistence/storage failure, native arrow behavior, guarded hidden results, motion fallback races, native category-dialog full traversal, older focus-selector detection and trusted language annotations.
+- `npm test`: 70 regressions passed plus vehicle-discovery fixture. Includes modal restoration, legacy media listeners, native arrow behavior, guarded hidden results, motion fallback races, native category-dialog full traversal, older focus-selector detection and trusted language annotations.
 - `npm run build`: passed production routes, CSP, image dimensions, links, IDs, metadata, authored bilingual vehicle verification and accessibility invariants.
 - `npm run build:pages`: passed `/oldtimer/`, preview/noindex safeguards and generated artifact checks. Its existing gallery limit yielded 3,516 image elements and 1,172 direct gallery links; production yielded 8,476 and 6,132 respectively. Both scans had no invariant failures. Final Pages gallery fallback Escape restored the opener and original background state; English archive pagination retained its base-path URLs.
 - `npm run vehicles:sync`: explicitly run; 338 canonical sitemap URLs, no tracked sitemap diff because reviewed shared modification date already 2026-09-30.
-- `npm run crawlers:check`: validates canonical sitemap, manual llms links and robots policy. llms.txt updated for actual pointer preference, approved editorial alternatives and approved control/focus treatment; project descriptions remain unchanged. robots.txt reviewed: no new routes, asset policy or indexing-scope change; existing policy retained.
+- `npm run crawlers:check`: validates canonical sitemap, manual llms links and robots policy. llms.txt updated for native pointer behavior, approved editorial alternatives and approved control/focus treatment; project descriptions remain unchanged. robots.txt reviewed: no new routes, asset policy or indexing-scope change; existing policy retained.
 - Shared Open Graph/JSON-LD baseline, representative imagery and authored facts retained; representative image alternatives updated with approved descriptions in shared Open Graph/JSON-LD props; no page purpose or modeled business fact changed. Existing build validators verify complete metadata and dates.
 - Tracked-source SHA-256 hashes were identical before and after both builds; `git diff --check` passed.
 - `npm run audit:accessibility` scans current dist; it is also part of both builds.

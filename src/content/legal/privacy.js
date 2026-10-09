@@ -3,10 +3,10 @@
 export const privacyNotice = {
 	de: {
 		title: 'Datenschutzerklärung',
-		description: 'Datenschutzinformationen zur neuen Website der Oldtimermanufaktur: Hosting, lokale Browserfunktionen, Kontakt und Ihre Rechte.',
+		description: 'Datenschutzinformationen zur neuen Website der Oldtimermanufaktur: Hosting, Fahrzeugsuche, Sprachauswahl, Kontakt und Ihre Rechte.',
 		eyebrow: 'Entwicklungsvorschau',
 		navigation: 'Abschnitte der Datenschutzerklärung',
-		date: 'Stand: 4. Oktober 2026',
+		date: 'Stand: 9. Oktober 2026',
 		controllerLabel: 'Verantwortlicher nach den derzeit vorliegenden Unternehmensangaben:',
 		contactLabel: 'Datenschutzanfragen können Sie an die oben angegebene E-Mail-Adresse oder postalisch an uns richten.',
 		sections: [
@@ -24,12 +24,11 @@ export const privacyNotice = {
 			], links: [{ label: 'GitHub: Informationen zur Erfassung von IP-Adressen bei GitHub Pages', href: 'https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection' }], open: 'Offen: konkrete Anbieter und Gesellschaften, Vertragsrollen und Vereinbarungen, Infrastruktur und Unterauftragnehmer, Verarbeitungsorte und Drittlandgrundlagen, Protokollfelder, Löschfristen und gegebenenfalls aktivierte Hostingstatistiken. Auch die Aufbewahrungsdauer der GitHub-Sicherheitsprotokolle ist noch zu klären.' },
 			{ id: 'datenschutz-browser', label: 'Browserfunktionen', title: '3. Cookies und lokale Browserfunktionen', paragraphs: [
 				'Der geprüfte Quellcode der neuen Website enthält keine Analyse-, Werbe- oder Trackingdienste und setzt selbst keine Cookies. Weitere Formulare, Newsletter, WhatsApp-, Buchungs- oder KI-Dienste sind derzeit nicht vorgesehen. Ob die tatsächliche Hostinginfrastruktur zusätzliche Cookies oder Dienste einsetzt, ist noch durch eine Prüfung der ausgelieferten Website zu bestätigen.',
-				'Im Menü können Sie „Systemzeiger verwenden“ auswählen. Der Browser speichert hierfür unter oldtimer.systemPointer ausschließlich den Wert true im Local Storage. Dieser Wert wird bei weiteren Besuchen gelesen und durch diesen Websitecode nicht an einen Server übertragen. Wenn Sie die Auswahl aufheben, wird der Eintrag entfernt. Sie können ihn auch über die Website-Daten Ihres Browsers löschen. Eine automatische Ablaufzeit ist derzeit nicht eingerichtet.',
 				'Die Fahrzeugsuche filtert Inhalte lokal im Browser. Suchtext und zugehöriger Archivpfad werden im Zustand des jeweiligen Browserverlauf-Eintrags gespeichert, damit die Suche beim Zurückkehren erhalten bleibt. Der Websitecode übermittelt den Suchtext nicht und fügt ihn nicht der Anfrageadresse hinzu. Sie können die Suche im Suchfeld leeren. Die Lebensdauer des Verlaufzustands wird durch den Browser einschließlich seiner Sitzungswiederherstellung bestimmt.',
 				'Für die automatische Sprachauswahl liest die Website die bevorzugte Browsersprache. Ihre manuelle Auswahl wird über die Seitenadresse und den Parameter lang weitergegeben; hierfür wird kein Sprach-Cookie oder lokaler Spracheintrag angelegt. Die aufgerufene Sprachadresse kann als Teil der normalen Anfrage beim Hostingdienst anfallen. Es wird kein externer Übersetzungsdienst aufgerufen.',
 				'Für Darstellung und Medienwiedergabe berücksichtigt die Website unter anderem Bildschirmgröße, Eingabeart, Browserkompatibilität, reduzierte Bewegung und eine gegebenenfalls verfügbare Datenspareinstellung. Diese Funktionen dienen der lokalen Darstellung; der geprüfte Code bildet daraus keine wiedererkennbare Nutzerkennung und übermittelt kein Fingerprinting-Profil.',
 				'Für die Speicherung und das Auslesen von Informationen auf Ihrem Gerät ist § 25 TDDDG gesondert zu beachten. Die Ausnahme für technisch unbedingt erforderliche Funktionen eines ausdrücklich gewünschten Dienstes (§ 25 Abs. 2 Nr. 2 TDDDG) wird für die hier beschriebenen Funktionen einschließlich ihrer Dauer noch abschließend geprüft. Diese Datenschutzerklärung behauptet daher nicht, dass sämtliche Gerätezugriffe bereits als einwilligungsfrei bestätigt sind. Einwilligungsbedürftige Funktionen dürfen erst nach wirksamer Einwilligung eingesetzt werden.',
-			], open: 'Offen: abschließende Prüfung aller Gerätezugriffe und der dauerhaften Zeigerpräferenz nach § 25 TDDDG sowie der Cookies und Netzwerkverbindungen des tatsächlichen Hosts.' },
+			], open: 'Offen: abschließende Prüfung aller Gerätezugriffe nach § 25 TDDDG sowie der Cookies und Netzwerkverbindungen des tatsächlichen Hosts.' },
 			{ id: 'datenschutz-kontakt', label: 'Kontakt', title: '4. Kontaktaufnahme und Speicherfristen', paragraphs: [
 				'Wenn Sie uns per E-Mail, Telefon oder Fax kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Angaben zur Bearbeitung Ihrer Anfrage. Dazu können Name, Kontaktinformationen, Kommunikationszeitpunkt, Inhalt und Anhänge sowie Angaben zu einem Fahrzeug oder Auftrag gehören. Ein E-Mail-Link öffnet Ihr E-Mail-Programm; die Website selbst versendet dabei keine Nachricht.',
 				'Soweit die Verarbeitung für einen Vertrag mit Ihnen oder auf Ihren Wunsch für vorvertragliche Maßnahmen erforderlich ist, beruht sie auf Art. 6 Abs. 1 lit. b DSGVO. Andere Anfragen und die Kommunikation mit Ansprechpartnern werden, soweit die Voraussetzungen vorliegen, auf Art. 6 Abs. 1 lit. f DSGVO gestützt; unser Interesse besteht in der sachgerechten Bearbeitung der Kommunikation. Gesetzlich erforderliche Aufbewahrung beruht auf Art. 6 Abs. 1 lit. c DSGVO.',
@@ -59,10 +58,10 @@ export const privacyNotice = {
 	},
 	en: {
 		title: 'Privacy notice',
-		description: 'Privacy information for the new Oldtimermanufaktur website: hosting, local browser functions, contact and your rights.',
+		description: 'Privacy information for the new Oldtimermanufaktur website: hosting, vehicle search, language selection, contact and your rights.',
 		eyebrow: 'Development preview',
 		navigation: 'Privacy notice sections',
-		date: 'Last reviewed: 4 October 2026',
+		date: 'Last reviewed: 9 October 2026',
 		controllerLabel: 'Controller according to the business information currently available:',
 		contactLabel: 'You may send privacy enquiries to the email address above or contact us by post.',
 		sections: [
@@ -80,12 +79,11 @@ export const privacyNotice = {
 			], links: [{ label: 'GitHub: information about IP address collection on GitHub Pages', href: 'https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection' }], open: 'Outstanding: specific providers and legal entities, contractual roles and agreements, infrastructure and subprocessors, processing locations and transfer mechanisms, log fields, deletion periods and any hosting statistics enabled. Retention of GitHub security logs also needs clarification.' },
 			{ id: 'datenschutz-browser', label: 'Browser functions', title: '3. Cookies and local browser functions', paragraphs: [
 				'The inspected source code of the new website contains no analytics, advertising or tracking services and does not itself set cookies. Additional forms, newsletters, WhatsApp, booking or AI services are not currently planned. Whether the actual hosting infrastructure uses additional cookies or services still needs to be verified on the delivered website.',
-				'You can select “Use system pointer” in the menu. Your browser stores only the value true under oldtimer.systemPointer in localStorage. The value is read on subsequent visits and is not transmitted to a server by this website code. Deselecting the option removes the entry. You can also remove it through your browser’s site-data settings. No automatic expiry is currently implemented.',
 				'Vehicle search filters content locally in your browser. The search text and corresponding archive path are saved in the state of the relevant browser history entry so that the search can be restored when you return. The website code neither transmits the search text nor adds it to the request address. You can clear the search in the search field. The lifetime of history state is controlled by the browser, including its session restoration.',
 				'For automatic language selection, the website reads your preferred browser language. Your manual selection is carried through the page address and the lang parameter; no language cookie or local language-storage entry is created. The requested language address may reach the hosting service as part of the normal request. No external translation service is called.',
 				'For display and media playback, the website considers screen size, input type, browser compatibility, reduced motion and any available data-saving preference. These functions support local presentation; the inspected code does not generate a recognisable user identifier from them or transmit a fingerprinting profile.',
 				'Storing or accessing information on your device must be assessed separately under section 25 of the German TDDDG. The exception for strictly necessary functions of an expressly requested service (section 25(2), point 2 TDDDG) is still subject to final assessment for the functions described here, including their duration. This privacy notice therefore does not claim that all device access has already been confirmed as exempt from consent. Functions requiring consent may only be used after valid consent.',
-			], open: 'Outstanding: final assessment of all device access and the persistent pointer preference under section 25 TDDDG, and verification of cookies and network connections on the actual host.' },
+			], open: 'Outstanding: final assessment of all device access under section 25 TDDDG, and verification of cookies and network connections on the actual host.' },
 			{ id: 'datenschutz-kontakt', label: 'Contact', title: '4. Contact and retention periods', paragraphs: [
 				'If you contact us by email, telephone or fax, we process the information you provide to handle your enquiry. This may include your name, contact information, communication time, message content and attachments, and details about a vehicle or order. An email link opens your email application; the website itself does not send a message.',
 				'Where processing is necessary for a contract with you or for steps requested by you before entering a contract, it is based on Article 6(1)(b) GDPR. Other enquiries and communication with business contact persons are based on Article 6(1)(f) GDPR where its conditions apply; our interest is handling communication appropriately. Legally required retention is based on Article 6(1)(c) GDPR.',

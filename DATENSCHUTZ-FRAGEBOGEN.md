@@ -198,15 +198,6 @@ Antwort:
 
 ## F. Browserfunktionen und weitere Zwecke
 
-**26. Wie lange soll die Auswahl „Systemzeiger verwenden“ gespeichert bleiben?**
-Aktuell bleibt sie ohne automatische Ablaufzeit gespeichert, bis sie abgewählt
-oder im Browser gelöscht wird. Gewünscht: nur aktueller Besuch / feste Dauer
-(welche?) / dauerhaft bis Widerruf? Soll der Nutzer das dauerhafte Merken
-ausdrücklich auswählen können? Dies legt die gewünschte Funktion fest; die
-rechtliche Bewertung und technische Prüfung erfolgen anschließend.
-
-Antwort:
-
 **27. Bleibt es bei der bisher bestätigten Funktionsauswahl?**
 Keine Analyse-/Werbedienste, Newsletter, Kontaktformulare, WhatsApp, Buchung oder
 KI-Dienste; lokale Schriften/Medien/Standortgrafik; Google Maps nur als externer

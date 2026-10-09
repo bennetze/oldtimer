@@ -106,12 +106,8 @@ authorized by repository cleanup. Verify actual response headers on the final ho
 The subsequent website repair register is maintained in [WEBSITE-REPAIR-AUDIT.md](WEBSITE-REPAIR-AUDIT.md). It leaves the legal, factual and media-rights release dependencies above intact.
 
 
-## Accessibility display preference — 30 September 2026
+## Native browser pointer — 9 October 2026
 
-The user-approved “Use system pointer” menu checkbox stores only the explicit
-boolean choice in localStorage under `oldtimer.systemPointer`. No cookie is set,
-no identifier is created, and the preference is not transmitted. Unchecking removes
-the key; storage denial leaves the current-page control usable. The existing language
-selection remains URL-based. Include this preference storage and its purpose in the
-approved privacy information before release; production legal text was not replaced.
-This entry records the implementation, not a new legal certification.
+The decorative pointer and its menu preference have been removed. The website
+no longer reads or writes that display preference in localStorage. Language
+selection remains URL-based; archive search restoration still uses history state.

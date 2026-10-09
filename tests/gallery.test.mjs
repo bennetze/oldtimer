@@ -55,6 +55,14 @@ test('gallery fingerprints bytes, repairs corruption, deduplicates widths and pr
 		const changed = Object.values(JSON.parse(await readFile(manifestPath)).images)[0];
 		assert.notEqual(galleryDeliveryRoute(changed, 'production'), delivery);
 		await writeFile(join(root, 'public/vehicle-gallery/stale.webp'), 'stale');
+		result = await generateVehicleGallery(root, 'github-pages', 'cache');
+		assert.equal(result.deliveryFiles, 0);
+		assert.deepEqual(await readFile(join(root, 'public', galleryDeliveryRoute(changed, 'production'))), await readFile(output));
+		assert.equal(await readFile(join(root, 'public/vehicle-gallery/stale.webp'), 'utf8'), 'stale');
+		assert.equal((await sharp(output).metadata()).width, 1200);
+		result = await generateVehicleGallery(root, 'github-pages', 'dist');
+		assert.equal((await sharp(join(root, 'dist', image.route)).metadata()).width, 1000);
+		assert.deepEqual(await readFile(join(root, 'public', galleryDeliveryRoute(changed, 'production'))), await readFile(output));
 		result = await generateVehicleGallery(root, 'github-pages');
 		assert.equal(result.derivatives, 3);
 		await assert.rejects(readFile(join(root, 'public/vehicle-gallery/stale.webp')), { code: 'ENOENT' });

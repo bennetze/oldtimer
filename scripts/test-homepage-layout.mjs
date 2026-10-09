@@ -67,7 +67,8 @@ for (const name of (process.env.BROWSERS || 'chromium,firefox,webkit').split(','
 					assert.ok(await page.evaluate(() => !!document.activeElement.closest('#site-menu')));
 					await page.keyboard.press('Escape');
 					assert.ok(await page.evaluate(() => document.activeElement.classList.contains('menu-toggle')));
-					if (width === 390) assert.equal(await page.locator('.cursor').evaluate(element => getComputedStyle(element).display), 'none');
+					assert.equal(await page.locator('.cursor, [data-system-pointer]').count(), 0);
+					assert.equal(await page.locator('body').evaluate(element => getComputedStyle(element).cursor), 'auto');
 					assert.deepEqual(await page.evaluate(() => window.cspFailures), []);
 					console.log(`Passed ${name} ${width}×${height} ${language}`);
 				}

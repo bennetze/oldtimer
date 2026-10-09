@@ -139,7 +139,7 @@ and `npm run build:pages`. Review the sync diff and confirm neither build change
 tracked files. Keep Pages below 1800 files/150 MiB. Check CSP on built output.
 
 Compare desktop/mobile/high-density visuals, typography and motion timing. Test
-keyboard menu focus/return, zoom/text spacing, system-pointer preference, section
+keyboard menu focus/return, zoom/text spacing, native pointer behavior, section
 links, reduced motion/manual playback, delayed/error playback, fallback recovery,
 archive search/clear/Back with form restoration disabled, direct gallery links and
 lightbox Escape. Without JavaScript, pagination and links remain usable. Reject

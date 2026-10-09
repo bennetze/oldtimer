@@ -13,6 +13,7 @@ interface SectionItem {
 interface Props {
 	title: string;
 	heading: string;
+	headingMaxWidth?: string;
 	description: string;
 	sections: SectionItem[];
 	theme?: 'dark' | 'light';
@@ -28,6 +29,7 @@ interface Props {
 const {
 	title,
 	heading,
+	headingMaxWidth = '18ch',
 	description,
 	sections,
 	theme = 'light',
@@ -64,7 +66,7 @@ const openingId = sections[0]?.id;
 
 			<div class="editorial-opening" id={openingId}>
 				<header class="editorial-intro">
-					<h1>{heading}</h1>
+					<h1 style={`max-width: ${headingMaxWidth}`}>{heading}</h1>
 				</header>
 				<slot name="opening" />
 			</div>

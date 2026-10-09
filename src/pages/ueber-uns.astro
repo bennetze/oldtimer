@@ -20,12 +20,13 @@ const qualifications = {
 const siteRoot = new URL(import.meta.env.BASE_URL, Astro.site ?? Astro.url);
 const aboutUrl = new URL('ueber-uns/', siteRoot);
 const people = [
-	{ name: 'Mario Schrank', id: 'mario-schrank', titles: qualifications.mario, image: marioPortrait },
-	{ name: 'Anton Schrank', id: 'anton-schrank', titles: qualifications.anton, image: antonPortrait },
-].map(({ name, id, titles, image }) => ({
+	{ name: 'Mario Schrank', description: 'Mario Schrank - Gründer/Inhaber/Geschäftsführer mit rund 40 Jahren Erfahrung in der Oldtimerrestaurierung.', id: 'mario-schrank', titles: qualifications.mario, image: marioPortrait },
+	{ name: 'Anton Schrank', description: 'Anton Schrank - KFZ-Techniker-Meister, der die Oldtimermanufaktur in die nächste Generation führt.', id: 'anton-schrank', titles: qualifications.anton, image: antonPortrait },
+].map(({ name, description, id, titles, image }) => ({
 	'@type': 'Person',
 	'@id': `${aboutUrl.href}#${id}`,
 	name,
+	description,
 	image: new URL(image.src, siteRoot).href,
 	worksFor: { '@id': `${siteRoot.href}#organization` },
 	subjectOf: { '@id': `${aboutUrl.href}#webpage` },
@@ -35,6 +36,14 @@ const people = [
 		credentialCategory: 'Meistertitel',
 	})),
 }));
+
+const brand = {
+	'@type': 'Brand',
+	'@id': `${siteRoot.href}#brand`,
+	name: 'OLDTIMERMANUFAKTUR®',
+	description: "Der Name \"OLDTIMERMANUFAKTUR®\" ist eine durch uns sowohl beim Deutschen- als auch beim Europäischen Marken- und Patentamt eingetragene geschützte Marke.",
+	subjectOf: { '@id': `${aboutUrl.href}#webpage` },
+};
 
 const sectionNavigationItems = [
 	{ id: 'mario-schrank', label: 'Mario Schrank' },
@@ -47,15 +56,15 @@ const sectionNavigationItems = [
 <EditorialPageLayout
 	title="Über uns"
 	heading="Wir über uns"
-	description="Mario Schrank, dreifacher Meister, und Anton Schrank, KFZ-Techniker-Meister: Lernen Sie die Menschen, das Handwerk und unseren Standort in Fischbach/Rhön kennen."
+	description="Lernen Sie Mario und Anton Schrank, unser Team und die geschützte Marke OLDTIMERMANUFAKTUR® kennen: Oldtimerrestaurierung in Fischbach/Rhön."
 	sections={sectionNavigationItems}
 	theme="light"
 	background="var(--gradient-green)"
 	openGraphImage={marioPortrait}
 	openGraphImageAlt="Mario Schrank im dunkelblauen Poloshirt neben einem roten historischen Fahrzeug."
 	structuredDataType="AboutPage"
-	dateModified="2026-10-04"
-	additionalJsonLd={people}
+	dateModified="2026-10-09"
+	additionalJsonLd={[...people, brand]}
 	sectionNavigationVisible={false}
 >
 	<section
@@ -70,7 +79,7 @@ const sectionNavigationItems = [
 						data-speed="0.045"
 						data-range="42"
 					>
-						<h2 id="mario-title">Mario Schrank</h2>
+						<h2 id="mario-title"><span class="profile-name">Mario Schrank</span><span class="profile-role"> - Gründer/<wbr />Inhaber/<wbr />Geschäftsführer</span></h2>
 						<p class="profile-credentials">
 							{qualifications.mario.map((title) => <span>{title}</span>)}
 						</p>
@@ -96,11 +105,16 @@ const sectionNavigationItems = [
 
 						<div class="story__copy">
 							<p>
-								Mit 17 Jahren kauft Mario Schrank von seinem Ersparten einen DKW und restauriert ihn.
-								Damit beginnt eine Leidenschaft, aus der 1987 die Oldtimermanufaktur entsteht. Heute
-								verbindet der dreifache Meister jahrzehntelange Erfahrung mit höchster handwerklicher
-								Präzision. Restaurierungen aus der Oldtimermanufaktur wurden bereits mehrfach
-								international ausgezeichnet.
+								Aufgewachsen in einer erfahrenen Technikerfamilie (Vater Maschinenbau- und Fahrzeug-Ingenieur, Großvater Elektro-Ingenieur) war der berufliche Weg im Bereich der Fahrzeugtechnik bereits in der Frühzeit geebnet.
+							</p>
+							<p>
+								Bereits während seiner Ausbildung zum KFZ-Mechaniker begann mit 17 Jahren schon die Suche nach dem ersten eigenen Oldtimer. Es sollte ein DKW F2 von 1934 werden, den er anschließend bestens restaurierte und damit der Grundstein für seine spätere "Oldtimer-Laufbahn" beginnen sollte. Nach div. Fachausbildungen und Meisterschulen in den einzelnen Fachbereichen kam sehr schnell der Sprung in die betriebliche Selbständigkeit.
+							</p>
+							<p>
+								Somit entstand bereits vor rund 40 Jahren der Grundstein für die heute inzwischen international anerkannte Oldtimer-Fachwerkstatt "DIE OLDTIMERMANUFAKTUR" und einem hochmotivierten Team von bestens ausgebildeten Mitarbeitern mit dem Resultat der Restaurierungen von höchster handwerklicher Präzision und Perfektion.
+							</p>
+							<p>
+								So wurde aus dem einstigen Beruf - Berufung - und aus der einhergehenden Leidenschaft - heutige Passion.
 							</p>
 						</div>
 					</div>
@@ -118,7 +132,7 @@ const sectionNavigationItems = [
 					data-speed="0.045"
 					data-range="42"
 				>
-					<h2 id="anton-title">Anton Schrank</h2>
+					<h2 id="anton-title"><span class="profile-name">Anton Schrank</span></h2>
 					<p class="profile-credentials">
 						{qualifications.anton.map((title) => <span>{title}</span>)}
 					</p>
@@ -159,16 +173,16 @@ const sectionNavigationItems = [
 
 					<div class="story__copy">
 						<p>
-							Wie der Vater, so der Sohn: Mit zwölf Jahren restauriert Anton Schrank gemeinsam mit
-							seinem Vater seinen ersten historischen Traktor.
+							Wie der Vater, so der Sohn: Bereits mit zwölf Jahren restauriert Anton Schrank gemeinsam mit seinem Vater seinen ersten eigenen Oldtimer, ein sehr seltener Traktor der Schweizer Marke Hürlimann.
 						</p>
 						<blockquote>
-							„Mich begeistern die Formen und Farben der alten Fahrzeuge – und das, was wir aus ihnen
-							machen.“
+							Zitat: "Mich begeistern die schönen Formen und Farben, aber auch die klassische Technik der historischen Fahrzeuge – und das, was wir aus ihnen machen."
 						</blockquote>
 						<p>
-							Heute führt er die Oldtimermanufaktur mit derselben Leidenschaft in die nächste
-							Generation.
+							Nach seiner Ausbildung zum KFZ-Mechatroniker mit Abschluss als "Jahrgangsbester", entscheidet er sich sogleich zur fachlichen Weiterbildung zum KFZ-Techniker-Meister und gilt mit gerade einmal 20 Jahren als jüngster KFZ-Handwerks-Meister Deutschlands.
+						</p>
+						<p>
+							Heute führt er "DIE OLDTIMERMANUFAKTUR" mit derselben Leidenschaft wie sein Vater in die nächste Generation.
 						</p>
 					</div>
 				</div>
@@ -235,11 +249,27 @@ const sectionNavigationItems = [
 
 					<div class="story__copy">
 						<p>
-							Bei der Arbeit an historischen Fahrzeugen greifen unterschiedliche handwerkliche
-							Aufgaben ineinander. Maßstab sind ein sorgfältiger Umgang mit der vorhandenen Substanz,
-							nachvollziehbare Entscheidungen und die Abstimmung der einzelnen Arbeitsschritte.
+							Bei der fachgerechten Restaurierung von historischen Fahrzeugen greifen unterschiedlichste handwerkliche Arbeiten ineinander.
+						</p>
+						<p>
+							Mit einem Team von technisch und handwerklich versierten Spezialisten - darunter viele Meister ihres Fachs - stellen wir uns Tag für Tag auch schwierigsten Herausforderungen mit dem Anspruch originalgetreuer und hochwertiger Restaurierungen.
+						</p>
+						<p>
+							Hauptaugenmerk unserer Arbeiten sind dabei entsprechend originalgetreue und qualitativ hochwertige Komplettrestaurationen ganzer Fahrzeuge - komplett aus einer Hand, als auch gewünschte Teilrestaurationen und die Überholung einzelner Fahrzeugkomponenten.
+						</p>
+						<p>
+							Mit diesem einzigartigen Leistungsspektrum und dieser hohen durchgängigen Fertigungstiefe bedienen wir quasi die gesamte Wertschöpfungskette im Bereich hochwertiger Oldtimerrestaurationen und wurden für unsere Ergebnisse bereits mehrfach international ausgezeichnet.
+						</p>
+						<p>
+							Dabei verstehen wir unsere Arbeiten als eine Art Berufung und wertvollen Beitrag zur Erhaltung technisch – historischen Kulturgutes mit hoher Wertstabilität.
+						</p>
+						<p>
+							Dafür wurden wir von der KFZ-Innung als erster und einziger Betrieb im hiesigen Verbandsgebiet mit der Zertifizierung "Fachbetrieb für historische Fahrzeuge" ausgezeichnet.
 						</p>
 					</div>
+				</div>
+				<div class="story__copy section-closing-copy">
+					<p>Der Name "OLDTIMERMANUFAKTUR®" ist eine durch uns sowohl beim Deutschen- als auch beim Europäischen Marken- und Patentamt eingetragene geschützte Marke.</p>
 				</div>
 			</section>
 
@@ -303,13 +333,14 @@ const sectionNavigationItems = [
 								href="https://maps.app.goo.gl/jg4eC1XRAyLDoW1BA"
 								target="_blank"
 								rel="noreferrer"
-								aria-label="Adresse in Google Maps öffnen: i.d. Rhön DE, Kreuzweg 11a, 36452 Kaltennordheim-Fischbach/Rhön"
+								aria-label="Adresse in Google Maps öffnen: DIE OLDTIMERMANUFAKTUR GmbH, Kreuzweg 11a, 36452 Kaltennordheim-Fischbach i.d. Rhön"
 							>
 								<span class="contact-label">Adresse</span>
 								<strong class="maps-link__value">
 									<span class="maps-link__address">
-										i.d. Rhön DE, Kreuzweg 11a,<br />
-										36452 Kaltennordheim-Fischbach/Rhön
+										DIE OLDTIMERMANUFAKTUR GmbH,<br />
+										Kreuzweg 11a,<br />
+										36452 Kaltennordheim-Fischbach i.d. Rhön
 									</span>
 									<span class="maps-link__action" aria-hidden="true">In Google Maps öffnen ↗</span>
 								</strong>
@@ -330,6 +361,9 @@ const sectionNavigationItems = [
 							</div>
 						</figure>
 					</div>
+				</div>
+				<div class="story__copy section-closing-copy">
+					<p>Wir sind ein überaus leistungsfähiger und inhabergeführter Restaurationsbetrieb in der geografischen Mitte Deutschlands – in Fischbach i. d. Rhön (inmitten des UNESCO-Biosphärenreservats Rhön) und sind damit von überall zentral und gut zu erreichen.</p>
 				</div>
 			</section>
 </EditorialPageLayout>
@@ -444,6 +478,22 @@ const sectionNavigationItems = [
 		margin-bottom: clamp(2.25rem, 3vw, 3.5rem);
 	}
 
+	#mario-title .profile-name,
+	#mario-title .profile-role,
+	.profile-heading:has(#mario-title) .profile-credentials {
+		color: #276b57;
+	}
+
+	#anton-title .profile-name,
+	.profile-heading:has(#anton-title) .profile-credentials {
+		color: #aad6c3;
+	}
+
+	:global(.editorial-page .story .profile-heading #mario-title) {
+		font-size: clamp(1.9rem, 2.1vw, 3.4rem);
+		line-height: 1.2;
+	}
+
 	.profile-credentials {
 		display: flex;
 		flex-wrap: wrap;
@@ -485,6 +535,11 @@ const sectionNavigationItems = [
 
 	.story--contact {
 		padding-bottom: clamp(11rem, 16vw, 17rem);
+	}
+
+	:global(.editorial-page) .section-closing-copy {
+		max-width: 52rem;
+		margin: clamp(4rem, 7vw, 7rem) auto 0;
 	}
 
 	.location-map {
@@ -580,7 +635,7 @@ const sectionNavigationItems = [
 	.contact-list strong {
 		min-width: 0;
 		font-weight: 600;
-		overflow-wrap: anywhere;
+		letter-spacing: 0.03em;
 	}
 
 	.maps-link__value {

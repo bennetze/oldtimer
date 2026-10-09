@@ -33,10 +33,8 @@ legal approval is implied. The new notice does not cover the existing Joomla sit
    customer and visitor photographs, videos, names and professional information.
    Check vehicle identifiers, documents, metadata, translations, Open Graph and
    structured data; identify sources and any Article 14 notification needs.
-9. **Local device access:** confirm the intended lifetime of the system-pointer
-   preference and whether persistence beyond a visit is expressly requested. Review
-   its necessity, search restoration, language/capability reads and actual host
-   behavior under section 25 TDDDG.
+9. **Local device access:** review search restoration, language/capability reads
+   and actual host behavior under section 25 TDDDG.
 10. **Other processing and exposure:** confirm recruitment/CCTV and other enquiry
     channels if applicable; repository visibility, original-photo downloads and any
     publicly accessible backups or internal files. No such extra processing is

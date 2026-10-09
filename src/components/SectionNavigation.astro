@@ -127,7 +127,7 @@ const { items, theme = 'dark', visible = true, ariaLabel = 'Abschnitte' } = Astr
 		outline: 0;
 	}
 
-	/* Match the cursor's grayscale luminance adaptation. Only the visible dot
+	/* Adapt the section markers to background luminance. Only the visible dot
 	   and ring filter the backdrop; the rail and ring center stay clear. */
 	@supports ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) and
 		((mask-image: radial-gradient(black, transparent)) or (-webkit-mask-image: radial-gradient(black, transparent))) {

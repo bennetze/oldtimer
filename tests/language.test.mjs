@@ -74,7 +74,7 @@ test('every vehicle has self-contained bilingual content', async () => {
 });
 
 test('generated labels, titles and alternatives are localized without changing model names', () => {
-	assert.equal(translate('Abgeschlossene Projekte – Seite 2 | Die Oldtimermanufaktur'), 'Completed projects – Page 2 | Die Oldtimermanufaktur');
+	assert.equal(translate('Abgeschlossene Projekte/Referenzen – Seite 2 | Die Oldtimermanufaktur'), 'Completed projects/References – Page 2 | Die Oldtimermanufaktur');
 	assert.equal(translate('BMW Z1 Roadster, Baujahr 1990 – Aufnahme 2 der Fahrzeugdokumentation vergrößern'), 'BMW Z1 Roadster, year 1990 – photograph 2 in the vehicle record — enlarge');
 	assert.equal(translate('  Über uns\n'), '  About us\n');
 	assert.equal(`${translate('Wir bewahren')} ${translate('Geschichte')}`, 'WE PRESERVE STORIES AND HISTORY');

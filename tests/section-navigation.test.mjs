@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
-import { watchMedia, setIsolated, systemPointerPreference } from '../src/scripts/accessibility.js';
+import { watchMedia, setIsolated } from '../src/scripts/accessibility.js';
 const component = await readFile(new URL('../src/components/SiteChrome.astro', import.meta.url), 'utf8');
 const source = component.split('<script>')[1].split('</script>')[0].replace(/import .*;/g, '');
 function harness() {
@@ -52,7 +52,7 @@ function harness() {
 	let observe;
 	class Observer { constructor(callback) { observe = callback; } observe() {} }
 	window.IntersectionObserver = Observer;
-	vm.runInNewContext(source, { watchMedia, setIsolated, systemPointerPreference, HTMLInputElement: Element, document, window, Element, HTMLElement: Element, IntersectionObserver: Observer });
+	vm.runInNewContext(source, { watchMedia, setIsolated, HTMLInputElement: Element, document, window, Element, HTMLElement: Element, IntersectionObserver: Observer });
 	const key = code => { const event = { code, target: new Element(), defaultPrevented: false, preventDefault() { this.defaultPrevented = true; } }; window.emit('keydown', event); return event; };
 	const flush = () => { const pending = [...frames.values()]; frames.clear(); pending.forEach(callback => callback(2000)); };
 	return { document, click: index => controls[index].emit('click', { preventDefault() {} }), window, preference, sections, controls, key, frames, flush, menuToggle, observe: entries => observe(entries) };

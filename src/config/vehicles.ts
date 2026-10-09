@@ -13,8 +13,8 @@ export const vehicleCategories = [
 	},
 	{
 		key: 'vergangene-projekte',
-		label: 'Abgeschlossene Projekte',
-		heading: 'Abgeschlossene Projekte',
+		label: 'Abgeschlossene Projekte/Referenzen',
+		heading: 'Abgeschlossene Projekte/Referenzen',
 		description:
 			'Abgeschlossene Restaurierungen und ausgewählte Referenzen aus der Geschichte unserer Manufaktur.',
 	},

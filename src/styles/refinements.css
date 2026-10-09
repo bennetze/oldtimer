@@ -75,7 +75,7 @@
 		border: 1px solid CanvasText !important;
 		backdrop-filter: none !important;
 	}
-	:where(.background-texture, .cursor) { display: none !important; }
+	.background-texture { display: none !important; }
 	:where(a, button, input, label, .site-footer p) { opacity: 1 !important; }
 	:where(button, input, .section-cta) { border: 1px solid ButtonText !important; }
 	:where(a, button, input, [tabindex]):focus-visible { outline: 2px solid Highlight !important; }

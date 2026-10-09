@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
+import mechanicsPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00155.webp';
+import mechanicsLandscape from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00216.webp';
 import bodyPortrait from '../assets/oldtimer/L1005486.webp';
 import bodyLandscape from '../assets/oldtimer/L1005735.webp';
 import bodyDetail from '../assets/oldtimer/oldtimermanufaktur-verzinnen/L1006963.webp';
@@ -20,10 +22,28 @@ import motorbauMotionAvif from '../assets/oldtimer/motorbau-motion.avif?url';
 import motorbauMotionWebp from '../assets/oldtimer/motorbau-motion.webp?url';
 
 const sectionNavigationItems = [
-	{ id: 'karosserie', label: 'Karosserie' },
-	{ id: 'polsterei', label: 'Polsterei' },
-	{ id: 'lackiererei', label: 'Lackiererei' },
+	{ id: 'karosserie', label: 'Karosseriebau/Stellmacherei' },
+	{ id: 'mechanik', label: 'Mechanik - technische Instandsetzungen' },
 	{ id: 'motorbau', label: 'Motorbau' },
+	{ id: 'lackiererei', label: 'Lackiererei' },
+	{ id: 'polsterei', label: 'Polsterei/Sattlerei' },
+	{ id: 'leistungen', label: 'Unsere Leistungen' },
+];
+
+const services = [
+	"Voll- und Teilrestaurierungen in allen Gewerken und Fahrzeugklassen",
+	"eigener Karosseriebau mit Stellmacherei",
+	"eigene Lackiererei",
+	"sämtliche technische Instandsetzungen",
+	"eigener Motorenbau und Motorrevisionen",
+	"eigene Autosattlerei",
+	"eigene Feinmechanikabteilung (Drehen, Fräsen, Schleifen, Polieren...)",
+	"eigener Formenbau und Prototypenbau",
+	"detailgetreue Teileneufertigung",
+	"perfekte Galvanikarbeiten (Chrom, Nickel, Zink, Kupfer, Messing, Gold)",
+	"Fahrzeugüberführungen im eigenen geschlossenen Spezialtrailer",
+	"Fahrzeuggutachten (Wertgutachten, Schadensgutachten, H-Gutachten, TÜV-, DEKRA- Vollabnahmen und Sonderabnahmen im eigenen Haus)",
+	"sichere Fahrzeugeinlagerung / Oldtimerpension",
 ];
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
@@ -37,21 +57,21 @@ const organizationId = `${siteRootUrl.href}#organization`;
 const handwerkServiceJsonLd = {
 	'@type': 'Service',
 	'@id': serviceId,
-	name: 'Handwerk – Alles aus einer Hand',
+	name: 'Unser Handwerk – Alles aus einer fachkundigen Hand',
 	serviceType: 'Restaurierung historischer Automobile',
 	description:
-		'Karosserie, Polsterei, Lackiererei und Motorbau für die Restaurierung historischer Automobile.',
+		'Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten und sichere Einlagerung.',
 	url: pageUrl.href,
 	provider: { '@id': organizationId },
 	hasOfferCatalog: {
 		'@type': 'OfferCatalog',
-		name: 'Handwerksbereiche',
-		itemListElement: sectionNavigationItems.map((section) => ({
+		name: 'Unsere Leistungen',
+		itemListElement: services.map((service) => ({
 			'@type': 'Offer',
 			itemOffered: {
 				'@type': 'Service',
-				name: section.label,
-				url: `${pageUrl.href}#${section.id}`,
+				name: service,
+				url: `${pageUrl.href}#leistungen`,
 			},
 		})),
 	},
@@ -59,16 +79,17 @@ const handwerkServiceJsonLd = {
 ---
 
 <EditorialPageLayout
-	title="Handwerk"
-	heading="Handwerk - Alles aus einer Hand"
-	description="Karosserie, Polsterei, Lackiererei und Motorbau: die Handwerksbereiche der Oldtimermanufaktur für historische Automobile."
+	title="Unser Handwerk – Alles aus einer fachkundigen Hand"
+	heading="Unser Handwerk – Alles aus einer fachkundigen Hand"
+	headingMaxWidth="26ch"
+	description="Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten und sichere Einlagerung."
 	sections={sectionNavigationItems}
 	theme="light"
 	background="var(--gradient-green)"
 	openGraphImage={bodyPortrait}
 	openGraphImageAlt="Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt."
 	structuredDataType="CollectionPage"
-	dateModified="2026-10-04"
+	dateModified="2026-10-09"
 	additionalJsonLd={handwerkServiceJsonLd}
 >
 	<section
@@ -77,7 +98,7 @@ const handwerkServiceJsonLd = {
 		aria-labelledby="karosserie-title"
 		data-parallax-group
 	>
-		<h2 id="karosserie-title">Karosserie</h2>
+		<h2 id="karosserie-title">Karosseriebau/Stellmacherei</h2>
 		<div class="story__layout">
 			<div class="collage collage--double collage--body-details collage--right" role="group" aria-label="Arbeiten in der Karosserieabteilung">
 				<figure
@@ -128,34 +149,54 @@ const handwerkServiceJsonLd = {
 			</div>
 
 			<div class="story__copy">
-				<p>
-					Jede Linie beginnt mit einem genauen Blick auf die vorhandene Substanz. Bleche werden
-					geformt, angepasst und so zusammengefügt, dass Proportionen, Übergänge und Spaltmaße
-					wieder ein stimmiges Ganzes ergeben.
-				</p>
+				<p>Originalgetreue Anfertigungen vom Blechteil bis zur kompletten Karosserie.</p>
+				<p>In unserer hauseigenen und bestens ausgestatteten Karosseriebauwerkstatt beseitigen wir mit sehr erfahrenen Mitarbeitern und deren langjährigem Knowhow selbst hoffnungslos geglaubte Karosserieschäden. Dafür stehen uns alle gängigen Schweiß- und Formgebungsmaschinen und -werkzeuge zur Verfügung. Blechteile in Stahl, Aluminium, Edelstahl und Messing werden hier entsprechend instandgesetzt, neu angefertigt, angepasst und so zusammengefügt, dass Proportionen, Übergänge und Spaltmaße wieder ein stimmiges Ganzes ergeben.</p>
+				<p>Auch die notwendigen Holzarbeiten für stabile Karosseriestrukturen früherer Jahrzehnte, als auch edle Furnierarbeiten entstehen in unserer Stellmacherei neu bzw. werden entsprechend originalgetreu restauriert und rekonstruiert.</p>
 			</div>
 		</div>
 	</section>
 
 	<section
-		id="polsterei"
+		id="mechanik"
 		class="story story--images-left"
-		aria-labelledby="polsterei-title"
+		aria-labelledby="mechanik-title"
 		data-parallax-group
 	>
-		<h2 id="polsterei-title">Polsterei</h2>
+		<h2 id="mechanik-title">Mechanik - technische Instandsetzungen</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--craft-details collage--left" role="group" aria-label="Arbeiten in der Polsterei">
+			<div class="collage collage--double collage--left" role="group" aria-label="Arbeiten in der mechanischen Abteilung">
+				<figure class="image-layer image-layer--portrait" data-parallax-layer data-speed="0.126" data-range="138">
+					<Image src={mechanicsPortrait} alt="Ein Mechaniker arbeitet an einem geöffneten Getriebe mit sichtbaren Zahnrädern." widths={[560, 760, 1024, 1280]} sizes="(max-width: 840px) 88vw, 48vw" format="webp" loading="lazy" />
+				</figure>
+				<figure class="image-layer image-layer--landscape" data-parallax-layer data-speed="0.218" data-range="202">
+					<Image src={mechanicsLandscape} alt="Lenkrad und historische Instrumente im Armaturenbrett eines klassischen Automobils." widths={[640, 960, 1280, 1600]} sizes="(max-width: 840px) 76vw, 42vw" format="webp" loading="lazy" />
+				</figure>
+			</div>
+			<div class="story__copy">
+				<p>In unserer mechanischen Abteilung finden sämtliche technischen Instandsetzungen statt. Achsen-, Bremsen, Lenkungs-, Getriebeüberholungen, aber auch Instandsetzungen an der Fahrzeugelektrik bis hin zur Neuanfertigung ganzer Kabelbäume.</p>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="motorbau"
+		class="story story--images-left"
+		aria-labelledby="motorbau-title"
+		data-parallax-group
+	>
+		<h2 id="motorbau-title">Motorbau</h2>
+		<div class="story__layout">
+			<div class="collage collage--double collage--left collage--engines" role="group" aria-label="Arbeiten im Motorbau">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
-					data-speed="0.126"
-					data-range="138"
+					data-speed="0.124"
+					data-range="136"
 				>
 					<Image
-						src={upholsteryPortrait}
-						alt="Ein Polsterer führt helles Material unter der Nadel einer Nähmaschine."
-						widths={[560, 760, 1024, 1280]}
+						src={enginePortrait}
+						alt="Nahansicht einer Vergaseranlage mit Gestänge, Leitungen und Befestigungen."
+						widths={[560, 760, 1024]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
 						loading="lazy"
@@ -164,29 +205,23 @@ const handwerkServiceJsonLd = {
 				<figure
 					class="image-layer image-layer--landscape"
 					data-parallax-layer
-					data-speed="0.218"
-					data-range="202"
+					data-speed="0.22"
+					data-range="204"
 				>
-					<Image
-						src={upholsteryLandscape}
-						alt="Maßband, Scheren und markierte Schnittmuster auf einer Werkbank in der Polsterei."
-						widths={[640, 960, 1280, 1600]}
-						sizes="(max-width: 840px) 76vw, 42vw"
-						format="webp"
-						loading="lazy"
+					<EditorialMotion
+						mp4={motorbauMp4}
+						mobileMp4={motorbauMobileMp4}
+						webm={motorbauWebm}
+						poster={motorbauPoster}
+						avif={motorbauMotionAvif}
+						webp={motorbauMotionWebp}
+						alt="Nahaufnahme des Ventiltriebs eines laufenden historischen Motors."
 					/>
-				</figure>
-				<figure class="image-layer image-layer--detail" data-parallax-layer data-speed="0.28" data-range="170">
-					<Image src={upholsteryDetail} alt="Rote, senkrecht gesteppte Polster im Innenraum eines historischen Fahrzeugs." widths={[480, 760, 1024]} sizes="(max-width: 840px) 56vw, 30vw" format="webp" loading="lazy" />
 				</figure>
 			</div>
 
 			<div class="story__copy">
-				<p>
-					Material, Haptik und Verarbeitung prägen den Charakter eines Innenraums. Vom Zuschnitt
-					bis zur letzten Naht entstehen Bezüge und Polster, die sich selbstverständlich in das
-					historische Fahrzeug einfügen.
-				</p>
+				<p>Hier werden Instandsetzungen an Motoren sowie Zünd- und Kraftstoffanlagen vorgenommen. Auch der Neuaufbau ganzer Motoren findet hier statt. Dafür erforderlich ist natürlich ein moderner Maschinenpark für sämtliche Bohr-, Dreh- und Fräsarbeiten.</p>
 			</div>
 		</div>
 	</section>
@@ -236,34 +271,33 @@ const handwerkServiceJsonLd = {
 			</div>
 
 			<div class="story__copy">
-				<p>
-					Ein überzeugendes Finish entsteht lange vor dem ersten Farbauftrag. Sorgfältiger
-					Schichtaufbau, ruhige Flächen und ein fein abgestimmter Farbton geben der Karosserie
-					Tiefe, ohne ihre Form zu überdecken.
-				</p>
+				<p>Hier kommt Farbe ins Spiel.</p>
+				<p>Ein überzeugendes Finish entsteht lange vor dem ersten Farbauftrag. Sorgfältiger Schichtaufbau, ruhige Flächen und ein fein abgestimmter Farbton geben der Oberfläche die nötige Tiefe und Brillanz.</p>
+				<p>Um die Authentizität einer Farbgebung zu gewährleisten, verfügen wir über wichtige historische Mischformeln und originale Farbmusterkarten vergangener Jahrzehnte. Dank einer eigenen Farb-Mischanlage und hochmodernen Lackieranlage, gepaart mit der langjährigen Erfahrung unserer Mitarbeiter, gewährleisten wir perfekte Lackierarbeiten und brillante Oberflächen.</p>
+				<p>Zudem führen wir kunstvolle Linierungen aus, auch Nitro- und Lasurtechniken gehören zu unserem umfassenden Repertoire.</p>
 			</div>
 		</div>
 	</section>
 
 	<section
-		id="motorbau"
+		id="polsterei"
 		class="story story--images-left"
-		aria-labelledby="motorbau-title"
+		aria-labelledby="polsterei-title"
 		data-parallax-group
 	>
-		<h2 id="motorbau-title">Motorbau</h2>
+		<h2 id="polsterei-title">Polsterei/Sattlerei</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--left collage--engines" role="group" aria-label="Arbeiten im Motorbau">
+			<div class="collage collage--double collage--craft-details collage--left" role="group" aria-label="Arbeiten in der Polsterei">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
-					data-speed="0.124"
-					data-range="136"
+					data-speed="0.126"
+					data-range="138"
 				>
 					<Image
-						src={enginePortrait}
-						alt="Nahansicht einer Vergaseranlage mit Gestänge, Leitungen und Befestigungen."
-						widths={[560, 760, 1024]}
+						src={upholsteryPortrait}
+						alt="Ein Polsterer führt helles Material unter der Nadel einer Nähmaschine."
+						widths={[560, 760, 1024, 1280]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
 						loading="lazy"
@@ -272,33 +306,91 @@ const handwerkServiceJsonLd = {
 				<figure
 					class="image-layer image-layer--landscape"
 					data-parallax-layer
-					data-speed="0.22"
-					data-range="204"
+					data-speed="0.218"
+					data-range="202"
 				>
-					<EditorialMotion
-						mp4={motorbauMp4}
-						mobileMp4={motorbauMobileMp4}
-						webm={motorbauWebm}
-						poster={motorbauPoster}
-						avif={motorbauMotionAvif}
-						webp={motorbauMotionWebp}
-						alt="Nahaufnahme des Ventiltriebs eines laufenden historischen Motors."
+					<Image
+						src={upholsteryLandscape}
+						alt="Maßband, Scheren und markierte Schnittmuster auf einer Werkbank in der Polsterei."
+						widths={[640, 960, 1280, 1600]}
+						sizes="(max-width: 840px) 76vw, 42vw"
+						format="webp"
+						loading="lazy"
 					/>
+				</figure>
+				<figure class="image-layer image-layer--detail" data-parallax-layer data-speed="0.28" data-range="170">
+					<Image src={upholsteryDetail} alt="Rote, senkrecht gesteppte Polster im Innenraum eines historischen Fahrzeugs." widths={[480, 760, 1024]} sizes="(max-width: 840px) 56vw, 30vw" format="webp" loading="lazy" />
 				</figure>
 			</div>
 
 			<div class="story__copy">
-				<p>
-					Im Motorbau zählt das Zusammenspiel vieler kleiner Entscheidungen. Komponenten werden
-					geprüft, bearbeitet und präzise aufeinander abgestimmt, bis aus einzelnen Teilen wieder
-					eine verlässliche mechanische Einheit wird.
-				</p>
+				<p>Die Wahl der Materialien, die unvergleichliche Haptik und die fachgerechte Verarbeitung prägen den Charakter und die stimmige Ästhetik eines Innenraums.</p>
+				<p>Von der behutsamen Aufarbeitung und Restaurierung wertvoller patinierter Original-Innenausstattungen bis hin zur originalgetreuen Neuanfertigung ganzer Innenräume, entstehen in unserer Sattlerei sämtliche Aufarbeitungen und Polsterungen in historisch korrekten Stoffen, feinstem Leder und edlen Teppichen in Originalqualität und fachgerechter Verarbeitung. Auch originalgetreue Cabrioverdecke teils mit echter Rosshaarfütterung wie sie in Fahrzeugen der Frühzeit verarbeitet wurden, werden mit absoluter Präzision neu angefertigt.</p>
+				<p>Auf Wunsch verfeinern Stick- Gravur- und Laserarbeiten diese Oberflächen mit einmaligen Applikationen.</p>
 			</div>
+		</div>
+	</section>
+	<section
+		id="leistungen"
+		class="story story--services"
+		aria-labelledby="leistungen-title"
+		data-parallax-group
+	>
+		<div class="services-content">
+			<h2 id="leistungen-title">Unsere Leistungen</h2>
+			<ul class="services-list" role="list" data-parallax-layer data-speed="0.18" data-range="120">
+				{services.map((service) => <li><span>{service}</span></li>)}
+			</ul>
 		</div>
 	</section>
 </EditorialPageLayout>
 
 <style>
+	:global(.editorial-page) .story--services {
+		padding-top: 3rem;
+		padding-bottom: clamp(6rem, 12vw, 12rem);
+		text-align: center;
+	}
+	.services-content {
+		width: min(100%, 76rem);
+		margin-inline: auto;
+	}
+	:global(.editorial-page) .story--services h2 {
+		margin-bottom: clamp(9rem, 12vw, 12rem);
+	}
+	.services-list {
+		display: grid;
+		gap: clamp(1.5rem, 2.4vw, 2.25rem);
+		justify-items: center;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: clamp(1.25rem, 1.7vw, 1.625rem);
+		font-weight: 600;
+		line-height: 1.75;
+		text-align: center;
+		text-wrap: balance;
+		letter-spacing: 0.008em;
+	}
+	.services-list {
+		transform: translate3d(0, var(--parallax-y, 0), 0);
+	}
+	.services-list li {
+		max-width: 100%;
+	}
+	.services-list li span::before {
+		content: '•\00a0';
+		margin-inline-end: 0.4em;
+	}
+	@media (max-width: 840px) {
+		:global(.editorial-page) .story--services h2 {
+			margin-bottom: 4rem;
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.services-list { transform: none; }
+	}
+
 	:global(.editorial-page) .collage--body-details .image-layer--detail {
 		right: 0;
 		bottom: 0;

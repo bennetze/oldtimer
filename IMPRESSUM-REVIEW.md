@@ -61,9 +61,8 @@ both authored notice versions and reassess the actual deployment.
   Replacing the Impressum cannot resolve them. Source-level local delivery/CSP
   does not verify provider logs, contracts or an actual deployed host.
 - Source inspection shows a static website, local fonts/media and contact links.
-  There is a stored, user-selected system-pointer preference; do not claim that
-  the site uses no storage. Assess its necessity and duration under section 25
-  TDDDG with the existing privacy work. No generic cookie banner is added without
+  Archive search restoration uses browser history state; assess device access
+  under section 25 TDDDG with the existing privacy work. No generic cookie banner is added without
   an identified operation requiring consent.
 - Determine whether consumer-facing functions qualify as electronic-commerce
   services under [BFSG](https://www.gesetze-im-internet.de/bfsg/__1.html), and any

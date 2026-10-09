@@ -38,22 +38,6 @@ export function setIsolated(element, active) {
 	}
 }
 
-export function systemPointerPreference(storage) {
-	const key = 'oldtimer.systemPointer';
-	let enabled = false;
-	try { enabled = storage()?.getItem(key) === 'true'; } catch { /* Private/storage-disabled mode. */ }
-	return {
-		get enabled() { return enabled; },
-		set(value) {
-			enabled = Boolean(value);
-			try {
-				if (enabled) storage()?.setItem(key, 'true');
-				else storage()?.removeItem(key);
-			} catch { /* The current-document choice still works. */ }
-		},
-	};
-}
-
 // Native dialogs where supported; otherwise the same surface with explicit isolation.
 export function createModal(dialog) {
 	const doc = dialog.ownerDocument;

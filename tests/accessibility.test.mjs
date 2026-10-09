@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { watchMedia, setIsolated, systemPointerPreference, createModal } from '../src/scripts/accessibility.js';
+import { watchMedia, setIsolated, createModal } from '../src/scripts/accessibility.js';
 
 class Element {
 	attributes = new Map(); style = {}; children = []; listeners = new Map();
@@ -31,13 +31,6 @@ test('fallback isolation restores original tabindex, ARIA and pointer state idem
 });
 test('native isolation preserves an already inert background', () => {
 	const root = new Element(); root.inert = true; setIsolated(root, true); setIsolated(root, false); assert.equal(root.inert, true);
-});
-test('explicit pointer preference survives visits without cookies and storage failure stays usable', () => {
-	const values = new Map(); const storage = { getItem: key => values.get(key), setItem: (key, value) => values.set(key, value), removeItem: key => values.delete(key) };
-	const choice = systemPointerPreference(() => storage); assert.equal(choice.enabled, false);
-	choice.set(true); assert.equal(systemPointerPreference(() => storage).enabled, true);
-	choice.set(false); assert.equal(values.size, 0);
-	const blocked = systemPointerPreference(() => { throw Error('storage denied'); }); blocked.set(true); assert.equal(blocked.enabled, true);
 });
 test('fallback gallery modal traps Tab, isolates siblings, closes with Escape and restores focus', () => {
 	const body = new Element(), shell = new Element(), main = new Element(), dialog = new Element(), close = new Element(), opener = new Element();

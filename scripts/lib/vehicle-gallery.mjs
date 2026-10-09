@@ -39,7 +39,7 @@ async function atomicWrite(path, bytes) {
 }
 
 export async function generateVehicleGallery(root, target = 'production', outputTarget = 'public') {
-	if (!['production', 'github-pages'].includes(target) || !['public', 'dist'].includes(outputTarget)) throw new Error('Invalid gallery target.');
+	if (!['production', 'github-pages'].includes(target) || !['public', 'dist', 'cache'].includes(outputTarget)) throw new Error('Invalid gallery target.');
 	root = await realpath(root);
 	const safeRead = async path => { await assertSafePath(root, path); return readOptional(path); };
 	const safeWrite = async (path, bytes) => { await assertSafePath(root, path); return atomicWrite(path, bytes); };
@@ -100,6 +100,10 @@ export async function generateVehicleGallery(root, target = 'production', output
 		}
 		images[task.route] = record;
 		for (const image of [record, ...record.variants]) {
+			bytes += image.bytes;
+			// Build metadata without replacing the files served by a running dev server.
+			// The Pages build publishes its own derivatives to dist after Astro finishes.
+			if (outputTarget === 'cache') continue;
 			const output = join(root, outputTarget, image.route);
 			expected.add(output);
 			const existing = await safeRead(output);
@@ -123,7 +127,6 @@ export async function generateVehicleGallery(root, target = 'production', output
 					} finally { await rm(temporary, { force: true }); }
 				}
 			}
-			bytes += image.bytes;
 		}
 	}
 	async function worker() { while (cursor < tasks.length) await processImage(tasks[cursor++]); }
@@ -140,7 +143,7 @@ export async function generateVehicleGallery(root, target = 'production', output
 			else if (!expected.has(path)) await rm(path);
 		}
 	}
-	await prune(join(root, outputTarget, 'vehicle-gallery'));
+	if (outputTarget !== 'cache') await prune(join(root, outputTarget, 'vehicle-gallery'));
 	const manifest = { version: 3, target, images: Object.fromEntries(Object.entries(images).sort(([a], [b]) => a.localeCompare(b))) };
 	const serialized = Buffer.from(JSON.stringify(manifest));
 	if (!previousBytes?.equals(serialized)) await safeWrite(manifestPath, serialized);

@@ -13,7 +13,7 @@ test('built accessibility audit rejects numbered vehicle alternatives in both la
    ['BMW – photograph 12 in the vehicle record', true],
    ['BMW – Open engine bay showing the engine and pipework.', false],
   ]) {
-   await writeFile(join(root, 'index.html'), `<html lang="de"><head><title>Fixture</title></head><body><a class="skip-link" href="#main-content">Skip</a><a class="menu-toggle" href="#site-footer">Menu</a><input type="checkbox" data-system-pointer aria-label="Pointer"><main id="main-content" tabindex="-1"><h1>Vehicle</h1><img alt="${alt}"></main><footer id="site-footer"></footer></body></html>`);
+   await writeFile(join(root, 'index.html'), `<html lang="de"><head><title>Fixture</title></head><body><a class="skip-link" href="#main-content">Skip</a><a class="menu-toggle" href="#site-footer">Menu</a><main id="main-content" tabindex="-1"><h1>Vehicle</h1><img alt="${alt}"></main><footer id="site-footer"></footer></body></html>`);
    const result = spawnSync(process.execPath, ['scripts/audit-accessibility.mjs', root], { encoding: 'utf8' });
    assert.equal(result.status, rejected ? 1 : 0, result.stderr || result.stdout);
    const report = JSON.parse(result.stdout);
