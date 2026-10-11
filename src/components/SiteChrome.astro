@@ -1,14 +1,21 @@
 ---
 import { Image } from 'astro:assets';
+import { socialProfiles } from '../config/social.js';
+import tiktokIcon from '../assets/graphics/tiktok.svg?raw';
+import instagramIcon from '../assets/graphics/instagram.svg?raw';
+import facebookIcon from '../assets/graphics/facebook.svg?raw';
 import { companyLogo } from '../config/branding';
 import { languagePath } from '../i18n/language.js';
 interface Props {
 	theme?: 'dark' | 'light';
 }
 
+const socialIcons = { tiktok: tiktokIcon, instagram: instagramIcon, facebook: facebookIcon };
+
 const navigationItems = [
 	{ title: 'Startseite', href: '/', activePath: '/' },
 	{ title: 'Handwerk', href: '/handwerk/', activePath: '/handwerk' },
+	{ title: 'Unsere Leistungen', href: '/handwerk/#leistungen', activePath: undefined },
 	{ title: 'Über uns', href: '/ueber-uns/', activePath: '/ueber-uns' },
 	{ title: 'Projekte', href: '/projekte/', activePath: '/projekte' },
 	{
@@ -104,6 +111,13 @@ const sitePath = (path) => {
 					</a>
 				))
 			}
+		</nav>
+		<nav class="footer-social" aria-label="Social Media">
+			{socialProfiles.map((profile) => (
+				<a href={profile.href} aria-label={profile.name} rel="noopener noreferrer" target="_blank">
+					<Fragment set:html={socialIcons[profile.icon]} />
+				</a>
+			))}
 		</nav>
 		<nav class="footer-legal" aria-label="Rechtliches">
 			<a href={sitePath('/impressum/')}>Impressum</a>
@@ -881,6 +895,38 @@ const sitePath = (path) => {
 		}
 	}
 
+	.footer-social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		margin-top: clamp(1.5rem, 2.6vw, 2.2rem);
+	}
+
+	.footer-social a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		color: currentColor;
+		text-decoration: none;
+	}
+
+	.footer-social :global(svg) {
+		display: block;
+	}
+
+	@media (min-width: 761px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+		.footer-social :global(svg) {
+			transition: transform 220ms ease;
+		}
+
+		.footer-social a:hover :global(svg) {
+			transform: translateY(-3px) scale(1.08);
+		}
+	}
+
 	.footer-legal {
 		color: currentColor;
 		font-size: 0.84rem;
@@ -904,7 +950,8 @@ const sitePath = (path) => {
 	.menu-close:focus-visible,
 	.footer-brand:focus-visible,
 	.footer-primary a:focus-visible,
-	.footer-legal a:focus-visible {
+	.footer-legal a:focus-visible,
+	.footer-social a:focus-visible {
 		outline: 1px solid currentColor;
 		outline-offset: 0.35rem;
 	}

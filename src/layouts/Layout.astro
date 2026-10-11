@@ -10,6 +10,7 @@ import { companyLogo } from '../config/branding';
 import type { ImageMetadata } from 'astro';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
 import { siteStatus } from '../config/site';
+import { socialProfiles } from '../config/social.js';
 
 interface Props {
 	authoredTitle?: boolean;
@@ -92,6 +93,7 @@ const jsonLdGraph: Record<string, unknown>[] = [
 		name: 'Die Oldtimermanufaktur',
 		legalName: 'DIE OLDTIMERMANUFAKTUR GmbH',
 		url: siteRootUrl.href,
+		sameAs: socialProfiles.map(({ href }) => href),
 		logo: new URL(companyLogo.src, siteUrl).href,
 		description:
 			'Die Oldtimermanufaktur restauriert und bewahrt historische Automobile mit traditionellem Handwerk, technischer Sorgfalt und Liebe zum Detail.',

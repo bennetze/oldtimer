@@ -3,6 +3,15 @@
 Reviewed 6 October 2026. Scope: the new Astro website and its bilingual provider
 notice. No deployment, alteration of the legacy site, or legal certification.
 
+## Approved notice update — 11 October 2026
+
+The owner supplied the final German Impressum on 11 October 2026. The page now
+uses that wording, including the consumer arbitration non-participation statement
+and its application to the three official social media profiles. The English
+translation is aligned. This supersedes the earlier notice wording and the
+participation-position question below; other production-release checks remain
+separate. The site preview label and noindex policy remain active.
+
 ## Result
 
 The core provider notice is implemented at `/impressum/` and `/en/impressum/`.

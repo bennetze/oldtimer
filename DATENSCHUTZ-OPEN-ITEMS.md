@@ -1,86 +1,128 @@
-# Privacy notice: outstanding facts and compliance actions
+# Privacy notice: confirmed facts, outstanding details and compliance actions
 
-Reviewed 4 October 2026. The German notice and full English translation are authored
-in `src/content/legal/privacy.js`, rendered at `/datenschutz/` and
-`/en/datenschutz/`. They are explicitly drafts. No production deployment or final
-legal approval is implied. The new notice does not cover the existing Joomla site.
+Reviewed 9 October 2026 after the company’s questionnaire answers. German and
+English text is authored in `src/content/legal/privacy.js` and rendered at
+`/datenschutz/` and `/en/datenschutz/`. The development-preview labels and release
+gates remain active. The notice is not finally approved, and no deployment occurred.
+It describes the intended IONOS production website, not the existing Joomla website
+or the GitHub preview. GitHub content is removed from the production notice at the
+user’s explicit request; the live preview still needs separate privacy information.
+
+## Confirmed by the company
+
+- Current company name, address and published contacts are correct.
+- IONOS is selected for hosting; email accounts are also at IONOS. No additional
+  cloud-storage services are used. Exact products and contracts remain unprovided.
+- Mario Schrank handles privacy enquiries, internal privacy responsibility and
+  confirmation of the notice. He is not appointed as a data protection officer.
+- Two to at most three people regularly process personal data. The numerical
+  threshold in section 38 BDSG is not reached; independent statutory triggers
+  still need screening. No mandatory appointment exemption is certified.
+- Information is normally deleted immediately, at latest after one month. The
+  notice applies this to general/unsuccessful enquiries no longer needed for
+  handling; the starting point still needs explicit confirmation. Statutory retention duties
+  were explicitly confirmed as exceptions.
+  It is not a one-month promise for host logs, backups or statutory business records.
+- All employees have signed forms covering confidentiality and image rights.
+  The text, voluntary nature, withdrawal information and publication scope have
+  not been reviewed. This does not establish permissions for customers/visitors.
+- The company reports EU-only processing. Product documentation, subprocessors,
+  support access and the separately operated GitHub preview remain to be checked.
+- No extra scripts/services are planned. The new site is not deployed to IONOS.
+  The old Joomla site and GitHub preview will be taken offline when the new site
+  goes live.
+- The custom cursor has already been removed. Source inspection confirms no
+  cookie-writing, localStorage, sessionStorage, IndexedDB or old pointer preference
+  in current website code. Local archive search uses history.state; language is
+  selected through browser language and URLs, not a persistent preference store.
+
+The current German questions and answer fields are in `DATENSCHUTZ-FRAGEBOGEN.md`.
 
 ## 1. Information still needed
 
-1. **Controller and preview responsibility:** confirm current GmbH name, address,
-   contact details, who operates the public GitHub preview, and any agency/provider
-   processing roles. Existing company details are used provisionally.
-2. **Hosting:** select the product and contracting provider. IONOS is considered,
-   not confirmed. Obtain the actual contract/AVV, subprocessor list, processing and
-   backup locations, support-access countries, CDN/WAF/bot services and defaults.
-3. **Logs and statistics:** identify request/error/security fields, IP truncation,
-   purposes, retention, deletion and access. Confirm whether hosting statistics or
-   injected services are active. Establish GitHub preview log retention and roles.
-4. **Email, telephone and fax:** identify the providers, spam filtering, forwarding,
-   archives, cloud accounts, external IT, devices and access permissions. Confirm
-   voicemail, call logs, fax-to-email and any recording. Company handling alone
-   does not identify the supporting service providers.
-5. **Retention:** approve workable schedules for unsuccessful/general enquiries,
-   business correspondence, contracts, accounting documents, voicemail/fax,
-   publication records, logs and backups, including legal holds and deletion owners.
-6. **International transfers:** establish recipients and countries for each service,
-   including remote access and subprocessors; confirm applicable adequacy decisions
-   or safeguards, assessment and how copies of safeguards can be obtained.
-7. **DPO assessment:** no officer is currently appointed. Confirm how many people
-   regularly perform automated personal-data processing across the business and
-   whether other GDPR/BDSG triggers apply; document the result.
-8. **Publication permissions:** establish lawful bases and evidence for employee,
-   customer and visitor photographs, videos, names and professional information.
-   Check vehicle identifiers, documents, metadata, translations, Open Graph and
-   structured data; identify sources and any Article 14 notification needs.
-9. **Local device access:** review search restoration, language/capability reads
-   and actual host behavior under section 25 TDDDG.
-10. **Other processing and exposure:** confirm recruitment/CCTV and other enquiry
-    channels if applicable; repository visibility, original-photo downloads and any
-    publicly accessible backups or internal files. No such extra processing is
-    assumed in the notice.
+1. **IONOS products and agreements:** product names, contracting entities, contract
+   date/AVV coverage, subprocessor list, processing/backup countries and support
+   access. Company EU-only confirmation is recorded, not rejected, but not verified
+   against these documents. No blanket assurance is made for GitHub.
+2. **Hosting logs and defaults:** request/error/security fields, IP treatment,
+   purposes, retention, access, deletion, backups and active statistics/CDN/WAF/bot
+   services. A general one-month enquiry rule cannot determine provider retention.
+3. **GitHub preview:** actual operator and role, responsibility/contracts, countries,
+   transfer basis, log retention and privacy information while it remains publicly accessible. Its closure at launch
+   is confirmed; its details are excluded from the production notice.
+4. **Communication and deletion details:** telephone/fax providers; IONOS mail
+   product, filters/forwarding, voicemail/call logs, copies/backups and external IT.
+   Confirm one month starts when an enquiry is no longer needed/handling is finished,
+   how each copy is deleted and any further legal holds. Statutory retention
+   exceptions are confirmed. Mario owns the process.
+5. **Publication scope and evidence:** redacted wording of employee forms; voluntary
+   consent, purpose, withdrawal and coverage of public website/preview, DE/EN,
+   thumbnails and metadata. Other people, customer-related vehicles, plates and
+   documents remain unconfirmed. Establish publication/deletion criteria and any
+   Article 14 information duties. Image-use rights and confidentiality alone do not
+   establish a valid GDPR publication basis.
+6. **Special processing/internal procedures:** only if applicable, recruitment,
+   CCTV, sensitive data, DPIA/DPO triggers and additional purposes. Document existing
+   access/security, rights handling, breach response and processing records; do not
+   presume that naming Mario confirms implementation. Repository exposure and old
+   versions containing image metadata still need assessment.
 
 ## 2. Changes and checks needed for compliance
 
-1. **Complete and approve the draft before treating it as a final notice.** Replace
-   all visible unresolved statements with verified processing facts in both
-   languages. The public preview needs an adequate notice now; noindex is not an
-   exemption. The draft does not itself close the transparency gap.
-2. **Resolve hosting arrangements.** Verify processor agreements and provider roles,
-   subprocessor authorisation, retention and necessary transfer safeguards. IONOS
-   says an AVV is included in new contracts from 19 July 2022; check this contract
-   rather than assuming another agreement must be signed.
-3. **Document device-access necessity and duration.** If the persistent pointer
-   preference is not adequately justified, change its persistence or implement an
-   appropriate informed opt-in. Add consent management only where actual operations
-   require it; block those operations before consent and support refusal/withdrawal.
-4. **Make deletion operational.** Configure proportionate logging; implement enquiry,
-   mailbox, archive and backup schedules rather than merely stating them publicly.
-5. **Resolve personal-content publication.** Obtain and document an applicable lawful
-   basis and required permissions or remove/anonymise affected content. Apply removal
-   to responsive images, metadata and previews as well as visible pages. Employee
-   consent must be voluntary. Copyright ownership alone is insufficient.
-6. **Check original-media exposure.** Three source JPEGs contain GPS metadata
-   directories. Inspected generated gallery files have no EXIF/XMP metadata. Verify
-   deployed originals and repository visibility; sanitise public derivatives and
-   restrict internal evidence/backups where necessary. No live GPS leak is certified.
-7. **Verify the actual deployed site.** Inspect requests, cookies/storage and HTTP
-   headers on each target, including deep links, language switching, search/Back,
-   pointer selection and media. Confirm no unplanned analytics or external services.
-   Check HTTPS, least-privilege access, MFA, updates, backups and mailbox security.
-8. **Maintain internal accountability.** Keep applicable processing records,
-   legitimate-interest assessments, DPO/DPIA screening, rights handling and breach
-   procedures. A privacy notice cannot replace these organisational duties.
-9. **Address the old production site separately while it remains live.** Its notice
-   is incomplete; browsing-as-consent wording is invalid; jsDelivr and OpenStreetMap
-   delivery need lawful-basis/recipient/transfer and device-access assessment and
-   accurate disclosure, or replacement. Retire/isolate legacy executable software
-   during a separately authorised migration. Do not copy the new notice onto Joomla
-   without reconciling actual behavior.
-10. **Keep notices current.** Review before new services, purposes, providers or media
-    publication; keep German/English text consistent and privacy links accessible.
-    Preserve the development and production-release safeguards until all applicable
-    facts, media evidence, legal texts and deployment checks are approved.
+1. **Finish DE/EN hosting and publication details.** Confirm the above facts and
+   replace remaining provisional wording before final approval. Public preview
+   transparency duties apply now; preview/noindex is not an exemption.
+2. **Verify provider arrangements.** Check AVV coverage, roles, subprocessors and any
+   necessary transfer safeguards. IONOS says AVVs are part of new contracts from
+   19 July 2022; verify the actual contracts rather than inventing a signed AVV.
+3. **Browser checks:** pointer storage is removed, so the former persistence action
+   is resolved. Assess remaining functional search/history, language and device
+   access under section 25 TDDDG. There is no identified tracking-consent operation
+   in current site code; a banner is not added speculatively. Inspect real host
+   cookies/headers/requests after deployment before declaring all hosting cookie-free.
+4. **Operational deletion:** implement the clarified enquiry rule, proportionate
+   log retention and mailbox/backup schedules. Keep statutory business-record
+   retention and justified legal holds distinct from general enquiry deletion.
+5. **Publication permissions:** review employee forms and customer/visitor/vehicle
+   data; document the applicable bases or remove/anonymise uncovered material,
+   including previews, metadata and responsive image variants.
+6. **GPS cleanup completed in current image files:** ExifTool inspected 10,947
+   images under src/ and public/; six additional tracked release images had no GPS tags.
+   An all-namespace GPS scan of all 10,953 files also found no remaining GPS tags.
+   Three source JPEGs had GPS tags; all GPS tags in
+   those files were removed. A second complete scan found none and no read errors.
+   Pixel hashes, dimensions, EXIF orientation and colour profiles are unchanged.
+   Other camera/MakerNote warnings were not repaired because they do not prevent
+   GPS inspection and broad metadata repair is outside scope. Old Git objects and
+   previously published copies are not changed by a working-tree edit. Assess and
+   remove exposed historical copies separately if necessary; no history rewrite
+   or deployment is authorised by this cleanup.
+7. **Deployment and organisation:** verify HTTPS, host headers, requests/storage,
+   least-privilege access, MFA, updates, backups, rights/breach procedures and any
+   required records/assessments. Naming a responsible person or drafting a notice
+   does not perform these checks.
+8. **Joomla transition and future changes:** retire the old site at the confirmed
+   cutover; its distinct privacy/external-resource issues remain relevant while it
+   is live. Keep both languages current when purposes/providers change. Preserve
+   all existing production-release gates until facts, media evidence, legal text
+   approval and actual-host checks are completed.
+
+## Verification on 9 October 2026
+
+- All 81 Node tests and the discovery fixture passed.
+- Production and GitHub Pages builds passed their page, CSP, metadata, language
+  and accessibility validators; the final content was rebuilt after scope changes.
+- All 344 generated production pages had no externally loaded scripts, embeds,
+  image/source files, stylesheets, preconnections or DNS prefetch links.
+- The eight generated JS files contained no cookie-setting or persistent
+  preference-store APIs. Four representative local HTTP responses had no
+  Set-Cookie header. These are local checks, not IONOS/GitHub header guarantees.
+- Desktop German and mobile English layouts and language links were checked;
+  no horizontal overflow or browser console errors were observed.
+- The final Pages artifact contained 3,756 inspected images with no GPS tags
+  and no ExifTool read errors.
+- Sitemap synchronization made no tracked sitemap changes; robots.txt was
+  reviewed and its existing route/media policy remains applicable.
 
 ## Primary references
 

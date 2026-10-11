@@ -6,8 +6,11 @@ Dieser Prüfvermerk dokumentiert den historischen Stand vom 24. Juli 2026.
 Am 4. Oktober 2026 wurde der Datenschutzentwurf durch den deutschen und englischen
 Text in `src/content/legal/privacy.js` ersetzt und auf der neuen Datenschutzseite
 eingebunden. Die aktuelle Liste offener Angaben und Maßnahmen steht in
-`DATENSCHUTZ-OPEN-ITEMS.md`. Aussagen dieses historischen Vermerks über fehlenden
-Browserspeicher sind überholt.
+`DATENSCHUTZ-OPEN-ITEMS.md`. Aussagen dieses historischen Vermerks sind nicht als aktuelle Prüfung zu verwenden.
+Am 9. Oktober 2026 wurden bestätigte Unternehmensantworten eingearbeitet und
+GPS-Tags aus den betroffenen aktuellen Bilddateien entfernt. Der Custom Cursor
+und seine Speicherpräferenz sind entfernt; die lokale Suche nutzt weiterhin den
+Browserverlauf. Die verbleibenden Angaben stehen in der aktuellen Prüfliste.
 Am 6. Oktober 2026 wurden die erneut bestätigten Unternehmensangaben in
 `src/content/legal/imprint.js` auf Deutsch und Englisch eingebunden. Der aktuelle
 Prüfstand steht in `IMPRESSUM-REVIEW.md`, die offenen Fragen in

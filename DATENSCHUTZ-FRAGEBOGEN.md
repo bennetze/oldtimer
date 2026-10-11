@@ -1,255 +1,120 @@
-# Fragebogen zur Fertigstellung der Datenschutzerklärung
+# Verbleibende Fragen zur Datenschutzerklärung
 
-Bitte beantworten Sie die nummerierten Fragen. „Unbekannt“, „noch nicht entschieden“
-und „trifft nicht zu“ sind zulässige Antworten. Bei mehreren Anbietern bitte jeden
-einzeln aufführen. Angaben sollen die tatsächliche Praxis beschreiben; geplante
-Änderungen bitte ausdrücklich als geplant kennzeichnen.
+Stand: 9. Oktober 2026. Dieser Fragenkatalog ersetzt die frühere ausführliche Liste.
+Unternehmensdaten, Mario Schranks Zuständigkeit, zwei bis drei datenverarbeitende
+Personen, IONOS als vorgesehener Hoster und bestehender E-Mail-Anbieter, fehlender
+zusätzlicher Cloudspeicher, Mitarbeiterformulare und die Entfernung des Custom
+Cursors sind bereits erfasst. Gesetzlich aufbewahrungspflichtige Unterlagen sind
+von der allgemeinen Löschregel ausgenommen. Die bisherige Website und die
+GitHub-Pages-Vorschau werden bei Produktionsstart beendet.
 
-Anbieterinformationen können durch Links zu Vertragsbedingungen,
-Datenschutzinformationen und Unterauftragnehmerlisten belegt werden. Bitte keine
-Passwörter, Zugangsdaten, vollständigen Kundenunterlagen oder ungeschwärzten
-Ausweiskopien übermitteln. Für Personenfreigaben genügt zunächst eine Beschreibung
-von Inhalt, Umfang und Dokumentation.
+Es geht ausschließlich um die **Datenschutzerklärung**. Das Impressum ist nicht
+Gegenstand dieser Bearbeitung. Der deutsche und englische Text sind so weit wie
+mit den bestätigten Angaben möglich aktualisiert; eine endgültige Freigabe ist
+noch nicht erfolgt.
 
-## A. Unternehmen und Zuständigkeit
+Bitte nach Nummern antworten. „Noch nicht eingerichtet“, „unbekannt“ und „trifft
+nicht zu“ sind zulässig. Noch nicht bestehende Hostingverhältnisse bitte nicht als
+bereits eingerichtet beschreiben. Links oder geschwärzte Vertragsauszüge genügen;
+keine Passwörter, Kundendaten, Unterschriften oder vollständigen Personalunterlagen.
 
-**1. Sind diese Unternehmensdaten vollständig und aktuell?**
-DIE OLDTIMERMANUFAKTUR GmbH, Kreuzweg 11a, 36452 Kaltennordheim OT Fischbach,
-Deutschland; info@oldtimermanufaktur.de; +49 36966 83783.
-Falls nicht: Welche Angaben müssen korrigiert werden?
+## Liste 1: Noch benötigte Angaben
 
-Antwort:
-
-**2. Wer ist für Datenschutzanfragen zuständig?**
-Welche öffentlich nutzbare E-Mail-Adresse soll genannt werden? Wer bearbeitet
-intern Auskunfts-, Löschungs-, Widerspruchs- und Widerrufsanfragen?
-
-Antwort:
-
-**3. Wie viele Personen verarbeiten im gesamten Unternehmen regelmäßig personenbezogene Daten mit Computern oder anderen digitalen Systemen?**
-Bitte auch Geschäftsführung, Teilzeitkräfte und regelmäßig beteiligte Personen
-außerhalb des Website-Teams berücksichtigen. Es ist bereits bekannt, dass derzeit
-kein Datenschutzbeauftragter benannt ist.
+**1. Sobald das Hosting ausgewählt/eingerichtet ist: Welches IONOS-Produkt und welche Vertragsgesellschaft werden verwendet?**
+Bitte Produktname, Vertragsgesellschaft und Anschrift sowie Vertragsdatum nennen.
+Welche Unterlagen gelten zu AVV, Unterauftragnehmern, Verarbeitungs-/Backupländern,
+Supportzugriffen, Zugriffs-/Fehler-/Sicherheitsprotokollen und deren Löschfristen?
+Sind WebAnalytics, CDN, Firewall/Botschutz oder andere Zusatzdienste aktiviert?
+Links/Unterlagen reichen; die technischen Angaben prüfe ich anschließend.
 
 Antwort:
 
-**4. Gibt es besondere Verarbeitungstätigkeiten, die zusätzlich geprüft werden müssen?**
-Zum Beispiel umfangreiche Verarbeitung von Gesundheitsdaten, systematische
-Überwachung, personenbezogene Profile oder automatisierte Entscheidungen mit
-wesentlichen Folgen. Falls ja: Welche Daten, welcher Zweck und welcher Umfang?
-Gibt es bereits eine dokumentierte Prüfung einer Datenschutzbeauftragtenpflicht
-oder Datenschutz-Folgenabschätzung?
+**2. Welches konkrete IONOS-E-Mail-Produkt wird bereits genutzt, und wie werden die Postfächer betrieben?**
+Bitte Vertragsgesellschaft, vorhandene AVV/Anbieterunterlagen, Weiterleitungen,
+Spamfilter, Archive, lokale Kopien und Backups nennen. Haben externe IT-Dienstleister
+Zugriff? Welche Speicher-/Löschfristen gelten für solche Kopien?
 
 Antwort:
 
-## B. Neue Website und öffentliche Vorschau
-
-**5. Für welche Internetadressen soll die neue Erklärung gelten?**
-Bitte Produktionsdomain, weitere Domains/Subdomains und öffentliche Vorschauen
-nennen. Soll die GitHub-Pages-Vorschau nach dem Produktionsstart bestehen bleiben?
-
-Antwort:
-
-**6. Wer betreibt und verantwortet die GitHub-Pages-Vorschau?**
-Wem gehört das GitHub-Konto, wer entscheidet über Veröffentlichung und Inhalte,
-und welche Vereinbarung besteht zwischen dieser Person/Organisation und der GmbH?
+**3. Welche Telefon- und Faxdienste werden tatsächlich genutzt?**
+Bitte Anbieter nennen. Gibt es Fax-to-E-Mail, Voicemail, gespeicherte Anruflisten
+oder Gesprächsaufzeichnungen? Wenn ja: Zweck, Zugriffsberechtigte und Löschfristen
+nennen; ansonsten „nein“. Wird die veröffentlichte Faxnummer weiterhin genutzt?
 
 Antwort:
 
-**7. Ist das GitHub-Repository öffentlich oder privat, und welche Dateien sind öffentlich erreichbar?**
-Sind Originalbilder, Fahrzeugunterlagen, Sicherungskopien oder interne Dateien über
-Repository, Website oder andere Downloadlinks zugänglich? Wer hat Änderungszugriff?
+**4. Ab welchem Zeitpunkt läuft die maximale Monatsfrist für allgemeine/erfolglose Anfragen?**
+Ist gemeint: sofort, sobald die Anfrage abschließend bearbeitet und nicht mehr
+benötigt wird, spätestens einen Monat danach? Falls nicht: Welcher Startpunkt ist
+richtig? Gesetzlich aufbewahrungspflichtige Unterlagen sind bereits ausdrücklich
+als Ausnahme bestätigt und müssen nicht erneut bestätigt werden.
 
 Antwort:
 
-**8. Welcher Hostinganbieter und welches konkrete Produkt werden eingesetzt?**
-IONOS ist bislang nur vorgesehen. Bitte Anbieter-Vertragsgesellschaft, Produktname
-und Status nennen: bereits eingerichtet / verbindlich gewählt / noch offen.
+**5. Was steht genau im Bildrechte-/Datenschutzabschnitt des Mitarbeiterformulars?**
+Bitte nur den einschlägigen Wortlaut ohne personenbezogene Angaben nennen.
+Welche Veröffentlichungszwecke, Websitefassungen, Videos, Vorschaubilder und
+Metadaten deckt er ab? War die Zustimmung freiwillig ohne Nachteile bei Ablehnung,
+und wie wird über den Widerruf informiert? Gibt es eine eigene Veröffentlichungs-
+einwilligung oder lediglich eine Verschwiegenheits-/Nutzungsrechteklausel?
 
 Antwort:
 
-**9. Welche zusätzlichen Dienste sind beim Hosting tatsächlich aktiviert?**
-Bitte CDN, Firewall/WAF, DDoS- oder Botschutz, Besucherstatistiken, Fehlerüberwachung,
-Backups und eventuell vom Anbieter eingefügte Skripte nennen; „keine“ nur bei
-bestätigter Prüfung.
+**6. Sind außer Mitarbeitern weitere Personen oder kundenbezogene Angaben erkennbar veröffentlicht?**
+Zum Beispiel Kunden/Besucher, Namen, Kennzeichen, Fahrgestellnummern, Dokumente oder
+personenbezogene Fahrzeuggeschichten. Welche Freigaben/Grundlagen gibt es je
+Inhaltsart, woher stammen die Informationen, und wurden Betroffene informiert?
+Wenn solche Inhalte nicht enthalten sind: bitte bestätigen.
 
 Antwort:
 
-**10. Welche Datenschutz-Vertragsunterlagen liegen für Hosting und Vorschau vor?**
-Bitte Links oder Bezeichnungen der aktuellen Vereinbarungen zur
-Auftragsverarbeitung, Anbieterbedingungen und Unterauftragnehmerlisten nennen.
-Was ist noch nicht geprüft oder vorhanden?
+**7. Gibt es zusätzliche Verarbeitungen oder besondere Tätigkeiten, die berücksichtigt werden müssen?**
+Werden über die veröffentlichten Kontakte Bewerbungen oder sensible Angaben
+angenommen? Gibt es Videoüberwachung, umfangreiche Überwachung/Profile oder
+Verarbeitung besonders sensibler Daten? Wenn ja: Zweck, Umfang, Empfänger,
+Informationen für Betroffene und Löschfristen nennen. Diese Angaben dienen auch
+zur Prüfung besonderer DPO-/Folgenabschätzungs-Auslöser; die Personenzahl ist geklärt.
 
 Antwort:
 
-**11. In welchen Ländern werden Hostingdaten und Backups verarbeitet, und von wo kann Support zugreifen?**
-Bitte bekannte Länder und beteiligte Gesellschaften nennen. Falls außerhalb des
-EWR: Welche vertraglichen Angaben zu Übermittlungsgrundlagen/Garantien gibt es,
-und wo sind diese abrufbar? Falls unbekannt: Anbieterunterlagen zur Prüfung nennen.
+## Liste 2: Noch benötigte Umsetzungsentscheidungen und Nachweise
+
+**8. Wie werden die bestätigten Löschregeln tatsächlich umgesetzt?**
+Werden Postfächer, Anhänge, lokale Kopien, Papierakten, Archive und Backups einbezogen?
+Welche Verfahren bestehen bereits für Auskunft/Löschung/Widerruf und
+Datenschutzvorfälle? Bitte kurz tatsächliche Praxis oder noch offene Maßnahmen
+nennen. Mario Schrank ist als zuständige Person bereits bestätigt.
 
 Antwort:
 
-**12. Welche Zugriffs-, Fehler- und Sicherheitsdaten werden gespeichert?**
-Bitte getrennt für Produktionshosting und GitHub-Vorschau: vollständige/gekürzte
-IP-Adresse, Zeitpunkt, URL, Referrer, Browserinformationen, sonstige Felder; Zweck,
-Speicherdauer, Löschverfahren und zugriffsberechtigte Personen. Anbieterantworten
-oder Dokumentationslinks sind ausreichend, wenn Sie diese Angaben nicht kennen.
+**9. Was soll mit nicht ausreichend freigegebenen persönlichen Inhalten geschehen?**
+Sollen fehlende Freigaben beschafft oder die betroffenen Bilder/Angaben vor
+Veröffentlichung entfernt/anonymisiert werden? Welche Lösch-/Prüfkriterien gelten
+für Mitarbeiterbilder nach Widerruf oder Ausscheiden und für Kundendokumentationen?
+GPS-Tags in den aktuellen Bilddateien sind bereits entfernt; Kennzeichen und
+Bildinhalte sind davon nicht betroffen.
 
 Antwort:
 
-## C. E-Mail, Telefon, Fax und weitere Empfänger
-
-**13. Welcher Anbieter betreibt die geschäftlichen E-Mail-Postfächer?**
-Bitte Vertragsgesellschaft und Produkt nennen. Werden zusätzliche Spamfilter,
-Weiterleitungen, externe Archive oder private Postfächer verwendet? Falls ja:
-welche und wofür?
-
-Antwort:
-
-**14. Welche Telefon-, Fax- und Voicemail-Dienste werden genutzt?**
-Bitte Anbieter/Produkte nennen. Gibt es gespeicherte Anruflisten, Fax-to-E-Mail,
-Voicemail oder Gesprächsaufzeichnungen? Falls ja: Daten, Zweck und Speicherfrist
-je Funktion nennen. Wird die öffentlich angegebene Faxnummer noch genutzt?
+**10. Welche historischen oder internen Bild-/Dokumentkopien sind öffentlich erreichbar?**
+Ist das Repository öffentlich, sind ältere Git-Versionen oder Originaldownloads
+zugänglich, und gibt es sonstige öffentliche Sicherungskopien? Die GPS-Bereinigung
+ändert aktuelle Dateien, nicht die Git-Historie oder bereits veröffentlichte Kopien.
+Eine Historienbereinigung wird nicht ohne gesonderte Abstimmung durchgeführt.
 
 Antwort:
 
-**15. Wo werden Anfragen und Anhänge nach Eingang weiterverarbeitet?**
-Zum Beispiel ausschließlich im Postfach oder zusätzlich auf Computern, einem
-Server/NAS, in Cloudspeichern, einer Kundenverwaltung oder als Ausdruck.
-Welche konkreten Systeme/Anbieter sind beteiligt?
+## Prüfungen, die ich selbst übernehme
 
-Antwort:
+Anhand der bereitgestellten Produktunterlagen prüfe ich die Texte zu Empfängern,
+Speicherfristen und Übermittlungen. Die neue Website wird nach Einrichtung des
+Hosts auf Cookies, HTTP-Header, externe Verbindungen und Dienste geprüft. Aktueller
+Quellcode und geprüfte lokale Antworten setzen keine Cookies; das ersetzt noch
+keine Prüfung des künftigen IONOS-Hosts. Die Funktions- und Gerätezugriffsprüfung
+bleibt erforderlich, auch wenn kein Cookiebanner vorgesehen ist.
 
-**16. Wer erhält Zugriff auf Anfragen und Kundendaten?**
-Bitte Funktionen/Organisationen nennen: interne Mitarbeitende, externe IT,
-Steuerberatung, Partnerwerkstätten oder andere Empfänger. Welche Daten erhalten
-sie, für welchen Zweck und haben sie dauerhaften Zugriff?
-
-Antwort:
-
-**17. Welche Vertrags-, Länder- und Backupangaben liegen für diese Kommunikations- und IT-Dienste vor?**
-Bitte Anbieterunterlagen zu Auftragsverarbeitung, Unterauftragnehmern,
-Verarbeitungsländern, Fernzugriff und gegebenenfalls Drittlandübermittlungen nennen.
-Wo werden Sicherungskopien gespeichert und wann werden sie überschrieben/gelöscht?
-
-Antwort:
-
-## D. Tatsächliche Speicher- und Löschpraxis
-
-**18. Wann werden allgemeine und erfolglose Anfragen gelöscht?**
-Bitte tatsächliche Frist und Startpunkt nennen, z. B. ab letzter Nachricht oder
-Abschluss der Bearbeitung. Falls noch keine Regel besteht: ausdrücklich angeben.
-
-Antwort:
-
-**19. Welche Aufbewahrungsregeln gelten für auftragsbezogene Kommunikation und Geschäftsunterlagen?**
-Bitte Dokumentarten, Fristen und Fristbeginn nennen. Wer unterscheidet normale
-Anfragen von aufbewahrungspflichtiger Korrespondenz und Buchhaltungsunterlagen?
-Wie werden laufende Rechtsstreitigkeiten oder andere Aufbewahrungsgründe behandelt?
-
-Antwort:
-
-**20. Wer setzt Löschungen praktisch um, und welche weiteren Kopien werden berücksichtigt?**
-Bitte Postfächer, Papierakten, lokale Dateien, Archive, Anruflisten, Voicemail,
-Faxe und Backups berücksichtigen. Werden Daten aus Backups nach Wiederherstellung
-erneut gelöscht? Gibt es bereits schriftliche Regeln?
-
-Antwort:
-
-## E. Personen, Fahrzeuge und Bildmaterial
-
-**21. Welche personenbezogenen Inhalte werden auf der neuen Website veröffentlicht?**
-Bitte Mitarbeitende, Geschäftsführung, Kunden, Besucher und andere erkennbare
-Personen sowie Namen, berufliche Angaben, Kennzeichen, Fahrgestellnummern,
-Fahrzeugdokumente oder personenbezogene Projektgeschichten berücksichtigen.
-Welche Inhalte sind noch nicht zur Veröffentlichung freigegeben?
-
-Antwort:
-
-**22. Welche dokumentierten Freigaben oder anderen Begründungen gibt es dafür?**
-Bitte je Personengruppe/Inhaltsart beschreiben. Decken vorhandene Einwilligungen
-die öffentliche Website und Vorschau, DE/EN-Texte, Metadaten und Vorschaubilder ab?
-Bei Mitarbeitenden: War die Entscheidung freiwillig und ohne Nachteile bei
-Ablehnung? Wie kann eine Einwilligung widerrufen werden?
-
-Antwort:
-
-**23. Woher stammen personenbezogene Texte, Fotos und Fahrzeuginformationen?**
-Direkt von Betroffenen, vom Unternehmen, von Fotografen, aus älteren Unterlagen
-oder anderen Quellen? Wurden Betroffene über die Veröffentlichung informiert?
-Falls ja: wann, durch wen und mit welchen Informationen?
-
-Antwort:
-
-**24. Wann werden veröffentlichte personenbezogene Inhalte entfernt oder überprüft?**
-Was passiert bei Widerruf, Mitarbeiter-Austritt, Kundenwiderspruch oder Projektende?
-Wer kümmert sich auch um Bildvarianten, Vorschaubilder und Metadaten?
-
-Antwort:
-
-**25. Sollen identifizierende Fahrzeugmerkmale und Standortmetadaten öffentlich sichtbar sein?**
-Bitte gewünschte Behandlung von Kennzeichen, Fahrgestellnummern, Dokumenten und
-GPS-Daten nennen. Gibt es begründete Ausnahmen? Drei untersuchte Quellbilder
-enthalten GPS-Metadatenverzeichnisse; eine öffentliche GPS-Offenlegung wurde damit
-nicht nachgewiesen. Dürfen öffentliche Bilddateien bei Bedarf bereinigt und
-betroffene Angaben anonymisiert werden?
-
-Antwort:
-
-## F. Browserfunktionen und weitere Zwecke
-
-**27. Bleibt es bei der bisher bestätigten Funktionsauswahl?**
-Keine Analyse-/Werbedienste, Newsletter, Kontaktformulare, WhatsApp, Buchung oder
-KI-Dienste; lokale Schriften/Medien/Standortgrafik; Google Maps nur als externer
-Link. Falls Änderungen geplant sind: Dienst, Anbieter, Zweck und Zeitpunkt nennen.
-
-Antwort:
-
-**28. Werden Bewerbungen oder andere sensible Anliegen über die veröffentlichten Kontaktdaten angenommen?**
-Falls ja: welche Daten, Empfänger, Systeme und Löschfristen? Werden daraus Daten
-für weitere Zwecke übernommen, beispielsweise einen Bewerberpool?
-
-Antwort:
-
-**29. Welche weiteren Zwecke entstehen aus Websiteanfragen?**
-Zum Beispiel spätere Werbung, Weitergabe an Partner oder Veröffentlichung einer
-Kunden-/Fahrzeuggeschichte. Falls keine: bitte bestätigen. Gibt es Videoüberwachung
-oder andere gesonderte Verarbeitung, zu der diese Website Informationen anbieten
-soll? Solche Tätigkeiten benötigen gegebenenfalls eigene Hinweise.
-
-Antwort:
-
-## G. Umsetzung, Abgrenzung und Freigabe
-
-**30. Welche Schutz- und Datenschutzverfahren bestehen bereits?**
-Bitte kurz zu Zugriffsrechten, MFA, Updates, Backups, Löschung,
-Datenschutzanfragen und Datenschutzvorfällen antworten. Gibt es ein
-Verarbeitungsverzeichnis oder dokumentierte Interessenabwägungen? Keine
-Zugangsdaten oder sicherheitskritischen Einzelheiten angeben.
-
-Antwort:
-
-**31. Wie und wann wird die bisherige Joomla-Website abgelöst?**
-Bleibt sie unter einer anderen Adresse zugänglich? Wer kann bis zur Ablösung ihre
-Datenschutzhinweise und externen Einbindungen korrigieren? Die neue Erklärung
-beschreibt bislang ausschließlich die neue Website.
-
-Antwort:
-
-**32. Wer bestätigt die Unternehmensangaben und prüft die fertige Erklärung?**
-Bitte verantwortliche Funktion/Person und gegebenenfalls Datenschutzberatung nennen.
-Welche Anbieterunterlagen oder Entscheidungen fehlen noch, und wer beschafft sie?
-
-Antwort:
-
-## Was ich anschließend prüfe
-
-Die Antworten dienen als Grundlage für die endgültigen DE/EN-Texte. Vertragsrollen,
-Rechtsgrundlagen, Drittlandübermittlungen und Gerätezugriffe müssen anhand der
-tatsächlichen Unterlagen und technischen Umsetzung geprüft werden. Eine Antwort
-„ja, konform“ ersetzt diese Prüfung nicht. Ich prüfe die Websitefunktionen und
-ausgelieferten Dateien soweit zugänglich selbst; Anbieterpraxis und interne
-Unternehmensabläufe müssen vom Unternehmen bzw. Anbieter bestätigt werden.
-Erforderliche Änderungen, die über die Datenschutzerklärung hinausgehen, werden
-gesondert benannt. Dieser Fragebogen ändert die Website nicht und erteilt keine
-Freigabe für eine Veröffentlichung.
+Die Produktions-Datenschutzerklärung enthält auf ausdrücklichen Wunsch keine
+GitHub-Pages-Verarbeitung. Solange diese Vorschau öffentlich bleibt, benötigt sie
+separate passende Datenschutzinformationen; ihre spätere Abschaltung beseitigt
+nicht die heutigen Informationspflichten. Die vorhandenen Freigabe- und
+Entwicklungsvorschau-Sicherungen bleiben erhalten. Es erfolgt keine Veröffentlichung.

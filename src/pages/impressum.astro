@@ -8,8 +8,6 @@ import { legalNotice } from '../content/legal/imprint.js';
 
 const language = vehicleLanguage(Astro.url.pathname, import.meta.env.BASE_URL);
 const content = legalNotice[language];
-const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
-const privacyPath = `${basePath}${language === 'en' ? 'en/' : ''}datenschutz/`;
 ---
 
 <Layout title={content.title} description={content.description} authoredTitle authoredDescription noindex>
@@ -23,19 +21,18 @@ const privacyPath = `${basePath}${language === 'en' ? 'en/' : ''}datenschutz/`;
 					<h2 id={`${section.id}-title`}>{section.title}</h2>
 					{section.id === 'impressum-anbieter' && <>
 						<address>
-							DIE OLDTIMERMANUFAKTUR GmbH<br />
 							Kreuzweg 11a<br />
-							36452 Kaltennordheim OT Fischbach<br />
-							{content.country}
+							36452 Kaltennordheim
 						</address>
-						<p>{content.representative}<br />Mario Schrank</p>
 					</>}
 					{section.id === 'impressum-kontakt' && <p>
-						{content.phone}: <a href="tel:+493696683783">+49 36966 83783</a><br />
+						{content.phone}: <a href="tel:+493696683783">{content.phoneDisplay}</a><br />
 						{content.email}: <a href="mailto:info@oldtimermanufaktur.de">info@oldtimermanufaktur.de</a>
 					</p>}
 					{section.paragraphs?.map(paragraph => <p>{paragraph}</p>)}
-					{section.id === 'impressum-datenschutz' && <p><a href={privacyPath}>{content.privacyLink}</a></p>}
+					{section.id === 'impressum-social-media' && content.profiles.map(profile => <p>
+						{profile.name}: <a href={profile.href}>{profile.href}</a>
+					</p>)}
 				</section>
 			))}
 		</LegalArticle>

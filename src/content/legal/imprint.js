@@ -1,59 +1,67 @@
-// Authored German notice and English translation; do not dictionary-translate.
-// Core details were reconfirmed by the user on 6 October 2026.
-// Conditional disclosures and release blockers are tracked in IMPRESSUM-REVIEW.md.
+// Approved German notice supplied by the user on 11 October 2026,
+// with an authored English translation. Site preview safeguards remain active.
+import { socialProfiles } from '../../config/social.js';
+
+const noticeProfiles = socialProfiles.map(profile => ({
+	name: profile.name === 'TikTok' ? 'Tiktok' : profile.name,
+	href: profile.icon === 'tiktok' ? `${profile.href}?lang=de-DE` : profile.href,
+}));
+
 export const legalNotice = {
 	de: {
 		title: 'Impressum',
-		description: 'Anbieterkennzeichnung der DIE OLDTIMERMANUFAKTUR GmbH mit Anschrift, Geschäftsführer, Kontakt, Handelsregister und Umsatzsteuer-Identifikationsnummer.',
+		description: 'Impressum der DIE OLDTIMERMANUFAKTUR GmbH mit Unternehmensangaben, Kontakt, Registereintrag, USt-IdNr., Verbraucherstreitbeilegung und Social-Media-Profilen.',
 		eyebrow: 'Entwicklungsvorschau',
 		navigation: 'Abschnitte des Impressums',
-		country: 'Deutschland',
-		representative: 'Vertreten durch den Geschäftsführer:',
 		phone: 'Telefon',
+		phoneDisplay: '036 966 / 83 7 83',
 		email: 'E-Mail',
-		privacyLink: 'Zur Datenschutzerklärung',
+		profiles: noticeProfiles,
 		sections: [
-			{ id: 'impressum-anbieter', label: 'Anbieter', title: 'Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)' },
+			{ id: 'impressum-anbieter', label: 'Anbieter', title: 'DIE OLDTIMERMANUFAKTUR GmbH' },
 			{ id: 'impressum-kontakt', label: 'Kontakt', title: 'Kontakt' },
-			{ id: 'impressum-register', label: 'Handelsregister', title: 'Registereintrag', paragraphs: [
-				'Eingetragen im Handelsregister des Amtsgerichts Jena. Registernummer: HRB 500477.',
+			{ id: 'impressum-geschaeftsfuehrer', label: 'Geschäftsführer', title: 'Vertretungsberechtigter Geschäftsführer', paragraphs: [
+				'Mario Schrank (Geschäftsführer)',
+			] },
+			{ id: 'impressum-register', label: 'Registereintrag', title: 'Registereintrag', paragraphs: [
+				'Registergericht: Jena',
+				'Registernummer: 500477',
 			] },
 			{ id: 'impressum-umsatzsteuer', label: 'Umsatzsteuer', title: 'Umsatzsteuer-Identifikationsnummer', paragraphs: [
-				'Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE814808272.',
+				'Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE 814808272',
 			] },
-			{ id: 'impressum-datenschutz', label: 'Datenschutz', title: 'Datenschutz', paragraphs: [
-				'Informationen zur Verarbeitung personenbezogener Daten finden Sie in der gesonderten Datenschutzerklärung.',
+			{ id: 'impressum-streitbeilegung', label: 'Streitbeilegung', title: 'Verbraucherstreitbeilegung/Universalschlichtungsstelle', paragraphs: [
+				'Wir sind nicht bereit und nicht verpflichtet, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.',
 			] },
-			{ id: 'impressum-vorschau', label: 'Vorschau', title: 'Stand der Entwicklungsvorschau', paragraphs: [
-				'Stand: 6. Oktober 2026. Diese neue Website ist eine Entwicklungsvorschau. Die Anbieterkennzeichnung beruht auf den vorliegenden Unternehmensangaben; die abschließende Prüfung und Freigabe sowie gegebenenfalls erforderliche ergänzende Pflichtangaben stehen noch aus.',
-			] },
+			{ id: 'impressum-social-media', label: 'Social Media', title: 'Dieses Impressum gilt auch für folgende Social-Media-Profile' },
 		],
 	},
 	en: {
 		title: 'Legal notice',
-		description: 'Provider information for DIE OLDTIMERMANUFAKTUR GmbH, including its address, managing director, contact details, commercial register and VAT identification number.',
+		description: 'Legal notice for DIE OLDTIMERMANUFAKTUR GmbH with company and contact details, registration, VAT ID, consumer dispute resolution and social media profiles.',
 		eyebrow: 'Development preview',
 		navigation: 'Legal notice sections',
-		country: 'Germany',
-		representative: 'Represented by its managing director:',
 		phone: 'Telephone',
+		phoneDisplay: '+49 36966 83783',
 		email: 'Email',
-		privacyLink: 'Read the privacy notice',
+		profiles: noticeProfiles,
 		sections: [
-			{ id: 'impressum-anbieter', label: 'Provider', title: 'Information pursuant to section 5 of the German Digital Services Act (DDG)' },
+			{ id: 'impressum-anbieter', label: 'Provider', title: 'DIE OLDTIMERMANUFAKTUR GmbH' },
 			{ id: 'impressum-kontakt', label: 'Contact', title: 'Contact' },
-			{ id: 'impressum-register', label: 'Commercial register', title: 'Commercial register entry', paragraphs: [
-				'Registered in the commercial register of Amtsgericht Jena (Jena Local Court). Registration number: HRB 500477.',
+			{ id: 'impressum-geschaeftsfuehrer', label: 'Managing director', title: 'Managing director authorised to represent the company', paragraphs: [
+				'Mario Schrank (Managing Director)',
+			] },
+			{ id: 'impressum-register', label: 'Registration', title: 'Register entry', paragraphs: [
+				'Register court: Jena',
+				'Registration number: 500477',
 			] },
 			{ id: 'impressum-umsatzsteuer', label: 'VAT', title: 'VAT identification number', paragraphs: [
-				'VAT identification number pursuant to section 27a of the German Value Added Tax Act: DE814808272.',
+				'VAT identification number pursuant to section 27a of the German Value Added Tax Act (UStG): DE 814808272',
 			] },
-			{ id: 'impressum-datenschutz', label: 'Privacy', title: 'Privacy', paragraphs: [
-				'Information about the processing of personal data is provided in the separate privacy notice.',
+			{ id: 'impressum-streitbeilegung', label: 'Dispute resolution', title: 'Consumer dispute resolution / universal arbitration body', paragraphs: [
+				'We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration body.',
 			] },
-			{ id: 'impressum-vorschau', label: 'Preview', title: 'Development preview status', paragraphs: [
-				'Last reviewed: 6 October 2026. This new website is a development preview. The provider information is based on the company details currently available; final review and approval, and any required additional statutory disclosures, remain outstanding.',
-			] },
+			{ id: 'impressum-social-media', label: 'Social media', title: 'This legal notice also applies to the following social media profiles' },
 		],
 	},
 };
