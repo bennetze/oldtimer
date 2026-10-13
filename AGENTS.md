@@ -189,8 +189,8 @@ with the user. The current visual direction is
 restrained luxury editorial with a very dark grey background (`#111111`), `#eeeeee` as the
 main color, and neutral grey lines/interactions. Avoid accent-heavy treatments and avoid
 gold, brown, beige, tan, sepia, and retro nostalgia palettes unless explicitly requested.
-Use free commercial fonts only. The site uses locally hosted `Cinzel` for headings and titles and
-`Cormorant Garamond` for body and UI text.
+Use free commercial fonts only. The site uses locally hosted `Lora` for all text, differentiating headings and titles
+from body and UI text through responsive sizes and weights (400–700).
 
 Existing light vehicle pages and current page-specific backgrounds are intentional
 exceptions to the dark/grayscale defaults below. Preserve them during maintenance

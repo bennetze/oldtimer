@@ -3,6 +3,8 @@ import { finalizeCsp } from './i18n/csp.js';
 import { load } from 'cheerio';
 import { translateSiteText, localizeStructuredData } from './i18n/authoredContent.js';
 import { languagePath } from './i18n/language.js';
+import { formatHeadingBreaks } from './i18n/headingBreaks.js';
+import { formatLegalLinkBreaks } from './i18n/linkBreaks.js';
 
 // Static rendering keeps both languages readable without JavaScript. The same
 // transformation also runs in dev, with one set of shared Astro page templates.
@@ -39,6 +41,8 @@ export const onRequest = defineMiddleware(async (context, next) => {
 			if (value.startsWith(base) || value.startsWith(`${origin}${base}`)) $(node).attr('href', localizeUrl(value));
 		});
 	}
+	formatHeadingBreaks($);
+	formatLegalLinkBreaks($);
 	$('script[type="application/ld+json"]').each((_, node) => {
 		$(node).text(JSON.stringify(localizeStructuredData(JSON.parse($(node).text()), english, localizeUrl)).replace(/</g, '\\u003c'));
 	});

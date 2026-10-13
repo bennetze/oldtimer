@@ -1,6 +1,18 @@
 /* Shared readability and interaction refinements; preserve page palettes. */
-:where(h1, h2, h3) { overflow-wrap: anywhere; }
-:where(main p, main li, figcaption) { overflow-wrap: break-word; }
+:where(h1, h2, h3, h4, h5, h6) {
+	overflow-wrap: normal;
+	word-break: normal;
+	hyphens: none;
+	text-wrap: balance;
+}
+/* A model year belongs with its label, even when the title needs several lines. */
+:where(h1, h2, h3, h4, h5, h6) .heading-phrase { white-space: nowrap; }
+:where(main p, main li, main blockquote, main address, figcaption) {
+	overflow-wrap: normal;
+	word-break: normal;
+	hyphens: auto;
+	hyphenate-limit-chars: 8 4 4;
+}
 :where(button, input, select, textarea) { font: inherit; }
 :where(button, summary, input, select) { min-height: 2.75rem; }
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
@@ -117,6 +129,9 @@
 	.site-shell--light .site-header { background: #eeeeee !important; }
 }
 /* Only enlarged browser text or user text-spacing overrides activate this mode. */
+.accessible-text-layout :is(h1, h2, h3, h4, h5, h6) { overflow-wrap: anywhere; }
+.accessible-text-layout .heading-phrase { white-space: normal; }
+.accessible-text-layout :is(p, li, blockquote, address, figcaption) { overflow-wrap: anywhere; }
 .accessible-text-layout .brand,
 .accessible-text-layout .brand span,
 .accessible-text-layout .footer-brand { white-space: normal !important; overflow-wrap: anywhere; }

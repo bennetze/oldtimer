@@ -54,10 +54,10 @@ from a quiet page-load measurement.
 - Desktop and mobile use the same original video and animated fallback files.
   Mobile derivatives and viewport/density selection were removed at the user's
   request. Pages omits the existing animated WebP fallbacks as before.
-- Install `fonttools[woff]==4.66.0` in a disposable Python virtual environment and
-  run `python scripts/subset-fonts.py`. It regenerates WOFF2 subsets and fonts.css,
-  checks complete original character coverage, variable axes, horizontal metrics
-  and disjoint Unicode ranges. Original TTF/WOFF2 masters and OFL notices remain.
+- Typography updated 2026-10-13: the unmodified local Lora variable TTF replaces
+  both former families and their subsets. There is one 206 KiB font request with
+  `font-display: swap`; no font-generation step or external service is required.
+  Keep its embedded metadata and published SIL OFL copyright/license notice.
 - Astro generates responsive WebP posters (640/960/1280/1920 px, quality 80) and
   the 1280 px texture (quality 80). The JPEG poster fallback remains available.
 

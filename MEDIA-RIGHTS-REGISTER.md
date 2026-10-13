@@ -111,11 +111,13 @@ Removing the inventory neither waives those requirements nor confirms compliance
 - Marker placement is approximate, based on Fischbach/Rhön at 50.65° N, 10.14° E: https://www.wikidata.org/wiki/Q688059. The visible label and postal address use Fischbach. Both assets are served locally.
 - Reviewed `public/robots.txt`: no route, indexing, photographic-asset policy or sitemap-location change is needed for these SVG graphics.
 
-## Local typography — reviewed 2026-09-20
+## Local typography — reviewed 2026-10-13
 
-- `src/assets/fonts/cinzel-variable.ttf`: user-supplied Cinzel variable font, used for headings and titles. SIL Open Font License 1.1 bundled at `public/licenses/Cinzel-OFL-1.1.txt`; source: https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/OFL.txt.
-- `src/assets/fonts/cormorant-garamond-variable.ttf`: user-supplied Cormorant Garamond variable font, used for body and UI text. SIL Open Font License 1.1 bundled at `public/licenses/CormorantGaramond-OFL-1.1.txt`; source: https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/OFL.txt.
-- Both original font files are hosted locally; no external font requests are introduced.
+- `src/assets/fonts/lora-variable.ttf`: user-supplied Lora 3.008 variable font, moved unchanged from `Lora-VariableFont_wght.ttf` in the repository root. Used for all website text; weight axis 400–700. Headings and body text differ by size and weight.
+- Embedded name records confirm Copyright 2011 The Lora Project Authors (https://github.com/cyrealtype/Lora-Cyrillic), Reserved Font Name "Lora", and SIL Open Font License 1.1. Full copyright notice and license bundled at `public/licenses/Lora-OFL-1.1.txt`; verified against https://github.com/google/fonts/blob/main/ofl/lora/OFL.txt.
+- Commercial website embedding and redistribution with the copyright/license notice are permitted. The original binary and embedded notices are unchanged; no subset, conversion or renamed derivative is distributed. The license applies to the font and does not relicense website content.
+- Cinzel and Cormorant Garamond masters, derivatives, notices and the old subset generator were removed. Lora is hosted locally; no external font requests, accounts or tracking are introduced.
+- Reviewed robots.txt and existing Open Graph/JSON-LD: routes, representative photography, page purpose, factual content and indexing policy are unchanged; existing metadata remains applicable. The shared modification date is 2026-10-13. Preview and production release safeguards remain active.
 
 ## Real photography placement — reviewed 2026-09-27
 
@@ -180,7 +182,7 @@ The owner confirmed `hero-site`, `handwerk`, `ueberuns`, and `projekte` are real
 footage; all video sources, posters and motion fallbacks remain unchanged. All real
 photographs, including unused photographs and the original-photo backups, remain.
 
-Cinzel and Cormorant Garamond are served as local WOFF2 derivatives of their retained
+At that review, Cinzel and Cormorant Garamond were served as local WOFF2 derivatives of their retained
 TTF masters. FontTools 4.66.0 performed container compression without subsetting;
 glyph order, Unicode maps and variable axes were verified against the originals.
 The existing OFL licenses remain published. Jost and its unused license were removed.

@@ -65,7 +65,7 @@ const sitePath = (path) => {
 			<span>Menü</span>
 		</a>
 		<a class="brand brand--logo" href={sitePath('/')} aria-label="Die Oldtimermanufaktur Startseite">
-			<Image class="brand-logo" src={companyLogo} width={720} widths={[240, 360, 480, 720]} sizes="(max-width: 760px) 240px, 360px" alt="" aria-hidden="true" draggable="false" loading="eager" />
+			<Image class="brand-logo" src={companyLogo} width={840} widths={[240, 360, 480, 720, 840]} sizes="(max-width: 760px) min(320px, calc(100vw - 120px)), (max-width: 1400px) 30vw, 420px" alt="" aria-hidden="true" draggable="false" loading="eager" />
 		</a>
 		<nav class="language-switch" aria-label="Sprache wählen">
 			<a href={`${languagePath(Astro.url.pathname, 'de', basePath)}?lang=de`} data-language="de" lang="de" hreflang="de" aria-label="Deutsch (DE)">DE</a>
@@ -506,7 +506,7 @@ const sitePath = (path) => {
 	}
 
 	.site-shell {
-		--site-header-height: calc(clamp(88px, 64px + 5vw, 168px) + env(safe-area-inset-top, 0px));
+		--site-header-height: calc(clamp(104px, 88px + 5vw, 192px) + env(safe-area-inset-top, 0px));
 		min-height: 100vh;
 	}
 
@@ -583,7 +583,7 @@ const sitePath = (path) => {
 	.brand-logo {
 		display: block;
 		filter: brightness(85%);
-		width: clamp(180px, 24vw, 360px);
+		width: clamp(216px, 30vw, 420px);
 		max-width: 100%;
 		height: auto;
 		max-height: calc(var(--site-header-height) - env(safe-area-inset-top, 0px) - 16px);
@@ -736,11 +736,17 @@ const sitePath = (path) => {
 		padding: 6rem 0 4rem;
 	}
 
+	.site-shell--home .brand,
+	.site-shell--home .footer-brand,
+	.site-shell--home .menu-nav__link {
+		font-weight: 600;
+	}
+
 	.menu-nav__link {
 		color: rgba(238, 238, 238, 0.68);
 		font-family: var(--font-heading);
 		font-size: clamp(0.98rem, 1.55vw, 1.55rem);
-		font-weight: 400;
+		font-weight: 500;
 		line-height: 1.2;
 		letter-spacing: 0.28em;
 		text-decoration: none;
@@ -949,12 +955,16 @@ const sitePath = (path) => {
 	}
 
 	@media (max-width: 760px) {
+		.site-shell {
+			--site-header-height: calc(120px + env(safe-area-inset-top, 0px));
+		}
+
 		.site-shell--home .site-header {
-			grid-template-columns: 44px minmax(0, 1fr) 88px;
+			grid-template-columns: 44px minmax(0, 1fr) 44px;
 		}
 
 		.site-shell--home .language-switch {
-			flex-direction: row;
+			flex-direction: column;
 		}
 
 		.site-shell--home .brand {
@@ -975,11 +985,11 @@ const sitePath = (path) => {
 		}
 
 		.brand-logo {
-			width: min(100%, 240px);
+			width: min(100%, 312px);
 		}
 
 		.site-header {
-			grid-template-columns: 44px minmax(0, 1fr) 88px;
+			grid-template-columns: 44px minmax(0, 1fr) 44px;
 			gap: 0.25rem;
 			padding: env(safe-area-inset-top, 0px) max(0.75rem, env(safe-area-inset-right, 0px)) 0 max(0.75rem, env(safe-area-inset-left, 0px));
 			background: rgba(16, 16, 16, 0.42);
@@ -1018,6 +1028,7 @@ const sitePath = (path) => {
 		}
 
 		.language-switch {
+			flex-direction: column;
 			gap: 0;
 			font-size: 1.05rem;
 		}
@@ -1040,7 +1051,7 @@ const sitePath = (path) => {
 		.menu-panel__top span {
 			min-width: 0;
 			max-width: 190px;
-			overflow-wrap: anywhere;
+			overflow-wrap: normal;
 			letter-spacing: 0.12em;
 			line-height: 1.45;
 			transform: none;
@@ -1062,7 +1073,8 @@ const sitePath = (path) => {
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-			overflow-wrap: anywhere;
+			overflow-wrap: normal;
+			hyphens: auto;
 			font-size: clamp(1.125rem, 5vw, 1.5rem);
 			line-height: 1.16;
 			letter-spacing: 0.1em;

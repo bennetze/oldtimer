@@ -236,8 +236,8 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 		--color-background: #101010;
 		--color-main: #eeeeee;
 		--color-line: rgba(238, 238, 238, 0.18);
-		--font-body: 'Cormorant Garamond', Georgia, serif;
-		--font-heading: 'Cinzel', Georgia, serif;
+		--font-body: 'Lora', Georgia, serif;
+		--font-heading: 'Lora', Georgia, serif;
 	}
 
 	html,
@@ -257,7 +257,7 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 
 	body {
 		font-size: 1.15rem;
-		font-weight: 600;
+		font-weight: 400;
 		overflow-x: hidden;
 	}
 
@@ -292,6 +292,7 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 	:global(h5),
 	:global(h6) {
 		font-family: var(--font-heading);
+		font-weight: 500;
 	}
 
 	:global(*) {

@@ -326,7 +326,7 @@ const sectionNavigationItems = [
 							</a>
 							<a href="mailto:info@oldtimermanufaktur.de">
 								<span class="contact-label">E-Mail</span>
-								<strong>info@oldtimermanufaktur.de</strong>
+								<strong data-authored>info@<wbr />oldtimermanufaktur.<wbr />de</strong>
 							</a>
 							<a
 								class="maps-link"
@@ -502,7 +502,7 @@ const sectionNavigationItems = [
 		max-width: 68rem;
 		margin: 0 auto;
 		font-size: clamp(1.02rem, 1.2vw, 1.25rem);
-		font-weight: 650;
+		font-weight: 500;
 		line-height: 1.5;
 		letter-spacing: 0.105em;
 		text-transform: uppercase;
@@ -516,6 +516,10 @@ const sectionNavigationItems = [
 
 		:global(.editorial-page .story .profile-heading h2) {
 			margin-bottom: 1.75rem;
+		}
+
+		:global(.editorial-page .story .profile-heading #mario-title) {
+			font-size: clamp(1.4rem, 6.4vw, 1.9rem);
 		}
 
 		.profile-credentials {
@@ -596,7 +600,7 @@ const sectionNavigationItems = [
 
 	.contact-list a {
 		display: grid;
-		grid-template-columns: minmax(5.5rem, 0.34fr) minmax(0, 1fr);
+		grid-template-columns: minmax(max-content, 0.34fr) minmax(0, 1fr);
 		gap: 1.5rem;
 		padding: 1.15rem 0 1.25rem;
 		border-bottom: 1px solid rgba(17, 17, 17, 0.3);
@@ -627,15 +631,19 @@ const sectionNavigationItems = [
 	}
 
 	.contact-label {
-		font-weight: 650;
+		font-weight: 500;
 		letter-spacing: 0.09em;
 		text-transform: uppercase;
+		white-space: nowrap;
+		hyphens: none;
 	}
 
 	.contact-list strong {
 		min-width: 0;
-		font-weight: 600;
+		font-weight: 500;
 		letter-spacing: 0.03em;
+		overflow-wrap: normal;
+		hyphens: none;
 	}
 
 	.maps-link__value {
@@ -672,13 +680,20 @@ const sectionNavigationItems = [
 		}
 
 		.contact-list a {
-			grid-template-columns: 5.2rem minmax(0, 1fr);
+			grid-template-columns: max-content minmax(0, 1fr);
 			gap: 1rem;
 		}
 
 		.contact-label,
 		.contact-list strong {
 			font-size: clamp(1.02rem, 4.35vw, 1.15rem);
+		}
+	}
+
+	@media (max-width: 600px) {
+		.contact-list a {
+			grid-template-columns: minmax(0, 1fr);
+			gap: 0.35rem;
 		}
 	}
 

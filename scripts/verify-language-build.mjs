@@ -36,7 +36,12 @@ for (const file of globSync('dist/**/*.html')) {
 		if (!Object.hasOwn(dictionary, text) && translate(text) === text) missing.add(text);
 	};
 	de('script,style').remove();
-	de('*').contents().each((_, node) => { if (node.type === 'text' && !de(node).parents('[data-authored]').length) checkText(node.data); });
+	// Presentation spans are inserted after translation; validate the original
+	// complete heading rather than treating its wrap fragments as dictionary keys.
+	de('[data-heading-breaks]').each((_, node) => {
+		if (!de(node).closest('[data-authored]').length) checkText(de(node).text());
+	});
+	de('*').contents().each((_, node) => { if (node.type === 'text' && !de(node).parents('[data-authored],[data-heading-breaks]').length) checkText(node.data); });
 	de('*').each((_, node) => {
 		if (de(node).closest('[data-authored]').length) return;
 		for (const attribute of ['alt', 'aria-label', 'placeholder', 'title', 'data-lightbox-alt']) checkText(de(node).attr(attribute));

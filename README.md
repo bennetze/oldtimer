@@ -60,10 +60,17 @@ After editing source images during a running dev session, run `npm run vehicles:
 to refresh derivatives; the development metadata cache notices the changed manifest.
 Vehicle collections are cached only in production builds.
 
-WOFF2 fonts use Unicode-range subsets of retained TTF masters, with complete original
-glyph coverage and variable axes across the subsets. FontTools 4.66.0 with WOFF dependencies generated
-them using `scripts/subset-fonts.py` (including coverage and metrics checks). No runtime font conversion or
-external font service is involved. Preserve the published licenses.
+The website uses the locally hosted, unmodified Lora 3.008 variable TTF supplied
+for this project (`src/assets/fonts/lora-variable.ttf`, weight axis 400–700).
+Homepage headings use bold weight (700), subpage headings medium weight (500),
+and body copy regular weight (400), with responsive sizes.
+No external font service is involved. The font retains its original embedded
+copyright/license metadata and reserved name. Its complete SIL OFL 1.1 license
+and copyright notice ship at `/licenses/Lora-OFL-1.1.txt`. Commercial website use
+and embedding are permitted under that license; it applies to the font, not site
+content. Do not subset or modify it under the reserved name without permission.
+Upstream: https://github.com/cyrealtype/Lora-Cyrillic
+License: https://github.com/google/fonts/blob/main/ofl/lora/OFL.txt
 
 ## Hosting and release
 
