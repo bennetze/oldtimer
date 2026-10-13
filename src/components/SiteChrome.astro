@@ -14,16 +14,16 @@ const socialIcons = { tiktok: tiktokIcon, instagram: instagramIcon, facebook: fa
 
 const navigationItems = [
 	{ title: 'Startseite', href: '/', activePath: '/' },
-	{ title: 'Handwerk', href: '/handwerk/', activePath: '/handwerk' },
+	{ title: 'Unser Handwerk', href: '/handwerk/', activePath: '/handwerk' },
 	{ title: 'Unsere Leistungen', href: '/handwerk/#leistungen', activePath: undefined },
-	{ title: 'Über uns', href: '/ueber-uns/', activePath: '/ueber-uns' },
-	{ title: 'Projekte', href: '/projekte/', activePath: '/projekte' },
+	{ title: 'Wir über uns', href: '/ueber-uns/', activePath: '/ueber-uns' },
+	{ title: 'Unsere Projekte', href: '/projekte/', activePath: '/projekte' },
 	{
 		title: 'Fahrzeugangebote',
 		href: '/projekte/fahrzeugangebote/',
 		activePath: '/projekte/fahrzeugangebote',
 	},
-	{ title: 'Kontakte', href: '/ueber-uns/#kontakt', activePath: undefined },
+	{ title: 'Kontakt', href: '/ueber-uns/#kontakt', activePath: undefined },
 ];
 
 const { theme = 'dark' } = Astro.props;
@@ -506,12 +506,8 @@ const sitePath = (path) => {
 	}
 
 	.site-shell {
-		--site-header-height: calc(clamp(64px, 44px + 4vw, 116px) + env(safe-area-inset-top, 0px));
-		min-height: 100vh;
-	}
-
-	.site-shell--home {
 		--site-header-height: calc(clamp(88px, 64px + 5vw, 168px) + env(safe-area-inset-top, 0px));
+		min-height: 100vh;
 	}
 
 	.site-shell--light {
@@ -592,10 +588,6 @@ const sitePath = (path) => {
 		height: auto;
 		max-height: calc(var(--site-header-height) - env(safe-area-inset-top, 0px) - 16px);
 		object-fit: contain;
-	}
-
-	.site-shell:not(.site-shell--home) .brand-logo {
-		max-height: calc(var(--site-header-height) - env(safe-area-inset-top, 0px) - clamp(28px, 2.5vw, 40px));
 	}
 
 	.footer-brand {

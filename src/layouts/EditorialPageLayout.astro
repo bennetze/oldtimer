@@ -268,7 +268,7 @@ const openingId = sections[0]?.id;
 
 <style is:global>
 	.editorial-page {
-		--story-gap: clamp(38rem, 58vw, 58rem);
+		--story-gap: clamp(19rem, 29vw, 29rem);
 		--story-scroll-offset: calc(var(--site-header-height, 132px) + clamp(1.5rem, 3vh, 2.5rem));
 		--editorial-color: #000000;
 		--editorial-line: rgba(17, 17, 17, 0.34);
@@ -316,7 +316,7 @@ const openingId = sections[0]?.id;
 	/* Only the two color transitions need this extra travel distance. */
 	.editorial-page--light .editorial-opening,
 	.editorial-page--light > .story:nth-last-child(2) {
-		--story-gap: clamp(40rem, 65vw, 64rem);
+		--story-gap: clamp(20rem, 32.5vw, 32rem);
 	}
 
 	.editorial-page--light .editorial-opening::before {
@@ -563,13 +563,13 @@ const openingId = sections[0]?.id;
 
 	@media (max-width: 840px) {
 		.editorial-page {
-			--story-gap: clamp(22rem, 88vw, 30rem);
+			--story-gap: clamp(11rem, 44vw, 15rem);
 			--story-scroll-offset: calc(var(--site-header-height, 104px) + 1.25rem);
 		}
 
 		.editorial-page--light .editorial-opening,
 		.editorial-page--light > .story:nth-last-child(2) {
-			--story-gap: clamp(28rem, 110vw, 40rem);
+			--story-gap: clamp(14rem, 55vw, 20rem);
 		}
 
 		.editorial-intro {
