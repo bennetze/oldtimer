@@ -6,7 +6,7 @@ import sharp from 'sharp';
 import { validateVehicleRecord, validVehicleFilename } from '../../src/config/vehicleRecord.js';
 import { validateVehicleHtml } from '../../src/config/vehicleHtml.js';
 import { discoverVehicleCategory } from './vehicle-files.mjs';
-import { categories, sitemapEntries, renderSitemap, checkCrawlerFiles } from './crawlers.mjs';
+import { categories, sitemapEntries, renderSitemap, checkCrawlerFiles, productionOrigin } from './crawlers.mjs';
 
 const MAX_BYTES = 512 * 1024 ** 2;
 const sha = (value) => createHash('sha256').update(value).digest('hex');
@@ -71,11 +71,17 @@ export function validateRedirects(mapping, activeKeys) {
 	return mapping;
 }
 
+// Finder and Windows may suffix an extracted folder when its name already exists.
+// This normalizes only the outer folder name; record/pair validation stays strict.
+export function exportFolderCategory(name) {
+	return categories.find(category => name === category || new RegExp(`^${category}(?: [0-9]+| \\([0-9]+\\))$`).test(name)) || null;
+}
+
 async function readExport(source) {
 	const info = await lstat(source);
 	if (info.isSymbolicLink() || !info.isDirectory()) throw new Error('Select an extracted category directory, not a symlink or ZIP.');
-	const category = basename(source);
-	if (!categories.includes(category)) throw new Error('Select the extracted category directory.');
+	const category = exportFolderCategory(basename(source));
+	if (!category) throw new Error('Select the extracted category directory.');
 	const entries = (await readdir(source)).filter((name) => name !== '.DS_Store');
 	const folders = [];
 	for (const name of entries) {
@@ -128,6 +134,12 @@ async function readExport(source) {
 		if (!files.has(ref.slice(2))) throw new Error(`Missing image: ${ref}`);
 	}
 	return { record, files };
+}
+
+export async function inspectVehicleExport(source) {
+	await assertSafePath(sep, source);
+	const { record } = await readExport(source);
+	return record;
 }
 
 export async function reviewImport(rootInput, sourceInput, from = null) {
@@ -190,11 +202,67 @@ export async function applyImport(review, approvedToken, { afterWrite } = {}) {
 	// Reconstruct from current bytes; do not trust a mutable review file as instructions.
 	const fresh = await reviewImport(review.root, review.source, review.from);
 	if (fresh.token !== approvedToken) throw new Error('Stale approval: export or website changed. Run check again.');
+	return applyReviewedChange(fresh, { afterWrite });
+}
+
+// Deletion uses the same checked transaction as import, without an export payload.
+export async function reviewDeletion(rootInput, from) {
+	if (!routeKey.test(from)) throw new Error('Bitte ein gültiges Fahrzeug auswählen.');
+	const root = await realpath(rootInput);
+	const before = await snapshot(root, trackedInputs);
+	const groups = await Promise.all(categories.map(key => discoverVehicleCategory(join(root, pagePrefix), { key })));
+	const vehicle = groups.flat().find(item => `${item.category}/${item.slug}` === from);
+	if (!vehicle) throw new Error('Das ausgewählte Fahrzeug ist nicht mehr vorhanden. Bitte neu auswählen.');
+	const nextGroups = groups.map(group => group.filter(item => `${item.category}/${item.slug}` !== from));
+	const mapping = await exists(join(root, redirectFile)) ? JSON.parse(await readFile(join(root, redirectFile), 'utf8')) : {};
+	validateRedirects(mapping, new Set(groups.flat().map(item => `${item.category}/${item.slug}`)));
+	const retiredKeys = [from, ...Object.keys(mapping).filter(key => mapping[key] === from)];
+	for (const key of retiredKeys) delete mapping[key];
+	validateRedirects(mapping, new Set(nextGroups.flat().map(item => `${item.category}/${item.slug}`)));
+	const entries = sitemapEntries(nextGroups);
+	const activeUrls = new Set(entries.map(([path]) => productionOrigin + path));
+	const retiredUrls = new Set(sitemapEntries(groups).map(([path]) => productionOrigin + path).filter(url => !activeUrls.has(url)));
+	for (const key of retiredKeys) for (const prefix of ['', '/en']) retiredUrls.add(`${productionOrigin}${prefix}/projekte/${key}/`);
+	const previousLlms = await readFile(join(root, 'public/llms.txt'), 'utf8');
+	const llms = previousLlms.split('\n').map(line => {
+		// Remove retired listings, including their descriptions; preserve mixed prose/links.
+		const links = [...line.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)];
+		if (/^\s*(?:[-*+]\s+)?\[/.test(line) && links.length && links.every(link => retiredUrls.has(link[2]))) return null;
+		return line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (link, label, url) => retiredUrls.has(url) ? label : link);
+	}).filter(line => line !== null).join('\n');
+	const sitemap = renderSitemap(entries);
+	checkCrawlerFiles({ sitemap, llms, robots: await readFile(join(root, 'public/robots.txt'), 'utf8') }, entries);
+	const changes = new Map();
+	for (const path of Object.keys(before)) {
+		if (path === `${pagePrefix}${from}.astro` || (path.startsWith(`${pagePrefix}${from}/`) && !path.endsWith('/'))) changes.set(path, null);
+	}
+	changes.set(redirectFile, jsonBytes(mapping));
+	changes.set('public/sitemap.xml', Buffer.from(sitemap));
+	changes.set('public/llms.txt', Buffer.from(llms));
+	for (const [path, bytes] of changes) if ((bytes ? sha(bytes) : null) === before[path]) changes.delete(path);
+	if (JSON.stringify(before) !== JSON.stringify(await snapshot(root, trackedInputs))) throw new Error('Die Website wurde während der Prüfung geändert. Bitte erneut starten.');
+	const summary = [...changes].map(([path, bytes]) => ({ path, action: bytes === null ? 'remove' : before[path] ? 'change' : 'add', before: before[path] || null, after: bytes ? sha(bytes) : null }));
+	const token = sha(JSON.stringify({ operation: 'delete', root, from, before, summary }));
+	return { operation: 'delete', root, from, key: null, vehicle, token, summary, changes, before };
+}
+
+export async function applyDeletion(review, approvedToken, { afterWrite } = {}) {
+	if (approvedToken !== review.token) throw new Error('Die Bestätigung passt nicht zu dieser Prüfung.');
+	const fresh = await reviewDeletion(review.root, review.from);
+	if (fresh.token !== approvedToken) throw new Error('Die Website wurde seit der Prüfung geändert. Bitte erneut starten.');
+	return applyReviewedChange(fresh, { afterWrite });
+}
+
+async function applyReviewedChange(fresh, { afterWrite }) {
 	const root = fresh.root;
 	await assertSafePath(root, join(root, '.cache'));
 	await mkdir(join(root, '.cache'), { recursive: true });
 	const lock = join(root, '.cache/vehicle-import.lock');
-	await mkdir(lock); // Exclusive directory; an interrupted import blocks another apply.
+	try { await mkdir(lock); } // Exclusive directory; an interrupted change blocks another apply.
+	catch (error) {
+		if (error.code === 'EEXIST') throw new Error('Eine Übernahme oder Löschung läuft oder wurde unterbrochen (.cache/vehicle-import.lock). Bitte den Vorgang abschließen oder anhand der Fahrzeuganleitung wiederherstellen. Die Sperre nicht einfach löschen.', { cause: error });
+		throw error;
+	}
 	const owner = randomUUID();
 	await writeFile(join(lock, 'cli.json'), jsonBytes({ id: owner }), { flag: 'wx' });
 	const assertOwner = async () => {
@@ -208,7 +276,7 @@ export async function applyImport(review, approvedToken, { afterWrite } = {}) {
 	const written = [];
 	try {
 		backup = await mkdtemp(join(root, '.cache/vehicle-import-backup-'));
-		await writeFile(join(backup, 'review.json'), jsonBytes({ token: fresh.token, from: fresh.from, to: fresh.key, summary: fresh.summary }));
+		await writeFile(join(backup, 'review.json'), jsonBytes({ operation: fresh.operation || 'import', token: fresh.token, from: fresh.from, to: fresh.key, summary: fresh.summary }));
 		for (const [path, bytes] of fresh.changes) {
 			await assertSafePath(root, join(root, path));
 			if (await exists(join(root, path))) {
@@ -265,7 +333,7 @@ export async function applyImport(review, approvedToken, { afterWrite } = {}) {
 				if (await currentHash(join(root, path)) !== entry.before) throw new Error(`Restored bytes could not be verified: ${path}`);
 			}
 			const { rmdir } = await import('node:fs/promises');
-			await rmdir(join(root, pagePrefix, fresh.key)).catch((failure) => { if (!['ENOENT', 'ENOTEMPTY'].includes(failure.code)) throw failure; });
+			if (fresh.key) await rmdir(join(root, pagePrefix, fresh.key)).catch((failure) => { if (!['ENOENT', 'ENOTEMPTY'].includes(failure.code)) throw failure; });
 		} catch (rollbackError) { throw new Error(`Import failed: ${error.message}. Rollback also failed: ${rollbackError.message}. Keep lock and recover from ${backup}.`, { cause: rollbackError }); }
 		await assertOwner(); await rm(lock, { recursive: true });
 		throw new Error(`Import rolled back: ${error.message}. Backup: ${backup || 'not created'}`, { cause: error });

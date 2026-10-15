@@ -25,6 +25,8 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # Test and tooling output
 coverage/
 .cache/
+# Local full-quality video masters; browser exports remain source-controlled.
+src/assets/oldtimer/video-sources/*.mp4
 *.tsbuildinfo
 
 # Local agent/browser QA artifacts

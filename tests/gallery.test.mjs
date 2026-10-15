@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, writeFile, readFile, utimes, rm, stat } from 'node:fs/promises';
+import { mkdtemp, mkdir, writeFile, readFile, readdir, utimes, rm, stat } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { galleryDeliveryRoute } from '../src/config/galleryDelivery.js';
@@ -38,6 +38,11 @@ test('gallery fingerprints bytes, repairs corruption, deduplicates widths and pr
 		const timestamp = (await stat(output)).mtimeMs;
 		result = await generateVehicleGallery(root);
 		assert.equal(result.reused, 1); assert.equal((await stat(output)).mtimeMs, timestamp);
+		await writeFile(manifestPath, 'damaged cache');
+		assert.equal((await generateVehicleGallery(root)).generated, 1);
+		const backups = (await readdir(join(root, '.cache/vehicle-gallery-v3'))).filter(name => name.startsWith('production.invalid-'));
+		assert.equal(backups.length, 1);
+		assert.equal(await readFile(join(root, '.cache/vehicle-gallery-v3', backups[0]), 'utf8'), 'damaged cache');
 		const inconsistent = structuredClone(manifest);
 		inconsistent.images[image.route].width = 1100;
 		await writeFile(manifestPath, JSON.stringify(inconsistent));

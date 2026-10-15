@@ -1,6 +1,11 @@
 ---
 import { Image } from 'astro:assets';
 import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
+import NativeVideo from '../components/NativeVideo.astro';
+import aboutVideo from '../assets/oldtimer/about-us.mp4?url';
+import aboutVideoWebm from '../assets/oldtimer/about-us.webm?url';
+import aboutSubtitles from '../assets/oldtimer/about-us.de.vtt?url&no-inline';
+import aboutPoster from '../assets/oldtimer/about-us-poster.jpg';
 import antonCar from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00382.webp';
 import antonPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00649.webp';
 import contactEntrance from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00445.webp';
@@ -46,29 +51,46 @@ const brand = {
 };
 
 const sectionNavigationItems = [
+	{ id: 'unser-film', label: 'Unser Film' },
 	{ id: 'mario-schrank', label: 'Mario Schrank' },
 	{ id: 'anton-schrank', label: 'Anton Schrank' },
 	{ id: 'das-team', label: 'Das Team' },
 	{ id: 'kontakt', label: 'Kontakt' },
 ];
+const film = {
+	'@type': 'VideoObject',
+	'@id': `${aboutUrl.href}#film`,
+	name: 'Die Oldtimermanufaktur im Film',
+	description: 'Ein Film über die Menschen und die Arbeit der Oldtimermanufaktur.',
+	thumbnailUrl: new URL(aboutPoster.src, siteRoot).href,
+	contentUrl: new URL(aboutVideo, siteRoot).href,
+	duration: 'PT3M34S',
+	inLanguage: 'de-DE',
+	__authored: ['inLanguage'],
+	isPartOf: { '@id': `${aboutUrl.href}#webpage` },
+};
 ---
 
 <EditorialPageLayout
 	title="Über uns"
-	heading="Wir über uns"
+	heading="Über uns"
 	description="Lernen Sie Mario und Anton Schrank, unser Team und die geschützte Marke OLDTIMERMANUFAKTUR® kennen: Oldtimerrestaurierung in Fischbach/Rhön."
 	sections={sectionNavigationItems}
 	theme="light"
 	background="var(--gradient-green)"
-	openGraphImage={marioPortrait}
-	openGraphImageAlt="Mario Schrank im dunkelblauen Poloshirt neben einem roten historischen Fahrzeug."
+	openGraphImage={aboutPoster}
+	openGraphImageAlt="Front eines historischen BMW mit geöffneter Motorhaube – erstes Bild des Unternehmensfilms."
 	structuredDataType="AboutPage"
-	dateModified="2026-10-09"
-	additionalJsonLd={[...people, brand]}
+	dateModified="2026-10-14"
+	additionalJsonLd={[...people, brand, film]}
 	sectionNavigationVisible={false}
 >
+	<Fragment slot="opening">
+	<section class="about-film" aria-label="Die Oldtimermanufaktur im Film">
+		<NativeVideo src={aboutVideo} webm={aboutVideoWebm} poster={aboutPoster.src} subtitles={aboutSubtitles} label="Die Oldtimermanufaktur im Film" />
+	</section>
 	<section
-		slot="opening"
+		id="mario-schrank"
 					class="story story--images-right"
 					aria-labelledby="mario-title"
 					data-parallax-group
@@ -119,6 +141,7 @@ const sectionNavigationItems = [
 						</div>
 					</div>
 	</section>
+	</Fragment>
 
 	<section
 				id="anton-schrank"
@@ -370,6 +393,17 @@ const sectionNavigationItems = [
 
 
 <style>
+	.about-film {
+		width: min(50vw, 1000px);
+		margin: 0 auto clamp(8rem, 14vw, 14rem);
+	}
+
+	@media (max-width: 840px) {
+		.about-film {
+			width: calc(100% - 2rem);
+		}
+	}
+
 	:global(.editorial-page) .collage--single,
 	:global(.editorial-page) .collage--portraits,
 	:global(.editorial-page) .collage--team-details { min-height: 0; }
@@ -392,7 +426,7 @@ const sectionNavigationItems = [
 		margin-bottom: clamp(10rem, 12vw, 12rem);
 	}
 	:global(.editorial-page) .collage--team-details {
-		min-height: clamp(44rem, 58vw, 52rem);
+		min-height: clamp(50rem, 66vw, 60rem);
 	}
 	:global(.editorial-page) .collage--team-details .image-layer {
 		position: absolute;
@@ -449,7 +483,7 @@ const sectionNavigationItems = [
 		:global(.editorial-page) .story--team { padding-bottom: var(--story-gap); }
 		:global(.editorial-page) .story--team h2 { margin-bottom: clamp(2rem, 8vw, 3rem); }
 		:global(.editorial-page) .collage--team-details {
-			min-height: clamp(25rem, 124vw, 35rem);
+			min-height: clamp(28rem, 140vw, 40rem);
 		}
 		:global(.editorial-page) .collage--team-details .image-layer--team-main { width: 88%; }
 		:global(.editorial-page) .collage--team-details .image-layer--team-conversation { top: 32%; width: 65%; }

@@ -14,7 +14,7 @@ const tests = await readFile(new URL('../tests/vehicle-browser-cases.js', import
 let source = await readFile(tool, 'utf8');
 // Inline local assets only in this disposable harness. Production uses classic scripts.
 for (const name of ['styles.css', 'workflow.css']) { const asset = await readFile(join(dirname(tool), name), 'utf8'); source = source.replace(`<link rel="stylesheet" href="${name}" />`, () => `<style>${asset}</style>`); }
-for (const name of ['project-access.js', 'project-save.js', 'project-ui.js', 'editor.js']) { const asset = await readFile(join(dirname(tool), name), 'utf8'); source = source.replace(`<script src="${name}"></script>`, () => `<script>${asset}</script>`); }
+for (const name of ['project-access.js', 'project-save.js', 'project-ui.js', 'website-tools.js', 'watermark.js', 'editor.js']) { const asset = await readFile(join(dirname(tool), name), 'utf8'); source = source.replace(`<script src="${name}"></script>`, () => `<script>${asset}</script>`); }
 // Legacy editor cases operate without a selected project; project cases have their own harness.
 const workflowSource = source;
 source = source.replace(/        workflow = window.VehicleProjectUI\([^\n]+\);\n/, '').replace('showStep("project");', 'showStep("vehicle");');
@@ -44,8 +44,49 @@ window.fixtureRoot = (async () => {
 window.showDirectoryPicker = async () => window.fixtureRoot;
 </script>`;
 const workflowEditor = workflowSource.replace('<body>', () => '<body>' + fixtureSetup).replace('\n      })();\n', () => hooks + '      })();\n');
+const toolsTests = await readFile(new URL('../tests/vehicle-tools-browser-cases.js', import.meta.url), 'utf8');
+const toolsFixture = `<script>
+window.toolsFixture = { verified: 0, published: 0, files: [], lastUpload: null };
+const nativeFetch = window.fetch;
+const toolsState = { revision: 0, project: 'Website-Testprojekt', task: null, preview: { running: false, url: null, log: '' } };
+let toolId = 0;
+function toolsPrompt(kind) { toolsState.task.prompt = { id: String(++toolId), kind, question: kind === 'search' ? 'Suchbegriff' : kind === 'choice' ? 'Nummer eingeben' : 'Bestätigen? JA / Nein:', choices: [{ value: '1', label: 'Testwagen – Aktuelle Projekte (aktuelle-projekte/test-car)' }] }; }
+window.fetch = async (path, options = {}) => {
+ if (!String(path).startsWith('/api/')) return nativeFetch(path, options);
+ const body = options.body && !path.startsWith('/api/upload/file') ? JSON.parse(options.body) : {};
+ if (path === '/api/upload/start') { window.toolsFixture.lastUpload = body; window.toolsFixture.files = []; return new Response(JSON.stringify({ id: 'staged-draft' })); }
+ if (path.startsWith('/api/upload/file')) window.toolsFixture.files.push({ path: new URL(path, location.href).searchParams.get('path'), bytes: options.body });
+ if (path === '/api/project/check') window.toolsFixture.verified++;
+ if (path === '/api/start') { toolsState.task = { id: String(++toolId), name: body.name, status: 'running', log: '', committed: false }; toolsPrompt(body.name === 'delete' ? 'search' : 'approval'); }
+ if (path === '/api/answer') {
+  const task = toolsState.task, kind = task.prompt.kind;
+  if (body.value === '\\u0000' || (kind !== 'search' && body.value !== '1' && body.value !== 'JA')) { task.status = 'done'; task.prompt = null; }
+  else if (kind === 'search') toolsPrompt('choice');
+  else if (kind === 'choice') toolsPrompt('approval');
+  else { task.status = 'done'; task.prompt = null; task.committed = ['delete', 'transfer'].includes(task.name); if (task.name === 'deploy') window.toolsFixture.published++; }
+ }
+ if (path === '/api/preview/start') toolsState.preview = { running: true, url: 'http://localhost:4321', log: 'Vorschau bereit' };
+ if (path === '/api/preview/stop') toolsState.preview = { running: false, url: null, log: '' };
+ if (path !== '/api/state') toolsState.revision++;
+ return new Response(JSON.stringify(path === '/api/state' ? toolsState : { ok: true }), { headers: { 'Content-Type': 'application/json' } });
+};
+</script>`;
+const toolsEditor = workflowEditor.replace('<head>', '<head><meta name="vehicle-tools" content="local-launcher">').replace('<body>', '<body>' + toolsFixture);
+// An isolated authoring example for visual checks; never modifies a real project.
+const optionsExample = instrumented.replace(/<\/body>(?=\s*<\/html>\s*$)/, `<script>
+window.addEventListener('load', async () => {
+ const t = window.vehicleTest;
+ const record = ${JSON.stringify({ ...fixtureRecord, title: 'Layout-Beispiel', titleEn: 'Layout example', blocks: [{ type: 'gallery', textSide: 'left', html: '<p>Text neben dem Bild, mit <span class="om-color-red">farbigem Akzent</span>.</p>', htmlEn: '<p>Text beside the image, with a <span class="om-color-red">color accent</span>.</p>', images: [{ src: './card.jpg', alt: 'Graues Testbild', altEn: 'Grey test image', size: 'medium' }] }] })};
+ const file = new File([Uint8Array.from(atob(${JSON.stringify(fixtureImage)}), c => c.charCodeAt(0))], 'card.jpg', { type: 'image/jpeg' });
+ await t.importVehicle([new File([JSON.stringify(record)], 'vehicle.json'), file]);
+ t.showStep('content');
+});
+</script></body>`);
 const server = createServer(async (req, res) => {
 	try {
+        if (req.method === 'GET' && req.url === '/options-example') { res.setHeader('Content-Type', 'text/html; charset=utf-8'); res.end(optionsExample); return; }
+        if (req.method === 'GET' && req.url === '/tools-workflow-editor') { res.setHeader('Content-Type','text/html; charset=utf-8');res.end(toolsEditor);return; }
+        if (req.method === 'GET' && req.url === '/tools-workflow') { res.setHeader('Content-Type','text/html; charset=utf-8');res.end(`<!doctype html><html><head><title>Integrated editor tools regression</title></head><body><h1>Integrated editor tools regression</h1><pre id="results">Running…</pre><iframe title="Integrated editor" id="editor" src="/tools-workflow-editor#00000000-0000-0000-0000-000000000000" style="width:1440px;height:900px"></iframe><script>${toolsTests}</script></body></html>`);return; }
         if (req.method === 'GET' && req.url === '/workflow-editor') { res.setHeader('Content-Type','text/html; charset=utf-8');res.end(workflowEditor);return; }
         if (req.method === 'GET' && req.url === '/workflow') { res.setHeader('Content-Type','text/html; charset=utf-8');res.end(`<!doctype html><html><head><title>Project workflow regression</title></head><body><h1>Project workflow regression</h1><pre id="results">Running…</pre><iframe title="Project editor" id="editor" src="/workflow-editor" style="width:1440px;height:900px"></iframe><script>${workflowTests}</script></body></html>`);return; }
 		if (req.method === 'GET' && req.url === '/editor') { res.setHeader('Content-Type', 'text/html; charset=utf-8'); res.end(instrumented); return; }
@@ -56,7 +97,7 @@ const server = createServer(async (req, res) => {
 			for await (const chunk of req) { length += chunk.length; if (length > 2 * 1024 ** 2) throw new Error('Oversized test result.'); chunks.push(chunk); }
 			const data = Buffer.concat(chunks);
 			if (req.url === '/html') { for (const html of JSON.parse(data)) validateVehicleHtml(html); res.end('validated'); return; }
-			const name = req.url === '/zip' ? 'export.zip' : JSON.parse(data).suite === 'project-workflow' ? 'workflow-results.json' : 'results.json';
+			const name = req.url === '/zip' ? 'export.zip' : JSON.parse(data).suite === 'project-workflow' ? 'workflow-results.json' : JSON.parse(data).suite === 'website-tools' ? 'tools-results.json' : 'results.json';
 			await writeFile(join(output, name), data); console.log(`Saved ${join(output, name)}`); res.end('saved'); return;
 		}
 		res.writeHead(404); res.end();

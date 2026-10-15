@@ -167,6 +167,9 @@ Run commands from the repository root.
 - `npm run security:check` audits all dependency types and checks registry signatures.
 - `npm run dev` starts the Astro dev server, usually at `http://localhost:4321`.
 - `npm run vehicles:sync` explicitly updates the sitemap only; llms.txt remains manual.
+- `npm run vehicles:transfer` guides additions, replacements and category moves.
+- `npm run vehicles:delete` guides vehicle selection and confirmed deletion, with
+  backups, crawler updates and live-preview refresh; no arguments are needed.
 - `npm run crawlers:check` validates the sitemap, LLM links and robots sitemap reference without writing source.
 - `npm test` runs focused Node regressions and the vehicle-discovery fixture.
 - `npm run build` creates a production build in `dist/` and is the main verification command.
@@ -407,7 +410,15 @@ fixtures in `tests/vehicle-contract.test.mjs`, `tests/vehicle-import.test.mjs` a
 `node scripts/test-vehicle-browser.mjs`; also test the unmodified file through
 `file://` when the browser environment permits it. Record unavailable checks honestly.
 
-Extract exports outside this repository, then run `npm run vehicles:review -- check
+For ordinary additions, edits and category moves, extract exports outside this
+repository and run `npm run vehicles:transfer` without arguments. Drag the folder
+into its prompt, select the exact original when applicable, and confirm with `JA`.
+For deletion, use `npm run vehicles:delete` as described below. Both commands keep
+short German logs, update crawler files and refresh the supervised preview; neither
+opens an extra browser page, builds or publishes. Separate sync/gallery commands
+are not needed after these guided operations.
+
+For advanced separate review, run `npm run vehicles:review -- check
 /absolute/extracted/category`. Existing vehicles require the exact `--from
 category/slug`; never infer replacement from a title. Review the file hashes and
 before/after text, then apply only with the matching `--approve` token and explicit
@@ -426,16 +437,40 @@ A publicly accessible preview needs its own provider-information and privacy
 assessment now; preview labels and noindex do not establish a legal exemption.
 Keep the release safeguards and audit-only legal scope until approved texts and
 business/hosting facts are supplied. Follow the user's current approval scope;
-implementation tests do not authorize replacing any real vehicle. The editor now
-also supports explicit browser-reviewed project saves with durable backups and
-recovery; keep `tests/vehicle-project-save.test.mjs` and the `/workflow` browser
-harness aligned with the CLI importer. The editor itself does not run npm or build
+implementation tests do not authorize replacing any real vehicle. The editor uses
+ZIP export followed by the guided website transfer; it no longer has a direct project-save
+button. Export must validate the selected project without
+writing vehicle files. Keep historical backup/recovery compatibility in
+`tests/vehicle-project-save.test.mjs`; align the `/workflow` browser harness with
+read-only review and export. After manual copying, explicitly run
+`npm run vehicles:sync` before building. The editor itself does not run npm or build
 the website.
 
 Archive search uses `src/scripts/archiveHistory.js` to retain the filter in its
 browser history entry. Preserve unrelated history state during fragment cleanup.
 Do not put the local query into request URLs or tracking storage. Test a detail-page
 visit followed by Back with browser form restoration unavailable.
+
+## Guided vehicle deletion
+
+Keep `vehicles:delete` user friendly: optional search, numbered selection showing
+title/category/exact route, then an explicit `JA` confirmation. Use short German
+messages, refuse piped approval, and never open an extra browser/report page.
+Selection is bound to an immutable checked deletion review, not just a title.
+Recheck project hashes before applying. Reuse the import transaction's exclusive
+`.cache/vehicle-import.lock`, verified backups and rollback; retain foreign locks
+and conflicting external edits. Implementation tests only delete disposable cars.
+
+Remove the exact source page/folder pair and redirects targeting the deleted car.
+Regenerate the German/English sitemap, including changed archive pagination, and
+remove retired links from `llms.txt` without rewriting unrelated prose. Do not
+invent redirect destinations; deleted vehicle routes become 404. Preserve robots
+policy and other vehicles. Refresh gallery assets/metadata and the supervised dev
+preview using the same preview state protocol as transfer. If deletion committed
+but preview refresh failed, report the deletion accurately and retain the backup.
+Never build or publish automatically. Test cancellation, exact selection, stale
+approval, symlinks, locks, rollback, pagination and preview behavior; run the
+import regressions too because deletion shares their transaction implementation.
 
 ## Bilingual vehicle contract
 
@@ -447,7 +482,7 @@ images shared. Never substitute dictionary translation for authored English.
 
 Use `vehicleLocale.js` in vehicle rendering and preserve the authored-content boundary
 in DOM, layout metadata and JSON-LD. Shared website text still uses the dictionary.
-The editor alone has an explicit legacy-import mode; checked website imports remain
-strict. Keep both validators, browser fixtures and bilingual build verification aligned.
+Editor imports and checked website imports both require complete bilingual records.
+Keep both validators, browser fixtures and bilingual build verification aligned.
 Run `node scripts/migrate-vehicle-languages.mjs --check` to inspect migration readiness;
 `--write` is an explicit migration and never overwrites existing English wording.

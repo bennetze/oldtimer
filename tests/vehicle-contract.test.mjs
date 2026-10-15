@@ -29,6 +29,26 @@ test('404 language links target actual static files on both deployment bases', (
 	}
 });
 
+test('editor and website reject numbered photo placeholders before saving or importing', () => {
+	for (const validate of [browser.validateVehicleRecord, validateVehicleRecord]) {
+		for (const [key, value] of [['alt', 'Testcar – Aufnahme 4 der Fahrzeugdokumentation'], ['altEn', 'Testcar – photograph 4 in the vehicle record']]) {
+			const fixture = { ...record, blocks: [{ type: 'gallery', images: [{ src: './photo.jpg', alt: 'Seitenansicht auf der Hebebühne', altEn: 'Side view on the workshop lift', [key]: value }] }] };
+			assert.throws(() => validate(fixture), /Gallery 1: .\/photo.jpg: (German|English) alternative text:/);
+		}
+		for (const key of ['cardImageAlt', 'leadImageAlt', 'cardImageAltEn', 'leadImageAltEn']) {
+			assert.throws(() => validate({ ...record, [key]: 'Car – photograph 1 in the vehicle record' }), /nummerierten Platzhalter|Describe the visible photograph/);
+		}
+	}
+});
+
+test('new editor gallery alternatives remain empty until authored in each language', () => {
+	for (const name of ['autoAlt', 'autoAltEn']) {
+		const source = tool.match(new RegExp(`function ${name}\\([^)]*\\) \\{[^}]*\\}`))[0];
+		const createDefault = vm.runInNewContext(`(${source})`);
+		assert.equal(createDefault(3), '');
+	}
+});
+
 
 test('every maintained vehicle is accepted by the unmodified offline editor, including category moves and ordinary edits', async () => {
 	for await (const file of glob('src/pages/projekte/*/*/vehicle.json')) {
@@ -42,4 +62,17 @@ test('every maintained vehicle is accepted by the unmodified offline editor, inc
 		if (paragraph) paragraph.html = '<p>Bearbeitete Fahrzeugbeschreibung.</p>';
 		browser.validateVehicleRecord(edited);
 	}
+});
+
+
+test('image sizes and paired side text are accepted only in the bounded contract', () => {
+ const base = { slug:'new-options',category:'aktuelle-projekte',title:'Test',titleEn:'Test',description:'Text',descriptionEn:'Text',sourceUrl:'https://www.oldtimermanufaktur.de/projekte/aktuelle-projekte/new-options/',order:123,dateModified:'2026-10-14',cardImage:'./card.jpg',cardImageAlt:'Auto',cardImageAltEn:'Car',leadImage:'./card.jpg',leadImageAlt:'Auto',leadImageAltEn:'Car',blocks:[] };
+ const photo = { src:'./card.jpg',alt:'Auto',altEn:'Car',size:'medium' };
+ const side = { type:'gallery',textSide:'right',html:'<p>Deutsch</p>',htmlEn:'<p>English</p>',images:[photo] };
+ for (const validate of [browser.validateVehicleRecord, validateVehicleRecord]) {
+  validate({...base,blocks:[side]});
+  for (const invalid of [{...side,textSide:'top'}, {...side,htmlEn:''}, {...side,images:[photo,photo]}, {...side,images:[{...photo,size:'huge'}]}, {...side,textSide:undefined}]) {
+   assert.throws(() => validate({...base,blocks:[invalid]}));
+  }
+ }
 });

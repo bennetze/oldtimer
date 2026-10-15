@@ -11,7 +11,7 @@ export function localizeVehicle(record, language) {
 		cardImageAlt: record.cardImageAltEn,
 		leadImageAlt: record.leadImageAltEn,
 		blocks: record.blocks.map(block => block.type === 'gallery'
-			? { ...block, images: block.images.map(image => ({ ...image, alt: image.altEn, caption: image.captionEn })) }
+			? { ...block, ...(block.textSide ? { html: block.htmlEn } : {}), images: block.images.map(image => ({ ...image, alt: image.altEn, caption: image.captionEn })) }
 			: { ...block, html: block.htmlEn }),
 	};
 }

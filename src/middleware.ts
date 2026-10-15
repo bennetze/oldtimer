@@ -5,10 +5,16 @@ import { translateSiteText, localizeStructuredData } from './i18n/authoredConten
 import { languagePath } from './i18n/language.js';
 import { formatHeadingBreaks } from './i18n/headingBreaks.js';
 import { formatLegalLinkBreaks } from './i18n/linkBreaks.js';
+import vehicleRedirects from './config/vehicle-redirects.json';
+import { vehicleDevRedirect } from './config/vehicleDevRedirects.js';
 
 // Static rendering keeps both languages readable without JavaScript. The same
 // transformation also runs in dev, with one set of shared Astro page templates.
 export const onRequest = defineMiddleware(async (context, next) => {
+	if (import.meta.env.DEV) {
+		const destination = vehicleDevRedirect(context.url.pathname, import.meta.env.BASE_URL, vehicleRedirects);
+		if (destination) return context.redirect(`${destination}${context.url.search}`, 301);
+	}
 	const response = await next();
 	if (!response.headers.get('content-type')?.includes('text/html')) return response;
 	const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');

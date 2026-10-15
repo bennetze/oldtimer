@@ -24,10 +24,10 @@ import motorbauMotionWebp from '../assets/oldtimer/motorbau-motion.webp?url';
 const sectionNavigationItems = [
 	{ id: 'karosserie', label: 'Karosseriebau/Stellmacherei' },
 	{ id: 'mechanik', label: 'Mechanik - technische Instandsetzungen' },
-	{ id: 'motorbau', label: 'Motorbau' },
+	{ id: 'motorbau', label: 'Motorenbau' },
 	{ id: 'lackiererei', label: 'Lackiererei' },
 	{ id: 'polsterei', label: 'Polsterei/Sattlerei' },
-	{ id: 'leistungen', label: 'Unsere Leistungen' },
+	{ id: 'leistungen', label: 'Leistungen' },
 ];
 
 const services = [
@@ -57,15 +57,15 @@ const organizationId = `${siteRootUrl.href}#organization`;
 const handwerkServiceJsonLd = {
 	'@type': 'Service',
 	'@id': serviceId,
-	name: 'Unser Handwerk – Alles aus einer fachkundigen Hand',
+	name: 'Handwerk – Alles aus einer fachkundigen Hand',
 	serviceType: 'Restaurierung historischer Automobile',
 	description:
-		'Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten und sichere Einlagerung.',
+		'Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorenbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten und sichere Einlagerung.',
 	url: pageUrl.href,
 	provider: { '@id': organizationId },
 	hasOfferCatalog: {
 		'@type': 'OfferCatalog',
-		name: 'Unsere Leistungen',
+		name: 'Leistungen',
 		itemListElement: services.map((service) => ({
 			'@type': 'Offer',
 			itemOffered: {
@@ -79,17 +79,17 @@ const handwerkServiceJsonLd = {
 ---
 
 <EditorialPageLayout
-	title="Unser Handwerk – Alles aus einer fachkundigen Hand"
-	heading="Unser Handwerk – Alles aus einer fachkundigen Hand"
+	title="Handwerk – Alles aus einer fachkundigen Hand"
+	heading="Handwerk – Alles aus einer fachkundigen Hand"
 	headingMaxWidth="26ch"
-	description="Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten und sichere Einlagerung."
+	description="Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorenbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten und sichere Einlagerung."
 	sections={sectionNavigationItems}
 	theme="light"
 	background="var(--gradient-green)"
 	openGraphImage={bodyPortrait}
 	openGraphImageAlt="Ein Mitarbeiter mit Gesichtsschutz und Gehörschutz schleift ein Karosserieblech unter Funkenflug."
 	structuredDataType="CollectionPage"
-	dateModified="2026-10-13"
+	dateModified="2026-10-14"
 	additionalJsonLd={handwerkServiceJsonLd}
 >
 	<section
@@ -184,9 +184,9 @@ const handwerkServiceJsonLd = {
 		aria-labelledby="motorbau-title"
 		data-parallax-group
 	>
-		<h2 id="motorbau-title">Motorbau</h2>
+		<h2 id="motorbau-title">Motorenbau</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--left collage--engines" role="group" aria-label="Arbeiten im Motorbau">
+			<div class="collage collage--double collage--left collage--engines" role="group" aria-label="Arbeiten im Motorenbau">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
@@ -337,7 +337,7 @@ const handwerkServiceJsonLd = {
 		data-parallax-group
 	>
 		<div class="services-content">
-			<h2 id="leistungen-title">Unsere Leistungen</h2>
+			<h2 id="leistungen-title">Leistungen</h2>
 			<ul class="services-list" role="list" data-parallax-layer data-speed="0.18" data-range="120">
 				{services.map((service) => <li><span>{service}</span></li>)}
 			</ul>
@@ -361,14 +361,16 @@ const handwerkServiceJsonLd = {
 	.services-list {
 		display: grid;
 		gap: clamp(1.5rem, 2.4vw, 2.25rem);
-		justify-items: center;
-		margin: 0;
+		justify-items: start;
+		width: fit-content;
+		max-width: min(100%, 60rem);
+		margin: 0 auto;
 		padding: 0;
 		list-style: none;
 		font-size: clamp(1.25rem, 1.7vw, 1.625rem);
 		font-weight: 400;
 		line-height: 1.75;
-		text-align: center;
+		text-align: left;
 		text-wrap: balance;
 		letter-spacing: 0.008em;
 	}

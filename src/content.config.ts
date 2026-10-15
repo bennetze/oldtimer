@@ -42,6 +42,9 @@ const vehicles = defineCollection({
 					}),
 					z.strictObject({
 						type: z.literal('gallery'),
+						textSide: z.enum(['left', 'right']).optional(),
+						html: z.string().min(1).optional(),
+						htmlEn: z.string().min(1).optional(),
 						images: z
 							.array(
 								z.strictObject({
@@ -50,6 +53,7 @@ const vehicles = defineCollection({
 									altEn: z.string().min(1),
 									caption: z.string().optional(),
 									captionEn: z.string().optional(),
+									size: z.enum(['small', 'medium', 'large']).optional(),
 								}),
 							)
 							.min(1),

@@ -22,7 +22,11 @@ for (const file of globSync('src/pages/projekte/*/*/vehicle.json')) {
 		const leadInStory = content.blocks.some(block => block.type === 'gallery' && block.images.some(image => image.src === record.leadImage));
 		const showLead = !leadInStory;
 		assert.equal($('.vehicle-lead img').length, showLead ? 1 : 0, route);
-		if (showLead) assert.equal($('.vehicle-lead img').attr('alt'), content.leadImageAlt, route);
+		if (showLead) {
+			assert.equal($('.vehicle-lead img').attr('alt'), content.leadImageAlt, route);
+			assert.equal($('.vehicle-lead a').attr('data-lightbox-alt'), content.leadImageAlt, route);
+			assert.ok($('.vehicle-lead a').is('[data-authored]'), `${route}: lead link must preserve authored alternatives`);
+		}
 		const copy = $('.story-copy, .story-contact > div:first-child').toArray();
 		const expectedCopy = blocks.filter(block => block.type !== 'gallery');
 		assert.equal(copy.length, expectedCopy.length, route);

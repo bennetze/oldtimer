@@ -130,6 +130,19 @@ for (const file of files) {
 		assert.equal($(panel).find('video[autoplay]').length, 0, 'Autoplay must wait for the motion preference check.');
 		assert.equal($(panel).find('source[data-motion-generated-source]').length, 0);
 	});
+	for (const player of $('[data-native-video]').toArray()) {
+		const video = $(player).find('video');
+		assert.equal(video.length, 1, `${file}: native player`);
+		assert.equal(video.is('[controls][playsinline][preload="none"]'), true, `${file}: manual native playback`);
+		assert.equal(video.is('[autoplay],[muted],[loop]'), false, `${file}: film must start manually with sound`);
+		assert.equal($(player).find('button[hidden][aria-label]').length, 1, `${file}: progressive play button`);
+		assert.equal(video.find('track[srclang="de"][kind="subtitles"]').length, 1, `${file}: German film subtitles`);
+		const assets = [video.attr('poster'), ...video.find('source,track').toArray().map(node => $(node).attr('src'))];
+		for (const value of assets) {
+			assert.ok(value?.startsWith(base), `${file}: film assets must be local files, never CSP-blocked data URLs`);
+			await access(join(root, new URL(value, origin).pathname.slice(base.length)));
+		}
+	}
 }
 assert.match(await readFile(join(root, '.htaccess'), 'utf8'), /ErrorDocument 404 \/404\.html/);
 console.log(`Verified ${files.length} pages: CSP, IDs, links, image dimensions, metadata dates and motion controls.`);

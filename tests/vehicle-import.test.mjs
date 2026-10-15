@@ -3,8 +3,13 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile, readFile, readdir, rm, symlink } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { reviewImport, applyImport, createVehiclePage, validateRedirects } from '../scripts/lib/vehicle-import.mjs';
+import { transferVehicle } from '../scripts/lib/vehicle-transfer.mjs';
+import { transferWizard, folderInput } from '../scripts/lib/vehicle-transfer-wizard.mjs';
+import { refreshVehiclePreview } from '../scripts/lib/vehicle-preview.mjs';
 import { categories, sitemapEntries, renderSitemap, productionOrigin } from '../scripts/lib/crawlers.mjs';
 import { validateVehicleRecord } from '../src/config/vehicleRecord.js';
 
@@ -70,6 +75,185 @@ test('changed source or destination invalidates approval', async (t) => {
 	review = await reviewImport(f.root, f.source);
 	await writeFile(join(f.root, 'public/llms.txt'), (await readFile(join(f.root, 'public/llms.txt'), 'utf8')) + '\n');
 	await assert.rejects(applyImport(review, review.token), /Stale approval/);
+});
+
+test('interactive transfer cancellation writes nothing and confirmation cannot approve stale data', async (t) => {
+	const f = await fixture(t);
+	const original = await reviewImport(f.root, f.source);
+	const messages = [];
+	let opened = false;
+	assert.equal(await transferVehicle(f.root, f.source, null, {
+		write: message => messages.push(message),
+		openReview: async () => { opened = true; },
+		confirm: async () => { assert.ok(messages.includes('Prüfung erfolgreich.')); return ''; },
+	}), null);
+	assert.deepEqual((await reviewImport(f.root, f.source)).before, original.before);
+	assert.ok(!(await readdir(f.root)).includes('.cache'));
+	assert.equal(opened, false, 'transfer must not open another page');
+	assert.ok(messages.length <= 4, 'transfer logs should stay short');
+	assert.ok(!messages.some(message => /HTML|Prüfung öffnen|Prüfsumme/.test(message)));
+	await assert.rejects(transferVehicle(f.root, f.source, null, {
+		write() {},
+		async confirm() {
+			f.record.title = 'Changed after review';
+			await writeFile(join(f.source, 'test-car/vehicle.json'), JSON.stringify(f.record));
+			return 'JA';
+		},
+	}), /Stale approval/);
+	assert.deepEqual(await readdir(join(f.root, 'src/pages/projekte', categories[0])), []);
+});
+
+test('transfer CLI refuses piped approval and unsupported arguments before writing', async (t) => {
+	const f = await fixture(t);
+	const script = fileURLToPath(new URL('../scripts/transfer-vehicle.mjs', import.meta.url));
+	for (const args of [[], [f.source], [f.source, '--yes']]) {
+		const result = spawnSync(process.execPath, [script, ...args], { cwd: f.root, input: 'JA\n', encoding: 'utf8' });
+		assert.equal(result.status, 1);
+		assert.match(result.stderr, /interaktiven Terminal|Aufruf:/);
+	}
+	assert.ok(!(await readdir(f.root)).includes('.cache'));
+	assert.deepEqual(await readdir(join(f.root, 'src/pages/projekte', categories[0])), []);
+});
+
+for (const scenario of ['new', 'category', 'content', 'content-and-category']) {
+	test(`transfer wizard handles ${scenario} without command options`, async (t) => {
+		const f = await fixture(t);
+		const old = `${categories[0]}/test-car`;
+		if (scenario !== 'new') {
+			const review = await reviewImport(f.root, f.source);
+			await applyImport(review, review.token);
+		}
+		let source = f.source;
+		const moves = scenario.includes('category');
+		if (moves) {
+			const { rename } = await import('node:fs/promises');
+			source = join(f.dir, 'export', categories[1]);
+			await rename(f.source, source);
+			f.record.category = categories[1];
+			f.record.sourceUrl = `${productionOrigin}/projekte/${categories[1]}/test-car/`;
+		}
+		if (scenario.includes('content')) f.record.title = 'Edited vehicle';
+		await writeFile(join(source, 'test-car/vehicle.json'), JSON.stringify(f.record));
+		const messages = [], answers = [`"${join(f.dir, 'export')}"`, ...(scenario === 'new' ? [] : ['1']), 'JA'];
+		const result = await transferWizard(f.root, { write: text => messages.push(text), confirm: async () => answers.shift() });
+		assert.ok(result.backup);
+		assert.equal(result.previewReady, true);
+		const manifest = JSON.parse(await readFile(join(f.root, '.cache/vehicle-gallery-v3/production.json')));
+		const route = `/vehicle-gallery/${f.record.category}/test-car/card.webp`;
+		assert.ok(manifest.images[route], 'transferred vehicle is missing from the preview manifest');
+		assert.ok((await readFile(join(f.root, 'public', route))).length);
+		assert.equal(answers.length, 0);
+		assert.deepEqual(JSON.parse(await readFile(join(f.root, 'src/pages/projekte', f.record.category, 'test-car/vehicle.json'))), f.record);
+		assert.deepEqual(await readFile(join(f.root, 'src/pages/projekte', f.record.category, 'test-car/card.jpg')), f.image);
+		if (scenario !== 'new') assert.ok(messages.some(text => text.includes(old)));
+		if (moves) {
+			assert.deepEqual(await readdir(join(f.root, 'src/pages/projekte', categories[0])), []);
+			assert.deepEqual(JSON.parse(await readFile(join(f.root, 'src/config/vehicle-redirects.json'))), { [old]: `${categories[1]}/test-car` });
+		}
+	});
+}
+
+test('wizard requires explicit original selection and refuses project folders', async (t) => {
+	const f = await fixture(t);
+	const initial = await reviewImport(f.root, f.source);
+	await applyImport(initial, initial.token);
+	f.record.title = 'Must not replace';
+	await writeFile(join(f.source, 'test-car/vehicle.json'), JSON.stringify(f.record));
+	const before = await reviewImport(f.root, f.source, `${categories[0]}/test-car`);
+	for (const choice of ['', '0', 'JA', '99']) {
+		const answers = [f.source, choice];
+		assert.equal(await transferWizard(f.root, { write() {}, confirm: async () => answers.shift() }), null);
+	}
+	assert.deepEqual((await reviewImport(f.root, f.source, `${categories[0]}/test-car`)).before, before.before);
+	await assert.rejects(transferWizard(f.root, { write() {}, confirm: async () => f.root }), /außerhalb/);
+	assert.equal(folderInput('"/private/tmp/folder with spaces"', 'darwin'), '/private/tmp/folder with spaces');
+	assert.equal(folderInput('/private/tmp/folder\\ with\\ spaces ', 'darwin'), '/private/tmp/folder with spaces');
+	assert.throws(() => folderInput(''), /Kein Ordner/);
+});
+
+test('preview preparation failure reports a saved vehicle and retains its backup', async (t) => {
+	const f = await fixture(t);
+	await mkdir(join(f.root, '.cache/vehicle-gallery-v3'), { recursive: true });
+	await writeFile(join(f.dir, 'foreign-cache.json'), '{}');
+	await symlink(join(f.dir, 'foreign-cache.json'), join(f.root, '.cache/vehicle-gallery-v3/production.json'));
+	const messages = [];
+	const result = await transferVehicle(f.root, f.source, null, { write: text => messages.push(text), confirm: async () => 'JA' });
+	assert.equal(result.previewReady, false);
+	assert.deepEqual(JSON.parse(await readFile(join(f.root, 'src/pages/projekte', f.record.category, 'test-car/vehicle.json'))), f.record);
+	assert.ok(messages.some(text => text.includes('Fahrzeug gespeichert. Vorschau fehlgeschlagen:')));
+	assert.match(await readFile(join(result.backup, 'COMPLETED'), 'utf8'), /completed/);
+	assert.equal(JSON.parse(await readFile(join(f.root, '.cache/vehicle-preview-state.json'))).phase, 'blocked');
+});
+
+test('preview does not serve a project with an active or interrupted import lock', async (t) => {
+	const f = await fixture(t);
+	await mkdir(join(f.root, '.cache/vehicle-import.lock'), { recursive: true });
+	await assert.rejects(refreshVehiclePreview(f.root), /Übernahme läuft oder wurde unterbrochen/);
+	assert.ok((await readdir(join(f.root, '.cache'))).includes('vehicle-import.lock'));
+	assert.ok(!(await readdir(join(f.root, '.cache'))).includes('vehicle-gallery-v3'));
+});
+
+for (const suffix of [' 4', ' (2)']) {
+	for (const scenario of ['new', 'category', 'content', 'content-and-category']) {
+		test(`collision-renamed export ${suffix} supports ${scenario}`, async (t) => {
+			const f = await fixture(t);
+			if (scenario !== 'new') {
+				const review = await reviewImport(f.root, f.source);
+				await applyImport(review, review.token);
+			}
+			if (scenario.includes('category')) f.record.category = categories[1];
+			if (scenario.includes('content')) f.record.title = 'Edited in renamed export';
+			f.record.sourceUrl = `${productionOrigin}/projekte/${f.record.category}/test-car/`;
+			await writeFile(join(f.source, 'test-car/vehicle.json'), JSON.stringify(f.record));
+			const { rename } = await import('node:fs/promises');
+			const renamed = join(f.dir, 'export', f.record.category + suffix);
+			await rename(f.source, renamed);
+			// Same escaped space format produced by dragging the reported Finder folder.
+			const answers = [renamed.replaceAll(' ', '\\ '), ...(scenario === 'new' ? [] : ['1']), 'JA'];
+			const result = await transferWizard(f.root, { write() {}, confirm: async () => answers.shift() });
+			assert.ok(result.backup);
+			assert.equal(answers.length, 0);
+			assert.deepEqual(JSON.parse(await readFile(join(f.root, 'src/pages/projekte', f.record.category, 'test-car/vehicle.json'))), f.record);
+			if (scenario.includes('category')) {
+				assert.deepEqual(await readdir(join(f.root, 'src/pages/projekte', categories[0])), []);
+				assert.deepEqual(JSON.parse(await readFile(join(f.root, 'src/config/vehicle-redirects.json'))), { [`${categories[0]}/test-car`]: `${categories[1]}/test-car` });
+			}
+		});
+	}
+}
+
+test('renamed export folders still reject metadata mismatch and ambiguous exports', async (t) => {
+	const f = await fixture(t);
+	const { rename } = await import('node:fs/promises');
+	const wrong = join(f.dir, 'export', `${categories[1]} 4`);
+	await rename(f.source, wrong);
+	await assert.rejects(transferWizard(f.root, { write() {}, confirm: async () => wrong }), /Metadata and export location disagree/);
+	await mkdir(join(f.dir, 'export', `${categories[0]} 2`));
+	await assert.rejects(transferWizard(f.root, { write() {}, confirm: async () => join(f.dir, 'export') }), /einzelnen entpackten/);
+});
+
+test('interactive transfer moves the exact original with backup, redirects and crawler updates', async (t) => {
+	const f = await fixture(t);
+	const initial = await reviewImport(f.root, f.source);
+	await applyImport(initial, initial.token);
+	const old = `${categories[0]}/test-car`;
+	await writeFile(join(f.root, 'public/llms.txt'), `# Website\n\n> Beschreibung\n\n## Seiten\n\n[Fahrzeug](${productionOrigin}/projekte/${old}/)\n`);
+	const { rename } = await import('node:fs/promises');
+	const movedSource = join(f.dir, 'export', categories[1]);
+	await rename(f.source, movedSource);
+	f.record.category = categories[1];
+	f.record.sourceUrl = `${productionOrigin}/projekte/${categories[1]}/test-car/`;
+	await writeFile(join(movedSource, 'test-car/vehicle.json'), JSON.stringify(f.record));
+	await assert.rejects(transferVehicle(f.root, movedSource, 'fahrzeugangebote/test-car', { write() {}, confirm: async () => 'JA' }), /original vehicle does not exist/);
+	const result = await transferVehicle(f.root, movedSource, old, { write() {}, confirm: async () => 'JA' });
+	assert.match(await readFile(join(result.backup, 'COMPLETED'), 'utf8'), /completed/);
+	assert.deepEqual(await readdir(join(f.root, 'src/pages/projekte', categories[0])), []);
+	assert.deepEqual(JSON.parse(await readFile(join(f.root, 'src/config/vehicle-redirects.json'))), { [old]: `${categories[1]}/test-car` });
+	for (const file of ['sitemap.xml', 'llms.txt']) {
+		const text = await readFile(join(f.root, 'public', file), 'utf8');
+		assert.ok(text.includes(`/projekte/${categories[1]}/test-car/`));
+		assert.ok(!text.includes(`/projekte/${old}/`));
+	}
 });
 
 test('interrupted replacement restores previous bytes and retains backup', async (t) => {

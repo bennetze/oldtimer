@@ -19,14 +19,14 @@ legacy source URLs remain unchanged on an unchanged route; new vehicles and cate
 moves use the canonical `/projekte/<category>/<slug>/` URL.
 
 Rich-text paste uses the website allowlist. Unsupported formatting is removed with
-an English explanation. Unsafe imported records are rejected rather than silently
+a German explanation. Unsafe imported records are rejected rather than silently
 rewritten. Images must decode as JPEG, PNG, WebP or AVIF, match their filename type,
 and remain within the documented UI limits. All order values must be safe integers
 and unique within their category; automatic beginning/end values are negative/positive.
 
 ## German and English authoring
 
-The editor UI is English. Enter both languages in the paired Deutsch / English
+The editor UI is German. Enter both languages in the paired Deutsch / English
 fields. A block has one position and two independent rich-text editors. Gallery
 images and their order are shared, with separate alternative text and captions per
 language and per occurrence. Required text must be complete in both languages.
@@ -39,15 +39,13 @@ Images are exported only once. The website renders German at the original route 
 English at `/en/` plus that route; do not create separate English folders or pages.
 Model names may legitimately be identical in both languages.
 
-For an old German-only folder, explicitly select the legacy-import checkbox. The
-tool preserves its German content and leaves English empty. Complete all English
-fields before export. The checked website importer rejects incomplete bilingual
-records; the legacy option is confined to authoring. Existing website records were
+German-only folders must be completed with authored English before importing.
+The editor and checked website importer reject incomplete bilingual records. Existing website records were
 migrated using the existing English translations without changing their dates.
 
 ## Media review for new or replaced vehicles
 
-The internal editor saves website source files; it does not approve media rights
+The internal editor exports website source files; it does not approve media rights
 or update a release inventory. Before publication, add or update the original/master
 or enumerated media-family record in [MEDIA-RIGHTS-REGISTER.md](MEDIA-RIGHTS-REGISTER.md).
 Identify the vehicle route and source filenames, creator/rights holder, permitted
@@ -56,14 +54,124 @@ named approver and date. Assess recognisable people and identifying/private deta
 where applicable. Keep personal evidence in the private archive, not in vehicle JSON.
 
 Enter photograph-specific German and English alternatives for every gallery
-occurrence; replace the editor's generic numbered defaults. The website build rejects
-the known numbered-photo pattern. Saving a vehicle does not update `dist`; after
+occurrence. New gallery alternatives start empty; the editor identifies missing
+text before export. Numbered placeholders are rejected by the
+editor, checked importer and website validator, with the affected image and
+language identified. The final build retains the same accessibility check. Saving a vehicle does not update `dist`; after
 building, reconcile the final release media against the approved originals/families
 using [PRODUCTION-RELEASE-CHECKLIST.md](PRODUCTION-RELEASE-CHECKLIST.md). Generated
 variants can share their original's evidence within the approved scope. No CSV,
 new vehicle fields or separate evidence attachment in the editor is required.
 
+## ZIP export and manual transfer
+
+The internal editor no longer saves vehicle files into the project. Select the
+website project, create/edit the vehicle, then choose **Prüfen & exportieren** and
+**ZIP erstellen**. Export automatically checks the selected project for conflicting
+routes, duplicate order values and external changes. **Änderungen prüfen** provides
+the same read-only review beforehand. Project selection requests read access;
+historical transaction recovery is a separate action.
+
+For a new car, extract the ZIP outside the website repository. Inside its category
+folder, copy **both** `<slug>.astro` and the sibling `<slug>/` folder into
+`src/pages/projekte/<category>/`. Do not nest the category folder or replace the
+whole archive. If the destination already exists, open that exact vehicle in the
+editor rather than overwriting it as a new car. Back up the exact original pair
+before an intentional manual replacement.
+
+After copying, run from the website repository:
+
+```sh
+npm run vehicles:sync
+npm run build
+```
+
+Review the sitemap diff. Use `npm run build:pages` for the GitHub Pages preview.
+The sync step is required because ordinary builds validate the tracked sitemap
+without rewriting source. The editor does not run these commands or publish.
+Refresh its project list after transferring files before exporting further cars.
+
+A category move needs removal of the original pair and redirects for the old URLs;
+the ZIP contains only the new vehicle pair. Use the interactive transfer below and
+select the displayed original vehicle for moves. Its backups and crawler updates
+also make it an alternative to manual copying for additions or replacements.
+
 ## Review, then apply
+
+### Simple interactive transfer (recommended)
+
+For new vehicles, category moves, content edits, or both, extract the ZIP outside
+the website repository, then run the same command from the website root:
+
+```sh
+npm run vehicles:transfer
+```
+
+Drag the extracted folder into the terminal when prompted and press Enter. Either
+the export's enclosing folder or its category folder works.
+Finder/Windows collision suffixes such as `fahrzeugangebote 4` and
+`fahrzeugangebote (2)` are accepted; you do not need to rename these folders.
+The wizard reads the destination from the validated export. If an existing vehicle has the same slug,
+select its displayed number; the title, category and exact original route are shown.
+An empty or invalid selection cancels. Replacements are never approved from a title
+match or applied without explicitly selecting the original.
+
+The command uses short German status messages and asks for confirmation with `JA`.
+It does not create or open an extra review page. Any other answer cancels without writes. This
+uses the same checked importer and rechecks the review before applying. The explicit
+path and `--from` options remain available for technical users, but the wizard needs
+neither. Piped confirmation is refused.
+
+The command retains backups, transfers the pair, removes the original pair for a
+move, updates redirects for both languages, synchronizes the sitemap, and updates
+existing vehicle links in `llms.txt`. Do not copy or delete vehicle files yourself;
+no separate `vehicles:sync` is needed for this workflow. Then run `npm run build`
+(and `npm run build:pages` for the preview), publish separately, and refresh the
+editor's vehicle list. The command never builds or publishes automatically.
+
+After committing, transfer also prepares the production gallery derivatives and
+metadata required by the development preview. `npm run dev` now keeps a foreground
+preview process, pauses it while a transfer writes, and restarts it after the gallery
+is ready. This reloads the vehicle collection and both language routes together.
+Old vehicle links redirect in dev as well as in the built website. Reload the browser
+after the transfer finishes; you do not need an extra gallery command or manual
+dev restart for each car. Stop the preview with Ctrl+C. A newly started preview also
+checks its image data, so exports made before this fix can be previewed.
+
+Damaged generated gallery metadata is preserved and regenerated from validated
+source. Symlinks and invalid vehicle content still fail closed. If vehicle files
+were saved but preview preparation fails, the command explicitly reports that the
+vehicle is saved, retains its backup and pauses the preview. Fix the reported cause
+and start `npm run dev` again; do not import it again as a new vehicle. An interrupted
+import lock must be recovered using the procedure below before previewing.
+
+### Delete a vehicle
+
+Run this command from the website root; no ZIP or options are needed:
+
+```sh
+npm run vehicles:delete
+```
+
+Enter a search term (or press Enter to list all vehicles), select the vehicle's
+number, check the displayed title and exact category/slug, then type `JA` to delete
+it. `0`, an invalid selection, or any other confirmation cancels. The command uses
+short German messages and does not open another browser page.
+
+Deletion removes the paired Astro page and source folder, removes redirects that
+point to that vehicle, updates both languages' sitemap and affected `llms.txt`
+links, and refreshes gallery assets and the running development preview. Other
+vehicles are retained. The removed vehicle and changed crawler files are backed
+up in the printed `.cache/vehicle-import-backup-*` folder. Retired vehicle URLs
+return 404; deletion does not invent a replacement vehicle or redirect target.
+
+Reload the browser and refresh the editor's vehicle list afterward. No separate
+sync or gallery command is needed. Build and publish separately to remove the car
+from the published site. If deletion succeeded but preview preparation failed,
+fix the reported cause and restart `npm run dev`; the car is already deleted and
+its backup remains available. The same lock and recovery rules below apply.
+
+### Separate check and apply
 
 Extract the downloaded ZIP into a temporary directory **outside** this repository.
 Never extract it over `src/pages/projekte`. It contains the existing paired layout:
@@ -188,14 +296,37 @@ including smaller gallery blocks where text belongs between photo sets. All
 German/English wording and photo occurrences were retained. There is no central
 layout manifest, signature fallback or mandatory old-site audit snapshot.
 
-The existing offline editor can load, edit, save, export and move these records
+The existing offline editor can load, edit and export these records, including category changes
 using its current contract. Category moves carry the complete story with the
 vehicle folder; text edits do not invalidate presentation data. Historical source
 comparisons are migration work, not a requirement for owner-authored new cars.
 See `EDITOR-COMPATIBILITY-TODO.md` for suggested editor preview/documentation work.
 
 Verify normal maintenance with the contract, import and project-save tests, browser
-editor harness and both website builds. Build checks compare the rendered block
+editor and ZIP-workflow harnesses and both website builds. Build checks compare the rendered block
 sequence directly with each current vehicle record, without assuming a fixed
 vehicle inventory. Do not introduce sidecar content files without supporting them
 in the editor, importer, backup/recovery and ZIP contracts first.
+
+
+## Optional editor presentation controls
+
+The offline editor now offers **Text neben Bild** with a left/right text selector,
+one image and paired German/English rich text. Its image controls retain per-use
+alternatives and captions. Mobile views stack the pair. The stored gallery block
+has optional `textSide: "left" | "right"`, `html` and `htmlEn`; side-text blocks do
+not merge with adjacent galleries. Existing records need no changes.
+
+Gallery occurrences optionally store `size: "small" | "medium" | "large"`.
+Small keeps the existing presentation, medium reaches 840 px and large spans the
+browser width. In a side-text block, image and text share the available width.
+Fixed color spans use `class="om-color-black"` (or red, green, blue, cyan, yellow,
+magenta); arbitrary CSS remains rejected by the checked importer.
+
+The **Wasserzeichen für alle Bilder** checkbox burns the local Lora lettering
+`oldtimermanufaktur.de` into draft/export WebP copies of all current images,
+including the card. Original disk files remain unchanged. Text is black or white
+according to the lower background, with a thin contrasting outline. New or replaced images inherit the active
+checkbox preference. Unchecking restores the original draft bytes and filenames; importing another vehicle resets the
+checkbox. This cannot remove watermarks already present in an imported file.
+Transfer, build and publishing remain separate.

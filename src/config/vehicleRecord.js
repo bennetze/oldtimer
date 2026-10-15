@@ -9,6 +9,10 @@ export function validVehicleFilename(value) {
 	return typeof value === 'string' && value.length <= 255 && /^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(value) && !value.includes('..') && !value.endsWith('.') && !/^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(value);
 }
 
+export function genericVehicleAlternative(value) {
+	return /Aufnahme \d+ der Fahrzeugdokumentation|photograph \d+ in the vehicle record/i.test(value || '');
+}
+
 export function validateVehicleRecord(record, checkHtml = () => {}, { legacy = false } = {}) {
 	const fail = (message) => { throw new Error(`vehicle.json: ${message}`); };
 	const object = (value, allowed, context) => {
@@ -16,6 +20,10 @@ export function validateVehicleRecord(record, checkHtml = () => {}, { legacy = f
 		for (const key of Object.keys(value)) if (!allowed.includes(key)) fail(`${context}: unknown field ${key}.`);
 	};
 	const text = (value, context) => { if (typeof value !== 'string' || !value.trim()) fail(`${context}: Text is required.`); };
+	const alternative = (value, context) => {
+		text(value, context);
+		if (genericVehicleAlternative(value)) fail(`${context}: Describe the visible photograph instead of using a numbered placeholder.`);
+	};
 	const image = (value) => {
 		if (typeof value !== 'string' || !/^\.\/[A-Za-z0-9][A-Za-z0-9._-]*\.(jpe?g|png|webp|avif)$/i.test(value) || !validVehicleFilename(value.slice(2)) || !validVehicleFilename(value.slice(2).replace(/\.[^.]+$/, '.webp'))) fail(`Invalid image path: ${value}`);
 	};
@@ -25,6 +33,9 @@ export function validateVehicleRecord(record, checkHtml = () => {}, { legacy = f
 	for (const key of ['title', 'description', 'cardImageAlt', 'leadImageAlt']) text(record[key], key);
 	for (const key of ['titleEn', 'descriptionEn', 'cardImageAltEn', 'leadImageAltEn']) {
 		if (!legacy || record[key] !== undefined) text(record[key], key);
+	}
+	for (const key of ['cardImageAlt', 'leadImageAlt', 'cardImageAltEn', 'leadImageAltEn']) {
+		if (!legacy || record[key] !== undefined) alternative(record[key], key);
 	}
 	if (!Number.isSafeInteger(record.order)) fail('Order must be a safe integer.');
 	if (!validVehicleDate(record.dateModified)) fail('Invalid calendar date.');
@@ -45,12 +56,18 @@ export function validateVehicleRecord(record, checkHtml = () => {}, { legacy = f
 				checkHtml(block.htmlEn, `Block ${index + 1} English`);
 			}
 		} else if (block?.type === 'gallery') {
-			object(block, ['type', 'images'], `Block ${index + 1}`);
+			object(block, ['type', 'images', 'textSide', 'html', 'htmlEn'], `Block ${index + 1}`);
+			if (block.textSide !== undefined) {
+				if (!['left', 'right'].includes(block.textSide) || block.images?.length !== 1) fail('Text beside image requires one image and a valid text side.');
+				text(block.html, 'German side text'); text(block.htmlEn, 'English side text');
+				checkHtml(block.html, 'German side text'); checkHtml(block.htmlEn, 'English side text');
+			} else if (block.html !== undefined || block.htmlEn !== undefined) fail('Missing text side.');
 			if (!Array.isArray(block.images) || !block.images.length) fail(`Gallery ${index + 1} is empty.`);
 			for (const item of block.images) {
-				object(item, ['src', 'alt', 'caption', 'altEn', 'captionEn'], `Gallery ${index + 1}`);
-				image(item.src); text(item.alt, `Gallery ${index + 1}: Alternative text`);
-				if (!legacy || item.altEn !== undefined) text(item.altEn, `Gallery ${index + 1}: English alternative text`);
+				object(item, ['src', 'alt', 'caption', 'altEn', 'captionEn', 'size'], `Gallery ${index + 1}`);
+				if (item.size !== undefined && !['small', 'medium', 'large'].includes(item.size)) fail('Invalid image size.');
+				image(item.src); alternative(item.alt, `Gallery ${index + 1}: ${item.src}: German alternative text`);
+				if (!legacy || item.altEn !== undefined) alternative(item.altEn, `Gallery ${index + 1}: ${item.src}: English alternative text`);
 				if (item.captionEn !== undefined && typeof item.captionEn !== 'string') fail('English caption must be text.');
 				if (item.caption !== undefined && typeof item.caption !== 'string') fail('Caption must be text.');
 				if (!legacy && Boolean(item.caption?.trim()) !== Boolean(item.captionEn?.trim())) fail('Captions must be provided in both languages or omitted in both.');

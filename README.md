@@ -3,6 +3,10 @@
 Static Astro website. Public content is German and English. This is still a
 development preview, not an approved production release.
 
+For a German interface to preview, vehicle transfer/deletion, builds and GitHub
+Pages publication, open the `Website-Werkzeuge` launcher for your operating system
+or run `npm run tools`. See [WEBSITE-TOOLS.md](WEBSITE-TOOLS.md) for setup and usage.
+
 ## Development and verification
 
 Use Node >=22.12.0 and npm 11.18.0. Install the reviewed lockfile reproducibly:

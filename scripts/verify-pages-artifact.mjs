@@ -2,9 +2,10 @@ import { lstat, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const root = join(process.cwd(), 'dist');
-// All vehicle documentation is included; compressed images keep the artifact bounded.
+// All vehicle documentation and the manually played company film are included.
+// Keep the preview bounded while allowing its two browser video encodings.
 const maxFiles = 5000;
-const maxBytes = 150 * 1024 * 1024;
+const maxBytes = 300 * 1024 * 1024;
 let files = 0;
 let bytes = 0;
 

@@ -1,6 +1,6 @@
 import { load } from 'cheerio';
 
-const allowedTags = new Set(['p', 'h2', 'h3', 'strong', 'em', 'br', 'blockquote', 'ul', 'ol', 'li', 'a']);
+const allowedTags = new Set(['p', 'h2', 'h3', 'strong', 'em', 'br', 'blockquote', 'ul', 'ol', 'li', 'a', 'span']);
 
 export function validateVehicleHtml(html, context = 'Vehicle HTML') {
 	const fail = (reason) => { throw new Error(`${context}: ${reason}`); };
@@ -10,7 +10,7 @@ export function validateVehicleHtml(html, context = 'Vehicle HTML') {
 	$('*').each((_, element) => {
 		if (!allowedTags.has(element.name)) fail(`unsupported <${element.name}> element`);
 		for (const [name, value] of Object.entries(element.attribs)) {
-			if (element.name !== 'a' || !['href', 'title'].includes(name)) {
+			if (!(element.name === 'span' && name === 'class' && /^om-color-(black|red|green|blue|cyan|yellow|magenta)$/.test(value)) && (element.name !== 'a' || !['href', 'title'].includes(name))) {
 				fail(`unsupported ${name} attribute on <${element.name}>`);
 			}
 			if (name === 'href') {
@@ -31,7 +31,7 @@ export function validateVehicleHtml(html, context = 'Vehicle HTML') {
 }
 
 export function validateVehicleBlocks(blocks, context) {
-	return blocks.map((block, index) => block.type === 'copy' || block.type === 'contact'
+	return blocks.map((block, index) => block.type === 'copy' || block.type === 'contact' || block.textSide
 		? { ...block, html: validateVehicleHtml(block.html, `${context}, block ${index + 1} Deutsch`), htmlEn: validateVehicleHtml(block.htmlEn, `${context}, block ${index + 1} English`) }
 		: block);
 }

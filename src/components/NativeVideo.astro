@@ -1,0 +1,89 @@
+---
+interface Props {
+	src: string;
+	webm: string;
+	poster: string;
+	subtitles: string;
+	label: string;
+}
+const { src, webm, poster, subtitles, label } = Astro.props;
+---
+
+<div class="native-video" data-native-video>
+	<video controls playsinline preload="none" {poster} width="1920" height="1080" aria-label={label} tabindex="0">
+		<source src={src} type="video/mp4" />
+		<source src={webm} type="video/webm" />
+		<track kind="subtitles" src={subtitles} srclang="de" label="Deutsch" />
+		<a href={src}>Video herunterladen</a>
+	</video>
+	<button class="native-video__play" type="button" aria-label="Film abspielen" hidden>
+		<svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="1.5" /><path d="M26 20 45 32 26 44Z" fill="currentColor" /></svg>
+	</button>
+</div>
+
+<script>
+	for (const player of document.querySelectorAll('[data-native-video]')) {
+		const video = player.querySelector('video');
+		const button = player.querySelector('button');
+		if (!(video instanceof HTMLVideoElement) || !(button instanceof HTMLButtonElement)) continue;
+		// Native controls remain available when JavaScript is disabled.
+		video.controls = false;
+		video.tabIndex = -1;
+		button.hidden = false;
+		const revealControls = () => {
+			button.hidden = true;
+			video.controls = true;
+			video.tabIndex = 0;
+		};
+		button.addEventListener('click', () => {
+			revealControls();
+			video.focus({ preventScroll: true });
+			// A failed play request leaves the native controls available for retry.
+			void video.play().catch(() => {});
+		});
+		video.addEventListener('play', revealControls);
+		video.addEventListener('error', revealControls);
+	}
+</script>
+
+<style>
+	.native-video {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		border-radius: clamp(6px, 0.7vw, 10px);
+		background: #111111;
+		aspect-ratio: 16 / 9;
+		box-shadow:
+			0 0 0 1px rgba(17, 17, 17, 0.22),
+			0 4px 12px rgba(17, 17, 17, 0.18),
+			0 18px 40px -10px rgba(17, 17, 17, 0.38);
+	}
+	video { display: block; width: 100%; height: 100%; }
+	.native-video__play {
+		position: absolute;
+		inset: 0;
+		display: grid;
+		place-items: center;
+		width: 100%;
+		border: 0;
+		padding: 0;
+		background: rgba(0, 0, 0, 0.22);
+		color: #ffffff;
+		cursor: pointer;
+		transition: background 180ms ease;
+	}
+	.native-video__play:focus-visible { background: rgba(0, 0, 0, 0.12); }
+	@media (hover: hover) and (pointer: fine) {
+		.native-video__play:hover { background: rgba(0, 0, 0, 0.12); }
+	}
+	.native-video__play[hidden] { display: none; }
+	.native-video__play svg { width: clamp(3.5rem, 7vw, 6rem); height: auto; }
+	.native-video__play:focus-visible, video:focus-visible { outline: 3px solid #ffffff; outline-offset: -6px; box-shadow: inset 0 0 0 9px #111111; }
+	@media (prefers-reduced-motion: reduce) {
+		.native-video__play { transition: none; }
+	}
+	@media (forced-colors: active) {
+		.native-video { outline: 1px solid CanvasText; }
+	}
+</style>

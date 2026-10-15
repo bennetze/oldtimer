@@ -2,6 +2,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 import { load } from 'cheerio';
+import { genericVehicleAlternative } from '../src/config/vehicleRecord.js';
 const root = process.argv[2] || 'dist';
 const files = [];
 async function collect(dir) {
@@ -37,7 +38,7 @@ for (const file of files) {
 	$('img').each((_, node) => {
 		images++;
 		if ($(node).attr('alt') === undefined) fail('image missing alternative attribute');
-		if (/Aufnahme \d+ der Fahrzeugdokumentation|photograph \d+ in the vehicle record/i.test($(node).attr('alt') || '')) {
+		if (genericVehicleAlternative($(node).attr('alt'))) {
 			genericAlternatives++;
 			fail('generic numbered vehicle photograph alternative; describe the visible photograph');
 		}

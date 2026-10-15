@@ -48,7 +48,15 @@ export async function generateVehicleGallery(root, target = 'production', output
 	const cacheRoot = join(root, '.cache/vehicle-gallery-v3');
 	const manifestPath = join(cacheRoot, `${target}.json`);
 	const previousBytes = await safeRead(manifestPath);
-	const previous = previousBytes ? validateGalleryManifest(JSON.parse(previousBytes), target) : { images: {} };
+	let previous = { images: {} };
+	if (previousBytes) {
+		try { previous = validateGalleryManifest(JSON.parse(previousBytes), target); }
+		catch {
+			// This is derived data, not authored content. Preserve the bad cache and
+			// regenerate only from strictly validated vehicle records and images.
+			await safeWrite(join(cacheRoot, `${target}.invalid-${randomUUID()}.json`), previousBytes);
+		}
+	}
 	const groups = await Promise.all(['aktuelle-projekte', 'vergangene-projekte', 'fahrzeugangebote'].map(key => discoverVehicleCategory(pagesRoot, { key })));
 	const tasks = [];
 	for (const vehicle of groups.flat()) {
