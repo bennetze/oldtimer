@@ -2,10 +2,9 @@ import assert from 'node:assert/strict';
 import { globSync, readFileSync } from 'node:fs';
 import { load } from 'cheerio';
 import { localizeVehicle } from '../src/config/vehicleLocale.js';
-import { annotateVehicleLanguageParts } from '../src/config/vehicleLanguageParts.js';
+import { verifyVehicleStory } from './lib/vehicle-output.mjs';
 import { limitVehicleGalleryBlocks, GITHUB_PAGES_GALLERY_IMAGE_LIMIT } from '../src/config/vehicleGalleryPolicy.js';
 
-const fragment = html => load(html, {}, false).html();
 let count = 0;
 for (const file of globSync('src/pages/projekte/*/*/vehicle.json')) {
 	const record = JSON.parse(readFileSync(file, 'utf8'));
@@ -27,11 +26,7 @@ for (const file of globSync('src/pages/projekte/*/*/vehicle.json')) {
 			assert.equal($('.vehicle-lead a').attr('data-lightbox-alt'), content.leadImageAlt, route);
 			assert.ok($('.vehicle-lead a').is('[data-authored]'), `${route}: lead link must preserve authored alternatives`);
 		}
-		const copy = $('.story-copy, .story-contact > div:first-child').toArray();
-		const expectedCopy = blocks.filter(block => block.type !== 'gallery');
-		assert.equal(copy.length, expectedCopy.length, route);
-		copy.forEach((node, index) => assert.equal(fragment($(node).html()), fragment(annotateVehicleLanguageParts(expectedCopy[index].html, language)), `${route}: block ${index}`));
-		assert.deepEqual($('.vehicle-story').children('.story-copy, .story-contact, .story-gallery').toArray().flatMap(node => $(node).hasClass('story-gallery') ? $(node).find('img').toArray().map(image => `photo:${$(image).attr('src').split('/').at(-1)}`) : [$(node).hasClass('story-contact') ? 'contact' : 'copy']), blocks.flatMap(block => block.type === 'gallery' ? block.images.map(image => `photo:${image.src.slice(2).replace(/\.[^.]+$/, '.webp')}`) : [block.type]), `${route}: editor reading order`);
+		verifyVehicleStory($, blocks, language, route);
 		const images = blocks.filter(block => block.type === 'gallery').flatMap(block => block.images);
 		assert.deepEqual($('.story-image img').toArray().map(node => $(node).attr('alt')), images.map(image => image.alt), route);
 		assert.deepEqual($('.story-image img').toArray().map(node => $(node).attr('src').split('/').at(-1)), images.map(image => image.src.slice(2).replace(/\.[^.]+$/, '.webp')), `${route}: photograph order`);

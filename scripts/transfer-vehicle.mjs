@@ -1,3 +1,4 @@
+import { formatVehicleError } from './lib/vehicle-errors.mjs';
 import { createInterface } from 'node:readline/promises';
 import { stdin, stdout } from 'node:process';
 import { transferVehicle } from './lib/vehicle-transfer.mjs';
@@ -19,6 +20,6 @@ try {
 		if (result?.previewReady === false) process.exitCode = 1;
 	} finally { terminal.close(); }
 } catch (error) {
-	console.error(`Übernahme nicht abgeschlossen: ${error.message}`);
+	console.error(`Übernahme nicht abgeschlossen: ${formatVehicleError(error)}`);
 	process.exitCode = 1;
 }

@@ -42,6 +42,19 @@ frame.addEventListener('load', async () => {
     $('#tools-cancel').click(); await wait(() => $('#tools-prompt').hidden && !$('#vehicle-form').inert);
     check($('#save-review').dataset.reviewState === 'ready', 'Cancellation lost the checked draft.');
   });
+  await run('Save prepares watermarked copies only after clicking the final save action', async () => {
+    const t=win.vehicleTest, original=t.state.cardFile,native=win.VehicleWatermark;let calls=0;
+    win.VehicleWatermark=async file=>{calls++;return native(file);};
+    try {
+      doc.querySelector('[data-step-target="images"]').click();$('#watermark-all').click();check(calls===0 && !t.state.busy,'checkbox created watermarks');
+      doc.querySelector('[data-step-target="review"]').click();$('#prepare-save').click();await wait(()=>$('#save-review').dataset.reviewState==='ready');check(calls===0,'review created watermarks');
+      $('#tools-transfer').click();await wait(()=>!$('#tools-prompt').hidden);
+      const record=JSON.parse(win.toolsFixture.files.find(file=>file.path.endsWith('/vehicle.json')).bytes);
+      check(calls===1 && record.cardImage==='./card.webp' && win.toolsFixture.files.some(file=>file.path.endsWith('/card.webp')),'save did not stage watermark output');
+      check(t.state.cardFile===original && t.state.cardFile.type==='image/jpeg','save changed original draft');
+      $('#tools-cancel').click();await wait(()=>$('#tools-prompt').hidden && !$('#vehicle-form').inert);$('#watermark-all').click();
+    } finally {win.VehicleWatermark=native;}
+  });
   await run('Draft changes are staged afresh and incomplete drafts block saving', async () => {
     const english = $('#description-en'), previous = english.value;
     english.value = ''; english.dispatchEvent(new win.Event('input', { bubbles: true }));
@@ -53,6 +66,14 @@ frame.addEventListener('load', async () => {
     $('#tools-transfer').click(); await wait(() => !$('#tools-prompt').hidden);
     check(JSON.parse(win.toolsFixture.files.find(file => file.path.endsWith('/vehicle.json')).bytes).title === title.value, 'Save used an obsolete export.');
     $('#tools-cancel').click(); await wait(() => $('#tools-prompt').hidden && !$('#vehicle-form').inert);
+  });
+  await run('Confirmed saves remain distinct from ZIP download and become stale only on draft edits', async () => {
+    $('#tools-transfer').click();await wait(()=>!$('#tools-prompt').hidden);$('#tools-answer').value='JA';$('#tools-prompt').dispatchEvent(new win.Event('submit',{bubbles:true,cancelable:true}));
+    await wait(()=>!$('#tools-refresh').hidden && !$('#vehicle-form').inert);
+    check($('#save-review').dataset.reviewState==='saved' && $('#status').textContent==='Fahrzeug im Projekt gespeichert.','confirmed save status mixed with ZIP status');
+    const description=$('#description-en');description.value+=' edited';description.dispatchEvent(new win.Event('input',{bubbles:true}));
+    check($('#save-review').dataset.reviewState==='stale' && !$('#save-review').textContent.includes('im Projekt gespeichert'),'obsolete save status survived edit');
+    $('#tools-refresh').click();await wait(()=>!doc.querySelector('[data-step="selection"]').hidden);doc.querySelector('.vehicle-row').click();await wait(()=>!$('#tools-delete').disabled);
   });
   await run('Preview controls and publication confirmation remain separate from vehicle export', async () => {
     $('#tools-preview-start').click(); await wait(() => !$('#tools-preview-link').hidden);

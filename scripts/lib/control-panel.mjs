@@ -1,3 +1,4 @@
+import { formatVehicleError } from './vehicle-errors.mjs';
 import { createServer } from 'node:http';
 import { randomUUID, createHash } from 'node:crypto';
 import { mkdtemp, mkdir, readFile, readdir, lstat, realpath, rm, writeFile } from 'node:fs/promises';
@@ -9,7 +10,7 @@ import { transferVehicle } from './vehicle-transfer.mjs';
 import { deleteWizard } from './vehicle-delete.mjs';
 import { assertSafePath } from './vehicle-import.mjs';
 
-const editorFiles = ['styles.css', 'workflow.css', 'project-access.js', 'project-save.js', 'project-ui.js', 'website-tools.js', 'editor.js'];
+const editorFiles = ['styles.css', 'workflow.css', 'project-access.js', 'project-save.js', 'project-ui.js', 'website-tools.js', 'vehicle-presentation.js', 'watermark.js', 'editor.js'];
 const types = { '/': ['index.html', 'text/html'], '/index.html': ['index.html', 'text/html'], ...Object.fromEntries(editorFiles.map(file => ['/' + file, [file, file.endsWith('.css') ? 'text/css' : 'text/javascript']])) };
 const clean = text => String(text).replace(/\x1b\[[0-9;]*[A-Za-z]/g, '').replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g, '');
 const safePart = part => typeof part === 'string' && part && part !== '.' && part !== '..' && !/[\\/:*?"<>|\u0000-\u001f]/.test(part) && !/[. ]$/.test(part) && !/^(con|prn|aux|nul|com[0-9]|lpt[0-9])(?:\.|$)/i.test(part);
@@ -143,10 +144,10 @@ export async function createControlPanel(rootInput, options = {}) {
 					if (result?.previewReady === false) task.status = 'warning';
 					if (result) append(task, 'Bitte die Fahrzeugliste im Editor aktualisieren. Erstellen und Veröffentlichen sind separate Schritte.\n');
 				}
-			} catch (error) { task.status = error.code === 'CANCELLED' ? 'done' : 'error'; task.error = error.code === 'CANCELLED' ? null : error.message; append(task, error.message + '\n'); }
+			} catch (error) { task.status = error.code === 'CANCELLED' ? 'done' : 'error'; task.error = error.code === 'CANCELLED' ? null : formatVehicleError(error); append(task, formatVehicleError(error) + '\n'); }
 			finally {
 				task.prompt = null; task.answer = null;
-				if (upload) await rm(join(workspace, upload.id), { recursive: true, force: true }).catch(error => append(task, `Temporärer Ordner konnte nicht entfernt werden: ${error.message}\n`));
+				if (upload) await rm(join(workspace, upload.id), { recursive: true, force: true }).catch(error => append(task, `Temporärer Ordner konnte nicht entfernt werden: ${formatVehicleError(error)}\n`));
 				if (task.status === 'running') task.status = 'done';
 				active = null; revision++;
 			}
@@ -238,7 +239,7 @@ export async function createControlPanel(rootInput, options = {}) {
 			if (url.pathname === '/api/preview/start') { await startPreview(); send(200, { ok: true }); return; }
 			if (url.pathname === '/api/preview/stop') { requireIdle(); if (preview) await preview.stop(); send(200, { ok: true }); return; }
 			send(404, { error: 'Unbekannte Aktion.' });
-		} catch (error) { if (!response.headersSent) send(400, { error: error.message }); else response.end(); }
+		} catch (error) { if (!response.headersSent) send(400, { error: formatVehicleError(error), code: error.code || 'VEHICLE_ERROR' }); else response.end(); }
 	});
 	try { await new Promise((resolve, reject) => { server.once('error', reject); server.listen(0, '127.0.0.1', resolve); }); }
 	catch (error) { await rm(workspace, { recursive: true, force: true }); throw error; }

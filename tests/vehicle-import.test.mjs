@@ -270,7 +270,7 @@ test('traversal, symlinks, corrupt/mislabeled images and unsafe HTML fail closed
 	const f = await fixture(t);
 	await assert.rejects(reviewImport(f.root, f.source, '../bad'), /--from/);
 	await writeFile(join(f.source, 'test-car/card.jpg'), 'not a jpeg');
-	await assert.rejects(reviewImport(f.root, f.source), /unsupported|image|Input/i);
+	await assert.rejects(reviewImport(f.root, f.source), error => { assert.match(error.message,/unsupported|image|Input/i); assert.equal(error.code,'INVALID_IMAGE'); return true; });
 	await writeFile(join(f.source, 'test-car/card.jpg'), f.image);
 	await symlink(join(f.source, 'test-car/card.jpg'), join(f.source, 'test-car/alias.jpg'));
 	await assert.rejects(reviewImport(f.root, f.source), /Symlink/);
@@ -312,7 +312,7 @@ test('move redirect artifacts remain noindex and work on production and Pages ba
 	for (const target of ['production','github-pages']) {
 		await prepareVehicleRedirects(f.root,target);
 		const html=await readFile(join(f.root,'dist/projekte',from,'index.html'),'utf8');
-		assert.match(html,/noindex,follow/); assert.doesNotMatch(html,/<script|rel="canonical"/);
+		assert.match(html,/noindex,follow/); assert.doesNotMatch(html,/test\(\)|rel="canonical"/); assert.match(html,/target.search=location.search;target.hash=location.hash/);
 		assert.ok(html.includes(`url=${target==='github-pages'?'/oldtimer':''}/projekte/${to}/`));
 	}
 });

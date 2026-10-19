@@ -1,3 +1,4 @@
+import { formatVehicleError } from './vehicle-errors.mjs';
 import { realpath } from 'node:fs/promises';
 import { join } from 'node:path';
 import { categories } from './crawlers.mjs';
@@ -33,7 +34,7 @@ export async function deleteVehicle(root, from, { write, confirm }) {
 	} catch (error) {
 		result.previewReady = false;
 		await publishPreviewState(review.root, 'blocked', 'Fahrzeug gelöscht; Vorschau fehlgeschlagen. npm run dev neu starten.').catch(() => {});
-		write(`Fahrzeug gelöscht. Vorschau fehlgeschlagen: ${error.message}`);
+		write(`Fahrzeug gelöscht. Vorschau fehlgeschlagen: ${formatVehicleError(error)}`);
 		write('Bitte npm run dev neu starten.');
 	}
 	return result;

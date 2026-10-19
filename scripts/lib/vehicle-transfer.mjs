@@ -1,3 +1,4 @@
+import { formatVehicleError } from './vehicle-errors.mjs';
 import { reviewImport, applyImport } from './vehicle-import.mjs';
 import { publishPreviewState, refreshVehiclePreview } from './vehicle-preview.mjs';
 
@@ -35,7 +36,7 @@ export async function transferVehicle(root, source, from, { write, confirm, vali
 	} catch (error) {
 		result.previewReady = false;
 		await publishPreviewState(review.root, 'blocked', 'Fahrzeug gespeichert; Vorschaubilder konnten nicht erstellt werden. npm run dev neu starten.').catch(() => {});
-		write(`Fahrzeug gespeichert. Vorschau fehlgeschlagen: ${error.message}`);
+		write(`Fahrzeug gespeichert. Vorschau fehlgeschlagen: ${formatVehicleError(error)}`);
 		write(`Sicherung: ${result.backup}`);
 		write('Bitte npm run dev neu starten.');
 	}

@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { load } from 'cheerio';
 import { pathToFileURL } from 'node:url';
+import { finalizeCsp } from '../src/i18n/csp.js';
 import { validateRedirects } from './lib/vehicle-import.mjs';
 import { discoverVehicleCategory } from './lib/vehicle-files.mjs';
 import { categories } from './lib/crawlers.mjs';
@@ -26,6 +27,9 @@ export async function prepareVehicleRedirects(root, target) {
 			const url = `${base}/${language}projekte/${to}/`;
 			$('link[rel="canonical"], link[rel="alternate"], script, meta[name="robots"], meta[http-equiv="refresh"]').remove();
 			$('head').append('<meta name="robots" content="noindex,follow">');
+			// Preserve browser-only query/fragment data without trusting a supplied destination.
+			const redirect = `(()=>{const target=new URL(${JSON.stringify(url)},location.origin);target.search=location.search;target.hash=location.hash;location.replace(target.href)})();`;
+			$('<script>').text(redirect).appendTo('head');
 			$('<meta http-equiv="refresh">').attr('content', `0;url=${url}`).appendTo('head');
 			$('meta[property="og:url"]').attr('content', `${origin}${base}/${language}projekte/${from}/`);
 			$('body').empty();
@@ -33,6 +37,7 @@ export async function prepareVehicleRedirects(root, target) {
 			main.append($('<h1></h1>').text(language ? 'Vehicle moved' : 'Fahrzeug verschoben'));
 			main.append($('<a></a>').attr('href', url).text(language ? 'Open vehicle page' : 'Zur Fahrzeugseite'));
 			$('body').append(main);
+			finalizeCsp($);
 			const output = join(root, 'dist', language, 'projekte', from, 'index.html');
 			await mkdir(dirname(output), { recursive: true });
 			await writeFile(output, $.html());

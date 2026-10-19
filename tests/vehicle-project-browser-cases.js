@@ -14,6 +14,8 @@ frame.addEventListener('load', async () => {
     assert(!d.querySelector('.app-header'),'top bar remains');
     click('#choose-project'); await wait(()=>!d.querySelector('[data-step="selection"]').hidden);
     assert(d.querySelectorAll('.vehicle-row').length===1,'fixture vehicle not listed');
+    assert(d.querySelector('#selection-feedback').textContent==='1 Fahrzeug','singular vehicle label');
+    for(const selector of ['#category', '#category-filter']) assert(d.querySelector(selector+' option[value="vergangene-projekte"]').textContent.trim()==='Abgeschlossene Projekte','category label differs');
     assert(d.querySelector('.vehicle-row time').textContent==='17.09.2026','wrong modification date');
   });
   await test('Category filter and new vehicle reset retain the project', async () => {
@@ -80,7 +82,10 @@ frame.addEventListener('load', async () => {
   await test('Review and ZIP export are read-only; edits invalidate the previous review', async () => {
     const root=await w.fixtureRoot,A=w.VehicleProjectAccess,before=await A.snapshot(root);
     assert(!d.querySelector('#save-project'),'direct save button returned');
+    assert(d.querySelector('#status').textContent==='Noch keine ZIP erstellt.','initial ZIP state');
     input('#title','Geänderter Testwagen');await reviewed();
+    assert(d.querySelector('#save-review').textContent.includes('Projektprüfung erfolgreich.'),'successful review label');
+    assert(d.querySelector('#status').textContent==='Noch keine ZIP erstellt.','review incorrectly claims download');
     assert(d.querySelector('#save-review').textContent.includes('src/pages/projekte/aktuelle-projekte/test-car/vehicle.json'),'review paths missing');
     input('#title-en','Updated test car');
     assert(d.querySelector('#save-review').dataset.reviewState==='stale','stale review retained');
@@ -90,12 +95,16 @@ frame.addEventListener('load', async () => {
     assert(entries.has('aktuelle-projekte/test-car.astro')&&entries.has('aktuelle-projekte/test-car/card.jpg'),'page/folder pair incomplete');
     assert(A.same(before,await A.snapshot(root)),'export changed website source files');
     assert(!await A.hasDirectory(root,w.VehicleProjectSave.lock),'export created a project lock');
+    assert(!d.querySelector('#after-export').hidden,'completed download instructions missing');
+    input('#description-en','Updated description');assert(d.querySelector('#after-export').hidden,'obsolete export instructions visible');
   });
   await test('Watermark preference invalidates review and exports checked copies without writing source', async () => {
     const root=await w.fixtureRoot,A=w.VehicleProjectAccess,before=await A.snapshot(root),original=t.state.cardFile;
     await reviewed();click('[data-step-target="images"]');click('#watermark-all');await wait(()=>!t.state.busy);
-    assert(t.state.watermarkEnabled && d.querySelector('#watermark-all').checked,'checkbox not active');
+    assert(t.state.watermarkEnabled && d.querySelector('#watermark-all').checked && t.state.cardFile===original,'checkbox processed draft');
     assert(d.querySelector('#save-review').dataset.reviewState==='stale','watermark retained old review');
+    const native=w.VehicleWatermark;let calls=0;w.VehicleWatermark=async file=>{calls++;return native(file);};
+    try {await reviewed();assert(calls===0,'read-only review created watermarks');} finally {w.VehicleWatermark=native;}
     let entries=await zipEntries(await captureZip());assert(entries.has('aktuelle-projekte/test-car/card.webp'),'marked filename missing');assert(!entries.has('aktuelle-projekte/test-car/card.jpg'),'unmarked copy exported');
     click('[data-step-target="images"]');click('#watermark-all');await wait(()=>!t.state.busy);
     assert(!t.state.watermarkEnabled && t.state.cardFile===original,'original draft not restored');assert(d.querySelector('#save-review').dataset.reviewState==='stale','restoration retained review');

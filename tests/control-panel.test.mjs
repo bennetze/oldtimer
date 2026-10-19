@@ -99,6 +99,20 @@ test('panel rejects foreign origins, missing tokens, arbitrary commands and trav
 	assert.equal((await fetch(f.panel.origin + '/AGENTS.md')).status, 403);
 });
 
+test('launcher serves every classic editor script, including the watermark helper', async t => {
+	const f = await fixture(t);
+	const html = await (await fetch(f.panel.origin)).text();
+	const scripts = [...html.matchAll(/<script\s+src="([^"]+)"\s*><\/script>/g)].map(match => match[1]);
+	assert.ok(scripts.includes('watermark.js'), 'Watermark helper is missing from the editor.');
+	const editor = fileURLToPath(new URL('../../oldtimer-intern/', import.meta.url));
+	for (const file of scripts) {
+		const response = await fetch(new URL(file, f.panel.origin));
+		assert.equal(response.status, 200, `${file} is unavailable in the launcher.`);
+		assert.match(response.headers.get('content-type'), /^text\/javascript/);
+		assert.equal(await response.text(), await readFile(join(editor, file), 'utf8'), `${file} must match the offline editor.`);
+	}
+});
+
 test('direct draft save handles new, move, edit and combined save with the exact selected original', async t => {
 	const f = await fixture(t);
 	let car = { ...f.record, slug: 'direct-car', order: 2 }, from = null;

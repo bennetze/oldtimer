@@ -1,3 +1,4 @@
+import { formatVehicleError } from './lib/vehicle-errors.mjs';
 import { createInterface } from 'node:readline/promises';
 import { stdin, stdout } from 'node:process';
 import { deleteWizard } from './lib/vehicle-delete.mjs';
@@ -14,6 +15,6 @@ try {
 		if (result?.previewReady === false) process.exitCode = 1;
 	} finally { terminal.close(); }
 } catch (error) {
-	console.error(`Löschen nicht abgeschlossen: ${error.message}`);
+	console.error(`Löschen nicht abgeschlossen: ${formatVehicleError(error)}`);
 	process.exitCode = 1;
 }

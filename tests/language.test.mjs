@@ -45,6 +45,8 @@ test('explicit selection overrides detection and survives links, reload and frag
 		links: [['/projekte/'], ['#motorbau'], ['/en/handwerk/?lang=en', 'en'], ['/favicon.svg'], ['mailto:info@example.com'], ['https://other.example/']],
 	});
 	assert.equal(redirected, undefined);
+	assert.equal(visit('/handwerk/?lang=en#motorbau', { languages: ['de-DE'] }).redirected.href, 'https://example.com/en/handwerk/?lang=en#motorbau');
+	assert.equal(visit('/handwerk/?lang=de', { languages: ['en-US'] }).redirected, undefined);
 	assert.equal(anchors[0].href, '/projekte/?lang=de');
 	assert.equal(anchors[1].href, '/handwerk/?lang=de&q=BMW#motorbau');
 	assert.equal(anchors[2].href, '/en/handwerk/?lang=en&q=BMW#motorbau');

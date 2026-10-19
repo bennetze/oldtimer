@@ -14,11 +14,11 @@ const tests = await readFile(new URL('../tests/vehicle-browser-cases.js', import
 let source = await readFile(tool, 'utf8');
 // Inline local assets only in this disposable harness. Production uses classic scripts.
 for (const name of ['styles.css', 'workflow.css']) { const asset = await readFile(join(dirname(tool), name), 'utf8'); source = source.replace(`<link rel="stylesheet" href="${name}" />`, () => `<style>${asset}</style>`); }
-for (const name of ['project-access.js', 'project-save.js', 'project-ui.js', 'website-tools.js', 'watermark.js', 'editor.js']) { const asset = await readFile(join(dirname(tool), name), 'utf8'); source = source.replace(`<script src="${name}"></script>`, () => `<script>${asset}</script>`); }
+for (const name of ['project-access.js', 'project-save.js', 'project-ui.js', 'website-tools.js', 'vehicle-presentation.js', 'watermark.js', 'editor.js']) { const asset = await readFile(join(dirname(tool), name), 'utf8'); source = source.replace(`<script src="${name}"></script>`, () => `<script>${asset}</script>`); }
 // Legacy editor cases operate without a selected project; project cases have their own harness.
 const workflowSource = source;
 source = source.replace(/        workflow = window.VehicleProjectUI\([^\n]+\);\n/, '').replace('showStep("project");', 'showStep("vehicle");');
-const hooks = `\nwindow.vehicleTest = { state, fields, sanitizeHtml, validateRecord, checkImage, checkZipEntries, importVehicle, setCardFile, addGalleryFiles, createRecord, createAstro, generate, makeZip, validate, updateAutoText, updateSummary, renderBlocks, renderImages, renumberImages, editorSnapshot, localDate, showStep, resetEditor };\n`;
+const hooks = `\nwindow.vehicleTest = { state, fields, sanitizeHtml, validateRecord, checkImage, checkZipEntries, importVehicle, setCardFile, addGalleryFiles, createRecord, createAstro, generate, makeZip, validate, updateAutoText, updateSummary, renderBlocks, renderImages, renumberImages, editorSnapshot, prepareOutputSnapshot, localDate, showStep, resetEditor };\n`;
 const instrumented = source.replace('\n      })();\n', `${hooks}      })();\n`);
 const workflowTests = await readFile(new URL('../tests/vehicle-project-browser-cases.js', import.meta.url), 'utf8');
 const dateSource = await readFile(new URL('../src/config/modificationDates.js', import.meta.url), 'utf8');

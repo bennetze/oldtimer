@@ -213,14 +213,14 @@ frame.addEventListener('load', async () => {
     for (const width of [1440,390]) {frame.style.width=`${width}px`;await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));assert(d.documentElement.scrollWidth<=width,'new controls overflow at '+width);}
   });
   await test('Fixed text colors survive sanitation without allowing arbitrary CSS', async () => {
-    const clean=t.sanitizeHtml('<p><font color="#c94f59">Rot</font> <span class="om-color-cyan">Cyan</span><span style="background:url(https://bad)">Safe</span></p>');
+    const clean=t.sanitizeHtml('<p><font color="#ff9aa2">Rot</font> <span class="om-color-cyan">Cyan</span><span style="background:url(https://bad)">Safe</span></p>');
     assert(clean.includes('om-color-red') && clean.includes('om-color-cyan'),'palette lost');assert(!clean.includes('style='),'unsafe CSS retained');
     const response=await fetch('/html',{method:'POST',body:JSON.stringify([clean])});assert(response.ok,await response.text());
     t.showStep('content');
     const editor=d.querySelector('[data-editor][data-language="en"]');
     editor.innerHTML='<p>Color selection</p>';editor.dispatchEvent(new w.Event('input',{bubbles:true}));
     editor.focus();const range=d.createRange();range.selectNodeContents(editor);w.getSelection().removeAllRanges();w.getSelection().addRange(range);d.dispatchEvent(new w.Event('selectionchange'));
-    const color=editor.closest('.language-editor').querySelector('[data-text-color]');color.dispatchEvent(new w.MouseEvent('mousedown',{bubbles:true}));color.focus();color.value='#c94f59';color.dispatchEvent(new w.Event('change',{bubbles:true}));
+    const color=editor.closest('.language-editor').querySelector('[data-text-color]');color.dispatchEvent(new w.MouseEvent('mousedown',{bubbles:true}));color.focus();color.value='#ff9aa2';color.dispatchEvent(new w.Event('change',{bubbles:true}));
     assert(t.sanitizeHtml(editor.innerHTML).includes('om-color-red'),'color dropdown lost selected text');
     assert(w.getSelection().toString().length>0,'color command lost selection');
     editor.closest('.language-editor').querySelector('[data-command="bold"]').click();
@@ -233,10 +233,12 @@ frame.addEventListener('load', async () => {
     click('#watermark-all');
     for(let n=0;t.state.busy && n<200;n++)await new Promise(resolve=>setTimeout(resolve,25));
     assert(!t.state.busy,'watermark timed out');
-    assert(t.state.cardFile!==before,'card bytes unchanged');assert(t.state.images.every(image=>image.file.type==='image/webp'),'gallery not marked');
-    const after=await w.createImageBitmap(t.state.cardFile);eq([after.width,after.height],[beforeSize.width,beforeSize.height],'dimensions');after.close();beforeSize.close();
+    assert(t.state.cardFile===before,'checkbox changed original card');
+    const snapshot=await t.prepareOutputSnapshot(t.editorSnapshot());
+    assert(snapshot.images[0].file!==before && snapshot.images.every(image=>image.file.type==='image/webp'),'output not marked');
+    const after=await w.createImageBitmap(snapshot.images[0].file);eq([after.width,after.height],[beforeSize.width,beforeSize.height],'dimensions');after.close();beforeSize.close();
     assert(d.querySelector('#watermark-all').checked,'watermark checkbox must reflect exported bytes');
-    const snapshot=t.editorSnapshot();assert(snapshot.images.every(image=>image.name.endsWith('.webp')),'filename/MIME mismatch');
+    assert(snapshot.images.every(image=>image.name.endsWith('.webp')),'filename/MIME mismatch');
     t.validateRecord(snapshot.record);
     const prefix=`${snapshot.record.category}/${snapshot.record.slug}`;
     const zip=await t.makeZip([{name:`${prefix}.astro`,data:t.createAstro(snapshot.record.category,snapshot.record.slug)},{name:`${prefix}/vehicle.json`,data:snapshot.recordText},...snapshot.images.map(image=>({name:`${prefix}/${image.name}`,data:image.file}))]);
@@ -258,16 +260,16 @@ frame.addEventListener('load', async () => {
   const color = (editor, value) => {const input=editor.closest('.language-editor').querySelector('[data-text-color]');input.dispatchEvent(new w.MouseEvent('mousedown',{bubbles:true}));input.focus();input.value=value;input.dispatchEvent(new w.Event('change',{bubbles:true}));};
   const type = (editor, text) => {assert(d.activeElement===editor,'formatting must return focus to its editor');d.execCommand('insertText',false,text);};
   const htmlFor = editor => t.state.blocks.find(block=>block.id===editor.dataset.editor)[editor.dataset.language==='en'?'htmlEn':'html'];
-  await test('Color dropdown starts with black and all seven colors survive independent HTML validation', async () => {
+  await test('Color dropdown starts with Standard and all seven colors survive independent HTML validation', async () => {
     await t.importVehicle(filesFor());t.showStep('content');
-    const dropdown=d.querySelector('[data-text-color]');eq(dropdown.options[0].textContent,'Schwarz','first color');eq(dropdown.options.length,7,'palette count');
+    const dropdown=d.querySelector('[data-text-color]');eq(dropdown.options[0].textContent,'Standard','first color');eq(dropdown.options.length,7,'palette count');
     const html=['black','red','green','blue','cyan','yellow','magenta'].map(color=>t.sanitizeHtml(`<p><span class="om-color-${color}">${color}</span></p>`));
     const response=await fetch('/html',{method:'POST',body:JSON.stringify(html)});assert(response.ok,await response.text());
   });
   await test('Empty bilingual editors accept heading, bold, italic and color before the first typed character', async () => {
     for(const language of ['de','en']) {
       const editor=newTextEditor(language);
-      command(editor,'formatBlock','h2');command(editor,'bold');command(editor,'italic');color(editor,'#c94f59');type(editor,'Start');await settle();
+      command(editor,'formatBlock','h2');command(editor,'bold');command(editor,'italic');color(editor,'#ff9aa2');type(editor,'Start');await settle();
       eq(editor.textContent,'Start','typed text');const html=htmlFor(editor);
       assert(html.includes('<h2>') && html.includes('<strong>') && html.includes('<em>') && html.includes('om-color-red'),'combined empty-editor formatting: '+html+' live: '+editor.innerHTML);
       eq(w.getSelection().anchorOffset,5,'caret at end');
@@ -275,17 +277,17 @@ frame.addEventListener('load', async () => {
   });
   await test('Formatting in the middle preserves the caret and can be toggled off before more typing', async () => {
     const editor=newTextEditor('de');selectEditor(editor);type(editor,'Alpha Omega');
-    selectEditor(editor,6);command(editor,'bold');command(editor,'italic');color(editor,'#608ed1');type(editor,'Mitte ');await settle();
+    selectEditor(editor,6);command(editor,'bold');command(editor,'italic');color(editor,'#a7c7ff');type(editor,'Mitte ');await settle();
     eq(editor.textContent,'Alpha Mitte Omega','middle insertion');
     const html=htmlFor(editor);assert(html.includes('<strong>') && html.includes('<em>') && html.includes('om-color-blue'),'middle styles: '+html+' live: '+editor.innerHTML);
-    command(editor,'bold');command(editor,'italic');color(editor,'#000000');type(editor,'Normal ');await settle();
-    eq(editor.textContent.replace(/\u00a0/g,' '),'Alpha Mitte Normal Omega','styles toggled off');assert(htmlFor(editor).includes('om-color-black'),'black export');
+    command(editor,'bold');command(editor,'italic');color(editor,'#ffffff');type(editor,'Normal ');await settle();
+    eq(editor.textContent.replace(/\u00a0/g,' '),'Alpha Mitte Normal Omega','styles toggled off');assert(!htmlFor(editor).includes('om-color-blue') || htmlFor(editor).includes('Normal'), 'Standard typing lost');
   });
   await test('Selected text retains combined formatting and selection across dropdowns and language switches', async () => {
     const de=newTextEditor('de');const block=t.state.blocks.at(-1);const en=d.querySelector(`[data-editor="${block.id}"][data-language="en"]`);
     selectEditor(de);type(de,'Deutsch');selectEditor(en);type(en,'English');
-    selectEditor(de,0,7);command(de,'bold');command(de,'italic');color(de,'#be69b0');eq(w.getSelection().toString(),'Deutsch','selection preserved');
-    selectEditor(en,0,7);color(en,'#40a8b8');command(en,'formatBlock','h2');
+    selectEditor(de,0,7);command(de,'bold');command(de,'italic');color(de,'#e6a4db');eq(w.getSelection().toString(),'Deutsch','selection preserved');
+    selectEditor(en,0,7);color(en,'#81dbe8');command(en,'formatBlock','h2');
     assert(htmlFor(de).includes('om-color-magenta') && htmlFor(de).includes('<strong>') && htmlFor(de).includes('<em>'),'German combination: '+htmlFor(de));
     assert(htmlFor(en).includes('om-color-cyan') && htmlFor(en).includes('<h2>'),'English combination: '+htmlFor(en));
     selectEditor(de,7);type(de,' weiter');eq(de.textContent,'Deutsch weiter','return to German');eq(en.textContent,'English','English unchanged');
@@ -296,7 +298,7 @@ frame.addEventListener('load', async () => {
     command(editor,'insertUnorderedList');command(editor,'formatBlock','p');command(editor,'removeFormat');type(editor,' plain');eq(editor.textContent,'Title item plain','paragraph typing');
   });
   await test('Undo and redo preserve formatted typing instead of resetting the editor DOM', async () => {
-    const editor=newTextEditor('de');selectEditor(editor);type(editor,'Vorher');selectEditor(editor,6);color(editor,'#c94f59');command(editor,'bold');type(editor,' Nachher');
+    const editor=newTextEditor('de');selectEditor(editor);type(editor,'Vorher');selectEditor(editor,6);color(editor,'#ff9aa2');command(editor,'bold');type(editor,' Nachher');
     d.execCommand('undo');await settle();eq(editor.textContent,'Vorher','undo typing');
     d.execCommand('redo');await settle();eq(editor.textContent,'Vorher Nachher','redo typing');assert(t.sanitizeHtml(editor.innerHTML).includes('om-color-red'),'redo color');
   });
@@ -305,7 +307,7 @@ frame.addEventListener('load', async () => {
     for(const language of ['de','en']) for(const order of orders) {
       const editor=newTextEditor(language);
       for(const action of order) {
-        if(action==='color')color(editor,'#4c946c');
+        if(action==='color')color(editor,'#8dd9ac');
         else if(action==='heading')command(editor,'formatBlock','h2');
         else command(editor,action);
       }
@@ -315,7 +317,7 @@ frame.addEventListener('load', async () => {
   });
   await test('Repeated color changes and clearing formatting retain text and native undo', async () => {
     const editor=newTextEditor('en');selectEditor(editor);type(editor,'A choice');selectEditor(editor,2,8);command(editor,'bold');command(editor,'italic');
-    for(const value of ['#c94f59','#dcc35b','#000000','#40a8b8']) {color(editor,value);eq(w.getSelection().toString(),'choice','color selection');}
+    for(const value of ['#ff9aa2','#f5dc7b','#ffffff','#81dbe8']) {color(editor,value);eq(w.getSelection().toString(),'choice','color selection');}
     assert(htmlFor(editor).includes('om-color-cyan') && htmlFor(editor).includes('<strong>') && htmlFor(editor).includes('<em>'),'combined selected styles');
     command(editor,'removeFormat');eq(w.getSelection().toString(),'choice','clear selection');assert(!htmlFor(editor).includes('om-color-') && !htmlFor(editor).includes('<strong>') && !htmlFor(editor).includes('<em>'),'clear format serialization: '+htmlFor(editor));
     d.execCommand('undo');await settle();assert(t.sanitizeHtml(editor.innerHTML).includes('om-color-cyan'),'undo restores color');
@@ -327,7 +329,7 @@ frame.addEventListener('load', async () => {
     eq(editor.textContent,'Importiert','reset retained imported text');
   });
   await test('Clear formatting also resets pending styles before any text is typed', async () => {
-    const editor=newTextEditor('en');command(editor,'bold');command(editor,'italic');color(editor,'#be69b0');command(editor,'removeFormat');type(editor,'Plain');
+    const editor=newTextEditor('en');command(editor,'bold');command(editor,'italic');color(editor,'#e6a4db');command(editor,'removeFormat');type(editor,'Plain');
     assert(!htmlFor(editor).includes('<strong>') && !htmlFor(editor).includes('<em>') && !htmlFor(editor).includes('om-color-magenta'),'pending clear: '+htmlFor(editor));
     eq(editor.textContent,'Plain','plain typing');
   });
@@ -339,21 +341,93 @@ frame.addEventListener('load', async () => {
     }
     eq(d.querySelector('[data-add-block="image-text"]').textContent.trim(),'+ Text neben Bild','matching plus label');w.scrollTo(0,0);
   });
-  await test('Watermark checkbox can restore original bytes and filenames and follows new images', async () => {
-    await t.importVehicle(filesFor());const original=t.state.cardFile;const images=t.state.images.map(image=>image.file);const names=t.state.images.map(image=>image.outputName);
-    click('#watermark-all');await finishWatermark();assert(t.state.watermarkEnabled,'enabled state');
-    await t.addGalleryFiles([image('added.jpg')]);const added=t.state.images.at(-1);assert(added.file.type==='image/webp' && added.watermarkOriginal.file.type==='image/jpeg','new image inherits watermark');
-    await t.setCardFile(image('replacement.jpg'));assert(t.state.cardFile.type==='image/webp','replacement card inherits watermark');
-    click('#watermark-all');await finishWatermark();assert(!d.querySelector('#watermark-all').checked && !t.state.watermarkEnabled,'disabled state');
-    eq(t.state.cardFile.name,'replacement.jpg','replacement restored');
-    assert(t.state.images.slice(0,2).every((item,index)=>item.file===images[index]),'original gallery bytes restored');eq(t.state.images.slice(0,2).map(image=>image.outputName),names,'filenames restored');assert(added.file.type==='image/jpeg','added image restored');
-    await t.importVehicle(filesFor());const before=t.state.cardFile;click('#watermark-all');await finishWatermark();click('#watermark-all');await finishWatermark();assert(t.state.cardFile===before,'exact original card restored');
+  await test('Watermark preference never processes imported, added or replaced draft images', async () => {
+    await t.importVehicle(filesFor());const original=t.state.cardFile,images=t.state.images.map(image=>image.file),names=t.state.images.map(image=>image.outputName),native=w.VehicleWatermark;let calls=0;
+    w.VehicleWatermark=async file=>{calls++;return native(file);};
+    try {
+      click('#watermark-all');assert(t.state.watermarkEnabled && !t.state.busy,'checkbox must respond synchronously');
+      await t.addGalleryFiles([image('added.jpg')]);const added=t.state.images.at(-1);Object.assign(added,{alt:'Zusatzbild',altEn:'Additional image',altTouched:true,altEnTouched:true});t.renderImages();assert(added.file.type==='image/jpeg','adding an image processed it');
+      await t.setCardFile(image('replacement.jpg'));assert(t.state.cardFile.type==='image/jpeg','replacing the card processed it');
+      const draft=t.editorSnapshot();assert(calls===0,'checkbox/import/snapshot generated watermarks');
+      const output=await t.prepareOutputSnapshot(draft);assert(calls===4 && output.images.every(image=>image.file.type==='image/webp'),'final preparation must process all images');
+      const again=await t.prepareOutputSnapshot(t.editorSnapshot());assert(calls===4 && again.images[0].file===output.images[0].file,'repeat output did not reuse prepared originals');
+      click('#watermark-all');assert(!t.state.watermarkEnabled && !t.state.busy,'unchecking was not immediate');
+      const unmarked=await t.prepareOutputSnapshot(t.editorSnapshot());assert(unmarked.images[0].file===t.state.cardFile && unmarked.images[0].name.endsWith('.jpg'),'disabled output changed originals');
+      assert(t.state.images.slice(0,2).every((item,index)=>item.file===images[index]),'processing mutated gallery bytes');eq(t.state.images.slice(0,2).map(image=>image.outputName),names,'processing renamed draft');assert(added.file.type==='image/jpeg','processed draft addition');
+      await t.importVehicle(filesFor());const before=t.state.cardFile;click('#watermark-all');click('#watermark-all');assert(t.state.cardFile===before && calls===4,'preference toggle did work');
+    } finally {w.VehicleWatermark=native;}
   });
-  await test('Watermark failure rolls back checkbox and every image without losing the draft', async () => {
-    await t.importVehicle(filesFor());const before=t.state.cardFile;const originals=t.state.images.map(image=>image.file);const native=w.VehicleWatermark;let n=0;
-    w.VehicleWatermark=async file=>{if(++n===2)throw new Error('Testfehler');return native(file);};
-    try{click('#watermark-all');await finishWatermark();assert(!d.querySelector('#watermark-all').checked && !t.state.watermarkEnabled,'failed checkbox reverted');assert(t.state.cardFile===before && t.state.images.every((item,index)=>item.file===originals[index]),'failed watermark changed draft');}finally{w.VehicleWatermark=native;}
-    t.resetEditor();click('#watermark-all');await finishWatermark();assert(d.querySelector('#watermark-all').checked,'empty draft preference');await t.setCardFile(image('fresh.jpg'));assert(t.state.cardFile.type==='image/webp','first card inherits preference');t.resetEditor();assert(!d.querySelector('#watermark-all').checked,'new draft resets checkbox');
+  await test('Watermark failures at output preserve the preference and all draft images', async () => {
+    await t.importVehicle(filesFor());const before=t.state.cardFile,originals=t.state.images.map(image=>image.file),native=w.VehicleWatermark;let calls=0;
+    w.VehicleWatermark=async file=>{if(++calls===2)throw new Error('Testfehler');return native(file);};
+    try {
+      click('#watermark-all');assert(calls===0 && !t.state.busy,'checkbox must not start conversion');
+      let failed=false;try{await t.prepareOutputSnapshot(t.editorSnapshot());}catch(error){failed=error.message==='Testfehler';}assert(failed,'conversion failure ignored');
+      assert(d.querySelector('#watermark-all').checked && t.state.watermarkEnabled,'output failure lost preference');assert(t.state.cardFile===before && t.state.images.every((image,index)=>image.file===originals[index]),'failed output changed draft');
+    } finally {w.VehicleWatermark=native;}
+    t.resetEditor();click('#watermark-all');assert(d.querySelector('#watermark-all').checked && !t.state.busy,'empty draft preference');await t.setCardFile(image('fresh.jpg'));assert(t.state.cardFile.type==='image/jpeg','first card was processed before output');t.resetEditor();assert(!d.querySelector('#watermark-all').checked,'new draft retained preference');
+  });
+  await test('Missing watermark helper is reported only at output and never changes imported images', async () => {
+    await t.importVehicle(filesFor());const before=t.state.cardFile,images=t.state.images.map(image=>image.file),native=w.VehicleWatermark;
+    w.VehicleWatermark=undefined;
+    try {
+      t.showStep('images');click('#watermark-all');assert(d.querySelector('#watermark-all').checked && !t.state.busy,'missing helper blocked preference');
+      await t.generate();assert(d.querySelector('#workspace-status').textContent.includes('watermark.js'),'output needs an actionable German error');
+      assert(t.state.cardFile===before && t.state.images.every((image,index)=>image.file===images[index]),'missing helper changed draft');
+    } finally {w.VehicleWatermark=native;}
+  });
+  await test('Structural moves restore stable focus; block undo preserves bilingual content and later edits', async () => {
+    await t.importVehicle(filesFor());t.showStep('content');
+    const blocks=t.state.blocks, first=blocks[0], second=blocks[1];
+    click(`[data-block-move="down"][data-id="${first.id}"]`);
+    assert(d.activeElement.dataset.id===first.id || d.activeElement.closest('[data-block-id]')?.dataset.blockId===first.id,'moved focus lost');
+    click(`[data-block-remove="${first.id}"]`);
+    assert(d.activeElement!==d.body,'removed focus lost');assert(!d.querySelector('#block-undo').hidden,'undo hidden');
+    second.html='<p>Spätere Änderung</p>'; second.htmlEn='<p>Later edit</p>';
+    click('#restore-block');eq(t.state.blocks.find(b=>b.id===first.id),first,'full block restored');eq(second.htmlEn,'<p>Later edit</p>','other edit overwritten');
+    assert(d.activeElement.closest('[data-block-id]')?.dataset.blockId===first.id,'restored focus');
+    for(let i=0;i<22;i++){click('[data-add-block="copy"]');click(`[data-block-remove="${t.state.blocks.at(-1).id}"]`);}
+    assert(d.querySelector('#undo-count').textContent.includes('20'),'history limit');t.resetEditor();assert(d.querySelector('#block-undo').hidden,'reset history');
+  });
+  await test('Undo omits intentionally removed images and retains gallery occurrence metadata', async () => {
+    await t.importVehicle(filesFor());t.showStep('content');const gallery=t.state.blocks.find(b=>b.type==='gallery');const original=structuredClone(gallery);
+    click(`[data-block-remove="${gallery.id}"]`);const imageId=t.state.images[0].id;click(`[data-image-remove="${imageId}"]`);click('#restore-block');
+    const restored=t.state.blocks.find(b=>b.id===gallery.id);assert(!restored.imageIds.includes(imageId),'removed image restored');
+    eq(restored.imageMeta,original.imageMeta.filter((_,i)=>original.imageIds[i]!==imageId),'surviving metadata');assert(d.querySelector('#workspace-status').textContent.includes('entfernt'),'omission not explained');
+  });
+  await test('Independent description counters, card details and nonblocking image quality respond to usage', async () => {
+    await t.importVehicle(filesFor());t.fields.description.value='Deutsch';t.fields.descriptionEn.value='English text';t.updateSummary();
+    eq(d.querySelector('#description-count').textContent,'7','German count');eq(d.querySelector('#description-count-en').textContent,'12','English count');
+    assert(d.querySelector('[data-file-summary="card-file"]').textContent.includes('px'),'card dimensions');assert(d.querySelector('#card-drop .file-control label').textContent==='Kartenbild ersetzen','replacement label');
+    assert(t.validate().warnings.length>0,'small source warning missing');assert(t.validate().errors.length===0,'quality blocked export');
+    const before=t.state.cardFile;await t.setCardFile(null);assert(t.state.cardFile===before,'cancel replaced card');
+    assert(t.sanitizeHtml('<p><font color="#c94f59">Legacy</font></p>').includes('om-color-red'),'old palette not normalized');
+  });
+  await test('Handle-only dragging preserves order, occurrence metadata and focus alongside move buttons', async () => {
+    await t.importVehicle(filesFor());t.showStep('content');
+    const transfer=new w.DataTransfer(),first=t.state.blocks[0],last=t.state.blocks.at(-1);
+    const denied=new w.DragEvent('dragstart',{bubbles:true,cancelable:true,dataTransfer:transfer});d.querySelector(`[data-block-id="${first.id}"] .editor`).dispatchEvent(denied);assert(denied.defaultPrevented,'editing surface started drag');
+    d.querySelector(`[data-block-id="${first.id}"] .drag-handle`).dispatchEvent(new w.DragEvent('dragstart',{bubbles:true,cancelable:true,dataTransfer:transfer}));
+    d.querySelector(`[data-block-id="${last.id}"]`).dispatchEvent(new w.DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:transfer}));eq(t.state.blocks.at(-1).id,first.id,'block drag order');assert(d.activeElement.closest('[data-block-id]')?.dataset.blockId===first.id,'block drag focus');
+    const image=t.state.images[0],target=t.state.images[1],metadata=structuredClone(t.createRecord().blocks.filter(b=>b.type==='gallery'));
+    d.querySelector(`[data-image-id="${image.id}"] .drag-handle`).dispatchEvent(new w.DragEvent('dragstart',{bubbles:true,cancelable:true,dataTransfer:new w.DataTransfer()}));
+    d.querySelector(`[data-image-id="${target.id}"]`).dispatchEvent(new w.DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:new w.DataTransfer()}));eq(t.state.images[1].id,image.id,'image drag order');eq(t.createRecord().blocks.filter(b=>b.type==='gallery'),metadata,'drag changed occurrences');
+  });
+  await test('Structural rerenders preserve live rich-text nodes, selection and native typing undo', async () => {
+    await t.importVehicle(filesFor());t.showStep('content');const editor=newTextEditor('en');selectEditor(editor);type(editor,'Persistent typing');await settle();const id=editor.dataset.editor;assert(d.queryCommandEnabled('undo'),'undo missing before move');
+    click(`[data-block-move="up"][data-id="${id}"]`);assert(d.querySelector(`[data-editor="${id}"][data-language="en"]`)===editor,'editor node replaced');
+    selectEditor(editor);const undone=d.execCommand('undo');await settle();assert(!editor.textContent.includes('Persistent typing'),'native typing undo lost: '+undone+' moveBefore='+typeof d.querySelector('#block-list').moveBefore+' '+editor.innerHTML);
+  });
+  await test('Complete release fixture exports ordinary/contact, adjacent galleries and every side-text size', async () => {
+    const fixture={...record,slug:'audit-fixes-car',order:1987654321000,title:'Audit-Fahrzeug',titleEn:'Audit vehicle',sourceUrl:'https://www.oldtimermanufaktur.de/projekte/aktuelle-projekte/audit-fixes-car/',blocks:[
+      {type:'copy',html:'<p><span class="om-color-red">Deutsche Geschichte</span></p>',htmlEn:'<p><span class="om-color-red">English story</span></p>'},
+      {type:'contact',html:'<p>Kontakt zur Werkstatt</p>',htmlEn:'<p>Contact the workshop</p>'},
+      ...[0,1].map(i=>({type:'gallery',images:[{src:'./card.jpg',alt:'Karosserie',altEn:'Bodywork',caption:'Bild '+i,captionEn:'Photo '+i}]})),
+      ...['left','right'].flatMap(textSide=>['small','medium','large'].map(size=>({type:'gallery',textSide,html:`<p>Text ${textSide} ${size}</p>`,htmlEn:`<p>Story ${textSide} ${size}</p>`,images:[{src:'./card.jpg',alt:'Karosserie',altEn:'Bodywork',caption:'Detail',captionEn:'Detail',size}]})))
+    ]};
+    await t.importVehicle(filesFor(fixture));const snapshot=t.editorSnapshot(),folder=`${snapshot.record.category}/${snapshot.record.slug}`;
+    const zip=await t.makeZip([{name:folder+'.astro',data:t.createAstro(snapshot.record.category,snapshot.record.slug)},{name:folder+'/vehicle.json',data:snapshot.recordText},...snapshot.images.map(image=>({name:folder+'/'+image.name,data:image.file}))]);
+    await fetch('/zip',{method:'POST',body:zip});frame.style.width='1440px';t.showStep('review');
   });
   const response = await fetch('/result',{method:'POST',body:JSON.stringify(results,null,2)});
   document.getElementById('results').textContent=JSON.stringify({passed:results.filter(x=>x.pass).length,total:results.length,saved:response.ok,results},null,2);
