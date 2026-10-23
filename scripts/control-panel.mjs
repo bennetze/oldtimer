@@ -3,7 +3,10 @@ import { fileURLToPath } from 'node:url';
 import { createControlPanel } from './lib/control-panel.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const panel = await createControlPanel(root);
+const panel = await createControlPanel(root).catch(error => {
+	console.error(error.message);
+	process.exit(1);
+});
 console.log(`Werkzeuge: ${panel.url}`);
 console.log('Dieses Fenster offen lassen. Strg+C beendet Werkzeuge und Vorschau.');
 if (!process.argv.includes('--no-open')) {

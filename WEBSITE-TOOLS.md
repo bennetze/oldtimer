@@ -8,6 +8,11 @@ editor directly via `file://` still provides the offline authoring/ZIP workflow.
 ## Start
 
 Keep the `oldtimer` website and `oldtimer-intern` editor checkouts beside each other.
+Keep `oldtimer-intern` on the `main` branch. The client demo belongs in its own
+`oldtimer-intern-demo` checkout on `demo`; do not switch the launcher's editor
+folder to that branch. All three launchers use the same checked internal entry.
+If demo or incomplete files are selected, startup stops with a concrete error
+instead of opening an editor that cannot save.
 Use the existing website checkout with its dependencies installed. The same Node.js
 and npm versions required by the website apply; there is no additional installation,
 framework, desktop runtime, subscription or dependency for these tools.
@@ -24,6 +29,11 @@ closing just the browser tab leaves them running. A vehicle operation already
 applying changes completes before shutdown, so stopping the tool does not interrupt
 the checked transaction. An abrupt OS shutdown still requires the existing import
 lock/backup recovery procedure.
+
+After an editor update, stop the previous launcher with `Ctrl+C` and reopen it.
+Each running launcher keeps the full set of editor assets it loaded at startup,
+so later checkout changes cannot mix scripts from different versions. The embedded
+font is permitted locally for watermark and draft previews; no remote fonts load.
 
 ## Workflow
 

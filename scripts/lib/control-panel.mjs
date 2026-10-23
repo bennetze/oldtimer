@@ -12,6 +12,28 @@ import { assertSafePath } from './vehicle-import.mjs';
 
 const editorFiles = ['styles.css', 'workflow.css', 'project-access.js', 'project-save.js', 'project-ui.js', 'website-tools.js', 'vehicle-presentation.js', 'watermark.js', 'editor.js'];
 const types = { '/': ['index.html', 'text/html'], '/index.html': ['index.html', 'text/html'], ...Object.fromEntries(editorFiles.map(file => ['/' + file, [file, file.endsWith('.css') ? 'text/css' : 'text/javascript']])) };
+
+async function loadInternalEditor(directory) {
+	let assets;
+	try {
+		const root = await realpath(directory);
+		assets = new Map(await Promise.all(['index.html', ...editorFiles].map(async file => [file, await readFile(join(root, file))])));
+	} catch {
+		throw new Error('Interner Editor fehlt oder ist unvollständig. Bitte den vollständigen Ordner oldtimer-intern neben dem Website-Ordner ablegen.');
+	}
+	const html = assets.get('index.html').toString();
+	const scripts = [...html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["']/gi)].map(match => match[1]);
+	const editor = assets.get('editor.js').toString();
+	if (/name=["']vehicle-editor["']\s+content=["']demo["']/.test(html) || scripts.includes('demo-ui.js') || /window\.VehicleDemoUI\s*\(/.test(editor)) {
+		throw new Error('Die Website-Werkzeuge können die Demo nicht verwenden. Bitte den internen Editor (Branch main) im Ordner oldtimer-intern verwenden. Die Demo gehört in einen separaten Ordner.');
+	}
+	if (!editorFiles.filter(file => file.endsWith('.js')).every(file => scripts.includes(file)) || scripts.some(file => !editorFiles.includes(file)) || !/window\.VehicleProjectUI\s*\(/.test(editor)) {
+		throw new Error('Die Editor-Dateien passen nicht zusammen. Bitte den vollständigen internen Editor (Branch main) im Ordner oldtimer-intern wiederherstellen und die Website-Werkzeuge neu starten.');
+	}
+	// Serve one complete launch snapshot, even if another checkout is edited later.
+	assets.set('index.html', Buffer.from(html.replace('</head>', '<meta name="vehicle-tools" content="local-launcher">\n</head>')));
+	return assets;
+}
 const clean = text => String(text).replace(/\x1b\[[0-9;]*[A-Za-z]/g, '').replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g, '');
 const safePart = part => typeof part === 'string' && part && part !== '.' && part !== '..' && !/[\\/:*?"<>|\u0000-\u001f]/.test(part) && !/[. ]$/.test(part) && !/^(con|prn|aux|nul|com[0-9]|lpt[0-9])(?:\.|$)/i.test(part);
 
@@ -47,9 +69,7 @@ export function runPackageCommand(root, name, onOutput, npmCli = process.env.npm
 
 export async function createControlPanel(rootInput, options = {}) {
 	const root = await realpath(rootInput), token = randomUUID();
-	let assets;
-	try { assets = await realpath(options.editorRoot || join(dirname(root), 'oldtimer-intern')); await readFile(join(assets, 'index.html')); }
-	catch { throw new Error('Editor nicht gefunden. Bitte oldtimer und oldtimer-intern nebeneinander im selben Ordner ablegen.'); }
+	const assets = await loadInternalEditor(options.editorRoot || join(dirname(root), 'oldtimer-intern'));
 	const workspace = await realpath(await mkdtemp(join(tmpdir(), 'oldtimer-tools-')));
 	const uploads = new Map();
 	let origin, active = null, preview = null, revision = 0, shuttingDown = false;
@@ -180,7 +200,7 @@ export async function createControlPanel(rootInput, options = {}) {
 	const server = createServer(async (request, response) => {
 		const headers = {
 			'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer',
-			'Content-Security-Policy': "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' blob: data:; frame-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'",
+			'Content-Security-Policy': "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' blob: data:; font-src 'self' data:; frame-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'",
 		};
 		function send(code, data) { response.writeHead(code, { ...headers, 'Content-Type': 'application/json; charset=utf-8' }); response.end(JSON.stringify(data)); }
 		try {
@@ -188,8 +208,7 @@ export async function createControlPanel(rootInput, options = {}) {
 			const url = new URL(request.url, origin);
 			if (request.method === 'GET' && types[url.pathname]) {
 				const [file, type] = types[url.pathname];
-				let contents = await readFile(join(assets, file));
-				if (file === 'index.html') contents = contents.toString().replace('</head>', '<meta name="vehicle-tools" content="local-launcher">\n</head>');
+				const contents = assets.get(file);
 				response.writeHead(200, { ...headers, 'Content-Type': type + '; charset=utf-8' }); response.end(contents); return;
 			}
 			if (request.headers.authorization !== `Bearer ${token}`) { send(403, { error: 'Bitte die Werkzeuge über den Startknopf neu öffnen.' }); return; }

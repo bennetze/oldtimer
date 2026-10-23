@@ -104,6 +104,12 @@ test('launcher serves every classic editor script, including the watermark helpe
 	const html = await (await fetch(f.panel.origin)).text();
 	const scripts = [...html.matchAll(/<script\s+src="([^"]+)"\s*><\/script>/g)].map(match => match[1]);
 	assert.ok(scripts.includes('watermark.js'), 'Watermark helper is missing from the editor.');
+	assert.ok(scripts.includes('project-ui.js') && scripts.includes('website-tools.js'), 'Internal project workflow is missing.');
+	assert.ok(!scripts.includes('demo-ui.js'), 'Demo workflow must not be served by the launcher.');
+	assert.match(html, /name="vehicle-editor" content="internal"/);
+	assert.doesNotMatch(html, /Demo starten/);
+	const headers = await fetch(f.panel.origin);
+	assert.match(headers.headers.get('content-security-policy'), /font-src 'self' data:/);
 	const editor = fileURLToPath(new URL('../../oldtimer-intern/', import.meta.url));
 	for (const file of scripts) {
 		const response = await fetch(new URL(file, f.panel.origin));
@@ -111,6 +117,42 @@ test('launcher serves every classic editor script, including the watermark helpe
 		assert.match(response.headers.get('content-type'), /^text\/javascript/);
 		assert.equal(await response.text(), await readFile(join(editor, file), 'utf8'), `${file} must match the offline editor.`);
 	}
+});
+
+async function editorCopy(t) {
+	const directory = await realpath(await mkdtemp(join(tmpdir(), 'internal-editor-test-')));
+	t.after(() => rm(directory, { recursive: true, force: true }));
+	const source = fileURLToPath(new URL('../../oldtimer-intern/', import.meta.url));
+	const html = await readFile(join(source, 'index.html'), 'utf8');
+	const files = ['index.html', ...[...html.matchAll(/(?:src|href)="([^"/]+\.(?:js|css))"/g)].map(match => match[1])];
+	for (const file of new Set(files)) await writeFile(join(directory, file), await readFile(join(source, file)));
+	return directory;
+}
+
+test('launcher rejects a demo checkout and a mixed editor before serving any actions', async t => {
+	const directory = await editorCopy(t);
+	const html = await readFile(join(directory, 'index.html'), 'utf8');
+	await writeFile(join(directory, 'index.html'), html.replace('content="internal"', 'content="demo"'));
+	await assert.rejects(createControlPanel(directory, { editorRoot: directory }), /Demo nicht verwenden/);
+	await writeFile(join(directory, 'index.html'), html);
+	await writeFile(join(directory, 'editor.js'), 'window.VehicleDemoUI({});');
+	await assert.rejects(createControlPanel(directory, { editorRoot: directory }), /Demo nicht verwenden/);
+	await writeFile(join(directory, 'editor.js'), 'window.UnknownEditor({});');
+	await assert.rejects(createControlPanel(directory, { editorRoot: directory }), /Editor-Dateien passen nicht zusammen/);
+	await rm(join(directory, 'watermark.js'));
+	await assert.rejects(createControlPanel(directory, { editorRoot: directory }), /fehlt oder ist unvollständig/);
+});
+
+test('a running launcher retains its complete editor when checkout files change', async t => {
+	const directory = await editorCopy(t);
+	const f = await fixture(t, { editorRoot: directory });
+	const original = await (await fetch(f.panel.origin)).text();
+	const script = await readFile(join(directory, 'editor.js'), 'utf8');
+	await writeFile(join(directory, 'index.html'), '<h1>Demo starten</h1>');
+	await writeFile(join(directory, 'editor.js'), 'window.VehicleDemoUI({});');
+	assert.equal(await (await fetch(f.panel.origin)).text(), original);
+	assert.equal(await (await fetch(f.panel.origin + '/editor.js')).text(), script);
+	await assert.rejects(createControlPanel(directory, { editorRoot: directory }), /Demo nicht verwenden/);
 });
 
 test('direct draft save handles new, move, edit and combined save with the exact selected original', async t => {
