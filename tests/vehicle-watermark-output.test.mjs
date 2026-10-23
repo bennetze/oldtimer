@@ -11,6 +11,7 @@ import { readVehicleTool } from '../scripts/lib/vehicle-tool.mjs';
 import { validateVehicleRecord } from '../src/config/vehicleRecord.js';
 
 const source = await readVehicleTool('editor.js');
+const watermarkSource = source.slice(source.indexOf('        async function watermarkedFile('), source.indexOf('        async function previewPool('));
 const outputSource = source.slice(source.indexOf('        const preparedWatermarkFiles ='), source.indexOf('        function editorSnapshot()'));
 const record = { slug:'test-car', category:'aktuelle-projekte', title:'Fahrzeug', titleEn:'Car', description:'Beschreibung', descriptionEn:'Description', sourceUrl:'https://www.oldtimermanufaktur.de/projekte/aktuelle-projekte/test-car/', order:1, dateModified:'2026-10-18', cardImage:'./card.jpg', cardImageAlt:'Karte', cardImageAltEn:'Card', leadImage:'./photo.png', leadImageAlt:'Bild', leadImageAltEn:'Photo', blocks:[{type:'gallery',images:[{src:'./photo.png',alt:'Bild',altEn:'Photo',caption:'Text',captionEn:'Caption'},{src:'./card.jpg',alt:'Karte',altEn:'Card'}]}] };
 async function fixture() {
@@ -23,7 +24,7 @@ async function fixture() {
     const bytes = await sharp(Buffer.from(await file.arrayBuffer())).webp().toBuffer();
     return new File([bytes],file.name.replace(/\.[^.]+$/,'.webp'),{type:'image/webp'});
   }};
-  const prepare = vm.runInNewContext(`${outputSource}; prepareOutputSnapshot`, {
+  const prepare = vm.runInNewContext(`${watermarkSource}\n${outputSource}; prepareOutputSnapshot`, {
     window, TextEncoder, maxImageBytes:50*1024**2, maxExportBytes:512*1024**2,
     setStatus(){}, validateRecord:validateVehicleRecord,
     async checkImage(file) { assert.equal((await sharp(Buffer.from(await file.arrayBuffer())).metadata()).format,'webp'); },
