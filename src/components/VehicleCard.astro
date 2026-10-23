@@ -1,7 +1,8 @@
 ---
 import { vehicleImage } from '../config/vehicleImages';
 import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
-import { vehicleRoute, type VehicleEntry } from '../config/vehicles';
+import { translate } from '../i18n/translate.js';
+import { categoryByKey, vehicleRoute, type VehicleEntry } from '../config/vehicles';
 
 interface Props {
 	vehicle: VehicleEntry;
@@ -41,12 +42,14 @@ const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 			/>
 		</div>
 		<div class="vehicle-card__copy">
+			<p class="vehicle-card__category">{language === 'en' ? translate(categoryByKey[vehicle.data.category].label) : categoryByKey[vehicle.data.category].label}</p>
 			<h2>{content.title}</h2>
 		</div>
 	</a>
 </article>
 
 <style>
+	.vehicle-card__category { margin: 0 0 0.7rem; font-size: 0.8rem; letter-spacing: 0.06em; line-height: 1.5; text-transform: uppercase; }
 	.vehicle-card {
 		min-width: 0;
 		border: 1px solid rgba(17, 17, 17, 0.34);
@@ -95,7 +98,9 @@ const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 
 	.vehicle-card__copy {
 		display: flex;
-		align-items: flex-start;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 		min-height: 7.25rem;
 		padding: 1.45rem clamp(1.2rem, 1.7vw, 1.75rem) 1.65rem;
 	}

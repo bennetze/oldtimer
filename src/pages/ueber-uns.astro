@@ -8,15 +8,14 @@ import aboutSubtitles from '../assets/oldtimer/about-us.de.vtt?url&no-inline';
 import aboutPoster from '../assets/oldtimer/about-us-poster.jpg';
 import antonCar from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00382.webp';
 import antonPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00649.webp';
-import contactEntrance from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00445.webp';
-import contactExterior from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00113.webp';
-import marioPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00776.webp';
-import teamConversation from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00096.webp';
-import teamPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00806.webp';
-import teamWorkshop from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00104.webp';
+import contactEntrance from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00439.webp';
+import contactExterior from '../assets/oldtimer/L1005735.webp';
+import marioPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00803.webp';
+import teamConversation from '../assets/oldtimer/L1005486.webp';
+import teamPortrait from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-5959.webp';
+import teamWorkshop from '../assets/oldtimer/L1005816.webp';
 import germanyMap from '../assets/graphics/germany-silhouette.svg';
 import locationPin from '../assets/graphics/geo-alt-fill.svg';
-import teamPaint from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00517.webp';
 
 const qualifications = {
 	mario: ['KFZ-Mechaniker-Meister', 'KFZ-Elektriker-Meister', 'Karosseriebau-Meister'],
@@ -78,10 +77,10 @@ const film = {
 	sections={sectionNavigationItems}
 	theme="light"
 	background="var(--gradient-green)"
-	openGraphImage={aboutPoster}
-	openGraphImageAlt="Front eines historischen BMW mit geöffneter Motorhaube – erstes Bild des Unternehmensfilms."
+	openGraphImage={teamPortrait}
+	openGraphImageAlt="Das Team der Oldtimermanufaktur steht zwischen historischen Fahrzeugen in der Werkstatt."
 	structuredDataType="AboutPage"
-	dateModified="2026-10-14"
+	dateModified="2026-10-23"
 	additionalJsonLd={[...people, brand, film]}
 	sectionNavigationVisible={false}
 >
@@ -97,9 +96,6 @@ const film = {
 				>
 					<header
 						class="profile-heading"
-						data-parallax-layer
-						data-speed="0.045"
-						data-range="42"
 					>
 						<h2 id="mario-title"><span class="profile-name">Mario Schrank</span><span class="profile-role"> - Gründer/<wbr />Inhaber/<wbr />Geschäftsführer</span></h2>
 						<p class="profile-credentials">
@@ -116,7 +112,7 @@ const film = {
 							>
 								<Image
 									src={marioPortrait}
-									alt="Mario Schrank im dunkelblauen Poloshirt neben einem roten historischen Fahrzeug."
+									alt="Mario Schrank steht neben einem roten historischen Cabriolet in der Werkstatt."
 									widths={[560, 760, 972]}
 									sizes="(max-width: 840px) 88vw, 48vw"
 									format="webp"
@@ -151,9 +147,6 @@ const film = {
 			>
 				<header
 					class="profile-heading"
-					data-parallax-layer
-					data-speed="0.045"
-					data-range="42"
 				>
 					<h2 id="anton-title"><span class="profile-name">Anton Schrank</span></h2>
 					<p class="profile-credentials">
@@ -219,7 +212,7 @@ const film = {
 			>
 				<h2 id="team-title">Das Team</h2>
 				<div class="story__layout">
-					<div class="collage collage--triple collage--right collage--team-details" role="group" aria-label="Einblicke in die Arbeit des Teams">
+					<div class="collage collage--triple collage--right collage--team-details collage--layered" role="group" aria-label="Einblicke in die Arbeit des Teams">
 						<figure
 							class="image-layer image-layer--team-main"
 							data-parallax-layer
@@ -228,8 +221,8 @@ const film = {
 						>
 							<Image
 								src={teamPortrait}
-								alt="Eine weiß behandschuhte Hand liegt auf rotem Lack neben einer verchromten Fahrzeugleuchte."
-								widths={[760, 1120, 1536]}
+								alt="Das Team der Oldtimermanufaktur steht zwischen historischen Fahrzeugen in der Werkstatt."
+								widths={[760, 1120, 1536, 2121]}
 								sizes="(max-width: 840px) 94vw, 55vw"
 								format="webp"
 								loading="lazy"
@@ -243,7 +236,7 @@ const film = {
 						>
 							<Image
 								src={teamConversation}
-								alt="Eine Hand liegt auf einer blanken Karosseriekante mit Schleifspuren."
+								alt="Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt."
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 72vw, 42vw"
 								format="webp"
@@ -258,15 +251,12 @@ const film = {
 						>
 							<Image
 								src={teamWorkshop}
-								alt="Hände bearbeiten die Kante eines Blechteils auf einer Werkbank."
+								alt="Ein Mitarbeiter verarbeitet helles Polstermaterial an einer Nähmaschine."
 								widths={[560, 840, 1120]}
 								sizes="(max-width: 840px) 58vw, 31vw"
 								format="webp"
 								loading="lazy"
 							/>
-						</figure>
-						<figure class="image-layer image-layer--team-paint" data-parallax-layer data-speed="0.14" data-range="110">
-							<Image src={teamPaint} alt="Eine Lackierpistole mit weißem Behälter sprüht auf eine helle Oberfläche." widths={[480, 760, 1024]} sizes="(max-width: 840px) 55vw, 28vw" format="webp" loading="lazy" />
 						</figure>
 					</div>
 
@@ -313,7 +303,7 @@ const film = {
 						>
 							<Image
 								src={contactExterior}
-								alt="Ein Mitarbeiter arbeitet an einem hellblauen Cabriolet, mit weiteren Fahrzeugen in der Werkstatt."
+								alt="Helle Cabriolet-Karosserie auf einer Hebebühne mit weiteren Oldtimern in der Werkstatt."
 								widths={[560, 760, 1024]}
 								sizes="(max-width: 840px) 88vw, 48vw"
 								format="webp"
@@ -328,7 +318,7 @@ const film = {
 						>
 							<Image
 								src={contactEntrance}
-								alt="Drei Mitarbeiter stehen im Gespräch neben einem dunkelblauen Cabriolet in der Werkstatt."
+								alt="Verchromtes Emblem und Zierleiste auf der hellen Motorhaube eines historischen Automobils."
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 76vw, 42vw"
 								format="webp"
@@ -417,50 +407,36 @@ const film = {
 	:global(.editorial-page) .collage--portraits { display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
 	:global(.editorial-page) .collage--portraits .image-layer--portrait { width: 110%; }
 	:global(.editorial-page) .collage--portraits .image-layer--landscape { width: 100%; margin-top: 55%; }
-	:global(.editorial-page) .story--team {
-		/* Reserve the full 170px downward travel plus heading clearance. */
-		padding-bottom: max(var(--story-gap), clamp(15rem, 18vw, 18rem));
-	}
-	:global(.editorial-page) .story--team h2 {
-		/* The top photo can travel 80px toward the heading. */
-		margin-bottom: clamp(10rem, 12vw, 12rem);
-	}
 	:global(.editorial-page) .collage--team-details {
-		min-height: clamp(50rem, 66vw, 60rem);
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		gap: 0;
+		min-height: 0;
 	}
 	:global(.editorial-page) .collage--team-details .image-layer {
-		position: absolute;
+		position: relative;
 		inset: auto;
+		width: 100%;
 		height: auto;
 		margin: 0;
+	}
+	:global(.editorial-page) .collage--team-details .image-layer--team-main {
+		grid-column: 1 / -1;
+		grid-row: 1;
+	}
+	:global(.editorial-page) .collage--team-details .image-layer--team-conversation {
+		grid-column: 1 / 7;
+		grid-row: 2;
+		margin-top: clamp(3rem, 5vw, 5rem);
+	}
+	:global(.editorial-page) .collage--team-details .image-layer--team-workshop {
+		grid-column: 8 / -1;
+		grid-row: 2;
+		margin-top: clamp(5rem, 8vw, 8rem);
 	}
 	:global(.editorial-page) .collage--team-details img {
 		display: block;
 		height: auto;
-	}
-	:global(.editorial-page) .collage--team-details .image-layer--team-main {
-		top: 0;
-		right: 0;
-		width: 74%;
-		z-index: 1;
-	}
-	:global(.editorial-page) .collage--team-details .image-layer--team-conversation {
-		top: 30%;
-		left: 0;
-		width: 52%;
-		z-index: 2;
-	}
-	:global(.editorial-page) .collage--team-details .image-layer--team-workshop {
-		bottom: 4%;
-		right: 0;
-		width: 48%;
-		z-index: 3;
-	}
-	:global(.editorial-page) .collage--team-details .image-layer--team-paint {
-		bottom: 0;
-		left: 10%;
-		width: 24%;
-		z-index: 4;
 	}
 	:global(.editorial-page) .collage--contact {
 		min-height: clamp(34rem, 52vw, 48rem);
@@ -470,7 +446,7 @@ const film = {
 		height: auto;
 	}
 	:global(.editorial-page) .collage--contact .image-layer--landscape {
-		width: 68%;
+		width: 48%;
 		height: auto;
 	}
 	:global(.editorial-page) .collage--contact img {
@@ -479,16 +455,6 @@ const film = {
 	}
 	@media (max-width: 840px) {
 		:global(.editorial-page) .collage--single .image-layer { width: 90%; }
-		:global(.editorial-page) .story--team .story__layout { gap: clamp(2.5rem, 10vw, 4rem); }
-		:global(.editorial-page) .story--team { padding-bottom: var(--story-gap); }
-		:global(.editorial-page) .story--team h2 { margin-bottom: clamp(2rem, 8vw, 3rem); }
-		:global(.editorial-page) .collage--team-details {
-			min-height: clamp(28rem, 140vw, 40rem);
-		}
-		:global(.editorial-page) .collage--team-details .image-layer--team-main { width: 88%; }
-		:global(.editorial-page) .collage--team-details .image-layer--team-conversation { top: 32%; width: 65%; }
-		:global(.editorial-page) .collage--team-details .image-layer--team-workshop { width: 57%; bottom: 7%; }
-		:global(.editorial-page) .collage--team-details .image-layer--team-paint { width: 31%; left: 3%; }
 		:global(.editorial-page) .collage--contact {
 			min-height: 0;
 			display: grid;
@@ -502,10 +468,8 @@ const film = {
 	}
 
 	.profile-heading {
-		margin-bottom: clamp(8rem, 10vw, 10.5rem);
+		margin-bottom: clamp(3rem, 5vw, 5rem);
 		text-align: center;
-		transform: translate3d(0, var(--parallax-y, 0), 0);
-		will-change: transform;
 	}
 
 	:global(.editorial-page .story .profile-heading h2) {
@@ -515,12 +479,12 @@ const film = {
 	#mario-title .profile-name,
 	#mario-title .profile-role,
 	.profile-heading:has(#mario-title) .profile-credentials {
-		color: #276b57;
+		color: #721f2b;
 	}
 
 	#anton-title .profile-name,
 	.profile-heading:has(#anton-title) .profile-credentials {
-		color: #aad6c3;
+		color: #d7838d;
 	}
 
 	:global(.editorial-page .story .profile-heading #mario-title) {
@@ -572,7 +536,7 @@ const film = {
 	}
 
 	.story--contact {
-		padding-bottom: clamp(11rem, 16vw, 17rem);
+		padding-bottom: clamp(5rem, 8vw, 8rem);
 	}
 
 	:global(.editorial-page) .section-closing-copy {
@@ -584,8 +548,6 @@ const film = {
 		position: relative;
 		width: min(82%, 18rem);
 		margin: 4.5rem auto 1.75rem;
-		transform: translate3d(0, var(--parallax-y, 0), 0);
-		will-change: transform;
 	}
 
 	.location-map__silhouette {
@@ -710,7 +672,7 @@ const film = {
 
 	@media (max-width: 840px) {
 		.story--contact {
-			padding-bottom: clamp(8rem, 29vw, 11rem);
+			padding-bottom: clamp(5rem, 20vw, 7rem);
 		}
 
 		.contact-list a {

@@ -220,3 +220,27 @@ not automatic production approval. The company-wide media statements already
 recorded above remain intact, but original/creator/release linkage is still missing.
 The [production release checklist](PRODUCTION-RELEASE-CHECKLIST.md) records these
 evidence requirements, responsible roles and the final-host acceptance gate.
+
+## Editorial photo selection — 23 October 2026
+
+The preview reuses existing local library photographs; no images were generated.
+Updated placements are Mario (`oldtimermanufaktur-fotos-2/DSC00803.webp`), team
+(`oldtimermanufaktur-fotos-2/DSC00445.webp`, `L1005486.webp`, `L1005816.webp`),
+contact (`L1005735.webp`, `oldtimermanufaktur-fotos-2/DSC00439.webp`), bodywork
+(`L1005486.webp`, `oldtimermanufaktur-fotos-2/DSC00081.webp`) and the two added
+mechanical detail photographs (`oldtimermanufaktur-fotos-2/DSC00171.webp`,
+`oldtimermanufaktur-fotos-2/DSC00207.webp`). All paths are below
+`src/assets/oldtimer/`. Existing production evidence and approval requirements
+remain pending; this placement record does not establish new rights clearance.
+
+## Motor Klassik team photograph — preview use, 23 October 2026
+
+- Original: `Motor Klassik Internet/Querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-5959.jpg`.
+- Derivative: `src/assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-5959.webp`.
+- The user explicitly requested this image for the Über uns team section. It is the
+  principal team photograph and the page's Open Graph/structured-data image in the
+  development preview; German and English versions share the photograph.
+- Original/derivative hashes and encoding details: `audits/media/motor-klassik/manifest.json`.
+- Production evidence remains pending: photographer/rightsholder, website/social-preview
+  usage scope, required credit and applicable permissions for recognizable people.
+  This preview-use request does not close the production media-rights release gate.

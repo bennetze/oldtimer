@@ -3,8 +3,10 @@ import { Image } from 'astro:assets';
 import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
 import mechanicsPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00155.webp';
 import mechanicsLandscape from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00216.webp';
-import bodyPortrait from '../assets/oldtimer/L1005524.webp';
-import bodyLandscape from '../assets/oldtimer/L1005735.webp';
+import bodyPortrait from '../assets/oldtimer/L1005486.webp';
+import bodyLandscape from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00081.webp';
+import mechanicsCarburettors from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00171.webp';
+import mechanicsEngineBay from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00207.webp';
 import bodyDetail from '../assets/oldtimer/oldtimermanufaktur-verzinnen/L1006963.webp';
 import paintPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00878.webp';
 import paintLandscape from '../assets/oldtimer/L1005705.webp';
@@ -34,7 +36,7 @@ const services = [
 	"Voll- und Teilrestaurierungen in allen Gewerken und Fahrzeugklassen",
 	"eigener Karosseriebau mit Stellmacherei",
 	"eigene Lackiererei",
-	"sämtliche technische Instandsetzungen",
+	"sämtliche technischen Instandsetzungen",
 	"eigener Motorenbau und Motorrevisionen",
 	"eigene Autosattlerei",
 	"eigene Feinmechanikabteilung (Drehen, Fräsen, Schleifen, Polieren...)",
@@ -44,6 +46,7 @@ const services = [
 	"Fahrzeugüberführungen im eigenen geschlossenen Spezialtrailer",
 	"Fahrzeuggutachten (Wertgutachten, Schadensgutachten, H-Gutachten, TÜV-, DEKRA- Vollabnahmen und Sonderabnahmen im eigenen Haus)",
 	"sichere Fahrzeugeinlagerung / Oldtimerpension",
+	"Oldtimerfahrten / Hochzeitsfahrten",
 ];
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
@@ -57,10 +60,10 @@ const organizationId = `${siteRootUrl.href}#organization`;
 const handwerkServiceJsonLd = {
 	'@type': 'Service',
 	'@id': serviceId,
-	name: 'Handwerk – Alles aus einer fachkundigen Hand',
+	name: 'Handwerk - Alles aus einer Hand',
 	serviceType: 'Restaurierung historischer Automobile',
 	description:
-		'Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorenbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten und sichere Einlagerung.',
+		'Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorenbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten, sichere Einlagerung und Oldtimer- und Hochzeitsfahrten.',
 	url: pageUrl.href,
 	provider: { '@id': organizationId },
 	hasOfferCatalog: {
@@ -79,17 +82,17 @@ const handwerkServiceJsonLd = {
 ---
 
 <EditorialPageLayout
-	title="Handwerk – Alles aus einer fachkundigen Hand"
-	heading="Handwerk – Alles aus einer fachkundigen Hand"
+	title="Handwerk - Alles aus einer Hand"
+	heading="Handwerk - Alles aus einer Hand"
 	headingMaxWidth="26ch"
-	description="Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorenbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten und sichere Einlagerung."
+	description="Voll- und Teilrestaurierungen, Karosseriebau, Mechanik, Motorenbau, Lackiererei und Sattlerei sowie Teileneufertigung, Fahrzeugüberführungen, Gutachten, sichere Einlagerung und Oldtimer- und Hochzeitsfahrten."
 	sections={sectionNavigationItems}
 	theme="light"
 	background="var(--gradient-green)"
 	openGraphImage={bodyPortrait}
-	openGraphImageAlt="Ein Mitarbeiter mit Gesichtsschutz und Gehörschutz schleift ein Karosserieblech unter Funkenflug."
+	openGraphImageAlt="Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt."
 	structuredDataType="CollectionPage"
-	dateModified="2026-10-14"
+	dateModified="2026-10-23"
 	additionalJsonLd={handwerkServiceJsonLd}
 >
 	<section
@@ -109,7 +112,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={bodyPortrait}
-						alt="Ein Mitarbeiter mit Gesichtsschutz und Gehörschutz schleift ein Karosserieblech unter Funkenflug."
+						alt="Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt."
 						widths={[560, 760, 1024, 1280]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
@@ -124,7 +127,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={bodyLandscape}
-						alt="Helle Cabriolet-Karosserie auf einer Hebebühne, daneben ein abgenommenes Karosserieteil und weitere Oldtimer."
+						alt="Eine historische Karosserie mit freigelegtem Holzgerippe und angepassten Blechteilen auf einem Werkstattgestell."
 						widths={[640, 960, 1280, 1600]}
 						sizes="(max-width: 840px) 76vw, 42vw"
 						format="webp"
@@ -150,7 +153,7 @@ const handwerkServiceJsonLd = {
 
 			<div class="story__copy">
 				<p>Originalgetreue Anfertigungen vom Blechteil bis zur kompletten Karosserie.</p>
-				<p>In unserer hauseigenen und bestens ausgestatteten Karosseriebauwerkstatt beseitigen wir mit sehr erfahrenen Mitarbeitern und deren langjährigem Knowhow selbst hoffnungslos geglaubte Karosserieschäden. Dafür stehen uns alle gängigen Schweiß- und Formgebungsmaschinen und -werkzeuge zur Verfügung. Blechteile in Stahl, Aluminium, Edelstahl und Messing werden hier entsprechend instandgesetzt, neu angefertigt, angepasst und so zusammengefügt, dass Proportionen, Übergänge und Spaltmaße wieder ein stimmiges Ganzes ergeben.</p>
+				<p>In unserer hauseigenen und bestens ausgestatteten Karosseriebauwerkstatt beseitigen wir mit sehr erfahrenen Mitarbeitern und deren langjährigem Knowhow selbst hoffnungslos geglaubte Karosserieschäden. Dafür stehen uns alle gängigen Schweißtechniken sowie sämtliche speziellen Formgebungsmaschinen und -werkzeuge zur Verfügung. Blechteile in Stahl, Aluminium, Edelstahl und Messing werden hier entsprechend instandgesetzt, neu angefertigt, angepasst und so zusammengefügt, dass Proportionen, Konturen, Übergänge und Spaltmaße wieder ein stimmiges Ganzes ergeben.</p>
 				<p>Auch die notwendigen Holzarbeiten für stabile Karosseriestrukturen früherer Jahrzehnte, als auch edle Furnierarbeiten entstehen in unserer Stellmacherei neu bzw. werden entsprechend originalgetreu restauriert und rekonstruiert.</p>
 			</div>
 		</div>
@@ -164,13 +167,15 @@ const handwerkServiceJsonLd = {
 	>
 		<h2 id="mechanik-title">Mechanik - technische Instandsetzungen</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--left" role="group" aria-label="Arbeiten in der mechanischen Abteilung">
+			<div class="collage collage--mechanics collage--left collage--layered" role="group" aria-label="Arbeiten in der mechanischen Abteilung">
 				<figure class="image-layer image-layer--portrait" data-parallax-layer data-speed="0.126" data-range="138">
 					<Image src={mechanicsPortrait} alt="Ein Mechaniker arbeitet an einem geöffneten Getriebe mit sichtbaren Zahnrädern." widths={[560, 760, 1024, 1280]} sizes="(max-width: 840px) 88vw, 48vw" format="webp" loading="lazy" />
 				</figure>
 				<figure class="image-layer image-layer--landscape" data-parallax-layer data-speed="0.218" data-range="202">
 					<Image src={mechanicsLandscape} alt="Lenkrad und historische Instrumente im Armaturenbrett eines klassischen Automobils." widths={[640, 960, 1280, 1600]} sizes="(max-width: 840px) 76vw, 42vw" format="webp" loading="lazy" />
 				</figure>
+				<figure class="image-layer" data-parallax-layer data-speed="0.12" data-range="70"><Image src={mechanicsCarburettors} alt="Vergaseranlage mit Leitungen und Gestänge in der mechanischen Abteilung." widths={[480, 760, 1024]} sizes="(max-width: 840px) 44vw, 26vw" format="webp" loading="lazy" /></figure>
+				<figure class="image-layer" data-parallax-layer data-speed="0.12" data-range="70"><Image src={mechanicsEngineBay} alt="Blick in den geöffneten Motorraum eines historischen Automobils." widths={[480, 760, 1024]} sizes="(max-width: 840px) 44vw, 26vw" format="webp" loading="lazy" /></figure>
 			</div>
 			<div class="story__copy">
 				<p>In unserer mechanischen Abteilung finden sämtliche technischen Instandsetzungen statt. Achsen-, Bremsen, Lenkungs-, Getriebeüberholungen, aber auch Instandsetzungen an der Fahrzeugelektrik bis hin zur Neuanfertigung ganzer Kabelbäume.</p>
@@ -221,7 +226,7 @@ const handwerkServiceJsonLd = {
 			</div>
 
 			<div class="story__copy">
-				<p>Hier werden Instandsetzungen an Motoren sowie Zünd- und Kraftstoffanlagen vorgenommen. Auch der Neuaufbau ganzer Motoren findet hier statt. Dafür erforderlich ist natürlich ein moderner Maschinenpark für sämtliche Bohr-, Dreh- und Fräsarbeiten.</p>
+				<p>Hier werden Instandsetzungen an Motoren sowie Zünd- und Kraftstoffanlagen vorgenommen. Auch der Neuaufbau ganzer Motoren findet hier statt. Dafür erforderlich ist natürlich ein moderner Maschinenpark für sämtliche Bohr-, Dreh-, Fräs- und Spindelarbeiten.</p>
 			</div>
 		</div>
 	</section>
@@ -338,7 +343,7 @@ const handwerkServiceJsonLd = {
 	>
 		<div class="services-content">
 			<h2 id="leistungen-title">Leistungen</h2>
-			<ul class="services-list" role="list" data-parallax-layer data-speed="0.18" data-range="120">
+			<ul class="services-list" role="list">
 				{services.map((service) => <li><span>{service}</span></li>)}
 			</ul>
 		</div>
@@ -346,6 +351,14 @@ const handwerkServiceJsonLd = {
 </EditorialPageLayout>
 
 <style>
+	:global(.editorial-page) .collage--mechanics { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: start; }
+	:global(.editorial-page) .collage--mechanics .image-layer { position: relative; inset: auto; width: 100%; height: auto; }
+	:global(.editorial-page) .collage--mechanics .image-layer:nth-child(1) { grid-column: 1 / 9; grid-row: 1; z-index: 1; }
+	:global(.editorial-page) .collage--mechanics .image-layer:nth-child(2) { grid-column: 7 / -1; grid-row: 1; align-self: end; margin-bottom: -12%; z-index: 2; }
+	:global(.editorial-page) .collage--mechanics .image-layer:nth-child(3) { grid-column: 2 / 10; grid-row: 2; margin-top: -8%; z-index: 3; }
+	:global(.editorial-page) .collage--mechanics .image-layer:nth-child(4) { grid-column: 7 / -1; grid-row: 2; margin-top: 24%; z-index: 4; }
+	:global(.editorial-page) .collage--mechanics img { display: block; height: auto; }
+
 	:global(.editorial-page) .story--services {
 		padding-top: 3rem;
 		padding-bottom: clamp(6rem, 12vw, 12rem);
@@ -356,12 +369,12 @@ const handwerkServiceJsonLd = {
 		margin-inline: auto;
 	}
 	:global(.editorial-page) .story--services h2 {
-		margin-bottom: clamp(9rem, 12vw, 12rem);
+		margin-bottom: clamp(3rem, 5vw, 5rem);
 	}
 	.services-list {
 		display: grid;
 		gap: clamp(1.5rem, 2.4vw, 2.25rem);
-		justify-items: start;
+		justify-items: center;
 		width: fit-content;
 		max-width: min(100%, 60rem);
 		margin: 0 auto;
@@ -370,12 +383,9 @@ const handwerkServiceJsonLd = {
 		font-size: clamp(1.25rem, 1.7vw, 1.625rem);
 		font-weight: 400;
 		line-height: 1.75;
-		text-align: left;
+		text-align: center;
 		text-wrap: balance;
 		letter-spacing: 0.008em;
-	}
-	.services-list {
-		transform: translate3d(0, var(--parallax-y, 0), 0);
 	}
 	.services-list li {
 		max-width: 100%;

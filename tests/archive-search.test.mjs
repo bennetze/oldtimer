@@ -50,3 +50,18 @@ test('deferred cards materialize once for a restored query and clear back to the
 	assert.equal(filter('Mercedes').count, 1); assert.equal(loads, 1);
 	filter(''); assert.equal(initial.hidden, false); assert.equal(deferred.hidden, true);
 });
+
+test('a search in an empty category can reveal vehicles from both other categories and clear back to empty', () => {
+	const current = card('BMW Coupé', false);
+	const completed = card('BMW 327', false);
+	const filter = createCardFilter([], { matches: true, addEventListener() {} }, () => [current, completed]);
+	assert.deepEqual(filter('BMW'), { searching: true, count: 2 });
+	assert.equal(current.hidden, false);
+	assert.equal(completed.hidden, false);
+	assert.deepEqual(filter('missing'), { searching: true, count: 0 });
+	assert.equal(current.hidden, true);
+	assert.equal(completed.hidden, true);
+	assert.deepEqual(filter(''), { searching: false, count: 0 });
+	assert.equal(current.hidden, true);
+	assert.equal(completed.hidden, true);
+});

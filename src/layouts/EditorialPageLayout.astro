@@ -4,6 +4,7 @@ import BackgroundTexture from '../components/BackgroundTexture.astro';
 import SectionNavigation from '../components/SectionNavigation.astro';
 import SiteChrome from '../components/SiteChrome.astro';
 import Layout from './Layout.astro';
+import '../styles/subpagePalette.css';
 
 interface SectionItem {
 	id: string;
@@ -79,15 +80,20 @@ const openingId = sections[0]?.id;
 <script>
 	import { watchMedia } from '../scripts/accessibility.js';
 	import { fragmentId } from '../config/fragments.js';
+	import { boundedParallaxOffset, orderedParallaxOffsets } from '../scripts/editorialParallax.js';
 	const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 	const editorialPage = document.querySelector('.editorial-page');
 	const parallaxGroups = [...document.querySelectorAll('[data-parallax-group]')];
 	const visibleGroups = new Set();
-	const geometry = new Map(parallaxGroups.map(group => [group, {
-		heading: group.querySelector('.profile-heading') ?? group.querySelector('h2'),
-		copy: group.querySelector('.story__copy'),
-		layers: [...group.querySelectorAll('[data-parallax-layer]')],
-	}]));
+	const geometry = new Map(parallaxGroups.map(group => {
+		const blocks = [
+			group.querySelector('.profile-heading') ?? group.querySelector('h2'),
+			group.querySelector('.story__layout') ?? group.querySelector('.services-list'),
+			...group.querySelectorAll(':scope > .section-closing-copy'),
+		].filter((block) => block instanceof HTMLElement);
+		blocks.forEach(block => block.setAttribute('data-editorial-flow', ''));
+		return [group, { blocks, layers: [...group.querySelectorAll('.image-layer[data-parallax-layer]')] }];
+	}));
 	let parallaxFrame;
 	let initialHashAligned = false;
 
@@ -130,9 +136,10 @@ const openingId = sections[0]?.id;
 		window.scrollTo(0, targetTop);
 	};
 
-	const limit = (value, minimum, maximum) => Math.min(Math.max(value, minimum), maximum);
-
 	const resetParallax = () => {
+		document.querySelectorAll('[data-editorial-flow]').forEach((block) => {
+			if (block instanceof HTMLElement) block.style.setProperty('--flow-parallax-y', '0px');
+		});
 		document.querySelectorAll('[data-parallax-layer]').forEach((layer) => {
 			if (layer instanceof HTMLElement) {
 				layer.style.setProperty('--parallax-y', '0px');
@@ -151,9 +158,9 @@ const openingId = sections[0]?.id;
 		const viewportCenter = window.innerHeight / 2;
 		const isMobileLayout = window.innerWidth <= 840;
 		const mobileFactor = isMobileLayout ? 0.18 : 1;
-		const mobileTextClearance = 24;
 
 		const updates = [];
+		const flowUpdates = [];
 		visibleGroups.forEach((group) => {
 			if (!(group instanceof HTMLElement)) {
 				return;
@@ -163,8 +170,17 @@ const openingId = sections[0]?.id;
 			const groupCenter = groupBounds.top + groupBounds.height / 2;
 			const distance = viewportCenter - groupCenter;
 			const elements = geometry.get(group);
-			const headingBounds = elements.heading?.getBoundingClientRect();
-			const copyBounds = elements.copy?.getBoundingClientRect();
+			const blocks = elements.blocks.map((block, index) => {
+				const bounds = block.getBoundingClientRect();
+				const currentOffset = Number.parseFloat(block.style.getPropertyValue('--flow-parallax-y')) || 0;
+				return {
+					top: bounds.top - currentOffset, bottom: bounds.bottom - currentOffset,
+					range: (index === 0 ? 48 : 120) * mobileFactor,
+					requested: distance * (index === 0 ? 0.08 : 0.18) * mobileFactor,
+				};
+			});
+			const offsets = orderedParallaxOffsets(blocks, groupBounds.top, groupBounds.bottom, isMobileLayout ? 16 : 24);
+			elements.blocks.forEach((block, index) => flowUpdates.push([block, `${offsets[index].toFixed(2)}px`]));
 
 			elements.layers.forEach((layer) => {
 				if (!(layer instanceof HTMLElement)) {
@@ -173,42 +189,24 @@ const openingId = sections[0]?.id;
 
 				const speed = Number(layer.dataset.speed ?? 0) * mobileFactor;
 				const range = Number(layer.dataset.range ?? 0) * mobileFactor;
-				let minimumOffset = -range;
-				let maximumOffset = range;
-
-				if (isMobileLayout && layer.classList.contains('image-layer')) {
-					const currentOffset = Number.parseFloat(
-						layer.style.getPropertyValue('--parallax-y'),
-					) || 0;
-					const layerBounds = layer.getBoundingClientRect();
-					const baseTop = layerBounds.top - currentOffset;
-					const baseBottom = layerBounds.bottom - currentOffset;
-
-					if (headingBounds) {
-						minimumOffset = Math.max(
-							minimumOffset,
-							headingBounds.bottom + mobileTextClearance - baseTop,
-						);
-					}
-
-					if (copyBounds) {
-						maximumOffset = Math.min(
-							maximumOffset,
-							copyBounds.top - mobileTextClearance - baseBottom,
-						);
-					}
-				}
-
-				const requestedOffset = distance * speed;
-				const offset = limit(
-					requestedOffset,
-					minimumOffset,
-					Math.max(minimumOffset, maximumOffset),
+				const stage = layer.closest('.collage');
+				if (!(stage instanceof HTMLElement)) return;
+				const currentOffset = Number.parseFloat(layer.style.getPropertyValue('--parallax-y')) || 0;
+				const layerBounds = layer.getBoundingClientRect();
+				const stageBounds = stage.getBoundingClientRect();
+				// Layered collages allow photo-to-photo overlap, always inside the media stage.
+				const offset = window.getComputedStyle(stage).display === 'grid' && !stage.classList.contains('collage--layered') ? 0 : boundedParallaxOffset(
+					distance * speed, range,
+					layerBounds.top - currentOffset, layerBounds.bottom - currentOffset,
+					stageBounds.top, stageBounds.bottom,
 				);
 				updates.push([layer, `${offset.toFixed(2)}px`]);
 			});
 		});
 		// Finish every geometry read before the first transform write.
+		flowUpdates.forEach(([block, value]) => {
+			if (block.style.getPropertyValue('--flow-parallax-y') !== value) block.style.setProperty('--flow-parallax-y', value);
+		});
 		updates.forEach(([layer, value]) => {
 			if (layer.style.getPropertyValue('--parallax-y') !== value) layer.style.setProperty('--parallax-y', value);
 		});
@@ -268,7 +266,7 @@ const openingId = sections[0]?.id;
 
 <style is:global>
 	.editorial-page {
-		--story-gap: clamp(19rem, 29vw, 29rem);
+		--story-gap: clamp(8rem, 13vw, 13rem);
 		--story-scroll-offset: calc(var(--site-header-height, 132px) + clamp(1.5rem, 3vh, 2.5rem));
 		--editorial-color: #000000;
 		--editorial-line: rgba(17, 17, 17, 0.34);
@@ -316,7 +314,7 @@ const openingId = sections[0]?.id;
 	/* Only the two color transitions need this extra travel distance. */
 	.editorial-page--light .editorial-opening,
 	.editorial-page--light > .story:nth-last-child(2) {
-		--story-gap: clamp(20rem, 32.5vw, 32rem);
+		--story-gap: clamp(10rem, 16vw, 16rem);
 	}
 
 	.editorial-page--light .editorial-opening::before {
@@ -380,7 +378,7 @@ const openingId = sections[0]?.id;
 	}
 
 	.editorial-page .story h2 {
-		margin-bottom: clamp(8rem, 10vw, 10.5rem);
+		margin-bottom: clamp(3rem, 5vw, 5rem);
 		font-size: clamp(1.9rem, 3.2vw, 3.4rem);
 		font-weight: 450;
 		line-height: 1;
@@ -422,6 +420,7 @@ const openingId = sections[0]?.id;
 
 	.editorial-page .story__copy {
 		max-width: 37rem;
+		text-align: center;
 	}
 
 	.editorial-page .story__copy p,
@@ -441,15 +440,21 @@ const openingId = sections[0]?.id;
 
 	.editorial-page .story__copy blockquote {
 		position: relative;
-		padding: clamp(1.4rem, 2.6vw, 2.4rem) 0 clamp(1.4rem, 2.6vw, 2.4rem) clamp(1.4rem, 2.4vw, 2.2rem);
-		border-left: 1px solid var(--editorial-line);
+		padding: clamp(1.4rem, 2.6vw, 2.4rem) 0;
+		border-block: 1px solid var(--editorial-line);
 		font-size: clamp(1.2rem, 1.45vw, 1.5rem);
 		font-weight: 450;
 		line-height: 1.48;
 	}
 
+	.editorial-page [data-editorial-flow] {
+		transform: translate3d(0, var(--flow-parallax-y, 0), 0);
+		will-change: transform;
+	}
+
 	.editorial-page .collage {
 		position: relative;
+		overflow: clip;
 	}
 
 	.editorial-page .collage--double {
@@ -563,13 +568,13 @@ const openingId = sections[0]?.id;
 
 	@media (max-width: 840px) {
 		.editorial-page {
-			--story-gap: clamp(11rem, 44vw, 15rem);
+			--story-gap: clamp(5rem, 20vw, 7rem);
 			--story-scroll-offset: calc(var(--site-header-height, 104px) + 1.25rem);
 		}
 
 		.editorial-page--light .editorial-opening,
 		.editorial-page--light > .story:nth-last-child(2) {
-			--story-gap: clamp(14rem, 55vw, 20rem);
+			--story-gap: clamp(7rem, 28vw, 10rem);
 		}
 
 		.editorial-intro {
@@ -658,6 +663,7 @@ const openingId = sections[0]?.id;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
+		.editorial-page [data-editorial-flow],
 		.editorial-page .image-layer {
 			transform: none !important;
 			will-change: auto;

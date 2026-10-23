@@ -2,6 +2,7 @@
 import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
 import { vehicleImage } from '../config/vehicleImages';
 import Layout from '../layouts/Layout.astro';
+import '../styles/subpagePalette.css';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
 import { pageModified } from '../config/modificationDates.js';
 import SiteChrome from './SiteChrome.astro';
@@ -9,6 +10,7 @@ import BackgroundTexture from './BackgroundTexture.astro';
 import VehicleCard from './VehicleCard.astro';
 import {
 	categoryByKey,
+	getCategoryVehicles,
 	vehicleCategories,
 	vehicleRoute,
 	type VehicleCategoryKey,
@@ -24,11 +26,12 @@ interface Props {
 
 const { category, vehicles, currentPage = 1, pageSize = vehicles.length || 1 } = Astro.props;
 const categoryData = categoryByKey[category];
+const allVehicles = (await Promise.all(vehicleCategories.map(item => getCategoryVehicles(item.key)))).flat();
 const totalPages = Math.ceil(vehicles.length / pageSize);
 const safePage = Math.min(Math.max(currentPage, 1), Math.max(totalPages, 1));
 const firstIndex = (safePage - 1) * pageSize;
 const visibleVehicles = vehicles.slice(firstIndex, firstIndex + pageSize);
-const lastIndex = firstIndex + visibleVehicles.length;
+const visibleIds = new Set(visibleVehicles.map(vehicle => vehicle.id));
 const searchId = `vehicle-search-${category}`;
 const gridId = `vehicle-grid-${category}`;
 const pageTitle = safePage > 1 ? `${categoryData.heading} – Seite ${safePage}` : categoryData.heading;
@@ -69,7 +72,7 @@ const itemList = {
 <Layout
 	authoredImageAlt={Boolean(openGraphVehicle)}
 	title={pageTitle}
-	description={categoryData.description}
+	description={`${categoryData.description} Fahrzeuge aus allen Projektbereichen durchsuchen.`}
 	openGraphImage={openGraphImage}
 	{openGraphImageAlt}
 	structuredDataType="CollectionPage"
@@ -128,8 +131,9 @@ const itemList = {
 				</nav>
 			</dialog>
 
-			<form class="archive-search" role="search" aria-label={categoryData.label} data-vehicle-search hidden>
-				<label for={searchId}>Fahrzeugsuche</label>
+			<form class="archive-search" role="search" aria-label="Fahrzeugsuche in allen Projektbereichen" data-vehicle-search hidden>
+				<label for={searchId}>Alle Fahrzeuge durchsuchen</label>
+				<p class="archive-search__scope" id="vehicle-search-scope">Aktuelle Projekte · Abgeschlossene Projekte · Fahrzeugangebote</p>
 				<div class="archive-search__field">
 					<svg aria-hidden="true" viewBox="0 0 24 24">
 						<circle cx="10.5" cy="10.5" r="6.75" />
@@ -140,6 +144,7 @@ const itemList = {
 						type="search"
 						placeholder="Fahrzeugname eingeben"
 						aria-controls={gridId}
+						aria-describedby="vehicle-search-scope"
 						autocomplete="off"
 						spellcheck="false"
 						data-vehicle-search-input
@@ -149,10 +154,10 @@ const itemList = {
 				<p class="archive-search__empty" data-vehicle-search-empty hidden>
 					Kein Fahrzeug für diese Suche gefunden.
 				</p>
-				<span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-vehicle-search-status></span>
+				<span class="archive-search__status" role="status" aria-live="polite" aria-atomic="true" data-vehicle-search-status></span>
 			</form>
 
-			{!vehicles.length && <p class="archive-empty">Zurzeit sind in diesem Bereich keine Fahrzeuge veröffentlicht.</p>}
+			{!vehicles.length && <p class="archive-empty" data-archive-empty>Zurzeit sind in diesem Bereich keine Fahrzeuge veröffentlicht.</p>}
 
 			<section id={gridId} class="vehicle-grid" aria-label={`${categoryData.label}, Seite ${safePage}`}>
 				{
@@ -160,7 +165,7 @@ const itemList = {
 				}
 			</section>
 			<template data-archive-deferred>
-				{vehicles.map((vehicle, index) => index < firstIndex || index >= lastIndex
+				{allVehicles.map((vehicle, index) => !visibleIds.has(vehicle.id)
 					? <VehicleCard vehicle={vehicle} index={pageSize + index} defaultVisible={false} /> : null)}
 			</template>
 
@@ -264,7 +269,7 @@ const itemList = {
 		[...grid.querySelectorAll<HTMLElement>('[data-vehicle-card]')].sort((a, b) => Number(a.dataset.vehicleOrder) - Number(b.dataset.vehicleOrder)).forEach(card => grid.append(card));
 		return cards;
 	});
-	if (searchForm instanceof HTMLElement && vehicleCards.length) searchForm.hidden = false;
+	if (searchForm instanceof HTMLElement && (vehicleCards.length || deferred?.content.querySelector('[data-vehicle-card]'))) searchForm.hidden = false;
 	const pageGridLabel = grid?.getAttribute('aria-label') ?? '';
 
 	const updateVehicleSearch = () => {
@@ -272,8 +277,10 @@ const itemList = {
 
 		const rawQuery = searchInput.value.trim();
 		const { searching: isSearching, count: matchCount } = filterCards(rawQuery);
+		const archiveEmpty = archive?.querySelector<HTMLElement>('[data-archive-empty]');
+		if (archiveEmpty) archiveEmpty.hidden = isSearching;
 		grid?.setAttribute('aria-label', isSearching
-			? (document.documentElement.lang === 'en' ? 'Vehicle search results' : 'Ergebnisse der Fahrzeugsuche')
+			? (document.documentElement.lang === 'en' ? 'Vehicle search results across all categories' : 'Fahrzeugsuchergebnisse aus allen Projektbereichen')
 			: pageGridLabel);
 
 		if (clearSearch instanceof HTMLButtonElement) clearSearch.hidden = !rawQuery;
@@ -326,6 +333,7 @@ const itemList = {
 
 	.archive-intro h1 {
 		margin: 0;
+		text-align: center;
 		font-size: clamp(2.65rem, 4.75vw, 5rem);
 		font-weight: 450;
 		letter-spacing: 0.075em;
@@ -335,21 +343,27 @@ const itemList = {
 	}
 
 	.category-switcher {
-		margin-bottom: clamp(2rem, 4vw, 4rem);
+		margin: 0 auto clamp(2rem, 4vw, 4rem);
+		width: fit-content;
+		max-width: 100%;
 	}
 
 	.category-switcher__links {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.75rem clamp(1.5rem, 4vw, 4rem);
-		border-bottom: 1px solid rgba(17, 17, 17, 0.3);
+		justify-content: center;
+		gap: 0.5rem;
+		padding: 0.4rem;
+		border: 1px solid rgba(17, 17, 17, 0.3);
 	}
 
 	.category-switcher a {
 		display: flex;
 		align-items: center;
 		min-height: 52px;
-		padding: 0.75rem 0;
+		justify-content: center;
+		text-align: center;
+		padding: 0.75rem 1.2rem;
 		border-bottom: 2px solid transparent;
 		color: inherit;
 		font-size: 1.125rem;
@@ -358,12 +372,14 @@ const itemList = {
 		line-height: 1.4;
 		text-decoration: none;
 		text-transform: uppercase;
-		transition: border-color 180ms ease;
+		transition: background-color 180ms ease, color 180ms ease;
 	}
 
 	.category-switcher a:hover,
 	.category-switcher a[aria-current='page'] {
-		border-bottom-color: currentColor;
+		border-bottom-color: transparent;
+		background: #111111;
+		color: #ffffff;
 	}
 
 	.category-switcher a:focus-visible,
@@ -438,22 +454,26 @@ const itemList = {
 
 	.archive-search {
 		display: grid;
-		grid-template-columns: auto minmax(18rem, 1fr);
+		grid-template-columns: 1fr;
 		align-items: end;
 		gap: 0.75rem clamp(2rem, 4vw, 4rem);
 		width: min(100%, 52rem);
-		margin-bottom: clamp(3.5rem, 6vw, 6rem);
+		margin: 0 auto clamp(3.5rem, 6vw, 6rem);
 		animation: tabs-enter 700ms 140ms cubic-bezier(0.22, 1, 0.36, 1) both;
 	}
 
 	.archive-search > label {
-		padding-bottom: 0.9rem;
-		font-size: 0.68rem;
+		text-align: center;
+		padding-bottom: 0;
+		font-size: 1rem;
 		font-weight: 470;
 		letter-spacing: 0.15em;
 		text-transform: uppercase;
 	}
 
+	.archive-search__scope,
+	.archive-search__status { margin: 0; text-align: center; font-size: 0.95rem; line-height: 1.6; }
+	.archive-search__status:empty { display: none; }
 	.archive-search__field {
 		position: relative;
 		border-bottom: 1px solid rgba(17, 17, 17, 0.55);
@@ -529,7 +549,8 @@ const itemList = {
 	}
 
 	.archive-search__empty {
-		grid-column: 2;
+		grid-column: 1;
+		text-align: center;
 		margin: 0.9rem 0 0;
 		font-size: 0.76rem;
 		letter-spacing: 0.08em;
@@ -600,11 +621,14 @@ const itemList = {
 	}
 
 	.pagination {
-		display: grid;
-		grid-template-columns: 1fr auto 1fr;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 		align-items: center;
-		gap: 2rem;
-		margin-top: clamp(4rem, 7vw, 7rem);
+		gap: 1rem;
+		width: fit-content;
+		max-width: 100%;
+		margin: clamp(4rem, 7vw, 7rem) auto 0;
 		padding-top: 1.5rem;
 		border-top: 1px solid rgba(17, 17, 17, 0.3);
 	}
@@ -633,6 +657,7 @@ const itemList = {
 		width: 2.75rem;
 		height: 2.75rem;
 		border: 1px solid rgba(17, 17, 17, 0.3);
+		border-radius: 50%;
 	}
 
 	.pagination__pages a[aria-current='page'] {
@@ -640,9 +665,8 @@ const itemList = {
 		background: #111111;
 	}
 
-	.pagination__direction:last-child {
-		justify-self: end;
-	}
+	.pagination__direction { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding-inline: 0.5rem; }
+	.pagination a:hover { text-decoration: underline; text-underline-offset: 0.25em; }
 
 	.pagination a:focus-visible {
 		outline: 1px solid currentColor;
@@ -711,8 +735,8 @@ const itemList = {
 		}
 
 		.pagination__pages {
-			grid-column: 1 / -1;
-			grid-row: 1;
+			width: 100%;
+			order: -1;
 			justify-content: center;
 			flex-wrap: wrap;
 		}

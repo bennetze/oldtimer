@@ -91,15 +91,17 @@ for (const [route, expectedCards] of archiveCounts) {
 	const html = await readRoute(route);
 	const archive = load(html);
 	assert.equal(archive('.vehicle-grid > [data-vehicle-card]').length, expectedCards.visible, `${route}: active card count`);
-	assert.equal(load(archive('template[data-archive-deferred]').html() || '', {}, false)('[data-vehicle-card]').length, expectedCards.total - expectedCards.visible, `${route}: deferred card count`);
-	assert.equal(occurrences(html, /<article class="vehicle-card"/g), expectedCards.total, `${route}: searchable card inventory.`);
+	const deferredCards = load(archive('template[data-archive-deferred]').html() || '', {}, false);
+	assert.deepEqual(new Set([...archive('.vehicle-grid [data-vehicle-card] a'), ...deferredCards('[data-vehicle-card] a')].map(node => (node.attribs.href ?? '').split('?')[0])), new Set(vehicles.map(vehicle => `${githubPages ? '/oldtimer' : ''}${vehicle.route}`)), `${route}: search covers every vehicle exactly once`);
+	assert.equal(deferredCards('[data-vehicle-card]').length, vehicles.length - expectedCards.visible, `${route}: deferred card count`);
+	assert.equal(occurrences(html, /<article class="vehicle-card"/g), vehicles.length, `${route}: searchable card inventory.`);
 	assert.equal(
 		occurrences(html, /<article class="vehicle-card"[^>]+data-default-visible="true"/g),
 		expectedCards.visible,
 		`${route}: default-visible card count.`,
 	);
 	assert.match(html, /<form class="archive-search" role="search"/);
-	if (expectedCards.total > 0) {
+	if (vehicles.length > 0) {
 		assert.ok(html.includes(galleryAssetBase), `${route}: incorrect gallery asset base for ${target}.`);
 	} else {
 		assert.match(html, /Zurzeit sind in diesem Bereich keine Fahrzeuge veröffentlicht\./);
@@ -115,7 +117,7 @@ const pastPages = Math.ceil(groups[1].length / pageSize);
 for (let page = 2; page <= pastPages; page += 1) {
 	const html = await readRoute(`/projekte/vergangene-projekte/seite/${page}/`);
 	const expectedCards = Math.min(pageSize, groups[1].length - (page - 1) * pageSize);
-	assert.equal(occurrences(html, /<article class="vehicle-card"/g), groups[1].length, `Past page ${page}: searchable card inventory.`);
+	assert.equal(occurrences(html, /<article class="vehicle-card"/g), vehicles.length, `Past page ${page}: searchable card inventory.`);
 	assert.equal(
 		occurrences(html, /<article class="vehicle-card"[^>]+data-default-visible="true"/g),
 		expectedCards,
