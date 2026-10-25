@@ -72,3 +72,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://bennetze.github.io/oldtimer/sitemap.xml
+# Geprüft am 2026-10-25: vorgeladene lokale WOFF2-Schrift;
+# vorhandene Routen, Medienregeln und Rechtevorbehalte bleiben unverändert.
