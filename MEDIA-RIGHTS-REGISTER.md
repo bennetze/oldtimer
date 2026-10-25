@@ -244,3 +244,29 @@ remain pending; this placement record does not establish new rights clearance.
 - Production evidence remains pending: photographer/rightsholder, website/social-preview
   usage scope, required credit and applicable permissions for recognizable people.
   This preview-use request does not close the production media-rights release gate.
+
+## Editorial image selection — preview use, 25 October 2026
+
+The user requested the reviewed Motor Klassik selections for Team, Kontakt,
+Karosseriebau, Mechanik and Lackierung, a reduced Horch-engine selection and a
+different Fahrzeugangebote image. The following additional derivatives are used:
+
+- `motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6384.webp`: Team supporting photograph.
+- `motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6639.webp`: Kontakt photograph.
+- `motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-5800.webp`: Karosseriebau lead and Handwerk Open Graph/primary structured-data image.
+- `motor-klassik/hochformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6144.webp` and `motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6297.webp`: Mechanik.
+- `motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-4314.webp`: Lackierung supporting photograph.
+- `motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-3300.webp`: Fahrzeugangebote entry and Projekte Open Graph/primary structured-data image; an atmospheric illustration, not a listing for this particular car.
+
+All paths above are relative to `src/assets/oldtimer/`; original mappings and hashes
+remain in `audits/media/motor-klassik/manifest.json`. Production evidence requirements
+for the Motor Klassik family remain open as recorded above.
+
+`src/assets/oldtimer/horch-350/engine-valvetrain.webp` is a WebP derivative of the
+existing Horch 350 project photograph
+`src/pages/projekte/vergangene-projekte/3-horch-350-doppel-phaeton-baujahr-1928/image-027.jpg`.
+It retains the complete composition, watermark and native 270 × 406 pixel dimensions.
+It is the sole Horch still in Motorenbau, accompanying the existing video. Horch
+image 049 is excluded. The existing vehicle-image rights record applies as provenance;
+this editorial placement still requires its permitted scope to be evidenced before
+production release. Vehicle records and source photographs are unchanged.

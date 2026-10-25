@@ -119,13 +119,13 @@ const vehicleJsonLd = {
 
 							if (block.type === 'contact') {
 								return (
-									<aside class="story-contact" aria-label="Fahrzeuganfrage">
+									<div class="story-contact" role="group" aria-label="Fahrzeuganfrage">
 										<div data-authored set:html={block.html} />
 										<div class="story-contact__actions">
 											<a href="tel:+493696683783">03 69 66 / 83 7 83</a>
 											<a href="mailto:info@oldtimermanufaktur.de">E-Mail schreiben</a>
 										</div>
-									</aside>
+									</div>
 								);
 							}
 

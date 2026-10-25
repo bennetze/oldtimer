@@ -4,7 +4,6 @@ import BackgroundTexture from '../components/BackgroundTexture.astro';
 import SectionNavigation from '../components/SectionNavigation.astro';
 import SiteChrome from '../components/SiteChrome.astro';
 import Layout from './Layout.astro';
-import '../styles/subpagePalette.css';
 
 interface SectionItem {
 	id: string;
@@ -157,7 +156,7 @@ const openingId = sections[0]?.id;
 
 		const viewportCenter = window.innerHeight / 2;
 		const isMobileLayout = window.innerWidth <= 840;
-		const mobileFactor = isMobileLayout ? 0.18 : 1;
+		const mobileFactor = isMobileLayout ? 0.4 : 1;
 
 		const updates = [];
 		const flowUpdates = [];
@@ -175,11 +174,16 @@ const openingId = sections[0]?.id;
 				const currentOffset = Number.parseFloat(block.style.getPropertyValue('--flow-parallax-y')) || 0;
 				return {
 					top: bounds.top - currentOffset, bottom: bounds.bottom - currentOffset,
-					range: (index === 0 ? 48 : 120) * mobileFactor,
-					requested: distance * (index === 0 ? 0.08 : 0.18) * mobileFactor,
+					range: (index === 0 ? 64 : 180) * mobileFactor,
+					requested: distance * (index === 0 ? 0.12 : 0.3) * mobileFactor,
 				};
 			});
-			const offsets = orderedParallaxOffsets(blocks, groupBounds.top, groupBounds.bottom, isMobileLayout ? 16 : 24);
+			// Reserve breathing room before the next section even at maximum travel.
+			const sectionClearance = Math.min(
+				Number.parseFloat(window.getComputedStyle(group).paddingBottom) || 0,
+				isMobileLayout ? 48 : 80,
+			);
+			const offsets = orderedParallaxOffsets(blocks, groupBounds.top, groupBounds.bottom - sectionClearance, isMobileLayout ? 16 : 24);
 			elements.blocks.forEach((block, index) => flowUpdates.push([block, `${offsets[index].toFixed(2)}px`]));
 
 			elements.layers.forEach((layer) => {
@@ -187,15 +191,15 @@ const openingId = sections[0]?.id;
 					return;
 				}
 
-				const speed = Number(layer.dataset.speed ?? 0) * mobileFactor;
-				const range = Number(layer.dataset.range ?? 0) * mobileFactor;
+				const speed = Number(layer.dataset.speed ?? 0) * 1.5 * mobileFactor;
+				const range = Number(layer.dataset.range ?? 0) * 1.5 * mobileFactor;
 				const stage = layer.closest('.collage');
 				if (!(stage instanceof HTMLElement)) return;
 				const currentOffset = Number.parseFloat(layer.style.getPropertyValue('--parallax-y')) || 0;
 				const layerBounds = layer.getBoundingClientRect();
 				const stageBounds = stage.getBoundingClientRect();
-				// Layered collages allow photo-to-photo overlap, always inside the media stage.
-				const offset = window.getComputedStyle(stage).display === 'grid' && !stage.classList.contains('collage--layered') ? 0 : boundedParallaxOffset(
+				// Photos may move within the clipped collage, never into its section heading.
+				const offset = boundedParallaxOffset(
 					distance * speed, range,
 					layerBounds.top - currentOffset, layerBounds.bottom - currentOffset,
 					stageBounds.top, stageBounds.bottom,
@@ -266,7 +270,7 @@ const openingId = sections[0]?.id;
 
 <style is:global>
 	.editorial-page {
-		--story-gap: clamp(8rem, 13vw, 13rem);
+		--story-gap: clamp(7rem, 11vw, 11rem);
 		--story-scroll-offset: calc(var(--site-header-height, 132px) + clamp(1.5rem, 3vh, 2.5rem));
 		--editorial-color: #000000;
 		--editorial-line: rgba(17, 17, 17, 0.34);
@@ -314,7 +318,7 @@ const openingId = sections[0]?.id;
 	/* Only the two color transitions need this extra travel distance. */
 	.editorial-page--light .editorial-opening,
 	.editorial-page--light > .story:nth-last-child(2) {
-		--story-gap: clamp(10rem, 16vw, 16rem);
+		--story-gap: clamp(8rem, 12vw, 12rem);
 	}
 
 	.editorial-page--light .editorial-opening::before {
@@ -389,7 +393,7 @@ const openingId = sections[0]?.id;
 		display: grid;
 		grid-template-columns: minmax(16rem, 0.58fr) minmax(38rem, 1.42fr);
 		align-items: center;
-		gap: clamp(3rem, 6vw, 8rem);
+		gap: clamp(2rem, 4vw, 5rem);
 		width: min(100%, 1720px);
 		margin: 0 auto;
 	}
@@ -568,13 +572,13 @@ const openingId = sections[0]?.id;
 
 	@media (max-width: 840px) {
 		.editorial-page {
-			--story-gap: clamp(5rem, 20vw, 7rem);
+			--story-gap: clamp(4.5rem, 18vw, 6rem);
 			--story-scroll-offset: calc(var(--site-header-height, 104px) + 1.25rem);
 		}
 
 		.editorial-page--light .editorial-opening,
 		.editorial-page--light > .story:nth-last-child(2) {
-			--story-gap: clamp(7rem, 28vw, 10rem);
+			--story-gap: clamp(5.5rem, 22vw, 8rem);
 		}
 
 		.editorial-intro {
@@ -606,7 +610,7 @@ const openingId = sections[0]?.id;
 		.editorial-page .story--images-left .story__layout {
 			display: flex;
 			flex-direction: column;
-			gap: clamp(2.5rem, 10vw, 4rem);
+			gap: clamp(2rem, 8vw, 3rem);
 		}
 
 		.editorial-page .collage,

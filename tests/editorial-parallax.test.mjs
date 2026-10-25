@@ -21,13 +21,13 @@ test('full-height and oversized media do not gain a displacement outside their s
 
 
 test('headings and content animate independently while retaining reading order and clearance', () => {
-	for (const scale of [1, 0.18]) {
+	for (const scale of [1, 0.4]) {
 		const observed = new Set();
 		for (let distance = -3000; distance <= 3000; distance += 20) {
 			const blocks = [
-				{ top: 100, bottom: 170, range: 48 * scale, requested: distance * 0.08 * scale },
-				{ top: 242, bottom: 1200, range: 120 * scale, requested: distance * 0.18 * scale },
-				{ top: 1300, bottom: 1400, range: 120 * scale, requested: distance * 0.18 * scale },
+				{ top: 100, bottom: 170, range: 64 * scale, requested: distance * 0.12 * scale },
+				{ top: 242, bottom: 1200, range: 180 * scale, requested: distance * 0.3 * scale },
+				{ top: 1300, bottom: 1400, range: 180 * scale, requested: distance * 0.3 * scale },
 			];
 			const offsets = orderedParallaxOffsets(blocks, 100, 1550);
 			observed.add(offsets[1]);
@@ -50,5 +50,22 @@ test('short sections and tight natural gaps cannot force neighbouring animated b
 		], 0, 400);
 		assert.ok(80 + offsets[0] + 10 <= 90 + offsets[1]);
 		assert.equal(offsets[1], 0);
+	}
+});
+
+
+test('section endings retain breathing room before the next heading at maximum travel', () => {
+	for (const clearance of [48, 80]) {
+		for (let distance = -3000; distance <= 3000; distance += 20) {
+			const blocks = [
+				{ top: 0, bottom: 80, range: 64, requested: distance * 0.12 },
+				{ top: 140, bottom: 850, range: 180, requested: distance * 0.3 },
+				{ top: 920, bottom: 1000, range: 180, requested: distance * 0.3 },
+			];
+			const sectionBottom = 1120;
+			const offsets = orderedParallaxOffsets(blocks, 0, sectionBottom - clearance);
+			assert.ok(sectionBottom - (blocks.at(-1).bottom + offsets.at(-1)) >= clearance);
+			assert.ok(blocks[1].top + offsets[1] >= blocks[0].bottom + offsets[0] + 24);
+		}
 	}
 });

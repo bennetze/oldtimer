@@ -1,5 +1,5 @@
-/* Editorial and archive palette; vehicle stories retain their editor-matched palette. */
-:is(.editorial-page, .vehicle-archive).gradient-palette {
+/* One current website palette for every gradient background, including vehicle stories. */
+:is(.editorial-page, .vehicle-archive, .legal-page, .vehicle-detail).gradient-palette {
 	--gradient-cream: #efda76;
 	--archive-card-surface: rgba(239, 218, 118, 0.96);
 	--archive-card-hover: #efda76;
@@ -10,7 +10,7 @@
 
 /* Smooth, zero-slope joins with the solid section colors. */
 @supports (background: linear-gradient(in oklab, black, white)) {
-	:is(.editorial-page, .vehicle-archive).gradient-palette {
+	:is(.editorial-page, .vehicle-archive, .legal-page, .vehicle-detail).gradient-palette {
 	--gradient-descend: linear-gradient(180deg in oklab,
 		oklab(0.8852305 -0.0165583 0.1219025) 0%,
 		oklab(0.8850371 -0.0165636 0.1218684) 3.125%,

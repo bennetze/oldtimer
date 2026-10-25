@@ -2,7 +2,6 @@
 import { localizeVehicle, vehicleLanguage } from '../config/vehicleLocale.js';
 import { vehicleImage } from '../config/vehicleImages';
 import Layout from '../layouts/Layout.astro';
-import '../styles/subpagePalette.css';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
 import { pageModified } from '../config/modificationDates.js';
 import SiteChrome from './SiteChrome.astro';
@@ -171,7 +170,7 @@ const itemList = {
 
 			{
 				totalPages > 1 && (
-					<nav class="pagination" aria-label="Seitennavigation">
+					<nav class="pagination" aria-label="Fahrzeugseiten">
 						{safePage > 1 && (
 							<a class="pagination__direction" href={sitePath(pagePath(safePage - 1))} rel="prev">
 								<span aria-hidden="true">←</span> Zurück

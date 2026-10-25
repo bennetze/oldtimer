@@ -1,18 +1,16 @@
 ---
 import { Image } from 'astro:assets';
 import EditorialPageLayout from '../layouts/EditorialPageLayout.astro';
-import mechanicsPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00155.webp';
-import mechanicsLandscape from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00216.webp';
-import bodyPortrait from '../assets/oldtimer/L1005486.webp';
+import mechanicsPortrait from '../assets/oldtimer/motor-klassik/hochformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6144.webp';
+import mechanicsLandscape from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6297.webp';
+import bodyPortrait from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-5800.webp';
 import bodyLandscape from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00081.webp';
-import mechanicsCarburettors from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00171.webp';
-import mechanicsEngineBay from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00207.webp';
 import bodyDetail from '../assets/oldtimer/oldtimermanufaktur-verzinnen/L1006963.webp';
-import paintPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00878.webp';
-import paintLandscape from '../assets/oldtimer/L1005705.webp';
+import paintPortrait from '../assets/oldtimer/L1005705.webp';
+import paintLandscape from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-4314.webp';
 import upholsteryPortrait from '../assets/oldtimer/L1005816.webp';
 import upholsteryLandscape from '../assets/oldtimer/L1005861.webp';
-import enginePortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00172.webp';
+import enginePortrait from '../assets/oldtimer/horch-350/engine-valvetrain.webp';
 import upholsteryDetail from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00189.webp';
 import paintDetail from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00572.webp';
 import EditorialMotion from '../components/EditorialMotion.astro';
@@ -90,9 +88,9 @@ const handwerkServiceJsonLd = {
 	theme="light"
 	background="var(--gradient-green)"
 	openGraphImage={bodyPortrait}
-	openGraphImageAlt="Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt."
+	openGraphImageAlt="Ein Mitarbeiter mit Schweißhelm schweißt an der Karosserie eines gelben historischen Automobils."
 	structuredDataType="CollectionPage"
-	dateModified="2026-10-23"
+	dateModified="2026-10-25"
 	additionalJsonLd={handwerkServiceJsonLd}
 >
 	<section
@@ -103,7 +101,7 @@ const handwerkServiceJsonLd = {
 	>
 		<h2 id="karosserie-title">Karosseriebau/Stellmacherei</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--body-details collage--right" role="group" aria-label="Arbeiten in der Karosserieabteilung">
+			<div class="collage collage--double collage--body-details collage--right collage--body-selection" role="group" aria-label="Arbeiten in der Karosserieabteilung">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
@@ -112,7 +110,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={bodyPortrait}
-						alt="Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt."
+						alt="Ein Mitarbeiter mit Schweißhelm schweißt an der Karosserie eines gelben historischen Automobils."
 						widths={[560, 760, 1024, 1280]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
@@ -169,13 +167,11 @@ const handwerkServiceJsonLd = {
 		<div class="story__layout">
 			<div class="collage collage--mechanics collage--left collage--layered" role="group" aria-label="Arbeiten in der mechanischen Abteilung">
 				<figure class="image-layer image-layer--portrait" data-parallax-layer data-speed="0.126" data-range="138">
-					<Image src={mechanicsPortrait} alt="Ein Mechaniker arbeitet an einem geöffneten Getriebe mit sichtbaren Zahnrädern." widths={[560, 760, 1024, 1280]} sizes="(max-width: 840px) 88vw, 48vw" format="webp" loading="lazy" />
+					<Image src={mechanicsPortrait} alt="Anton Schrank arbeitet unter einem auf der Hebebühne angehobenen Fahrzeug." widths={[560, 760, 1024, 1280]} sizes="(max-width: 840px) 88vw, 48vw" format="webp" loading="lazy" />
 				</figure>
 				<figure class="image-layer image-layer--landscape" data-parallax-layer data-speed="0.218" data-range="202">
-					<Image src={mechanicsLandscape} alt="Lenkrad und historische Instrumente im Armaturenbrett eines klassischen Automobils." widths={[640, 960, 1280, 1600]} sizes="(max-width: 840px) 76vw, 42vw" format="webp" loading="lazy" />
+					<Image src={mechanicsLandscape} alt="Anton Schrank und ein Kollege arbeiten gemeinsam am geöffneten Motorraum eines historischen Automobils." widths={[640, 960, 1280, 1600]} sizes="(max-width: 840px) 76vw, 42vw" format="webp" loading="lazy" />
 				</figure>
-				<figure class="image-layer" data-parallax-layer data-speed="0.12" data-range="70"><Image src={mechanicsCarburettors} alt="Vergaseranlage mit Leitungen und Gestänge in der mechanischen Abteilung." widths={[480, 760, 1024]} sizes="(max-width: 840px) 44vw, 26vw" format="webp" loading="lazy" /></figure>
-				<figure class="image-layer" data-parallax-layer data-speed="0.12" data-range="70"><Image src={mechanicsEngineBay} alt="Blick in den geöffneten Motorraum eines historischen Automobils." widths={[480, 760, 1024]} sizes="(max-width: 840px) 44vw, 26vw" format="webp" loading="lazy" /></figure>
 			</div>
 			<div class="story__copy">
 				<p>In unserer mechanischen Abteilung finden sämtliche technischen Instandsetzungen statt. Achsen-, Bremsen, Lenkungs-, Getriebeüberholungen, aber auch Instandsetzungen an der Fahrzeugelektrik bis hin zur Neuanfertigung ganzer Kabelbäume.</p>
@@ -200,9 +196,9 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={enginePortrait}
-						alt="Nahansicht einer Vergaseranlage mit Gestänge, Leitungen und Befestigungen."
-						widths={[560, 760, 1024]}
-						sizes="(max-width: 840px) 88vw, 48vw"
+						alt="Freigelegter Ventiltrieb des Horch 350 von 1928 während der Motorrestaurierung."
+						widths={[180, 270]}
+						sizes="(max-width: 840px) min(65vw, 270px), 270px"
 						format="webp"
 						loading="lazy"
 					/>
@@ -239,7 +235,7 @@ const handwerkServiceJsonLd = {
 	>
 		<h2 id="lackiererei-title">Lackiererei</h2>
 		<div class="story__layout">
-			<div class="collage collage--double collage--craft-details collage--left" role="group" aria-label="Arbeiten in der Lackiererei">
+			<div class="collage collage--double collage--craft-details collage--left collage--paint-selection" role="group" aria-label="Arbeiten in der Lackiererei">
 				<figure
 					class="image-layer image-layer--portrait"
 					data-parallax-layer
@@ -248,7 +244,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={paintPortrait}
-						alt="Ein Mitarbeiter betrachtet die Oberfläche einer roten Karosserie über deren oberer Kante."
+						alt="Ein Lackierer mit Atemschutz spritzt dunkle Karosserieteile in einer Lackierkabine."
 						widths={[560, 760, 1024, 1280]}
 						sizes="(max-width: 840px) 88vw, 48vw"
 						format="webp"
@@ -263,7 +259,7 @@ const handwerkServiceJsonLd = {
 				>
 					<Image
 						src={paintLandscape}
-						alt="Ein Lackierer mit Atemschutz spritzt dunkle Karosserieteile in einer Lackierkabine."
+						alt="Seitlicher Blick auf ein blaues historisches Cabriolet mit Anton Schrank am Steuer."
 						widths={[640, 960, 1280, 1600]}
 						sizes="(max-width: 840px) 76vw, 42vw"
 						format="webp"
@@ -351,12 +347,10 @@ const handwerkServiceJsonLd = {
 </EditorialPageLayout>
 
 <style>
-	:global(.editorial-page) .collage--mechanics { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: start; }
+	:global(.editorial-page) .collage--mechanics { min-height: 0; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: start; }
 	:global(.editorial-page) .collage--mechanics .image-layer { position: relative; inset: auto; width: 100%; height: auto; }
 	:global(.editorial-page) .collage--mechanics .image-layer:nth-child(1) { grid-column: 1 / 9; grid-row: 1; z-index: 1; }
 	:global(.editorial-page) .collage--mechanics .image-layer:nth-child(2) { grid-column: 7 / -1; grid-row: 1; align-self: end; margin-bottom: -12%; z-index: 2; }
-	:global(.editorial-page) .collage--mechanics .image-layer:nth-child(3) { grid-column: 2 / 10; grid-row: 2; margin-top: -8%; z-index: 3; }
-	:global(.editorial-page) .collage--mechanics .image-layer:nth-child(4) { grid-column: 7 / -1; grid-row: 2; margin-top: 24%; z-index: 4; }
 	:global(.editorial-page) .collage--mechanics img { display: block; height: auto; }
 
 	:global(.editorial-page) .story--services {
@@ -433,18 +427,42 @@ const handwerkServiceJsonLd = {
 		display: block;
 		height: auto;
 	}
-	:global(.editorial-page) .collage--engines { min-height: clamp(38rem, 60vw, 58rem); }
-	:global(.editorial-page) .collage--engines .image-layer { height: auto; }
-	:global(.editorial-page) .collage--engines .image-layer--portrait { width: 94%; }
-	:global(.editorial-page) .collage--engines .image-layer--landscape { width: 84%; bottom: 8%; }
+	:global(.editorial-page) .collage--engines {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 270px);
+		gap: clamp(1.25rem, 2.5vw, 2.5rem);
+		align-items: center;
+		min-height: 0;
+	}
+	:global(.editorial-page) .collage--engines .image-layer { position: relative; inset: auto; width: 100%; height: auto; }
+	:global(.editorial-page) .collage--engines .image-layer--portrait { grid-column: 2; grid-row: 1; width: min(100%, 270px); justify-self: center; }
+	:global(.editorial-page) .collage--engines .image-layer--landscape { grid-column: 1; grid-row: 1; }
 	:global(.editorial-page) .collage--engines img { display: block; height: auto; }
 	@media (max-width: 840px) {
 		:global(.editorial-page) .collage--body-details .image-layer--detail {
 			width: 55%;
 			height: 36%;
 		}
-		:global(.editorial-page) .collage--engines { display: grid; gap: 3rem; min-height: 0; }
+		:global(.editorial-page) .collage--engines { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
 		:global(.editorial-page) .collage--engines .image-layer { position: relative; inset: auto; }
-		:global(.editorial-page) .collage--engines .image-layer--landscape { justify-self: end; }
+		:global(.editorial-page) .collage--engines .image-layer--portrait { grid-column: 1; grid-row: 2; width: min(65vw, 270px); }
 	}
+
+	:global(.editorial-page) :is(.collage--body-selection, .collage--paint-selection) {
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		align-items: start;
+		min-height: 0;
+		gap: clamp(1.25rem, 2.5vw, 2.5rem) 0;
+	}
+	:global(.editorial-page) :is(.collage--body-selection, .collage--paint-selection) .image-layer {
+		position: relative;
+		inset: auto;
+		width: 100%;
+		height: auto;
+	}
+	:global(.editorial-page) :is(.collage--body-selection, .collage--paint-selection) .image-layer--portrait { grid-column: 1 / -1; grid-row: 1; }
+	:global(.editorial-page) :is(.collage--body-selection, .collage--paint-selection) .image-layer--landscape { grid-column: 1 / 9; grid-row: 2; }
+	:global(.editorial-page) :is(.collage--body-selection, .collage--paint-selection) .image-layer--detail { grid-column: 8 / -1; grid-row: 2; margin-top: 40%; }
+	:global(.editorial-page) :is(.collage--body-selection, .collage--paint-selection) .image-layer img { display: block; height: auto; }
 </style>

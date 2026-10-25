@@ -16,6 +16,7 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
 const content = localizeVehicle(vehicle.data, language);
+const categoryLabel = language === 'en' ? translate(categoryByKey[vehicle.data.category].label) : categoryByKey[vehicle.data.category].label;
 const image = vehicleImage(vehicle, vehicle.data.cardImage, 'card', basePath);
 const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 ---
@@ -30,7 +31,7 @@ const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 	data-default-visible={defaultVisible ? 'true' : 'false'}
 	hidden={!defaultVisible}
 >
-	<a href={sitePath(vehicleRoute(vehicle))} aria-label={content.title}>
+	<a href={sitePath(vehicleRoute(vehicle))} aria-label={`${categoryLabel} ${content.title}`}>
 		<div class="vehicle-card__media">
 			<img
 				{...image}
@@ -42,7 +43,7 @@ const sitePath = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 			/>
 		</div>
 		<div class="vehicle-card__copy">
-			<p class="vehicle-card__category">{language === 'en' ? translate(categoryByKey[vehicle.data.category].label) : categoryByKey[vehicle.data.category].label}</p>
+			<p class="vehicle-card__category">{categoryLabel}{' '}</p>
 			<h2>{content.title}</h2>
 		</div>
 	</a>

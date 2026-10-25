@@ -102,3 +102,13 @@ dates and crawler summaries in that implementation.
 
 - [Portraits](portraits.jpg)
 - [Landscapes](landscapes.jpg)
+
+## Implemented selection — 25 October 2026
+
+The user approved integration: 5959 remains the dominant Team image, 6384 supports
+it, 6639 illustrates Kontakt, 5800 leads Karosseriebau, 6144/6297 illustrate Mechanik,
+and 4314 supports the retained spray-booth photograph in Lackierung. Fahrzeugangebote
+uses cockpit detail 3300 instead of the previously proposed driver portrait 4176.
+Motorenbau retains its engine video and adds only Horch 350 image 027 as a small still;
+Horch image 049 is excluded, and image 021 was omitted to keep the section restrained.
+This supersedes the earlier proposed placements and integration-status notes above.

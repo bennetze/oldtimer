@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import SiteChrome from '../components/SiteChrome.astro';
 import currentProjectsImage from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00624.webp';
 import pastProjectsImage from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00909.webp';
-import vehicleOffersImage from '../assets/oldtimer/bmw-treffen-23/L1000494.webp';
+import vehicleOffersImage from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-3300.webp';
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
@@ -20,6 +20,7 @@ const sitePath = (path: string) => {
 
 	return path;
 };
+const isEnglish = Astro.url.pathname.slice(basePath.length).startsWith('en/');
 
 const projectAreas = [
 	{
@@ -46,8 +47,8 @@ const projectAreas = [
 		titleLines: ['Fahrzeug', 'angebote'],
 		href: '/projekte/fahrzeugangebote/',
 		image: vehicleOffersImage,
-		position: '50% 55%',
-		alt: 'Front eines historischen Automobils mit verchromtem Kühlergrill und großen runden Scheinwerfern',
+		position: '68% 55%',
+		alt: 'Blick auf das helle Lenkrad und die historischen Instrumente eines blauen Cabriolets.',
 	},
 ];
 ---
@@ -56,9 +57,9 @@ const projectAreas = [
 	title="Projekte"
 	description="Aktuelle und vergangene Restaurierungsprojekte der Oldtimermanufaktur sowie ausgewählte Fahrzeugangebote."
 	openGraphImage={vehicleOffersImage}
-	openGraphImageAlt="Front eines historischen Automobils mit verchromtem Kühlergrill und großen runden Scheinwerfern"
+	openGraphImageAlt="Blick auf das helle Lenkrad und die historischen Instrumente eines blauen Cabriolets."
 	structuredDataType="CollectionPage"
-	dateModified="2026-10-13"
+	dateModified="2026-10-25"
 >
 	<SiteChrome>
 		<main class="projects-page" id="main-content" tabindex="-1">
@@ -86,8 +87,8 @@ const projectAreas = [
 							<span class="project-panel__content">
 								<h2 id={`${area.id}-title`} aria-label={area.title}>
 									{
-										area.titleLines.map((line) => (
-											<span class="project-panel__title-line" aria-hidden="true">{line}</span>
+										area.titleLines.map((line, lineIndex) => (
+											<span class="project-panel__title-line" aria-hidden="true">{lineIndex > 0 && (area.id !== 'fahrzeugangebote' || isEnglish) ? ' ' : ''}{line}</span>
 										))
 									}
 								</h2>

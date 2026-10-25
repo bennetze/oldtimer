@@ -9,9 +9,9 @@ import aboutPoster from '../assets/oldtimer/about-us-poster.jpg';
 import antonCar from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00382.webp';
 import antonPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00649.webp';
 import contactEntrance from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00439.webp';
-import contactExterior from '../assets/oldtimer/L1005735.webp';
+import contactExterior from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6639.webp';
 import marioPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00803.webp';
-import teamConversation from '../assets/oldtimer/L1005486.webp';
+import teamConversation from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6384.webp';
 import teamPortrait from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-5959.webp';
 import teamWorkshop from '../assets/oldtimer/L1005816.webp';
 import germanyMap from '../assets/graphics/germany-silhouette.svg';
@@ -80,7 +80,7 @@ const film = {
 	openGraphImage={teamPortrait}
 	openGraphImageAlt="Das Team der Oldtimermanufaktur steht zwischen historischen Fahrzeugen in der Werkstatt."
 	structuredDataType="AboutPage"
-	dateModified="2026-10-23"
+	dateModified="2026-10-25"
 	additionalJsonLd={[...people, brand, film]}
 	sectionNavigationVisible={false}
 >
@@ -236,7 +236,7 @@ const film = {
 						>
 							<Image
 								src={teamConversation}
-								alt="Ein Mitarbeiter mit Schutzhandschuhen bearbeitet ein blankes Karosserieblech in der Werkstatt."
+								alt="Anton Schrank und ein Kollege betrachten neben einem historischen Automobil einen geöffneten Ordner."
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 72vw, 42vw"
 								format="webp"
@@ -303,7 +303,7 @@ const film = {
 						>
 							<Image
 								src={contactExterior}
-								alt="Helle Cabriolet-Karosserie auf einer Hebebühne mit weiteren Oldtimern in der Werkstatt."
+								alt="Anton Schrank und ein Kollege stehen nebeneinander zwischen historischen Automobilen."
 								widths={[560, 760, 1024]}
 								sizes="(max-width: 840px) 88vw, 48vw"
 								format="webp"
@@ -333,7 +333,7 @@ const film = {
 								<span class="contact-label">Telefon</span>
 								<strong>03 69 66 / 83 7 83</strong>
 							</a>
-							<a href="tel:+493696683635" aria-label="Faxnummer 03 69 66 / 83 6 35">
+							<a href="tel:+493696683635">
 								<span class="contact-label">Fax</span>
 								<strong>03 69 66 / 83 6 35</strong>
 							</a>
@@ -346,7 +346,6 @@ const film = {
 								href="https://maps.app.goo.gl/jg4eC1XRAyLDoW1BA"
 								target="_blank"
 								rel="noreferrer"
-								aria-label="Adresse in Google Maps öffnen: DIE OLDTIMERMANUFAKTUR GmbH, Kreuzweg 11a, 36452 Kaltennordheim-Fischbach i.d. Rhön"
 							>
 								<span class="contact-label">Adresse</span>
 								<strong class="maps-link__value">
@@ -355,7 +354,7 @@ const film = {
 										Kreuzweg 11a,<br />
 										36452 Kaltennordheim-Fischbach i.d. Rhön
 									</span>
-									<span class="maps-link__action" aria-hidden="true">In Google Maps öffnen ↗</span>
+									<span class="maps-link__action">In Google Maps öffnen ↗</span>
 								</strong>
 							</a>
 						</address>
@@ -385,7 +384,7 @@ const film = {
 <style>
 	.about-film {
 		width: min(50vw, 1000px);
-		margin: 0 auto clamp(8rem, 14vw, 14rem);
+		margin: 0 auto clamp(6rem, 10vw, 10rem);
 	}
 
 	@media (max-width: 840px) {
@@ -409,6 +408,7 @@ const film = {
 	:global(.editorial-page) .collage--portraits .image-layer--landscape { width: 100%; margin-top: 55%; }
 	:global(.editorial-page) .collage--team-details {
 		display: grid;
+		align-items: start;
 		grid-template-columns: repeat(12, minmax(0, 1fr));
 		gap: 0;
 		min-height: 0;
@@ -427,26 +427,30 @@ const film = {
 	:global(.editorial-page) .collage--team-details .image-layer--team-conversation {
 		grid-column: 1 / 7;
 		grid-row: 2;
-		margin-top: clamp(3rem, 5vw, 5rem);
+		margin-top: clamp(1.5rem, 2.5vw, 2.5rem);
 	}
 	:global(.editorial-page) .collage--team-details .image-layer--team-workshop {
 		grid-column: 8 / -1;
 		grid-row: 2;
-		margin-top: clamp(5rem, 8vw, 8rem);
+		margin-top: clamp(2.5rem, 4vw, 4rem);
 	}
 	:global(.editorial-page) .collage--team-details img {
 		display: block;
 		height: auto;
 	}
 	:global(.editorial-page) .collage--contact {
-		min-height: clamp(34rem, 52vw, 48rem);
+		min-height: 0;
+		display: grid;
+		gap: 2rem;
 	}
+	:global(.editorial-page) .collage--contact .image-layer { position: relative; inset: auto; }
 	:global(.editorial-page) .collage--contact .image-layer--portrait {
-		width: 94%;
+		width: 100%;
 		height: auto;
 	}
 	:global(.editorial-page) .collage--contact .image-layer--landscape {
-		width: 48%;
+		justify-self: end;
+		width: 36%;
 		height: auto;
 	}
 	:global(.editorial-page) .collage--contact img {
@@ -458,7 +462,7 @@ const film = {
 		:global(.editorial-page) .collage--contact {
 			min-height: 0;
 			display: grid;
-			gap: 3rem;
+			gap: 2rem;
 		}
 		:global(.editorial-page) .collage--contact .image-layer {
 			position: relative;

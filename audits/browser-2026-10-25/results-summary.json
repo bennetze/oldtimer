@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-25",
+  "suites": [
+    {
+      "engine": "chromium",
+      "suite": "smoke",
+      "visits": 88,
+      "checks": 968,
+      "failures": 0
+    },
+    {
+      "engine": "chromium",
+      "suite": "vehicles",
+      "visits": 628,
+      "checks": 5024,
+      "failures": 0
+    },
+    {
+      "engine": "chromium",
+      "suite": "interactions",
+      "checks": 304,
+      "failures": 0
+    },
+    {
+      "engine": "webkit",
+      "suite": "smoke",
+      "visits": 88,
+      "checks": 968,
+      "failures": 0
+    },
+    {
+      "engine": "webkit",
+      "suite": "vehicles",
+      "visits": 628,
+      "checks": 5024,
+      "failures": 0
+    },
+    {
+      "engine": "webkit",
+      "suite": "interactions",
+      "checks": 304,
+      "failures": 0
+    }
+  ],
+  "assertions": 12592,
+  "accessibility": {
+    "states": 52,
+    "violations": 0,
+    "incompleteChecks": 66
+  },
+  "trackedFilesChangedByBuilds": []
+}
