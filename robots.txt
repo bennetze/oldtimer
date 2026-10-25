@@ -1,3 +1,5 @@
+# Geprüft am 2026-10-25: Menüumbruch, Kopfzeilenkontrast und zugängliche Namen; Routen,
+# Medienmuster, Indexierungsregeln und Sitemap-Adresse bleiben erhalten.
 # Geprüft am 2026-10-23: redaktionelle Texte, lokale Bildauswahl und bereichsübergreifende
 # Fahrzeugsuche; Routen, Medienmuster und Crawler-Berechtigungen bleiben erhalten.
 # Geprüft am 2026-10-14: lokal eingebundener Unternehmensfilm mit MP4, WebM

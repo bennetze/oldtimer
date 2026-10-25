@@ -23,11 +23,11 @@ Die feste, unscharf hinterlegte Kopfzeile zeigt auf allen Seiten das finale Unte
 
 Die Website verwendet auf allen Geräten den nativen Mauszeiger und das normale Zeigerverhalten des Browsers. Die Pfeiltasten behalten das normale Browserverhalten; die Abschnittsnavigation bleibt über Links und Scroll-Schaltflächen erreichbar.
 
-Auf den Unterseiten ist das Unternehmenslogo genauso groß dargestellt wie auf der Startseite. Alle Seiten verwenden dieselbe responsive Kopfzeilenhöhe und dieselben Größenbegrenzungen für das Logo.
+Auf den Unterseiten ist das Unternehmenslogo genauso groß dargestellt wie auf der Startseite. Alle Seiten verwenden dieselbe responsive Kopfzeilenhöhe und dieselben Größenbegrenzungen für das Logo. Die helle, weiterhin unscharf hinterlegte Kopfzeile der Unterseiten hält Sprachwahl und Menü auch über dunklen Fotos kontrastreich. Die zugänglichen Namen der Sprachwahl beginnen mit den sichtbaren Kürzeln DE und EN. Kontaktlinks werden mit ihrem sichtbaren Text benannt; Fahrzeugseiten und wiederholte Anfragegruppen bleiben für assistive Technik unterscheidbar. Die zugänglichen Namen der Fahrzeugkarten enthalten sowohl den sichtbaren Projektbereich als auch den Fahrzeugtitel.
 
 Das Overlay-Menü besitzt auf allen Seiten eine nahezu deckende dunkle Hintergrundfläche. Die gemeinsamen Navigationslinks heißen entsprechend den Seiten- und Abschnittsüberschriften „Über uns“, „Handwerk“, „Projekte“ und „Kontakt“; die englische Fassung verwendet die passenden Übersetzungen. Seine Links bleiben auch ohne wirksame Hintergrundunschärfe klar lesbar. Der deutsche Archivtitel „Fahrzeugangebote“ passt auch auf schmalen Mobilbildschirmen in eine Zeile.
 
-Die Beschriftungen „Schließen“ und „Die Oldtimermanufaktur“ im Overlay-Menü sind auf Desktop- und Mobilgeräten für bessere Lesbarkeit etwas größer gesetzt.
+Die Beschriftungen „Schließen“ und „Die Oldtimermanufaktur“ im Overlay-Menü sind auf Desktop- und Mobilgeräten für bessere Lesbarkeit etwas größer gesetzt. Der Unternehmensname bricht auf besonders schmalen Bildschirmen innerhalb des verfügbaren Platzes um und bleibt vollständig lesbar.
 
 Das Menü gleitet beim Schließen ohne Wartezeit zurück, mit derselben Bewegungsdauer wie beim Öffnen. Die Navigationslinks verschwinden in umgekehrter Reihenfolge und der Hintergrund blendet aus. Bei reduzierter Bewegung öffnet und schließt es ohne Animation.
 
@@ -43,7 +43,7 @@ Der Seitenfuß enthält keine Social-Media-Symbole und hat einen kompakten obere
 - [Abgeschlossene Projekte/Referenzen](https://bennetze.github.io/oldtimer/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
 - [Fahrzeugangebote](https://bennetze.github.io/oldtimer/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot; Anfragen telefonisch oder per E-Mail. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
 
-Die Seiten „Über uns“ und „Handwerk“ verwenden auf Desktop- und Mobilgeräten weiter verkleinerte Abstände zwischen den Hauptabschnitten und zentrierte Fließtexte; die Farbverläufe passen sich diesen kompakteren Abständen an. Ihr Gelb ist kräftiger; die abgestimmte Fahrzeugdarstellung im Editor bleibt erhalten.
+Die Seiten „Über uns“ und „Handwerk“ verwenden auf Desktop- und Mobilgeräten weiter verkleinerte Abstände zwischen den Hauptabschnitten und zentrierte Fließtexte; die Farbverläufe passen sich diesen kompakteren Abständen an. Alle redaktionellen Unterseiten, Fahrzeugarchive sowie Impressum und Datenschutzerklärung verwenden denselben kräftigeren gelben Farbverlauf, auch auf Englisch. Die Fahrzeugdetailseiten behalten ihre mit dem Editor abgestimmte Farbpalette.
 
 Die Medien der Startseite werden ohne Farb- oder Helligkeitsfilter mit einer gleichmäßigen dunklen Überlagerung von 25 Prozent dargestellt.
 
