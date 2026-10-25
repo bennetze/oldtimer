@@ -43,7 +43,7 @@ Der Seitenfuß enthält keine Social-Media-Symbole und hat einen kompakten obere
 - [Abgeschlossene Projekte/Referenzen](https://bennetze.github.io/oldtimer/projekte/vergangene-projekte/): Abgeschlossene Restaurierungen und dokumentierte Referenzfahrzeuge. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
 - [Fahrzeugangebote](https://bennetze.github.io/oldtimer/projekte/fahrzeugangebote/): Ausgewählte historische Fahrzeuge aus dem aktuellen Angebot; Anfragen telefonisch oder per E-Mail. Fahrzeugdokumentationen mit Texten, Bildunterschriften und vergrößerbaren Galeriebildern.
 
-Die Seiten „Über uns“ und „Handwerk“ verwenden auf Desktop- und Mobilgeräten weiter verkleinerte Abstände zwischen den Hauptabschnitten und zentrierte Fließtexte; die Farbverläufe passen sich diesen kompakteren Abständen an. Alle redaktionellen Unterseiten, Fahrzeugarchive sowie Impressum und Datenschutzerklärung verwenden denselben kräftigeren gelben Farbverlauf, auch auf Englisch. Die Fahrzeugdetailseiten behalten ihre mit dem Editor abgestimmte Farbpalette.
+Die Seiten „Über uns“ und „Handwerk“ verwenden auf Desktop- und Mobilgeräten weiter verkleinerte Abstände zwischen den Hauptabschnitten und zentrierte Fließtexte; die Farbverläufe passen sich diesen kompakteren Abständen an. Alle redaktionellen Unterseiten, Fahrzeugarchive, Fahrzeugdetailseiten sowie Impressum und Datenschutzerklärung verwenden denselben kräftigeren gelben Farbverlauf, auch auf Englisch.
 
 Die Medien der Startseite werden ohne Farb- oder Helligkeitsfilter mit einer gleichmäßigen dunklen Überlagerung von 25 Prozent dargestellt.
 
