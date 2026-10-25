@@ -98,7 +98,9 @@ for (const file of files) {
 	assert.ok(ogUrl.startsWith(origin + base));
 	const indexable = !$('meta[name="robots"]').attr('content')?.includes('noindex');
 	if (pages) assert.equal(indexable, false);
-	if (indexable) {
+	// Ordinary preview pages retain identity metadata despite their noindex flag.
+	// Sitemap membership distinguishes them from legal, error and redirect pages.
+	if (dates.has(ogUrl)) {
 		assert.equal($('link[rel="canonical"]').attr('href'), ogUrl);
 		const json = JSON.parse($('script[type="application/ld+json"]').text());
 		const page = json['@graph'].find((node) => node['@id'] === `${ogUrl}#webpage`);

@@ -20,10 +20,12 @@ for (const file of globSync('dist/**/*.html')) {
 	assert.equal(de('[data-language="de"][aria-current="true"]').length, 1);
 	assert.equal(en('meta[property="og:locale"]').attr('content'), 'en_GB');
 	assert.equal(en('meta[property="og:description"]').attr('content'), en('meta[name="description"]').attr('content'));
-	if (!en('meta[name="robots"]').attr('content').includes('noindex')) {
+	if (en('link[rel="canonical"]').length) {
 		const canonical = en('link[rel="canonical"]').attr('href');
-		assert.equal(en('link[hreflang="en"]').attr('href'), canonical);
-		assert.equal(en('link[hreflang="de"]').attr('href'), de('link[rel="canonical"]').attr('href'));
+		if (!en('meta[name="robots"]').attr('content').includes('noindex')) {
+			assert.equal(en('link[hreflang="en"]').attr('href'), canonical);
+			assert.equal(en('link[hreflang="de"]').attr('href'), de('link[rel="canonical"]').attr('href'));
+		}
 		const graph = JSON.parse(en('script[type="application/ld+json"]').text())['@graph'];
 		const page = graph.find(node => node['@id'] === `${canonical}#webpage`);
 		assert.equal(page.inLanguage, 'en-GB');

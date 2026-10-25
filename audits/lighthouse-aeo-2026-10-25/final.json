@@ -1,0 +1,145 @@
+{
+  "runs": [
+    {
+      "name": "after-mobile-de-1",
+      "url": "https://bennetze.github.io/oldtimer/?lang=de",
+      "finalUrl": "https://bennetze.github.io/oldtimer/?lang=de",
+      "fetchTime": "2026-10-25T20:17:02.772Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 60,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1073.4099999999999,
+        "largest-contentful-paint": 1973.4099999999999,
+        "speed-index": 2442.6450740176438,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      },
+      "failedScoredAudits": [
+        "is-crawlable"
+      ]
+    },
+    {
+      "name": "final-mobile-de-1",
+      "url": "https://bennetze.github.io/oldtimer/?lang=de",
+      "finalUrl": "https://bennetze.github.io/oldtimer/?lang=de",
+      "fetchTime": "2026-10-25T20:22:15.980Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1051.5430000000001,
+        "largest-contentful-paint": 1771.5430000000001,
+        "speed-index": 3383.5399199885833,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      },
+      "failedScoredAudits": [
+        "is-crawlable"
+      ]
+    },
+    {
+      "name": "final-mobile-de-2",
+      "url": "https://bennetze.github.io/oldtimer/?lang=de",
+      "finalUrl": "https://bennetze.github.io/oldtimer/?lang=de",
+      "fetchTime": "2026-10-25T20:23:34.066Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 915.576,
+        "largest-contentful-paint": 1665.576,
+        "speed-index": 1491.5506800105804,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      },
+      "failedScoredAudits": [
+        "is-crawlable"
+      ]
+    },
+    {
+      "name": "final-desktop-de",
+      "url": "https://bennetze.github.io/oldtimer/?lang=de",
+      "finalUrl": "https://bennetze.github.io/oldtimer/?lang=de",
+      "fetchTime": "2026-10-25T20:22:45.370Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 313.7925,
+        "largest-contentful-paint": 473.7925,
+        "speed-index": 566.8518452470003,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      },
+      "failedScoredAudits": [
+        "is-crawlable"
+      ]
+    },
+    {
+      "name": "final-handwerk-mobile",
+      "url": "https://bennetze.github.io/oldtimer/handwerk/?lang=de",
+      "finalUrl": "https://bennetze.github.io/oldtimer/handwerk/?lang=de",
+      "fetchTime": "2026-10-25T20:23:21.069Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1064.838,
+        "largest-contentful-paint": 1585.838,
+        "speed-index": 4158.525020171604,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      },
+      "failedScoredAudits": [
+        "is-crawlable"
+      ]
+    }
+  ],
+  "framer": {
+    "url": "https://bennetze.github.io/oldtimer/",
+    "report": "https://www.framer.com/aeo/results?id=bennetze-github-io-mvo9xiar",
+    "score": 74,
+    "findable": 15,
+    "quotable": 19,
+    "understandable": 22,
+    "trustworthy": 18,
+    "canonical": 7,
+    "structuredData": 9
+  },
+  "validation": {
+    "tests": 149,
+    "buildPages": 344,
+    "languagePairs": 172,
+    "vehicleLanguagePages": 314,
+    "homepageScenarios": 9,
+    "visibleParityRoutes": 6,
+    "noindexPreserved": true,
+    "artifactMegabytes": 285.1
+  }
+}

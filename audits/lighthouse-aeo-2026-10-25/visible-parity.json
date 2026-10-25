@@ -1,0 +1,56 @@
+[
+  {
+    "route": "/",
+    "text": true,
+    "headings": true,
+    "media": true,
+    "title": true,
+    "description": true,
+    "openGraph": true
+  },
+  {
+    "route": "/en/",
+    "text": true,
+    "headings": true,
+    "media": true,
+    "title": true,
+    "description": true,
+    "openGraph": true
+  },
+  {
+    "route": "/handwerk/",
+    "text": true,
+    "headings": true,
+    "media": true,
+    "title": true,
+    "description": true,
+    "openGraph": true
+  },
+  {
+    "route": "/ueber-uns/",
+    "text": true,
+    "headings": true,
+    "media": true,
+    "title": true,
+    "description": true,
+    "openGraph": true
+  },
+  {
+    "route": "/projekte/vergangene-projekte/",
+    "text": true,
+    "headings": true,
+    "media": true,
+    "title": true,
+    "description": true,
+    "openGraph": true
+  },
+  {
+    "route": "/projekte/vergangene-projekte/1-bmw-327-28-sportcabriolet-baujahr-1939/",
+    "text": true,
+    "headings": true,
+    "media": true,
+    "title": true,
+    "description": true,
+    "openGraph": true
+  }
+]

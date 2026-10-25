@@ -12,6 +12,7 @@ import type { ImageMetadata } from 'astro';
 import defaultOpenGraphImage from '../assets/oldtimer/hero-site-poster.jpg';
 import { siteStatus } from '../config/site';
 import { socialProfiles } from '../config/social.js';
+import loraFont from '../assets/fonts/lora-variable.woff2?url';
 
 interface Props {
 	authoredTitle?: boolean;
@@ -52,6 +53,9 @@ const dateModified = pageModified(canonicalPath, [contentDate]);
 const pageTitle = title ? `${title} | Die Oldtimermanufaktur` : 'Die Oldtimermanufaktur';
 const isGitHubPagesPreview = siteStatus.developmentPreview && basePath !== '/';
 const effectiveNoindex = noindex || isGitHubPagesPreview;
+// A preview's indexing restriction does not remove its page identity. Explicitly
+// excluded pages (legal/error pages) still omit canonical and structured data.
+const includePageIdentity = !noindex;
 const siteUrl = Astro.site ?? Astro.url;
 const siteRootUrl = new URL(basePath, siteUrl);
 const pageUrl = new URL(Astro.url.pathname, siteUrl);
@@ -169,7 +173,7 @@ const jsonLd = JSON.stringify({
 	'@context': 'https://schema.org',
 	'@graph': jsonLdGraph,
 }).replace(/</g, '\\u003c');
-for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jsonLd] : [])]) {
+for (const script of [safariScript, languageScript, ...(includePageIdentity ? [jsonLd] : [])]) {
 	Astro.csp?.insertScriptHash(`sha256-${createHash('sha256').update(script).digest('base64')}`);
 }
 ---
@@ -179,6 +183,7 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preload" href={loraFont} as="font" type="font/woff2" crossorigin />
 		<link rel="icon" type="image/png" sizes="192x192" href={`${basePath}favicon.png`} />
 		<link rel="icon" href={`${basePath}favicon.ico`} />
 		<link rel="apple-touch-icon" href={`${basePath}apple-touch-icon.png`} />
@@ -188,7 +193,7 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 		<meta name="date" content={dateModified} />
 		{effectiveNoindex && <meta name="robots" content="noindex,follow,noarchive" />}
 		{!effectiveNoindex && <meta name="robots" content="index,follow,max-image-preview:large" />}
-		{!effectiveNoindex && <link rel="canonical" href={pageUrl.href} />}
+		{includePageIdentity && <link rel="canonical" href={pageUrl.href} />}
 		<meta property="og:title" data-authored={authoredTitle || undefined} content={pageTitle} />
 		<meta property="og:type" content={openGraphType} />
 		<meta property="og:image" content={openGraphImageUrl} />
@@ -201,7 +206,7 @@ for (const script of [safariScript, languageScript, ...(!effectiveNoindex ? [jso
 		<meta property="og:description" data-authored={authoredDescription || undefined} content={description} />
 		<meta property="og:locale" content="de_DE" />
 		<meta property="og:site_name" content="Die Oldtimermanufaktur" />
-		{!effectiveNoindex && <script type="application/ld+json" set:html={jsonLd} />}
+		{includePageIdentity && <script type="application/ld+json" set:html={jsonLd} />}
 		<meta name="generator" content={Astro.generator} />
 		<title data-authored={authoredTitle || undefined}>{pageTitle}</title>
 		<script is:inline set:html={languageScript} />

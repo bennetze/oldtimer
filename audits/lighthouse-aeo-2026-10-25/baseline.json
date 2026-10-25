@@ -1,0 +1,97 @@
+{
+  "runs": [
+    {
+      "name": "before-mobile",
+      "url": "https://bennetze.github.io/oldtimer/",
+      "finalUrl": "https://bennetze.github.io/oldtimer/en/",
+      "fetchTime": "2026-10-25T20:02:19.016Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 60,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1682.9105,
+        "largest-contentful-paint": 1982.9105,
+        "speed-index": 4066.9154920295,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      }
+    },
+    {
+      "name": "before-mobile-de",
+      "url": "https://bennetze.github.io/oldtimer/?lang=de",
+      "finalUrl": "https://bennetze.github.io/oldtimer/?lang=de",
+      "fetchTime": "2026-10-25T20:02:58.714Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 60,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1521.857,
+        "largest-contentful-paint": 1896.857,
+        "speed-index": 4971.000279986548,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0002022574586840512
+      }
+    },
+    {
+      "name": "before-desktop-de",
+      "url": "https://bennetze.github.io/oldtimer/?lang=de",
+      "finalUrl": "https://bennetze.github.io/oldtimer/?lang=de",
+      "fetchTime": "2026-10-25T20:03:48.533Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 60,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 350.355,
+        "largest-contentful-paint": 470.355,
+        "speed-index": 633.1762592639475,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0001664501247701602
+      }
+    },
+    {
+      "name": "before-handwerk-mobile",
+      "url": "https://bennetze.github.io/oldtimer/handwerk/?lang=de",
+      "finalUrl": "https://bennetze.github.io/oldtimer/handwerk/?lang=de",
+      "fetchTime": "2026-10-25T20:07:19.629Z",
+      "lighthouse": "13.5.0",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1740.886,
+        "largest-contentful-paint": 1829.386,
+        "speed-index": 5152.44898749568,
+        "total-blocking-time": 5.5,
+        "cumulative-layout-shift": 0
+      }
+    }
+  ],
+  "framer": {
+    "url": "https://bennetze.github.io/oldtimer/",
+    "report": "https://www.framer.com/aeo/results?id=bennetze-github-io-mvo98on9",
+    "score": 58,
+    "findable": 8,
+    "quotable": 19,
+    "understandable": 13,
+    "trustworthy": 18
+  }
+}

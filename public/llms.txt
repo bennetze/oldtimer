@@ -1,5 +1,9 @@
 # Die Oldtimermanufaktur
 
+Die lokal eingebundene variable Lora-Schrift wird im komprimierten WOFF2-Format vorgeladen; Schriftbild, Texte, Fotografien, Videos und Seitengestaltung bleiben erhalten.
+
+Reguläre Seiten der Entwicklungsvorschau enthalten kanonische URLs und strukturierte Daten zu den bereits dargestellten Inhalten. Die Vorschau bleibt mit `noindex` von der Indexierung ausgeschlossen; rechtliche Seiten und Fehlerseiten enthalten weiterhin keine dieser Identitätsmetadaten.
+
 Die gemeinsame Kopfzeile zeigt auf allen Seiten ein größeres Unternehmenslogo. Mobil stehen die beiden Sprachschaltflächen untereinander; Menü und Sprachauswahl behalten großzügige Bedienflächen neben dem Logo.
 
 Fließtexte und Bildunterschriften verwenden auf Mobilgeräten sprachgerechte Worttrennung statt beliebiger Umbrüche innerhalb eines Wortes. Kurze Kontaktbeschriftungen bleiben zusammen; auf schmalen Bildschirmen stehen sie über den jeweiligen Angaben. E-Mail-Adressen können an sinnvollen Zeichen wie dem @-Zeichen umbrechen.

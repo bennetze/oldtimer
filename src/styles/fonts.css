@@ -1,7 +1,7 @@
 /* Unmodified Lora 3.008 variable font; copyright and SIL OFL 1.1 in public/licenses/Lora-OFL-1.1.txt. */
 @font-face {
 	font-family: 'Lora';
-	src: url('../assets/fonts/lora-variable.ttf') format('truetype');
+	src: url('../assets/fonts/lora-variable.woff2') format('woff2');
 	font-weight: 400 700;
 	font-style: normal;
 	font-display: swap;

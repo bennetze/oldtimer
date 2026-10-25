@@ -70,15 +70,10 @@ for (const vehicle of vehicles) {
 		const filename = image.src.replace(/^\.\//, '').replace(/\.[^.]+$/, '.webp');
 		await access(join(distRoot, 'vehicle-gallery', vehicle.category, vehicle.slug, filename));
 	}
-	if (githubPages) {
-		assert.doesNotMatch(html, /type="application\/ld\+json"/);
-		assert.doesNotMatch(html, /rel="canonical"/);
-	} else {
-		assert.match(html, /"@type":"ItemPage"/);
-		assert.match(html, /"@type":"Vehicle"/);
-		assert.match(html, /"@type":"BreadcrumbList"/);
-		assert.match(html, /rel="canonical"/);
-	}
+	assert.match(html, /"@type":"ItemPage"/);
+	assert.match(html, /"@type":"Vehicle"/);
+	assert.match(html, /"@type":"BreadcrumbList"/);
+	assert.match(html, /rel="canonical"/);
 }
 
 const pageSize = 24;
