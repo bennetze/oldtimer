@@ -5,7 +5,7 @@
 	"description": "Designt von Albrecht Graf von Goertz - entstanden von der so genannten\n1. Serie zwischen 1956 und 1957 nur 78 Stück dieser eleganten Cabriolets in Handa…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/160-bmw-503-cabriolet-baujahr-1957",
 	"order": 26,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Cabriolet, Baujahr 1957",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 503 Cabriolet, Baujahr 1957 – Silberne Fahrzeugfront und Motorhaube im Hof.",
-					"altEn": "BMW 503 Cabriolet, year 1957 – Silver front bodywork and bonnet in the courtyard."
+					"altEn": "BMW 503 Cabriolet, year 1957 – Silver front bodywork and bonnet in the courtyard.",
+					"size": "medium"
 				}
 			]
 		},

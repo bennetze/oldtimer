@@ -5,7 +5,7 @@
 	"description": "Auch diese Mercedes-Benz 280SL \"Pagode\" wird bei uns im Kundenauftrag und in allen Details neu aufgebaut.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/173-mercedes-280-sl-baujahr-1970",
 	"order": 4,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1970",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 280 SL \"Pagode\" Baujahr 1970",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1970 – Motor hängt über dem offenen Motorraum am Hebezeug.",
-					"altEn": "Mercedes 280 SL \"Pagoda\" year 1970 – Engine suspended over the open engine compartment by lifting equipment."
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1970 – Engine suspended over the open engine compartment by lifting equipment.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

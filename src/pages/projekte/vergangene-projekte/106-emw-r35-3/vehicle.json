@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine EMW R35 aus Eisenacher Produktion (Eisenacher-Motoren-Werke), die im Kundenauftrag grundhaft und originalgetreu durch uns restauriert w…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/106-emw-r35-3",
 	"order": 128,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35/3, Baujahr 1954",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW R35/3, Baujahr 1954 – Motorrad schräg von vorn mit hellem Tank.",
-					"altEn": "EMW R35/3, year 1954 – Motorcycle from the front corner with light fuel tank."
+					"altEn": "EMW R35/3, year 1954 – Motorcycle from the front corner with light fuel tank.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

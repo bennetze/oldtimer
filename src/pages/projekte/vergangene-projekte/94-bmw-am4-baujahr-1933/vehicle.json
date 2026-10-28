@@ -5,7 +5,7 @@
 	"description": "Dieser BMW Typ AM4 von 1933 gilt als der legitime Nachfolger des legendären DIXI - mit dem die Firma BMW, 1928 - durch die Übernahme der Eisenacher DIXI…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/94-bmw-am4-baujahr-1933",
 	"order": 74,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1933",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW AM4, Baujahr 1933",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW AM4, Baujahr 1933 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "BMW AM4, year 1933 – Front three-quarter view outdoors."
+					"altEn": "BMW AM4, year 1933 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

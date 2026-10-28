@@ -5,7 +5,7 @@
 	"description": "Auch dieser BMW 340 im unvollständigen \"Fundzustand\" wurde im Auftrag seines Besitzers und langjährigen geschätzten Kunden, völlig neu durch uns aufgebaut.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/150-emw-340-baujahr-1953",
 	"order": 16,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1952",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 340, Baujahr 1952 – BMW-Emblem und Chromgrill an grüner Fahrzeugfront.",
-					"altEn": "BMW 340, year 1952 – BMW badge and chrome grille on green front bodywork."
+					"altEn": "BMW 340, year 1952 – BMW badge and chrome grille on green front bodywork.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

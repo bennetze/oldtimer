@@ -5,7 +5,7 @@
 	"description": "Dieser Opel Olympia Rekord wurde als Cabriolet-Aufbau in sehr geringen Stückzahlen bei dem damals sehr renommierten Karosserieschneider “Deutsch” gebaut…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/65-opel-olympia-rekord-cabriolet-baujahr-1955",
 	"order": 108,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1955",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "OPEL Olympia Rekord Cabriolet, Baujahr 1955",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "OPEL Olympia Rekord Cabriolet, Baujahr 1955 – Dreiviertelansicht von hinten im Freien.",
-					"altEn": "OPEL Olympia Rekord Cabriolet, year 1955 – Rear three-quarter view outdoors."
+					"altEn": "OPEL Olympia Rekord Cabriolet, year 1955 – Rear three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

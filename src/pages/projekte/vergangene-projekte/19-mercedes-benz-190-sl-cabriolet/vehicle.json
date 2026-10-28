@@ -5,7 +5,7 @@
 	"description": "Mercedes – Benz 190 SL Baujahr 1959-1961. Mittlerweile wurden bereits mehrere dieser wunderschönen Cabriolets original– und detailgetreu bei uns restaur…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/19-mercedes-benz-190-sl-cabriolet",
 	"order": 100,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 190 SL, Cabriolet",
 	"leadImage": "./card.jpg",
@@ -22,7 +22,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes-Benz 190 SL, Cabriolet – Blick in den offenen Motorraum auf Motor und Leitungen.",
-					"altEn": "Mercedes-Benz 190 SL, Cabriolet – Open engine bay showing the engine and pipework."
+					"altEn": "Mercedes-Benz 190 SL, Cabriolet – Open engine bay showing the engine and pipework.",
+					"size": "medium"
 				}
 			]
 		},

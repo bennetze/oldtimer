@@ -4,7 +4,7 @@ Static Astro website. Public content is German and English. This is still a
 development preview, not an approved production release.
 
 For a German interface to preview, vehicle transfer/deletion, builds and GitHub
-Pages publication, open the `Website-Werkzeuge` launcher for your operating system
+Pages publication, open the `Bearbeitung` launcher in the parent folder for your operating system
 or run `npm run tools`. See [WEBSITE-TOOLS.md](WEBSITE-TOOLS.md) for setup and usage.
 
 ## Development and verification
@@ -32,7 +32,7 @@ remains required by Cheerio's encoding helper.
 Review changed lifecycle scripts before approving another version. Do not disable
 the policy to make installation pass. The package is private to prevent publishing.
 
-Offline-editor contract tests require the sibling `../oldtimer-intern` checkout.
+Offline-editor contract tests require the sibling `../Intern` checkout.
 If absent, those suites fail explicitly; do not skip or remove them. `npm run
 test:site` runs website tests and discovery without loading those companion suites.
 

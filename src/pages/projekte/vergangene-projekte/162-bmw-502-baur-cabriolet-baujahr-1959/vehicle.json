@@ -5,7 +5,7 @@
 	"description": "Hier ein wunderschönes Cabriolet des berühmten BMW 502, der bei uns umfassend überarbeitet wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/162-bmw-502-baur-cabriolet-baujahr-1959",
 	"order": 43,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 502 \"Baur\"-Cabriolet, Baujahr 1959 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – Front three-quarter view outdoors."
+					"altEn": "BMW 502 \"Baur\"-Cabriolet, year 1959 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

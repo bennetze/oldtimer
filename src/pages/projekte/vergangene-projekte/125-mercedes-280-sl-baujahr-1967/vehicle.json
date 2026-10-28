@@ -5,7 +5,7 @@
 	"description": "Durch einen massiven Auffahr-Unfallschaden wurde das Fahrzeug sowohl Karosserie- als auch technischerseits stark beschädigt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/125-mercedes-280-sl-baujahr-1967",
 	"order": 129,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1967",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 280 SL, Baujahr 1967",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes 280 SL, Baujahr 1967 – Frontansicht im Freien.",
-					"altEn": "Mercedes 280 SL, year 1967 – Straight front view outdoors."
+					"altEn": "Mercedes 280 SL, year 1967 – Straight front view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

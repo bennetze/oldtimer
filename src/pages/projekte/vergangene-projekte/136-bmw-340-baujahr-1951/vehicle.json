@@ -5,7 +5,7 @@
 	"description": "Dieser BMW 340 des Jahrgangs 1951, gebaut bei BMW in Eisenach, erreichte uns als komplett zerlegtes und obendrein völlig desolates Restaurationsobjekt m…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/136-bmw-340-baujahr-1951",
 	"order": 48,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1951",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Metallblanke Karosserie gerade von vorn.",
-					"altEn": "BMW 340, year 1951 – Straight front view of the bare-metal body."
+					"altEn": "BMW 340, year 1951 – Straight front view of the bare-metal body.",
+					"size": "medium"
 				}
 			]
 		},

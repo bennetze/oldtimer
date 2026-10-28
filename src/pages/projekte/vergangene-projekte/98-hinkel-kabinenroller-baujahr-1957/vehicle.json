@@ -5,7 +5,7 @@
 	"description": "Die HEINKEL Flugzeugwerke AG, gegründet 1922 in Warnemünde/Rostock, waren vor und während des 2. Weltkrieges mit Ihrem Gründer Ernst Heinkel einer der f…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/98-hinkel-kabinenroller-baujahr-1957",
 	"order": 76,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HEINKEL Kabinenroller, Baujahr 1957",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "HEINKEL Kabinenroller, Baujahr 1957 – Seitenansicht im Freien.",
-					"altEn": "HEINKEL Bubble Car, year 1957 – Side profile outdoors."
+					"altEn": "HEINKEL Bubble Car, year 1957 – Side profile outdoors.",
+					"size": "medium"
 				}
 			]
 		},

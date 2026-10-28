@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine Kostbarkeit aus OPEL`s ruhmreicher Vorkriegsära: Ein sehr seltener “ADMIRAL” als\n4-türiges Cabriolet.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/74-opel-admiral",
 	"order": 119,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Opel Admiral, 4-türiges Cabriolet, Baujahr 1939",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Opel Admiral, 4-türiges Cabriolet, Baujahr 1939 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Opel Admiral, 4-door Cabriolet, year 1939 – Front three-quarter view outdoors."
+					"altEn": "Opel Admiral, 4-door Cabriolet, year 1939 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

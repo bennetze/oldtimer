@@ -5,7 +5,7 @@
 	"description": "Hier ein sehr frühes BMW(!) 327 Nachkriegs-Sportcoupe namens 327/3, Baujahr 1951, das sehr detailliert und originalgetreu in unserer Manufaktur überarbe…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/47-bmw-327-3-sport-coupe-baujahr-1951",
 	"order": 115,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327-3 Sport - Coupe, Baujahr 1951",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327-3 Sport - Coupe, Baujahr 1951 – Kühlergrillrahmen mit zwei offenen senkrechten Ausschnitten.",
-					"altEn": "BMW 327-3 Sport - Coupe, year 1951 – Grille frame with two open vertical cut-outs."
+					"altEn": "BMW 327-3 Sport - Coupe, year 1951 – Grille frame with two open vertical cut-outs.",
+					"size": "medium"
 				}
 			]
 		},

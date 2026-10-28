@@ -5,7 +5,7 @@
 	"description": "Auch dieses Mercedes 170S B-Cabriolet wurde gemäß Kundenwunsch in unserer Manufaktur allumfassend restauriert (Karosserie, Technik, Elektrik, Lackierung…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/16-mercedes-170-s-cabriolet-baujahr-1950",
 	"order": 95,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1950",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 170 S Cabriolet, Baujahr 1950",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes 170 S Cabriolet, Baujahr 1950 – Rostige Fahrzeugfront mit offenem Motorraum.",
-					"altEn": "Mercedes 170 S Cabriolet, year 1950 – Rusty front bodywork with engine bay open."
+					"altEn": "Mercedes 170 S Cabriolet, year 1950 – Rusty front bodywork with engine bay open.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Dieses sehr rare 4-türige Mercedes Cabriolet 300Da wurde bei uns umfangreich technisch revidiert und ein Motorschaden instand gesetzt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/7-mercedes-benz-300-adenauer-cabriolet-d",
 	"order": 93,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes - Benz 300 “Adenauer” Cabriolet D",
 	"leadImage": "./image-001.jpg",
@@ -17,7 +17,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes - Benz 300 “Adenauer” Cabriolet D – Dreiviertelansicht von vorn in der Werkstatt.",
-					"altEn": "Mercedes - Benz 300 “Adenauer” Cabriolet D – Front three-quarter view inside the workshop."
+					"altEn": "Mercedes - Benz 300 “Adenauer” Cabriolet D – Front three-quarter view inside the workshop.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Dieses sehr schöne BMW-Sportcabriolet wurde bei Uns einer umfangreichen Komplettrestauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/25-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 97,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Dreiviertelansicht von vorn in der Werkstatt.",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Front three-quarter view inside the workshop."
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Front three-quarter view inside the workshop.",
+					"size": "medium"
 				}
 			]
 		},

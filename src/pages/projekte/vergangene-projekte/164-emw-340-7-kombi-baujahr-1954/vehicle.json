@@ -5,7 +5,7 @@
 	"description": "EMW 340-7 Kombi, Baujahr 1954.\n\nDieser äußerst seltene 340-7 Kombi befindet sich auch nach rund 70 Jahren noch immer im Originalzustand und wurde bei un…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/164-emw-340-7-kombi-baujahr-1954",
 	"order": 60,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 340-7 Kombi, Baujahr 1954",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 340-7 Kombi, Baujahr 1954 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "EMW 340-7 Estate, year 1954 – Front three-quarter view outdoors."
+					"altEn": "EMW 340-7 Estate, year 1954 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

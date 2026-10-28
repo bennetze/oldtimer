@@ -1,6 +1,6 @@
 # Vehicle editing and checked website imports
 
-The offline editor is `../oldtimer-intern/index.html`. Open it directly in a
+The offline editor is `../Intern/index.html`. Open it directly in a
 browser. No vehicle content leaves the browser until you download the ZIP.
 
 ## Create or edit
@@ -272,7 +272,7 @@ restored or required. A cleanup failure after durable commit is reported as save
 with pending unlock. Selecting another project with pending recovery leaves the
 current project and draft intact until that candidate is successfully loaded.
 
-Editor fixtures resolve `../oldtimer-intern/index.html` relative to the test code.
+Editor fixtures resolve `../Intern/index.html` relative to the test code.
 Set `VEHICLE_TOOL_PATH` to an alternate editor's absolute `index.html` path. Missing
 editors fail explicitly. Browser harnesses remain test-only; native folder-picker
 and platform acceptance must be checked separately. Gallery cache v3 validates

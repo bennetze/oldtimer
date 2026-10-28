@@ -5,7 +5,7 @@
 	"description": "Mittlerweile mehrere dieser Sportwagen wurden fachgerecht und grundlegend durch uns restauriert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/62-alfa-romeo-giulietta-spider",
 	"order": 116,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Alfa - Romeo Giulietta-Spider",
 	"leadImage": "./card.jpg",
@@ -22,7 +22,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Alfa - Romeo Giulietta-Spider – Armaturenbrett mit Instrumenten und Lenkrad.",
-					"altEn": "Alfa - Romeo Giulietta-Spider – Dashboard with instruments and steering wheel."
+					"altEn": "Alfa - Romeo Giulietta-Spider – Dashboard with instruments and steering wheel.",
+					"size": "medium"
 				}
 			]
 		},

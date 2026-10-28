@@ -10,8 +10,9 @@ interface Props {
 	avif: string;
 	webp: string;
 	alt: string;
+	sizes?: string;
 }
-const { mp4, mobileMp4, webm, poster, avif, webp, alt } = Astro.props;
+const { mp4, mobileMp4, webm, poster, avif, webp, alt, sizes = "(max-width: 840px) 76vw, 42vw" } = Astro.props;
 ---
 
 <div class="editorial-motion" data-motion-panel>
@@ -19,7 +20,7 @@ const { mp4, mobileMp4, webm, poster, avif, webp, alt } = Astro.props;
 		<source data-motion-src={mp4} data-motion-mobile-src={mobileMp4} type="video/mp4" />
 		<source data-motion-src={webm} type="video/webm" />
 	</video>
-	<MotionPoster {poster} {avif} webp={import.meta.env.BASE_URL === '/' ? webp : undefined} {alt} sizes="(max-width: 840px) 76vw, 42vw" />
+	<MotionPoster {poster} {avif} webp={import.meta.env.BASE_URL === '/' ? webp : undefined} {alt} {sizes} />
 	<button class="hero-motion-toggle is-paused" type="button" data-motion-toggle hidden aria-label="Animation abspielen"><span aria-hidden="true"></span></button>
 </div>
 

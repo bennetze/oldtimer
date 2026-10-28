@@ -5,7 +5,7 @@
 	"description": "Ein Fahrzeug der Superlative, von dem in dieser Ausführung bis 1960 nur 134 Exemplare von Hand und in Aluminium gefertigt wurden.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/183-bmw-503-coupe-baujahr-1958",
 	"order": 17,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Coupe, Baujahr 1958",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1958 – Silbernes Coupé seitlich vor der Werkstatt.",
-					"altEn": "BMW 503 Coupe, year 1958 – Silver coupé in side profile outside workshop."
+					"altEn": "BMW 503 Coupe, year 1958 – Silver coupé in side profile outside workshop.",
+					"size": "medium"
 				}
 			]
 		},

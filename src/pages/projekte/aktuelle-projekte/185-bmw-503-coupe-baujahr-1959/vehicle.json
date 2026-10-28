@@ -5,7 +5,7 @@
 	"description": "Hier ein seltenes BMW 503 Coupe im \"Fundzustand\" mit div. Fehlteilen zum völligen Neuaufbau.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/185-bmw-503-coupe-baujahr-1959",
 	"order": 6,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Coupe, Baujahr 1959",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Helle Karosserie mit fehlenden Scheinwerfern und leicht angehobener Haube.",
-					"altEn": "BMW 503 Coupe, year 1959 – Light-coloured body with headlights absent and bonnet slightly raised."
+					"altEn": "BMW 503 Coupe, year 1959 – Light-coloured body with headlights absent and bonnet slightly raised.",
+					"size": "medium"
 				}
 			]
 		},

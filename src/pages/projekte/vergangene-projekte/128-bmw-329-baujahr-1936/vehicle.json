@@ -5,7 +5,7 @@
 	"description": "Der damals wie heute sehr seltene BMW Typ 329 gilt in der Automobilhistorie von BMW eigentlich als \"Zwitter\". Durch die vorübergehende Beibehaltung des…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/128-bmw-329-baujahr-1936",
 	"order": 31,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 329 \"Reutter\" Cabriolet, Baujahr 1936 – Dreiviertelansicht von vorn in der Werkstatt.",
-					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Front three-quarter view inside the workshop."
+					"altEn": "BMW 329 \"Reutter\" Cabriolet, year 1936 – Front three-quarter view inside the workshop.",
+					"size": "medium"
 				}
 			]
 		},

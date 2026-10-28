@@ -5,7 +5,7 @@
 	"description": "Mercedes - Benz 300 SL “Flügeltürer”",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/18-mercedes-benz-300-sl-fluegeltuerer",
 	"order": 91,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes - Benz 300 SL “Flügeltürer”",
 	"leadImage": "./card.jpg",
@@ -22,7 +22,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes - Benz 300 SL “Flügeltürer” – Silbernes Flügeltür-Coupé mit offener Tür in der Werkstatt.",
-					"altEn": "Mercedes - Benz 300 SL “Gullwing” – Silver gullwing coupé with door open in workshop."
+					"altEn": "Mercedes - Benz 300 SL “Gullwing” – Silver gullwing coupé with door open in workshop.",
+					"size": "medium"
 				}
 			]
 		},

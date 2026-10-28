@@ -5,7 +5,7 @@
 	"description": "The WINNER!\n2. Platz beim European Concours de Elegance!\n\nHier wieder eine Eisenacher Rarität, die in unserer Manufaktur einer umfangreichen Komplettres…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/133-emw-340-kombi-baujahr-1953",
 	"order": 7,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1953",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 340-7 \"Kombi- und Kurierfahrzeug\" Baujahr 1953 – Blau-helle Limousine schräg von vorn in einer Halle.",
-					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – Blue-and-light saloon from the front corner in a hall."
+					"altEn": "EMW 340-7 \"Estate and Courier Vehicle\" year 1953 – Blue-and-light saloon from the front corner in a hall.",
+					"size": "medium"
 				}
 			]
 		},

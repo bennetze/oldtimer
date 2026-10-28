@@ -5,7 +5,7 @@
 	"description": "Ein weiterer EMW 340, welcher sich aktuell bei uns in der Restauration befindet. Augenscheinlich zunächst halbwegs intakt, hatte die Karosserie doch tei…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/182-emw-340-baujahr-1954",
 	"order": 11,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1951",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Rote Limousine schräg von vorn in der Werkstatt.",
-					"altEn": "BMW 340, year 1951 – Red saloon viewed from the front corner inside the workshop."
+					"altEn": "BMW 340, year 1951 – Red saloon viewed from the front corner inside the workshop.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

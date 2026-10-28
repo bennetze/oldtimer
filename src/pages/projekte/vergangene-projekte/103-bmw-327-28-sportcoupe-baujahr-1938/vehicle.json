@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine Rarität aus der ruhmreichen Eisenacher BMW-Vorkriegsära. Ein bei der namhaften Karosserieschmiede \"Autenrieth\" in Darmstadt eingekleide…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/103-bmw-327-28-sportcoupe-baujahr-1938",
 	"order": 54,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcoupe, Baujahr 1938",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1938 – Grünes Coupé seitlich vor einem Steingebäude.",
-					"altEn": "BMW 327/28 Sport Coupé, year 1938 – Green coupé in side profile outside a stone building."
+					"altEn": "BMW 327/28 Sport Coupé, year 1938 – Green coupé in side profile outside a stone building.",
+					"size": "medium"
 				}
 			]
 		},

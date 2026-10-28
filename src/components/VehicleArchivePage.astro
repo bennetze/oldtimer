@@ -92,11 +92,6 @@ const itemList = {
 			</header>
 
 			<nav class="category-switcher" aria-label="Projektbereiche">
-				<button class="category-switcher__toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="project-category-dialog" hidden>
-					<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h16" /></svg>
-					<span>Projektbereich wechseln</span>
-					<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" /></svg>
-				</button>
 				<div class="category-switcher__links" id="project-category-links">
 				{
 					vehicleCategories.map((item) => (
@@ -112,27 +107,9 @@ const itemList = {
 				</div>
 			</nav>
 
-			<dialog class="category-dialog" id="project-category-dialog" aria-labelledby="project-category-title">
-				<header class="category-dialog__header">
-					<h2 id="project-category-title">Projektbereiche</h2>
-					<button class="category-dialog__close" type="button" aria-label="Schließen" autofocus>
-						<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6" /></svg>
-					</button>
-				</header>
-				<nav class="category-dialog__links" aria-label="Projektbereiche">
-					{vehicleCategories.map((item, index) => (
-						<a href={sitePath(`/projekte/${item.key}/`)} aria-current={item.key === category ? 'page' : undefined}>
-							<span class="category-dialog__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-							<span class="category-dialog__name">{item.label}{item.key === category && <small>Ausgewählt</small>}</span>
-							<svg aria-hidden="true" viewBox="0 0 24 24"><path d={item.key === category ? 'm5 12 4 4L19 6' : 'M4 12h15m-6-6 6 6-6 6'} /></svg>
-						</a>
-					))}
-				</nav>
-			</dialog>
 
 			<form class="archive-search" role="search" aria-label="Fahrzeugsuche in allen Projektbereichen" data-vehicle-search hidden>
 				<label for={searchId}>Alle Fahrzeuge durchsuchen</label>
-				<p class="archive-search__scope" id="vehicle-search-scope">Aktuelle Projekte · Abgeschlossene Projekte · Fahrzeugangebote</p>
 				<div class="archive-search__field">
 					<svg aria-hidden="true" viewBox="0 0 24 24">
 						<circle cx="10.5" cy="10.5" r="6.75" />
@@ -143,7 +120,6 @@ const itemList = {
 						type="search"
 						placeholder="Fahrzeugname eingeben"
 						aria-controls={gridId}
-						aria-describedby="vehicle-search-scope"
 						autocomplete="off"
 						spellcheck="false"
 						data-vehicle-search-input
@@ -200,46 +176,9 @@ const itemList = {
 </Layout>
 
 <script>
-	import { watchMedia, createModal } from '../scripts/accessibility.js';
 	import { createCardFilter } from '../scripts/archiveSearch.js';
 	import { restoreArchiveQuery, saveArchiveQuery } from '../scripts/archiveHistory.js';
 	const archive = document.querySelector('.vehicle-archive');
-	const categoryToggle = archive?.querySelector<HTMLButtonElement>('.category-switcher__toggle');
-	const categoryLinks = archive?.querySelector<HTMLElement>('.category-switcher__links');
-	const categoryDialog = archive?.querySelector<HTMLDialogElement>('.category-dialog');
-	const mobileCategories = window.matchMedia('(max-width: 760px)');
-	if (categoryToggle && categoryLinks && categoryDialog && typeof categoryDialog.showModal === 'function' && typeof categoryDialog.close === 'function') {
-		const categoryModal = createModal(categoryDialog);
-		const closeCategories = () => categoryModal.close();
-		const syncCategoryLayout = () => {
-			const focused = document.activeElement;
-			const wasOpen = categoryDialog.open;
-			if (wasOpen) closeCategories();
-			categoryToggle.hidden = !mobileCategories.matches;
-			categoryLinks.hidden = mobileCategories.matches;
-			if (!mobileCategories.matches && (wasOpen || focused === categoryToggle)) categoryLinks.querySelector<HTMLAnchorElement>('[aria-current="page"]')?.focus();
-			if (mobileCategories.matches && categoryLinks.contains(focused)) categoryToggle.focus();
-		};
-		categoryToggle.addEventListener('click', () => {
-			categoryModal.open(categoryToggle);
-			categoryToggle.setAttribute('aria-expanded', 'true');
-			document.body.classList.add('category-dialog-open');
-		});
-		categoryDialog.querySelector('.category-dialog__close')?.addEventListener('click', closeCategories);
-		categoryDialog.addEventListener('click', (event) => {
-			if (event.target !== categoryDialog) return;
-			const bounds = categoryDialog.getBoundingClientRect();
-			if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) closeCategories();
-		});
-		categoryDialog.addEventListener('close', () => {
-			categoryToggle.setAttribute('aria-expanded', 'false');
-			document.body.classList.remove('category-dialog-open');
-			if (mobileCategories.matches) categoryToggle.focus();
-		});
-		window.addEventListener('pagehide', closeCategories);
-		watchMedia(mobileCategories, syncCategoryLayout);
-		syncCategoryLayout();
-	}
 	const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 	const searchForm = archive?.querySelector('[data-vehicle-search]');
 	const searchInput = searchForm?.querySelector('[data-vehicle-search-input]');
@@ -381,75 +320,10 @@ const itemList = {
 		color: #ffffff;
 	}
 
-	.category-switcher a:focus-visible,
-	.category-switcher__toggle:focus-visible {
+	.category-switcher a:focus-visible {
 		outline: 2px solid currentColor;
 		outline-offset: 4px;
 	}
-
-	.category-switcher__toggle {
-		display: flex;
-		align-items: center;
-		gap: 0.875rem;
-		width: 100%;
-		min-height: 58px;
-		padding: 1rem 1.125rem;
-		border: 1px solid #111111;
-		border-radius: 0;
-		background: #111111;
-		color: #eeeeee;
-		font: inherit;
-		font-size: 1.0625rem;
-		font-weight: 450;
-		text-align: left;
-		cursor: pointer;
-		transition: background-color 160ms ease;
-	}
-
-	.category-switcher__toggle:hover { background: #303030; }
-	.category-switcher__toggle:active { background: #444444; }
-	.category-switcher__toggle svg,
-	.category-dialog svg {
-		flex: 0 0 20px;
-		width: 20px;
-		height: 20px;
-		fill: none;
-		stroke: currentColor;
-		stroke-width: 1.25;
-	}
-	.category-switcher__toggle svg:last-child { margin-left: auto; width: 16px; }
-	.category-switcher [hidden] { display: none; }
-
-	:global(body.category-dialog-open) { overflow: hidden; }
-	.category-dialog {
-		position: fixed;
-		inset: auto 0 0;
-		box-sizing: border-box;
-		width: 100%;
-		max-width: 100%;
-		max-height: 90vh;
-		max-height: 90svh;
-		margin: 0;
-		padding: 1.25rem max(1.25rem, env(safe-area-inset-right, 0px)) max(1.5rem, env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
-		border: 0;
-		border-top: 1px solid rgba(17, 17, 17, 0.25);
-		background: #eeeeee;
-		color: #111111;
-		overscroll-behavior: contain;
-	}
-	.category-dialog::backdrop { background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); }
-	.category-dialog[open] { animation: category-sheet-enter 220ms cubic-bezier(0.22, 1, 0.36, 1); }
-	.category-dialog__header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
-	.category-dialog__header h2 { margin: 0; font-size: clamp(1.125rem, 5vw, 1.5rem); font-weight: 450; letter-spacing: 0.04em; text-transform: uppercase; }
-	.category-dialog__close { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 44px; padding: 0; border: 1px solid rgba(17,17,17,0.3); border-radius: 50%; background: transparent; color: inherit; cursor: pointer; }
-	.category-dialog__links a { display: flex; align-items: center; gap: 1rem; min-height: 80px; padding: 1rem 0; border-top: 1px solid rgba(17,17,17,0.25); color: inherit; text-decoration: none; }
-	.category-dialog__number { font-size: 0.875rem; color: #555555; }
-	.category-dialog__name { flex: 1; font-family: var(--font-heading); font-size: clamp(1rem, 4.5vw, 1.25rem); font-weight: 450; line-height: 1.3; overflow-wrap: normal; hyphens: auto; }
-	.category-dialog__name small { display: block; margin-top: 0.35rem; font-family: var(--font-body); font-size: 1rem; font-weight: 450; }
-	.category-dialog__links a:hover .category-dialog__name { text-decoration: underline; text-underline-offset: 0.2em; }
-	.category-dialog :is(a, button):focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
-	@keyframes category-sheet-enter { from { opacity: 0; transform: translateY(1rem); } to { opacity: 1; transform: none; } }
-	@media (prefers-reduced-motion: reduce) { .category-dialog[open] { animation: none; } .category-switcher__toggle { transition: none; } }
 
 	.archive-search {
 		display: grid;
@@ -470,7 +344,6 @@ const itemList = {
 		text-transform: uppercase;
 	}
 
-	.archive-search__scope,
 	.archive-search__status { margin: 0; text-align: center; font-size: 0.95rem; line-height: 1.6; }
 	.archive-search__status:empty { display: none; }
 	.archive-search__field {
@@ -679,9 +552,12 @@ const itemList = {
 	}
 
 	@media (max-width: 760px) {
-		.category-switcher__links { flex-direction: column; gap: 0; }
-		.category-switcher a { padding-inline: 0.5rem; font-size: 1rem; }
-		.category-switcher a[aria-current='page'] { border-left: 2px solid currentColor; border-bottom-color: transparent; }
+		.category-switcher { width: 100%; }
+		.category-switcher__links { flex-direction: column; gap: 0.5rem; padding: 0.6rem; border: 1px solid rgba(17, 17, 17, 0.45); background: rgba(255, 255, 255, 0.12); }
+		.category-switcher a { min-height: 48px; padding: 0.65rem 0.75rem; font-size: 0.95rem; font-weight: 500; letter-spacing: 0.055em; }
+		.category-switcher a { border: 1px solid rgba(17, 17, 17, 0.22); }
+		.category-switcher a:hover { background: rgba(255, 255, 255, 0.3); color: inherit; }
+		.category-switcher a[aria-current='page'] { background: #111111; border-color: #111111; color: #ffffff; }
 		.archive-search { margin-bottom: 2.5rem; }
 		.archive-search > label { font-size: 0.875rem; }
 		.archive-search button { min-width: 44px; min-height: 44px; font-size: 0.875rem; }

@@ -5,7 +5,7 @@
 	"description": "Der Ausgangszustand war zwar weitgehend komplett, aber wenig original und über die Jahrzehnte doch \"sehr verbraucht\", aber immerhin \"nummerngleich\".",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/105-simson-awo-425-touren",
 	"order": 59,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "SIMSON AWO 425 Touren, Baujahr 1954",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "SIMSON AWO 425 Touren, Baujahr 1954 – Schwarzes Motorrad schräg von vorn im Hof.",
-					"altEn": "SIMSON AWO 425 Touren, year 1954 – Black motorcycle from the front corner in the courtyard."
+					"altEn": "SIMSON AWO 425 Touren, year 1954 – Black motorcycle from the front corner in the courtyard.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Hier ein BMW 327 Sportcabriolet in der späten 1939er Karosserieausführung (seltene Sickenkotflügel, einteilige durchgehende Stoßstangen, große Scheinwer…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/76-bmw-327-sportcabriolet-baujahr-1939",
 	"order": 8,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sportcabriolet, Baujahr 1939",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327 Sportcabriolet, Baujahr 1939 – Rotes Cabriolet mit blankem Seitenblech in der Werkstatt.",
-					"altEn": "BMW 327 Sport Cabriolet, year 1939 – Red convertible with bare-metal side panel in the workshop."
+					"altEn": "BMW 327 Sport Cabriolet, year 1939 – Red convertible with bare-metal side panel in the workshop.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Hier ein sehr schöner englischer Riley, der nach den Kundenwünschen komplett restauriert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/93-riley-rma-15",
 	"order": 83,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1950",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Riley RMA 1,5; Baujahr 1950",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Riley RMA 1,5; Baujahr 1950 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Riley RMA 1,5; year 1950 – Front three-quarter view outdoors."
+					"altEn": "Riley RMA 1,5; year 1950 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

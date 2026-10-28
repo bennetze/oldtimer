@@ -5,7 +5,7 @@
 	"description": "Hier ein sehr früher BMW Typ 340, gebaut 1952 im BMW Werk Eisenach/Thüringen, als sehr elegante und repräsentative Limousine.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/178-bmw-340-2",
 	"order": 2,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340 Limousine, Baujahr 1952",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 340 Limousine, Baujahr 1952 – Grüne Limousine vor dem Werkstattgebäude.",
-					"altEn": "BMW 340 Saloon, year 1952 – Green saloon outside the workshop building."
+					"altEn": "BMW 340 Saloon, year 1952 – Green saloon outside the workshop building.",
+					"size": "medium"
 				}
 			]
 		},

@@ -38,15 +38,8 @@ for (const file of files) {
 		}
 	});
 	if ($('.vehicle-archive').length) {
-		const toggle = $('.category-switcher__toggle');
-		assert.equal(toggle.length, 1, `${file}: category disclosure`);
-		assert.equal(toggle.attr('type'), 'button');
-		assert.equal(toggle.attr('aria-expanded'), 'false');
-		assert.ok(toggle.is('[hidden]'), `${file}: enhancement-only trigger`);
-		const dialog = $(`#${toggle.attr('aria-controls')}`);
-		assert.ok(dialog.is('dialog:not([open])'), `${file}: category dialog starts closed`);
-		assert.equal(dialog.find('a[href]').length, 3);
-		assert.equal(dialog.find('a[aria-current="page"]').length, 1);
+		assert.equal($('.category-switcher__toggle, .category-dialog').length, 0, `${file}: direct category navigation at all widths`);
+		assert.equal($('.archive-search__scope, #vehicle-search-scope').length, 0, `${file}: redundant search subtitle removed`);
 		const links = $('.category-switcher__links');
 		assert.ok(!links.is('[hidden], [inert]'), `${file}: categories available without JavaScript`);
 		assert.equal(links.find('a[href]').length, 3);

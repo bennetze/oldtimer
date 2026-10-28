@@ -5,7 +5,7 @@
 	"description": "Und wäre der spezielle Karosserieaufbau nicht fast unbekannt, so ist es heute der wohl einzige bekannte 340-3 als geschlossener \"Kurier-und Lieferwagen\"…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/189-emw-340-kombi-baujahr",
 	"order": 9,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 340-3 Kurier- und Lieferwagen, Baujahr 1954 – Grüner Lieferwagen mit offener Motorhaube auf der Straße.",
-					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Green delivery van with bonnet open on the road."
+					"altEn": "EMW 340-3 Courier and Delivery Van, year 1954 – Green delivery van with bonnet open on the road.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

@@ -5,7 +5,7 @@
 	"description": "\"Beste Restaurierung des Jahres\"\n\nGeschichtliches: Der OPEL Vorkriegs-Admiral gilt ja gemeinhin bis heute als der größte und wohl luxuriöseste je gebaut…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/195-opel-admiral-hebmueller-baujahr-1938",
 	"order": 2,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "OPEL Admiral \"Hebmüller\", Baujahr 1938",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "OPEL Admiral \"Hebmüller\", Baujahr 1938 – Grün-graues Cabriolet vor einem Steingebäude.",
-					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – Green-and-grey convertible outside a stone building."
+					"altEn": "OPEL Admiral \"Hebmüller\", year 1938 – Green-and-grey convertible outside a stone building.",
+					"size": "medium"
 				}
 			]
 		},

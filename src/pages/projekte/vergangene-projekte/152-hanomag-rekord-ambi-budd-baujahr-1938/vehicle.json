@@ -5,7 +5,7 @@
 	"description": "Hier ein HANOMAG Rekord Cabriolet des Baujahres 1938 mit einer sehr seltenen Sportkarosserie des namhaften Berliner Karosseriebauers \"Ambi-Budd\" (ABP=Am…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/152-hanomag-rekord-ambi-budd-baujahr-1938",
 	"order": 21,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", Baujahr 1938",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", Baujahr 1938 – Blaues Cabriolet seitlich vor einem Steingebäude.",
-					"altEn": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", year 1938 – Blue convertible in side profile outside a stone building."
+					"altEn": "HANOMAG Rekord - Cabriolet \"Ambi-Budd\", year 1938 – Blue convertible in side profile outside a stone building.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

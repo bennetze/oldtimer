@@ -5,7 +5,7 @@
 	"description": "Auch dieses Motorrad des Typ`s EMW R35 wurde bei uns einer kompletten Restauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/71-emw-r35-3",
 	"order": 114,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35/3",
 	"leadImage": "./card.jpg",
@@ -22,7 +22,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW R35/3 – Motorrad schräg von hinten im Hof.",
-					"altEn": "EMW R35/3 – Motorcycle from the rear corner in the courtyard."
+					"altEn": "EMW R35/3 – Motorcycle from the rear corner in the courtyard.",
+					"size": "medium"
 				}
 			]
 		},

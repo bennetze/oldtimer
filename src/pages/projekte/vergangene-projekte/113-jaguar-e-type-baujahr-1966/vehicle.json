@@ -5,7 +5,7 @@
 	"description": "JAGUAR E-Type S1 Cabriolet des Baujahres 1966.Der Wagen wurde im Kundenauftrag allumfassend neu aufgebaut.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/113-jaguar-e-type-baujahr-1966",
 	"order": 52,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1966",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "JAGUAR E-Type S1, Baujahr 1966",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "JAGUAR E-Type S1, Baujahr 1966 – Roter Jaguar gerade von vorn im Hof.",
-					"altEn": "JAGUAR E-Type S1, year 1966 – Straight front view of the red Jaguar in the courtyard."
+					"altEn": "JAGUAR E-Type S1, year 1966 – Straight front view of the red Jaguar in the courtyard.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

@@ -5,7 +5,7 @@
 	"description": "Hier ein weiteres \"Fundstück\" des Typs WARTBURG 313 SPORT, dass in unserer Manufaktur einem völligen Neuaufbau unterzogen wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/121-wartburg-313-sport-baujahr-1957",
 	"order": 30,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 Sport, Baujahr 1957",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1957 – Karosserie mit leeren Scheinwerferöffnungen schräg von vorn.",
-					"altEn": "Wartburg 313 Sport, year 1957 – Body with empty headlight apertures viewed from the front corner."
+					"altEn": "Wartburg 313 Sport, year 1957 – Body with empty headlight apertures viewed from the front corner.",
+					"size": "medium"
 				}
 			]
 		},

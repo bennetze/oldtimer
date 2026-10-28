@@ -5,7 +5,7 @@
 	"description": "EMW R35/3 - das einzig je gebaute Motorrad unter dem Namen \"Eisenacher-Motoren-Werk\".",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/131-emw-r35-3-baujahr-1954",
 	"order": 73,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35/3, Baujahr 1954",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW R35/3, Baujahr 1954 – Schwarzes Motorrad seitlich vor einer Holztür.",
-					"altEn": "EMW R35/3, year 1954 – Black motorcycle in side profile outside a wooden door."
+					"altEn": "EMW R35/3, year 1954 – Black motorcycle in side profile outside a wooden door.",
+					"size": "medium"
 				}
 			]
 		},

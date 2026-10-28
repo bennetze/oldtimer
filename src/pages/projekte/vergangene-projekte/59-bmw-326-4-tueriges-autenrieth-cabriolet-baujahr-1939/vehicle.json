@@ -5,7 +5,7 @@
 	"description": "Dieses äußerst seltene 4-türige BMW 326 Reise-Cabriolet mit einer Sonderkarosserie von “Autenrieth” wurde bei uns einer umfangreichen Komplettrestaurati…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/59-bmw-326-4-tueriges-autenrieth-cabriolet-baujahr-1939",
 	"order": 69,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 326 4-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Rostige Karosserie mit zusammengelegtem Verdeck im Freien.",
-					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – Rusty body with folded soft top outdoors."
+					"altEn": "BMW 326 4-door “Autenrieth” Cabriolet, year 1939 – Rusty body with folded soft top outdoors.",
+					"size": "medium"
 				}
 			]
 		},

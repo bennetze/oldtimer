@@ -5,7 +5,7 @@
 	"description": "Hier wieder ein BMW 327 Sportcabriolet von 1938 bei dem wir die komplette Technik überholt haben. Dazu wurde in unserem Motorenbau und in unserer mechan…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/43-bmw-327-sport-cabriolet-baujahr-1937",
 	"order": 109,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1937",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1937",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327 Sport - Cabriolet, Baujahr 1937 – Ausgebauter Motorblock mit herausstehenden Stehbolzen.",
-					"altEn": "BMW 327 Sport - Cabriolet, year 1937 – Removed engine block with protruding studs."
+					"altEn": "BMW 327 Sport - Cabriolet, year 1937 – Removed engine block with protruding studs.",
+					"size": "medium"
 				}
 			]
 		},

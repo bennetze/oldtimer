@@ -5,7 +5,7 @@
 	"description": "Hier gleich zwei sogenannte \"Berlin - Roller\" (Stadtroller SR59) gebaut bei den Industriewerken Ludwigsfelde (IWL), Nahe Berlin.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/126-iwl-roller",
 	"order": 38,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1962",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "IWL Berlin-Roller, Baujahr 1962",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1962 – Grün-heller Motorroller mit Anhänger seitlich im Hof.",
-					"altEn": "IWL Berlin Scooter, year 1962 – Green-and-light scooter with trailer in side profile in the courtyard."
+					"altEn": "IWL Berlin Scooter, year 1962 – Green-and-light scooter with trailer in side profile in the courtyard.",
+					"size": "medium"
 				}
 			]
 		},

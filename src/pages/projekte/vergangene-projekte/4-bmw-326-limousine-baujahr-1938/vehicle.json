@@ -5,7 +5,7 @@
 	"description": "Auch diese BMW 326 Limousine, gebaut bei den Bayerischen - Motoren - Werken in Eisenach/Thüringen, wurde bei uns einer Komplettrestauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/4-bmw-326-limousine-baujahr-1938",
 	"order": 70,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 Limousine, Baujahr 1938",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 326 Limousine, Baujahr 1938 – Karosserie ohne Frontverkleidung auf schneebedecktem Hof.",
-					"altEn": "BMW 326 Saloon, year 1938 – Body without front panels in a snow-covered courtyard."
+					"altEn": "BMW 326 Saloon, year 1938 – Body without front panels in a snow-covered courtyard.",
+					"size": "medium"
 				}
 			]
 		},

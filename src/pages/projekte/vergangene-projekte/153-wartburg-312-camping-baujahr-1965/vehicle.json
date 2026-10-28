@@ -5,7 +5,7 @@
 	"description": "Hier ein Wartburg Typ 312-1000 des Baujahres 1965 in der sehr begehrten \"Camping\"-Ausführung.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/153-wartburg-312-camping-baujahr-1965",
 	"order": 56,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1965",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 312 Camping, Baujahr 1965",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1965 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Wartburg 312 Camping, year 1965 – Front three-quarter view outdoors."
+					"altEn": "Wartburg 312 Camping, year 1965 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

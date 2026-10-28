@@ -5,7 +5,7 @@
 	"description": "Hier ein weiteres EMW 327-2 Sportcabriolet, dass gemäß Kundenwünschen in unserer Manufaktur umfangreich restauriert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/147-emw-327-sportcabriolet-baujahr-1955",
 	"order": 47,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1955",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327 Sportcabriolet, Baujahr 1955",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 327 Sportcabriolet, Baujahr 1955 – Blau-schwarzes Cabriolet mit geschlossenem Verdeck auf einer Wiese.",
-					"altEn": "EMW 327 Sport Cabriolet, year 1955 – Blue-and-black convertible with soft top closed on grass."
+					"altEn": "EMW 327 Sport Cabriolet, year 1955 – Blue-and-black convertible with soft top closed on grass.",
+					"size": "medium"
 				}
 			]
 		},

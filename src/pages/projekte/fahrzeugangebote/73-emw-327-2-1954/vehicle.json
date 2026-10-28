@@ -5,7 +5,7 @@
 	"description": "Sehr schön erhaltenes und originales EMW 327/2 Sportcabriolet, des Baujahres 1954.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/73-emw-327-2-1954",
 	"order": 6,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1954",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1954 – Schwarz-helles Cabriolet schräg von vorn auf einer Wiese.",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1954 – Black-and-light convertible from the front corner on grass."
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1954 – Black-and-light convertible from the front corner on grass.",
+					"size": "medium"
 				}
 			]
 		},

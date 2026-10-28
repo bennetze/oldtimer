@@ -5,7 +5,7 @@
 	"description": "Dieses DKW F8 Cabriolet erhielt in unserer Stellmacherei ein neues Verdeckgestell aus Eschenholz maßgerecht angefertigt und anschließend in unserer Satt…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/140-dkw-f8-cabriolet-1938",
 	"order": 131,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "DKW F8 Cabriolet, 1938",
 	"leadImage": "./image-001.jpg",
@@ -17,7 +17,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "DKW F8 Cabriolet, 1938 – Seitenansicht im Freien.",
-					"altEn": "DKW F8 Cabriolet, 1938 – Side profile outdoors."
+					"altEn": "DKW F8 Cabriolet, 1938 – Side profile outdoors.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

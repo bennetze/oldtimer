@@ -5,7 +5,7 @@
 	"description": "Auch die Lackierung in BMW-urgrünmetallic ist, wie das ganze Auto, noch immer nahezu neuwertig, die originalen Sitze mit echtem Nubukleder und Camouflag…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/79-bmw-z1-baujahr-1990",
 	"order": 1,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1990",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW Z1 Roadster, Baujahr 1990",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW Z1 Roadster, Baujahr 1990 – Blaugrüner Roadster schräg von vorn auf einer Wiese.",
-					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from the front corner on grass."
+					"altEn": "BMW Z1 Roadster, year 1990 – Teal roadster from the front corner on grass.",
+					"size": "medium"
 				}
 			]
 		},

@@ -19,16 +19,16 @@ async function loadInternalEditor(directory) {
 		const root = await realpath(directory);
 		assets = new Map(await Promise.all(['index.html', ...editorFiles].map(async file => [file, await readFile(join(root, file))])));
 	} catch {
-		throw new Error('Interner Editor fehlt oder ist unvollständig. Bitte den vollständigen Ordner oldtimer-intern neben dem Website-Ordner ablegen.');
+		throw new Error('Interner Editor fehlt oder ist unvollständig. Bitte den vollständigen Ordner Intern neben dem Website-Ordner ablegen.');
 	}
 	const html = assets.get('index.html').toString();
 	const scripts = [...html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["']/gi)].map(match => match[1]);
 	const editor = assets.get('editor.js').toString();
 	if (/name=["']vehicle-editor["']\s+content=["']demo["']/.test(html) || scripts.includes('demo-ui.js') || /window\.VehicleDemoUI\s*\(/.test(editor)) {
-		throw new Error('Die Website-Werkzeuge können die Demo nicht verwenden. Bitte den internen Editor (Branch main) im Ordner oldtimer-intern verwenden. Die Demo gehört in einen separaten Ordner.');
+		throw new Error('Die Website-Werkzeuge können die Demo nicht verwenden. Bitte den internen Editor (Branch main) im Ordner Intern verwenden. Die Demo gehört in einen separaten Ordner.');
 	}
 	if (!editorFiles.filter(file => file.endsWith('.js')).every(file => scripts.includes(file)) || scripts.some(file => !editorFiles.includes(file)) || !/window\.VehicleProjectUI\s*\(/.test(editor)) {
-		throw new Error('Die Editor-Dateien passen nicht zusammen. Bitte den vollständigen internen Editor (Branch main) im Ordner oldtimer-intern wiederherstellen und die Website-Werkzeuge neu starten.');
+		throw new Error('Die Editor-Dateien passen nicht zusammen. Bitte den vollständigen internen Editor (Branch main) im Ordner Intern wiederherstellen und die Website-Werkzeuge neu starten.');
 	}
 	// Serve one complete launch snapshot, even if another checkout is edited later.
 	assets.set('index.html', Buffer.from(html.replace('</head>', '<meta name="vehicle-tools" content="local-launcher">\n</head>')));
@@ -69,7 +69,7 @@ export function runPackageCommand(root, name, onOutput, npmCli = process.env.npm
 
 export async function createControlPanel(rootInput, options = {}) {
 	const root = await realpath(rootInput), token = randomUUID();
-	const assets = await loadInternalEditor(options.editorRoot || join(dirname(root), 'oldtimer-intern'));
+	const assets = await loadInternalEditor(options.editorRoot || join(dirname(root), 'Intern'));
 	const workspace = await realpath(await mkdtemp(join(tmpdir(), 'oldtimer-tools-')));
 	const uploads = new Map();
 	let origin, active = null, preview = null, revision = 0, shuttingDown = false;

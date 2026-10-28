@@ -5,7 +5,7 @@
 	"description": "Hier ein Wartburg 311 als seltene Cabriolet - Ausführung, das 1957 unweit von uns - in Eisenach - gebaut und nach Norddeutschland ausgeliefert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/21-wartburg-311-2-cabriolet-baujahr-1957",
 	"order": 80,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 311-2 Cabriolet, Baujahr 1957",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 311-2 Cabriolet, Baujahr 1957 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Wartburg 311-2 Cabriolet, year 1957 – Front three-quarter view outdoors."
+					"altEn": "Wartburg 311-2 Cabriolet, year 1957 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

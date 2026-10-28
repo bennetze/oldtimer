@@ -5,7 +5,7 @@
 	"description": "Dieses Mercedes 170S Cabriolet wurde in unserer Manufaktur detailgetreu überarbeitet und nach Kundenwünschen restauriert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/17-mercedes-170s-cabriolet-b-baujahr-1953",
 	"order": 86,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1953",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 170S Cabriolet-B, Baujahr 1953",
@@ -23,7 +23,8 @@
 				{
 					"src": "./source-restored-001.jpg",
 					"alt": "Mercedes 170S Cabriolet-B, Baujahr 1953 – Grauer Innenraum mit Holzarmaturenbrett",
-					"altEn": "Mercedes 170S Cabriolet-B, year 1953 – Grey interior with wooden dashboard"
+					"altEn": "Mercedes 170S Cabriolet-B, year 1953 – Grey interior with wooden dashboard",
+					"size": "medium"
 				}
 			]
 		},

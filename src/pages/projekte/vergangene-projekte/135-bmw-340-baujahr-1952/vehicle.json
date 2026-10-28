@@ -5,7 +5,7 @@
 	"description": "Dieser BMW 340 ist mit seinem recht frühen Baujahr noch ein echter \"BMW\", gebaut bei den Bayrischen-Motoren-Werken in Eisenach, dort wo bis zum\n2. Weltk…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/135-bmw-340-baujahr-1952",
 	"order": 22,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1952",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Rostiger Unterboden mit eingesetzten blanken Blechen.",
-					"altEn": "BMW 340, year 1952 – Rusty floorpan with bare-metal patches fitted."
+					"altEn": "BMW 340, year 1952 – Rusty floorpan with bare-metal patches fitted.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

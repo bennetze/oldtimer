@@ -5,7 +5,7 @@
 	"description": "Hier ein inzwischen relativ unbekanntes Exemplar eines schicken Vorkriegs-Cabriolets - ein NSU-Fiat mit einer Kabriolett Karosserie der Firma \"Weinsberg…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/192-nsu-fiat-1000",
 	"order": 12,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1935",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "NSU-Fiat \"Weinsberg\" Cabriolet, Baujahr 1935",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "NSU-Fiat \"Weinsberg\" Cabriolet, Baujahr 1935 – Braunes Cabriolet schräg von vorn in der Werkstatt.",
-					"altEn": "NSU-Fiat \"Weinsberg\" Cabriolet, year 1935 – Brown convertible viewed from the front corner in the workshop."
+					"altEn": "NSU-Fiat \"Weinsberg\" Cabriolet, year 1935 – Brown convertible viewed from the front corner in the workshop.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

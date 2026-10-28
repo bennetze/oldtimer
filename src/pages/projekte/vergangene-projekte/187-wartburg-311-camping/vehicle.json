@@ -5,7 +5,7 @@
 	"description": "Aufwändige Neuanfertigung der sehr frühen Zierleistenausführung in Messing, zum anschließenden verchromen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/187-wartburg-311-camping",
 	"order": 99,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 311 Camping, Baujahr 1958",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 311 Camping, Baujahr 1958 – Karosserie mit leeren Scheinwerferöffnungen schräg von vorn.",
-					"altEn": "Wartburg 311 Camping, year 1958 – Body with empty headlight apertures viewed from the front corner."
+					"altEn": "Wartburg 311 Camping, year 1958 – Body with empty headlight apertures viewed from the front corner.",
+					"size": "medium"
 				}
 			]
 		},

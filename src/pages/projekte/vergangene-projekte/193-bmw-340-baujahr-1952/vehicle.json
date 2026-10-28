@@ -5,7 +5,7 @@
 	"description": "Ein weiterer BMW 340, der bei uns umfassend instandgesetzt und teilrestauriert wurde (Motor, Getriebe, Achsen, Stoßdämpfer, Elektrik, Lackierung usw.).",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/193-bmw-340-baujahr-1952",
 	"order": 9,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1952",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 340, Baujahr 1952 – Fahrzeug schräg von vorn mit geöffneter Motorhaube.",
-					"altEn": "BMW 340, year 1952 – Vehicle from the front corner with bonnet open."
+					"altEn": "BMW 340, year 1952 – Vehicle from the front corner with bonnet open.",
+					"size": "medium"
 				}
 			]
 		},

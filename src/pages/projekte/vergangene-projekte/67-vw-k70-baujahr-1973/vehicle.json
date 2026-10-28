@@ -5,7 +5,7 @@
 	"description": "Mit der Übernahme des insolventen NSU-Konzerns durch Volkswagen und den damit verbundenen Marken- und Modellrechten, erschien ab 1970 der VW Typ K70 in…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/67-vw-k70-baujahr-1973",
 	"order": 122,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1973",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "VW K70, Baujahr 1973",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "VW K70, Baujahr 1973 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "VW K70, year 1973 – Front three-quarter view outdoors."
+					"altEn": "VW K70, year 1973 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Nach den notwendigen Karosseriearbeiten bekam der Wagen auch wieder seine ursprüngliche Farbgebung elfenbein mit tiefschwarz zurück, einschl. der kunstv…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/198-emw-327-sportcabriolet-baujahr-1954",
 	"order": 13,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1954",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327 Sportcabriolet, Baujahr 1954",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 327 Sportcabriolet, Baujahr 1954 – Schwarz-heller Roadster schräg von vorn.",
-					"altEn": "EMW 327 Sport Cabriolet, year 1954 – Black-and-light-coloured roadster viewed from the front corner."
+					"altEn": "EMW 327 Sport Cabriolet, year 1954 – Black-and-light-coloured roadster viewed from the front corner.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

@@ -5,7 +5,7 @@
 	"description": "BMW 321 des seltenen Jahrgangs 1949 - gebaut bei der\"BMW-AWTOWELO-AG\" in Eisenach/Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/92-bmw-321",
 	"order": 61,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1949",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 321 \"Awtowelo\" Baujahr 1949",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 321 \"Awtowelo\" Baujahr 1949 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Front three-quarter view outdoors."
+					"altEn": "BMW 321 \"Awtowelo\" year 1949 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

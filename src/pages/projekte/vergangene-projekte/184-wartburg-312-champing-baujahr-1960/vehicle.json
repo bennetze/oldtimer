@@ -5,7 +5,7 @@
 	"description": "Hier ein angeliefertes Fundstück aus frühen DDR Zeiten: Ein inzwischen selten gewordener Wartburg Typ 312 in der begehrten \"Camping\"-Ausführung. Gebaut…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/184-wartburg-312-champing-baujahr-1960",
 	"order": 98,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1966",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 312 Camping, Baujahr 1966",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 312 Camping, Baujahr 1966 – Helles Kombiheck mit fehlenden Leuchten in einer Halle.",
-					"altEn": "Wartburg 312 Camping, year 1966 – Light estate rear with lights absent in a hall."
+					"altEn": "Wartburg 312 Camping, year 1966 – Light estate rear with lights absent in a hall.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Gemäß einer reinen Designzeichnung wurde dieser Sportwagen in mühevoller Handarbeit komplett neu angefertigt und die bestehende Technik mit dem original…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/97-ford-speedster-baujahr-1928",
 	"order": 36,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1928",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "FORD Speedster, Baujahr 1928",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "FORD Speedster, Baujahr 1928 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "FORD Speedster, year 1928 – Front three-quarter view outdoors."
+					"altEn": "FORD Speedster, year 1928 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

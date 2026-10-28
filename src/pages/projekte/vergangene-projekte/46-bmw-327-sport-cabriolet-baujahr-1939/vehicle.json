@@ -5,7 +5,7 @@
 	"description": "Auch hier wieder ein 327er BMW von 1939 aus Eisenacher Produktion, der sehr umfangreich und originalgetreu bei uns überarbeitet wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/46-bmw-327-sport-cabriolet-baujahr-1939",
 	"order": 112,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1939",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327 Sport - Cabriolet, Baujahr 1939 – Zwei Vergaser und Ansaugrohre im Motorraum.",
-					"altEn": "BMW 327 Sport - Cabriolet, year 1939 – Two carburettors and intake pipes inside the engine bay."
+					"altEn": "BMW 327 Sport - Cabriolet, year 1939 – Two carburettors and intake pipes inside the engine bay.",
+					"size": "medium"
 				}
 			]
 		},

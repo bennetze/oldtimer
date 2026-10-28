@@ -5,7 +5,7 @@
 	"description": "Dieser AMC der Marke \"American-Motors-Corporation\" wurde unter der Ägide des Mutterkonzern \"General Motors\" mit einem sehr eigenwilligen und gleichwohl…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/130-amc-pacer-baujahr-1979",
 	"order": 57,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1979",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "AMC Pacer, Baujahr 1979",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "AMC Pacer, Baujahr 1979 – Frontansicht im Freien.",
-					"altEn": "AMC Pacer, year 1979 – Straight front view outdoors."
+					"altEn": "AMC Pacer, year 1979 – Straight front view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

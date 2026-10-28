@@ -5,7 +5,7 @@
 	"description": "Hier wieder ein exklusiv gestalteter Wartburg 313 Sport, der von uns technisch restauriert wurde und ein neues Cabrioletverdeck erhielt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/194-wartburg-313-baujahr-1960",
 	"order": 5,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1960",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313, Baujahr 1960",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 313, Baujahr 1960 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Wartburg 313, year 1960 – Front three-quarter view outdoors."
+					"altEn": "Wartburg 313, year 1960 – Front three-quarter view outdoors.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

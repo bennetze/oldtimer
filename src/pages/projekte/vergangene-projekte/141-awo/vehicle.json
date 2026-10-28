@@ -5,7 +5,7 @@
 	"description": "\"SIMSON\" AWO 425 Sport, 1960",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/141-awo",
 	"order": 132,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "\"SIMSON\" AWO 425 Sport, 1960",
 	"leadImage": "./image-001.jpg",
@@ -17,7 +17,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "\"SIMSON\" AWO 425 Sport, 1960 – Zwei Motorräder schräg von vorn in der Werkstatt.",
-					"altEn": "\"SIMSON\" AWO 425 Sport, 1960 – Two motorcycles from the front corner in the workshop."
+					"altEn": "\"SIMSON\" AWO 425 Sport, 1960 – Two motorcycles from the front corner in the workshop.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

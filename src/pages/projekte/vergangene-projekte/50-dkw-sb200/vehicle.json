@@ -5,7 +5,7 @@
 	"description": "Diese DKW SB200 wurde bei uns technischerseits restauriert.\n\nDazu wurde unter anderem die damals übliche Kork-Lamellen-Kupplung originalgetreu instand g…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/50-dkw-sb200",
 	"order": 107,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "DKW SB200",
 	"leadImage": "./card.jpg",
@@ -22,7 +22,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "DKW SB200 – Zwei ausgebaute zylindrische Metallgehäuse mit Anschlüssen.",
-					"altEn": "DKW SB200 – Two removed cylindrical metal housings with connectors."
+					"altEn": "DKW SB200 – Two removed cylindrical metal housings with connectors.",
+					"size": "medium"
 				}
 			]
 		},

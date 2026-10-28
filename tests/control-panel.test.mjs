@@ -31,7 +31,7 @@ async function fixture(t, options) {
 	await writeFile(join(root, 'public/llms.txt'), `# Website\n\n> Beschreibung\n\n## Seiten\n\n[Start](${productionOrigin}/)\n`);
 	await writeFile(join(root, 'public/robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${productionOrigin}/sitemap.xml\n`);
 	await writeFile(join(root, 'src/config/vehicle-redirects.json'), '{}\n');
-	const panel = await createControlPanel(root, { editorRoot: fileURLToPath(new URL('../../oldtimer-intern/', import.meta.url)), ...options });
+	const panel = await createControlPanel(root, { editorRoot: fileURLToPath(new URL('../../Intern/', import.meta.url)), ...options });
 	t.after(async () => { await panel.close(); await rm(dir, { recursive: true, force: true }); });
 	async function request(path, data, bytes, extra = {}) {
 		return fetch(panel.origin + '/api/' + path, {
@@ -110,7 +110,7 @@ test('launcher serves every classic editor script, including the watermark helpe
 	assert.doesNotMatch(html, /Demo starten/);
 	const headers = await fetch(f.panel.origin);
 	assert.match(headers.headers.get('content-security-policy'), /font-src 'self' data:/);
-	const editor = fileURLToPath(new URL('../../oldtimer-intern/', import.meta.url));
+	const editor = fileURLToPath(new URL('../../Intern/', import.meta.url));
 	for (const file of scripts) {
 		const response = await fetch(new URL(file, f.panel.origin));
 		assert.equal(response.status, 200, `${file} is unavailable in the launcher.`);
@@ -122,7 +122,7 @@ test('launcher serves every classic editor script, including the watermark helpe
 async function editorCopy(t) {
 	const directory = await realpath(await mkdtemp(join(tmpdir(), 'internal-editor-test-')));
 	t.after(() => rm(directory, { recursive: true, force: true }));
-	const source = fileURLToPath(new URL('../../oldtimer-intern/', import.meta.url));
+	const source = fileURLToPath(new URL('../../Intern/', import.meta.url));
 	const html = await readFile(join(source, 'index.html'), 'utf8');
 	const files = ['index.html', ...[...html.matchAll(/(?:src|href)="([^"/]+\.(?:js|css))"/g)].map(match => match[1])];
 	for (const file of new Set(files)) await writeFile(join(directory, file), await readFile(join(source, file)));
@@ -240,7 +240,7 @@ test('launcher verifies the selected full project against its own source bytes',
 });
 
 test('unmodified file entry has no launcher marker and tools script makes no requests', async () => {
-	const editor = fileURLToPath(new URL('../../oldtimer-intern/', import.meta.url));
+	const editor = fileURLToPath(new URL('../../Intern/', import.meta.url));
 	assert.doesNotMatch(await readFile(join(editor, 'index.html'), 'utf8'), /name="vehicle-tools"/);
 	vm.runInNewContext(await readFile(join(editor, 'website-tools.js'), 'utf8'), {
 		document: { querySelector: () => null },

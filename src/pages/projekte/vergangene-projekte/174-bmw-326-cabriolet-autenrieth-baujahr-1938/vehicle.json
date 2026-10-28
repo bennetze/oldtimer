@@ -5,7 +5,7 @@
 	"description": "Ein seltenes BMW 326 Reisecabriolet, gebaut 1938 bei BMW in Eisenach/Thüringen, mit einem \"Autenrieth\" Karosserieaufbau aus Darmstadt.\n\nDas Cabrio - sei…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/174-bmw-326-cabriolet-autenrieth-baujahr-1938",
 	"order": 15,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 326 Reise-Cabriolet \"Autenrieth\", Baujahr 1938 – Fahrzeug schräg von vorn mit geöffneter Motorhaube.",
-					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – Vehicle from the front corner with bonnet open."
+					"altEn": "BMW 326 Touring Cabriolet \"Autenrieth\", year 1938 – Vehicle from the front corner with bonnet open.",
+					"size": "medium"
 				}
 			]
 		},

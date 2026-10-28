@@ -5,7 +5,7 @@
 	"description": "Mercedes - Benz 190 SL des Baujahres 1956 - und damit ein sehr seltenes und begehrtes Modell des ersten Baujahres überhaupt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/101-mercedes-benz-190sl-baujahr-1956",
 	"order": 42,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1956",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 190SL, Baujahr 1956",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes-Benz 190SL, Baujahr 1956 – Silbernes Mercedes-Coupé schräg von vorn im Hof.",
-					"altEn": "Mercedes-Benz 190SL, year 1956 – Silver Mercedes coupé from the front corner in the courtyard."
+					"altEn": "Mercedes-Benz 190SL, year 1956 – Silver Mercedes coupé from the front corner in the courtyard.",
+					"size": "medium"
 				}
 			]
 		},

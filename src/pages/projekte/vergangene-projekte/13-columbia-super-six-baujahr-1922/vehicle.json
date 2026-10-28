@@ -5,7 +5,7 @@
 	"description": "COLUMBIA-SUPER-SIX, Typ: Deluxe-Double-Phaeton, Baujahr: 1922, gebaut in Detroit / Michigan – USA.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/13-columbia-super-six-baujahr-1922",
 	"order": 81,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1922",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "COLUMBIA-SUPER-SIX, Baujahr 1922",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "COLUMBIA-SUPER-SIX, Baujahr 1922 – Fahrgestell ohne Karosserie mit freiliegenden Sitzen.",
-					"altEn": "COLUMBIA-SUPER-SIX, year 1922 – Chassis without bodywork with seats exposed."
+					"altEn": "COLUMBIA-SUPER-SIX, year 1922 – Chassis without bodywork with seats exposed.",
+					"size": "medium"
 				}
 			]
 		},

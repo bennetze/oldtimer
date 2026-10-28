@@ -5,7 +5,7 @@
 	"description": "Das Auto erhielten wir in diesem bereits völlig zerlegten Zustand zum fachgerechten Neuaufbau, einschließlich aufwendiger Karosserie-Vermessungsarbeiten…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/196-porsche-911-targa-baujahr-1972",
 	"order": 8,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1972",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Porsche 911 Targa, Baujahr 1972",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Porsche 911 Targa, Baujahr 1972 – Blauer Porsche Targa vor dunklem Hintergrund.",
-					"altEn": "Porsche 911 Targa, year 1972 – Blue Porsche Targa against a dark background."
+					"altEn": "Porsche 911 Targa, year 1972 – Blue Porsche Targa against a dark background.",
+					"size": "medium"
 				}
 			]
 		},

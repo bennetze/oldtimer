@@ -5,7 +5,7 @@
 	"description": "Hier wieder eines der seltensten und exklusivsten Fahrzeuge der Vorkriegsära überhaupt:\nEin Zwickauer HORCH 8, Typ 350 als 7-sitziger offener \"Flanier-…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/3-horch-350-doppel-phaeton-baujahr-1928",
 	"order": 2,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1928",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen”",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "HORCH 8, Typ 350, Bj. 1928 ”Flanier- und Paradewagen” – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Front three-quarter view outdoors."
+					"altEn": "HORCH 8, Typ 350, year 1928 ”Touring and Parade Car” – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

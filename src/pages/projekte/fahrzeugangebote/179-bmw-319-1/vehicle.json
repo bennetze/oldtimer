@@ -5,7 +5,7 @@
 	"description": "Hier ein traumhaft perfekter BMW 319/1 Sportroadster von 1936 aus der ruhmreichen Eisenacher BMW Vorkriegs-Sportwagenära in der Original-Farbgebung: Lac…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/179-bmw-319-1",
 	"order": 3,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 319/1 Sport-Roadster, Baujahr 1936",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 319/1 Sport-Roadster, Baujahr 1936 – Grün-heller Roadster schräg von hinten auf der Straße.",
-					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – Green-and-light roadster from the rear corner on the road."
+					"altEn": "BMW 319/1 Sport-Roadster, year 1936 – Green-and-light roadster from the rear corner on the road.",
+					"size": "medium"
 				}
 			]
 		},

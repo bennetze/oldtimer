@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine Kostbarkeit aus dem Hause BMW, gebaut ab 1937 im Werk Eisenach/Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/163-bmw-328-vignale-roadster-baujahr-1938",
 	"order": 28,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "BMW 328 \"Vignale\" Roadster, year 1938/49 – Front three-quarter view outdoors."
+					"altEn": "BMW 328 \"Vignale\" Roadster, year 1938/49 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

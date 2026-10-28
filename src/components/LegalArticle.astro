@@ -15,7 +15,7 @@ const { title, eyebrow, heading = 'In Vorbereitung', authored = false } = Astro.
 	<BackgroundTexture />
 	<slot name="navigation" />
 	<header class="legal-hero" data-authored={authored || undefined}>
-		<p>{eyebrow}</p>
+		{eyebrow && <p>{eyebrow}</p>}
 		<h1>{title === 'Datenschutzerklärung' ? 'Datenschutz\u00aderklärung' : title}</h1>
 	</header>
 	<div class="legal-body">
@@ -31,8 +31,8 @@ const { title, eyebrow, heading = 'In Vorbereitung', authored = false } = Astro.
 		min-height: 100vh;
 		min-height: 100svh;
 		--legal-fade: clamp(28rem, 65vw, 64rem);
-		--legal-hero-fade: clamp(16rem, 24vw, 24rem);
-		--legal-title-gap: clamp(8rem, 12vw, 12rem);
+		--legal-hero-fade: clamp(7rem, 12vw, 11rem);
+		--legal-title-gap: calc(var(--legal-hero-fade) + 1.5rem);
 		color: var(--gradient-ink);
 		background: var(--gradient-cream);
 	}

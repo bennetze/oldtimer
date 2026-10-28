@@ -5,7 +5,7 @@
 	"description": "Mercedes – Benz, Typ 200 lang (W21), Cabriolet B, Baujahr 1936\n\nElegantes und großzügiges Cabriolet in B-Ausführung (Vier – Fenster – Cabriolet) mit seh…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/15-mercedes-benz-200-lang-cabriolet-b-baujahr-193",
 	"order": 85,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes - Benz 200 lang, Cabriolet B, Baujahr 1936 – Rotes Cabriolet schräg von hinten vor einem Steingebäude.",
-					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – Red convertible from the rear corner outside a stone building."
+					"altEn": "Mercedes - Benz 200 lang, Cabriolet B, year 1936 – Red convertible from the rear corner outside a stone building.",
+					"size": "medium"
 				}
 			]
 		},

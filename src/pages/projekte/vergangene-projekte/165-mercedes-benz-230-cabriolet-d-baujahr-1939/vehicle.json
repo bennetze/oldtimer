@@ -5,7 +5,7 @@
 	"description": "Komplette Neupolsterung in feinstem grünen Echtleder - harmonierend zu den beiden Außenfarben.\nNeuer passgerecht angefertigter Federkernunterbau für die…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/165-mercedes-benz-230-cabriolet-d-baujahr-1939",
 	"order": 18,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes-Benz 230, Cabriolet D, Baujahr 1939 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Front three-quarter view outdoors."
+					"altEn": "Mercedes-Benz 230, Cabriolet D, year 1939 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

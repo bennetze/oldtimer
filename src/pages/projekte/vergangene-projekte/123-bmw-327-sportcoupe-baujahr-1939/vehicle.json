@@ -5,7 +5,7 @@
 	"description": "BMW 327/28 Sport-Coupe, gebaut bei BMW in Eisenach mit einer Karosserie von \"Autenrieth\" aus Darmstadt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/123-bmw-327-sportcoupe-baujahr-1939",
 	"order": 33,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcoupe, Baujahr 1939",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1939 – Rostige Blechnaht neben abgeklebtem Türbereich.",
-					"altEn": "BMW 327/28 Sport Coupé, year 1939 – Rusty panel seam beside a masked door aperture."
+					"altEn": "BMW 327/28 Sport Coupé, year 1939 – Rusty panel seam beside a masked door aperture.",
+					"size": "medium"
 				}
 			]
 		},

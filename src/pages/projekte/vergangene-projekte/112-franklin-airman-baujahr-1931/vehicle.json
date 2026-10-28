@@ -5,7 +5,7 @@
 	"description": "FRANKLIN \"Airman\" des Baujahres 1931 mit großzügigem Sedan-Aufbau.\n\nDie Marke FRANKLIN - neben Cadillac und Packard eine der Luxusmarken damaliger ameri…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/112-franklin-airman-baujahr-1931",
 	"order": 27,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1931",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "FRANKLIN Airman, Baujahr 1931",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "FRANKLIN Airman, Baujahr 1931 – Grüne Limousine seitlich unter Bäumen.",
-					"altEn": "FRANKLIN Airman, year 1931 – Green saloon in side profile beneath trees."
+					"altEn": "FRANKLIN Airman, year 1931 – Green saloon in side profile beneath trees.",
+					"size": "medium"
 				}
 			]
 		},

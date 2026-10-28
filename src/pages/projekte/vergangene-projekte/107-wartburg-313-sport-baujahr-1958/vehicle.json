@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine kostbare Rarität aus traditioneller Eisenacher Sportwagen-Produktion: ein \"Wartburg 313 Sport\" - komplett neu und originalgetreu restau…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/107-wartburg-313-sport-baujahr-1958",
 	"order": 63,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313-Sport, Baujahr 1958",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 313-Sport, Baujahr 1958 – Rotes Cabriolet schräg von vorn auf einer Straße.",
-					"altEn": "Wartburg 313-Sport, year 1958 – Red convertible from the front corner on a road."
+					"altEn": "Wartburg 313-Sport, year 1958 – Red convertible from the front corner on a road.",
+					"size": "medium"
 				}
 			]
 		},

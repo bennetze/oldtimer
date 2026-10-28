@@ -5,7 +5,7 @@
 	"description": "Hier eines der kult- und kunstvollen \"Leckerbissen\" der Automobilgeschichte überhaupt. Ein BMW 507 Roadster, der bei uns eine umfangreiche Vollrestaurat…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/170-bmw-507-roadster",
 	"order": 1,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 507 Roadster, Baujahr 1957",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 507 Roadster, Baujahr 1957 – Blauer Roadster schräg von vorn auf dem gepflasterten Hof.",
-					"altEn": "BMW 507 Roadster, year 1957 – Blue roadster viewed from the front corner in the paved courtyard."
+					"altEn": "BMW 507 Roadster, year 1957 – Blue roadster viewed from the front corner in the paved courtyard.",
+					"size": "medium"
 				}
 			]
 		},

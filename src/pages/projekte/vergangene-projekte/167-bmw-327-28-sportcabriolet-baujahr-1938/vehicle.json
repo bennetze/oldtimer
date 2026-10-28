@@ -5,7 +5,7 @@
 	"description": "Das Fahrzeug erreichte uns mit einem massiven Motorschaden.\nPleuelabriss und Durchschlag durch den Motorblock.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/167-bmw-327-28-sportcabriolet-baujahr-1938",
 	"order": 46,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1938",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1938 – Blau-helles Cabriolet seitlich mit geschlossenem Verdeck.",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – Blue-and-light convertible in side profile with soft top closed."
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1938 – Blue-and-light convertible in side profile with soft top closed.",
+					"size": "medium"
 				}
 			]
 		},

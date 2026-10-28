@@ -5,7 +5,7 @@
 	"description": "Hier eine russische Kostbarkeit, eines “POBEDA” von 1956, als sehr seltene 4x4 Allradausführung namens M72.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/29-pobeda-m72",
 	"order": 19,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1956",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "POBEDA M72, Baujahr 1956",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "POBEDA M72, Baujahr 1956 – Schwarzweißaufnahme des Fahrzeugs schräg von vorn.",
-					"altEn": "POBEDA M72, year 1956 – Black-and-white photograph of the vehicle from the front corner."
+					"altEn": "POBEDA M72, year 1956 – Black-and-white photograph of the vehicle from the front corner.",
+					"size": "medium"
 				}
 			]
 		},

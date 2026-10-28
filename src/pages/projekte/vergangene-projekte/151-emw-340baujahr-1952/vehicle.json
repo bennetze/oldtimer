@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine EMW 340-2 Limousine gebaut 1952 in den Eisenacher-Motoren-Werken.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/151-emw-340baujahr-1952",
 	"order": 50,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 340, Baujahr 1952",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 340, Baujahr 1952 – Blau-helle Karosserie ohne Türen mit offenem Kofferraum.",
-					"altEn": "EMW 340, year 1952 – Blue-and-light body without doors and with boot open."
+					"altEn": "EMW 340, year 1952 – Blue-and-light body without doors and with boot open.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Angefangen bei umfangreichen Schweißarbeiten, über Elektrik bis hin zu Lackierungs- und Polsterarbeiten, mußte der Wagen auch technisch grundlegend rest…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/127-tatra-603-baujahr-1968",
 	"order": 75,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1968",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Tatra 603, Baujahr 1968",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Tatra 603, Baujahr 1968 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Tatra 603, year 1968 – Front three-quarter view outdoors."
+					"altEn": "Tatra 603, year 1968 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

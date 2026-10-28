@@ -5,7 +5,7 @@
 	"description": "Den Wagen bekamen wir in völlig zerlegtem und in Kartons und Kisten verpackten Zustand mit Fehlteilen. Leider wurden an dem Fahrzeug von div. Vorgängern…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/186-emw-327-sportcabriolet",
 	"order": 20,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1953",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327 Sportcabriolet, Baujahr 1953",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 327 Sportcabriolet, Baujahr 1953 – Metallblanke Karosserie schräg von vorn.",
-					"altEn": "EMW 327 Sport Cabriolet, year 1953 – Bare-metal body viewed from the front corner."
+					"altEn": "EMW 327 Sport Cabriolet, year 1953 – Bare-metal body viewed from the front corner.",
+					"size": "medium"
 				}
 			]
 		},

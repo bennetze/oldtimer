@@ -5,6 +5,8 @@
   "Menü": "Menu",
   "Schließen": "Close",
   "Startseite": "Home",
+  "Karriere": "Careers",
+  "Aktuell stehen keine offenen Stellen zur Verfügung": "There are currently no vacancies available",
   "Handwerk": "Craftsmanship",
   "Über uns": "About us",
   "Kontakte": "Contact",
@@ -1600,7 +1602,6 @@
   "Front eines blauen historischen BMW mit weiteren Oldtimern im Hintergrund": "Front of a blue historic BMW with other classic cars in the background",
   "Front eines historischen Automobils mit verchromtem Kühlergrill und großen runden Scheinwerfern": "Front of a historic car with a chrome radiator grille and large round headlights",
   "Historischer silberner Rennwagen mit offenem Cockpit und roten Speichenrädern in der Werkstatt": "Historic silver racing car with an open cockpit and red wire wheels in the workshop",
-  "Front eines historischen Automobils mit verchromtem Kühlergrill und großen runden Scheinwerfern": "Front of a historic car with a chrome radiator grille and large round headlights",
   "Deutsch (DE)": "Deutsch (DE)",
   "English (EN)": "English (EN)",
   "Ein Mitarbeiter mit Gesichtsschutz und Gehörschutz schleift ein Karosserieblech unter Funkenflug.": "A worker wearing a face shield and hearing protection grinds a body panel, sending sparks flying.",
@@ -1724,5 +1725,11 @@
   "Anton Schrank und ein Kollege arbeiten gemeinsam am geöffneten Motorraum eines historischen Automobils.": "Anton Schrank and a colleague work together in the open engine bay of a historic car.",
   "Freigelegter Ventiltrieb des Horch 350 von 1928 während der Motorrestaurierung.": "Exposed valve mechanism of the 1928 Horch 350 during engine restoration.",
   "Seitlicher Blick auf ein blaues historisches Cabriolet mit Anton Schrank am Steuer.": "Side view of a blue historic convertible with Anton Schrank at the wheel.",
-  "Blick auf das helle Lenkrad und die historischen Instrumente eines blauen Cabriolets.": "View of the pale steering wheel and historic instruments in a blue convertible."
+  "Blick auf das helle Lenkrad und die historischen Instrumente eines blauen Cabriolets.": "View of the pale steering wheel and historic instruments in a blue convertible.",
+  "Zwei Mitarbeiter passen das Verdeck eines hellblauen historischen Cabriolets in der Werkstatt an.": "Two employees fit the soft top of a light blue classic convertible in the workshop.",
+  "Ein Mitarbeiter prüft ein geöffnetes Getriebe auf einer Werkbank.": "An employee inspects an open gearbox on a workbench.",
+  "Vergaser, Leitungen und Ventildeckel im geöffneten Motorraum eines historischen Automobils.": "Carburettors, pipes and valve covers in the open engine bay of a classic car.",
+  "Eine Hand mit weißem Handschuh prüft die glänzende dunkelblaue Lackoberfläche einer Karosserie.": "A white-gloved hand checks the glossy dark blue paintwork of a car body.",
+  "Türkises Leder mit Aston-Martin-Schriftzug, Ziernähten und Stoffmustern in der Sattlerei.": "Turquoise leather with Aston Martin lettering, decorative stitching and fabric samples in the upholstery workshop.",
+  "Motorenbau im Film": "Engine restoration on film"
 }

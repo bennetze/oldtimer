@@ -5,7 +5,7 @@
 	"description": "Hier einer der sehr seltenen Vorkriegs - “Flaggschiffe” von OPEL: Ein ADMIRAL mit einer Sonderkarosserie des damals äußerst renommierten Dresdener Karos…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/64-opel-admiral-glaeser-sportcabriolet-baujahr-1939",
 	"order": 49,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Opel Admiral “Gläser” Sportcabriolet, Baujahr 1939 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Opel Admiral “Gläser” Sport Cabriolet, year 1939 – Front three-quarter view outdoors."
+					"altEn": "Opel Admiral “Gläser” Sport Cabriolet, year 1939 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

@@ -23,6 +23,7 @@ const navigationItems = [
 		href: '/projekte/fahrzeugangebote/',
 		activePath: '/projekte/fahrzeugangebote',
 	},
+	{ title: 'Karriere', href: '/karriere/', activePath: '/karriere' },
 	{ title: 'Kontakt', href: '/ueber-uns/#kontakt', activePath: undefined },
 ];
 
@@ -123,6 +124,7 @@ const sitePath = (path) => {
 			<a href={sitePath('/impressum/')}>Impressum</a>
 			<a href={sitePath('/datenschutz/')}>Datenschutzerklärung</a>
 		</nav>
+		<p class="footer-trademark">Der Name "OLDTIMERMANUFAKTUR®" ist eine durch uns sowohl beim Deutschen- als auch beim Europäischen Marken- und Patentamt eingetragene geschützte Marke.</p>
 		<p>© 2026 DIE OLDTIMERMANUFAKTUR</p>
 	</footer>
 </div>
@@ -540,7 +542,7 @@ const sitePath = (path) => {
 	.site-shell:not(.site-shell--home) .site-header {
 		--language-link-opacity: 0.75;
 		color: #111111;
-		background: rgba(255, 255, 255, 0.80);
+		background: rgba(239, 229, 207, 0.80);
 	}
 
 	.site-shell--home .brand {
@@ -806,6 +808,7 @@ const sitePath = (path) => {
 	}
 
 	.site-footer {
+		font-weight: 500;
 		position: relative;
 		isolation: isolate;
 		overflow: hidden;
@@ -848,7 +851,7 @@ const sitePath = (path) => {
 	.footer-legal {
 		text-transform: uppercase;
 		letter-spacing: 0.24em;
-		font-weight: 400;
+		font-weight: 500;
 		margin-top: clamp(1.5rem, 2.6vw, 2.2rem);
 	}
 
@@ -941,6 +944,17 @@ const sitePath = (path) => {
 	}
 
 	.site-shell--light .site-footer p {
+		opacity: 1;
+	}
+
+	.site-footer .footer-brand { font-weight: 550; }
+	.site-shell--home .site-footer .footer-brand { font-weight: 600; }
+	.site-footer .footer-trademark {
+		max-width: 72ch;
+		font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+		line-height: 1.7;
+		letter-spacing: 0.025em;
+		text-transform: none;
 		opacity: 1;
 	}
 

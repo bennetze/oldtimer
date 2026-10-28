@@ -5,7 +5,7 @@
 	"description": "Hier ein so genannter \"Berlin-Roller\" der Marke IWL (Industrie Werke Ludwigsfelde), der hier in unserer Manufaktur sehr umfassend restauriert wurde.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/159-iwl-berlin-roller-baujahr-1961",
 	"order": 25,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1961",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "IWL Berlin-Roller, Baujahr 1961",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "IWL Berlin-Roller, Baujahr 1961 – Blau-heller Roller mit Anhänger schräg von vorn.",
-					"altEn": "IWL Berlin Scooter, year 1961 – Blue-and-light scooter with trailer from the front corner."
+					"altEn": "IWL Berlin Scooter, year 1961 – Blue-and-light scooter with trailer from the front corner.",
+					"size": "medium"
 				}
 			]
 		},

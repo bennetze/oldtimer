@@ -5,7 +5,7 @@ export const categories = ['aktuelle-projekte', 'vergangene-projekte', 'fahrzeug
 const escapeXml = (value) => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&apos;');
 
 export function sitemapEntries(groups) {
-	const entries = ['/', '/ueber-uns/', '/handwerk/', '/projekte/'].map((path) => [path, pageModified(path)]);
+	const entries = ['/', '/ueber-uns/', '/handwerk/', '/projekte/', '/karriere/'].map((path) => [path, pageModified(path)]);
 	categories.forEach((category, index) => {
 		const dates = groups[index].map((vehicle) => vehicle.dateModified);
 		const path = `/projekte/${category}/`;

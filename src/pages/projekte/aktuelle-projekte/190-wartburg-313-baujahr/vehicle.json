@@ -5,7 +5,7 @@
 	"description": "Auch dieser Wartburg 313 Sport wird derzeit in unserer Manufaktur einer fachgerechten Vollrestauration unterzogen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/190-wartburg-313-baujahr",
 	"order": 3,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 S-Sport, Baujahr 1959",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 313 S-Sport, Baujahr 1959 – Blaues Cabriolet mit Hardtop im Hof.",
-					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue hardtop convertible in the courtyard."
+					"altEn": "Wartburg 313 S-Sport, year 1959 – Blue hardtop convertible in the courtyard.",
+					"size": "medium"
 				}
 			]
 		},

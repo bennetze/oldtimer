@@ -5,7 +5,7 @@
 	"description": "Ein weiterer Mercedes-Benz 300 als seltenes 4-türiges Cabriolet-D des frühen Baujahres 1953, dass derzeit in unserer Manufaktur in allen Details origina…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/171-mercedes-benz-300-adenauer-4-tueriges-cabriolet-d-baujahr-1953",
 	"order": 7,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1953",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 300 \"ADENAUER\", Baujahr 1953",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes-Benz 300 \"ADENAUER\", Baujahr 1953 – Dunkles Cabriolet schräg von vorn auf dem gepflasterten Hof.",
-					"altEn": "Mercedes-Benz 300 \"ADENAUER\", year 1953 – Dark convertible viewed from the front corner in the paved courtyard."
+					"altEn": "Mercedes-Benz 300 \"ADENAUER\", year 1953 – Dark convertible viewed from the front corner in the paved courtyard.",
+					"size": "medium"
 				}
 			]
 		},

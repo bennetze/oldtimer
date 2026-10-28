@@ -5,7 +5,7 @@
 	"description": "Bei diesem BMW 326 “Autenrieth” Cabriolet - gebaut bei den Bayerischen-Motoren-Werken in Eisenach / Thüringen - handelt es sich um eine allumfassende Vo…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/57-bmw-326-2-tueriges-autenrieth-cabriolet-baujahr-1939",
 	"order": 127,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 326 2-türiges “Autenrieth” Cabriolet, Baujahr 1939 – Rote Tür und offene rote Bodenstruktur.",
-					"altEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939 – Red door and exposed red floor structure."
+					"altEn": "BMW 326 2-door “Autenrieth” Cabriolet, year 1939 – Red door and exposed red floor structure.",
+					"size": "medium"
 				}
 			]
 		},

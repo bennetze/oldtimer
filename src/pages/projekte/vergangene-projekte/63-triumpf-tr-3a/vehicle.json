@@ -5,7 +5,7 @@
 	"description": "Dieser wunderschöne englische Sportroadster stammt aus Amerika und wurde durch uns komplett restauriert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/63-triumpf-tr-3a",
 	"order": 118,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Triumpf TR 3A",
 	"leadImage": "./card.jpg",
@@ -22,7 +22,8 @@
 				{
 					"src": "./source-restored-001.jpg",
 					"alt": "Triumpf TR 3A – Fertiger roter Roadster",
-					"altEn": "Triumpf TR 3A – Finished red roadster"
+					"altEn": "Triumpf TR 3A – Finished red roadster",
+					"size": "medium"
 				}
 			]
 		}

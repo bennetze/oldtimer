@@ -5,7 +5,7 @@
 	"description": "Pünktlich zu den Olympischen Spielen im August 1936 in Berlin, brachte Opel als großen Wurf diesen bezeichnenden Typ “Olympia” auf den Markt.\n\nEr gilt a…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/66-opel-olympia-baujahr-1936",
 	"order": 123,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "OPEL Olympia, Baujahr 1936",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "OPEL Olympia, Baujahr 1936 – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
-					"altEn": "OPEL Olympia, year 1936 – Cabin showing seats, steering wheel and dashboard."
+					"altEn": "OPEL Olympia, year 1936 – Cabin showing seats, steering wheel and dashboard.",
+					"size": "medium"
 				}
 			]
 		},

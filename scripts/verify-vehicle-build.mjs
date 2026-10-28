@@ -144,6 +144,7 @@ const expectedRoutes = [
 	'/ueber-uns/',
 	'/handwerk/',
 	'/projekte/',
+	'/karriere/',
 	...categories.map(({ key }) => `/projekte/${key}/`),
 	...Array.from({ length: Math.max(pastPages - 1, 0) }, (_, index) =>
 		`/projekte/vergangene-projekte/seite/${index + 2}/`),

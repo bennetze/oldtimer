@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteChrome from '../components/SiteChrome.astro';
+import BackgroundTexture from '../components/BackgroundTexture.astro';
+---
+
+<Layout title="Karriere" description="Aktuell stehen keine offenen Stellen zur Verfügung">
+	<SiteChrome theme="light">
+		<main class="career-page legal-page textured-background gradient-palette" id="main-content" tabindex="-1">
+			<BackgroundTexture />
+			<div class="career-copy">
+				<h1>Karriere</h1>
+				<p>Aktuell stehen keine offenen Stellen zur Verfügung</p>
+			</div>
+		</main>
+	</SiteChrome>
+</Layout>
+
+<style>
+	.career-page {
+		position: relative;
+		display: grid;
+		place-items: center;
+		min-height: 100vh;
+		min-height: 100svh;
+		box-sizing: border-box;
+		padding: calc(var(--site-header-height, 132px) + 3rem) 1.5rem 5rem;
+		color: var(--gradient-ink);
+		background: var(--gradient-cream);
+		text-align: center;
+	}
+
+	.career-copy {
+		max-width: 48rem;
+	}
+
+	h1 {
+		margin: 0 0 2rem;
+		font-family: var(--font-heading);
+		font-size: clamp(2rem, 5vw, 4.5rem);
+		font-weight: 450;
+		line-height: 1.15;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	p {
+		margin: 0;
+		font-size: clamp(1.1rem, 1.5vw, 1.35rem);
+		line-height: 1.7;
+		text-wrap: balance;
+	}
+</style>

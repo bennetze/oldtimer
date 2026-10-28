@@ -5,7 +5,7 @@
 	"description": "Dieser hier gezeigte und bei uns sehr perfekt restaurierte HANOMAG-Sportroadster ist nicht irgendein sportliches Vorkriegsauto, sondern fuhr vor allem i…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/24-hanomag-sportroadster-baujahr-1936",
 	"order": 35,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Hanomag Sportroadster, Baujahr 1936",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Hanomag Sportroadster, Baujahr 1936 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Hanomag Sportroadster, year 1936 – Front three-quarter view outdoors."
+					"altEn": "Hanomag Sportroadster, year 1936 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

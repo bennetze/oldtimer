@@ -5,7 +5,7 @@
 	"description": "Der Typ 328 zählt bekanntermaßen zu den erfolgreichsten und in Sammlerkreisen heute zu den gesuchtesten Sportwagen der Vorkriegszeit, erfüllt er doch sä…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/166-bmw-328-sport-roadster-baujahr-1938",
 	"order": 3,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 328 Sport-Roadster, Baujahr 1938",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 328 Sport-Roadster, Baujahr 1938 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "BMW 328 Sport-Roadster, year 1938 – Front three-quarter view outdoors."
+					"altEn": "BMW 328 Sport-Roadster, year 1938 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Dieser BMW wurde uns in diesem \"verbrauchten\" aber dennoch \"rettbaren\" Zustand angeliefert und im Auftrag seines Besitzers und BMW Kenners bei uns einer…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/149-bmw-340-baujahr-1951",
 	"order": 10,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1951",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 340, Baujahr 1951",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 340, Baujahr 1951 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "BMW 340, year 1951 – Front three-quarter view outdoors."
+					"altEn": "BMW 340, year 1951 – Front three-quarter view outdoors.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

@@ -5,7 +5,7 @@
 	"description": "Ein inzwischen extrem seltenes Ford Consul Coupe des Jahrgangs 1974, bei dem in unserer Manufaktur ein Getriebeschaden instandgesetzt und das in unserer…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/139-ford-consul-coupe-1974",
 	"order": 130,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "FORD Consul Coupe, 1974",
 	"leadImage": "./image-001.jpg",
@@ -17,7 +17,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "FORD Consul Coupe, 1974 – Innenraum mit Sitzen, Lenkrad und Armaturenbrett.",
-					"altEn": "FORD Consul Coupe, 1974 – Cabin showing seats, steering wheel and dashboard."
+					"altEn": "FORD Consul Coupe, 1974 – Cabin showing seats, steering wheel and dashboard.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

@@ -5,7 +5,7 @@
 	"description": "BMW 503 Coupe (Serie 2)\nMotor: V8, 3,2 Liter Hubraum,\n140PS Leistung,\n195 km/h Spitzengeschwindigkeit.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/145-bmw-503-coupe-baujahr-1959",
 	"order": 39,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1959",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 503 Coupe, Baujahr 1959",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 503 Coupe, Baujahr 1959 – Dreiviertelansicht von hinten im Freien.",
-					"altEn": "BMW 503 Coupe, year 1959 – Rear three-quarter view outdoors."
+					"altEn": "BMW 503 Coupe, year 1959 – Rear three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

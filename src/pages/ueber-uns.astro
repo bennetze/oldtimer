@@ -8,7 +8,7 @@ import aboutSubtitles from '../assets/oldtimer/about-us.de.vtt?url&no-inline';
 import aboutPoster from '../assets/oldtimer/about-us-poster.jpg';
 import antonCar from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00382.webp';
 import antonPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00649.webp';
-import contactEntrance from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00439.webp';
+import contactEntrance from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00113.webp';
 import contactExterior from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6639.webp';
 import marioPortrait from '../assets/oldtimer/oldtimermanufaktur-fotos-2/DSC00803.webp';
 import teamConversation from '../assets/oldtimer/motor-klassik/querformat/MKL_PORTRAIT_KFZ_MEISTER_ANTON_SCHRANK_AB-6384.webp';
@@ -80,7 +80,7 @@ const film = {
 	openGraphImage={teamPortrait}
 	openGraphImageAlt="Das Team der Oldtimermanufaktur steht zwischen historischen Fahrzeugen in der Werkstatt."
 	structuredDataType="AboutPage"
-	dateModified="2026-10-25"
+	dateModified="2026-10-27"
 	additionalJsonLd={[...people, brand, film]}
 	sectionNavigationVisible={false}
 >
@@ -281,9 +281,6 @@ const film = {
 						</p>
 					</div>
 				</div>
-				<div class="story__copy section-closing-copy">
-					<p>Der Name "OLDTIMERMANUFAKTUR®" ist eine durch uns sowohl beim Deutschen- als auch beim Europäischen Marken- und Patentamt eingetragene geschützte Marke.</p>
-				</div>
 			</section>
 
 			<section
@@ -318,7 +315,7 @@ const film = {
 						>
 							<Image
 								src={contactEntrance}
-								alt="Verchromtes Emblem und Zierleiste auf der hellen Motorhaube eines historischen Automobils."
+								alt="Zwei Mitarbeiter passen das Verdeck eines hellblauen historischen Cabriolets in der Werkstatt an."
 								widths={[640, 960, 1280]}
 								sizes="(max-width: 840px) 76vw, 42vw"
 								format="webp"
@@ -372,16 +369,16 @@ const film = {
 								<span>Fischbach</span>
 							</div>
 						</figure>
+						<div class="location-description"><p>Wir sind ein überaus leistungsfähiger und inhabergeführter Restaurationsbetrieb in der geografischen Mitte Deutschlands – in Fischbach i. d. Rhön (inmitten des UNESCO-Biosphärenreservats Rhön) und sind damit von überall zentral und gut zu erreichen.</p></div>
 					</div>
-				</div>
-				<div class="story__copy section-closing-copy">
-					<p>Wir sind ein überaus leistungsfähiger und inhabergeführter Restaurationsbetrieb in der geografischen Mitte Deutschlands – in Fischbach i. d. Rhön (inmitten des UNESCO-Biosphärenreservats Rhön) und sind damit von überall zentral und gut zu erreichen.</p>
 				</div>
 			</section>
 </EditorialPageLayout>
 
 
 <style>
+	#mario-title .profile-name { font-size: 1.1em; }
+	.location-description { margin-top: 2rem; }
 	.about-film {
 		width: min(50vw, 1000px);
 		margin: 0 auto clamp(6rem, 10vw, 10rem);
@@ -421,7 +418,7 @@ const film = {
 		margin: 0;
 	}
 	:global(.editorial-page) .collage--team-details .image-layer--team-main {
-		grid-column: 1 / -1;
+		grid-column: 2 / -1;
 		grid-row: 1;
 	}
 	:global(.editorial-page) .collage--team-details .image-layer--team-conversation {
@@ -488,7 +485,7 @@ const film = {
 
 	#anton-title .profile-name,
 	.profile-heading:has(#anton-title) .profile-credentials {
-		color: #d7838d;
+		color: #d16658;
 	}
 
 	:global(.editorial-page .story .profile-heading #mario-title) {

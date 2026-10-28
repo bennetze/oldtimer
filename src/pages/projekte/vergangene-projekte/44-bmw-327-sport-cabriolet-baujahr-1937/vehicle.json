@@ -5,7 +5,7 @@
 	"description": "BMW 327, Baujahr 1937 - und damit einer der Ersten dieser zeitlos schönen Sportcabriolets, die bei den Bayerischen - Motoren - Werken in Eisenach/Thürin…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/44-bmw-327-sport-cabriolet-baujahr-1937",
 	"order": 90,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1937",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327 Sport - Cabriolet, Baujahr 1937",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327 Sport - Cabriolet, Baujahr 1937 – Dreiviertelansicht von vorn in der Werkstatt.",
-					"altEn": "BMW 327 Sport - Cabriolet, year 1937 – Front three-quarter view inside the workshop."
+					"altEn": "BMW 327 Sport - Cabriolet, year 1937 – Front three-quarter view inside the workshop.",
+					"size": "medium"
 				}
 			]
 		},

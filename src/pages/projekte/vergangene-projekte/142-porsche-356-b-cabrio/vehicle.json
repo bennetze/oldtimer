@@ -5,7 +5,7 @@
 	"description": "Porsche 356 B Cabrio",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/142-porsche-356-b-cabrio",
 	"order": 24,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Porsche 356 B Cabrio",
 	"leadImage": "./image-001.jpg",
@@ -17,7 +17,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Porsche 356 B Cabrio – Dreiviertelansicht von vorn in der Werkstatt.",
-					"altEn": "Porsche 356 B Cabrio – Front three-quarter view inside the workshop."
+					"altEn": "Porsche 356 B Cabrio – Front three-quarter view inside the workshop.",
+					"size": "medium"
 				}
 			]
 		},

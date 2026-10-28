@@ -5,7 +5,7 @@
 	"description": "BMW 326 als sehr komfortables Reise-Cabriolet aus der namhaften Karosseriebau-Werkstatt \"Autenrieth\" in Darmstadt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/110-bmw-326-cabriolt-autenrith-baujahr-1939",
 	"order": 10,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 326 Cabriolet \"Autenrieth\", Baujahr 1939 – Rostige Limousine schräg von vorn im Hof.",
-					"altEn": "BMW 326 Cabriolet \"Autenrieth\", year 1939 – Rusty saloon viewed from the front corner in the courtyard."
+					"altEn": "BMW 326 Cabriolet \"Autenrieth\", year 1939 – Rusty saloon viewed from the front corner in the courtyard.",
+					"size": "medium"
 				}
 			]
 		},

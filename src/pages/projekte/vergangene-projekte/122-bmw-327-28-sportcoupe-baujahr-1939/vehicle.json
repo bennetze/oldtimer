@@ -5,7 +5,7 @@
 	"description": "Bei diesem BMW 327/28 Sport-Coupe handelt es sich um ein ganz besonderes Exemplar, wurde der Wagen doch eigens für die Fürstenfamilie von Bismarck gebau…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/122-bmw-327-28-sportcoupe-baujahr-1939",
 	"order": 41,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 \"Bismarck\" Sportcoupe, Baujahr 1939",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327/28 \"Bismarck\" Sportcoupe, Baujahr 1939 – Dreiviertelansicht von hinten im Freien.",
-					"altEn": "BMW 327/28 \"Bismarck\" Sport Coupé, year 1939 – Rear three-quarter view outdoors."
+					"altEn": "BMW 327/28 \"Bismarck\" Sport Coupé, year 1939 – Rear three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

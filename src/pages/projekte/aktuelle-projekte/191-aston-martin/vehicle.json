@@ -5,7 +5,7 @@
 	"description": "Motor 6 Zylinder, 3 Liter Hubraum,\n2 obenliegende Nockenwellen, bis zu 165PS Leistung",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/191-aston-martin",
 	"order": 5,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "ASTON MARTIN DB 2/4, Baujahr 1957",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "ASTON MARTIN DB 2/4, Baujahr 1957 – Grünes Coupé schräg von vorn in der Werkstatt.",
-					"altEn": "ASTON MARTIN DB 2/4, year 1957 – Green coupé viewed from the front corner in the workshop."
+					"altEn": "ASTON MARTIN DB 2/4, year 1957 – Green coupé viewed from the front corner in the workshop.",
+					"size": "medium"
 				}
 			]
 		},

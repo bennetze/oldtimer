@@ -5,7 +5,7 @@
 	"description": "Dieses wunderschöne Mercedes-Cabriolet des Typ´s 170 S wurde sehr originalgetreu und allumfassend restauriert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/83-mercedes-170-s-cabriolet-a-baujahr-50",
 	"order": 72,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1950",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 170 S Cabriolet-A , Baujahr 1950",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes 170 S Cabriolet-A , Baujahr 1950 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Mercedes 170 S Cabriolet-A , year 1950 – Front three-quarter view outdoors."
+					"altEn": "Mercedes 170 S Cabriolet-A , year 1950 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

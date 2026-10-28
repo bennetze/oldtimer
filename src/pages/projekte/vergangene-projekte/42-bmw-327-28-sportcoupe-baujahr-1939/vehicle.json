@@ -5,7 +5,7 @@
 	"description": "Dieses seltene BMW 327/28 Sportcoupe, gebaut bei denBayerischen - Motoren - Werken in Eisenach, wurde 1939 mit einer Sonderkarosserie von “Autenrieth” n…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/42-bmw-327-28-sportcoupe-baujahr-1939",
 	"order": 78,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcoupe, Baujahr 1939",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327/28 Sportcoupe, Baujahr 1939 – Rote Dachinnenseite und freiliegende Querstreben.",
-					"altEn": "BMW 327/28 Sport Coupé, year 1939 – Red inner roof surface and exposed cross braces."
+					"altEn": "BMW 327/28 Sport Coupé, year 1939 – Red inner roof surface and exposed cross braces.",
+					"size": "medium"
 				}
 			]
 		},

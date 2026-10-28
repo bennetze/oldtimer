@@ -5,7 +5,7 @@
 	"description": "Dieser Ihle Sport 800 wurde uns in total zerlegtem Fundzustand mit teils großen Karosserieschäden angeliefert und nachfolgend im Kundenauftrag komplett…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/134-bmw-dixi-ihle-800-baujahr-1936",
 	"order": 53,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1936",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW Dixi Ihle 800, Baujahr 1936",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW Dixi Ihle 800, Baujahr 1936 – Abgenommene helle Doppelgrill-Einfassung auf dem Boden.",
-					"altEn": "BMW Dixi Ihle 800, year 1936 – Removed light twin-grille surround on the floor."
+					"altEn": "BMW Dixi Ihle 800, year 1936 – Removed light twin-grille surround on the floor.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

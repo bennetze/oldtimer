@@ -5,7 +5,7 @@
 	"description": "Mercedes-Benz 220 SEb Coupe, 1963",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/143-mercedes-benz-220-seb",
 	"order": 133,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes-Benz 220 SEb Coupe, 1963",
 	"leadImage": "./image-001.jpg",
@@ -17,7 +17,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes-Benz 220 SEb Coupe, 1963 – Seitenansicht im Freien.",
-					"altEn": "Mercedes-Benz 220 SEb Coupe, 1963 – Side profile outdoors."
+					"altEn": "Mercedes-Benz 220 SEb Coupe, 1963 – Side profile outdoors.",
+					"size": "medium"
 				}
 			]
 		},

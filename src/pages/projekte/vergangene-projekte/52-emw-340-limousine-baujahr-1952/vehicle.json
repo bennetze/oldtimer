@@ -5,7 +5,7 @@
 	"description": "Diese EMW 340 Limousine, gebaut bei den Eisenacher - Motoren - Werken wurde entsprechend den Kundenwünschen bei uns einer umfassenden Komplettrestaurati…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/52-emw-340-limousine-baujahr-1952",
 	"order": 66,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 340 Limousine, Baujahr 1952",
@@ -18,7 +18,8 @@
 				{
 					"src": "./source-restored-001.jpg",
 					"alt": "EMW 340 Limousine, Baujahr 1952 – Fertige zweifarbige Limousine",
-					"altEn": "EMW 340 Saloon, year 1952 – Finished two-tone saloon"
+					"altEn": "EMW 340 Saloon, year 1952 – Finished two-tone saloon",
+					"size": "medium"
 				}
 			]
 		},

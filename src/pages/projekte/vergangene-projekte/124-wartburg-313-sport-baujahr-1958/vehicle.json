@@ -5,7 +5,7 @@
 	"description": "Hier ein weiterer WARTBURG 313 SPORT, der bei uns nach entsprechenden Kundenwünschen sehr aufwendig und originalgetreu einer Vollrestauration unterzogen…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/124-wartburg-313-sport-baujahr-1958",
 	"order": 37,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1958",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 Sport, Baujahr 1958",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1958 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Wartburg 313 Sport, year 1958 – Front three-quarter view outdoors."
+					"altEn": "Wartburg 313 Sport, year 1958 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Dieses EMW R35/3 Gespann, Baujahr 1955 ist eine der letztgebauten Maschinen überhaupt, bevor auch dieses interessante Stück Zeitgeschichte der Eisenache…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/51-emw-r35-mit-stoye-beiwagen",
 	"order": 92,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW R35 mit “Stoye”-Beiwagen",
 	"leadImage": "./card.jpg",
@@ -22,7 +22,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW R35 mit “Stoye”-Beiwagen – Ausgebauter Seitenwagen mit Rad auf einer Wiese.",
-					"altEn": "EMW R35 mit “Stoye”-sidecar – Removed sidecar with wheel on a meadow."
+					"altEn": "EMW R35 mit “Stoye”-sidecar – Removed sidecar with wheel on a meadow.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "In diesem Zusammenhang wurde auch die übrige Motortechnik, nebst sämtlicher Anbauteile regeneriert.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/91-mercedes-280-sl",
 	"order": 77,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1968",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 280 SL, Baujahr 1968",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes 280 SL, Baujahr 1968 – Dreiviertelansicht von vorn in der Werkstatt.",
-					"altEn": "Mercedes 280 SL, year 1968 – Front three-quarter view inside the workshop."
+					"altEn": "Mercedes 280 SL, year 1968 – Front three-quarter view inside the workshop.",
+					"size": "medium"
 				},
 				{
 					"src": "./image-002.jpg",

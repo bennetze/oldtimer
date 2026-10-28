@@ -5,7 +5,7 @@
 	"description": "BMW 319 2+2 sitziges Sportcabriolet, Baujahr 1934; gebaut bei den BMW-Werken in Eisenach/Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/69-bmw-319-sportcabriolet-baujahr-1934",
 	"order": 120,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1934",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 319 Sportcabriolet, Baujahr 1934",
@@ -23,7 +23,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 319 Sportcabriolet, Baujahr 1934 – Karosserie mit offenen Türöffnungen seitlich.",
-					"altEn": "BMW 319 Sport Cabriolet, year 1934 – Body with open door apertures in side profile."
+					"altEn": "BMW 319 Sport Cabriolet, year 1934 – Body with open door apertures in side profile.",
+					"size": "medium"
 				}
 			]
 		},

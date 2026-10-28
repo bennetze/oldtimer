@@ -5,7 +5,7 @@
 	"description": "Der Wagen wurde in unserer technischen Abteilung umfangreich revidiert und instand gesetzt und bekam in unserer Sattlerei ein neues Faltschiebedach pass…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/102-hanomag-rekord",
 	"order": 67,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1937",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "HANOMAG Rekord, Baujahr 1937",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "HANOMAG Rekord, Baujahr 1937 – Dunkelblaue Limousine schräg von vorn im Hof.",
-					"altEn": "HANOMAG Rekord, year 1937 – Dark-blue saloon from the front corner in the courtyard."
+					"altEn": "HANOMAG Rekord, year 1937 – Dark-blue saloon from the front corner in the courtyard.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "BMW 327/28 Sportcabriolet des Baujahres 1939 aus sensationellem \"Erstbesitz\" mit org. Papieren im absoluten Bestzustand. Top-Restauration in sehr stimmi…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/fahrzeugangebote/item/180-bmw-327-28-sportcabriolet-baujahr-1939",
 	"order": 4,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1939",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 327/28 Sportcabriolet, Baujahr 1939",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "BMW 327/28 Sportcabriolet, Baujahr 1939 – Blaues Cabriolet seitlich vor bewaldeten Hügeln.",
-					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Blue convertible in side profile beside wooded hills."
+					"altEn": "BMW 327/28 Sport Cabriolet, year 1939 – Blue convertible in side profile beside wooded hills.",
+					"size": "medium"
 				}
 			]
 		},

@@ -5,7 +5,7 @@
 	"description": "Wieder ein seltener Wartburg 313 Sport, der aktuell bei uns eine Vollrestauration erfährt.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/188-wartburg-313-baujahr-1960",
 	"order": 10,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1960",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Wartburg 313 Sport, Baujahr 1960",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Wartburg 313 Sport, Baujahr 1960 – Schwarzweiß-Seitenansicht eines Cabriolets vor Bäumen.",
-					"altEn": "Wartburg 313 Sport, year 1960 – Black-and-white side view of a convertible beside trees."
+					"altEn": "Wartburg 313 Sport, year 1960 – Black-and-white side view of a convertible beside trees.",
+					"size": "medium"
 				}
 			]
 		},

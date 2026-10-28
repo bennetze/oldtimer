@@ -5,7 +5,7 @@
 	"description": "Dieser Mercedes 280SL \"Pagode\" erhielt in unserer Manufaktur eine umfassende Vollrestauration in allen Details. Karosserie, Technik, Chrom, Elektrik, La…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/172-mercedes-280-sl-baujahr-1968",
 	"order": 12,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1968",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "Mercedes 280 SL \"Pagode\" Baujahr 1968",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "Mercedes 280 SL \"Pagode\" Baujahr 1968 – Dreiviertelansicht von vorn im Freien.",
-					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – Front three-quarter view outdoors."
+					"altEn": "Mercedes 280 SL \"Pagoda\" year 1968 – Front three-quarter view outdoors.",
+					"size": "medium"
 				}
 			]
 		},

@@ -7,21 +7,40 @@ editor directly via `file://` still provides the offline authoring/ZIP workflow.
 
 ## Start
 
-Keep the `oldtimer` website and `oldtimer-intern` editor checkouts beside each other.
-Keep `oldtimer-intern` on the `main` branch. The client demo belongs in its own
-`oldtimer-intern-demo` checkout on `demo`; do not switch the launcher's editor
-folder to that branch. All three launchers use the same checked internal entry.
-If demo or incomplete files are selected, startup stops with a concrete error
-instead of opening an editor that cannot save.
-Use the existing website checkout with its dependencies installed. The same Node.js
-and npm versions required by the website apply; there is no additional installation,
-framework, desktop runtime, subscription or dependency for these tools.
+Keep this layout together when moving or handing off the project:
 
-- macOS: double-click `Website-Werkzeuge.command` in the website folder.
-- Windows: double-click `Website-Werkzeuge.cmd` in the website folder.
-- Linux: run `Website-Werkzeuge.sh` from the website folder. Whether a double-click
-  runs shell scripts depends on the desktop's file-manager settings.
-- On any supported system: `npm run tools` from the website root.
+```text
+Website/                       # parent folder; no Git repository here
+├── Bearbeitung.command        # macOS
+├── Bearbeitung.cmd            # Windows
+├── Bearbeitung.sh             # Linux
+├── Website/                   # oldtimer Git repository, including .git
+└── Intern/                    # oldtimer-intern Git repository, main branch
+```
+
+The GitHub repository names and remotes stay unchanged. Keep the demo checkout
+separate; never switch `Intern` to `demo`. The launcher validates the complete
+internal editor before exposing website actions.
+
+Install Node.js and npm matching `Website/package.json`, then run `npm ci` once
+inside the inner `Website` folder on each destination computer. Do not transfer
+`node_modules` between operating systems. Git authentication is needed only for
+GitHub publication. The editor itself needs no dependencies.
+
+- macOS: double-click `Bearbeitung.command` in the parent folder.
+- Windows: double-click `Bearbeitung.cmd` in the parent folder.
+- Linux: run `Bearbeitung.sh` in the parent folder; double-click behavior depends
+  on the desktop's file-manager settings.
+- Alternatively: run `npm run tools` inside the inner `Website` folder.
+
+All three launchers resolve the website relative to their own location, including
+paths containing spaces. When selecting the project in the editor, choose the
+**inner Website folder** containing `package.json`, `src` and `public`.
+Keep the terminal open. Moving the project requires stopping tools/preview first.
+
+The launcher templates are versioned in `Website/scripts/launchers/`. After an
+update, regenerate the parent copies by running `node scripts/install-launchers.mjs`
+inside the inner website folder. The parent folder does not need a third Git repo.
 
 The launcher opens the default browser. If it cannot, open the link printed in its
 terminal window. Keep that window open. `Ctrl+C` stops the panel and its preview;
@@ -82,7 +101,7 @@ grant approval to publish a development preview as the production site.
 ## Maintenance and boundaries
 
 The launcher uses Node built-ins and serves only the editor's explicitly allowed
-HTML/CSS/classic-script files. `oldtimer-intern/website-tools.js` supplies the
+HTML/CSS/classic-script files. `Intern/website-tools.js` supplies the
 final-step adapter and is inactive without the launcher marker. `scripts/lib/control-panel.mjs` adapts the existing
 checked transfer/deletion functions through their `write`/`confirm` interface, preserving
 immutable reviews, exact selection, stale-input checks, locks, backups, rollback,
@@ -152,3 +171,20 @@ the exact selected original, all four transfer cases, cancellation and stale
 project detection before confirmation and before writing. No real vehicle was
 saved/deleted and nothing was published. Native Windows/Linux execution remains
 unverified.
+
+## Folder relocation verification (2026-10-26)
+
+The working repositories now live at `Website/Website` and `Website/Intern`,
+with `Bearbeitung.command`, `Bearbeitung.cmd` and `Bearbeitung.sh` in their parent.
+Both Git histories, remotes, main branches and existing editor changes were retained.
+The separate local demo worktree's Git link was repaired after moving the editor.
+
+Verification from the new paths: 151 Node tests plus the discovery fixture;
+49 editor, 17 project-workflow and 10 integrated-tools browser checks; production
+and GitHub Pages builds. Relocation tests cover parent paths with spaces and
+starting shell launchers from another working directory. The actual parent launcher
+served the full internal editor and started/stopped the real bilingual preview.
+Disposable panel fixtures cover checked additions, edits, category moves and deletion;
+no real vehicle was saved or deleted, and all 3,774 checked vehicle/crawler files
+remained unchanged. Native Windows/Linux execution and native folder-picker prompts
+were not repeated for this relocation. Nothing was published.

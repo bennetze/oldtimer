@@ -5,7 +5,7 @@
 	"description": "Hier wieder ein EMW 327-2 Sportcabriolet, Baujahr 1952;\n\ngebaut bei den Eisenacher- Motoren-Werken in Thüringen, der nach einer umfangreichen und sehr o…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/48-emw-327-2-sportcabriolet-baujahr-1952",
 	"order": 64,
-	"dateModified": "2026-10-07",
+	"dateModified": "2026-10-28",
 	"year": "1952",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "EMW 327-2 Sportcabriolet, Baujahr 1952",
@@ -18,7 +18,8 @@
 				{
 					"src": "./image-001.jpg",
 					"alt": "EMW 327-2 Sportcabriolet, Baujahr 1952 – Karosserie mit offenen Türöffnungen seitlich.",
-					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – Body with open door apertures in side profile."
+					"altEn": "EMW 327-2 Sport Cabriolet, year 1952 – Body with open door apertures in side profile.",
+					"size": "medium"
 				}
 			]
 		},
