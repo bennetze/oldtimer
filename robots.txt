@@ -1,3 +1,7 @@
+# Geprüft am 2026-10-28: Karriereseite unter /karriere/ und /en/karriere/ ergänzt;
+# öffentliche Seiten bleiben unter den vorhandenen Crawler-Berechtigungen zugänglich.
+# Geprüft am 2026-10-27: Bildauswahl, Layout, Footer und Archivnavigation; bestehende
+# Routen, Medienmuster, Indexierungsregeln und Sitemap-Adresse bleiben erhalten.
 # Geprüft am 2026-10-25: Menüumbruch, Kopfzeilenkontrast und zugängliche Namen; Routen,
 # Medienmuster, Indexierungsregeln und Sitemap-Adresse bleiben erhalten.
 # Geprüft am 2026-10-23: redaktionelle Texte, lokale Bildauswahl und bereichsübergreifende
