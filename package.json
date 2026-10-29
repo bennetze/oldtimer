@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "node scripts/dev-vehicles.mjs",
-    "tools": "node scripts/control-panel.mjs",
+    "tools": "node scripts/start-tools.mjs",
+    "test:tools-install": "node scripts/test-tools-install.mjs",
     "vehicles:sync": "node scripts/test-vehicle-discovery.mjs && node scripts/sync-vehicle-crawler-files.mjs",
     "vehicles:gallery": "node scripts/generate-vehicle-gallery.mjs",
     "test:vehicle-discovery": "node scripts/test-vehicle-discovery.mjs",

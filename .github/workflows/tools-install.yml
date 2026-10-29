@@ -1,0 +1,29 @@
+name: Test tool installation
+
+# Explicitly opt in to networked, clean-machine installation tests.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      # These tests use only Node built-ins and optional host PowerShell.
+      - name: Bootstrap and recovery contracts
+        run: node --test tests/tools-setup.test.mjs tests/tools-bootstrap.test.mjs tests/tools-install-process.test.mjs
+      # The harness hides the runner's Node/npm and downloads a real local runtime.
+      # All installs, image probes, server requests and cleanup use temporary files.
+      - name: Real clean installation, offline restart and repair
+        run: node scripts/test-tools-install.mjs

@@ -5,7 +5,7 @@
 	"description": "Hier eines der kult- und kunstvollen \"Leckerbissen\" der Automobilgeschichte überhaupt. Ein BMW 507 Roadster, der bei uns eine umfangreiche Vollrestaurat…",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/aktuelle-projekte/item/170-bmw-507-roadster",
 	"order": 1,
-	"dateModified": "2026-10-28",
+	"dateModified": "2026-10-29",
 	"year": "1957",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 507 Roadster, Baujahr 1957",
@@ -25,8 +25,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong><em>The Winner is:</em></strong></p>",
-			"htmlEn": "<p><strong><em>The winner is:</em></strong></p>"
+			"html": "<p><span class=\"om-color-red\"><strong><em>The Winner is:</em></strong></span></p>",
+			"htmlEn": "<p><span class=\"om-color-red\"><strong><em>The winner is:</em></strong></span></p>"
 		},
 		{
 			"type": "copy",

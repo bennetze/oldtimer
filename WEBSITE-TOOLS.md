@@ -22,10 +22,45 @@ The GitHub repository names and remotes stay unchanged. Keep the demo checkout
 separate; never switch `Intern` to `demo`. The launcher validates the complete
 internal editor before exposing website actions.
 
-Install Node.js and npm matching `Website/package.json`, then run `npm ci` once
-inside the inner `Website` folder on each destination computer. Do not transfer
-`node_modules` between operating systems. Git authentication is needed only for
-GitHub publication. The editor itself needs no dependencies.
+Start the launcher directly, including on a fresh Windows installation. It reuses
+compatible Node.js/npm installations or downloads Node.js 24 LTS from nodejs.org,
+checks its SHA-256 checksum, and extracts it into `Website/.cache/tools-node`
+on macOS/Linux or `%LOCALAPPDATA%\Oldtimermanufaktur\tools-node` on Windows.
+The Windows runtime stays on the local Windows disk even when the project is
+on a shared drive such as UTM's `Z:` drive. The project packages are still installed
+next to the project: shared-drive file operations can make this very slow.
+For regular use, copy the complete `Website` and `Intern` folders to a local Windows
+directory first, excluding `node_modules`, `.cache` and `dist`; the launcher creates
+the required packages again. Windows startup warns when it detects a network drive. An inaccessible existing runtime
+triggers automatic setup rather than aborting the version check.
+No administrator rights, winget, Homebrew or global PATH changes are needed.
+Windows uses its built-in PowerShell and Edge; macOS/Linux need a compatible
+browser, tar, curl or wget, and shasum or sha256sum for the initial download.
+
+Before opening the editor, `npm run tools` also checks npm and the website
+packages. It installs the declared npm version locally when necessary and runs
+`npm ci` with development and optional dependencies when setup is missing,
+the lockfile/configuration or platform changes, or dependency checks fail.
+This includes the native image processor used when saving and previewing cars.
+The existing install-script approval policy remains active. Do not transfer
+`node_modules` between operating systems. Initial setup and repairs require an
+internet connection and write access; later healthy starts work offline. Failed
+setup stops before opening the editor and can be retried using the same launcher.
+
+Installation runs under an exclusive project setup lock. Concurrent starts stop
+with a German explanation; a lock left by an exited local installer is recovered
+on the next start. Failed installs never mark dependencies ready. Details are
+streamed into `Website/.cache/tools-setup.log` while npm runs. Startup prints
+elapsed time and the time since the last npm output every ten seconds, so silent
+installation no longer looks like a frozen window. npm download details go to
+the live log; warnings and failures remain visible in the terminal. Installations
+are capped at twenty minutes. Canceling stops npm and its lifecycle processes
+before releasing the project setup lock. Retry the same launcher after fixing
+the reported cause. An incomplete project copy is detected before package setup.
+
+Git and GitHub authentication are needed only for optional GitHub publication
+and must be configured separately. The direct `Intern/index.html` offline editor
+still needs no installation.
 
 - macOS: double-click `Bearbeitung.command` in the parent folder.
 - Windows: double-click `Bearbeitung.cmd` in the parent folder.
@@ -188,3 +223,44 @@ Disposable panel fixtures cover checked additions, edits, category moves and del
 no real vehicle was saved or deleted, and all 3,774 checked vehicle/crawler files
 remained unchanged. Native Windows/Linux execution and native folder-picker prompts
 were not repeated for this relocation. Nothing was published.
+
+## Installation verification without UTM
+
+`npm run tools -- --setup-only` performs the same dependency preparation and
+native image check, then exits without opening a browser or starting a server.
+The parent launchers also accept `--setup-only` (double-click launchers retain
+their normal close prompt).
+
+Run the fast, isolated regression tests from the website repository:
+
+```sh
+node --test tests/tools-setup.test.mjs tests/tools-bootstrap.test.mjs tests/tools-install-process.test.mjs
+```
+
+PowerShell tests run on Windows with built-in Windows PowerShell. On macOS/Linux,
+install PowerShell or set `TOOLS_PWSH` to a portable `pwsh` executable; otherwise
+that test explicitly reports a skip. These are bootstrap contract tests with
+fixture downloads, not evidence of native Windows execution when run on macOS.
+They cover broken runtimes, checksums, offline restart and argument preservation.
+Other tests cover failed installation, native image failures, stale locks,
+concurrent starts, incomplete copies and package-lock changes.
+
+For an opt-in test using real downloads and the real package lockfile:
+
+```sh
+npm run test:tools-install
+```
+
+This hides Node/npm and package managers from PATH, uses a temporary project
+whose path includes spaces, Unicode and `&`, downloads the native runtime,
+installs the packages, restarts with npm offline, removes and repairs the native
+image package, then starts the actual local server and fetches an internal-editor
+fixture. It requires internet access and a localhost port. The fixture checks
+startup, not the full vehicle authoring workflow. It removes temporary runtimes
+and packages and does not change this checkout's dependencies or vehicle data.
+
+The manual **Test tool installation** GitHub Actions workflow in
+`.github/workflows/tools-install.yml` runs both suites on native Windows, macOS
+and Ubuntu runners, without UTM. It requires no companion editor repository or
+publication credentials. The workflow must be committed to GitHub before it can
+be selected under Actions; adding it locally does not constitute a CI test run.

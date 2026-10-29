@@ -213,6 +213,9 @@ frame.addEventListener('load', async () => {
     for (const width of [1440,390]) {frame.style.width=`${width}px`;await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));assert(d.documentElement.scrollWidth<=width,'new controls overflow at '+width);}
   });
   await test('Fixed text colors survive sanitation without allowing arbitrary CSS', async () => {
+    for (const value of ['#e04444', '#ff9aa2', '#c94f59']) {
+      assert(t.sanitizeHtml(`<p><font color="${value}">Rot</font></p>`).includes('om-color-red'), 'current or historical red lost: '+value);
+    }
     const clean=t.sanitizeHtml('<p><font color="#ff9aa2">Rot</font> <span class="om-color-cyan">Cyan</span><span style="background:url(https://bad)">Safe</span></p>');
     assert(clean.includes('om-color-red') && clean.includes('om-color-cyan'),'palette lost');assert(!clean.includes('style='),'unsafe CSS retained');
     const response=await fetch('/html',{method:'POST',body:JSON.stringify([clean])});assert(response.ok,await response.text());
@@ -220,7 +223,7 @@ frame.addEventListener('load', async () => {
     const editor=d.querySelector('[data-editor][data-language="en"]');
     editor.innerHTML='<p>Color selection</p>';editor.dispatchEvent(new w.Event('input',{bubbles:true}));
     editor.focus();const range=d.createRange();range.selectNodeContents(editor);w.getSelection().removeAllRanges();w.getSelection().addRange(range);d.dispatchEvent(new w.Event('selectionchange'));
-    const color=editor.closest('.language-editor').querySelector('[data-text-color]');color.dispatchEvent(new w.MouseEvent('mousedown',{bubbles:true}));color.focus();color.value='#ff9aa2';color.dispatchEvent(new w.Event('change',{bubbles:true}));
+    const color=editor.closest('.language-editor').querySelector('[data-text-color]');color.dispatchEvent(new w.MouseEvent('mousedown',{bubbles:true}));color.focus();color.value='#e04444';color.dispatchEvent(new w.Event('change',{bubbles:true}));
     assert(t.sanitizeHtml(editor.innerHTML).includes('om-color-red'),'color dropdown lost selected text');
     assert(w.getSelection().toString().length>0,'color command lost selection');
     editor.closest('.language-editor').querySelector('[data-command="bold"]').click();
@@ -269,7 +272,7 @@ frame.addEventListener('load', async () => {
   await test('Empty bilingual editors accept heading, bold, italic and color before the first typed character', async () => {
     for(const language of ['de','en']) {
       const editor=newTextEditor(language);
-      command(editor,'formatBlock','h2');command(editor,'bold');command(editor,'italic');color(editor,'#ff9aa2');type(editor,'Start');await settle();
+      command(editor,'formatBlock','h2');command(editor,'bold');command(editor,'italic');color(editor,'#e04444');type(editor,'Start');await settle();
       eq(editor.textContent,'Start','typed text');const html=htmlFor(editor);
       assert(html.includes('<h2>') && html.includes('<strong>') && html.includes('<em>') && html.includes('om-color-red'),'combined empty-editor formatting: '+html+' live: '+editor.innerHTML);
       eq(w.getSelection().anchorOffset,5,'caret at end');
@@ -277,7 +280,7 @@ frame.addEventListener('load', async () => {
   });
   await test('Formatting in the middle preserves the caret and can be toggled off before more typing', async () => {
     const editor=newTextEditor('de');selectEditor(editor);type(editor,'Alpha Omega');
-    selectEditor(editor,6);command(editor,'bold');command(editor,'italic');color(editor,'#a7c7ff');type(editor,'Mitte ');await settle();
+    selectEditor(editor,6);command(editor,'bold');command(editor,'italic');color(editor,'#4f8fe8');type(editor,'Mitte ');await settle();
     eq(editor.textContent,'Alpha Mitte Omega','middle insertion');
     const html=htmlFor(editor);assert(html.includes('<strong>') && html.includes('<em>') && html.includes('om-color-blue'),'middle styles: '+html+' live: '+editor.innerHTML);
     command(editor,'bold');command(editor,'italic');color(editor,'#ffffff');type(editor,'Normal ');await settle();
@@ -286,8 +289,8 @@ frame.addEventListener('load', async () => {
   await test('Selected text retains combined formatting and selection across dropdowns and language switches', async () => {
     const de=newTextEditor('de');const block=t.state.blocks.at(-1);const en=d.querySelector(`[data-editor="${block.id}"][data-language="en"]`);
     selectEditor(de);type(de,'Deutsch');selectEditor(en);type(en,'English');
-    selectEditor(de,0,7);command(de,'bold');command(de,'italic');color(de,'#e6a4db');eq(w.getSelection().toString(),'Deutsch','selection preserved');
-    selectEditor(en,0,7);color(en,'#81dbe8');command(en,'formatBlock','h2');
+    selectEditor(de,0,7);command(de,'bold');command(de,'italic');color(de,'#d957bd');eq(w.getSelection().toString(),'Deutsch','selection preserved');
+    selectEditor(en,0,7);color(en,'#22bfd0');command(en,'formatBlock','h2');
     assert(htmlFor(de).includes('om-color-magenta') && htmlFor(de).includes('<strong>') && htmlFor(de).includes('<em>'),'German combination: '+htmlFor(de));
     assert(htmlFor(en).includes('om-color-cyan') && htmlFor(en).includes('<h2>'),'English combination: '+htmlFor(en));
     selectEditor(de,7);type(de,' weiter');eq(de.textContent,'Deutsch weiter','return to German');eq(en.textContent,'English','English unchanged');
@@ -298,7 +301,7 @@ frame.addEventListener('load', async () => {
     command(editor,'insertUnorderedList');command(editor,'formatBlock','p');command(editor,'removeFormat');type(editor,' plain');eq(editor.textContent,'Title item plain','paragraph typing');
   });
   await test('Undo and redo preserve formatted typing instead of resetting the editor DOM', async () => {
-    const editor=newTextEditor('de');selectEditor(editor);type(editor,'Vorher');selectEditor(editor,6);color(editor,'#ff9aa2');command(editor,'bold');type(editor,' Nachher');
+    const editor=newTextEditor('de');selectEditor(editor);type(editor,'Vorher');selectEditor(editor,6);color(editor,'#e04444');command(editor,'bold');type(editor,' Nachher');
     d.execCommand('undo');await settle();eq(editor.textContent,'Vorher','undo typing');
     d.execCommand('redo');await settle();eq(editor.textContent,'Vorher Nachher','redo typing');assert(t.sanitizeHtml(editor.innerHTML).includes('om-color-red'),'redo color');
   });
@@ -307,7 +310,7 @@ frame.addEventListener('load', async () => {
     for(const language of ['de','en']) for(const order of orders) {
       const editor=newTextEditor(language);
       for(const action of order) {
-        if(action==='color')color(editor,'#8dd9ac');
+        if(action==='color')color(editor,'#36b96b');
         else if(action==='heading')command(editor,'formatBlock','h2');
         else command(editor,action);
       }
@@ -317,7 +320,7 @@ frame.addEventListener('load', async () => {
   });
   await test('Repeated color changes and clearing formatting retain text and native undo', async () => {
     const editor=newTextEditor('en');selectEditor(editor);type(editor,'A choice');selectEditor(editor,2,8);command(editor,'bold');command(editor,'italic');
-    for(const value of ['#ff9aa2','#f5dc7b','#ffffff','#81dbe8']) {color(editor,value);eq(w.getSelection().toString(),'choice','color selection');}
+    for(const value of ['#e04444','#e9c52f','#ffffff','#22bfd0']) {color(editor,value);eq(w.getSelection().toString(),'choice','color selection');}
     assert(htmlFor(editor).includes('om-color-cyan') && htmlFor(editor).includes('<strong>') && htmlFor(editor).includes('<em>'),'combined selected styles');
     command(editor,'removeFormat');eq(w.getSelection().toString(),'choice','clear selection');assert(!htmlFor(editor).includes('om-color-') && !htmlFor(editor).includes('<strong>') && !htmlFor(editor).includes('<em>'),'clear format serialization: '+htmlFor(editor));
     d.execCommand('undo');await settle();assert(t.sanitizeHtml(editor.innerHTML).includes('om-color-cyan'),'undo restores color');
@@ -329,7 +332,7 @@ frame.addEventListener('load', async () => {
     eq(editor.textContent,'Importiert','reset retained imported text');
   });
   await test('Clear formatting also resets pending styles before any text is typed', async () => {
-    const editor=newTextEditor('en');command(editor,'bold');command(editor,'italic');color(editor,'#e6a4db');command(editor,'removeFormat');type(editor,'Plain');
+    const editor=newTextEditor('en');command(editor,'bold');command(editor,'italic');color(editor,'#d957bd');command(editor,'removeFormat');type(editor,'Plain');
     assert(!htmlFor(editor).includes('<strong>') && !htmlFor(editor).includes('<em>') && !htmlFor(editor).includes('om-color-magenta'),'pending clear: '+htmlFor(editor));
     eq(editor.textContent,'Plain','plain typing');
   });

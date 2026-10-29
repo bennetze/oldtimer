@@ -5,7 +5,7 @@
 	"description": "Hier wieder eine Kostbarkeit aus dem Hause BMW, gebaut ab 1937 im Werk Eisenach/Thüringen.",
 	"sourceUrl": "https://www.oldtimermanufaktur.de/referenzen/item/163-bmw-328-vignale-roadster-baujahr-1938",
 	"order": 28,
-	"dateModified": "2026-10-28",
+	"dateModified": "2026-10-29",
 	"year": "1938",
 	"cardImage": "./card.jpg",
 	"cardImageAlt": "BMW 328 \"Vignale\" Roadster, Baujahr 1938/49",
@@ -25,8 +25,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>The WINNER!<br />\n1. Platz beim European Concours de Elegance!</strong></p>",
-			"htmlEn": "<p><strong>The winner!<br>\nFirst place at the European Concours de Elegance!</strong></p>"
+			"html": "<p><span class=\"om-color-red\"><strong>The WINNER!<br />\n1. Platz beim European Concours de Elegance!</strong></span></p>",
+			"htmlEn": "<p><span class=\"om-color-red\"><strong>The winner!<br>\nFirst place at the European Concours de Elegance!</strong></span></p>"
 		},
 		{
 			"type": "copy",
@@ -285,8 +285,8 @@
 		},
 		{
 			"type": "copy",
-			"html": "<p><strong>The WINNER!</strong></p>",
-			"htmlEn": "<p><strong>The winner!</strong></p>"
+			"html": "<p><span class=\"om-color-red\"><strong>The WINNER!</strong></span></p>",
+			"htmlEn": "<p><span class=\"om-color-red\"><strong>The winner!</strong></span></p>"
 		},
 		{
 			"type": "copy",
