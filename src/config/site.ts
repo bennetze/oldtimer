@@ -1,7 +1,7 @@
 export const siteStatus = {
 	/**
-	 * Keep this enabled while legal texts, factual claims and media releases
-	 * are incomplete. It preserves the GitHub Pages preview indexing safeguard.
+	 * Keep the separate GitHub Pages deployment out of search results.
+	 * The production website remains indexable.
 	 */
-	developmentPreview: true,
+	githubPagesNoindex: true,
 } as const;

@@ -122,11 +122,11 @@ export async function createControlPanel(rootInput, options = {}) {
 		const work = async () => {
 			try {
 				if (name === 'build' || name === 'deploy') {
-					if (name === 'deploy' && await ask(task, 'Website auf GitHub Pages veröffentlichen? JA / Nein: ') !== 'JA') { append(task, 'Abgebrochen.\n'); return; }
+					if (name === 'deploy' && await ask(task, 'Website bei IONOS im Webspace / veröffentlichen? Gleichnamige Dateien werden überschrieben. JA / Nein: ') !== 'JA') { append(task, 'Abgebrochen.\n'); return; }
 					const command = run(root, name, text => append(task, text));
 					const result = await command.done;
 					if (result.code !== 0) throw new Error('Aktion fehlgeschlagen. Bitte die Meldung oben prüfen.');
-					append(task, name === 'build' ? 'Website erstellt. Ausgabe: dist/\n' : 'GitHub Pages veröffentlicht.\n');
+					append(task, name === 'build' ? 'Website erstellt. Ausgabe: dist/\n' : 'Website bei IONOS veröffentlicht.\n');
 				} else {
 					const interaction = {
 						write(text) { task.messages.push(String(text)); append(task, text + '\n'); },

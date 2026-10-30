@@ -51,7 +51,7 @@ const {
 const canonicalPath = `/${Astro.url.pathname.slice(basePath.length)}`;
 const dateModified = pageModified(canonicalPath, [contentDate]);
 const pageTitle = title ? `${title} | Die Oldtimermanufaktur` : 'Die Oldtimermanufaktur';
-const isGitHubPagesPreview = siteStatus.developmentPreview && basePath !== '/';
+const isGitHubPagesPreview = siteStatus.githubPagesNoindex && basePath !== '/';
 const effectiveNoindex = noindex || isGitHubPagesPreview;
 // A preview's indexing restriction does not remove its page identity. Explicitly
 // excluded pages (legal/error pages) still omit canonical and structured data.

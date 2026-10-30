@@ -503,6 +503,7 @@ const sitePath = (path) => {
 	:global(html),
 	:global(body),
 	.site-shell {
+		--site-chrome-beige: #efe5cf;
 		background: #101010;
 		background-color: #101010;
 	}
@@ -529,14 +530,14 @@ const sitePath = (path) => {
 		align-items: center;
 		min-height: var(--site-header-height);
 		padding: env(safe-area-inset-top, 0px) clamp(1rem, 3vw, 3rem) 0;
-		color: var(--color-main);
-		background: rgba(16, 16, 16, 0.85);
+		color: #111111;
+		background: rgba(239, 229, 207, 0.85);
 		-webkit-backdrop-filter: blur(28px) saturate(108%);
 		backdrop-filter: blur(28px) saturate(108%);
 	}
 
 	.site-shell--home .site-header {
-		background: rgba(16, 16, 16, 0.40);
+		background: rgba(239, 229, 207, 0.40);
 	}
 
 	.site-shell:not(.site-shell--home) .site-header {
@@ -815,9 +816,9 @@ const sitePath = (path) => {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		border-top: 1px solid rgba(238, 238, 238, 0.12);
-		background: inherit;
-		color: inherit;
+		border-top: 1px solid rgba(17, 17, 17, 0.14);
+		background: var(--site-chrome-beige);
+		color: #000000;
 		padding: clamp(2.5rem, 4vw, 3.5rem) clamp(1rem, 5.6vw, 6.5rem) 3.5rem;
 		text-align: center;
 	}
@@ -950,7 +951,7 @@ const sitePath = (path) => {
 	.site-footer .footer-brand { font-weight: 550; }
 	.site-shell--home .site-footer .footer-brand { font-weight: 600; }
 	.site-footer .footer-trademark {
-		color: #ff9aa2;
+		color: #c62828;
 		max-width: 72ch;
 		font-size: clamp(0.95rem, 1.1vw, 1.1rem);
 		line-height: 1.7;

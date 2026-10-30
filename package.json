@@ -17,8 +17,7 @@
     "build": "npm run crawlers:check && node scripts/generate-vehicle-gallery.mjs production && astro build && node scripts/prepare-crawler-files.mjs production && node scripts/prepare-vehicle-redirects.mjs production && node scripts/verify-vehicle-build.mjs production && node scripts/verify-site-build.mjs production && node scripts/verify-language-build.mjs && node scripts/audit-accessibility.mjs",
     "build:pages": "node scripts/build-pages.mjs",
     "build:pages:steps": "npm run crawlers:check && node scripts/generate-vehicle-gallery.mjs github-pages cache && astro build && node scripts/prune-pages-motion-fallbacks.mjs && node scripts/generate-vehicle-gallery.mjs github-pages dist && node scripts/prepare-crawler-files.mjs github-pages && node scripts/prepare-vehicle-redirects.mjs github-pages && node scripts/verify-vehicle-build.mjs github-pages && node scripts/verify-pages-artifact.mjs && node scripts/verify-site-build.mjs github-pages && node scripts/verify-language-build.mjs && node scripts/audit-accessibility.mjs",
-    "predeploy": "npm run build:pages",
-    "deploy": "gh-pages -d dist -b gh-pages --nojekyll -m \"Deploy website\"",
+    "deploy": "node scripts/deploy-ionos.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "encode-video": "scripts/encode-site-video.sh",
@@ -31,19 +30,22 @@
     "test:site": "node scripts/test-site.mjs && npm run test:vehicle-discovery",
     "audit:accessibility": "node scripts/audit-accessibility.mjs",
     "preview:accessibility": "node scripts/preview-accessibility.mjs",
-    "audit:performance": "node scripts/audit-performance.mjs"
+    "audit:performance": "node scripts/audit-performance.mjs",
+    "deploy:check": "node scripts/deploy-ionos.mjs --check"
   },
   "dependencies": {
     "astro": "^7.3.5"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",
-    "gh-pages": "^6.3.0",
-    "sharp": "^0.35.5"
+    "sharp": "^0.35.5",
+    "ssh2-sftp-client": "12.1.1"
   },
   "allowScripts": {
     "esbuild@0.28.2": true,
-    "fsevents@2.3.3": true
+    "fsevents@2.3.3": true,
+    "ssh2@1.17.0": false,
+    "cpu-features@0.0.10": false
   },
   "private": true,
   "packageManager": "npm@11.18.0"

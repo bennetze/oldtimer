@@ -111,7 +111,7 @@
 }
 @media (prefers-contrast: more) {
 	:where(.site-header, .menu-panel) { background: #101010 !important; color: #eeeeee !important; }
-	.site-shell--light .site-header { background: #eeeeee !important; color: #111111 !important; }
+	.site-header { background: var(--site-chrome-beige) !important; color: #111111 !important; }
 	:where(.language-switch a, .footer-primary a, .footer-legal, .site-footer p) { opacity: 1 !important; }
 	:where(.hero-title, .media-panel__content) { text-shadow: 0 1px 3px #000; }
 }
@@ -126,7 +126,7 @@
 }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
 	.site-header, .menu-panel { background: #101010 !important; }
-	.site-shell--light .site-header { background: #eeeeee !important; }
+	.site-header { background: var(--site-chrome-beige) !important; }
 }
 /* Only enlarged browser text or user text-spacing overrides activate this mode. */
 .accessible-text-layout :is(h1, h2, h3, h4, h5, h6) { overflow-wrap: anywhere; }

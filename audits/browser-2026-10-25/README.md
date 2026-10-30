@@ -136,7 +136,7 @@ facts. They must not be marked complete from the local results:
    security/cache/compression headers, deployed assets, slow/mobile-network performance,
    and operational rollback need checking against the final deployment candidate.
    The generated `.htaccess` and 404 output pass local build verification.
-3. **Release approvals:** [PRODUCTION-RELEASE-CHECKLIST.md](../../PRODUCTION-RELEASE-CHECKLIST.md)
+3. **Release approvals:** PRODUCTION-RELEASE-CHECKLIST.md (historical document removed during cleanup)
    still records pending legal-text, company/vehicle-claim, media-rights, hosting and
    release-owner evidence. Preview labels/noindex remain enabled. This audit does
    not supply those approvals or authorize disabling the safeguards.

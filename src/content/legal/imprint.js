@@ -1,5 +1,5 @@
 // Approved German notice supplied by the user on 11 October 2026,
-// with an authored English translation. Site preview safeguards remain active.
+// with an authored English translation.
 import { socialProfiles } from '../../config/social.js';
 
 const noticeProfiles = socialProfiles.map(profile => ({
@@ -11,7 +11,6 @@ export const legalNotice = {
 	de: {
 		title: 'Impressum',
 		description: 'Impressum der DIE OLDTIMERMANUFAKTUR GmbH mit Unternehmensangaben, Kontakt, Registereintrag, USt-IdNr., Verbraucherstreitbeilegung und Social-Media-Profilen.',
-		eyebrow: 'Entwicklungsvorschau',
 		navigation: 'Abschnitte des Impressums',
 		phone: 'Telefon',
 		phoneDisplay: '036 966 / 83 7 83',
@@ -39,7 +38,6 @@ export const legalNotice = {
 	en: {
 		title: 'Legal notice',
 		description: 'Legal notice for DIE OLDTIMERMANUFAKTUR GmbH with company and contact details, registration, VAT ID, consumer dispute resolution and social media profiles.',
-		eyebrow: 'Development preview',
 		navigation: 'Legal notice sections',
 		phone: 'Telephone',
 		phoneDisplay: '+49 36966 83783',

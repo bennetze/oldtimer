@@ -1,11 +1,12 @@
 # Die Oldtimermanufaktur
 
-Static Astro website. Public content is German and English. This is still a
-development preview, not an approved production release.
+Static Astro website. Public content is German and English. The website is
+published on IONOS.
 
-For a German interface to preview, vehicle transfer/deletion, builds and GitHub
-Pages publication, open the `Bearbeitung` launcher in the parent folder for your operating system
-or run `npm run tools`. See [WEBSITE-TOOLS.md](WEBSITE-TOOLS.md) for setup and usage.
+For a German interface to preview, vehicle transfer/deletion, builds and IONOS
+publication, open the `Bearbeitung` launcher in the parent folder for your operating system
+or run `npm run tools`. Keep the `Website` and `Intern` folders beside each other;
+the editor's [README](../Intern/README.md) describes the workflow.
 
 ## Development and verification
 
@@ -37,8 +38,7 @@ If absent, those suites fail explicitly; do not skip or remove them. `npm run
 test:site` runs website tests and discovery without loading those companion suites.
 
 Builds check metadata, links, bilingual content, CSP, deployment artifacts and static
-accessibility invariants. The evidence, unresolved content findings and browser/AT
-verification matrix are in [ACCESSIBILITY-AUDIT.md](ACCESSIBILITY-AUDIT.md).
+accessibility invariants.
 `npm run audit:accessibility` scans existing built output;
 `npm run preview:accessibility` serves local compatibility/spacing fixtures.
 These checks do not establish WCAG conformance or universal compatibility.
@@ -87,8 +87,28 @@ noindex behavior. Deploy only generated `dist/`, never the repository root.
 npm run deploy
 ```
 
-This builds and publishes `dist/` to the `gh-pages` branch. GitHub Pages must use
-that branch's root. Builds and security checks do not deploy on their own.
+This builds the production website and uploads the **contents** of `dist/` directly
+to `/` of the IONOS SFTP account, including `.htaccess`. It never pushes to GitHub.
+The editor's “Bei IONOS veröffentlichen” action runs this same command after its
+separate confirmation. Builds and security checks do not publish on their own.
+
+Copy `.env.ionos.example` to `.env.ionos` and fill in the dedicated SFTP username
+and password locally. Quote passwords containing `#` or spaces. Alternatively set
+`IONOS_PRIVATE_KEY` to an absolute private-key path. Environment variables override
+the local file. `.env.ionos` is ignored by Git and never included in `dist/`; keep
+it private and do not send it with the project. The launcher reads it on each run.
+
+`npm run deploy:check` tests login and lists `/` without changing remote files.
+`npm run deploy -- --dry-run` builds and validates output without uploading.
+The client verifies the server against the published IONOS SSH fingerprints.
+Disposable `.DS_Store` and `Thumbs.db` files are stripped before upload. Destination
+checks and transfers use up to eight parallel requests and report progress.
+Uploads use a temporary file and atomic rename for each destination, with assets
+before HTML. Publishing is not an atomic whole-site switch: a failure can leave a
+partial update; rerun publishing to finish. Files absent from `dist/` are left
+untouched, including any old application files. Domain/DNS settings are unchanged.
+A `/.website-deploy.lock` directory prevents concurrent deployments; after an
+interrupted run, verify that no upload is active before removing that lock manually.
 
 Apache `.htaccess` provides security headers, text compression, one-year immutable
 caching for hashed `_astro` assets, and revalidation for HTML and stable gallery
@@ -101,11 +121,9 @@ from the header without accounting for inline scripts would break the website.
 The production domain still served Joomla/K2 during the 2026-09-28 audit. A future
 approved release must retire or isolate the old PHP application, not leave its
 executables behind the static site. Repository cleanup does not secure that server.
-Complete factual, media-rights and legal approval before disabling preview flags.
-
-See [WEBSITE-REPAIR-AUDIT.md](WEBSITE-REPAIR-AUDIT.md) for the repair register and verification limits.
+Keep factual, media-rights and legal evidence in the internal project records.
 
 ## Performance
 
-See [PERFORMANCE-AUDIT.md](PERFORMANCE-AUDIT.md) for the local cold/warm browser audit,
-responsive media generation, cache behavior and acceptance checks.
+Run `npm run audit:performance` for a local browser audit. Generated reports go
+in the ignored `.codex-qa/performance/` folder.

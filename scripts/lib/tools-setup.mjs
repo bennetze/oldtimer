@@ -132,7 +132,7 @@ export async function prepareTools(root, npmCli, run) {
 		let previous;
 		try { previous = await readFile(marker, 'utf8'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 		const healthy = () => check([npmCli, 'ls', '--all', '--include=dev', '--include=optional']).status === 0
-			&& check(['--input-type=module', '-e', 'import sharp from "sharp"; await sharp({create:{width:1,height:1,channels:3,background:"white"}}).webp().toBuffer(); await import("astro"); await import("cheerio"); await import("gh-pages");']).status === 0;
+			&& check(['--input-type=module', '-e', 'import sharp from "sharp"; await sharp({create:{width:1,height:1,channels:3,background:"white"}}).webp().toBuffer(); await import("astro"); await import("cheerio"); await import("ssh2-sftp-client");']).status === 0;
 		console.log('Website-Pakete werden geprüft …');
 		if (previous !== fingerprint || !healthy()) {
 			await rm(marker, { force: true });

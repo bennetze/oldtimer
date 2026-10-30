@@ -78,5 +78,5 @@ Allow: /
 Sitemap: https://www.oldtimermanufaktur.de/sitemap.xml
 # Geprüft am 2026-10-25: vorgeladene lokale WOFF2-Schrift;
 # vorhandene Routen, Medienregeln und Rechtevorbehalte bleiben unverändert.
-# Kanonische URLs und strukturierte Daten regulärer Vorschauseiten ändern
-# weder die Crawler-Berechtigungen noch deren seitenbezogene noindex-Regel.
+# Geprüft am 2026-10-30: veraltete Entwicklungshinweise entfernt; öffentliche
+# Seiten bleiben indexierbar, rechtliche Seiten und Fehlerseiten behalten noindex.

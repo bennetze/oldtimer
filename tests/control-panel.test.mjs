@@ -331,7 +331,9 @@ test('preview lifecycle and publication approval use fixed commands', async t =>
 	await f.wait(s => !s.preview.running);
 	await f.api('start', { name: 'build' }); await f.wait(s => s.task?.status === 'done');
 	await f.api('start', { name: 'deploy' });
-	let state = await f.wait(s => s.task?.prompt); await f.answer(state.task, 'Nein'); await f.wait(s => s.task?.status === 'done');
+	let state = await f.wait(s => s.task?.prompt);
+	assert.match(state.task.prompt.question, /IONOS im Webspace \/ veröffentlichen/);
+	await f.answer(state.task, 'Nein'); await f.wait(s => s.task?.status === 'done');
 	assert.deepEqual(calls, ['dev', 'build']);
 	await f.api('start', { name: 'deploy' });
 	state = await f.wait(s => s.task?.prompt); await f.answer(state.task, 'JA'); await f.wait(s => s.task?.status === 'done');

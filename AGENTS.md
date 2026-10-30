@@ -174,7 +174,8 @@ Run commands from the repository root.
 - `npm test` runs focused Node regressions and the vehicle-discovery fixture.
 - `npm run build` creates a production build in `dist/` and is the main verification command.
 - `npm run build:pages` creates the GitHub Pages build with the `/oldtimer/` base path.
-- `npm run deploy` builds and publishes `dist/` to the `gh-pages` branch.
+- `npm run deploy` builds production output and uploads the contents of `dist/` to IONOS SFTP `/`.
+- `npm run deploy:check` checks SFTP login without changing remote files.
 - `npm run preview` serves the production build locally for final checks.
 - `npm run astro -- --help` shows available Astro CLI commands.
 

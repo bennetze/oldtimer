@@ -8,7 +8,7 @@ interface Props {
 	authored?: boolean;
 }
 
-const { title, eyebrow, heading = 'In Vorbereitung', authored = false } = Astro.props;
+const { title, eyebrow, heading = null, authored = false } = Astro.props;
 ---
 
 <main class="legal-page textured-background gradient-palette" id="main-content" tabindex="-1">
